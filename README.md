@@ -1,6 +1,6 @@
 # Pillow image processor on Wasmer
 
-[![Deploy to Wasmer](https://frontend-edge-git-ayush-deploy-button-journey-wasmer.vercel.app/deploy/button.svg)](https://frontend-edge-git-ayush-deploy-button-journey-wasmer.vercel.app/deploy?repository-url=https%3A%2F%2Fgithub.com%2Fayushozha%2Fwasmer-pillow-demo&project-name=pillow-demo&repository-name=wasmer-pillow-demo-copy&env=DEFAULT_IMAGE_URL&envDefaults=%7B%22DEFAULT_IMAGE_URL%22%3A%22https%3A%2F%2Fpicsum.photos%2F400%2F300%22%7D&envDescription=Image+URL+prefilled+in+the+crop+and+rotate+form.&redirect-url=https%3A%2F%2Fgithub.com%2Fayushozha%2Fwasmer-pillow-demo)
+[![Deploy to Wasmer](https://frontend-edge-git-ayush-deploy-button-journey-wasmer.vercel.app/deploy/button.svg)](https://frontend-edge-git-ayush-deploy-button-journey-wasmer.vercel.app/deploy?repository-url=https%3A%2F%2Fgithub.com%2Fayushozha%2Fwasmer-pillow-demo&branch=demo&project-name=pillow-demo&repository-name=wasmer-pillow-demo-copy&env=DEFAULT_IMAGE_URL&envDefaults=%7B%22DEFAULT_IMAGE_URL%22%3A%22https%3A%2F%2Fpicsum.photos%2F400%2F300%22%7D&envDescription=Image+URL+prefilled+in+the+crop+and+rotate+form.&redirect-url=https%3A%2F%2Fgithub.com%2Fayushozha%2Fwasmer-pillow-demo)
 
 A small FastAPI + [Pillow](https://python-pillow.org/) app that downloads an image, rotates and crops it, and returns a PNG.
 Source snapshot: [`wasmerio/examples` → `python-pillow`](https://github.com/wasmerio/examples/tree/dd8532fcc1aebf8554f5b904332c3778f5246ffb/python-pillow) at `dd8532fc`.
