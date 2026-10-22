@@ -1,0 +1,96 @@
+$ git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/12-streamlit__llm-examples rev-parse HEAD
+7cf260745675e41f92e7436d3777aafdab9dad9f
+exit=0
+
+$ python3.13 -m venv .venv
+exit=0
+
+$ python -V
+Python 3.13.16
+exit=0
+
+$ pip install -r requirements.txt  (tail)
+exit=0
+
+$ pip freeze | grep -iE 'streamlit|numpy|pandas|pyarrow|altair|langchain|openai|anthropic|duckduckgo|trubrics'
+altair==6.3.0
+anthropic==2.1.0
+duckduckgo_search==8.1.1
+langchain==0.0.350
+langchain-community==0.0.3
+langchain-core==0.1.23
+numpy==1.26.4
+openai==3.36.1
+pandas==3.0.6
+pyarrow==26.0.0
+streamlit==1.66.1
+streamlit-feedback==0.1.4
+trubrics==1.8.5
+
+$ python -m pytest -q app_test.py   (OpenAI/LangChain calls are mocked by the repo's tests; no network calls to providers)
+..                                                                       [100%]
+2 passed in 2.42s
+exit=0
+
+$ streamlit run Chatbot.py --server.address=127.0.0.1 --server.port=3421 --server.headless=true  (background)
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3421/_stcore/health
+200
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3421/
+200
+health body: ok
+--- server log ---
+2026-10-22 04:36:44.953 Uvicorn server started on 127.0.0.1:3421
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:3421
+
+
+############ Same steps on Python 3.11 (the version the repo's CI uses) ############
+$ git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/12-streamlit__llm-examples rev-parse HEAD
+7cf260745675e41f92e7436d3777aafdab9dad9f
+exit=0
+
+$ python3.11 -m venv .venv
+exit=0
+
+$ python -V
+Python 3.11.17
+exit=0
+
+$ pip install -r requirements.txt  (tail)
+exit=0
+
+$ pip freeze | grep -iE 'streamlit|numpy|pandas|pyarrow|altair|langchain|openai|anthropic|duckduckgo|trubrics'
+altair==6.3.0
+anthropic==2.1.0
+duckduckgo_search==8.1.1
+langchain==0.0.350
+langchain-community==0.0.3
+langchain-core==0.1.23
+numpy==1.26.4
+openai==3.36.1
+pandas==3.0.6
+pyarrow==26.0.0
+streamlit==1.66.1
+streamlit-feedback==0.1.4
+trubrics==1.8.5
+
+$ python -m pytest -q app_test.py   (OpenAI/LangChain calls are mocked by the repo's tests; no network calls to providers)
+..                                                                       [100%]
+2 passed in 1.83s
+exit=0
+
+$ streamlit run Chatbot.py --server.address=127.0.0.1 --server.port=3422 --server.headless=true  (background)
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3422/_stcore/health
+200
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3422/
+200
+health body: ok
+--- server log ---
+2026-10-22 04:37:47.880 Uvicorn server started on 127.0.0.1:3422
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:3422
+

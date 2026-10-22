@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 03030f2..f0e085e 100644
+--- a/README.md
++++ b/README.md
+@@ -40,6 +40,12 @@ To set the OpenAI API key as an environment variable in Streamlit apps, do the f
+ OPENAI_API_KEY='xxxxxxxxxx'
+ ```
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=streamlit%2Fllm-examples)
++
++[Wasmer Edge](https://wasmer.io) installs `requirements.txt` and runs the app with Streamlit. The entry file here is `Chatbot.py`, which Wasmer does not pick up by name, so set the start command to `streamlit run Chatbot.py --server.port $PORT --server.address 0.0.0.0 --server.headless true` when creating the app. No secrets are needed to deploy: each page asks for the OpenAI or Anthropic API key in the sidebar and keeps it only for that browser session. The button deploys this repository as-is and does not fork it; to change the examples, fork the repo and connect your fork from the Wasmer dashboard.
++
+ ## Run it locally
+ 
+ ```sh
