@@ -1,0 +1,15 @@
+▲ Next.js 16.3.8
+- Local:         http://127.0.0.1:3955
+- Network:       http://127.0.0.1:3955
+✓ Ready in 165ms
+✓ Running next.config.mjs took 22ms
+200 /
+200 /blog
+200 /blog/api-design-principles
+200 /blog/building-design-systems
+200 /blog/git-workflow-guide
+200 /blog/nextjs-performance-tips
+200 /blog/remote-work-productivity
+200 /blog/testing-react-apps
+200 /blog/typescript-best-practices
+404 /does-not-exist
