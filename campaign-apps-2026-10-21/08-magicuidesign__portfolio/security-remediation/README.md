@@ -26,16 +26,18 @@ Base: upstream `main` @ `5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b` (still the up
 | `/blog/api-design-principles`, `/git-workflow-guide`, `/testing-react-apps` | 200 | **500** | **500** | 200 |
 | `/blog/typescript-best-practices` | 500 (shiki) | 500 | – | 500 (shiki) |
 | `/blog/nextjs-performance-tips` | not reached in base run | – | – | 500 (shiki) |
-| `/opengraph-image`, `/blog/opengraph-image`, post OG | 500 | 500 | 500 | not requested |
+| `/opengraph-image`, `/blog/opengraph-image`, post OG | 500 (module error) | 500 (module error) | 500 | 500 (module error; re-run with `security-fix-wasmer-compat.patch`, `replay-compat-og-magicui.log`) |
 | `/does-not-exist` | 404 | 404 | – | 404 |
 
 Causes (server logs in `replay-*.log`):
 - 16.3.8/16.4.2 `/blog` 500: `Cannot find module '@swc/helpers/_/_interop_require_default'` — next-bundle@1.0.0 copies `.pnpm/@swc+helpers@0.5.23` into the bundle but drops the pnpm symlink next resolves it through (same bug class as blinkshot). Anybuild doesn't stage `.npmrc`, so `node-linker=hoisted` can't be used as a fix.
 - shiki posts 500 (also on base): `Cannot find package 'shiki-2815f43ca43e8bcc'` — next-bundle doesn't resolve Turbopack's hashed external alias. Pre-existing.
-- OG 500/timeout: the OG routes `fetch()` remote images; outbound hosts are blocked here. Not a Next regression.
+- OG 500 (corrected 2026-10-22; an earlier note blamed blocked outbound fetches, which was wrong for this path): on the next-bundle path, all three OG functions fail with a module/runtime error before any network fetch. Base 16.1.1, `replay-base-magicui.log` lines 199-204: `ReferenceError: require is not defined in ES module scope, you can use import instead` at `.next-bundle/functions/opengraph-image.func/index.js:2:33`, `…/blog/opengraph-image.func/index.js:2:33`, `…/blog/[slug]/opengraph-image.func/index.js:2:33`. 16.3.8, `replay-sec-magicui.log` lines 233-238: the same error at `index.js:2:49`. Cause: next-bundle@1.0.0's `server.mjs` `require()`s the v8-worker edge bundle (`runtime = "edge"`). This is pre-existing and not a Next regression. Blocked egress only shows up under `next start` (`next-start-16.3.8.log` line 6, `next-start-compat-og.log`: `Can't load image https://dillion.io/me.png: fetch failed`, `ENOTFOUND dillion.io`). Details and a tested nodejs-runtime experiment (not adopted) are in `compat-investigation.md` § OG image routes.
 - Control: `next start` on the 16.3.8 build serves `/`, `/blog`, `/blog/api-design-principles` with 200 (`next-start-16.3.8.log`).
 
 ## Recommendation
 - The upstream security fix itself is correct and minimal: `security-fix.patch` (16.3.8 floor). It does not need the `@swc/helpers` line for `next start`/Vercel/Node hosting.
 - On Wasmer's current builder, 16.3.8 breaks `/blog` unless `@swc/helpers` is added explicitly, and even then code-highlighted posts 500 (pre-existing next-bundle limitation, now 2 posts observed). So PR46 should stay DRAFT/HOLD for Wasmer readiness until next-bundle handles pnpm symlinks and Turbopack hashed externals; report both to wasmerio. If root still wants a Wasmer-working variant, `security-fix-with-swc-helpers.patch` is the tested option, with the shiki limitation disclosed.
+- OG image routes are 500 on the next-bundle path on base and on every candidate, because of a next-bundle edge-function loading bug. No config-only fix makes them correct (see `compat-investigation.md`). This holds for the native-Node replay; the hosted Wasmer runtime binaries may differ.
+- PR46 stays DRAFT. Nothing here is READY.
 - No exploit was attempted and nothing was deployed.

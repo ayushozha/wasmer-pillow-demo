@@ -1,0 +1,93 @@
+# control: next start (node_modules/next/dist/bin/next start) on the same replay build (.next from og-compat-magicui), Node 24.22.1, port 3992
+## curl results (code content-type bytes path; 000 = connection closed with no response)
+200 text/html; charset=utf-8 391307 /
+200 text/html; charset=utf-8 56695 /blog
+200 text/html; charset=utf-8 53957 /blog/api-design-principles
+200 text/html; charset=utf-8 56137 /blog/typescript-best-practices
+000  0 /opengraph-image
+000  0 /blog/opengraph-image
+000  0 /blog/api-design-principles/opengraph-image
+000  0 /blog/typescript-best-practices/opengraph-image
+## egress proof
+$ node -e fetch(https://dillion.io/me.png)  (same Node 24, no proxy env, as the server process sees it)
+TypeError: fetch failed cause: Error: getaddrinfo ENOTFOUND dillion.io
+$ getent hosts dillion.io
+exit=2
+## server log (frames trimmed)
+▲ Next.js 16.3.8
+- Local:         http://127.0.0.1:3992
+- Network:       http://127.0.0.1:3992
+✓ Ready in 208ms
+✓ Running next.config.mjs took 88ms
+Can't load image https://dillion.io/me.png: fetch failed
+`z-index` is currently not supported.
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+Can't load image https://dillion.io/me.png: fetch failed
+`z-index` is currently not supported.
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+Can't load image https://dillion.io/me.png: fetch failed
+`z-index` is currently not supported.
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+Can't load image https://dillion.io/me.png: fetch failed
+`z-index` is currently not supported.
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}

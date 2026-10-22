@@ -1,0 +1,42 @@
+diff --git a/src/app/blog/[slug]/opengraph-image.tsx b/src/app/blog/[slug]/opengraph-image.tsx
+index 0e587b7..dd95488 100644
+--- a/src/app/blog/[slug]/opengraph-image.tsx
++++ b/src/app/blog/[slug]/opengraph-image.tsx
+@@ -4,7 +4,8 @@ import { ImageResponse } from "next/og";
+ import { allPosts } from "content-collections";
+ import { DATA } from "@/data/resume";
+ 
+-export const runtime = "edge";
++export const runtime = "nodejs";
++export const dynamic = "force-dynamic";
+ 
+ export const alt = "Blog Post";
+ export const size = {
+diff --git a/src/app/blog/opengraph-image.tsx b/src/app/blog/opengraph-image.tsx
+index 0842c42..cc0ce82 100644
+--- a/src/app/blog/opengraph-image.tsx
++++ b/src/app/blog/opengraph-image.tsx
+@@ -2,7 +2,8 @@
+ import { ImageResponse } from "next/og";
+ import { DATA } from "@/data/resume";
+ 
+-export const runtime = "edge";
++export const runtime = "nodejs";
++export const dynamic = "force-dynamic";
+ 
+ export const alt = "Blog";
+ export const size = {
+diff --git a/src/app/opengraph-image.tsx b/src/app/opengraph-image.tsx
+index 38a8727..3a1aa65 100644
+--- a/src/app/opengraph-image.tsx
++++ b/src/app/opengraph-image.tsx
+@@ -2,7 +2,8 @@
+ import { ImageResponse } from "next/og";
+ import { DATA } from "@/data/resume";
+ 
+-export const runtime = "edge";
++export const runtime = "nodejs";
++export const dynamic = "force-dynamic";
+ 
+ export const alt = DATA.name;
+ export const size = {
