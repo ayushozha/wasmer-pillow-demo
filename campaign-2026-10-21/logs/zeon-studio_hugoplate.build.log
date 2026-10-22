@@ -1,0 +1,138 @@
+# 2026-10-22T04:41:42Z zeon-studio/hugoplate @ 2f5a454ee708f5f2666414af9ef48df65570752a node v24.22.1 npm 11.19.1 hugo 0.162.0 go go1.24.7 (CI mirror: project-setup, npm install, build; copy of clone)
+$ npm run project-setup && npm install && npm run build
+
+> hugoplate@3.5.1 project-setup
+> node ./scripts/projectSetup.js
+
+
+> hugoplate@3.5.1 postinstall
+> node -e "const fs=require('fs'),p='node_modules/.bin/tailwindcss';try{fs.lstatSync(p).isSymbolicLink()||((fs.unlinkSync(p)),fs.symlinkSync('../@tailwindcss/cli/dist/index.mjs',p))}catch(e){}"
+
+
+added 70 packages, and audited 71 packages in 6s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+6 vulnerabilities (2 moderate, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.5.1 (install: node scripts/build-from-source.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+> hugoplate@3.5.1 build
+> node scripts/themeGenerator.js && hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic
+
+✅ Theme CSS generated successfully at: /tmp/claude-0/camp2/hugoplate_build/themes/hugoplate/assets/css/generated-theme.css
+hugo: downloading modules …
+hugo: collected modules in 3087 ms
+Start building sites … 
+hugo v0.162.0-076dfe13d0f789e3d9586b192f8f7f3329c26990+extended linux/amd64 BuildDate=2026-05-26T13:53:44Z VendorInfo=gohugoio
+
+
+Template Metrics:
+
+       cumulative       average       maximum      cache  percent  cached  total  
+         duration      duration      duration  potential   cached   count  count  template
+       ----------      --------      --------  ---------  -------  ------  -----  --------
+     4.552029942s   91.040598ms   916.73422ms         14        0       0     50  _partials/image.html
+     3.442293286s  3.442293286s  3.442293286s          0        0       0      1  home.html
+     1.998494241s   68.913594ms  501.039725ms        100       97      28     29  _partials/essentials/style.html
+     1.579726593s  1.579726593s  1.579726593s          0        0       0      1  about.html
+     1.548045668s   53.380885ms  376.306802ms         99        0       0     29  _partials/essentials/header.html
+      1.52304669s   26.259425ms  375.236075ms        100        0       0     58  _partials/logo.html
+     1.295763976s  1.295763976s  1.295763976s          0        0       0      1  authors/list.html
+     1.107422444s    38.18698ms  986.978238ms         84        0       0     29  _partials/essentials/head.html
+     1.028528312s   35.466493ms  986.738492ms         77        0       0     29  _partials/basic-seo.html
+     990.737459ms  495.368729ms  988.511482ms          0        0       0      2  single.html
+     939.055868ms  939.055868ms  939.055868ms          0        0       0      1  404.en.html
+     929.606022ms  309.868674ms   925.97215ms          0        0       0      3  _shortcodes/gallery.html
+     927.447594ms  309.149198ms  647.955325ms          0        0       0      3  authors/single.html
+      858.84691ms   23.856858ms  233.580055ms        100        0       0     36  _partials/image-pipe.html
+     606.554675ms   20.218489ms   309.13012ms         80        0       0     30  _partials/components/blog-card.html
+      398.54217ms   132.84739ms  397.011721ms         97        0       0      3  _partials/components/author-card.html
+     266.514984ms  266.514984ms  266.514984ms          0        0       0      1  list.searchindex.json
+     263.834097ms   32.979262ms  213.512004ms         81        0       0      8  _partials/searchimage.html
+       69.35344ms    17.33836ms   34.093278ms          0        0       0      4  blog/single.html
+      62.200246ms   62.200246ms   62.200246ms          0        0       0      1  index.webmanifest
+      60.929328ms    2.101011ms   18.200417ms        100       97      28     29  _partials/favicon.html
+       53.20747ms    5.320747ms   14.947691ms          0        0       0     10  term.html
+      45.346855ms   15.115618ms   43.801532ms          0        0       0      3  _shortcodes/image.html
+      40.186054ms   40.186054ms   40.186054ms        100        0       0      1  _partials/call-to-action.html
+      37.156675ms    1.281264ms   37.008932ms        100       97      28     29  _partials/essentials/script.html
+      24.103862ms     831.167µs    4.496198ms        100        0       0     29  _partials/essentials/footer.html
+       23.96666ms     855.952µs   10.925514ms          0        0       0     28  rss.xml
+      15.943917ms      549.79µs   15.326971ms        100        0       0     29  _partials/components/theme-switcher.html
+       8.205051ms    4.102525ms    4.710961ms          0        0       0      2  list.html
+       8.046539ms    4.023269ms    5.069635ms          0        0       0      2  taxonomy.html
+       7.931917ms    7.931917ms    7.931917ms          0        0       0      1  blog/list.html
+       5.837902ms    5.837902ms    5.837902ms          0        0       0      1  index.llms
+       5.825306ms     200.872µs    3.515334ms        100        0       0     29  _partials/search-modal.html
+       5.789405ms    5.789405ms    5.789405ms          0        0       0      1  sitemap.xml
+       5.779193ms     304.168µs    2.160292ms         75        0       0     19  _partials/page-header.html
+       5.041515ms    5.041515ms    5.041515ms          0        0       0      1  contact.html
+       3.649941ms      125.86µs     405.565µs        100        0       0     29  _partials/search-index.html
+       3.506577ms    1.168859ms    2.521406ms          0        0       0      3  _shortcodes/slider.html
+       2.591068ms     136.372µs    1.120157ms         71        0       0     19  _partials/components/breadcrumb.html
+        2.52989ms      87.237µs    2.479566ms        100       97      28     29  _partials/site-verifications.html
+       1.044793ms    1.044793ms    1.044793ms          0        0       0      1  index.llmsfull
+       1.040691ms      23.652µs      80.058µs          0        0       0     44  _markup/render-link.html
+        788.924µs     262.974µs     393.029µs          0        0       0      3  _shortcodes/tabs.html
+        639.274µs      42.618µs      97.586µs          0        0       0     15  _shortcodes/notice.html
+        609.805µs      67.756µs     149.322µs          0        0       0      9  _shortcodes/accordion.html
+        518.837µs       17.89µs     212.263µs        100       97      28     29  _partials/announcement.html
+        457.152µs     457.152µs     457.152µs          0        0       0      1  index.md
+        403.905µs     134.635µs      145.85µs          0        0       0      3  _shortcodes/youtube.html
+        295.614µs      73.903µs     102.417µs         98        0       0      4  _partials/social-share.html
+        282.396µs       9.737µs     166.553µs        100       97      28     29  _partials/preloader.html
+        254.625µs     254.625µs     254.625µs        100        0       0      1  _partials/widgets/widget-wrapper.html
+        228.471µs       8.159µs      39.662µs        100        0       0     28  partials/llms_full_is_valid_page.html
+        226.542µs       9.439µs      64.508µs        100        0       0     24  partials/llms_is_valid_page.html
+        212.518µs      70.839µs     130.602µs          0        0       0      3  _markup/render-codeblock-mermaid.html
+        207.161µs       7.143µs      72.399µs        100       97      28     29  _partials/manifest.html
+        200.061µs      11.114µs      37.304µs          0        0       0     18  list.md
+        186.664µs       6.436µs      42.173µs        100       97      28     29  _partials/custom-script.html
+        177.214µs       19.69µs      39.782µs          0        0       0      9  _shortcodes/tab.html
+        164.207µs      41.051µs      73.527µs        100        0       0      4  _partials/toc.html
+         160.05µs       5.518µs      11.848µs        100        0       0     29  _partials/components/language-switcher.html
+        159.904µs     159.904µs     159.904µs        100        0       0      1  _partials/widgets/categories.html
+        142.677µs      15.853µs      51.941µs          0        0       0      9  single.md
+        131.111µs      43.703µs      53.337µs          0        0       0      3  _shortcodes/video.html
+        118.594µs      39.531µs      51.724µs          0        0       0      3  _shortcodes/toc.html
+         110.29µs      36.763µs      41.121µs          0        0       0      3  _shortcodes/button.html
+        105.616µs      26.404µs      47.504µs        100        0       0      4  _partials/open-remark.html
+        100.619µs     100.619µs     100.619µs          0        0       0      1  _markup/render-table.html.html
+         93.337µs       3.218µs      59.379µs        100       97      28     29  _partials/gtm.html
+         74.266µs      74.266µs      74.266µs        100        0       0      1  _partials/components/pagination.html
+         70.776µs      70.776µs      70.776µs        100        0       0      1  _partials/widgets/tags.html
+          61.73µs       61.73µs       61.73µs          0        0       0      1  _markup/render-table.rss.xml
+         58.648µs      58.648µs      58.648µs          0        0       0      1  alias.html
+         46.237µs      46.237µs      46.237µs          0        0       0      1  _markup/render-table.llms.txt
+         41.555µs       1.432µs       8.493µs        100       97      28     29  _partials/gtm-noscript.html
+         13.763µs      13.763µs      13.763µs        100        0       0      1  _partials/pwa.html
+         10.635µs      10.635µs      10.635µs        100        0       0      1  _partials/cookie-consent.html
+          8.808µs       8.808µs       8.808µs        100        0       0      1  _partials/announcement-script.html
+          5.539µs       1.846µs       1.984µs        100        0       0      3  _partials/mermaid-js.html
+          4.616µs       4.616µs       4.616µs        100        0       0      1  _partials/adsense-script.html
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 90 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │  4 
+ Processed images │ 79 
+ Aliases          │  1 
+ Cleaned          │  0 
+
+Total in 6973 ms
+EXIT 0

@@ -12,7 +12,7 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BADGE = "img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white"
-ORDER = ["PUBLISHED", "READY", "HELD_BUILD", "HELD_POLICY", "EXCLUDED"]
+ORDER = ["PUBLISHED", "READY", "HOOK_BLOCKED", "HELD_BUILD", "HELD_POLICY", "EXCLUDED"]
 
 
 def main():

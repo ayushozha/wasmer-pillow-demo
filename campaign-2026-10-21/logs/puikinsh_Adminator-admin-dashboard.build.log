@@ -1,0 +1,70 @@
+# 2026-10-22T04:42:29Z puikinsh/Adminator-admin-dashboard @ 4c768545ad0c981c77669a7bf84de75b94d082e0 node v24.22.1 npm 11.19.1
+$ npm ci
+
+added 744 packages, and audited 745 packages in 11s
+
+275 packages are looking for funding
+  run `npm fund` for details
+
+14 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> adminator-admin-dashboard@4.4.0 build
+> npm run clean && cross-env NODE_ENV=production MINIFY=false webpack && npm run verify:build
+
+
+> adminator-admin-dashboard@4.4.0 clean
+> node scripts/clean.mjs
+
+assets by path *.html 207 KiB
+  asset datatable.html 29.7 KiB [emitted]
+  asset email.html 25.7 KiB [emitted]
+  asset index.html 22.2 KiB [emitted]
+  asset ui.html 16.5 KiB [emitted]
+  asset compose.html 13.5 KiB [emitted]
+  + 13 assets
+assets by info 2.05 MiB [immutable]
+  assets by path *.js 1.9 MiB
+    assets by status 1.67 MiB [big] 2 assets
+    + 3 assets
+  assets by path *.css 147 KiB
+    asset style.a3c04fee.css 123 KiB [emitted] [immutable] (name: 2026)
+    asset vendor-fullcalendar.8716d36d.css 21.3 KiB [emitted] [immutable] (name: vendor-fullcalendar)
+    asset vendor-jsvectormap.b0393f8b.css 3.66 KiB [emitted] [immutable] (name: vendor-jsvectormap)
+Entrypoint 2026 [big] 188 KiB = runtime.3f38b973.js 15.7 KiB style.a3c04fee.css 123 KiB 2026.4daf5cb4.js 49.9 KiB
+orphan modules 2 MiB (javascript) 2.62 KiB (runtime) [orphan] 90 modules
+runtime modules 11.2 KiB 16 modules
+cacheable modules 1.84 MiB (javascript) 147 KiB (css/mini-extract)
+  modules by path ./assets/ 1.84 MiB (javascript) 123 KiB (css/mini-extract)
+    ./assets/scripts/2026/index.js + 7 modules 52.4 KiB [built] [code generated]
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../node_modules/sass-loader/dist/cjs/index.js??ruleSet[1].rules[2].use[3]!./assets/styles/2026/index.scss 123 KiB [built] [code generated]
+    ./assets/scripts/2026/vendor-chartjs.js + 3 modules 506 KiB [built] [code generated]
+    ./assets/scripts/2026/vendor-jsvectormap.js + 2 modules 171 KiB [built] [code generated]
+    ./assets/scripts/2026/vendor-fullcalendar.js + 44 modules 1.12 MiB [built] [code generated]
+  modules by path ../ 25 KiB
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/jsvectormap/dist/jsvectormap.css 3.65 KiB [built] [code generated]
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/fullcalendar/skeleton.css 8.66 KiB [built] [code generated]
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/fullcalendar/themes/classic/theme.css 12.7 KiB [built] [code generated]
+webpack 5.111.1 compiled successfully in 2507 ms
+
+> adminator-admin-dashboard@4.4.0 verify:build
+> node scripts/verify-build.mjs
+
+Verified 18 pages and local asset references; initial JS/CSS: 188.1 KiB (38.8 KiB gzip).
+EXIT 0

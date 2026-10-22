@@ -1,0 +1,38 @@
+# 2026-10-22T04:42:01Z re-create staging commit WITH hooks (no bypass), node v18.20.8
+$ git commit -m "docs: add Wasmer Edge deploy option"
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module '/root/.cache/node/corepack/v1/pnpm/12.14.0/bin/pnpm.cjs'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at executeUserEntryPoint (node:internal/modules/run_main:128:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.20.8
+husky - pre-commit hook exited with code 1 (error)
+EXIT 1
+
+# 2026-10-22T04:42:10Z retry after installing pnpm 8.15.9 on PATH (hooks intact, no bypass), node v18.20.8
+$ git commit -m "docs: add Wasmer Edge deploy option"
+[STARTED] Preparing lint-staged...
+[COMPLETED] Preparing lint-staged...
+[STARTED] Running tasks for staged files...
+[STARTED] package.json — 2 files
+[STARTED] *.{astro,js,jsx,ts,tsx,md,mdx,json} — 2 files
+[STARTED] prettier --write --plugin-search-dir=.
+[COMPLETED] prettier --write --plugin-search-dir=.
+[COMPLETED] *.{astro,js,jsx,ts,tsx,md,mdx,json} — 2 files
+[COMPLETED] package.json — 2 files
+[COMPLETED] Running tasks for staged files...
+[STARTED] Applying modifications from tasks...
+[COMPLETED] Applying modifications from tasks...
+[STARTED] Cleaning up temporary files...
+[COMPLETED] Cleaning up temporary files...
+[deploy-to-wasmer b9f8d20] docs: add Wasmer Edge deploy option
+ 2 files changed, 6 insertions(+)
+EXIT 0

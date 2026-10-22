@@ -1,6 +1,6 @@
 {
   "repo": "JustGoodUI/dante-astro-theme",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 518,
   "stars_source": "GitHub search API via GitHub MCP (as ayushozha)",
   "stars_at": "2026-10-22T04:28Z",
@@ -22,5 +22,6 @@
   "pr_body": "pr-bodies/JustGoodUI_dante-astro-theme.md",
   "import_url": "https://wasmer.io/apps/create?github=JustGoodUI%2Fdante-astro-theme",
   "detection_verified": "pending Codex browser check",
-  "detect_log": "logs/JustGoodUI_dante-astro-theme.detect.json"
+  "detect_log": "logs/JustGoodUI_dante-astro-theme.detect.json",
+  "upstream_pr": "https://github.com/JustGoodUI/dante-astro-theme/pull/87 (OPEN, reported by root/Codex)"
 }

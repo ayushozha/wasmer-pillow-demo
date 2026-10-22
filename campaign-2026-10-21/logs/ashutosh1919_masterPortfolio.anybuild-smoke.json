@@ -1,0 +1,39 @@
+{
+  "dir": "/tmp/claude-0/e2e/ashutosh1919_masterPortfolio/.anybuild/local/build/opt/static_app",
+  "base": "/",
+  "html_files": 2,
+  "local_refs_checked": 14,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 5214,
+      "title": "Ashutosh's Portfolio"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 1891,
+      "title": "Single Page Apps for GitHub Pages"
+    },
+    "/static/js/main.0fe52970.chunk.js": {
+      "error": "HTTP Error 404: File not found"
+    },
+    "/static/css/main.62bf40f8.chunk.css": {
+      "status": 200,
+      "bytes": 88277,
+      "title": null
+    },
+    "/manifest.json": {
+      "status": 200,
+      "bytes": 920,
+      "title": null
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 1060,
+      "title": null
+    }
+  },
+  "ok": false
+}

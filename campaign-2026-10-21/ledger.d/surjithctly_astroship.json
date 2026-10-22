@@ -1,6 +1,6 @@
 {
   "repo": "surjithctly/astroship",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 1988,
   "stars_source": "GitHub search API via GitHub MCP (as ayushozha)",
   "stars_at": "2026-10-22T04:28Z",
@@ -22,5 +22,6 @@
   "pr_body": "pr-bodies/surjithctly_astroship.md",
   "import_url": "https://wasmer.io/apps/create?github=surjithctly%2Fastroship",
   "detection_verified": "pending Codex browser check",
-  "detect_log": "logs/surjithctly_astroship.detect.json"
+  "detect_log": "logs/surjithctly_astroship.detect.json",
+  "upstream_pr": "https://github.com/surjithctly/astroship/pull/68 (OPEN, reported by root/Codex)"
 }

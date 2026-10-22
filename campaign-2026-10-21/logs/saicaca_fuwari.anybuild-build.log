@@ -139,3 +139,112 @@ Done in 2.8s using pnpm v9.15.9
 04:41:28 [build] Collecting build info...
 04:41:28 [build] ✓ Completed in 1.51s.
 04:41:28 [build] Building static entrypoints...
+Browserslist: browsers data (caniuse-lite) is 20 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:41:33 [vite] [32m✓ built in 4.56s[39m
+04:41:33 [build] ✓ Completed in 4.61s.
+
+ building client (vite) 
+04:41:33 [vite] transforming...
+04:41:34 [vite] [32m✓[39m 161 modules transformed.
+04:41:34 [vite] rendering chunks...
+04:41:34 [vite] computing gzip size...
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[32mec.g1fg5.js                                              [39m[1m[2m 0.94 kB[22m[1m[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[35mLayout.DSulWsr7.css                                      [39m[1m[2m 4.42 kB[22m[1m[22m[2m │ gzip:  1.43 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[35mLayout.y4KPJ9hc.css                                      [39m[1m[2m14.04 kB[22m[1m[22m[2m │ gzip:  2.61 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[35mec.4fsv9.css                                             [39m[1m[2m19.69 kB[22m[1m[22m[2m │ gzip:  4.40 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36murl-utils.CoPbr7Wx.js                                    [39m[1m[2m 0.30 kB[22m[1m[22m[2m │ gzip:  0.21 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36minput.cX-djaPf.js                                        [39m[1m[2m 0.75 kB[22m[1m[22m[2m │ gzip:  0.43 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36msetting-utils.Cjv9PNp5.js                                [39m[1m[2m 1.01 kB[22m[1m[22m[2m │ gzip:  0.49 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwupScriptsPlugin.DeeT9ppa.js                            [39m[1m[2m 1.10 kB[22m[1m[22m[2m │ gzip:  0.62 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mpreload-helper.BlTxHScW.js                               [39m[1m[2m 1.11 kB[22m[1m[22m[2m │ gzip:  0.65 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mclient.svelte.BtEbdPyR.js                                [39m[1m[2m 1.13 kB[22m[1m[22m[2m │ gzip:  0.63 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mindex.modern.D46RI4Wq.js                                 [39m[1m[2m 1.77 kB[22m[1m[22m[2m │ gzip:  0.91 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mpage.Z8IJTFqj.js                                         [39m[1m[2m 2.15 kB[22m[1m[22m[2m │ gzip:  1.01 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mDisplaySettings.DO1ultQm.js                              [39m[1m[2m 2.16 kB[22m[1m[22m[2m │ gzip:  1.17 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwupHeadPlugin.DvOZNxAa.js                               [39m[1m[2m 2.58 kB[22m[1m[22m[2m │ gzip:  1.28 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mLightDarkSwitch.C4ULN93C.js                              [39m[1m[2m 3.33 kB[22m[1m[22m[2m │ gzip:  1.38 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mArchivePanel.BCllb_ib.js                                 [39m[1m[2m 3.61 kB[22m[1m[22m[2m │ gzip:  1.59 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36meach.DDW9_lxA.js                                         [39m[1m[2m 3.75 kB[22m[1m[22m[2m │ gzip:  1.88 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSearch.Cjw60ClJ.js                                       [39m[1m[2m 4.66 kB[22m[1m[22m[2m │ gzip:  2.05 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwupA11yPlugin.BIyElFLX.js                               [39m[1m[2m 5.25 kB[22m[1m[22m[2m │ gzip:  2.12 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwupPreloadPlugin.BFr0xV-N.js                            [39m[1m[2m 6.06 kB[22m[1m[22m[2m │ gzip:  2.35 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mzh_TW.CDCuNPt_.js                                        [39m[1m[2m 7.49 kB[22m[1m[22m[2m │ gzip:  2.59 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwupScrollPlugin.DTcbGiCQ.js                             [39m[1m[2m 8.00 kB[22m[1m[22m[2m │ gzip:  2.40 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mtranslation.B7CU8jZf.js                                  [39m[1m[2m 9.60 kB[22m[1m[22m[2m │ gzip:  4.43 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mLayout.astro_astro_type_script_index_0_lang.DAHrxWCB.js  [39m[1m[2m16.69 kB[22m[1m[22m[2m │ gzip:  5.41 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mIcon.D1kTP2rD.js                                         [39m[1m[2m20.41 kB[22m[1m[22m[2m │ gzip:  8.23 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mSwup.BWOMRtvc.js                                         [39m[1m[2m21.62 kB[22m[1m[22m[2m │ gzip:  7.41 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mrender.BTYFdy85.js                                       [39m[1m[2m27.51 kB[22m[1m[22m[2m │ gzip: 10.89 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mLayout.astro_astro_type_script_index_1_lang.D3pHS_Lp.js  [39m[1m[2m31.78 kB[22m[1m[22m[2m │ gzip: 15.33 kB[22m
+04:41:34 [vite] [2mdist/[22m[2m_astro/[22m[36mphotoswipe.esm.CKV1Bsxh.js                               [39m[1m[2m60.41 kB[22m[1m[22m[2m │ gzip: 17.48 kB[22m
+04:41:34 [vite] [32m✓ built in 1.06s[39m
+
+ generating static routes 
+04:41:34 ▶ src/pages/about.astro
+04:41:34   └─ /about/index.html (+36ms) 
+04:41:34 ▶ src/pages/archive.astro
+04:41:34   └─ /archive/index.html (+8ms) 
+04:41:34 ▶ src/pages/posts/[...slug].astro
+04:41:34   ├─ /posts/markdown-extended/index.html (+9ms) 
+04:41:34   ├─ /posts/expressive-code/index.html (+6ms) 
+04:41:34   ├─ /posts/guide/index.html (+6ms) 
+04:41:34   ├─ /posts/markdown/index.html (+5ms) 
+04:41:34   └─ /posts/video/index.html (+5ms) 
+04:41:34 λ src/pages/robots.txt.ts
+04:41:34   └─ /robots.txt (+2ms) 
+04:41:34 λ src/pages/rss.xml.ts
+04:41:34   └─ /rss.xml (+35ms) 
+04:41:34 ▶ src/pages/[...page].astro
+04:41:34   └─ /index.html (+8ms) 
+04:41:34 ✓ Completed in 281ms.
+
+ generating optimized images 
+04:41:34   ▶ /_astro/demo-avatar.CxcI0ivM_1nbuVe.webp (before: 406kB, after: 41kB) (+78ms) (1/2)
+04:41:34   ▶ /_astro/cover.CgGywNHJ_9MQNr.webp (before: 218kB, after: 144kB) (+243ms) (2/2)
+04:41:34 ✓ Completed in 244ms.
+
+04:41:34 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:41:34 [build] 8 page(s) built in 7.75s
+04:41:34 [build] Complete!
+
+Running Pagefind v1.4.0 (Extended)
+Running from: "/tmp/claude-0/e2e/saicaca_fuwari/.anybuild/local/build/opt/temp"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 8 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 6 pages
+  Indexed 678 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.043 seconds
+
+  $ cp -R dist/. /opt/static_app/
+
+  ╭──────────────────────────╮
+  │ Build complete in 13.57s │
+  ╰──────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/saicaca_fuwari/.anybuild/loca │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

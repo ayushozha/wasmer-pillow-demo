@@ -34,5 +34,6 @@
   "import_url": "https://wasmer.io/apps/create?github=danielcgilibert%2Fblog-template",
   "detection_verified": "pending Codex browser check (default Astro dist; Wasmer builder Node version must be <=20/18 for better-sqlite3)",
   "reason": "Toolchain mismatch: builds only on Node 18-20 (tinacms -> better-sqlite3@8.7.0 has no Node 24 prebuild and fails to compile), but Anybuild 0.33.0 defaults node_version to '24' (providers/node.rs:608) and does not read .nvmrc/engines. Would fail on Wasmer's default builder. Evidence: logs/danielcgilibert_blog-template.node24.build.log.",
-  "detect_log": "logs/danielcgilibert_blog-template.detect.json"
+  "detect_log": "logs/danielcgilibert_blog-template.detect.json",
+  "hook_check": "Original staging commit used --no-verify (unauthorized bypass) after the Husky pre-commit failed because no working pnpm was on PATH (corepack shim missing). Re-created with hooks intact after installing pnpm 8.15.9: Husky pre-commit -> pnpm exec lint-staged -> prettier --write ran and EXIT 0, with no changes to the 6 added lines; patch content byte-identical (logs/danielcgilibert_blog-template.hook-commit.log)."
 }

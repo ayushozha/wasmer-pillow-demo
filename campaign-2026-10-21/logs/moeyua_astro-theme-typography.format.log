@@ -1,3 +1,23 @@
 # 2026-10-22T04:41:09Z moeyua/astro-theme-typography eslint (@antfu/eslint-config, formatters: true) on patched READMEs
 $ npx -y pnpm@10.13.1 exec eslint README.md README.zh-CN.md
 EXIT 0
+# 2026-10-22T04:42:01Z moeyua/astro-theme-typography commit with repo pre-commit hook (simple-git-hooks: pnpm lint-staged)
+$ git commit -m "docs: add Wasmer Edge deploy option"
+[STARTED] Backing up original state...
+[COMPLETED] Backed up original state in git stash (2e74fd8)
+[STARTED] Running tasks for staged files...
+[STARTED] package.json — 2 files
+[STARTED] * — 2 files
+[STARTED] eslint --fix
+[COMPLETED] eslint --fix
+[COMPLETED] * — 2 files
+[COMPLETED] package.json — 2 files
+[COMPLETED] Running tasks for staged files...
+[STARTED] Applying modifications from tasks...
+[COMPLETED] Applying modifications from tasks...
+[STARTED] Cleaning up temporary files...
+[COMPLETED] Cleaning up temporary files...
+[deploy-to-wasmer a110341] docs: add Wasmer Edge deploy option
+ 2 files changed, 6 insertions(+)
+EXIT 0
+Hook ran via /opt/node22/bin/pnpm (corepack, repo packageManager -> pnpm 10.13.1); lint-staged 'eslint --fix' completed and made no further modifications (commit = 2 files, 6 insertions).

@@ -1,0 +1,62 @@
+# 2026-10-22T04:41:36Z satnaing/astro-paper patched commit 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (base 35cfa7fbe0b897306d27670d3819e55d5205f3dd) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/satnaing_astro-paper/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  pnpm               │  10      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ pnpm install
+
+  ▸ build
+    $ pnpm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/satnaing_astro-paper/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, pnpm@10
+
+  Working in /opt/temp
+
+  Copy to pnpm-lock.yaml from pnpm-lock.yaml
+
+  Setting environment variables: pnpm_config_minimum_release_age="0" CI="true" pnpm_config_dangerously_allow_all_builds="true" pnpm_config_strict_dep_builds="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ pnpm install # using package.json
+ ERROR  packages field missing or empty
+For help, run: pnpm help install
+Error: build failed for .: Command failed with exit code 1: pnpm install: Command failed with exit code 1: pnpm install
+EXIT 1

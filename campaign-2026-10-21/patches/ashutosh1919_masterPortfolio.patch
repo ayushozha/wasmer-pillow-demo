@@ -1,17 +1,55 @@
-From 36ad3627e94443a72dad668c1f4cb94e7d3d46fb Mon Sep 17 00:00:00 2001
+From 13640c1659f2e5cf231de8214d85a119f98eb0dc Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
-Date: Thu, 22 Oct 2026 04:36:08 +0000
+Date: Thu, 22 Oct 2026 04:42:33 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
- README.md | 6 ++++++
- 1 file changed, 6 insertions(+)
+ README.md | 27 ++++++++++++++++++---------
+ 1 file changed, 18 insertions(+), 9 deletions(-)
 
 diff --git a/README.md b/README.md
-index 93cd2d3..b5ffaf7 100644
+index 93cd2d3..0b86a0b 100644
 --- a/README.md
 +++ b/README.md
-@@ -230,6 +230,12 @@ If you are stuck somewhere and want to observe the deployment process in depth,
+@@ -46,15 +46,16 @@
+ To view a live example, **[click here](https://ashutosh1919.github.io/)**
+ 
+ # Table of Contents
+- - [Clone and Use](#clone-and-use)
+- - [Customizing](#customize-it-to-make-your-own-portfolio)
+- - [Choose Theme](#choose-theme)
+- - [Deployment](#deployment)
+- - [Technologies Used](#technologies-used)
+- - [Illustrations](#illustrations)
+- - [License](#license)
+- - [Contributors](#contributors)
+- - [References](#references)
++
++- [Clone and Use](#clone-and-use)
++- [Customizing](#customize-it-to-make-your-own-portfolio)
++- [Choose Theme](#choose-theme)
++- [Deployment](#deployment)
++- [Technologies Used](#technologies-used)
++- [Illustrations](#illustrations)
++- [License](#license)
++- [Contributors](#contributors)
++- [References](#references)
+ 
+ # Clone and Use 📋
+ 
+@@ -197,9 +198,11 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
+ - Also, keep in mind that your resume must be in A4 size.
+ - Now, go to <a href="/src/pages/resume/Resume.js">/src/pages/resume/Resume.js</a>.
+ - In the import section, find:
++
+ ```
+ import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
+ ```
++
+ - and replace **"Ashutosh_Hathidara_Resume_ML.pdf"** with your resume file name.
+ - Launch the project and go to the route `/resume` to view your resume.
+ 
+@@ -230,6 +233,12 @@ If you are stuck somewhere and want to observe the deployment process in depth,
    </a>
  </p>
  

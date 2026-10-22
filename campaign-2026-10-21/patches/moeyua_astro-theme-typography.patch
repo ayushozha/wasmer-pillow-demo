@@ -1,6 +1,6 @@
-From a3fbdcc9db4d53f4d02d85130191ab9246d7285b Mon Sep 17 00:00:00 2001
+From a110341ff02b4c6015ee750d976e9e46a04ae053 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
-Date: Thu, 22 Oct 2026 04:41:21 +0000
+Date: Thu, 22 Oct 2026 04:42:01 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---

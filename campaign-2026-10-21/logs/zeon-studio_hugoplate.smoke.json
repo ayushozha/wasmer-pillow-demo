@@ -1,0 +1,46 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 30,
+  "local_refs_checked": 13,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 28361,
+      "title": "Hugoplate"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 16988,
+      "title": "About"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 22773,
+      "title": "Blog Posts"
+    },
+    "/contact/": {
+      "status": 200,
+      "bytes": 15920,
+      "title": "Contact"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 15153,
+      "title": "Hugoplate"
+    },
+    "/index.xml": {
+      "status": 200,
+      "bytes": 6447,
+      "title": "Hugoplate"
+    },
+    "/searchindex.json": {
+      "status": 200,
+      "bytes": 11375,
+      "title": null
+    }
+  },
+  "ok": true
+}

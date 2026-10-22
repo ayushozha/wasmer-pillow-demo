@@ -1,0 +1,47 @@
+# 2026-10-22T04:42:39Z codewithsadee/vcard-personal-portfolio patched commit e52e85c75314de5ed14f049c1b3d1e8ca1743920 (base 927f09a6ef894a24cc8aef7a2e51f8e93ac306f7) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/e2e/codewithsadee_vcard-personal-portfolio/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static site provider declared in Anybuild
+    SWS version: 2.38.0
+
+  Packages
+  ──────────
+  static-web-server  │  2.38.0  │  only deploy
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/codewithsadee_vcard-personal-portfolio/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Working in /opt/static_app
+
+  Copy to . from . # ignoring .git
+
+  ╭─────────────────────────╮
+  │ Build complete in 0.00s │
+  ╰─────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/codewithsadee_vcard-personal- │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

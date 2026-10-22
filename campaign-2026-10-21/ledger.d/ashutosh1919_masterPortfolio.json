@@ -1,6 +1,6 @@
 {
   "repo": "ashutosh1919/masterPortfolio",
-  "status": "READY",
+  "status": "HOOK_BLOCKED",
   "stars": 4223,
   "stars_source": "GitHub MCP search_repositories (stargazers_count)",
   "stars_at": "2026-10-22T04:28:24Z",
@@ -27,9 +27,10 @@
   "policy": "Read README (Deployment section: GitHub Pages options as bold labels + bullets), CONTRIBUTING.md (fork/branch/PR welcome; wishlist items), CODE_OF_CONDUCT, workflows; no PR template or AI policy. No wasmer mention. Open PR #295 \"Netlify deployment\" (not refused). Closed #442 (CRA to Vite migration). Maintainer merged PRs as recently as 2026-01-20.",
   "why": "Popular CRA portfolio whose data is committed JSON, so it deploys as a static build/ with no secrets; README has a dedicated Deployment section.",
   "patch": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/patches/ashutosh1919_masterPortfolio.patch",
-  "pr_body": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/pr-bodies/ashutosh1919_masterPortfolio.md",
+  "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio",
   "detection_verified": "pending Codex browser check (CRA default build/; no Staticfile needed)",
-  "reason": null,
-  "detect_log": "logs/ashutosh1919_masterPortfolio.detect.json"
+  "reason": "HOOK_BLOCKED: the repo's own pre-commit formatter rewrites unrelated README content, so a minimal patch cannot be committed with hooks intact. Build/smoke/detection otherwise pass (CRA build/, node-static).",
+  "detect_log": "logs/ashutosh1919_masterPortfolio.detect.json",
+  "hook_check": "Original staging commit bypassed the repo's Husky v4 pre-commit (lint-staged -> prettier --write) with --no-verify; that bypass was not authorized. Re-created with hooks intact (logs/ashutosh1919_masterPortfolio.hook-commit.log): hook EXIT 0 but prettier rewrote unrelated README content (TOC indentation, blank lines around a code block), making the commit 18+/9- instead of a minimal README addition. patches/ashutosh1919_masterPortfolio.patch now holds the hooked commit; not publishable as a minimal change."
 }
