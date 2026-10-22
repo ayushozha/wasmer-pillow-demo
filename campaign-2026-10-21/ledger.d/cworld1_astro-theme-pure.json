@@ -1,0 +1,5 @@
+{
+  "repo": "cworld1/astro-theme-pure",
+  "status": "EXCLUDED",
+  "reason": "User/root research 2026-10-21: README static claim conflicts with current server output + Vercel image adapter. Do not prepare."
+}

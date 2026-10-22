@@ -1477,7 +1477,7 @@
       "framework": "VitePress 1.6.x, pnpm",
       "output_dir": ".vitepress/dist",
       "build_command": "pnpm install && pnpm run build",
-      "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/config.mts lines 104-105 (themeConfig.clientID Ov23lia9..., clientSecret b2418ab5...), consumed by theme/components/Gitalk.vue",
+      "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/config.mts lines 104-105 (themeConfig.clientID Ov23lia9..., clientSecret [redacted]), consumed by theme/components/Gitalk.vue",
       "wasmer_pr_search": "not run (held on source evidence first)",
       "detect_log": "anybuild plan on BASE only: provider node-static, framework vitepress, static_dir .vitepress/dist (output matches)",
       "detection_verified": "plan only",
@@ -1570,7 +1570,7 @@
       "framework": "VitePress 1.6.x, pnpm",
       "output_dir": ".vitepress/dist",
       "build_command": "pnpm install && pnpm run build",
-      "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/theme/components/Comments.vue lines 21-22 (clientID a8430bf8..., clientSecret df4cbf03...)",
+      "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/theme/components/Comments.vue lines 21-22 (clientID [redacted], clientSecret [redacted])",
       "wasmer_pr_search": "not run (held on source evidence first)",
       "detect_log": "anybuild plan on BASE only: provider node-static, framework vitepress, static_dir .vitepress/dist (output matches)",
       "detection_verified": "plan only",
@@ -1928,7 +1928,8 @@
       "patch": "patches/rockbenben_LearnData.patch (staged for root's decision; README-only, Chinese, adds '### \u90e8\u7f72\u5230 Wasmer Edge' after the Vercel subsection with the badge, fork/template-first guidance, build/output dir, hostname/Giscus settings to change, and the /reading/ gap). git apply --check on base sha: OK. Commit 3ea049a1fd00f21c55a37e779148f1d8356bb621 authored Claude <noreply@anthropic.com>, branch deploy-to-wasmer in /tmp/claude-0/camp2/rockbenben_LearnData.",
       "pr_body": null,
       "import_url": "https://wasmer.io/apps/create?github=rockbenben%2FLearnData",
-      "reason": "v3 hold: no outside merges in years (last outside merge 2023-05-16, by the theme author; very few outside PRs at all). Technically everything passes (build, plan, replay, SWS); root may override this soft hold, in which case a PR body still needs writing. Also flag the missing LICENSE file."
+      "reason": "v3 hold: no outside merges in years (last outside merge 2023-05-16, by the theme author; very few outside PRs at all). Technically everything passes (build, plan, replay, SWS); root may override this soft hold, in which case a PR body still needs writing. Also flag the missing LICENSE file.",
+      "publication_note": "Soft HELD_POLICY: passes every technical gate (build, plan, replay, SWS) but the last outside merge was 2023-05 (5 non-bot PRs ever); no LICENSE file (MIT per package.json/README). Patch staged; override only with root decision; no PR body yet."
     },
     {
       "stars_source": "GitHub MCP search_repositories",
@@ -2108,6 +2109,11 @@
       "sws_smoke": "not run",
       "format_check": "N/A",
       "detection_verified": "not checked in browser; held"
+    },
+    {
+      "repo": "cworld1/astro-theme-pure",
+      "status": "EXCLUDED",
+      "reason": "User/root research 2026-10-21: README static claim conflicts with current server output + Vercel image adapter. Do not prepare."
     },
     {
       "repo": "jianjianai/FList",

@@ -1,11 +1,77 @@
-# 2026-10-22T05:38:12Z kuizuo/blog @ 85e290acd7a9ef6f3510031cf0b23dcb60d00847 (patched) node v24.22.1 pnpm 9.15.4
+# 2026-10-22T05:38:26Z kuizuo/blog @ b1f141e4a695aa2689c192f42fe91005431ef005 (patched) node v24.22.1 pnpm 9.15.4
 # Manual replay of node.bzl all_files branch (plan: node_install_requires_all_files=true): copy('.', ignore=[node_modules,.git]) -> env -> pnpm install -> pnpm run build -> static_dir build
 # env: CI=true pnpm_config_minimum_release_age=0 pnpm_config_dangerously_allow_all_builds=true pnpm_config_strict_dep_builds=false
-$ tar --exclude=./node_modules --exclude=./.git -cf - . | tar -xf - -C opt/temp
+$ (cd src && tar --exclude=./node_modules --exclude=./.git -cf - . | tar -xf - -C opt/temp)
 EXIT 0
-$ pnpm install
- ERR_PNPM_NO_PKG_MANIFEST  No package.json found in /tmp/claude-0/flat-replay/kuizuo_blog/opt/temp
-EXIT 1
-$ pnpm run build
- ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND  No package.json (or package.yaml, or package.json5) was found in "/tmp/claude-0/flat-replay/kuizuo_blog/opt/temp".
-EXIT 1
+$ (cd opt/temp && pnpm install)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1597
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1597, reused 302, downloaded 0, added 0
+Progress: resolved 1597, reused 1424, downloaded 0, added 0
+Progress: resolved 1597, reused 1596, downloaded 0, added 536
+Progress: resolved 1597, reused 1596, downloaded 0, added 1350
+Progress: resolved 1597, reused 1596, downloaded 0, added 1597, done
+
+dependencies:
++ @docusaurus/core 3.10.1
++ @docusaurus/faster 3.10.1
++ @docusaurus/plugin-ideal-image 3.10.1
++ @docusaurus/plugin-pwa 3.10.1
++ @docusaurus/plugin-vercel-analytics 3.10.1
++ @docusaurus/preset-classic 3.10.1
++ @docusaurus/theme-search-algolia 3.10.1
++ @giscus/react 3.1.0
++ @popperjs/core 2.11.8
++ @radix-ui/react-slot 1.1.1
++ @tailwindcss/postcss 4.3.1
++ class-variance-authority 0.7.1
++ docusaurus-plugin-baidu-tongji 0.0.0-beta.4
++ docusaurus-plugin-image-zoom 2.0.0
++ mini-svg-data-uri 1.4.4
++ motion 12.24.10
++ ora 8.1.1
++ plyr 3.8.4
++ postcss 8.5.15
++ prism-react-renderer 2.4.1
++ raw-loader 4.0.2
++ react 19.0.0
++ react-dom 19.0.0
++ react-github-calendar 4.5.4
++ react-icon-cloud 4.1.7
++ react-popper 2.3.0
++ react-tweet 3.3.0
++ tailwind-merge 3.6.0
++ tailwindcss 4.3.1
+
+devDependencies:
++ @docusaurus/module-type-aliases 3.10.1
++ @docusaurus/tsconfig 3.10.1
++ @docusaurus/types 3.10.1
++ @iconify/react 5.2.0
++ @inquirer/prompts 8.5.2
++ @stylistic/eslint-plugin 2.13.0
++ @swc/helpers 0.5.23
++ @tailwindcss/typography 0.5.20
++ @typescript-eslint/eslint-plugin 8.20.0
++ eslint 9.39.2
++ eslint-plugin-react 7.37.4
++ eslint-plugin-tailwindcss 3.18.3
++ typescript 5.7.3
++ typescript-eslint 8.20.0
+
+Done in 7.3s
+EXIT 0
+$ (cd opt/temp && pnpm run build)
+
+> blog@3.0.0 build /tmp/claude-0/flat-replay/kuizuo_blog/opt/temp
+> docusaurus build
+
+[INFO] [zh-CN] Creating an optimized production build...
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+EXIT 0

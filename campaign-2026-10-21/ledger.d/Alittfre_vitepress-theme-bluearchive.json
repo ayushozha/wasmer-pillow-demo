@@ -20,7 +20,7 @@
   "framework": "VitePress 1.6.x, pnpm",
   "output_dir": ".vitepress/dist",
   "build_command": "pnpm install && pnpm run build",
-  "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/config.mts lines 104-105 (themeConfig.clientID Ov23lia9..., clientSecret b2418ab5...), consumed by theme/components/Gitalk.vue",
+  "policy": "Read package.json, .vitepress config/theme, CI. Found Gitalk OAuth clientID+clientSecret hardcoded in client-shipped code: .vitepress/config.mts lines 104-105 (themeConfig.clientID Ov23lia9..., clientSecret [redacted]), consumed by theme/components/Gitalk.vue",
   "wasmer_pr_search": "not run (held on source evidence first)",
   "detect_log": "anybuild plan on BASE only: provider node-static, framework vitepress, static_dir .vitepress/dist (output matches)",
   "detection_verified": "plan only",
