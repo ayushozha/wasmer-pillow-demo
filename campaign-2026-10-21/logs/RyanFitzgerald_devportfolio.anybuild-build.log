@@ -1,0 +1,121 @@
+# 2026-10-22T04:41:13Z RyanFitzgerald/devportfolio patched commit b568bd964c39bf466f3b4630b5f5c27d752aa583 (base 852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/RyanFitzgerald_devportfolio/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  npm                │  11      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ npm install
+
+  ▸ build
+    $ npm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/RyanFitzgerald_devportfolio/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, npm@11
+
+  Working in /opt/temp
+
+  Copy to package-lock.json from package-lock.json
+
+  Setting environment variables: CI="true" NPM_CONFIG_FUND="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ npm install # using package.json
+
+added 313 packages, and audited 314 packages in 5s
+
+17 vulnerabilities (1 low, 1 moderate, 13 high, 2 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @tailwindcss/oxide@4.1.11 (postinstall: node ./scripts/install.js)
+npm warn install-scripts   esbuild@0.25.8 (postinstall: node install.js)
+npm warn install-scripts   sharp@0.33.5 (install: node install/check)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+  Copy to . from . # ignoring node_modules, .git, package-lock.json
+
+  $ npm run build
+
+> devportfolio@0.0.1 build
+> astro build
+
+04:41:19 [content] Syncing content
+04:41:19 [content] Synced content
+04:41:19 [types] Generated 98ms
+04:41:19 [build] output: "static"
+04:41:19 [build] mode: "static"
+04:41:19 [build] directory: /tmp/claude-0/e2e/RyanFitzgerald_devportfolio/.anybuild/local/build/opt/temp/dist/
+04:41:19 [build] Collecting build info...
+04:41:19 [build] ✓ Completed in 111ms.
+04:41:19 [build] Building static entrypoints...
+04:41:20 [vite] [32m✓ built in 760ms[39m
+04:41:20 [build] ✓ Completed in 796ms.
+
+ building client (vite) 
+04:41:20 [vite] transforming...
+04:41:20 [vite] [32m✓[39m 1 modules transformed.
+04:41:20 [vite] rendering chunks...
+04:41:20 [vite] [32m✓ built in 16ms[39m
+
+ generating static routes 
+04:41:20 ▶ src/pages/index.astro
+04:41:20   └─ /index.html (+11ms) 
+04:41:20 ✓ Completed in 25ms.
+
+04:41:20 [build] 1 page(s) built in 962ms
+04:41:20 [build] Complete!
+
+  $ cp -R dist/. /opt/static_app/
+
+  ╭─────────────────────────╮
+  │ Build complete in 7.05s │
+  ╰─────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/RyanFitzgerald_devportfolio/. │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

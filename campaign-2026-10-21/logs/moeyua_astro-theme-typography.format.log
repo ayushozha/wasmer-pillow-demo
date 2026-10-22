@@ -1,0 +1,3 @@
+# 2026-10-22T04:41:09Z moeyua/astro-theme-typography eslint (@antfu/eslint-config, formatters: true) on patched READMEs
+$ npx -y pnpm@10.13.1 exec eslint README.md README.zh-CN.md
+EXIT 0

@@ -1,0 +1,141 @@
+# 2026-10-22T04:41:21Z saicaca/fuwari patched commit e3eb80a4f67951fb0e3747ed434f1d1c3fc6705e (base 6d39b0dec41282e7852e23e032998a5789abee28) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/saicaca_fuwari/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  pnpm               │  9.14.4  │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ pnpm install
+
+  ▸ build
+    $ pnpm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/saicaca_fuwari/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, pnpm@9.14.4
+
+  Working in /opt/temp
+
+  Copy to pnpm-lock.yaml from pnpm-lock.yaml
+
+  Setting environment variables: pnpm_config_minimum_release_age="0" CI="true" pnpm_config_dangerously_allow_all_builds="true" pnpm_config_strict_dep_builds="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ pnpm install # using package.json
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1115
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1115, reused 1112, downloaded 0, added 271
+Progress: resolved 1115, reused 1112, downloaded 0, added 1115, done
+
+dependencies:
++ @astrojs/check 0.9.6
++ @astrojs/rss 4.0.14
++ @astrojs/sitemap 3.6.0
++ @astrojs/svelte 7.2.3
++ @astrojs/tailwind 6.0.2
++ @expressive-code/core 0.41.4
++ @expressive-code/plugin-collapsible-sections 0.41.4
++ @expressive-code/plugin-line-numbers 0.41.4
++ @fontsource-variable/jetbrains-mono 5.2.8
++ @fontsource/roboto 5.2.9
++ @iconify-json/fa6-brands 1.2.6
++ @iconify-json/fa6-regular 1.2.4
++ @iconify-json/fa6-solid 1.2.4
++ @iconify-json/material-symbols 1.2.50
++ @iconify/svelte 4.2.0
++ @swup/astro 1.7.0
++ @tailwindcss/typography 0.5.19
++ astro 5.13.10
++ astro-expressive-code 0.41.4
++ astro-icon 1.1.5
++ hastscript 9.0.1
++ katex 0.16.27
++ markdown-it 14.1.0
++ mdast-util-to-string 4.0.0
++ overlayscrollbars 2.12.0
++ pagefind 1.4.0
++ photoswipe 5.4.4
++ reading-time 1.5.0
++ rehype-autolink-headings 7.1.0
++ rehype-components 0.3.0
++ rehype-katex 7.0.1
++ rehype-slug 6.0.0
++ remark-directive 3.0.1
++ remark-directive-rehype 0.4.2
++ remark-github-admonitions-to-directives 1.0.5
++ remark-math 6.0.0
++ remark-sectionize 2.1.0
++ sanitize-html 2.17.0
++ sharp 0.34.5
++ stylus 0.64.0
++ svelte 5.39.8
++ tailwindcss 3.4.19
++ typescript 5.9.3
++ unist-util-visit 5.0.0
+
+devDependencies:
++ @astrojs/ts-plugin 1.10.6
++ @biomejs/biome 2.2.5
++ @rollup/plugin-yaml 4.1.2
++ @types/hast 3.0.4
++ @types/markdown-it 14.1.2
++ @types/mdast 4.0.4
++ @types/sanitize-html 2.16.0
++ postcss-import 16.1.1
++ postcss-nesting 13.0.2
+
+Done in 2.8s using pnpm v9.15.9
+
+  Copy to . from . # ignoring node_modules, .git, pnpm-lock.yaml
+
+  $ pnpm run build
+
+> fuwari@0.0.1 build /tmp/claude-0/e2e/saicaca_fuwari/.anybuild/local/build/opt/temp
+> astro build && pagefind --site dist
+
+04:41:27 [vite] Forced re-optimization of dependencies
+04:41:27 [content] Syncing content
+04:41:28 [content] Synced content
+04:41:28 [types] Generated 1.35s
+04:41:28 [build] output: "static"
+04:41:28 [build] mode: "static"
+04:41:28 [build] directory: /tmp/claude-0/e2e/saicaca_fuwari/.anybuild/local/build/opt/temp/dist/
+04:41:28 [build] Collecting build info...
+04:41:28 [build] ✓ Completed in 1.51s.
+04:41:28 [build] Building static entrypoints...

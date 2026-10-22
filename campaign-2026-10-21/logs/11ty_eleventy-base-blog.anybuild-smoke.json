@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/e2e/11ty_eleventy-base-blog/.anybuild/local/build/opt/static_app",
+  "base": "/",
+  "html_files": 13,
+  "local_refs_checked": 17,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 8378,
+      "title": "Eleventy Base Blog v9"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 8471,
+      "title": "Eleventy Base Blog v9"
+    },
+    "/blog/firstpost/": {
+      "status": 200,
+      "bytes": 12642,
+      "title": "This is my first post."
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 7675,
+      "title": "Eleventy Base Blog v9"
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 7933,
+      "title": "Eleventy Base Blog v9"
+    },
+    "/feed/feed.xml": {
+      "status": 200,
+      "bytes": 11527,
+      "title": "Blog Title"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 8221,
+      "title": "Eleventy Base Blog v9"
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,41 @@
+From a3fbdcc9db4d53f4d02d85130191ab9246d7285b Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:41:21 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md       | 3 +++
+ README.zh-CN.md | 3 +++
+ 2 files changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index 79c933b..cbeea47 100644
+--- a/README.md
++++ b/README.md
+@@ -47,6 +47,9 @@ You can fork the repository to your account by clicking the Fork button in the u
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=moeyua%2Fastro-theme-typography)
++
++The Wasmer button imports this repository; to publish your own blog and redeploy on push, import your fork instead.
+ 
+ Or you can refer to the [Astro](https://docs.astro.build/guides/deploy/) documentation to deploy to your favorite platform.
+ 
+diff --git a/README.zh-CN.md b/README.zh-CN.md
+index 22eb61f..8692b34 100644
+--- a/README.zh-CN.md
++++ b/README.zh-CN.md
+@@ -47,6 +47,9 @@
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=moeyua%2Fastro-theme-typography)
++
++Wasmer 按钮会导入本仓库；如需发布你自己的博客并在推送后自动重新部署，请改为导入你 Fork 的仓库。
+ 
+ 或者你也可以参考[Astro](https://docs.astro.build/zh-cn/guides/deploy/)的文档，部署到你喜欢的平台。
+ 
+-- 
+2.43.0
+
