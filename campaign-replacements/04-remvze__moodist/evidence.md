@@ -2,6 +2,9 @@
 
 **Verdict: READY.** All 91 sound files in the repo, every other asset the app references and all 121 service-worker precache URLs returned 200 from the replayed build. The limitations below (third-party features, fonts not fetched in this sandbox, nothing tested in a browser) are disclosed in PR_BODY.md.
 
+> Decision point for root (2026-10-22): a Wasmer deployment re-hosts all 91 sound files (~122 MB). Upstream already publishes them in the repo and on moodist.app and promotes self-hosting, but the README only says *some* sounds are Pixabay Content License or CC0 and leaves the rest unstated. The PR body discloses this; root decides whether that is acceptable before publishing.
+
+
 ## Repository
 - Pinned SHA: `11c0be2200116a3635880d600fd6953899cc51a3` on branch `main`.
 - Stars / forks: 3,901 / 335. The repo is not archived and was last pushed 2026-09-27 (GitHub API, 2026-10-22).
