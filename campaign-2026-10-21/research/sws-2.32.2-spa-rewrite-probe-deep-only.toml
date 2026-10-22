@@ -1,0 +1,13 @@
+# SWS 2.32.2 rewrite probe: rewrites ONLY /__wasmer_spa_probe__/deep to /index.html.
+# Syntax: static-web-server v2.32.2 (commit e61c97e76fcd2ae3b4c9e4133ff145a16bc6eb04)
+#   docs/content/features/url-rewrites.md: [[advanced.rewrites]] with `source` (glob) and `destination`;
+#   with no `redirect` key the rewrite is internal (the destination file is served, no 3xx).
+#   docs/content/configuration/config-file.md: enabled via -w/--config-file or SERVER_CONFIG_FILE.
+# No wildcards: this literal glob should match only this exact path, so missing assets keep returning 404.
+# No [general] section, so --root/--host/--port stay on the command line.
+
+[advanced]
+
+[[advanced.rewrites]]
+source = "/__wasmer_spa_probe__/deep"
+destination = "/index.html"

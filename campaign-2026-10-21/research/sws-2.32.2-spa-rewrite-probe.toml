@@ -1,0 +1,21 @@
+# SWS 2.32.2 SPA rewrite probe (exact-path, NOT a catch-all).
+# Source: static-web-server tag v2.32.2 (commit e61c97e7)
+#   docs/content/features/url-rewrites.md L9-15  : [[advanced.rewrites]] array of tables, keys source/destination/redirect
+#   docs/content/features/url-rewrites.md L47    : no `redirect` key => internal rewrite (file served, no 3xx)
+#   docs/content/configuration/config-file.md L101,L138-146 : [advanced] / [[advanced.rewrites]] syntax
+#   src/settings/file.rs L141-151 (Rewrites struct), L163-175 (Advanced struct)
+#   src/settings/mod.rs L441-487 : each `source` compiled with globset Glob::new -> anchored regex
+# No [general] section on purpose: --root/--host/--port stay on the command line
+# (config-file.md L178: file options would otherwise take precedence).
+
+[advanced]
+
+# Literal glob (no wildcards) => matches only this exact URI path.
+[[advanced.rewrites]]
+source = "/__wasmer_spa_probe__/deep"
+destination = "/index.html"
+
+# Second, separate exact nested route.
+[[advanced.rewrites]]
+source = "/__wasmer_spa_probe__/nested/route"
+destination = "/index.html"
