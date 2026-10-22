@@ -1,0 +1,241 @@
+$ node -v; npm -v; git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/07-once-ui-system__magic-portfolio rev-parse HEAD
+v22.22.0
+10.9.4
+76ae5e33e97599eaf209a4d9d844c4a77b3cc904
+exit=0
+
+$ npm ci
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 324 packages, and audited 325 packages in 24s
+
+175 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (4 low, 4 moderate)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+exit=0
+
+$ npm run build
+
+> @once-ui-system/magic-portfolio@2.3.0 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.mjs took 56ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 72s
+  Running TypeScript ...
+  Finished TypeScript in 13.2s ...
+  Collecting page data using 3 workers ...
+⚠ The Edge Runtime is deprecated. You can use the "nodejs" runtime instead. Learn more: https://nextjs.org/docs/messages/edge-runtime-deprecated
+⚠ Using edge runtime on a page currently disables static generation for that page
+  Generating static pages using 3 workers (0/29) ...
+  Generating static pages using 3 workers (7/29) 
+  Generating static pages using 3 workers (14/29) 
+  Generating static pages using 3 workers (21/29) 
+✓ Generating static pages using 3 workers (29/29) in 6.2s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ƒ /api/authenticate
+├ ƒ /api/check-auth
+├ ƒ /api/og/fetch
+├ ƒ /api/og/generate
+├ ƒ /api/og/proxy
+├ ○ /api/rss
+├ ○ /blog
+├   /blog/[slug]
+│ ├ ● /blog/blog
+│ ├ ● /blog/components
+│ ├ ● /blog/content
+│ └ ● [+8 more paths]
+├ ○ /gallery
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ○ /work
+└   /work/[slug]
+  ├ ● /work/automate-design-handovers-with-a-figma-to-code-pipeline
+  ├ ● /work/building-once-ui-a-customizable-design-system
+  └ ● /work/simple-portfolio-builder
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+exit=0
+
+## Run 1: production start WITHOUT PAGE_ACCESS_PASSWORD
+$ (cd 07-once-ui-system__magic-portfolio && PORT=3202 npm start) &
+
+> @once-ui-system/magic-portfolio@2.3.0 start
+> next start
+
+▲ Next.js 16.4.2
+- Local:         http://localhost:3202
+- Network:       http://192.0.2.2:3202
+✓ Ready in 428ms
+✓ Running next.config.mjs took 199ms
+ready=1 after 3s
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/
+200 bytes=74358 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/blog
+200 bytes=61214 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/blog/quick-start
+200 bytes=74206 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/work/simple-portfolio-builder
+200 bytes=61251 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/work/automate-design-handovers-with-a-figma-to-code-pipeline
+200 bytes=76725 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/api/rss
+200 bytes=6808 type=application/xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/api/check-auth
+401 bytes=23 type=application/json
+$ grep -c 'Selene Yu' home.html; grep -c '<rss' api_rss
+14
+1
+$ curl -X POST /api/authenticate -d '{"password":"x"}'  (env unset)
+{"message":"Internal server error"} http=500
+$ kill server; server log tail:
+
+> @once-ui-system/magic-portfolio@2.3.0 start
+> next start
+
+▲ Next.js 16.4.2
+- Local:         http://localhost:3202
+- Network:       http://192.0.2.2:3202
+✓ Ready in 428ms
+✓ Running next.config.mjs took 199ms
+PAGE_ACCESS_PASSWORD environment variable is not set
+
+## Run 2: production start WITH PAGE_ACCESS_PASSWORD=smoke-test-only-3f9a (throwaway local value)
+$ (cd 07-once-ui-system__magic-portfolio && PORT=3203 PAGE_ACCESS_PASSWORD=smoke-test-only-3f9a npm start) &
+
+> @once-ui-system/magic-portfolio@2.3.0 start
+> next start
+
+▲ Next.js 16.4.2
+- Local:         http://localhost:3203
+- Network:       http://192.0.2.2:3203
+✓ Ready in 376ms
+✓ Running next.config.mjs took 53ms
+ready=1 after 3s
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3203/work/automate-design-handovers-with-a-figma-to-code-pipeline
+200 bytes=76725 type=text/html; charset=utf-8
+$ curl -X POST /api/authenticate -d '{"password":"wrong"}'
+{"message":"Incorrect password"} http=401
+$ curl -X POST /api/authenticate -d '{"password":"smoke-test-only-3f9a"}'
+{"success":true} http=200
+set-cookie: authToken=authenticated; Max-Age=3600; Path=/; HttpOnly; Secure; SameSite=Strict
+$ curl -b cookiejar /api/check-auth
+{"authenticated":true} http=200
+$ kill server; server log tail:
+
+> @once-ui-system/magic-portfolio@2.3.0 start
+> next start
+
+▲ Next.js 16.4.2
+- Local:         http://localhost:3203
+- Network:       http://192.0.2.2:3203
+✓ Ready in 376ms
+✓ Running next.config.mjs took 53ms
+
+## Observation: protected route body present in UNAUTHENTICATED response (no cookie)
+$ grep -c 'Key Features' / 'Technologies Used' / 'Challenges and Learnings' in unauthenticated GET of the protected route
+Key Features: 1
+Technologies Used: 1
+Challenges and Learnings: 1
+(RouteGuard is a client component; the gate is UI-only, the MDX body ships in the HTML/RSC payload)
+
+## Emulation of Anybuild's Next.js build/start (wasmerio/shipit@587be23 node.rs:458-475,1646-1667): next-bundle@1.0.0 wrapping the repo build script, then node .next-bundle/server.mjs
+$ npx -y next-bundle@1.0.0 --build-command 'npm run build'
+sh: 1: next-bundle: not found
+exit=127
+
+## Retry (first npx run above failed with 'next-bundle: not found', likely a concurrent npx cache fetch; the same command works when re-run)
+$ npx -y next-bundle@1.0.0 --build-command 'npm run build'
+│ ├ ● /blog/components
+│ ├ ● /blog/content
+│ └ ● [+8 more paths]
+├ ○ /gallery
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ○ /work
+└   /work/[slug]
+  ├ ● /work/automate-design-handovers-with-a-figma-to-code-pipeline
+  ├ ● /work/building-once-ui-a-customizable-design-system
+  └ ● /work/simple-portfolio-builder
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Traced Next.js server files in: 61.087ms
+Created all serverless functions in: 702.669ms
+Collected static files (public/, static/, .next/static): 86.01ms
+Build output written to .next-bundle
+Materialized 920 traced files into .next-bundle/node_modules
+Materialized 279 function files and 11 shared dependency files
+Materialized 57 local runtime package files
+Run it with: node .next-bundle/server.mjs
+exit=0
+
+## Serve emulation: cp -R .next-bundle into an empty app dir (node.bzl:209-211), start 'node .next-bundle/server.mjs' (node.rs:473-475)
+$ (cd app07 && PORT=3206 node .next-bundle/server.mjs) &
+Serving /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/app07/.next-bundle
+Listening on http://127.0.0.1:3206
+ready=1 after 2s
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/
+200 bytes=74358 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/blog
+200 bytes=61214 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/blog/quick-start
+200 bytes=50887 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/work/simple-portfolio-builder
+200 bytes=50612 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/work/automate-design-handovers-with-a-figma-to-code-pipeline
+200 bytes=50674 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/api/rss
+404 bytes=0 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3206/api/check-auth
+401 bytes=23 type=application/json
+Selene Yu on /: 2
+$ curl -X POST /api/authenticate (PAGE_ACCESS_PASSWORD unset)
+{"message":"Internal server error"} http=500
+$ kill server; server log tail:
+Serving /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/app07/.next-bundle
+Listening on http://127.0.0.1:3206
+PAGE_ACCESS_PASSWORD environment variable is not set
+
+## Re-check /api/rss on a fresh next-bundle server (port 3208)
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3208/api/rss
+404 bytes=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3208/api/rss/
+404 bytes=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3208/
+200 bytes=74358
+$ ls .next-bundle/functions/api/ | grep rss
+rss.func
+rss.prerender-config.json
+rss.prerender-fallback.body
+rss.rsc.func
+$ head -c 120 .next-bundle/functions/api/rss.prerender-fallback.body
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <tit

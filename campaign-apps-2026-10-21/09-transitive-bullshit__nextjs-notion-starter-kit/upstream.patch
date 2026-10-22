@@ -1,0 +1,29 @@
+diff --git a/readme.md b/readme.md
+index a0b45c9..e695ce1 100644
+--- a/readme.md
++++ b/readme.md
+@@ -15,6 +15,7 @@
+ - [Demos](#demos)
+ - [Setup](#setup)
+   - [Vercel Configuration](#vercel-configuration)
++  - [Deploy on Wasmer](#deploy-on-wasmer)
+ - [URL Paths](#url-paths)
+ - [Preview Images](#preview-images)
+   - [Redis](#redis)
+@@ -89,6 +90,16 @@ From your Vercel project settings, you'll want to **disable Vercel Authenticatio
+ 
+ 💡 If you forget to do this your site will return `401 Unauthorized` responses when crawlers are trying to retrieve the images.
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=transitive-bullshit%2Fnextjs-notion-starter-kit)
++
++Wasmer detects Next.js, runs the project's `build` script (`pnpm run build`, which fetches your public Notion pages) and serves the production build with Node.
++
++The button builds this public repository as-is; it does not fork or copy it into your GitHub account. To point the site at your own Notion page via `rootNotionPageId` in [site.config.ts](./site.config.ts) and redeploy on every push, fork the repo and connect your fork from the Wasmer dashboard.
++
++No environment variables are required. `NEXT_PUBLIC_FATHOM_ID`, `NEXT_PUBLIC_POSTHOG_ID` and the Redis variables (`REDIS_HOST`, `REDIS_PASSWORD`, see [Redis](#redis)) are optional and can be added in the app's Settings → Environment Vars.
++
+ ## URL Paths
+ 
+ The app defaults to slightly different URL paths in dev vs prod (though pasting any dev pathname into prod will work and vice-versa).

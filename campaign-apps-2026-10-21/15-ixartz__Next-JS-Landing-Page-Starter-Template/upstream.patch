@@ -1,0 +1,19 @@
+diff --git a/README.md b/README.md
+index 8b90d5a..34dd764 100644
+--- a/README.md
++++ b/README.md
+@@ -219,6 +219,14 @@ Clone this repository on own GitHub account and deploy to Netlify:
+ 
+ [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template)
+ 
++### Deploy to Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=ixartz%2FNext-JS-Landing-Page-Starter-Template)
++
++Wasmer detects Next.js, builds the project with `npm run build` and serves the production build. No environment variables are required.
++
++The button builds this public repository as-is; it does not fork or copy it into your GitHub account. To customize the theme (`src/utils/AppConfig.ts`, `src/templates/*`) and redeploy on every push, fork the repository and connect your fork from the Wasmer dashboard.
++
+ ### VSCode information (optional)
+ 
+ If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.

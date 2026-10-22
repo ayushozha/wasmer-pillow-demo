@@ -1,0 +1,20 @@
+diff --git a/README.md b/README.md
+index 9310148..4f27858 100644
+--- a/README.md
++++ b/README.md
+@@ -97,3 +97,15 @@ See `LICENSE` for more information.
+ ## Deploy with Vercel
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fmagic-portfolio-demo.vercel.app&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
++
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=once-ui-system%2Fmagic-portfolio)
++
++Wasmer detects Next.js, runs the project's `build` script (`npm run build`) and serves the production build with Node.
++
++The button builds this public repository as-is; it does not fork or copy it into your GitHub account. To customize your portfolio (`src/resources/content.tsx` and `src/resources/once-ui.config.ts`) and redeploy on every push, fork the repository and connect your fork from the Wasmer dashboard.
++
++No environment variables are required. `PAGE_ACCESS_PASSWORD` is only used by routes listed in `protectedRoutes` in `src/resources/once-ui.config.ts`; set your own value in the app's Settings → Environment Vars (do not reuse the `.env.example` placeholder), otherwise those routes cannot be unlocked.
++
++The [license](#license) still applies to deployments: a personal, non-commercial portfolio with attribution is within CC BY-NC 4.0, while commercial use needs the extended license described above.

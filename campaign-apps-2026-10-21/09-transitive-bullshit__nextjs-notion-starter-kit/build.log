@@ -1,0 +1,188 @@
+$ node -v; corepack --version; corepack pnpm -v; git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/09-transitive-bullshit__nextjs-notion-starter-kit rev-parse HEAD
+v22.22.0
+0.34.0
+11.25.0
+e787e7b594f1ca6fe7445e1866d4d4668c533737
+exit=0
+
+$ corepack pnpm install --frozen-lockfile
+Progress: resolved 205, reused 0, downloaded 115, added 8
+Progress: resolved 205, reused 0, downloaded 130, added 8
+Progress: resolved 205, reused 0, downloaded 152, added 8
+Progress: resolved 205, reused 0, downloaded 158, added 8
+Progress: resolved 205, reused 0, downloaded 159, added 8
+Progress: resolved 205, reused 0, downloaded 165, added 12
+Progress: resolved 205, reused 0, downloaded 192, added 12
+Progress: resolved 205, reused 0, downloaded 203, added 15
+Progress: resolved 205, reused 0, downloaded 204, added 38
+[WARN] Request took 11781ms: https://registry.npmjs.org/next
+Progress: resolved 205, reused 0, downloaded 204, added 69
+✓ Lockfile passes supply-chain policies (307 entries in 17.7s)
+Progress: resolved 205, reused 0, downloaded 204, added 204
+Progress: resolved 205, reused 0, downloaded 205, added 205, done
+.../node_modules/simple-git-hooks postinstall$ node ./postinstall.js
+.../node_modules/simple-git-hooks postinstall: [INFO] Successfully set the pre-commit with command: npx lint-staged
+.../node_modules/simple-git-hooks postinstall: Done
+
+dependencies:
++ @keyvhq/core 2.2.7
++ @keyvhq/redis 2.2.7
++ classnames 2.5.1
++ expiry-map 2.0.0
++ fathom-client 3.7.2
++ katex 0.18.5
++ ky 2.1.0
++ lqip-modern 3.0.0
++ next 16.3.4
++ next-themes 0.4.6
++ notion-client 8.0.8
++ notion-types 8.0.8
++ notion-utils 8.0.8
++ p-map 7.0.7
++ p-memoize 8.0.0
++ posthog-js-lite 4.11.0
++ prismjs 1.30.0
++ react 19.2.8
++ react-body-classname 1.3.1
++ react-dom 19.2.8
++ react-notion-x 8.0.8
++ react-tweet 3.3.1
++ react-use 17.6.1
++ rss 1.2.2
++ sharp 0.35.4
+
+devDependencies:
++ @fisch0920/config 2.1.4
++ @types/node 26.4.1
++ @types/prismjs 1.26.6
++ @types/react 19.2.18
++ @types/react-body-classname 1.1.10
++ @types/rss 0.0.32
++ npm-run-all2 9.0.3
++ oxfmt 0.66.0
++ oxlint 1.81.0
++ oxlint-tsgolint 7.0.2001
++ simple-git-hooks 2.14.0
++ typescript 7.0.2
+
+Done in 20.8s using pnpm v11.25.0
+exit=0
+
+$ corepack pnpm build
+$ next build
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.js took 24ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 44s
+  Running TypeScript ...
+  Finished TypeScript in 4.7s ...
+  Collecting page data using 3 workers ...
+
+notion getPage 7875426197cf461698809def95960ebf
+page load error { pageId: '78754261-97cf-4616-9880-9def95960ebf', spaceId: undefined } undefined [POST] "https://app.notion.com/api/v3/loadPageChunk": <no response> fetch failed
+Error: Error loading page "78754261-97cf-4616-9880-9def95960ebf"
+    at <unknown> (lib/get-site-map.ts:65:15)
+    at Array.reduce (<anonymous>)
+    at k (lib/get-site-map.ts:61:49)
+    at async h (lib/get-site-map.ts:18:26)
+    at async k (app/[pageId]/page.tsx:23:19)
+  63 |       const recordMap = pageMap[pageId]
+  64 |       if (!recordMap) {
+> 65 |         throw new Error(`Error loading page "${pageId}"`)
+     |               ^
+  66 |       }
+  67 |
+  68 |       const block = getBlockValue(recordMap.block[pageId])
+
+> Build error occurred
+Error: Failed to collect page data for /[pageId]
+    at ignore-listed frames {
+  type: 'Error'
+}
+[ELIFECYCLE] Command failed with exit code 1.
+exit=1
+
+$ curl -sS -m 15 -o /dev/null -w "%{http_code}\n" https://app.notion.com/api/v3/loadPageChunk -X POST; curl -sS -m 15 -o /dev/null -w "%{http_code}\n" https://www.notion.so/
+curl: (56) CONNECT tunnel failed, response 403
+000
+curl: (56) CONNECT tunnel failed, response 403
+000
+exit=56
+
+$ node -e "const s=require(\"sharp\"); console.log(\"sharp\", s.versions)"
+sharp {
+  aom: '3.15.0',
+  archive: '3.8.9',
+  cairo: '1.18.4',
+  cgif: '0.5.3',
+  exif: '0.6.26',
+  expat: '2.8.3',
+  ffi: '3.8.0',
+  fontconfig: '2.18.3',
+  freetype: '2.14.3',
+  fribidi: '1.0.16',
+  glib: '2.89.4',
+  harfbuzz: '14.3.1',
+  heif: '1.23.2',
+  highway: '1.4.0',
+  imagequant: '2.4.1',
+  lcms: '2.19.1',
+  mozjpeg: '0826579',
+  pango: '1.58.2',
+  pixman: '0.46.4',
+  png: '1.6.58',
+  'proxy-libintl': '0.5',
+  rsvg: '2.62.91',
+  tiff: '4.7.2',
+  uhdr: '2.0.2',
+  vips: '8.18.6',
+  webp: '1.6.0',
+  xml2: '2.15.3',
+  'zlib-ng': '2.3.3',
+  sharp: '0.35.4'
+}
+exit=0
+
+$ cat pnpm-workspace.yaml
+allowBuilds:
+  canvas: true
+  core-js: true
+  protobufjs: true
+  sharp: true
+  simple-git-hooks: true
+
+enablePrePostScripts: true
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@fisch0920/config'
+  - lqip-modern
+  - react-notion-x
+  - notion-client
+  - notion-types
+  - notion-utils
+exit=0
+
+$ corepack pnpm exec oxfmt --check readme.md   # upstream readme, unpatched
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 1007ms on 1 files using 4 threads.
+exit=0
+
+$ corepack pnpm exec oxfmt --check readme.md   # PATCHED readme copied from clone
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 939ms on 1 files using 4 threads.
+exit=0
+
+$ corepack pnpm exec oxfmt --check readme.md   # PATCHED readme (final wording) copied from clone
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 482ms on 1 files using 4 threads.
+exit=0
+
