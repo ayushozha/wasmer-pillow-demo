@@ -1,0 +1,82 @@
+# replay of C-pre-rawgraphs  source=rup/rawgraphs__rawgraphs-app  upstream HEAD=48c3b2ee9ff412721a2c99c7bed38e734b3fa534
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-pre-rawgraphs/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-data-grid@7.0.0-canary.16
+npm error Found: react@18.3.1
+npm error node_modules/react
+npm error   react@"^18.3.1" from the root project
+npm error   peer react@"*" from @icons/material@0.2.4
+npm error   node_modules/@icons/material
+npm error     @icons/material@"^0.2.4" from react-color@2.17.3
+npm error     node_modules/react-color
+npm error       react-color@"2.17.3" from the root project
+npm error   12 more (@restart/context, @restart/hooks, prop-types-extra, ...)
+npm error
+npm error Could not resolve dependency:
+npm error peer react@"^16.8" from react-data-grid@7.0.0-canary.16
+npm error node_modules/react-data-grid
+npm error   react-data-grid@"7.0.0-canary.16" from the root project
+npm error
+npm error Conflicting peer dependency: react@16.14.0
+npm error node_modules/react
+npm error   peer react@"^16.8" from react-data-grid@7.0.0-canary.16
+npm error   node_modules/react-data-grid
+npm error     react-data-grid@"7.0.0-canary.16" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /root/.npm/_logs/2026-10-22T05_53_26_435Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T05_53_26_435Z-debug-0.log
+exit=1
+
+INSTALL FAILED
+$ npm run build
+
+> rawgraphs-frontend@2.1.0 build
+> vite build
+
+sh: 1: vite: not found
+exit=127
+
+BUILD FAILED
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=$S/replay/C-pre-rawgraphs/static_app --log-level=info --port=4001 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=2 refs_checked=0 failures=2
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 0

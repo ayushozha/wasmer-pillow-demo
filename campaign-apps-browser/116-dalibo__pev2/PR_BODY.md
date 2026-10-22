@@ -1,10 +1,12 @@
+<!-- HOLD (security, 2026-10-22): do not submit. See evidence.md banner. -->
+
 ## Summary
 
 This adds a short "Self-hosted on Wasmer" section to the README's Usage part, with a Deploy to Wasmer badge and two sentences. It also adds a one-line `Staticfile` (`root: dist-app`) so the hosting builder serves the folder the app build actually writes. There are no source, dependency or build-script changes.
 
 ## Why this repo
 
-The README already offers two ways to use PEV2: the Dalibo service and the downloadable all-in-one `pev2.html`. Some teams want a third option in between: their own internal URL. Their execution plans contain table names, queries and sometimes literal values, so they would rather not paste them into a third-party site, and they don't want to pass an HTML file around either. The app runs entirely in the browser. Plans are stored in the browser's IndexedDB, and the only network request is the GitHub "latest release" version check. That makes it a good fit for a one-click static deployment built from this repository's own source.
+The README already offers two ways to use PEV2: the Dalibo service and the downloadable all-in-one `pev2.html`. Some teams want a third option in between: their own internal URL. Their execution plans contain table names, queries and sometimes literal values, so they would rather not paste them into a third-party site, and they don't want to pass an HTML file around either. The app runs entirely in the browser. Plans are stored in the browser's IndexedDB, and the only network request is the GitHub "latest release" version check. That makes it a candidate for a one-click static deployment built from this repository's own source.
 
 The `Staticfile` is needed because `vite.config.ts` sets `outDir: "dist-app"` for the app build. Wasmer's builder (Anybuild v0.33.0) detects Vite and otherwise serves `dist/`, which this build does not create.
 

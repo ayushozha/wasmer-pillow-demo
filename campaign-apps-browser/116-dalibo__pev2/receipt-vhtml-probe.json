@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:4154/",
+  "input": "not a plan <b data-wasmer-marker=\"probe\">marker</b>",
+  "aborted": [
+    "https://api.github.com/repos/dalibo/pev2/releases/latest"
+  ],
+  "errorCardShown": true,
+  "markerElementCount": 1,
+  "markerTag": "B text=marker",
+  "codeInnerHTML": "not a plan <b data-wasmer-marker=\"probe\">marker</b>",
+  "codeTextContent": "not a plan marker",
+  "reinterpretedAsHTML": true
+}

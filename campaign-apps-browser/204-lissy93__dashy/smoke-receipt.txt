@@ -1,0 +1,35 @@
+200	page	/	text/html	3013
+--	title	/	Dashy	
+200	page	/conf.yml	text/x-yaml	1735
+200	page	/manifest.webmanifest	application/manifest+json	459
+200	page	/sw.js	text/javascript	16103
+404	page	/home	text/html	0
+--	title	/home	(none)	
+404	page	/workspace	text/html	0
+--	title	/workspace	(none)	
+404	page	/minimal	text/html	0
+--	title	/minimal	(none)	
+404	page	/about	text/html	0
+--	title	/about	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/web-icons/favicon-64x64.png	image/png	5421
+200	ref	/web-icons/favicon-32x32.png	image/png	1997
+200	ref	/web-icons/favicon-16x16.png	image/png	794
+200	ref	/favicon.ico	image/x-icon	15406
+200	ref	/loading-screen.css	text/css	1976
+200	ref	/theme-fonts.css	text/css	1024
+404	ref	/opensearch.xml	text/html	0
+200	ref	/assets/index-BFND2lg1.js	text/javascript	789078
+200	ref	/assets/rolldown-runtime-BCiCTKAo.js	text/javascript	1301
+200	ref	/assets/_plugin-vue_export-helper-C5zI5iw3.js	text/javascript	66995
+200	ref	/assets/StoreMutations-x0axfGmY.js	text/javascript	612
+200	ref	/assets/ErrorHandler-BLMc-nBB.js	text/javascript	10221
+200	ref	/assets/index-BGK5a31c.css	text/css	254118
+SUMMARY pages=9 refs_checked=13 failures=6
+FAIL	404	page	/home	text/html	0
+FAIL	404	page	/workspace	text/html	0
+FAIL	404	page	/minimal	text/html	0
+FAIL	404	page	/about	text/html	0
+FAIL	404	page	/nope	text/html	0
+FAIL	404	ref	/opensearch.xml	text/html	0

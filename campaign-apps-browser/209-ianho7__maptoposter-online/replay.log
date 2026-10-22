@@ -1,0 +1,444 @@
+# replay of C-envproxy-maptoposter  source=rup/ianho7__maptoposter-online  upstream HEAD=58600c7841576341e7617333eb4da7e81053712c
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-envproxy-maptoposter/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +435
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 435, reused 435, downloaded 0, added 265
+Progress: resolved 435, reused 435, downloaded 0, added 434
+Progress: resolved 435, reused 435, downloaded 0, added 435, done
+
+dependencies:
++ @countrystatecity/countries 1.0.7
++ @mapbox/vector-tile 2.0.5
++ @msgpack/msgpack 3.1.3
++ @radix-ui/react-accordion 1.2.17
++ @radix-ui/react-dialog 1.1.20
++ @radix-ui/react-label 2.1.12
++ @radix-ui/react-popover 1.1.20
++ @radix-ui/react-progress 1.1.13
++ @radix-ui/react-select 2.3.4
++ @radix-ui/react-slot 1.3.0
++ @radix-ui/react-tabs 1.1.18
++ @rollup/rollup-linux-x64-gnu 4.62.2
++ @turf/area 7.3.5
++ @turf/bbox 7.3.5
++ @turf/bbox-polygon 7.3.5
++ @turf/buffer 7.3.5
++ @turf/convex 7.3.5
++ @turf/helpers 7.3.5
++ @turf/intersect 7.3.5
++ @turf/line-split 7.3.5
++ @turf/polygon-to-line 7.3.5
++ @types/mapbox__vector-tile 1.3.4
++ @types/pbf 3.0.5
++ class-variance-authority 0.7.1
++ clsx 2.1.1
++ cmdk 1.1.1
++ fuse.js 7.5.0
++ idb 8.0.3
++ jsts 2.12.1
++ lucide-react 0.563.0
++ maplibre-gl 5.24.0
++ osmtogeojson 3.0.0-beta.5
++ pbf 4.0.2
++ pinyin-pro 3.28.1
++ proj4 2.20.9
++ react 19.2.7
++ react-dom 19.2.7
++ tailwind-merge 3.6.0
+
+devDependencies:
++ @inlang/paraglide-js 2.22.0
++ @inlang/paraglide-js-adapter-vite 1.2.40
++ @tailwindcss/vite 4.3.3
++ @types/bun 1.3.14
++ @types/geojson 7946.0.16
++ @types/node 25.9.5
++ @types/osmtogeojson 2.2.34
++ @types/proj4 2.19.0
++ @types/react 19.2.17
++ @types/react-dom 19.2.3
++ @vitejs/plugin-react 5.2.0
++ autoprefixer 10.5.4
++ babel-plugin-react-compiler 1.0.0
++ oxfmt 0.40.0
++ oxlint 1.74.0
++ postcss 8.5.20
++ tailwindcss 4.3.3
++ typescript 5.9.3
++ vite 8.0.1
++ vite-plugin-oxlint 2.1.2
++ vite-plugin-sitemap 0.8.2
++ vite-plugin-wasm 3.6.0
+
+Done in 3.2s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> maptoposter-online@0.0.0 build $S/replay/C-envproxy-maptoposter/work
+> paraglide-js compile --project ./project.inlang && tsc -b && vite build
+
+[info] [paraglide-js] Compiling inlang project ...
+[warn] [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+TypeError: fetch failed
+[warn] [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+TypeError: fetch failed
+[success] [paraglide-js] Successfully compiled inlang project.
+src/App.tsx(715,17): error TS2339: Property 'size_iphone' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(722,17): error TS2339: Property 'size_square' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(729,17): error TS2339: Property 'size_poster_3x4_portrait' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(736,17): error TS2339: Property 'size_poster_9x16_portrait' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(743,17): error TS2339: Property 'size_poster_4x3_landscape' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(750,17): error TS2339: Property 'size_desktop' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(757,17): error TS2339: Property 'size_a4_portrait' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(764,17): error TS2339: Property 'size_a4_landscape' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(779,25): error TS2339: Property 'theme_nordic_frost' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(780,24): error TS2339: Property 'theme_desert_rose' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(781,27): error TS2339: Property 'theme_cyberpunk_neon' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(782,25): error TS2339: Property 'theme_sulfur_slate' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(783,29): error TS2339: Property 'theme_vintage_nautical' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(784,26): error TS2339: Property 'theme_lavender_mist' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(785,25): error TS2339: Property 'theme_carbon_fiber' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(786,33): error TS2339: Property 'theme_mediterranean_summer' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(787,25): error TS2339: Property 'theme_royal_velvet' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(788,24): error TS2339: Property 'theme_forest_moss' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(789,25): error TS2339: Property 'theme_cotton_candy' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(790,31): error TS2339: Property 'theme_brutalist_concrete' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(791,27): error TS2339: Property 'theme_solarized_dark' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(792,25): error TS2339: Property 'theme_matcha_latte' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(793,22): error TS2339: Property 'theme_red_alert' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(794,24): error TS2339: Property 'theme_gilded_noir' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(795,24): error TS2339: Property 'theme_ocean_abyss' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(796,26): error TS2339: Property 'theme_sakura_branch' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(797,23): error TS2339: Property 'theme_terra_clay' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(798,26): error TS2339: Property 'theme_glitch_purple' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1660,25): error TS2339: Property 'step_init' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1676,29): error TS2339: Property 'step_waiting_api' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1680,71): error TS2339: Property 'step_retrying_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1682,29): error TS2339: Property 'step_retrying_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1704,27): error TS2339: Property 'step_coordinates' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1715,27): error TS2339: Property 'step_fetching_data' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1758,29): error TS2339: Property 'step_restore_memory' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1762,29): error TS2339: Property 'step_cache_restore_complete' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1766,29): error TS2339: Property 'step_fetch_complete' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1772,27): error TS2339: Property 'step_sharding_roads' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1784,27): error TS2339: Property 'step_wasm_processing' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1821,27): error TS2339: Property 'step_processing_complete' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1826,27): error TS2339: Property 'step_prepare_render' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1885,27): error TS2339: Property 'step_rendering' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1951,29): error TS2339: Property 'step_downloading_file' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1985,29): error TS2339: Property 'step_complete' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1988,23): error TS2339: Property 'error_generating' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(1990,22): error TS2339: Property 'error_generating' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2050,80): error TS2339: Property 'location' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2051,79): error TS2339: Property 'label_map_radius' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2055,18): error TS2339: Property 'theme_colors' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2060,18): error TS2339: Property 'custom_poi_nav_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2065,18): error TS2339: Property 'render_control' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2070,18): error TS2339: Property 'font_settings' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2072,84): error TS2339: Property 'poster_size' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2109,27): error TS2339: Property 'snake_game_trigger' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2279,27): error TS2339: Property 'poi_source_off' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2281,29): error TS2339: Property 'poi_source_overpass' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2282,29): error TS2339: Property 'poi_source_custom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2285,30): error TS2339: Property 'preview_summary_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2286,33): error TS2339: Property 'preview_summary_location' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2287,36): error TS2339: Property 'preview_summary_coordinates' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2288,29): error TS2339: Property 'preview_summary_size' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2289,30): error TS2339: Property 'preview_summary_theme' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2290,28): error TS2339: Property 'preview_summary_poi' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2291,29): error TS2339: Property 'preview_summary_text' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2292,29): error TS2339: Property 'preview_summary_none' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2293,29): error TS2339: Property 'toggle_show_city' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2294,32): error TS2339: Property 'toggle_show_country' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2295,42): error TS2339: Property 'toggle_show_coords' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/App.tsx(2308,34): error TS2339: Property 'preview_actual_result' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(67,16): error TS2339: Property 'app_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(70,16): error TS2339: Property 'app_subtitle' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(102,23): error TS2339: Property 'generating' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(103,23): error TS2339: Property 'download_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(116,23): error TS2339: Property 'generating' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(117,23): error TS2339: Property 'download_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(140,26): error TS2339: Property 'recommended' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(143,22): error TS2339: Property 'download_quality_1x_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(157,22): error TS2339: Property 'download_quality_2x_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(170,22): error TS2339: Property 'download_svg_export' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(173,22): error TS2339: Property 'download_svg_export_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(185,51): error TS2339: Property 'support_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/app-header.tsx(195,31): error TS2339: Property 'star_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(329,47): error TS2339: Property 'how_to_use_btn' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(336,63): error TS2339: Property 'how_to_use_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(344,58): error TS2339: Property 'how_to_use_step1_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(347,20): error TS2339: Property 'how_to_use_step1_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(353,57): error TS2339: Property 'how_to_use_prompt_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(370,33): error TS2339: Property 'how_to_use_copied' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(370,57): error TS2339: Property 'how_to_use_copy_prompt' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(382,58): error TS2339: Property 'how_to_use_step2_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(385,20): error TS2339: Property 'how_to_use_step2_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(395,58): error TS2339: Property 'how_to_use_step3_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(398,20): error TS2339: Property 'how_to_use_step3_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/color-paste-how-to-use.tsx(405,20): error TS2339: Property 'how_to_use_close' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(101,21): error TS2339: Property 'gps_error_unsupported' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(107,21): error TS2339: Property 'gps_error_denied' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(113,21): error TS2339: Property 'gps_error_unavailable' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(119,21): error TS2339: Property 'gps_error_timeout' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(142,16): error TS2339: Property 'label_latitude' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(166,16): error TS2339: Property 'label_longitude' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(198,25): error TS2339: Property 'gps_loading' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/coordinate-input.tsx(198,43): error TS2339: Property 'button_use_my_location' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(75,30): error TS2339: Property 'poi_source_off' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(76,35): error TS2339: Property 'poi_source_overpass' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(77,33): error TS2339: Property 'poi_source_custom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(89,52): error TS2339: Property 'custom_poi_nav_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(95,16): error TS2339: Property 'poi_source_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(107,18): error TS2339: Property 'poi_source_custom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(113,28): error TS2339: Property 'custom_poi_added_count' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(117,20): error TS2339: Property 'custom_poi_manage_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(137,17): error TS2339: Property 'poi_hint_off' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(139,19): error TS2339: Property 'poi_hint_overpass' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/custom-poi-settings.tsx(140,19): error TS2339: Property 'poi_hint_custom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/data-settings.tsx(23,53): error TS2339: Property 'label_map_radius' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/data-settings.tsx(29,18): error TS2339: Property 'label_map_radius' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/data-settings.tsx(39,29): error TS2339: Property 'label_map_radius' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/data-settings.tsx(51,75): error TS2339: Property 'radius_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(97,27): error TS2339: Property 'error_modal_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(107,18): error TS2339: Property 'error_modal_error_message' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(122,20): error TS2339: Property 'error_modal_error_stack' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(135,18): error TS2339: Property 'error_modal_failed_step' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(144,20): error TS2339: Property 'error_modal_diagnostics' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(172,25): error TS2339: Property 'error_modal_copy_success' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(172,56): error TS2339: Property 'error_modal_copy_details' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/error-modal.tsx(175,16): error TS2339: Property 'error_modal_clear_cache' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(18,36): error TS2339: Property 'font_preset_default' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(19,45): error TS2339: Property 'font_preset_LXGW_Neo_ZhiSong' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(20,37): error TS2339: Property 'font_preset_fraunces' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(37,52): error TS2339: Property 'font_settings' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(42,23): error TS2339: Property 'font_settings' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(76,64): error TS2339: Property 'upload_font' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(77,68): error TS2339: Property 'font_formats' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/font-settings.tsx(91,18): error TS2339: Property 'font_settings_clear' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(42,18): error TS2339: Property 'footer_project' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(46,28): error TS2339: Property 'footer_github_repo' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(47,28): error TS2339: Property 'footer_submit_issue' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(90,22): error TS2339: Property 'footer_open_source' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(94,20): error TS2339: Property 'footer_open_source_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(103,20): error TS2339: Property 'footer_star_on_github' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(112,48): error TS2339: Property 'footer_data_source' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/footer.tsx(121,16): error TS2339: Property 'footer_contributors' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(394,18): error TS2339: Property 'gallery_zoom_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(404,31): error TS2339: Property 'a11y_close_lightbox' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(425,31): error TS2339: Property 'a11y_previous_poster' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(445,31): error TS2339: Property 'a11y_next_poster' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(490,32): error TS2339: Property 'gallery_zoom_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/gallery.tsx(493,32): error TS2339: Property 'gallery_reset_zoom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/generation-modal.tsx(59,54): error TS2339: Property 'creating_art' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/generation-modal.tsx(72,16): error TS2339: Property 'generating_time_estimate' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/generation-modal.tsx(77,59): error TS2339: Property 'game_complete_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/generation-modal.tsx(112,18): error TS2339: Property 'generation_modal_close' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-combobox.tsx(69,53): error TS2339: Property 'loading' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-combobox.tsx(76,28): error TS2339: Property 'search_placeholder' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(83,52): error TS2339: Property 'location' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(96,16): error TS2339: Property 'location_mode_search' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(102,16): error TS2339: Property 'location_mode_coordinates' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(113,20): error TS2339: Property 'label_country' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(119,32): error TS2339: Property 'placeholder_select_country' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(120,30): error TS2339: Property 'empty_country' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(131,20): error TS2339: Property 'label_state' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(137,32): error TS2339: Property 'placeholder_select_state' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(138,30): error TS2339: Property 'empty_state' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(150,20): error TS2339: Property 'label_city' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(156,32): error TS2339: Property 'placeholder_select_city' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(157,30): error TS2339: Property 'empty_city' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(169,20): error TS2339: Property 'label_district' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(175,32): error TS2339: Property 'placeholder_select_district' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(176,30): error TS2339: Property 'empty_district' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(189,20): error TS2339: Property 'label_custom_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/location-settings.tsx(217,18): error TS2339: Property 'label_custom_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(73,13): error TS2339: Property 'poi_type_cafe' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(74,19): error TS2339: Property 'poi_type_restaurant' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(75,18): error TS2339: Property 'poi_type_snack_bar' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(76,15): error TS2339: Property 'poi_type_bakery' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(77,12): error TS2339: Property 'poi_type_bar' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(78,17): error TS2339: Property 'poi_type_tea_shop' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(79,15): error TS2339: Property 'poi_type_hotpot' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(80,12): error TS2339: Property 'poi_type_bbq' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(81,13): error TS2339: Property 'poi_type_park' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(82,25): error TS2339: Property 'poi_type_sightseeing_spot' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(83,15): error TS2339: Property 'poi_type_museum' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(84,17): error TS2339: Property 'poi_type_landmark' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(85,20): error TS2339: Property 'poi_type_art_gallery' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(86,19): error TS2339: Property 'poi_type_theme_park' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(87,21): error TS2339: Property 'poi_type_zoo_aquarium' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(88,24): error TS2339: Property 'poi_type_historical_site' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(89,22): error TS2339: Property 'poi_type_accommodation' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(90,15): error TS2339: Property 'poi_type_resort' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(91,13): error TS2339: Property 'poi_type_mall' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(92,15): error TS2339: Property 'poi_type_market' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(93,18): error TS2339: Property 'poi_type_duty_free' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(94,18): error TS2339: Property 'poi_type_bookstore' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(95,22): error TS2339: Property 'poi_type_souvenir_shop' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(96,14): error TS2339: Property 'poi_type_beach' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(97,17): error TS2339: Property 'poi_type_mountain' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(98,13): error TS2339: Property 'poi_type_lake' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(99,15): error TS2339: Property 'poi_type_forest' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(100,18): error TS2339: Property 'poi_type_waterfall' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(101,15): error TS2339: Property 'poi_type_garden' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(102,15): error TS2339: Property 'poi_type_temple' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(103,15): error TS2339: Property 'poi_type_church' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(104,24): error TS2339: Property 'poi_type_cultural_street' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(105,16): error TS2339: Property 'poi_type_theater' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(106,15): error TS2339: Property 'poi_type_cinema' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(107,12): error TS2339: Property 'poi_type_ktv' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(108,21): error TS2339: Property 'poi_type_spa_wellness' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(109,23): error TS2339: Property 'poi_type_fitness_center' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(110,21): error TS2339: Property 'poi_type_camping_site' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(111,16): error TS2339: Property 'poi_type_airport' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(112,22): error TS2339: Property 'poi_type_train_station' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(113,23): error TS2339: Property 'poi_type_subway_station' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(114,20): error TS2339: Property 'poi_type_bus_station' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(115,13): error TS2339: Property 'poi_type_port' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(116,17): error TS2339: Property 'poi_type_hospital' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(117,13): error TS2339: Property 'poi_type_bank' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(118,20): error TS2339: Property 'poi_type_post_office' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(119,23): error TS2339: Property 'poi_type_police_station' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(120,17): error TS2339: Property 'poi_type_pharmacy' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(286,64): error TS2339: Property 'custom_poi_search_error_generic' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(309,30): error TS2339: Property 'custom_poi_search_empty' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(319,54): error TS2339: Property 'custom_poi_search_error_generic' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(333,26): error TS2339: Property 'custom_poi_api_key_missing' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(347,62): error TS2339: Property 'custom_poi_api_key_invalid' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(351,26): error TS2339: Property 'custom_poi_api_key_valid' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(354,67): error TS2339: Property 'custom_poi_api_key_invalid' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(367,26): error TS2339: Property 'custom_poi_nominatim_unavailable' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(390,17): error TS2339: Property 'custom_poi_search_error_generic' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(412,28): error TS2339: Property 'custom_poi_search_empty' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(421,52): error TS2339: Property 'custom_poi_search_error_generic' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(488,20): error TS2339: Property 'custom_poi_search_loading' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(501,17): error TS2339: Property 'custom_poi_search_idle_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(502,17): error TS2339: Property 'custom_poi_nominatim_idle_hint' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(520,40): error TS2339: Property 'custom_poi_address_missing' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(531,29): error TS2339: Property 'custom_poi_added_short' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(531,58): error TS2339: Property 'custom_poi_add_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(544,27): error TS2339: Property 'custom_poi_dialog_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(545,33): error TS2339: Property 'custom_poi_dialog_description' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(552,22): error TS2339: Property 'custom_poi_provider_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(565,35): error TS2339: Property 'custom_poi_provider_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(570,49): error TS2339: Property 'custom_poi_provider_amap' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(571,54): error TS2339: Property 'custom_poi_provider_nominatim' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(580,29): error TS2339: Property 'custom_poi_api_key_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(583,26): error TS2339: Property 'custom_poi_api_key_help' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(590,28): error TS2339: Property 'custom_poi_api_key_tutorial' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(599,38): error TS2339: Property 'custom_poi_api_key_placeholder' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(600,37): error TS2339: Property 'custom_poi_api_key_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(612,26): error TS2339: Property 'custom_poi_api_key_test_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(623,24): error TS2339: Property 'custom_poi_search_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(627,27): error TS2339: Property 'custom_poi_search_help' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(628,27): error TS2339: Property 'custom_poi_nominatim_search_help' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(644,29): error TS2339: Property 'custom_poi_search_placeholder' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(645,29): error TS2339: Property 'custom_poi_nominatim_placeholder' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(647,35): error TS2339: Property 'custom_poi_search_label' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(661,24): error TS2339: Property 'custom_poi_nominatim_search_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(685,25): error TS2339: Property 'custom_poi_list_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(688,22): error TS2339: Property 'custom_poi_added_count' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(694,65): error TS2339: Property 'custom_poi_empty_state' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(716,39): error TS2339: Property 'a11y_poi_type_select' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(747,39): error TS2339: Property 'a11y_move_poi_up' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(756,39): error TS2339: Property 'a11y_remove_poi' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poi-management-dialog.tsx(769,16): error TS2339: Property 'custom_poi_done_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/poster-size-selector.tsx(22,52): error TS2339: Property 'poster_size' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/render-control-settings.tsx(27,63): error TS2339: Property 'toggle_show_city' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/render-control-settings.tsx(28,69): error TS2339: Property 'toggle_show_country' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/render-control-settings.tsx(29,67): error TS2339: Property 'toggle_show_coords' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/render-control-settings.tsx(33,16): error TS2339: Property 'toggle_road_mask_optimization' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/render-control-settings.tsx(41,52): error TS2339: Property 'render_control' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(418,20): error TS2339: Property 'snake_game_score' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(423,48): error TS2339: Property 'snake_game_play_again' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(423,76): error TS2339: Property 'snake_game_start' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(440,37): error TS2339: Property 'snake_game_play_again' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(440,65): error TS2339: Property 'snake_game_start' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(444,20): error TS2339: Property 'snake_game_controls' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/snake-game.tsx(504,28): error TS2339: Property 'snake_game_trigger' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(27,16): error TS2339: Property 'support_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(30,16): error TS2339: Property 'support_description' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(43,45): error TS2339: Property 'support_buy_me_a_coffee' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(44,41): error TS2339: Property 'support_buy_me_a_coffee_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(56,45): error TS2339: Property 'support_afdian' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/support-dialog.tsx(57,41): error TS2339: Property 'support_afdian_desc' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(178,27): error TS2339: Property 'color_bg' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(179,29): error TS2339: Property 'color_text' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(180,39): error TS2339: Property 'color_gradient' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(181,30): error TS2339: Property 'color_water' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(182,30): error TS2339: Property 'color_parks' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(183,34): error TS2339: Property 'color_poi' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(184,39): error TS2339: Property 'color_poi_icon' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(185,38): error TS2339: Property 'color_road_motorway' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(186,37): error TS2339: Property 'color_road_primary' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(187,39): error TS2339: Property 'color_road_secondary' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(188,38): error TS2339: Property 'color_road_tertiary' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(189,41): error TS2339: Property 'color_road_residential' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(190,37): error TS2339: Property 'color_road_default' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(226,24): error TS2339: Property 'clipboard_not_supported' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(240,26): error TS2339: Property 'paste_json_invalid_format' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(245,26): error TS2339: Property 'invalid_color_in_json' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(267,24): error TS2339: Property 'clipboard_read_failed' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(277,52): error TS2339: Property 'theme_colors' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(286,16): error TS2339: Property 'tab_presets' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(293,16): error TS2339: Property 'tab_custom' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(336,27): error TS2339: Property 'colors_copied' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(336,47): error TS2339: Property 'copy_colors_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(344,32): error TS2339: Property 'importing' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/components/theme-colors.tsx(344,48): error TS2339: Property 'import_colors_button' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useFontManagement.ts(59,15): error TS2339: Property 'font_upload_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useFontManagement.ts(65,15): error TS2339: Property 'font_upload_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useFontManagement.ts(79,15): error TS2339: Property 'font_upload_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useFontManagement.ts(111,15): error TS2339: Property 'font_upload_error' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useLanguage.ts(42,27): error TS2339: Property 'app_title' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+src/hooks/useLanguage.ts(42,46): error TS2339: Property 'app_subtitle' does not exist on type 'typeof import("$S/replay/C-envproxy-maptoposter/work/src/paraglide/messages")'.
+ ELIFECYCLE  Command failed with exit code 2.
+exit=2
+
+BUILD FAILED
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=$S/replay/C-envproxy-maptoposter/static_app --log-level=info --port=4009 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=2 refs_checked=0 failures=2
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 0

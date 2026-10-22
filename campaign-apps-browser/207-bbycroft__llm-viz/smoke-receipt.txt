@@ -1,0 +1,19 @@
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/llm	text/html	0
+--	title	/llm	(none)	
+404	page	/llm/	text/html	0
+--	title	/llm/	(none)	
+404	page	/llm.html	text/html	0
+--	title	/llm.html	(none)	
+404	page	/cpu	text/html	0
+--	title	/cpu	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=6 refs_checked=0 failures=6
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/llm	text/html	0
+FAIL	404	page	/llm/	text/html	0
+FAIL	404	page	/llm.html	text/html	0
+FAIL	404	page	/cpu	text/html	0
+FAIL	404	page	/nope	text/html	0

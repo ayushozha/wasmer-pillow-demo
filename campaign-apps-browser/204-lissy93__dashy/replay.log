@@ -1,0 +1,377 @@
+# replay of C-204-dashy  source=rup/lissy93__dashy  upstream HEAD=a0005e8d6ea3dad611bc7c4daa1cd837dd338c79
+# local diff vs HEAD:  M docs/deployment/cloud.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Express
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-204-dashy/plan.json
+# provider=node-static install='yarn install' build='yarn run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=yarn@ inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ yarn --version
+1.22.22
+exit=0
+
+# staged before install: package.json yarn.lock 
+$ yarn install
+yarn install v1.22.22
+[1/5] Validating package.json...
+[2/5] Resolving packages...
+[3/5] Fetching packages...
+[4/5] Linking dependencies...
+warning " > @vue/test-utils@2.5.1" has unmet peer dependency "@vue/compiler-dom@3.x".
+warning " > vite-plugin-pwa@2.0.0" has unmet peer dependency "workbox-build@^7.4.1".
+warning " > vite-plugin-pwa@2.0.0" has unmet peer dependency "workbox-window@^7.4.1".
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+[5/5] Building fresh packages...
+Done in 11.17s.
+exit=0
+
+$ yarn run build
+yarn run v1.22.22
+$ vite build
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 1309 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                                      0.45 kB
+dist/index.html                                                3.01 kB │ gzip:     1.29 kB
+dist/assets/Inconsolata-Light-BpshbUS2.ttf                    97.95 kB
+dist/assets/PTMono-Regular-DG83WGsd.ttf                      169.03 kB
+dist/assets/Raleway-Variable-BOpMsz9d.ttf                    309.72 kB
+dist/assets/GlNetworkTraffic-x1XGuNl0.css                      0.00 kB │ gzip:     0.02 kB
+dist/assets/Gauge-CN3bmCkt.css                                 0.03 kB │ gzip:     0.04 kB
+dist/assets/EmbedWidget-CbVR5Wqy.css                           0.05 kB │ gzip:     0.07 kB
+dist/assets/Blank-B1zC3nJY.css                                 0.07 kB │ gzip:     0.09 kB
+dist/assets/IframeWidget-C7FgEzyl.css                          0.07 kB │ gzip:     0.09 kB
+dist/assets/ImageWidget-izjRUEhK.css                           0.08 kB │ gzip:     0.09 kB
+dist/assets/Jokes-D53kJrNj.css                                 0.08 kB │ gzip:     0.10 kB
+dist/assets/ChuckNorris-BzQ7kNbw.css                           0.10 kB │ gzip:     0.10 kB
+dist/assets/DownloadConfig-2zx49UOT.css                        0.11 kB │ gzip:     0.10 kB
+dist/assets/GlCpuCores-BqwBmoLG.css                            0.20 kB │ gzip:     0.15 kB
+dist/assets/GlSystemLoad-BTylSOi5.css                          0.22 kB │ gzip:     0.16 kB
+dist/assets/XkcdComic-CgC7sVDj.css                             0.27 kB │ gzip:     0.19 kB
+dist/assets/AddNewSectionLauncher-Up1VCmX5.css                 0.29 kB │ gzip:     0.21 kB
+dist/assets/GlancesUptime-BcVoP6ac.css                         0.31 kB │ gzip:     0.18 kB
+dist/assets/NdCpuHistory-CKyP7btH.css                          0.36 kB │ gzip:     0.16 kB
+dist/assets/CustomSearch-DzHUASCH.css                          0.37 kB │ gzip:     0.19 kB
+dist/assets/NdLoadHistory-C5vK144U.css                         0.37 kB │ gzip:     0.16 kB
+dist/assets/StockPriceChart-jNZaYel0.css                       0.37 kB │ gzip:     0.16 kB
+dist/assets/PublicHolidays-ATtg00MH.css                        0.38 kB │ gzip:     0.20 kB
+dist/assets/AdGuardStats-Dn_cL3A2.css                          0.38 kB │ gzip:     0.21 kB
+dist/assets/NdRamHistory-vgmHclsb.css                          0.39 kB │ gzip:     0.17 kB
+dist/assets/Clock-C3LISlPm.css                                 0.46 kB │ gzip:     0.27 kB
+dist/assets/GlDiskSpace-DLbaslSG.css                           0.46 kB │ gzip:     0.22 kB
+dist/assets/GluetunStatus-DnCK_SeT.css                         0.56 kB │ gzip:     0.28 kB
+dist/assets/GlIpAddress-B1Fq34Kh.css                           0.58 kB │ gzip:     0.28 kB
+dist/assets/NtfyStream-YqMF2JJO.css                            0.62 kB │ gzip:     0.28 kB
+dist/assets/Flights-BDR6qwTT.css                               0.63 kB │ gzip:     0.28 kB
+dist/assets/SynologyDownload-DoFBMKIW.css                      0.64 kB │ gzip:     0.28 kB
+dist/assets/Linkding-CT4FYpFy.css                              0.64 kB │ gzip:     0.24 kB
+dist/assets/RescueTime-CMuPGCrq.css                            0.68 kB │ gzip:     0.26 kB
+dist/assets/SystemInfo-DCSaf_-S.css                            0.68 kB │ gzip:     0.26 kB
+dist/assets/HackernewsTrending-BFEY6E0e.css                    0.72 kB │ gzip:     0.27 kB
+dist/assets/CryptoWatchList-DWHFtXi0.css                       0.75 kB │ gzip:     0.29 kB
+dist/assets/AdGuardTopDomains-88f01Ic5.css                     0.75 kB │ gzip:     0.33 kB
+dist/assets/GlCpuTemp-QlO7RJFr.css                             0.79 kB │ gzip:     0.28 kB
+dist/assets/PiHoleTopQueries-C-Ym_txH.css                      0.81 kB │ gzip:     0.31 kB
+dist/assets/PiHoleTopQueriesV6-xeYgTf6O.css                    0.81 kB │ gzip:     0.31 kB
+dist/assets/NewsHeadlines-DdjSGofp.css                         0.82 kB │ gzip:     0.34 kB
+dist/assets/TacticalRMM-CuD5EzAf.css                           0.90 kB │ gzip:     0.32 kB
+dist/assets/PublicIp-02KxhMjQ.css                              0.90 kB │ gzip:     0.34 kB
+dist/assets/CustomList-CQvQZrU-.css                            0.98 kB │ gzip:     0.38 kB
+dist/assets/GlDiskIo-BDyQSzbS.css                              1.05 kB │ gzip:     0.33 kB
+dist/assets/PercentageChart-D0MmOaNU.css                       1.10 kB │ gzip:     0.36 kB
+dist/assets/NextcloudStats-XoRqjptq.css                        1.16 kB │ gzip:     0.41 kB
+dist/assets/UptimeKuma-C3imrZAA.css                            1.17 kB │ gzip:     0.44 kB
+dist/assets/Proxmox-hkCad55l.css                               1.19 kB │ gzip:     0.42 kB
+dist/assets/Apod-CpT4T_G2.css                                  1.21 kB │ gzip:     0.37 kB
+dist/assets/HealthChecks-ClNLvqaF.css                          1.21 kB │ gzip:     0.36 kB
+dist/assets/CodeStats-DJb5-4ZD.css                             1.21 kB │ gzip:     0.38 kB
+dist/assets/MullvadStatus-C0sl9I-k.css                         1.24 kB │ gzip:     0.42 kB
+dist/assets/NextcloudPhpOpcache-BcB4RQ19.css                   1.29 kB │ gzip:     0.43 kB
+dist/assets/PiHoleStats-BNxMomG8.css                           1.35 kB │ gzip:     0.38 kB
+dist/assets/CustomApi-CnYj-r_3.css                             1.39 kB │ gzip:     0.42 kB
+dist/assets/PiHoleStatsV6-Dz13pEnj.css                         1.40 kB │ gzip:     0.38 kB
+dist/assets/GlAlerts-B07tw77Z.css                              1.42 kB │ gzip:     0.46 kB
+dist/assets/TflStatus-DBTLavVR.css                             1.52 kB │ gzip:     0.47 kB
+dist/assets/GitHubTrending-BY0hsC48.css                        1.54 kB │ gzip:     0.46 kB
+dist/assets/Calendar-CID0LFUd.css                              1.55 kB │ gzip:     0.52 kB
+dist/assets/BlacklistCheck-DTOmb27F.css                        1.57 kB │ gzip:     0.49 kB
+dist/assets/GlCpuGauge-CFseYX4n.css                            1.60 kB │ gzip:     0.48 kB
+dist/assets/GlMemGauge-Xg1oJ80c.css                            1.60 kB │ gzip:     0.48 kB
+dist/assets/AdGuardDnsInfo-B751WNy6.css                        1.62 kB │ gzip:     0.54 kB
+dist/assets/Sabnzbd-DDn7TgdB.css                               1.65 kB │ gzip:     0.51 kB
+dist/assets/UptimeKumaStatusPage-DGq5Pwf1.css                  1.66 kB │ gzip:     0.52 kB
+dist/assets/ExchangeRates-BR3FzJqg.css                         1.67 kB │ gzip:     0.46 kB
+dist/assets/GlCpuSpeedometer-B_aRme54.css                      1.67 kB │ gzip:     0.51 kB
+dist/assets/GlMemSpeedometer-pONsd9YV.css                      1.67 kB │ gzip:     0.51 kB
+dist/assets/CovidStats-DkL2Oc_A.css                            1.72 kB │ gzip:     0.51 kB
+dist/assets/AdGuardFilterStatus-DnHwovGX.css                   1.76 kB │ gzip:     0.44 kB
+dist/assets/StatPing-COSZGyZ0.css                              1.76 kB │ gzip:     0.52 kB
+dist/assets/NextcloudSystem-CEVjYGBJ.css                       1.77 kB │ gzip:     0.52 kB
+dist/assets/MinecraftStatus-Bqp4cJWe.css                       2.06 kB │ gzip:     0.50 kB
+dist/assets/WalletBalance-DmazzJk4.css                         2.06 kB │ gzip:     0.52 kB
+dist/assets/GlGpu-DqPsp_vs.css                                 2.15 kB │ gzip:     0.59 kB
+dist/assets/EditSection-CbkqQVz4.css                           2.16 kB │ gzip:     0.51 kB
+dist/assets/NextcloudUser-Cvh99wrU.css                         2.20 kB │ gzip:     0.58 kB
+dist/assets/NextcloudUserStatus-CPoebC2k.css                   2.21 kB │ gzip:     0.57 kB
+dist/assets/DomainMonitor-CNaK6mgb.css                         2.22 kB │ gzip:     0.59 kB
+dist/assets/EthGasPrices-DGH1qVFS.css                          2.25 kB │ gzip:     0.58 kB
+dist/assets/LiveTennis-a4sLJy8W.css                            2.25 kB │ gzip:     0.59 kB
+dist/assets/GitHubProfile-BHLQDQnZ.css                         2.29 kB │ gzip:     0.61 kB
+dist/assets/RssFeed-OeW_PwzG.css                               2.34 kB │ gzip:     0.55 kB
+dist/assets/DroneCi-CQRX6d-3.css                               2.38 kB │ gzip:     0.56 kB
+dist/assets/CveVulnerabilities-CLEb_fuL.css                    2.48 kB │ gzip:     0.54 kB
+dist/assets/GlNetworkInterfaces-COqzGNEW.css                   2.52 kB │ gzip:     0.54 kB
+dist/assets/NextcloudNotifications-3ZXwhzYP.css                2.53 kB │ gzip:     0.68 kB
+dist/assets/Weather-DntrebpZ.css                               2.86 kB │ gzip:     0.76 kB
+dist/assets/SportsScores-BaAi_Pkh.css                          3.22 kB │ gzip:     0.73 kB
+dist/assets/Filebrowser-DbC-F1Ip.css                           3.23 kB │ gzip:     0.75 kB
+dist/assets/Mvg-BGumRCcr.css                                   3.34 kB │ gzip:     0.85 kB
+dist/assets/WeatherForecast-B3SNdcLf.css                       3.41 kB │ gzip:     0.85 kB
+dist/assets/MvgConnection-BTKS43wq.css                         3.57 kB │ gzip:     0.89 kB
+dist/assets/EditWidget-Tv-5aQ2R.css                            3.60 kB │ gzip:     0.77 kB
+dist/assets/404-Ddxf9D_f.css                                   4.01 kB │ gzip:     0.92 kB
+dist/assets/GlCompactMetrics-og8yaecI.css                      4.24 kB │ gzip:     1.04 kB
+dist/assets/EditItem-BqMY0fCf.css                              5.37 kB │ gzip:     0.96 kB
+dist/assets/Login-waeZdcWE.css                                 5.44 kB │ gzip:     0.96 kB
+dist/assets/SchemaForm-DhxZIJl7.css                            6.34 kB │ gzip:     1.19 kB
+dist/assets/JsonEditor-DifJA1nj.css                            6.76 kB │ gzip:     1.52 kB
+dist/assets/Workspace-DJlUoFk-.css                             8.11 kB │ gzip:     1.32 kB
+dist/assets/AnonAddy-CmJdfmcU.css                              8.31 kB │ gzip:     1.61 kB
+dist/assets/EditModeSaveMenu-ClG9Bz8J.css                      8.93 kB │ gzip:     1.24 kB
+dist/assets/Minimal-DtHZK9uv.css                              17.89 kB │ gzip:     2.28 kB
+dist/assets/index-BGK5a31c.css                               254.11 kB │ gzip:    34.74 kB
+dist/assets/safeClone-CiM88clZ.js                              0.24 kB │ gzip:     0.20 kB
+dist/assets/en-GB--SsUPJsx.js                                  0.25 kB │ gzip:     0.19 kB
+dist/assets/Blank-uKsaiRtx.js                                  0.44 kB │ gzip:     0.33 kB
+dist/assets/GlancesMixin-Bfw9JWiv.js                           0.56 kB │ gzip:     0.32 kB
+dist/assets/DownloadConfig-D3FL2wSp.js                         0.60 kB │ gzip:     0.40 kB
+dist/assets/StoreMutations-x0axfGmY.js                         0.61 kB │ gzip:     0.31 kB
+dist/assets/pruneSchemaDefaults-DCq0pdGQ.js                    0.70 kB │ gzip:     0.39 kB
+dist/assets/404--sbElCYy.js                                    0.70 kB │ gzip:     0.44 kB
+dist/assets/IframeWidget-CtUvYYdh.js                           0.88 kB │ gzip:     0.55 kB
+dist/assets/GlSystemLoad-NiVU5ZbU.js                           0.99 kB │ gzip:     0.63 kB
+dist/assets/GlancesUptime-CECPQ-9i.js                          1.01 kB │ gzip:     0.60 kB
+dist/assets/ImageWidget-C9Mdw-jU.js                            1.06 kB │ gzip:     0.58 kB
+dist/assets/GlCpuCores-BWtxNjz-.js                             1.09 kB │ gzip:     0.68 kB
+dist/assets/virtual_pwa-register-gNxs8gVe.js                   1.12 kB │ gzip:     0.60 kB
+dist/assets/AddNewSectionLauncher-gxbO9Vm8.js                  1.14 kB │ gzip:     0.63 kB
+dist/assets/ChuckNorris-C1cAqV0f.js                            1.15 kB │ gzip:     0.68 kB
+dist/assets/XkcdComic-DvNWy4H_.js                              1.24 kB │ gzip:     0.74 kB
+dist/assets/GlMemHistory-EcgA1zuW.js                           1.30 kB │ gzip:     0.78 kB
+dist/assets/rolldown-runtime-BCiCTKAo.js                       1.30 kB │ gzip:     0.71 kB
+dist/assets/GlIpAddress-CtLEy3qH.js                            1.35 kB │ gzip:     0.61 kB
+dist/assets/GlCpuHistory-ClPLEoYo.js                           1.37 kB │ gzip:     0.82 kB
+dist/assets/CustomList-C13QEUAO.js                             1.40 kB │ gzip:     0.73 kB
+dist/assets/CustomSearch-DGkD9sbG.js                           1.41 kB │ gzip:     0.78 kB
+dist/assets/Linkding-DvLWUzMc.js                               1.43 kB │ gzip:     0.78 kB
+dist/assets/PiHoleTrafficV6-DF7BkSfx.js                        1.44 kB │ gzip:     0.85 kB
+dist/assets/GlLoadHistory-DB1mTPit.js                          1.45 kB │ gzip:     0.81 kB
+dist/assets/GlDiskSpace-CNO-KIpv.js                            1.47 kB │ gzip:     0.74 kB
+dist/assets/HackernewsTrending-Dy22yH2J.js                     1.49 kB │ gzip:     0.80 kB
+dist/assets/NdCpuHistory-CuAfOkbp.js                           1.54 kB │ gzip:     0.88 kB
+dist/assets/RescueTime-B1B78wAv.js                             1.55 kB │ gzip:     0.85 kB
+dist/assets/NdLoadHistory-DRgY0eIu.js                          1.55 kB │ gzip:     0.86 kB
+dist/assets/Jokes-BHNTdGZV.js                                  1.60 kB │ gzip:     0.86 kB
+dist/assets/EmbedWidget-OtRB8Uw5.js                            1.61 kB │ gzip:     0.74 kB
+dist/assets/PiHoleV6Mixin-CqybBlW_.js                          1.62 kB │ gzip:     0.78 kB
+dist/assets/Clock-DWszcKzR.js                                  1.65 kB │ gzip:     0.76 kB
+dist/assets/PiHoleTopQueries-DR-m490V.js                       1.66 kB │ gzip:     0.89 kB
+dist/assets/GlAlerts-DcXby8C9.js                               1.73 kB │ gzip:     0.95 kB
+dist/assets/PiHoleTopQueriesV6-DIAbI7lb.js                     1.76 kB │ gzip:     0.83 kB
+dist/assets/GlMemGauge-BrmmMLW2.js                             1.78 kB │ gzip:     0.96 kB
+dist/assets/PercentageChart-D3Tp2tG2.js                        1.78 kB │ gzip:     0.88 kB
+dist/assets/NtfyStream-Y7s0Gom8.js                             1.82 kB │ gzip:     0.84 kB
+dist/assets/GlNetworkTraffic-Po6VKKe5.js                       1.82 kB │ gzip:     0.99 kB
+dist/assets/PiHoleTraffic-DGx-qeuK.js                          1.84 kB │ gzip:     1.02 kB
+dist/assets/MullvadStatus-BGF9hjq6.js                          1.85 kB │ gzip:     0.79 kB
+dist/assets/BlacklistCheck-C5jDyoHw.js                         1.86 kB │ gzip:     0.98 kB
+dist/assets/GlCpuGauge-Y_dFPCdu.js                             1.87 kB │ gzip:     1.01 kB
+dist/assets/NewsHeadlines-DijTuYS2.js                          1.90 kB │ gzip:     0.93 kB
+dist/assets/GlDiskIo-B1R7APX5.js                               1.91 kB │ gzip:     0.94 kB
+dist/assets/NdRamHistory-B7jAqoov.js                           1.91 kB │ gzip:     0.97 kB
+dist/assets/GlMemSpeedometer-BH6HnivI.js                       2.02 kB │ gzip:     1.03 kB
+dist/assets/AdGuardFilterStatus-tgRc69-R.js                    2.04 kB │ gzip:     1.01 kB
+dist/assets/AdGuardStats-CLSviCcl.js                           2.05 kB │ gzip:     1.05 kB
+dist/assets/GlCpuTemp-BbQIXrDE.js                              2.05 kB │ gzip:     0.96 kB
+dist/assets/GitHubTrending-XzxEWAuB.js                         2.05 kB │ gzip:     1.10 kB
+dist/assets/GlNetworkInterfaces-Dwj-wh3n.js                    2.09 kB │ gzip:     0.96 kB
+dist/assets/GlCpuSpeedometer-DmYQjBVz.js                       2.11 kB │ gzip:     1.08 kB
+dist/assets/GlGpu-CsoWQNj-.js                                  2.21 kB │ gzip:     1.08 kB
+dist/assets/HealthChecks-OYV8CXeK.js                           2.23 kB │ gzip:     1.29 kB
+dist/assets/PublicHolidays-wTdJB5ma.js                         2.24 kB │ gzip:     1.12 kB
+dist/assets/SystemInfo-MKzxyyoz.js                             2.28 kB │ gzip:     1.17 kB
+dist/assets/interactive-editor-cancel-changes-8-_jpgf2.js      2.31 kB │ gzip:     1.00 kB
+dist/assets/AdGuardTopDomains-BCMTW5ii.js                      2.32 kB │ gzip:     0.93 kB
+dist/assets/CryptoPriceChart-DlnLPBwJ.js                       2.34 kB │ gzip:     1.19 kB
+dist/assets/TflStatus-HDCk1o0I.js                              2.36 kB │ gzip:     1.13 kB
+dist/assets/StockPriceChart-CQ9rDiUJ.js                        2.42 kB │ gzip:     1.26 kB
+dist/assets/Apod-KKmtypOc.js                                   2.43 kB │ gzip:     1.14 kB
+dist/assets/CryptoWatchList-DgmImtnA.js                        2.43 kB │ gzip:     1.28 kB
+dist/assets/ExchangeRates-CMKwfyc4.js                          2.44 kB │ gzip:     1.17 kB
+dist/assets/PiHoleStats-7ybTthyJ.js                            2.55 kB │ gzip:     1.31 kB
+dist/assets/Proxmox-BoqVwrll.js                                2.73 kB │ gzip:     1.04 kB
+dist/assets/AdGuardDnsInfo-Ck-GV6Ab.js                         2.84 kB │ gzip:     1.32 kB
+dist/assets/PublicIp-CcccuyZ4.js                               2.87 kB │ gzip:     1.33 kB
+dist/assets/Sabnzbd-TzLcD3lQ.js                                2.91 kB │ gzip:     1.26 kB
+dist/assets/Weather-Dhu-bJId.js                                2.92 kB │ gzip:     1.32 kB
+dist/assets/NextcloudUserStatus-B6zvf5YF.js                    3.04 kB │ gzip:     1.39 kB
+dist/assets/GluetunStatus-nRtZx3Q1.js                          3.13 kB │ gzip:     1.02 kB
+dist/assets/WidgetMixin-dc1lGONO.js                            3.16 kB │ gzip:     1.52 kB
+dist/assets/LiveTennis-DRHt2IPi.js                             3.19 kB │ gzip:     1.52 kB
+dist/assets/zz-pirate-C1caPITe.js                              3.21 kB │ gzip:     1.51 kB
+dist/assets/StatPing-B5VLNyZK.js                               3.30 kB │ gzip:     1.45 kB
+dist/assets/NextcloudNotifications-C_7AZNUf.js                 3.41 kB │ gzip:     1.54 kB
+dist/assets/EthGasPrices-B30IQCdk.js                           3.47 kB │ gzip:     1.70 kB
+dist/assets/EditSection-Cp1lwGi8.js                            3.49 kB │ gzip:     1.57 kB
+dist/assets/DroneCi-DlHuAro6.js                                3.50 kB │ gzip:     1.43 kB
+dist/assets/PiHoleStatsV6-DXlttVE4.js                          3.55 kB │ gzip:     1.46 kB
+dist/assets/WeatherForecast-BndEzN7U.js                        3.59 kB │ gzip:     1.67 kB
+dist/assets/Flights-Bonf0F7x.js                                3.60 kB │ gzip:     1.52 kB
+dist/assets/CodeStats-BVYLsvAc.js                              3.64 kB │ gzip:     1.57 kB
+dist/assets/SynologyDownload-BzLbwxmB.js                       3.67 kB │ gzip:     1.47 kB
+dist/assets/UptimeKumaStatusPage-mpzpzZcF.js                   3.71 kB │ gzip:     1.65 kB
+dist/assets/NextcloudUser-C0RvngPg.js                          3.75 kB │ gzip:     1.59 kB
+dist/assets/TacticalRMM-CYejhOfT.js                            3.78 kB │ gzip:     1.31 kB
+dist/assets/CovidStats-BveAA2Mx.js                             3.84 kB │ gzip:     1.51 kB
+dist/assets/NextcloudMixin-Dg_Tpu3L.js                         3.91 kB │ gzip:     1.63 kB
+dist/assets/CveVulnerabilities-C_f5Ww6T.js                     4.03 kB │ gzip:     1.67 kB
+dist/assets/Mvg-qLor40B_.js                                    4.03 kB │ gzip:     1.69 kB
+dist/assets/MinecraftStatus-DQmCjkry.js                        4.05 kB │ gzip:     1.56 kB
+dist/assets/WalletBalance-DVZCVmHU.js                          4.15 kB │ gzip:     1.79 kB
+dist/assets/DomainMonitor-BzWijq4R.js                          4.23 kB │ gzip:     1.56 kB
+dist/assets/MvgConnection-oohfNqWf.js                          4.26 kB │ gzip:     1.79 kB
+dist/assets/CustomApi-Z2I-zLrn.js                              4.31 kB │ gzip:     2.00 kB
+dist/assets/UptimeKuma-DI7hL7ti.js                             4.34 kB │ gzip:     1.86 kB
+dist/assets/nl-DDOHnAft.js                                     4.48 kB │ gzip:     1.86 kB
+dist/assets/NextcloudSystem-BpqYhb-W.js                        4.74 kB │ gzip:     1.84 kB
+dist/assets/RssFeed-wSzPht1Z.js                                5.05 kB │ gzip:     2.12 kB
+dist/assets/SportsScores-Bhh3hjVC.js                           5.07 kB │ gzip:     1.90 kB
+dist/assets/Gauge-C_9yzNpi.js                                  5.13 kB │ gzip:     2.08 kB
+dist/assets/pl-Cr1ECSZS.js                                     5.31 kB │ gzip:     2.26 kB
+dist/assets/GitHubProfile-BVtCAgzl.js                          5.32 kB │ gzip:     2.48 kB
+dist/assets/nb-BQk1fv0W.js                                     5.43 kB │ gzip:     2.14 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js                5.65 kB │ gzip:     2.20 kB
+dist/assets/EditItem-kmHLr5kT.js                               5.74 kB │ gzip:     2.38 kB
+dist/assets/NextcloudStats-COtMRLzy.js                         5.81 kB │ gzip:     1.78 kB
+dist/assets/Login-BbJUhYWP.js                                  5.83 kB │ gzip:     2.02 kB
+dist/assets/Filebrowser-BXioIbwP.js                            6.25 kB │ gzip:     2.28 kB
+dist/assets/EditWidget-RLgB8sOB.js                             6.34 kB │ gzip:     2.18 kB
+dist/assets/NextcloudPhpOpcache-qo8aDrgK.js                    6.60 kB │ gzip:     1.83 kB
+dist/assets/GlCompactMetrics-Dt-wGt6A.js                       6.80 kB │ gzip:     2.44 kB
+dist/assets/Workspace-0l5XUAig.js                              7.89 kB │ gzip:     3.00 kB
+dist/assets/AnonAddy-DK-rr1TE.js                               8.67 kB │ gzip:     3.15 kB
+dist/assets/sl-BnwZzebR.js                                     8.75 kB │ gzip:     3.35 kB
+dist/assets/Calendar-Ceq3OFnY.js                               9.72 kB │ gzip:     4.28 kB
+dist/assets/ErrorHandler-BLMc-nBB.js                          10.22 kB │ gzip:     4.64 kB
+dist/assets/hi-C4JkqkTx.js                                    10.54 kB │ gzip:     2.93 kB
+dist/assets/cs-DE400ce9.js                                    10.78 kB │ gzip:     4.39 kB
+dist/assets/ko-CVMGeR1C.js                                    10.78 kB │ gzip:     4.33 kB
+dist/assets/pt-CqVStEeS.js                                    10.95 kB │ gzip:     4.17 kB
+dist/assets/sv-BggubitZ.js                                    12.05 kB │ gzip:     4.68 kB
+dist/assets/da-BnncMG-Y.js                                    12.16 kB │ gzip:     4.78 kB
+dist/assets/sk-D56vx_Mo.js                                    12.90 kB │ gzip:     5.23 kB
+dist/assets/ja-D25uohO7.js                                    13.15 kB │ gzip:     4.60 kB
+dist/assets/es-BO7ZIGZq.js                                    13.27 kB │ gzip:     5.03 kB
+dist/assets/hu-wba0o-Xc.js                                    13.40 kB │ gzip:     5.13 kB
+dist/assets/gl-mLPlXNfr.js                                    14.92 kB │ gzip:     5.54 kB
+dist/assets/bg-Di11xSIH.js                                    15.83 kB │ gzip:     4.87 kB
+dist/assets/Minimal-Dr2R02uf.js                               16.28 kB │ gzip:     6.06 kB
+dist/assets/EditModeSaveMenu-C0ec4VaI.js                      18.82 kB │ gzip:     5.63 kB
+dist/assets/zh-CN-DiMSKvZa.js                                 19.39 kB │ gzip:     8.38 kB
+dist/assets/ru-INjpRiR2.js                                    19.39 kB │ gzip:     6.01 kB
+dist/assets/el-B_cGttvY.js                                    20.08 kB │ gzip:     6.21 kB
+dist/assets/zh-TW-BzaT3mzf.js                                 20.24 kB │ gzip:     8.67 kB
+dist/assets/ky-BkuqhmI2.js                                    21.07 kB │ gzip:     6.51 kB
+dist/assets/uk-nbM3HFPg.js                                    21.89 kB │ gzip:     6.84 kB
+dist/assets/id-C14n3lh-.js                                    22.40 kB │ gzip:     8.28 kB
+dist/assets/sw-xURVReu9.js                                    22.92 kB │ gzip:     8.50 kB
+dist/assets/ro-C9dlEdDX.js                                    23.22 kB │ gzip:     8.57 kB
+dist/assets/it-BZos8w84.js                                    23.32 kB │ gzip:     8.46 kB
+dist/assets/tr-BBJm_fTe.js                                    23.98 kB │ gzip:     9.09 kB
+dist/assets/bn-D7DgWUVz.js                                    23.99 kB │ gzip:     6.06 kB
+dist/assets/fr-PDtTnwfA.js                                    24.33 kB │ gzip:     8.58 kB
+dist/assets/az-DtzY2m6J.js                                    24.46 kB │ gzip:     8.97 kB
+dist/assets/de-Dz87Ld4Z.js                                    24.55 kB │ gzip:     8.93 kB
+dist/assets/keycloak-pTemKkdy.js                              25.80 kB │ gzip:     8.05 kB
+dist/assets/ar-BtekXgPd.js                                    29.21 kB │ gzip:     9.40 kB
+dist/assets/_plugin-vue_export-helper-C5zI5iw3.js             66.99 kB │ gzip:    26.31 kB
+dist/assets/oidc-client-ts-COQDD6R8.js                        67.49 kB │ gzip:    17.04 kB
+dist/assets/ChartingMixin-lPoFZWN0.js                         76.84 kB │ gzip:    18.75 kB
+dist/assets/SchemaForm-CZLLn0ME.js                           140.89 kB │ gzip:    40.99 kB
+dist/assets/esm-DPsAgLxy.js                                  428.52 kB │ gzip:   144.53 kB
+dist/assets/JsonEditor-BdfeT0s1.js                           520.23 kB │ gzip:   167.96 kB
+dist/assets/index-BFND2lg1.js                                789.07 kB │ gzip:   254.81 kB
+dist/assets/simple-icons-25on_JBM.js                       5,285.60 kB │ gzip: 2,192.58 kB
+
+✓ built in 7.40s
+
+PWA v2.0.0
+mode      generateSW
+precache  275 entries (8574.96 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-e97c6ee1.js
+Done in 11.32s.
+exit=0
+
+$ static-web-server --root=$S/replay/C-204-dashy/static_app --log-level=info --port=4017 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	3013
+--	title	/	Dashy	
+200	page	/conf.yml	text/x-yaml	1735
+200	page	/manifest.webmanifest	application/manifest+json	459
+200	page	/sw.js	text/javascript	16103
+404	page	/home	text/html	0
+--	title	/home	(none)	
+404	page	/workspace	text/html	0
+--	title	/workspace	(none)	
+404	page	/minimal	text/html	0
+--	title	/minimal	(none)	
+404	page	/about	text/html	0
+--	title	/about	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/web-icons/favicon-64x64.png	image/png	5421
+200	ref	/web-icons/favicon-32x32.png	image/png	1997
+200	ref	/web-icons/favicon-16x16.png	image/png	794
+200	ref	/favicon.ico	image/x-icon	15406
+200	ref	/loading-screen.css	text/css	1976
+200	ref	/theme-fonts.css	text/css	1024
+404	ref	/opensearch.xml	text/html	0
+200	ref	/assets/index-BFND2lg1.js	text/javascript	789078
+200	ref	/assets/rolldown-runtime-BCiCTKAo.js	text/javascript	1301
+200	ref	/assets/_plugin-vue_export-helper-C5zI5iw3.js	text/javascript	66995
+200	ref	/assets/StoreMutations-x0axfGmY.js	text/javascript	612
+200	ref	/assets/ErrorHandler-BLMc-nBB.js	text/javascript	10221
+200	ref	/assets/index-BGK5a31c.css	text/css	254118
+SUMMARY pages=9 refs_checked=13 failures=6
+FAIL	404	page	/home	text/html	0
+FAIL	404	page	/workspace	text/html	0
+FAIL	404	page	/minimal	text/html	0
+FAIL	404	page	/about	text/html	0
+FAIL	404	page	/nope	text/html	0
+FAIL	404	ref	/opensearch.xml	text/html	0
+# static_app files: 306

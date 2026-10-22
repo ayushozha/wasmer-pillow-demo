@@ -1,0 +1,4 @@
+vue@3.5.44: 0 advisories
+vue-router@5.4.0: 0 advisories
+js-yaml@5.4.3: 0 advisories
+dompurify@3.4.17: 0 advisories

@@ -1,0 +1,18 @@
+diff --git a/docs/deployment/cloud.md b/docs/deployment/cloud.md
+index 4f0a5e4..b9a333b 100644
+--- a/docs/deployment/cloud.md
++++ b/docs/deployment/cloud.md
+@@ -46,6 +46,13 @@ You can use [this link](https://www.hostg.xyz/aff_c?offer_id=48&aff_id=243972&ur
+ [![Deploy to EdgeOne](https://forthebadge.com/api/badges/generate?panels=2&primaryLabel=Deploy&secondaryLabel=EdgeOne&primaryBGColor=%23393939&primaryTextColor=%23FFFFFF&secondaryBGColor=%230055D2&borderRadius=2)](https://edgeone.ai/pages/new?repository-url=https://github.com/lissy93/dashy)
+ 
+ 
++### Wasmer
++
++[Wasmer](https://wasmer.io/) builds Dashy from Git and serves the generated `dist` folder as static files (`yarn install`, then `yarn run build`). The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To use your own `user-data/conf.yml`, fork the repo and import your fork instead. There are no rewrite rules on this host, so open Dashy from its root URL: reloading a sub-route such as `/workspace` or `/minimal` returns a 404. Status checks, the CORS proxy and saving config through the UI need Dashy's Node server, so they don't work here.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=lissy93%2Fdashy)
++
++
+ ### Cloudflare Pages
+ 
+ [Cloudflare Pages](https://pages.cloudflare.com/) is static hosting on Cloudflare's edge. Import the repo, set build command `yarn build`, and set output directory `dist`.

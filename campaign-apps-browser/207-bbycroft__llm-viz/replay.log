@@ -1,0 +1,65 @@
+# replay of C-pre-llmviz  source=rup/bbycroft__llm-viz  upstream HEAD=9da93742382f1bf36c020c38a1ace454e82c4490
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: yarn
+    Output directory: out
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-pre-llmviz/plan.json
+# provider=node-static install='yarn install' build='yarn run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='out' pm=yarn@ inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ yarn --version
+1.22.22
+exit=0
+
+# staged before install: package.json yarn.lock 
+$ yarn install
+error This project's package.json defines "packageManager": "yarn@4.1.0". However the current global version of Yarn is 1.22.22.
+
+Presence of the "packageManager" field indicates that the project is meant to be used with Corepack, a tool included by default with all official Node.js distributions starting from 16.9 and 14.19.
+Corepack must currently be enabled by running corepack enable in your terminal. For more information, check out https://yarnpkg.com/corepack.
+exit=1
+
+INSTALL FAILED
+$ yarn run build
+[31m[1mUsage Error[22m[39m: Couldn't find the node_modules state file - running an install might help (findPackageLocation)
+
+[1m$ [22myarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] [--require #0] <scriptName> ...
+exit=1
+
+BUILD FAILED
+STATIC_DIR 'out' MISSING
+$ static-web-server --root=$S/replay/C-pre-llmviz/static_app --log-level=info --port=4005 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/llm	text/html	0
+--	title	/llm	(none)	
+404	page	/llm/	text/html	0
+--	title	/llm/	(none)	
+404	page	/llm.html	text/html	0
+--	title	/llm.html	(none)	
+404	page	/cpu	text/html	0
+--	title	/cpu	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=6 refs_checked=0 failures=6
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/llm	text/html	0
+FAIL	404	page	/llm/	text/html	0
+FAIL	404	page	/llm.html	text/html	0
+FAIL	404	page	/cpu	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 0

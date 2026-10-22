@@ -1,0 +1,104 @@
+# replay of C-pre-tints  source=rup/edelstone__tints-and-shades  upstream HEAD=02d8480ac4fabb622ad79e8717364ab716dc50a9
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-pre-tints/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json packages/tints-and-shades/package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+$ npm install
+
+added 252 packages, and audited 254 packages in 11s
+
+3 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> tints-and-shades@0.0.0 build
+> npm run build:api && npm run build:readme && astro build
+
+
+> tints-and-shades@0.0.0 build:api
+> npm --workspace @edelstone/tints-and-shades run build
+
+
+> @edelstone/tints-and-shades@0.2.1 build
+> tsc -p tsconfig.json
+
+
+> tints-and-shades@0.0.0 build:readme
+> node build-readme.js
+
+README.md has been generated.
+[2m05:53:40[22m [34m[types][39m Generated [2m453ms[22m
+[2m05:53:40[22m [34m[build][39m output: [34m"static"[39m
+[2m05:53:40[22m [34m[build][39m mode: [34m"static"[39m
+[2m05:53:40[22m [34m[build][39m directory: [34m$S/replay/C-pre-tints/work/dist/[39m
+[2m05:53:40[22m [34m[build][39m Collecting build info...
+[2m05:53:40[22m [34m[build][39m [32m✓ Completed in 584ms.[39m
+[2m05:53:40[22m [34m[build][39m Building static entrypoints...
+[2m05:53:41[22m [34m[vite][39m [32m✓ built in 1.09s[39m
+[33m[1m05:53:42[22m [WARN] [vite][39m [33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[2m05:53:42[22m [34m[vite][39m [32m✓ built in 302ms[39m
+[2m05:53:42[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m05:53:42[22m   [34m├─[39m [2m/404.html[22m [2m(+16ms)[22m 
+[2m05:53:42[22m   [34m├─[39m [2m/about/index.html[22m [2m(+5ms)[22m 
+[2m05:53:42[22m   [34m├─[39m [2m/sitemap.xml[22m [2m(+3ms)[22m 
+[2m05:53:42[22m   [34m├─[39m [2m/index.html[22m [2m(+5ms)[22m 
+[2m05:53:42[22m [32m✓ Completed in 44ms.
+[39m
+[2m05:53:42[22m [34m[build][39m [32m✓ Completed in 1.51s.[39m
+[2m05:53:42[22m [34m[build][39m 3 page(s) built in [1m2.09s[22m
+[2m05:53:42[22m [34m[build][39m [1mComplete![22m
+exit=0
+
+$ static-web-server --root=$S/replay/C-pre-tints/static_app --log-level=info --port=4003 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	20810
+--	title	/	Tint &amp; Shade Generator	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.ico	image/x-icon	4286
+200	ref	/icon.svg	image/svg+xml	416
+200	ref	/apple-touch-icon.png	image/png	24396
+200	ref	/manifest.webmanifest	application/manifest+json	262
+200	ref	/_astro/BaseLayout.o61Wzfbp.css	text/css	37310
+200	ref	/about/	text/html	19348
+200	ref	/_astro/BaseLayout.astro_astro_type_script_index_0_lang.B-DM4QZK.js	text/javascript	83618
+SUMMARY pages=2 refs_checked=7 failures=1
+FAIL	404	page	/nope	text/html	0
+# static_app files: 20

@@ -1,0 +1,13 @@
+200	page	/	text/html	20810
+--	title	/	Tint &amp; Shade Generator	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.ico	image/x-icon	4286
+200	ref	/icon.svg	image/svg+xml	416
+200	ref	/apple-touch-icon.png	image/png	24396
+200	ref	/manifest.webmanifest	application/manifest+json	262
+200	ref	/_astro/BaseLayout.o61Wzfbp.css	text/css	37310
+200	ref	/about/	text/html	19348
+200	ref	/_astro/BaseLayout.astro_astro_type_script_index_0_lang.B-DM4QZK.js	text/javascript	83618
+SUMMARY pages=2 refs_checked=7 failures=1
+FAIL	404	page	/nope	text/html	0

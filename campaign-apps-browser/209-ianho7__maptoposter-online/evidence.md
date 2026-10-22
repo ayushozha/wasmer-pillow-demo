@@ -1,0 +1,8 @@
+# ianho7/maptoposter-online: evidence
+
+**Verdict: HOLD (FAIL_ENV — unproven build).** The build fetches inlang plugins from `cdn.jsdelivr.net` at build time, and that host is blocked in this container, so the build could not be proven here.
+
+- Pinned SHA `58600c7841576341e7617333eb4da7e81053712c` on `main` (last commit 2026-08-03). Stars/forks 961 / 44 (GitHub API, 2026-10-22). License MIT. `AGENTS.md`: Conventional Commit subjects; PRs "should explain user-visible behavior, validation commands, linked issues". No CLA or issue-first rule found.
+- Anybuild v0.33.0 (plan.txt): static Node.js, Vite, **pnpm** (`pnpm-lock.yaml`; the repo also has `bun.lock` and documents `bun run build`), output `dist`. The WASM renderer is committed under `src/pkg/`, so Rust is not needed.
+- Replays: replay-default-env.log (as generated) and replay.log (same, with `NODE_USE_ENV_PROXY=1` + the proxy CA, to give Node's fetch a route out — a labelled deviation). In both, `pnpm install` exit 0, then `paraglide-js compile` logs `PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js": TypeError: fetch failed`, the generated message functions are missing, and `tsc -b` fails with `error TS2339: Property 'size_iphone' does not exist ...` → build exit 2, `dist` missing, `/` 404. `curl https://cdn.jsdelivr.net/...` from this container: `CONNECT tunnel failed, response 403` (agent proxy refuses the host).
+- Classification: network/environment (FAIL_ENV). If Wasmer's builders can reach cdn.jsdelivr.net, the build may pass; that must be proven before a patch is written. Also open: optional `VITE_NOMINATIM_PROXY_ENDPOINT` (a URL, not a secret).

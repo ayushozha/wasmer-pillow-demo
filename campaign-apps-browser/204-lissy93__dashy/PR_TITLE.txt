@@ -1,0 +1,1 @@
+docs: add Wasmer to static hosting providers

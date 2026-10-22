@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Express
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at /tmp/AnybuildXzFSfv
+Plan saved to $S/replay/C-204-dashy/plan.json
