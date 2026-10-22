@@ -1,0 +1,6 @@
+  Detected static site provider
+    Output directory: public
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/AnybuildRphS9H
+Plan saved to $S/replay/r-windmill2/plan.json
