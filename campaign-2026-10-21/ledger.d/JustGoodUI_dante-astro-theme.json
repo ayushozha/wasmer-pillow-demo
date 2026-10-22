@@ -15,7 +15,7 @@
   "build_claude": "PASS: Node 24.22.1, npm 11.19.1, 36 pages built, exit 0. Log: logs/JustGoodUI_dante-astro-theme.build.log",
   "smoke": "PASS: /, /blog/, /blog/post-1/, /projects/, /about/, /rss.xml, /sitemap-index.xml all 200; 73 local refs in 36 HTML files, 0 missing. The theme has no 404 page, so none was checked. logs/JustGoodUI_dante-astro-theme.smoke.json",
   "format_check": "prettier --check README.md (repo devDependency and .prettierrc): pass. logs/JustGoodUI_dante-astro-theme.format.log",
-  "compat_notes": "Node >=22.12.0. No custom 404 page. The newsletter form posts to site-config subscribe.form.action (default '#') and needs a separate provider (Mailchimp/Formspree/ConvertKit). No host config files.",
+  "compat_notes": "Node >=22.12.0. No custom 404 page. The newsletter form posts to site-config subscribe.form.action (default '#') and needs a separate provider (Mailchimp/Formspree/ConvertKit). No host config files. No Staticfile needed: astro.config sets no outDir, so the build writes to Astro's default dist (verified in the build), which is the folder node_static serves.",
   "policy": "No CONTRIBUTING, PR template or AI policy; no JustGoodUI/.github repo. Closed PR #60 'add deploy configuration' came from a non-member fork and added a GitHub Pages workflow plus a stray file. It looks like a mistaken PR, not a maintainer refusal; I could not read its comment. No existing Wasmer PR or issue.",
   "why": "The README leads with a Deploy to Netlify button; the theme is a fully static Astro blog built to dist.",
   "patch": "patches/JustGoodUI_dante-astro-theme.patch",

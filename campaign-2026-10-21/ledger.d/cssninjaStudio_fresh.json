@@ -5,7 +5,7 @@
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:15Z",
   "archived": false,
-  "detection_verified": "pending Codex browser check",
+  "detection_verified": "pending Codex browser check. Astro default output dir dist (no outDir override in astro config), so no Staticfile needed.",
   "license": "MIT",
   "default_branch": "main",
   "pushed_at": "2026-09-30T21:13:57Z",

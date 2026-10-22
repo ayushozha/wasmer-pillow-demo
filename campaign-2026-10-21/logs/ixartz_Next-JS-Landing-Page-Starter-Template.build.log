@@ -1,1 +1,50 @@
 $ npm ci
+
+> next-js-boilerplate@1.0.0 prepare
+> husky install
+
+husky - Git hooks installed
+
+added 560 packages, and audited 561 packages in 1m
+
+176 packages are looking for funding
+  run `npm fund` for details
+
+43 vulnerabilities (20 moderate, 21 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+EXIT 0
+$ npm run build-prod; ls -d out .next
+
+> next-js-boilerplate@1.0.0 build-prod
+> run-s clean build
+
+
+> next-js-boilerplate@1.0.0 clean
+> rimraf .next .swc out
+
+
+> next-js-boilerplate@1.0.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 14.1.0
+
+   Linting and checking validity of types ...
+   Creating an optimized production build ...
+   Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc" https://nextjs.org/docs/messages/swc-disabled
+   Using external babel configuration from /tmp/claude-0/camp2/ixartz_Next-JS-Landing-Page-Starter-Template/.babelrc
+[styled-jsx] Loading plugin from path: /tmp/claude-0/camp2/ixartz_Next-JS-Landing-Page-Starter-Template/node_modules/styled-jsx-plugin-postcss/index.js
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme

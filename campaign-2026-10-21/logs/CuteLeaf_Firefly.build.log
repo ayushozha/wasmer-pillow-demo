@@ -1,3 +1,4 @@
+# 2026-10-22T04:33:21Z CuteLeaf/Firefly @ 91cbbefe53716e70b77ca9c41e27af10f5b27cab node v24.22.1 pnpm 11.22.0
 $ npx -y pnpm@11.22.0 install --frozen-lockfile
 npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
 ? Verifying lockfile against supply-chain policies (1361 entries)...

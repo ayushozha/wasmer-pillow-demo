@@ -1,12 +1,21 @@
-From 358155ac4b1d38d0070b9a6950ce506089f8ad17 Mon Sep 17 00:00:00 2001
+From 37a1f2dffce4627e79be809456a877dae8844168 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:32:40 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
- readme.md | 5 +++++
- 1 file changed, 5 insertions(+)
+ Staticfile | 1 +
+ readme.md  | 5 +++++
+ 2 files changed, 6 insertions(+)
+ create mode 100644 Staticfile
 
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..91377cd
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: dist
 diff --git a/readme.md b/readme.md
 index 8eaaaf8..f1dd744 100644
 --- a/readme.md

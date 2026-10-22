@@ -1,6 +1,6 @@
-From 02f12755c5fefad15c80800d1322d8287fdd2362 Mon Sep 17 00:00:00 2001
-From: Wasmer Campaign <noreply@example.invalid>
-Date: Thu, 22 Oct 2026 04:34:07 +0000
+From 3b8f0dc44c117cc597e84e250c076a330c6d221a Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:34:49 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
