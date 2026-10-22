@@ -1,0 +1,442 @@
+# replay of jtd-template  source=$S/rup/jtd-template  upstream HEAD=d9e885a8bf281872759fbe061633e040772e76a1
+# local diff vs HEAD: 
+  Detected Jekyll provider
+    Jekyll version: 4.3.0
+    Ruby version: 3.4.7
+    Output directory: _site
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/jtd-template/plan.json
+# provider=jekyll install='bundle install' build='jekyll build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='' pm=@ inputs='' all_files=False
+$ ruby -v
+ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [x86_64-linux]
+exit=0
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Bundler 2.6.9 is running, but your lockfile was generated with 2.5.9. Installing Bundler 2.5.9 and restarting using that version.
+Fetching gem metadata from https://rubygems.org/.
+Fetching bundler 2.5.9
+Installing bundler 2.5.9
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching gem metadata from https://rubygems.org/..........
+Fetching public_suffix 6.0.1
+Fetching bigdecimal 3.1.9
+Fetching colorator 1.1.0
+Fetching concurrent-ruby 1.3.5
+Installing public_suffix 6.0.1
+Fetching eventmachine 1.2.7
+Installing concurrent-ruby 1.3.5
+Installing colorator 1.1.0
+Fetching http_parser.rb 0.8.0
+Installing bigdecimal 3.1.9 with native extensions
+Installing eventmachine 1.2.7 with native extensions
+Fetching ffi 1.17.1 (x86_64-linux-gnu)
+Installing http_parser.rb 0.8.0 with native extensions
+Installing ffi 1.17.1 (x86_64-linux-gnu)
+Fetching forwardable-extended 2.6.0
+Installing forwardable-extended 2.6.0
+Fetching rb-fsevent 0.11.2
+Installing rb-fsevent 0.11.2
+Fetching liquid 4.0.4
+Installing liquid 4.0.4
+Fetching mercenary 0.4.0
+Installing mercenary 0.4.0
+Fetching rouge 4.5.1
+Installing rouge 4.5.1
+Fetching safe_yaml 1.0.5
+Installing safe_yaml 1.0.5
+Fetching unicode-display_width 2.6.0
+Installing unicode-display_width 2.6.0
+Fetching webrick 1.9.1
+Installing webrick 1.9.1
+Fetching addressable 2.8.7
+Installing addressable 2.8.7
+Fetching i18n 1.14.7
+Installing i18n 1.14.7
+Fetching rb-inotify 0.11.1
+Fetching pathutil 0.16.2
+Installing rb-inotify 0.11.1
+Fetching kramdown 2.5.1
+Installing pathutil 0.16.2
+Fetching terminal-table 3.0.2
+Installing kramdown 2.5.1
+Installing terminal-table 3.0.2
+Fetching listen 3.9.0
+Installing listen 3.9.0
+Fetching jekyll-watch 2.2.1
+Installing jekyll-watch 2.2.1
+Fetching kramdown-parser-gfm 1.1.0
+Installing kramdown-parser-gfm 1.1.0
+Fetching google-protobuf 4.29.3 (x86_64-linux)
+Installing google-protobuf 4.29.3 (x86_64-linux)
+Fetching sass-embedded 1.83.4 (x86_64-linux-gnu)
+Installing sass-embedded 1.83.4 (x86_64-linux-gnu)
+Fetching jekyll-sass-converter 3.0.0
+Installing jekyll-sass-converter 3.0.0
+Fetching em-websocket 0.5.3
+Installing em-websocket 0.5.3
+Fetching jekyll 4.4.1
+Installing jekyll 4.4.1
+Fetching jekyll-include-cache 0.2.1
+Fetching jekyll-seo-tag 2.8.0
+Installing jekyll-include-cache 0.2.1
+Installing jekyll-seo-tag 2.8.0
+Fetching just-the-docs 0.12.0
+Installing just-the-docs 0.12.0
+Bundle complete! 2 Gemfile dependencies, 38 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+exit=0
+$ jekyll build
+Configuration file: $S/replay/jtd-template/work/_config.yml
+            Source: $S/replay/jtd-template/work
+       Destination: $S/replay/jtd-template/work/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+More info and automated migrator: https://sass-lang.com/d/import
+2 │ @import "./support/support";
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+3 │ @import "./custom/setup";
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 3:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+4 │ @import "./color_schemes/light";
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 4:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+6 │ @import "./color_schemes/dark";
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+8 │ @import "./modules";
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9        root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9        root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9        root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9        root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 2:9        root stylesheet
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+    color_schemes/light.scss 11:18                                 @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 4:9  root stylesheet
+color.scale($color, $lightness: 23.6111111111%)
+color.adjust($color, $lightness: 10%)
+More info: https://sass-lang.com/d/color-functions
+5 │ $link-color: lighten($blue-000, 10%);
+    color_schemes/dark.scss 5:14                                   @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+color.scale($color, $lightness: -18.8888888889%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+12 │ $feedback-color: darken($sidebar-color, 3%);
+    color_schemes/dark.scss 12:18                                  @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+color.scale($color, $lightness: -7.3913043478%)
+color.adjust($color, $lightness: -5%)
+More info: https://sass-lang.com/d/color-functions
+61 │         color: darken($link-color, 5%);
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16   @import
+    modules.scss 8:9                                               @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+color.scale($color, $lightness: -2.9565217391%)
+color.adjust($color, $lightness: -2%)
+More info: https://sass-lang.com/d/color-functions
+38 │     color: darken($link-color, 2%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12      @import
+    modules.scss 11:9                                              @import
+    ../../../../../../work/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+Run in verbose mode to see all warnings.
+More info and automated migrator: https://sass-lang.com/d/import
+3 │ @import "./support/support";
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+4 │ @import "./custom/setup";
+    ../../../../../../work/assets/css/just-the-docs-default.scss 4:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+5 │ @import "./color_schemes/light";
+    ../../../../../../work/assets/css/just-the-docs-default.scss 5:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+7 │ @import "./modules";
+    ../../../../../../work/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+11 │ @import "./custom/custom";
+    ../../../../../../work/assets/css/just-the-docs-default.scss 11:9  root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9     root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9     root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9     root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9     root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 3:9     root stylesheet
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+    color_schemes/light.scss 11:18                                    @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 5:9  root stylesheet
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+More info: https://sass-lang.com/d/color-functions
+61 │         color: darken($link-color, 5%);
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16      @import
+    modules.scss 8:9                                                  @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+More info: https://sass-lang.com/d/color-functions
+38 │     color: darken($link-color, 2%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12         @import
+    modules.scss 11:9                                                 @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+More info: https://sass-lang.com/d/color-functions
+46 │     background-color: darken($base-button-color, 1%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23         @import
+    modules.scss 11:9                                                 @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+52 │     background-color: darken($base-button-color, 3%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23         @import
+    modules.scss 11:9                                                 @import
+    ../../../../../../work/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+Run in verbose mode to see all warnings.
+More info and automated migrator: https://sass-lang.com/d/import
+2 │ @import "./support/support";
+    - 2:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+3 │ @import "./custom/setup";
+    - 3:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+4 │ @import "./color_schemes/light";
+    - 4:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+6 │ @import "./modules";
+    - 6:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+10 │ @import "./custom/custom";
+    - 10:9  root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+    color_schemes/light.scss 11:18  @import
+    - 4:9                           root stylesheet
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+More info: https://sass-lang.com/d/color-functions
+61 │         color: darken($link-color, 5%);
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16  @import
+    modules.scss 8:9                                              @import
+    - 6:9                                                         root stylesheet
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+More info: https://sass-lang.com/d/color-functions
+38 │     color: darken($link-color, 2%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+More info: https://sass-lang.com/d/color-functions
+46 │     background-color: darken($base-button-color, 1%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+52 │     background-color: darken($base-button-color, 3%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+Run in verbose mode to see all warnings.
+More info and automated migrator: https://sass-lang.com/d/import
+2 │ @import "./support/support";
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+3 │ @import "./custom/setup";
+    ../../../../../../work/assets/css/just-the-docs-light.scss 3:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+4 │ @import "./color_schemes/light";
+    ../../../../../../work/assets/css/just-the-docs-light.scss 4:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+6 │ @import "./modules";
+    ../../../../../../work/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+More info and automated migrator: https://sass-lang.com/d/import
+10 │ @import "./custom/custom";
+    ../../../../../../work/assets/css/just-the-docs-light.scss 10:9  root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9       root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9       root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9       root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9       root stylesheet
+Use map.get instead.
+More info and automated migrator: https://sass-lang.com/d/import
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8  @import
+    support/support.scss 1:9                                             @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 2:9       root stylesheet
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+    color_schemes/light.scss 11:18                                  @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 4:9  root stylesheet
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+More info: https://sass-lang.com/d/color-functions
+61 │         color: darken($link-color, 5%);
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16    @import
+    modules.scss 8:9                                                @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+More info: https://sass-lang.com/d/color-functions
+38 │     color: darken($link-color, 2%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12       @import
+    modules.scss 11:9                                               @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+More info: https://sass-lang.com/d/color-functions
+46 │     background-color: darken($base-button-color, 1%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23       @import
+    modules.scss 11:9                                               @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+More info: https://sass-lang.com/d/color-functions
+52 │     background-color: darken($base-button-color, 3%);
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23       @import
+    modules.scss 11:9                                               @import
+    ../../../../../../work/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+Run in verbose mode to see all warnings.
+                    done in 0.79 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+exit=0
+$ cp -R _site/* '$S/replay/jtd-template/static_app/'
+exit=0
+$ static-web-server --root=$S/replay/jtd-template/static_app --log-level=info --port=4071 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	10843
+--	title	/	Home | Just the Docs Template	
+200	page	/assets/css/just-the-docs-default.css	text/css	134760
+200	page	/assets/js/just-the-docs.js	text/javascript	20172
+200	page	/assets/js/search-data.json	application/json	1599
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+200	ref	/assets/css/just-the-docs-head-nav.css	text/css	170
+200	ref	/assets/js/vendor/lunr.min.js	text/javascript	31211
+SUMMARY pages=6 refs_checked=2 failures=2
+FAIL	404	page	/404.html	text/html	0
+FAIL	404	page	/does-not-exist	text/html	0
+# static_app files: 13

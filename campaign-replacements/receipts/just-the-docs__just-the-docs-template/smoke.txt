@@ -1,0 +1,14 @@
+200	page	/	text/html	10843
+--	title	/	Home | Just the Docs Template	
+200	page	/assets/css/just-the-docs-default.css	text/css	134760
+200	page	/assets/js/just-the-docs.js	text/javascript	20172
+200	page	/assets/js/search-data.json	application/json	1599
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+200	ref	/assets/css/just-the-docs-head-nav.css	text/css	170
+200	ref	/assets/js/vendor/lunr.min.js	text/javascript	31211
+SUMMARY pages=6 refs_checked=2 failures=2
+FAIL	404	page	/404.html	text/html	0
+FAIL	404	page	/does-not-exist	text/html	0

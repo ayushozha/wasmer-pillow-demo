@@ -1,0 +1,13 @@
+./LICENSE
+./README.md
+./assets/css/just-the-docs-dark.css
+./assets/css/just-the-docs-dark.css.map
+./assets/css/just-the-docs-default.css
+./assets/css/just-the-docs-default.css.map
+./assets/css/just-the-docs-head-nav.css
+./assets/css/just-the-docs-light.css
+./assets/css/just-the-docs-light.css.map
+./assets/js/just-the-docs.js
+./assets/js/search-data.json
+./assets/js/vendor/lunr.min.js
+./index.html
