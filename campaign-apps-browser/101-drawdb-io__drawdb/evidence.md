@@ -1,3 +1,5 @@
+> **HELD_POLICY (root, 2026-10-22) — DO NOT PUBLISH.** In drawdb-io/drawdb PR #57 the owner (1ilit) explicitly declined deployment buttons to keep the README clean: https://github.com/drawdb-io/drawdb/pull/57#issuecomment-2090613834 . No README button, no alternative account, no replacement venue. The technical replay below is kept as evidence only.
+
 # drawdb-io/drawdb: evidence
 
 **Verdict: HOLD.** The build and the root page pass, but drawDB uses `BrowserRouter` and the editor lives on history-router URLs (`/editor`, `/editor/diagrams/:id`, `/editor/templates/:id`). static-web-server as Anybuild v0.33.0 starts it has no SPA fallback, so reloading or opening any of those URLs directly returns a bare 404. That breaks the main workflow (opening a saved diagram navigates to `/editor/diagrams/<id>`, so a refresh there shows a 404), not an edge case.

@@ -8,7 +8,7 @@
 - Pinned SHA: `c24936a402bb3e24b4858f05282d69a04fcfe25b` on `main`.
 - Stars / forks: 23,011 / 1,504. Not archived (GitHub API, 2026-10-22).
 - License: AGPL-3.0. A README PR is fine. Anyone hosting a modified version must offer its source to network users.
-- **CLA required.** `.github/workflows/cla.yaml` runs contributor-assistant on `pull_request_target`. `CLA.md` grants ChartDB, Inc. "a perpetual, worldwide, non-exclusive, royalty-free, sublicensable license". The PR author must sign it, and that is a decision for the human submitter.
+- **CLA required: signature required by the account owner, unresolved.** `.github/workflows/cla.yaml` runs contributor-assistant/github-action@v2.6.1 on every `pull_request_target` (opened/closed/synchronize). There is no path filter, and `allowlist:` is empty. Signatures are stored in `chartdb/cla-signatures`. Documentation-only changes are **not** exempt: `CLA.md` says "By submitting code, documentation, or any other materials (collectively, \"Contributions\")..." and grants ChartDB, Inc. "a perpetual, worldwide, non-exclusive, royalty-free, sublicensable license". I did not sign or accept anything. Whether the submitting account is already in the signatures file is unknown, because I have no API access to that repo. Even without the technical blockers, the verdict would be at most CONDITIONAL until the account owner decides on the CLA.
 - `CONTRIBUTING.md`: "Fork the repository, create a branch from `main`, and focus on a single change... Open a pull request and clearly state what issue it addresses." There is no PR template and no AI policy.
 - Merged PRs since 2025-10-01: 116. Duplicate `wasmer` PRs: 0. PRs with "deploy" in the title: 0.
 
@@ -42,4 +42,4 @@
 
 ## Remaining check for the reviewer
 - Both blockers need upstream or builder changes: a build memory setting, and an SPA fallback (or a `404.html` copy of `index.html`, which static-web-server serves with status 404 and which boots the app). Neither belongs in a README PR.
-- If ever reconsidered: confirm Wasmer's builder heap, have a human sign the CLA, and verify the badge and import page in a browser (blocked here).
+- If ever reconsidered: confirm Wasmer's builder heap, the account owner decides on the CLA (unresolved; never signed by us), and verify the badge and import page in a browser (blocked here).

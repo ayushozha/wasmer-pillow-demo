@@ -29,4 +29,5 @@ Commands and results:
 - The build needs more than about 2.2 GB of Node heap. Whether Wasmer's builder provides that was not verified.
 - Wasmer serves the build without an SPA fallback, unlike the bundled nginx `try_files`. Reloading `/diagrams/<id>`, `/examples` or `/templates/...` returns 404, and the editor moves to `/diagrams/<id>` as soon as a diagram exists.
 - AI export is not available unless configured. Any `VITE_*` value, including an API key, is public in the built JavaScript.
-- ChartDB is AGPL-3.0. Anyone hosting a modified version must offer its source to users. The repository requires signing its CLA.
+- ChartDB is AGPL-3.0. Anyone hosting a modified version must offer its source to users.
+- CLA signature required by the account owner, unresolved. The CLA Assistant workflow runs on every PR, and the CLA explicitly covers documentation contributions.
