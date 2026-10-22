@@ -1,0 +1,9 @@
+# receipt: adv.py 2026-10-22T05:57:33Z
+next@16.3.5: 7 advisories
+   high      GHSA-cjq9-62q9-8jv4    vuln=>=16.0.0 <16.3.8 | Next.js has Server-Side Request Forgery in Image Optimization
+   critical  GHSA-vcvr-r3jv-pc5j    vuln=>=16.2.0 <16.3.6 | Next.js: Remote Code Execution in next/og ImageResponse
+   moderate  GHSA-f87g-xv8r-7p7x    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in App Router metadata image routes via dynamicParams b
+   moderate  GHSA-mcj8-r9mp-w47p    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning in SSG/ISR rendering that leads to cross-user content substitu
+   moderate  GHSA-3w37-wq28-93x7    vuln=>=16.3.0 <16.3.8 | Next.js: Pending `use cache` fill can leak Draft Mode content into regular responses and p
+   moderate  GHSA-4jqv-mc3x-m676    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning of SSG and ISR pages in self-hosted applications
+   low       GHSA-39w2-rjm5-chcv    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in development server's Model Context Protocol endpoint

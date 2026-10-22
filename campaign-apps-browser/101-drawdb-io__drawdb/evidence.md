@@ -41,5 +41,8 @@
 - `npm audit --omit=dev`: 1 high, in `follow-redirects` (via axios; credential header stripping). It is a Node-only transport, and the built bundle contains no follow-redirects code. It is not shipped to the browser.
 - Runtime versions shipped: react 18.3.1, react-router 7.18.2, axios 1.20.0, jspdf 4.2.1, dexie 3.2.7, lodash 4.18.1. There are no other prod advisories.
 
+## Receipts
+- `replay.log` (install, build and smoke output, plus any diagnostic runs, labelled), and `receipt-*.txt` (audit, advisory lookups and other checks), saved verbatim.
+
 ## Remaining check for the reviewer
 - None. The target is dropped: the owner declined deploy buttons in PR #57. The upstream.patch and PR text are kept only as a record of the technical replay and must not be submitted.

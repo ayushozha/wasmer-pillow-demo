@@ -1,0 +1,14 @@
+# receipt: npm audit --omit=dev --package-lock-only (npm 11.21.1, 2026-10-22T05:57:12Z) on pinned package-lock.json of drawdb-io__drawdb
+# npm audit report
+
+follow-redirects  1.16.0
+Severity: high
+follow-redirects array-form headers bypass cross-origin credential stripping - https://github.com/advisories/GHSA-q3jh-wrc6-jgq8
+follow-redirects sensitiveHeaders regex escaping can expose credential headers - https://github.com/advisories/GHSA-8r9p-f939-6h3c
+fix available via `npm audit fix`
+node_modules/follow-redirects
+
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix

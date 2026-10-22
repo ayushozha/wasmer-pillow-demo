@@ -1,0 +1,8 @@
+# receipt (2026-10-22T05:58:12Z): DIAGNOSTIC only (not the Anybuild path). Local native sws 2.38.0 serving work/docs (the adapter-static output of the same replay build)
+/ 200 4285
+/edit 200 4886
+/edit.html 200 4886
+/view 200 4519
+/nope 404 1904
+
+# build output dirs present in work/: ls: cannot access '$S/replay/T-mermaid-live/work/build': No such file or directory $S/replay/T-mermaid-live/work/docs 

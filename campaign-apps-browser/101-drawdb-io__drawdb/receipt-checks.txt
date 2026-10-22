@@ -1,0 +1,8 @@
+# receipt: bundle grep for follow-redirects in built assets (2026-10-22T05:57:33Z)
+$ grep -l 'follow-redirects' static_app/assets/*.js
+exit=1 (1 = no match)
+
+# receipt: local sws 2.38.0 with index.html copied to 404.html (scratch copy)
+$ curl -w '%{http_code} %{size_download}' http://127.0.0.1:3852/editor
+404 2291
+[1]+  Done                    $S/sws/bin/static-web-server --root=$T --log-level=error --port=3852 --host=127.0.0.1 > /dev/null 2>&1

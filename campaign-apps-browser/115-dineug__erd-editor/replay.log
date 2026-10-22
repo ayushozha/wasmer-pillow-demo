@@ -1,0 +1,111 @@
+# replay of T-erd  source=$S/rup/dineug__erd-editor  upstream HEAD=921e3103de9c2e37581aa9cf8a115e078f79f68a
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/T-erd/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10.34.3 inputs='package.json packages/agent-hub/package.json packages/agent-hub-host/package.json packages/app/package.json packages/erd-editor/package.json packages/erd-editor-schema/package.json packages/uuid/package.json packages/grid/package.json packages/r-html/package.json packages/r-html-konva/package.json packages/vite-plugin-r-html/package.json packages/schema-sql-parser/package.json packages/intellij-plugin/package.json packages/intellij-webview/package.json packages/webview-client/package.json packages/replication-store-worker/package.json packages/webview-bridge/package.json packages/mcp-server/package.json packages/obsidian-plugin/package.json packages/vscode-extension/package.json packages/vscode-webview/package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.3
+exit=0
+
+$ pnpm install
+Scope: all 21 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1309
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1309, reused 733, downloaded 37, added 31
+Progress: resolved 1309, reused 733, downloaded 107, added 88
+Progress: resolved 1309, reused 733, downloaded 240, added 190
+Progress: resolved 1309, reused 733, downloaded 376, added 357
+Progress: resolved 1309, reused 733, downloaded 447, added 482
+Progress: resolved 1309, reused 733, downloaded 568, added 673
+Progress: resolved 1309, reused 733, downloaded 569, added 1309, done
+
+devDependencies:
++ @commitlint/cli 20.5.3
++ @commitlint/config-conventional 20.5.3
++ @types/node 22.20.1
++ eslint-plugin-simple-import-sort 12.1.1
++ typescript 7.0.2
++ vite <- @voidzero-dev/vite-plus-core 1.0.0
++ vite-plus 1.0.0
+
+. prepare$ vp config
+. prepare: .git can't be found
+. prepare: Done
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: core-js@3.36.1, core-js@3.50.0, esbuild@0.25.0.     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 8.9s using pnpm v10.34.3
+exit=0
+
+$ pnpm run build
+
+> @dineug/erd-editor-monorepo@ build $S/replay/T-erd/work
+> vp run -r build
+
+... [trimmed build output] ...
+  dist/sw.js.map
+[PLUGIN_TIMINGS] JavaScript callbacks ran for 22.7s of this 23.9s build (95%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite:legacy-post-process renderChunk (45%, 10.8s, 43 calls)
+  - plugin vite:css transform (19%, 4.6s, 1 call)
+Additional callback time came from the callbacks below and from callbacks under 1s.
+1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - plugin vite:worker-import-meta-url transform (2 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+
+---
+vp run: 0/39 cache hit (0%). (Run `vp run --last-details` for full details)
+exit=0
+
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=$S/replay/T-erd/static_app --log-level=info --port=3877 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+SUMMARY pages=1 refs_checked=0 failures=1
+FAIL	404	page	/	text/html	0
+# static_app files: 0
+
+# receipt: packages/app/dist after build:
+_headers
+_routes.json
+apple-touch-icon-180x180.png
+erd-editor.svg
+erd-editor_icon.svg
+favicon.ico
+index.html
+manifest.json
+maskable-icon-512x512.png
+privacy.html
+pwa-192x192.png
+pwa-512x512.png
+pwa-64x64.png
+static
+support.html
+sw.js
+sw.js.map
+terms.html

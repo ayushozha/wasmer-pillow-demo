@@ -40,6 +40,9 @@
   - Build-time only: tailwindcss, chokidar, braces, micromatch, postcss and source-map-js.
 - No critical advisories in shipped code. A reviewer should still note that react-router <7.18 is shipped.
 
+## Receipts
+- `replay.log` (install, build and smoke output, plus any diagnostic runs, labelled), and `receipt-*.txt` (audit, advisory lookups and other checks), saved verbatim.
+
 ## Remaining check for the reviewer
 - Both blockers are outside a README PR: the build heap, and history-router reloads that 404 on Wasmer's static hosting. No SPA-fallback configuration is proposed. The target stays HOLD.
 - If ever reconsidered: confirm Wasmer's builder heap, the account owner decides on the CLA (unresolved; never signed by us), and verify the badge and import page in a browser (blocked here).

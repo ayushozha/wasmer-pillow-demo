@@ -1,0 +1,43 @@
+# receipt: adv.py (npm bulk advisory endpoint) 2026-10-22T05:57:33Z
+react-router@7.10.1: 13 advisories
+   high      GHSA-2w69-qvjg-hvjx    vuln=>=7.0.0 <=7.11.0 | React Router vulnerable to XSS via Open Redirects
+   high      GHSA-49rj-9fvp-4h2h    vuln=>=7.0.0 <=7.14.1 | React Router's vendored turbo-stream v2 allows arbitrary constructor invocation via TYPE_E
+   high      GHSA-8646-j5j9-6r62    vuln=>=7.7.0 <7.13.2 | React Router vulnerable to XSS in unstable RSC redirect handling via javascript: redirect 
+   high      GHSA-8x6r-g9mw-2r78    vuln=>=7.0.0 <7.15.0 | React Router vulnerable to DoS via unbounded path expansion in __manifest endpoint
+   high      GHSA-rxv8-25v2-qmq8    vuln=>=7.0.0 <7.14.0 | React Router vulnerable to Denial of Service via reflected user input in single-fetch
+   moderate  GHSA-h5cw-625j-3rxh    vuln=>=7.0.0 <=7.11.0 | React Router has CSRF issue in Action/Server Action Request Processing
+   moderate  GHSA-wrjc-x8rr-h8h6    vuln=>=6.0.0 <7.18.0 | React Router: Open redirect via backslash in <Link> and useNavigate (CVE-2025-68470 bypass
+   moderate  GHSA-337j-9hxr-rhxg    vuln=>=6.4.0 <7.18.0 | React Router: Arbitrary Constructor Injection via deserializeErrors() in React Router SSR 
+   high      GHSA-chx6-hx7r-mcp5    vuln=>=7.0.0 <7.18.0 | React Router: Unauthenticated Denial of Service via Inefficient Route Matching
+   moderate  GHSA-2j2x-hqr9-3h42    vuln=>=7.0.0 <7.14.1 | React Router's same-origin redirect with path starting // causes open redirect via protoco
+   moderate  GHSA-jjmj-jmhj-qwj2    vuln=>=7.9.6 <=7.12.0 | React Router: Open redirect leading to XSS
+   moderate  GHSA-f22v-gfqf-p8f3    vuln=>=7.5.1 <7.13.2 | React Router has stored XSS via unescaped Location header in prerendered redirect HTML
+   high      GHSA-8v8x-cx79-35w7    vuln=>=7.0.0 <7.12.0 | React Router SSR XSS in ScrollRestoration
+dompurify@3.2.7: 19 advisories
+   moderate  GHSA-hpcv-96wg-7vj8    vuln=<=3.4.5 | DOMPurify: Cross-realm IN_PLACE sanitization leaves executable markup intact via realm-bou
+   moderate  GHSA-r47g-fvhr-h676    vuln=<=3.4.5 | DOMPurify: IN_PLACE mode preserves attributes of a clobbered root element, allowing XSS vi
+   moderate  GHSA-rp9w-3fw7-7cwq    vuln=<=3.4.6 | DOMPurify IN_PLACE Sanitization Bypass via Attached Shadow Root Inside <template>.content
+   moderate  GHSA-v2wj-7wpq-c8vv    vuln=>=3.1.3 <=3.3.1 | DOMPurify contains a Cross-site Scripting vulnerability
+   moderate  GHSA-h7mw-gpvr-xq4m    vuln=<3.4.0 | DOMPurify: FORBID_TAGS bypassed by function-based ADD_TAGS predicate (asymmetry with FORBI
+   moderate  GHSA-crv5-9vww-q3g8    vuln=>=1.0.10 <3.4.0 | DOMPurify has a SAFE_FOR_TEMPLATES bypass in RETURN_DOM mode
+   moderate  GHSA-v9jr-rg53-9pgp    vuln=>=3.0.1 <3.4.0 | DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback
+   moderate  GHSA-cmwh-pvxp-8882    vuln=<=3.4.10 | DOMPurify: Permanent `ALLOWED_ATTR` pollution via `setConfig()` bypassing the hook clone-g
+   low       GHSA-vxr8-fq34-vvx9    vuln=<3.4.9 | DOMPurify: Trusted Types policy survives `clearConfig()` and can poison later `RETURN_TRUS
+   low       GHSA-gvmj-g25r-r7wr    vuln=>=3.0.0 <=3.4.7 | DOMPurify: SAFE_FOR_TEMPLATES bypass - template expressions survive sanitization inside <t
+   low       GHSA-x4vx-rjvf-j5p4    vuln=<=3.4.6 | DOMPurify: `IN_PLACE` mode trusts attacker-controlled `nodeName` on live non-form nodes, a
+   moderate  GHSA-76mc-f452-cxcm    vuln=<3.4.7 | DOMPurify: Hook mutation of `data.allowedTags` / `data.allowedAttributes` permanently poll
+   moderate  GHSA-39q2-94rc-95cp    vuln=<=3.3.3 | DOMPurify's ADD_TAGS function form bypasses FORBID_TAGS due to short-circuit evaluation
+   moderate  GHSA-cjmm-f4jc-qw8r    vuln=<=3.3.1 | DOMPurify ADD_ATTR predicate skips URI validation
+   moderate  GHSA-cj63-jhhr-wcxv    vuln=<=3.3.1 | DOMPurify USE_PROFILES prototype pollution allows event handlers
+   moderate  GHSA-h8r8-wccr-v5f2    vuln=<3.3.2 | DOMPurify is vulnerable to mutation-XSS via Re-Contextualization 
+   low       GHSA-c2j3-45gr-mqc4    vuln=<=3.4.11 | DOMPurify: `CUSTOM_ELEMENT_HANDLING` bypasses `afterSanitizeElements` for allowed custom e
+   moderate  GHSA-55q2-fjhq-7xh7    vuln=<=3.4.12 | DOMPurify: IN_PLACE hook removal leaves a detached subtree executable, causing XSS
+   low       GHSA-6688-9rhm-gjv2    vuln=<=3.4.15 | DOMPurify: IN_PLACE returns a force-removed rawtext root whose text carries attacker marku
+
+# versions from pinned package-lock.json
+node_modules/react-router 7.10.1
+node_modules/react-router-dom 7.10.1
+node_modules/dompurify 3.2.7
+node_modules/monaco-editor 0.55.1
+node_modules/ai 5.0.114
+node_modules/@ai-sdk/openai 2.0.88

@@ -1,6 +1,6 @@
 # Yqnn/svg-path-editor: evidence
 
-**Verdict: CONDITIONAL.** The build and smoke pass, and it is a single-URL app with no router, so no deep links break. The open question is a privacy one: `src/index.html` hard-codes the maintainer's Google Analytics tag (`gtag('config', 'G-1BBJSPSKQ9')`), and the built `index.html` keeps it. Every Wasmer-deployed copy would report page views to the upstream author's GA property and load Google Fonts from fonts.googleapis.com. The reviewer, or the maintainer in review, should decide whether a deploy button is appropriate while that tag is present. The PR text discloses it, and the README patch does not claim privacy or offline use.
+**Verdict: CONDITIONAL.** The build and smoke pass, and it is a single-URL app with no router, so no deep links break. The open question is a privacy one: `src/index.html` hard-codes the maintainer's Google Analytics tag (`gtag('config', 'G-1BBJSPSKQ9')`), and the built `index.html` keeps it. Every Wasmer-deployed copy would report page views to the upstream author's GA property. It would also load Roboto and Material Icons font files from fonts.gstatic.com: Angular inlines the Google Fonts CSS at build time, which also means the build itself fetches fonts.googleapis.com (receipt-checks.txt). The reviewer, or the maintainer in review, should decide whether a deploy button is appropriate while that tag is present. The PR text discloses it, and the README patch does not claim privacy or offline use.
 
 ## Repository
 - Pinned SHA: `937d75a83b6be2bdda11d02b9b3594841315223a` on `master`. The last commit is 2026-06-18.
@@ -41,6 +41,9 @@
   - Service worker header leakage on cross-origin redirects: the app makes no credentialed cross-origin requests.
   - Router SSR DoS: SSR only.
 - None of these looks exploitable in this app. A reviewer may still prefer to note that it ships an EOL Angular.
+
+## Receipts
+- `replay.log`: install, build and smoke output. `receipt-audit.txt`: npm audit. `receipt-adv.txt`: advisory lookups. `receipt-checks.txt`: the GA tag and inlined fonts in the built `index.html`.
 
 ## Remaining check for the reviewer
 - Decide on the GA tag (above). If acceptable, the PR text already discloses it.

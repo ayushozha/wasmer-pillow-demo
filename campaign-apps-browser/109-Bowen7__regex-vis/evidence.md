@@ -41,6 +41,9 @@
   - @sentry/react 8.17.0, inactive (see above).
 - No critical advisories. The applicable risk looks low, but the dependencies are dated.
 
+## Receipts
+- `replay.log` (install, build and smoke output, plus any diagnostic runs, labelled), and `receipt-*.txt` (audit, advisory lookups and other checks), saved verbatim.
+
 ## Remaining check for the reviewer
 - Accept or reject the `/samples` reload 404 and the upstream Cloudflare beacon. Both are disclosed in the PR text.
 - Verify the badge and import page in a browser (blocked here).

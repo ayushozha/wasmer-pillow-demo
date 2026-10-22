@@ -32,5 +32,5 @@ Smoke test:
 
 - No deployment was made. The badge image and the Wasmer import page could not be checked from the test environment.
 - Editing and the service worker were not exercised in a browser; the check was HTTP-level.
-- `src/index.html` includes the Google Analytics tag `G-1BBJSPSKQ9` and loads Google Fonts. Deployed copies keep both unless the person deploying edits `index.html` in their own copy.
+- `src/index.html` includes the Google Analytics tag `G-1BBJSPSKQ9` and Google Fonts. The build inlines the font CSS (it fetches fonts.googleapis.com at build time), and the font files still load from fonts.gstatic.com. Deployed copies keep both unless the person deploying edits `index.html` in their own copy.
 - The button opens Wasmer's import page for this public repository, where the user reviews the configuration and clicks Deploy; it does not create a copy of the repository in their GitHub account.
