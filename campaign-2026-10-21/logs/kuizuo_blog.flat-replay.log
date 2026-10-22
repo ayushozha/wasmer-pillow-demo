@@ -1,0 +1,10 @@
+# 2026-10-22T05:35:38Z flat replay of anybuild 0.33.0 planned steps for kuizuo_blog @ b1f141e4a695aa2689c192f42fe91005431ef005 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/kuizuo_blog && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/kuizuo_blog/src --out /tmp/claude-0/flat-replay/kuizuo_blog/plan.json)
+  Detected static Node.js provider
+    Framework: Docusaurus
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: build
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/kuizuo_blog/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/kuizuo_blog/plan.json

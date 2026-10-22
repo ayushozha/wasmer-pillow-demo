@@ -1,0 +1,38 @@
+From 61781f3887539613ebe2b1e9912afd524f65b510 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:35:22 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md  | 6 ++++++
+ Staticfile | 1 +
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Staticfile
+
+diff --git a/README.md b/README.md
+index ca07db7..bf34aa1 100644
+--- a/README.md
++++ b/README.md
+@@ -20,6 +20,12 @@ You can try out a [live version](https://mermaid.live/).
+ 
+ If you want to speed up the progress for mermaid-live-editor, join the Discord channel and contact knsv.
+ 
++## Deploy to Wasmer Edge
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=mermaid-js%2Fmermaid-live-editor)
++
++Fork this repository and import your fork if you want to customize it: the import builds from the repository you choose and does not copy it into your GitHub account. The root `Staticfile` points Wasmer at the `docs/` build output. The build uses the `MERMAID_*` defaults in `.env` (PNG/SVG links via `https://mermaid.ink`, Kroki links via `https://kroki.io`, Mermaid Chart links enabled, analytics disabled); edit `.env` in your fork to change them (see the options below).
++
+ ## Docker
+ 
+ ### Run published image
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..3ef78c9
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: docs
+-- 
+2.43.0
+

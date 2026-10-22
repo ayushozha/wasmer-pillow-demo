@@ -1,0 +1,69 @@
+{
+  "anybuild": "0.33.0",
+  "base": {
+    "sha": "5300b9e2f3306b425bd584f75fad39271239be67",
+    "provider": "node-static",
+    "framework": "docusaurus",
+    "static_dir": "build",
+    "pm": "pnpm",
+    "pm_version": "9.15.4",
+    "install": "pnpm install",
+    "build": "pnpm run build"
+  },
+  "patched": {
+    "sha": "b1f141e",
+    "provider": "node-static",
+    "framework": "docusaurus",
+    "static_dir": "build",
+    "pm": "pnpm",
+    "pm_version": "9.15.4",
+    "install": "pnpm install",
+    "build": "pnpm run build"
+  },
+  "raw_base": {
+    "provider": "node-static",
+    "config": {
+      "name": "wt_kuizuo_base",
+      "commands": {
+        "install": "pnpm install",
+        "build": "pnpm run build",
+        "start": "static-web-server --root=/tmp/claude-0/camp2/wt_kuizuo_base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+      },
+      "static_dir": "build",
+      "node_package_manager": "pnpm",
+      "node_framework": "docusaurus",
+      "node_server": "node",
+      "node_build_command": "pnpm run build",
+      "pnpm_version": "9.15.4",
+      "node_install_requires_all_files": true,
+      "node_install_inputs": [
+        "package.json"
+      ],
+      "node_package_name": "blog"
+    },
+    "services": []
+  },
+  "raw_patched": {
+    "provider": "node-static",
+    "config": {
+      "name": "wt_kuizuo_patched",
+      "commands": {
+        "install": "pnpm install",
+        "build": "pnpm run build",
+        "start": "static-web-server --root=/tmp/claude-0/camp2/wt_kuizuo_patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+      },
+      "static_dir": "build",
+      "node_package_manager": "pnpm",
+      "node_framework": "docusaurus",
+      "node_server": "node",
+      "node_build_command": "pnpm run build",
+      "pnpm_version": "9.15.4",
+      "node_install_requires_all_files": true,
+      "node_install_inputs": [
+        "package.json"
+      ],
+      "node_package_name": "blog"
+    },
+    "services": []
+  }
+}

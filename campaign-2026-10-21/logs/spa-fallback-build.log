@@ -41,3 +41,50 @@
   Copying package.json to /opt/temp/package.json
 
   $ npm install # using package.json
+
+added 330 packages, and audited 331 packages in 21s
+
+3 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+  Copy to . from . # ignoring node_modules, .git, package-lock.json
+
+  $ npm run build
+
+> tailadmin-react@2.4.0 build
+> tsc -b && vite build
+
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 407 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.45 kB │ gzip:   0.31 kB
+dist/assets/index-lqHzMpjd.css    179.59 kB │ gzip:  27.34 kB
+dist/assets/index-BCqG7Liu.js   2,009.25 kB │ gzip: 582.38 kB
+
+[32m✓ built in 3.21s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+
+  $ cp -R dist/. /opt/static_app/
+
+  ╭──────────────────────────╮
+  │ Build complete in 31.99s │
+  ╰──────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 SERVER_FALLBACK_PAGE=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610e │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT=0

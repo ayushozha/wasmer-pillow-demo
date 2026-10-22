@@ -1,0 +1,36 @@
+# 2026-10-22T05:35:37Z prettier 3.9.10 (repo devDependency, lint script 'prettier --check .')
+$ npx prettier --check README.md  (patched)
+Checking formatting...
+[warn] README.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+$ git show HEAD:README.md | npx prettier --check --stdin-filepath README.md  (base)
+(stdin)
+EXIT 1
+$ diff <(diff base.md base.fmt.md) <(diff new.md new.fmt.md)   # formatter findings introduced by the patch (empty = none besides line offsets)
+EXIT 0
+$ diff base.md base.fmt.md (pre-existing issues)
+42,52c42,52
+< | 功能             | 说明                                            |
+< | ---------------- | ----------------------------------------------- |
+< | 📝 VuePress 驱动 | 基于 Vue 的静态站点生成器，Markdown 编写        |
+< | 🎨 极简东方主题  | 朱砂 + 宣纸 / 暖墨黑配色，shiki vitesse 代码高亮（基于 vuepress-theme-hope）|
+< | 📂 专题化结构    | 长文拆分为系列手册，方便查阅和学习              |
+< | 📖 读书笔记      | docsify 独立托管，与主站分离，独立搜索          |
+< | 🔍 全文搜索      | 默认本地搜索（slimsearch），可选 Algolia DocSearch |
+< | 🔎 SEO / GEO     | frontmatter SEO 审计脚本 + FAQ 结构化数据（FAQPage JSON-LD）|
+< | 💬 评论系统      | 主站 Giscus，读书笔记 Waline，含阅读统计        |
+< | 🤖 看板娘        | Live2D Widget 增加趣味性                        |
+< | 🚀 自动部署      | GitHub Actions 一键部署到 GitHub Pages / Vercel |
+---
+> | 功能             | 说明                                                                         |
+> | ---------------- | ---------------------------------------------------------------------------- |
+> | 📝 VuePress 驱动 | 基于 Vue 的静态站点生成器，Markdown 编写                                     |
+> | 🎨 极简东方主题  | 朱砂 + 宣纸 / 暖墨黑配色，shiki vitesse 代码高亮（基于 vuepress-theme-hope） |
+> | 📂 专题化结构    | 长文拆分为系列手册，方便查阅和学习                                           |
+> | 📖 读书笔记      | docsify 独立托管，与主站分离，独立搜索                                       |
+> | 🔍 全文搜索      | 默认本地搜索（slimsearch），可选 Algolia DocSearch                           |
+> | 🔎 SEO / GEO     | frontmatter SEO 审计脚本 + FAQ 结构化数据（FAQPage JSON-LD）                 |
+> | 💬 评论系统      | 主站 Giscus，读书笔记 Waline，含阅读统计                                     |
+> | 🤖 看板娘        | Live2D Widget 增加趣味性                                                     |
+> | 🚀 自动部署      | GitHub Actions 一键部署到 GitHub Pages / Vercel                              |
