@@ -1,0 +1,25 @@
+{
+ "anybuild": "0.33.0",
+ "base_sha": "ceab516ade2a68f3c0abef8bd8fa03ada3ac3e7b",
+ "patched_sha": "bfe977221459a89986bb7bebf5772aa9e2cad0fa",
+ "base": {
+  "provider": "staticfile",
+  "config": {
+   "name": "civilblur_mazanoke-base",
+   "commands": {
+    "start": "static-web-server --root=/tmp/claude-0/camp2/wt/civilblur_mazanoke-base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+   }
+  },
+  "services": []
+ },
+ "patched": {
+  "provider": "staticfile",
+  "config": {
+   "name": "civilblur_mazanoke-patched",
+   "commands": {
+    "start": "static-web-server --root=/tmp/claude-0/camp2/wt/civilblur_mazanoke-patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+   }
+  },
+  "services": []
+ }
+}

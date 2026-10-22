@@ -8,9 +8,6 @@ static_redirects_config: static-web-server [[advanced.rewrites]] rules that
 serve /index.html for the exact client-side routes in src/App.tsx. Unknown
 paths and missing assets still return 404. Add a Deploy section to the
 README with the Wasmer badge and fork-first import guidance.
-
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01PVbnsKJXtbEc7DvyE2cDMv
 ---
  Anybuild  | 83 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
  README.md | 12 ++++++++

@@ -1,6 +1,6 @@
 {
   "repo": "TailAdmin/free-react-tailwind-admin-dashboard",
-  "status": "HELD_RUNTIME",
+  "status": "HELD_POLICY",
   "stars": 1285,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T06:06:40Z",
@@ -22,7 +22,7 @@
   "pr_body": "pr-bodies/TailAdmin_free-react-tailwind-admin-dashboard.md (affiliation inserted via tools/add_affiliation.py)",
   "import_url": "https://wasmer.io/apps/create?github=TailAdmin%2Ffree-react-tailwind-admin-dashboard",
   "detection_verified": "anybuild plan PASS on base and patched clean worktrees; import UI not exercised (root to replay)",
-  "reason": "HELD_RUNTIME: v2 (trailing-slash) rewrites pending root actual-WASI replay (v1 exact-only replay passed except trailing slashes). ALSO policy: closed unmerged provider-button PR #45 (Hostinger) -> needs policy decision before any PR even if runtime passes.",
+  "reason": "POLICY: provider-button PR #45 ('docs: add Deploy on Hostinger button', README only) closed unmerged 2026-02-20, 13 min after opening, 0 comments (closer not visible); maintainers closed outside PRs #38/#39/#48/#50/#51 unmerged on 2026-09-15; last outside merge #44 2025-11-10. Brief v3 treats a closed provider-button PR as a hold -> do not submit without root decision. RUNTIME: v2 rewrite config (per-route {/r,/r/}) passes 86/86 on native SWS 2.32.2 and 2.38.0; v1 exact-only passed root actual-WASI except 15 trailing-slash variants; v2 awaits root actual-WASI replay. Kept as the rewrite PILOT for other HELD_RUNTIME SPAs.",
   "root_wasi_replay": "Root actual-WASI 2026-10-22 (Wasmer 7.5.0, wasmer/static-web-server@=1.1.0 = SWS 2.32.2; sws.toml at /opt/static_config/sws.toml, files at /opt/static_app; base npm ci/build Node 24.22.1/npm 11.19.1 exit 0): all 15 known routes + encoded-query variants 200 exact root index; JS/CSS 200; unknown route / missing asset / nested unknown 404; HEAD /profile 200. FAIL only: all 15 trailing-slash variants 404 (matches native matrix); 51-request receipt all_pass=false for those 15. Correction in progress: per-route globset alternation {/route,/route/}.",
   "head_commit_date": "2026-09-15T12:44:05+06:00",
   "hook_check": "No hooks installed (.git/hooks samples only, core.hooksPath unset, no husky/lint-staged). Commit made normally with hooks enabled; nothing bypassed. logs/rewrites-tailadmin-commit.log",
@@ -47,5 +47,11 @@
   },
   "wasmer_pr_search": "search_pull_requests 'repo:TailAdmin/free-react-tailwind-admin-dashboard wasmer' (all states): 0; 'org:TailAdmin wasmer': 0; 'org:TailAdmin \"deploy\" button is:pr': only #45 (Hostinger, closed unmerged). Fetched 2026-10-22T06:06:40Z.",
   "detect_log": "logs/rewrites-tailadmin-patch-check.log (base: node-static/vite/npm 11/dist, plan-written Anybuild deleted; patched: 'declared in Anybuild', static_redirects_config sha256 a58d026a..., --config-file in start)",
-  "caveats": "Known routes only (new routes must be added to the TOML); unknown URLs 404 on direct load (app NotFound only via in-app nav); /profile/ avatar broken by app's relative image path; config honoured by Anybuild/Wasmer only; generate drops the field; env vars override it; commit carries Co-Authored-By/Claude-Session trailers unlike earlier campaign patches; nothing deployed."
+  "caveats": "Known routes only (new routes must be added to the TOML); unknown URLs 404 on direct load (app NotFound only via in-app nav); /profile/ avatar broken by app's relative image path; config honoured by Anybuild/Wasmer only; generate drops the field; env vars override it; commit carries Co-Authored-By/Claude-Session trailers unlike earlier campaign patches; nothing deployed.",
+  "rewrite_v2": {
+    "sws_toml_sha256": "a58d026a0a8b8ec7e2e30bdff89e81e8758a7b458cd6a1c24ddac206a806d06f",
+    "patch_sha256": "98a153ce5ae768034fa6b5445937b75bfbd0384e99ffc2910c12ef09783fa9dc",
+    "replay_tarball": "research/rewrites-tailadmin-artifacts/opt-static_app-static_config.tar.gz (sha256 3c7fae3ca722b5f6bd2744c648e3f8a2e80311a02c970202fe77f91f4a89325b)",
+    "staging_commit": "90bd26f (trailers stripped; author/committer Claude <noreply@anthropic.com>)"
+  }
 }

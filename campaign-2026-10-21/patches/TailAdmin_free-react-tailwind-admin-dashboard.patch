@@ -1,4 +1,4 @@
-From 8ad9ecf6b213963b3a2c8c98273e8b7bce1d2d31 Mon Sep 17 00:00:00 2001
+From 90bd26facd5e698bb3e1f0fa7cf8a2bb22e5f826 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 06:14:02 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -9,9 +9,6 @@ serve /index.html for each client-side route in src/App.tsx, with or
 without a trailing slash. The rules use no wildcards, so unknown paths and
 missing assets still return 404. Add a Deploy section to the README with
 the Wasmer badge and fork-first import guidance.
-
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01PVbnsKJXtbEc7DvyE2cDMv
 ---
  Anybuild  | 84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
  README.md | 12 ++++++++

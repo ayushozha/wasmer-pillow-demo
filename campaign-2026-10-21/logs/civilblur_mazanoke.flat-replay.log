@@ -1,0 +1,16 @@
+# 2026-10-22T06:18:44Z flat replay of anybuild 0.33.0 planned steps for civilblur_mazanoke @ bfe977221459a89986bb7bebf5772aa9e2cad0fa (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/civilblur_mazanoke && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/civilblur_mazanoke/src --out /tmp/claude-0/flat-replay/civilblur_mazanoke/plan.json)
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/civilblur_mazanoke/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/civilblur_mazanoke/plan.json
+EXIT 0
+# removed untracked Anybuild file written by `anybuild plan`
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='.'
+# node_install_requires_all_files=False
+$ (cd /tmp/claude-0/flat-replay/civilblur_mazanoke/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/civilblur_mazanoke/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/manifest.json": 200, "/service-worker.js": 200, "/assets/js/compression.js": 200, "/assets/vendor/libheif.js": 200, "/favicon.ico": 200}}
