@@ -33,5 +33,5 @@
   "pr_body": "pr-bodies/kuizuo_blog.md",
   "import_url": "https://wasmer.io/apps/create?github=kuizuo%2Fblog",
   "reason": null,
-  "publication_note": "Below 500 stars (343): needs root sign-off. Outside merges 2022-2024-06 only. all-files install depends on Anybuild treating '~5.7.3' as path-like (is_path_like); if that spec changes, .npmrc would not be staged before install."
+  "publication_note": "Publication APPROVED by root 2026-10-22 after faithful all-files replay and generated-route review (343 stars)."
 }

@@ -1,0 +1,85 @@
+# SWS rewrite probe log  date=2026-10-22T05:53:48Z
+# binary: /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server -> Version:      2.32.2
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+# root: /tmp/claude-0/sws-probe-site
+# config: /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/sws-2.32.2-spa-rewrite-probe.toml sha256=a10e5a030598d08c1bc98a3e6375d7cd449aaf2a74b5428d2f52f32a9bdddf63
+# index.html sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc bytes=33576
+
+=== WITH --config-file (probe) ===
+$ /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server --root /tmp/claude-0/sws-probe-site --config-file /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/sws-2.32.2-spa-rewrite-probe.toml --host 127.0.0.1 --port 18787 --log-level debug
+/                                        status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/index.html                              status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/__wasmer_spa_probe__/deep               status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/__wasmer_spa_probe__/nested/route       status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/__wasmer_spa_probe__/other              status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/deep/extra         status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/x/__wasmer_spa_probe__/deep             status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/deep?q=1           status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/assets/nope.js                          status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/assets/js/script.js                     status=200 content-type=text/javascript content-length=4524 bytes=4524 sha256=827403ccd9660761a4bc79fbd13b42d36edff59670e61bdfebdece1aefec8a73 body==index.html:no
+/assets/css/style.css                    status=200 content-type=text/css content-length=30738 bytes=30738 sha256=87e9c680c3370598883aa126f707ecbc2268930f2327bab5c3e84d0a9205e58b body==index.html:no
+--- startup/config log lines (grep config|rewrite) ---
+2026-10-22T05:53:48.681014Z DEBUG static_web_server::settings: config file read successfully
+2026-10-22T05:53:48.681082Z DEBUG static_web_server::settings: config file path provided: /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/sws-2.32.2-spa-rewrite-probe.toml
+2026-10-22T05:53:48.681088Z DEBUG static_web_server::settings: config file path resolved: /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/sws-2.32.2-spa-rewrite-probe.toml
+2026-10-22T05:53:48.681093Z  WARN static_web_server::warn: config file empty or no `general` settings found, using default values
+2026-10-22T05:53:48.681205Z DEBUG static_web_server::settings: url rewrites glob pattern: /__wasmer_spa_probe__/deep
+2026-10-22T05:53:48.681210Z DEBUG static_web_server::settings: url rewrites regex equivalent: ^/__wasmer_spa_probe__/deep$
+2026-10-22T05:53:48.681299Z DEBUG static_web_server::settings: url rewrites glob pattern: /__wasmer_spa_probe__/nested/route
+2026-10-22T05:53:48.681302Z DEBUG static_web_server::settings: url rewrites regex equivalent: ^/__wasmer_spa_probe__/nested/route$
+2026-10-22T05:53:48.682087Z  INFO static_web_server::info: config file used: /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/sws-2.32.2-spa-rewrite-probe.toml
+2026-10-22T05:53:48.682714Z  INFO static_web_server::info: http1 server is listening on http://127.0.0.1:18787
+2026-10-22T05:53:48.775182Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.775188Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/deep$
+2026-10-22T05:53:48.775192Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/deep"]
+2026-10-22T05:53:48.775196Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.775242Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+2026-10-22T05:53:48.797472Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.797475Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/deep$
+2026-10-22T05:53:48.797477Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/deep"]
+2026-10-22T05:53:48.797480Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.797513Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+2026-10-22T05:53:48.814373Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.814390Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/nested/route$
+2026-10-22T05:53:48.814393Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/nested/route"]
+2026-10-22T05:53:48.814395Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.814427Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+2026-10-22T05:53:48.830830Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.830835Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/nested/route$
+2026-10-22T05:53:48.830839Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/nested/route"]
+2026-10-22T05:53:48.830843Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.830907Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+2026-10-22T05:53:48.942279Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.942284Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/deep$
+2026-10-22T05:53:48.942288Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/deep"]
+2026-10-22T05:53:48.942291Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.942346Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+2026-10-22T05:53:48.963901Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern: ["$0"]
+2026-10-22T05:53:48.963907Z DEBUG static_web_server::redirects: url redirects/rewrites regex equivalent: ^/__wasmer_spa_probe__/deep$
+2026-10-22T05:53:48.963910Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern captures: ["/__wasmer_spa_probe__/deep"]
+2026-10-22T05:53:48.963914Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination: "/index.html"
+2026-10-22T05:53:48.964043Z DEBUG static_web_server::redirects: url redirects/rewrites glob pattern destination replaced: "/index.html"
+
+=== CONTROL: WITHOUT --config-file (cwd has no ./config.toml) ===
+$ /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server --root /tmp/claude-0/sws-probe-site  --host 127.0.0.1 --port 18788 --log-level debug
+/                                        status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/index.html                              status=200 content-type=text/html content-length=33576 bytes=33576 sha256=ae156e35110d758dfd2916c0b02ddf5bbc357ca561069f1002199a5c54c6c9fc body==index.html:yes
+/__wasmer_spa_probe__/deep               status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/nested/route       status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/other              status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/deep/extra         status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/x/__wasmer_spa_probe__/deep             status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/__wasmer_spa_probe__/deep?q=1           status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/assets/nope.js                          status=404 content-type=text/html; charset=utf-8 content-length=106 bytes=106 sha256=10c24a13a79068ea3e92c12e39ad5cb07675f9fce84276e54fb9d7e76ca6b0e9 body==index.html:no
+/assets/js/script.js                     status=200 content-type=text/javascript content-length=4524 bytes=4524 sha256=827403ccd9660761a4bc79fbd13b42d36edff59670e61bdfebdece1aefec8a73 body==index.html:no
+/assets/css/style.css                    status=200 content-type=text/css content-length=30738 bytes=30738 sha256=87e9c680c3370598883aa126f707ecbc2268930f2327bab5c3e84d0a9205e58b body==index.html:no
+--- startup/config log lines (grep config|rewrite) ---
+2026-10-22T05:53:49.062614Z DEBUG static_web_server::server: config file path not found or not a regular file: ./config.toml
+2026-10-22T05:53:49.062925Z  INFO static_web_server::info: http1 server is listening on http://127.0.0.1:18788
+

@@ -1,6 +1,6 @@
 {
   "repo": "airene/vitepress-blog-pure",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 288,
   "stars_source": "GitHub MCP search_repositories (vitepress-blog-pure user:airene)",
   "stars_at": "2026-10-22T05:25Z (approx; fetched minutes before 2026-10-22T05:33:00Z)",
@@ -33,5 +33,6 @@
   "sws_smoke": "PASS: static-web-server 2.38.0 with planned flags: /, /pages/archives.html, /pages/tags.html, /pages/category.html, /pages/about.html, /posts/vitepress-first.html, /posts/2025/vitepress-second.html, /404.html, /hashmap.json, /assets/app.C71ov7gz.js (hashed), /assets/chunks/@localSearchIndexroot.Bq9MgPzV.js (search index) all 200; missing path -> 404 with 404.html body. logs/airene_vitepress-blog-pure.sws-smoke.json",
   "reason": null,
   "publication_note": "Approved by user/root 2026-10-22 for further independent review despite 288 stars: a leading active application starter in a narrower category (not to inflate count).",
-  "patch_author": "Claude <noreply@anthropic.com> (worker had set the user's name/email; reset by coordinator to the campaign convention, commit 691ffa5)"
+  "patch_author": "Claude <noreply@anthropic.com> (worker had set the user's name/email; reset by coordinator to the campaign convention, commit 691ffa5)",
+  "upstream_pr": "https://github.com/airene/vitepress-blog-pure/pull/55 (published as ayushfromwasmer; reported by root)"
 }

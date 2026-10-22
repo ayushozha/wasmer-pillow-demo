@@ -1,6 +1,6 @@
 {
   "repo": "Charca/astro-blog-template",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 533,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T05:11:40Z",
@@ -28,5 +28,6 @@
   "sws_smoke": "PASS: static-web-server 2.38.0 on flat-replay dist: all 6 routes 200; /blog 308 -> /blog/ 200; missing probe 404. All routes prerendered. logs/Charca_astro-blog-template.sws-smoke.json",
   "reason": null,
   "audit": "npm audit (full and --omit=dev identical; all deps are prod) @478c018: 17 = 1 low, 2 moderate, 13 high, 1 critical (logs/Charca_astro-blog-template.npm-audit.json, .npm-audit-omit-dev.json). CRITICAL: astro <7.2.8 GHSA-26w7-cxv4-gfx2 'Remote code execution through AVIF image optimization' (CVSS 9.8; libheif via default Sharp image service; exploitable when an attacker can cause Astro to process an untrusted AVIF image; fix astro 7.2.8 + sharp 0.35.4; source: github.com/advisories page via WebFetch 2026-10-22). Locked astro 5.5.2, sharp 0.33.5. Applicability to this artifact: NOT reachable as shipped: 0 AVIF files among 11 tracked images, no astro:assets/<Image>/getImage usage in src/, no image/remotePatterns config, static output without adapter, build logs show no image-optimization step. Becomes relevant only if a user adds astro:assets optimization of untrusted AVIF (CMS/remote). Highs (defu, devalue, h3, http-cache-semantics, js-yaml, nanoid, picomatch, postcss, rollup, sharp/libvips, smol-toml, source-map-js, vite) and astro server/middleware/dev-server advisories concern build tooling, dev server or SSR/server runtime; deployed artifact is prerendered static files served by SWS (no Astro server, middleware, image endpoint or dev server). Not upgraded: dependency upgrade is out of scope and not a deployment blocker.",
-  "publication_note": "Unpublished; account verification pending (root)."
+  "publication_note": "Unpublished; account verification pending (root).",
+  "upstream_pr": "https://github.com/Charca/astro-blog-template/pull/26 (published as ayushfromwasmer; reported by root)"
 }

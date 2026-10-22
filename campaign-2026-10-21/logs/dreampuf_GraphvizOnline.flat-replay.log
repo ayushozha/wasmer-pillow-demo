@@ -1,0 +1,15 @@
+# 2026-10-22T05:51:39Z flat replay of anybuild 0.33.0 planned steps for dreampuf_GraphvizOnline @ 89805e9bc793e6817516988fe905e96e6d3b4fc0 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/src --out /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/plan.json)
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/plan.json
+EXIT 0
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='.'
+# node_install_requires_all_files=False
+$ (cd /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/dreampuf_GraphvizOnline/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/main.js": 200, "/viz-global.js": 200, "/ace/ace.js": 200, "/style.css": 200}}

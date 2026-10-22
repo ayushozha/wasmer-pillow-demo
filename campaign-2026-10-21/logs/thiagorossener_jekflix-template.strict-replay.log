@@ -1,0 +1,101 @@
+# 2026-10-22T05:53:48Z strict-inputs replay of anybuild 0.33.0 jekyll.bzl for thiagorossener_jekflix-template @ d789fa52d0ee7ffedb808e4c10832058cafe1c31; ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux] (planned ruby 3.4.7); bundler 4.0.18
+# install step sees only: Gemfile
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching gem metadata from https://rubygems.org/...........
+Resolving dependencies...
+Fetching public_suffix 7.0.5
+Fetching addressable 2.9.0
+Fetching colorator 1.1.0
+Fetching concurrent-ruby 1.3.8
+Fetching csv 3.3.6
+Fetching eventmachine 1.2.7
+Fetching http_parser.rb 0.8.1
+Fetching em-websocket 0.5.3
+Fetching ffi 1.17.4 (x86_64-linux-gnu)
+Fetching forwardable-extended 2.6.0
+Installing eventmachine 1.2.7 with native extensions
+Installing http_parser.rb 0.8.1 with native extensions
+Fetching i18n 1.15.2
+Fetching rb-fsevent 0.11.2
+Fetching rb-inotify 0.11.1
+Fetching sass-listen 4.0.0
+Fetching sass 3.7.4
+Fetching jekyll-sass-converter 1.5.2
+Fetching logger 1.7.0
+Fetching listen 3.10.1
+Fetching jekyll-watch 2.2.1
+Fetching rexml 3.4.4
+Fetching kramdown 2.5.2
+Fetching liquid 4.0.4
+Fetching mercenary 0.3.6
+Fetching pathutil 0.16.2
+Fetching rouge 3.30.0
+Fetching safe_yaml 1.0.5
+Fetching webrick 1.9.2
+Fetching jekyll 3.10.0
+Fetching jekyll-paginate 1.1.0
+Fetching jekyll-paginate-content 1.1.0
+Fetching json 3.1.0
+Fetching kramdown-parser-gfm 1.1.0
+Installing colorator 1.1.0
+Installing json 3.1.0 with native extensions
+Installing public_suffix 7.0.5
+Installing concurrent-ruby 1.3.8
+Installing addressable 2.9.0
+Installing csv 3.3.6
+Installing em-websocket 0.5.3
+Installing forwardable-extended 2.6.0
+Installing ffi 1.17.4 (x86_64-linux-gnu)
+Installing i18n 1.15.2
+Installing rb-inotify 0.11.1
+Installing rb-fsevent 0.11.2
+Installing sass-listen 4.0.0
+Installing sass 3.7.4
+Installing jekyll-sass-converter 1.5.2
+Installing logger 1.7.0
+Installing listen 3.10.1
+Installing jekyll-watch 2.2.1
+Installing rexml 3.4.4
+Installing kramdown 2.5.2
+Installing liquid 4.0.4
+Installing mercenary 0.3.6
+Installing pathutil 0.16.2
+Installing rouge 3.30.0
+Installing safe_yaml 1.0.5
+Installing webrick 1.9.2
+Installing jekyll 3.10.0
+Installing jekyll-paginate 1.1.0
+Installing jekyll-paginate-content 1.1.0
+Installing kramdown-parser-gfm 1.1.0
+Bundle complete! 7 Gemfile dependencies, 32 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+EXIT 0
+# copy . (ignore .git)
+$ jekyll build
+Configuration file: /tmp/claude-0/flat-replay/thiagorossener_jekflix-template-strict/opt/temp/_config.yml
+            Source: /tmp/claude-0/flat-replay/thiagorossener_jekflix-template-strict/opt/temp
+       Destination: /tmp/claude-0/flat-replay/thiagorossener_jekflix-template-strict/opt/temp/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+   PaginateContent: [posts] Generated 2+1 pages
+   PaginateContent: 1 item could not be split (no separators?)
+                    done in 2.474 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+EXIT 0
+# static_dir _site: 75 files
+# result exit=0

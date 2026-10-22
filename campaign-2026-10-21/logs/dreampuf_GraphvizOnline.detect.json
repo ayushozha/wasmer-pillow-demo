@@ -1,0 +1,28 @@
+{
+  "tool": "anybuild 0.33.0 plan on clean git worktrees (Anybuild file deleted after each run)",
+  "at": "2026-10-22T05:51:31Z",
+  "base": {
+    "sha": "ecaf161aade6111e60f49abf03a5442a6f6beec5",
+    "provider": "staticfile",
+    "framework": null,
+    "static_dir": null,
+    "package_manager": null,
+    "pnpm_version": null,
+    "npm_version": null,
+    "commands": {
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  },
+  "patched": {
+    "sha": "89805e9bc793e6817516988fe905e96e6d3b4fc0",
+    "provider": "staticfile",
+    "framework": null,
+    "static_dir": null,
+    "package_manager": null,
+    "pnpm_version": null,
+    "npm_version": null,
+    "commands": {
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  }
+}

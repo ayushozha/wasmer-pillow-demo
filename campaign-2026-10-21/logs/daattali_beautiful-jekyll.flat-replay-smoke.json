@@ -1,0 +1,41 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/daattali_beautiful-jekyll/opt/temp/_site",
+  "base": "/",
+  "html_files": 6,
+  "local_refs_checked": 16,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 12809,
+      "title": "My website"
+    },
+    "/aboutme/": {
+      "status": 200,
+      "bytes": 9821,
+      "title": "About me | My website"
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 11475,
+      "title": "Tag Index | My website"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 9040,
+      "title": "404 - Page not found | My website"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "bytes": 1863,
+      "title": "My website"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 582,
+      "title": null
+    }
+  },
+  "ok": true
+}

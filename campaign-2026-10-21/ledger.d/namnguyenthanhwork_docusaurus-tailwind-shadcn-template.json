@@ -7,7 +7,7 @@
   "stars_at": "2026-10-22T05:41:14Z",
   "popularity_flag": "BELOW 500-star bar (142 stars, 22 forks, 1 sponsor listed). Qualifies only as strongest-in-niche: most-starred maintained Docusaurus+Tailwind/shadcn starter found (searches: 'docusaurus template in:name,description', topic:docusaurus). Coordinator may decline on popularity.",
   "archived": false,
-  "license": "MIT (SPDX MIT; keep copyright notice)",
+  "license": "MIT (verified from text): LICENSE at base c913b478 (sha256 c03f73ec\u2026) has lines 7-23 byte-identical to the canonical MIT permission/warranty text; lines 1-6 add title, copyright 'Th\u00e0nh Nam Nguy\u1ec5n aka Yuu', and a 'Contact Information' line. That extra line plausibly makes GitHub's licensee report NOASSERTION. package.json has no license field; README says MIT. Not modified by the patch.",
   "default_branch": "main",
   "pushed_at": "2026-07-18 (head commit date; MCP updated_at 2026-10-16T20:01:55Z)",
   "base_sha": "c913b4787022b6d666bf116b3fc1a33f3d512e17",

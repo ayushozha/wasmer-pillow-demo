@@ -1,0 +1,26 @@
+{
+  "dir": "/tmp/claude-0/camp4/wt_gv",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 2817,
+      "title": "Graphviz Online"
+    },
+    "/main.js": {
+      "status": 200,
+      "bytes": 18982,
+      "title": null
+    },
+    "/ace/ace.js": {
+      "status": 200,
+      "bytes": 372100,
+      "title": null
+    }
+  },
+  "ok": true
+}

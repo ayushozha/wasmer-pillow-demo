@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/camp4/wt_gv",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 2817
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2817
+      }
+    ],
+    "/main.js": [
+      {
+        "path": "/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 18982
+      }
+    ],
+    "/viz-global.js": [
+      {
+        "path": "/viz-global.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1412685
+      }
+    ],
+    "/ace/ace.js": [
+      {
+        "path": "/ace/ace.js",
+        "status": 200,
+        "location": null,
+        "bytes": 372100
+      }
+    ],
+    "/style.css": [
+      {
+        "path": "/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 7855
+      }
+    ],
+    "/hammer.min.js": [
+      {
+        "path": "/hammer.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 20766
+      }
+    ],
+    "/svg-pan-zoom.min.js": [
+      {
+        "path": "/svg-pan-zoom.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 29768
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
