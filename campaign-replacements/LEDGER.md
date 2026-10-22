@@ -1,24 +1,27 @@
 # Replacement ledger (static sites) — 2026-10-22
 
+Note: npm targets 02/07/08/09/10/11 were re-run on the exact planned npm 11.21.1 after a harness bug (earlier runs used host npm 10.9.4); superseded logs kept as `replay-npm10-host-superseded.log`.
+
 Qualified = exact Anybuild v0.33.0 flat replay passed (install/build/serve with static-web-server 2.38.0 + smoke) and no policy/security blocker found. Every one still needs root's live import-page and badge check (wasmer.io / img.shields.io blocked here). Button wording everywhere: "opens Wasmer's import page … you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account."
 
 ## Qualified (12)
 | Folder | Stars | Verdict | Builder path | Condition / note |
 |---|---|---|---|---|
-| 04 remvze/moodist | 3.9k | READY | node-static pnpm → dist | Conventional Commits PR title |
-| 07 coreui/coreui-free-vue-admin-template | 3.4k | READY | node-static npm → dist | hash routing, deep links OK |
-| 32 murraco/jekyll-theme-minimal-resume | 554 | READY | jekyll (Ruby 3.4.7, committed Gemfile.lock) | Gulp not run; committed assets used |
+| 04 remvze/moodist | 3.9k | READY (root fork created) | node-static pnpm → dist | all 91 sounds + 121 precache URLs 200; Radio Browser/YouTube optional third parties; sound licences only partly stated (root decision) |
+| 07 coreui/coreui-free-vue-admin-template | 3.4k | READY | node-static npm 11.21.1 → dist | hash routing; 96/96 files 200; vite/source-map-js advisories dev/build-only; root import check OK |
+| 32 murraco/jekyll-theme-minimal-resume | 554 | **PUBLISHED by root (PR #102)** | jekyll (Ruby 3.4.7, committed Gemfile.lock) | Gulp not run; committed assets used |
 | 44 StartBootstrap/startbootstrap-sb-admin-2 | 9.9k | READY (root-approved single probe) | Staticfile `root: .` | wording fixed per root; 404-page behaviour stated without cause |
-| 51 estevanmaito/windmill-dashboard | 3.0k | READY | Staticfile `root: public` | low maintainer activity; CDN scripts external |
+| 51 estevanmaito/windmill-dashboard | 3.0k | CONDITIONAL | Staticfile `root: public` | ships Chart.js 2.9.3 (GHSA-h68q-55jf-x68w; demo feeds only hard-coded data) + floating Alpine v2 CDN, no SRI; low activity |
 | 02 gatsbyjs/gatsby-starter-blog | 3.5k | CONDITIONAL | node-static npm → public | 0 merges in 12 months; earlier vendor deploy PRs closed |
 | 08 coreui/coreui-free-react-admin-template | 5.0k | CONDITIONAL | node-static npm, Staticfile `root: build` (outDir) | maintainers must accept the extra file |
 | 09 markhorn-dev/astro-sphere | 691 | CONDITIONAL | node-static npm → dist | inactive since 2025-06 |
-| 10 Charca/astro-blog-template | 533 | CONDITIONAL | node-static npm → dist | inactive since 2025-03 |
+| 10 Charca/astro-blog-template | 533 | **PUBLISHED by root (PR #26)** | node-static npm → dist | inactive since 2025-03 |
 | 11 mhyfritz/astro-landing-page | 679 | CONDITIONAL | node-static npm → dist | inactive since 2024-11 |
 | 23 barryclark/jekyll-now | 8.4k | CONDITIONAL | jekyll, no Gemfile → `bundle add jekyll 4.3.0` | no PR merged since 2018; feed/sitemap plugins don't run (README says so) |
 | 30 yaoyao-liu/minimal-light | 1.0k | CONDITIONAL | jekyll | repo has never merged a PR |
 
 ## Held (technically passing, held by decision)
+61 Adrinlol/landy-react-template — POLICY HOLD (owner closed provider-button PR #101). Also excluded by root: github-education-resources/codespaces-project-template-js, gabrielecirulli/2048, flatlogic/react-dashboard.
 45 freelancer, 46 resume, 47 creative, 48 agency (StartBootstrap) — root allows one org probe (44) only.
 43 ColorlibHQ/AdminLTE — replay passes with `root: dist`, but SECURITY.md says not to deploy demo pages; ask maintainers first.
 
