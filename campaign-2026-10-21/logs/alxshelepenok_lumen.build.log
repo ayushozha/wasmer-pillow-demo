@@ -1,0 +1,96 @@
+# 2026-10-22T04:28:44Z alxshelepenok/lumen @ 4d965a9dd99f3c331ccd52b31fb492c2334ef5eb node v24.22.1 bun 1.4.2
+$ bun install --frozen-lockfile
+bun install v1.4.2 (744846f84)
+
++ @astrojs/check@0.9.10
++ @semantic-release/exec@7.1.0
++ @semantic-release/git@11.0.1
++ @types/bun@1.4.2
++ @types/sass@1.45.0
++ autoprefixer@10.6.1
++ conventional-changelog-conventionalcommits@9.1.0
++ linkedom@0.18.13
++ postcss@8.5.28
++ sass@1.75.0
++ satori@0.33.4
++ semantic-release@25.0.9
++ typescript@5.9.3
++ @astrojs/markdown-remark@7.3.1
++ @astrojs/sitemap@3.7.4
++ @sentry/astro@10.75.0
++ astro@7.3.3
+
+798 packages installed [3.86s]
+EXIT 0
+$ bun run build
+$ astro build
+04:28:51 [content] Syncing content
+04:29:13 [content] Synced content
+04:29:13 [types] Generated 23.58s
+04:29:13 [build] output: "static"
+04:29:13 [build] mode: "static"
+04:29:13 [build] directory: /tmp/claude-0/camp2/alxshelepenok_lumen/target/
+04:29:13 [build] Collecting build info...
+04:29:13 [build] ✓ Completed in 23.66s.
+04:29:13 [build] Building static entrypoints...
+04:29:15 [vite] ✓ built in 1.95s
+04:29:15 [vite] ✓ built in 196ms
+04:29:15 [build] Rearranging server assets...
+
+ generating static routes 
+04:29:16   ├─ /404.html (+41ms) 
+04:29:16   ├─ /atom.xml (+10ms) 
+04:29:16   ├─ /categories/index.html (+7ms) 
+04:29:16   ├─ /category/creative-process/index.html (+5ms) 
+04:29:16   ├─ /category/design-culture/index.html (+4ms) 
+04:29:16   ├─ /category/design-inspiration/index.html (+4ms) 
+04:29:16   ├─ /category/technology-trends/index.html (+4ms) 
+04:29:16   ├─ /llms-full.txt (+3ms) 
+04:29:16   ├─ /llms.txt (+3ms) 
+04:29:16   ├─ /page/1/index.html (+4ms) 
+04:29:16   ├─ /pages/about/index.html (+5ms) 
+04:29:16   ├─ /pages/contacts/index.html (+3ms) 
+04:29:16   ├─ /posts/a-brief-history-of-typography.md (+1ms) 
+04:29:16   ├─ /posts/exploring-depths-of-innovation.md (+1ms) 
+04:29:16   ├─ /posts/perfecting-the-art-of-perfection.md (+1ms) 
+04:29:16   ├─ /posts/quantum-leap-digital-architecture.md (+1ms) 
+04:29:16   ├─ /posts/the-origins-of-social-stationery-lettering.md (+1ms) 
+04:29:16   ├─ /posts/a-brief-history-of-typography/index.html (+4ms) 
+04:29:16   ├─ /posts/exploring-depths-of-innovation/index.html (+2ms) 
+04:29:16   ├─ /posts/perfecting-the-art-of-perfection/index.html (+2ms) 
+04:29:16   ├─ /posts/quantum-leap-digital-architecture/index.html (+2ms) 
+04:29:16   ├─ /posts/the-origins-of-social-stationery-lettering/index.html (+11ms) 
+04:29:16   ├─ /robots.txt (+2ms) 
+04:29:16   ├─ /tag/architecture/index.html (+4ms) 
+04:29:16   ├─ /tag/creative-thinking/index.html (+3ms) 
+04:29:16   ├─ /tag/digital-evolution/index.html (+2ms) 
+04:29:16   ├─ /tag/future-tech/index.html (+4ms) 
+04:29:16   ├─ /tag/handwriting/index.html (+3ms) 
+04:29:16   ├─ /tag/helvetica/index.html (+2ms) 
+04:29:16   ├─ /tag/history-of-typography/index.html (+4ms) 
+04:29:16   ├─ /tag/ideation/index.html (+3ms) 
+04:29:16   ├─ /tag/innovation/index.html (+3ms) 
+04:29:16   ├─ /tag/innovation-methods/index.html (+3ms) 
+04:29:16   ├─ /tag/learning-to-write/index.html (+3ms) 
+04:29:16   ├─ /tag/linotype/index.html (+2ms) 
+04:29:16   ├─ /tags/index.html (+4ms) 
+04:29:16   ├─ /year/2016/index.html (+4ms) 
+04:29:16   ├─ /year/2016/page/1/index.html (+2ms) 
+04:29:16   ├─ /years/index.html (+6ms) 
+04:29:16   ├─ /index.html (+10ms) 
+04:29:16 ✓ Completed in 533ms.
+
+ generating optimized images 
+04:29:16   ▶ /_astro/logo.DC_h19sp_TR8pJ.png (before: 4kB, after: 0kB) (+32ms) (1/6)
+04:29:16   ▶ /_astro/logo.DC_h19sp_2IsH8.webp (before: 4kB, after: 0kB) (+6ms) (2/6)
+04:29:16   ▶ /_astro/logo.DC_h19sp_27SQDs.png (before: 4kB, after: 1kB) (+7ms) (3/6)
+04:29:16   ▶ /_astro/logo.DC_h19sp_1fKbUQ.webp (before: 4kB, after: 0kB) (+7ms) (4/6)
+04:29:16   ▶ /_astro/logo.DC_h19sp_Z1wJD6b.png (before: 4kB, after: 3kB) (+7ms) (5/6)
+04:29:16   ▶ /_astro/logo.DC_h19sp_jxLY6.webp (before: 4kB, after: 0kB) (+8ms) (6/6)
+04:29:16 ✓ Completed in 68ms.
+
+04:29:16 [build] ✓ Completed in 2.79s.
+04:29:16 [@astrojs/sitemap] `sitemap-index.xml` created at `target`
+04:29:16 [build] 31 page(s) built in 26.46s
+04:29:16 [build] Complete!
+EXIT 0

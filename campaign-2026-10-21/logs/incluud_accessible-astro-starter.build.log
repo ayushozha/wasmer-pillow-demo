@@ -1,0 +1,93 @@
+# 2026-10-22T04:29:15Z incluud/accessible-astro-starter @ 3fc28ca1a2f91ec618a0f788ba392041d4855540 node v24.22.1 npm 11.19.1
+$ npm ci
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 770 packages, and audited 772 packages in 39s
+
+335 packages are looking for funding
+  run `npm fund` for details
+
+25 vulnerabilities (3 moderate, 21 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+$ npm run build
+
+> accessible-astro-starter@6.0.2 build
+> astro build
+
+[2m04:29:59[22m [34m[content][39m Syncing content
+[2m04:29:59[22m [34m[content][39m Synced content
+[2m04:29:59[22m [34m[types][39m Generated [2m2.35s[22m
+[2m04:29:59[22m [34m[build][39m output: [34m"static"[39m
+[2m04:29:59[22m [34m[build][39m mode: [34m"static"[39m
+[2m04:29:59[22m [34m[build][39m directory: [34m/tmp/claude-0/camp2/incluud_accessible-astro-starter/dist/[39m
+[2m04:29:59[22m [34m[build][39m Collecting build info...
+[2m04:29:59[22m [34m[build][39m [32m✓ Completed in 2.94s.[39m
+[2m04:29:59[22m [34m[build][39m Building static entrypoints...
+[2m04:30:03[22m [34m[vite][39m [32m✓ built in 4.41s[39m
+[2m04:30:04[22m [34m[vite][39m [32m✓ built in 136ms[39m
+[2m04:30:04[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+Failed to fetch blog posts [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'jsonplaceholder.typicode.com'
+  }
+}
+Failed to fetch blog posts [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'jsonplaceholder.typicode.com'
+  }
+}
+[2m04:30:04[22m   [34m├─[39m [2m/404.html[22m [2m(+37ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/accessibility-statement/index.html[22m [2m(+24ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/accessible-components/index.html[22m [2m(+45ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/accessible-launcher/index.html[22m [2m(+118ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/color-contrast-checker/index.html[22m [2m(+112ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+12ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/markdown-page/index.html[22m [2m(+14ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/mdx-page/index.html[22m [2m(+10ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/accessibility/index.html[22m [2m(+12ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/accessibility/2/index.html[22m [2m(+8ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/ai/index.html[22m [2m(+13ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/computer-vision/index.html[22m [2m(+7ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/education/index.html[22m [2m(+15ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/finance/index.html[22m [2m(+7ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/healthcare/index.html[22m [2m(+17ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/iot/index.html[22m [2m(+6ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/security/index.html[22m [2m(+7ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/tag/smart-home/index.html[22m [2m(+9ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-01/index.html[22m [2m(+14ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-02/index.html[22m [2m(+15ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-03/index.html[22m [2m(+10ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-04/index.html[22m [2m(+14ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-05/index.html[22m [2m(+12ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-06/index.html[22m [2m(+20ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/project-07/index.html[22m [2m(+16ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/index.html[22m [2m(+24ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/portfolio/2/index.html[22m [2m(+41ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/sitemap/index.html[22m [2m(+30ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/thank-you/index.html[22m [2m(+10ms)[22m 
+[2m04:30:04[22m   [34m├─[39m [2m/index.html[22m[31m[1m04:30:04[22m [ERROR][39m TypeError: fetch failed
+[31m[1m04:30:04[22m [ERROR] [build][39m Caught error rendering /: TypeError: fetch failed
+fetch failed
+  [1mStack trace:[22m
+[2m[22m
+  [1mCaused by:[22m
+[2m  getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26)[22m
+EXIT 1

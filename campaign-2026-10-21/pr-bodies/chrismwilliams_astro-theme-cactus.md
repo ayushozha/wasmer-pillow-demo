@@ -15,6 +15,6 @@ Title: docs: add Wasmer Edge deploy section
 - I served `dist/` locally. `/`, `/posts/`, `/notes/`, `/about/`, `/404.html`, `/pagefind/pagefind.js`, `/rss.xml` and `/manifest.webmanifest` all returned 200, and every root-relative reference in the 22 HTML pages resolved.
 
 **Limitations:**
-- I did not run a full deployment from the import link.
+- Opening the import link shows the repository, the `main` branch and a static (`node-static`) build preset, with Deploy enabled. I did not run a deployment from it.
 - The build needs pnpm 10 or newer, because `pnpm-workspace.yaml` uses `allowBuilds`.
 - Redeploy-on-push works only for a repository you connect to your own Wasmer app.

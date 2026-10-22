@@ -1,0 +1,92 @@
+$ npx -y pnpm@8.15.9 install --frozen-lockfile
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +510
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 510, reused 162, downloaded 82, added 244
+Progress: resolved 510, reused 162, downloaded 236, added 388
+Progress: resolved 510, reused 162, downloaded 338, added 495
+Progress: resolved 510, reused 162, downloaded 348, added 510, done
+.../core-js@3.37.0/node_modules/core-js postinstall$ node -e "try{require('./postinstall')}catch(e){}"
+.../core-js@3.37.0/node_modules/core-js postinstall: Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+.../core-js@3.37.0/node_modules/core-js postinstall: The project needs your help! Please consider supporting core-js:
+.../core-js@3.37.0/node_modules/core-js postinstall: > https://opencollective.com/core-js 
+.../core-js@3.37.0/node_modules/core-js postinstall: > https://patreon.com/zloirock 
+.../core-js@3.37.0/node_modules/core-js postinstall: > https://boosty.to/zloirock 
+.../core-js@3.37.0/node_modules/core-js postinstall: > bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz 
+.../core-js@3.37.0/node_modules/core-js postinstall: I highly recommend reading this: https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md 
+.../core-js@3.37.0/node_modules/core-js postinstall: Done
+.../esbuild@0.20.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.20.2/node_modules/esbuild postinstall: Done
+.../sharp@0.33.3/node_modules/sharp install$ node install/check
+.../sharp@0.33.3/node_modules/sharp install: Done
+
+dependencies:
++ @alpinejs/collapse 3.13.10
++ @alpinejs/intersect 3.13.10
++ @alpinejs/persist 3.13.10
++ alpinejs 3.13.10
++ astro 4.7.0
++ bulma 0.9.4
++ bulma-css-vars 0.8.0
++ fuse.js 7.0.0
++ iconify-icon 2.1.0
++ js-datepicker 5.18.2
++ lozad 1.16.0
++ moment 2.30.1
++ notyf 3.10.0
++ plyr 3.7.8
++ sass 1.75.0
++ simplebar 6.2.5
+
+devDependencies:
++ @fontsource-variable/nunito 5.0.19
++ @fontsource-variable/roboto-flex 5.0.15
++ @fontsource/material-icons 5.0.18
++ autoprefixer 10.4.19
++ npm-run-all 4.1.5
+
+Done in 5.6s
+EXIT 0
+$ npx -y pnpm@8.15.9 build
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> fresh@5.4.0 build /tmp/claude-0/camp2/cssninjaStudio_fresh
+> run-s build:*
+
+
+> fresh@5.4.0 build:astro /tmp/claude-0/camp2/cssninjaStudio_fresh
+> astro build
+
+04:28:58 [build] output: "static"
+04:28:58 [build] directory: /tmp/claude-0/camp2/cssninjaStudio_fresh/dist/
+04:28:58 [build] Collecting build info...
+04:28:58 [build] ✓ Completed in 88ms.
+04:28:58 [build] Building static entrypoints...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:29:01 [WARN] [vite] 
+../img/loaders/rings.svg referenced in /tmp/claude-0/camp2/cssninjaStudio_fresh/src/styles/main.scss didn't resolve at build time, it will remain unchanged to be resolved at runtime
+04:29:01 [vite] ✓ built in 3.69s
+04:29:01 [build] ✓ Completed in 3.72s.
+
+ building client (vite) 
+04:29:01 [vite] transforming...
+04:29:02 [vite] ✓ 24 modules transformed.
+04:29:02 [vite] rendering chunks...
+04:29:02 [vite] computing gzip size...
+04:29:02 [vite] dist/_astro/hoisted.B8Dnk1i7.js  86.24 kB │ gzip: 30.52 kB
+04:29:02 [vite] ✓ built in 426ms
+
+ generating static routes 
+04:29:02 ▶ src/pages/index.astro
+04:29:02   └─ /index.html (+12ms)
+04:29:02 ✓ Completed in 21ms.
+
+04:29:02 [build] 1 page(s) built in 4.28s
+04:29:02 [build] Complete!
+EXIT 0

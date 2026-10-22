@@ -1,7 +1,7 @@
 {
   "campaign": "Deploy to Wasmer README integrations (static sites)",
   "scope": "Static-site targets only (32 slots). The 18 Node/PHP/Streamlit app targets are owned by a separate Claude session and are not tracked here.",
-  "updated": "2026-10-22T04:30Z",
+  "updated": "2026-10-22",
   "deploy_destination": {
     "url_pattern": "https://wasmer.io/apps/create?github=OWNER%2FREPO",
     "evidence": "Reported by Codex (authenticated real browser, 2026-10-21/22): production frontend commit 2a4086a037ea241ef0cc602b55d9913c895a4b39, apps/create/page.tsx reads `github`; @fromRepo/lib/getInitialState.ts initializes the source. https://wasmer.io/apps/create?github=satnaing%2Fastro-paper showed 'Configure your app', 'Importing from GitHub satnaing/astro-paper', branch main, preset node-static, Deploy enabled. No deployment was submitted.",
@@ -13,17 +13,18 @@
       "https://wasmer.io/deploy?repository-url=...": "renders a Wasmer user profile named 'deploy', not a generator (Codex live check)",
       "docs.wasmer.io/edge/deploy-button/": "404; and no deploy-button page exists in wasmerio/docs.wasmer.io@6f160c961ad8db0dcba163ef5a3000a90f953065"
     },
-    "badge": "https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white (shields.io static badge; `wasmer` slug exists in simple-icons 16.35.0; rendering not fetched from this sandbox because img.shields.io is denied here)"
+    "badge": "https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white (shields.io static badge; `wasmer` slug exists in simple-icons 16.35.0; rendering not fetched from this sandbox because img.shields.io is denied here); Codex fetched it: HTTP 200 image/svg+xml"
   },
   "status_legend": {
     "READY": "Built with the repo's own build script at the pinned SHA, output smoke-tested, policy checked; patch applies cleanly. Still needs Codex to confirm the import page detects this specific repo before opening the PR.",
     "HELD_POLICY": "Patch exists but maintainer scope/policy argues against an unsolicited PR. Do not publish.",
-    "HELD_BUILD": "Build not proven in any environment yet."
+    "HELD_BUILD": "Build not proven in any environment yet.",
+    "PUBLISHED": "Upstream PR opened by root/Codex from the exact Claude patch."
   },
   "targets": [
     {
       "repo": "satnaing/astro-paper",
-      "status": "READY",
+      "status": "PUBLISHED",
       "stars": 5139,
       "stars_source": "GitHub search API via GitHub MCP (as ayushozha)",
       "stars_at": "2026-10-22T04:19Z",
@@ -45,7 +46,8 @@
       "patch": "patches/satnaing_astro-paper.patch",
       "pr_body": "pr-bodies/satnaing_astro-paper.md",
       "import_url": "https://wasmer.io/apps/create?github=satnaing%2Fastro-paper",
-      "detection_verified": "yes (Codex browser, node-static)"
+      "detection_verified": "yes (Codex browser, node-static)",
+      "upstream_pr": "https://github.com/satnaing/astro-paper/pull/697 (OPEN, commit 2e927d5, reported by Codex/root)"
     },
     {
       "repo": "saicaca/fuwari",
@@ -70,7 +72,7 @@
       "patch": "patches/saicaca_fuwari.patch",
       "pr_body": "pr-bodies/saicaca_fuwari.md",
       "import_url": "https://wasmer.io/apps/create?github=saicaca%2Ffuwari",
-      "detection_verified": "pending Codex browser check"
+      "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)"
     },
     {
       "repo": "RyanFitzgerald/devportfolio",
@@ -95,7 +97,7 @@
       "patch": "patches/RyanFitzgerald_devportfolio.patch",
       "pr_body": "pr-bodies/RyanFitzgerald_devportfolio.md",
       "import_url": "https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio",
-      "detection_verified": "pending Codex browser check (note default branch is master)"
+      "detection_verified": "yes (Codex browser: master, node-static, Deploy enabled)"
     },
     {
       "repo": "chrismwilliams/astro-theme-cactus",
@@ -120,7 +122,7 @@
       "patch": "patches/chrismwilliams_astro-theme-cactus.patch",
       "pr_body": "pr-bodies/chrismwilliams_astro-theme-cactus.md",
       "import_url": "https://wasmer.io/apps/create?github=chrismwilliams%2Fastro-theme-cactus",
-      "detection_verified": "pending Codex browser check"
+      "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)"
     },
     {
       "repo": "11ty/eleventy-base-blog",
@@ -145,7 +147,7 @@
       "patch": "patches/11ty_eleventy-base-blog.patch",
       "pr_body": "pr-bodies/11ty_eleventy-base-blog.md",
       "import_url": "https://wasmer.io/apps/create?github=11ty%2Feleventy-base-blog",
-      "detection_verified": "pending Codex browser check (_site output dir is the key question)"
+      "detection_verified": "partial (Codex browser: main, node-static, Deploy enabled; _site output dir not visible in UI, source check in progress)"
     },
     {
       "repo": "arthelokyo/astrowind",

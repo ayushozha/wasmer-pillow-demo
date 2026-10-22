@@ -1,0 +1,45 @@
+# 2026-10-22T04:29:20Z cobiwave/simplefolio @ af03c0cb90d03844de2b5a4cf2045aa0f72c2442 node v24.22.1 npm 11.19.1
+$ npm ci && npm run build
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+
+added 189 packages, and audited 190 packages in 25s
+
+79 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 7 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.0.7 (install: node-gyp-build)
+npm warn install-scripts   lmdb@2.5.2 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   msgpackr-extract@2.2.0 (install: node-gyp-build-optional-packages)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+> simplefolio@1.0.1 build
+> parcel build
+
+resize:  can't open terminal /dev/tty
+Building...
+
+console: Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: 
+https://github.com/browserslist/update-db#readme
+Bundling...
+Packaging & Optimizing...
+√ Built in 13.48s
+
+dist/index.html                6.71 KB    3.40s
+dist/favicon.887424ff.png      3.97 KB    587ms
+dist/profile.8f19b361.jpg    852.98 KB    3.09s
+dist/assets/resume.pdf         2.96 KB    464ms
+dist/project.0b14f8de.jpg    415.68 KB    3.09s
+dist/index.dc60bf54.css      191.01 KB    580ms
+dist/index.f3360eb2.js        10.24 KB    3.10s
+EXIT 0

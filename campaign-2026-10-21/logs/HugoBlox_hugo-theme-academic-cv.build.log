@@ -1,0 +1,85 @@
+# 2026-10-22T04:28:40Z HugoBlox/hugo-theme-academic-cv @ a6043fdb355c39ff793237acc5c1a8d1dcab3a54 node v22.22.0 pnpm 10.14.0 (hugo extended 0.162.0, go go1.24.7)
+$ npx -y pnpm@10.14.0 install --frozen-lockfile
+Lockfile is up to date, resolution step is skipped
+Packages: +37
++++++++++++++++++++++++++++++++++++++
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 0, reused 18, downloaded 19, added 37, done
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @parcel/watcher.                                    │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 787ms using pnpm v10.14.0
+EXIT 0
+$ HUGO_ENVIRONMENT=production hugo --minify
+hugo: downloading modules …
+hugo: collected modules in 7570 ms
+Start building sites … 
+hugo v0.162.0-076dfe13d0f789e3d9586b192f8f7f3329c26990+extended linux/amd64 BuildDate=2026-05-26T13:53:44Z VendorInfo=gohugoio
+
+WARN  embed shortcode: failed to fetch remote resource from "https://huggingface.co/api/models/google/embeddinggemma-300m": "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:38:1" (continuing with fallback display)
+WARN  embed shortcode: failed to fetch remote resource from "https://huggingface.co/api/datasets/fka/awesome-chatgpt-prompts": "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:42:1" (continuing with fallback display)
+WARN  embed shortcode: failed to fetch remote resource from "https://api.github.com/repos/HugoBlox/kit": "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:46:1" (continuing with fallback display)
+WARN  embed shortcode: failed to fetch image from "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=800&h=600&auto=format&fit=crop" (continuing without image): "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:56:1"
+WARN  embed shortcode: failed to fetch remote resource from "https://api.github.com/repos/plotly/plotly.py": "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:60:1" (continuing with fallback display)
+WARN  embed shortcode: failed to fetch image from "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&auto=format&fit=crop" (continuing without image): "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/data-visualization/index.md:60:1"
+Total in 9988 ms
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/_index.md" failed: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/baseof.html:8:5": execute of template failed: template: landing/list.html:8:5: executing "landing/list.html" at <partial "site_head" .>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/site_head.html:222:6": execute of template failed: template: _partials/site_head.html:222:6: executing "_partials/site_head.html" at <partialCached "init.html" . "hb_init_once">: error calling partialCached: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/init.html:7:11": execute of template failed: template: _partials/init.html:7:11: executing "_partials/init.html" at <.Content>: error calling Content: "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/teach-courses/index.md:41:1": failed to render shortcode "cite": failed to process shortcode: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_shortcodes/cite.html:22:5": execute of template failed: template: _shortcodes/cite.html:22:5: executing "_shortcodes/cite.html" at <partial "functions/render_view" (dict "page" $page "item" . "view" $view "index" 0)>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/functions/render_view.html:18:14": execute of template failed: template: _partials/functions/render_view.html:18:14: executing "_partials/functions/render_view.html" at <partial (printf "views/%s" $view) (dict "page" $page "item" $item "index" $index "config" (.config | default dict))>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/views/citation.html:27:7": execute of template failed: template: _partials/views/citation.html:27:7: executing "_partials/views/citation.html" at <partial "page_links" (dict "page" $item "is_list" 1)>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/page_links.html:5:13": execute of template failed: template: _partials/page_links.html:5:13: executing "_partials/page_links.html" at <partial "functions/build_links" (dict "page" $page "is_list" $is_list)>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/functions/build_links.html:55:14": execute of template failed: template: _partials/functions/build_links.html:55:14: executing "_partials/functions/build_links.html" at <$seen.SetInMap>: error calling SetInMap: assignment to entry in nil map
+EXIT 1
+$ npx -y pnpm@10.14.0 run pagefind
+
+> hugo-blox-academic-cv-starter@1.0.0 pagefind /tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv
+> pagefind --site public
+
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv"
+Source:       "public"
+Output:       "public/pagefind"
+
+[Walking source directory]
+Found 0 files matching **/*.{html}
+
+[Parsing files]
+Did not find a data-pagefind-body element on the site.
+↳ Indexing all <body> elements on the site.
+
+[Reading languages]
+Discovered 0 languages: 
+
+[Building search indexes]
+Total: 
+  Indexed 0 languages
+  Indexed 0 pages
+  Indexed 0 words
+  Indexed 0 filters
+  Indexed 0 sorts
+Error: Pagefind was not able to build an index. 
+Most likely, the directory passed to Pagefind was empty or did not contain any html files.
+Error: Pagefind was not able to build an index. 
+Most likely, the directory passed to Pagefind was empty or did not contain any html files.
+ ELIFECYCLE  Command failed with exit code 1.
+EXIT 1
+
+# DIAGNOSTIC (not upstream pin) 2026-10-22T04:30:34Z: Hugo extended 0.161.1 (blox module hugoVersion.min)
+$ HUGO_ENVIRONMENT=production /tmp/claude-0/tools/hugo161/hugo --minify
+
+Total in 4679 ms
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "/tmp/claude-0/camp2/HugoBlox_hugo-theme-academic-cv/content/blog/get-started/index.md" failed: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/baseof.html:25:17": execute of template failed: template: single.html:25:17: executing "single.html" at <partial "functions/get_cover_image.html" .>: error calling partial: "/root/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/functions/get_cover_image.html:28:23": execute of template failed: template: _partials/functions/get_cover_image.html:28:23: executing "_partials/functions/get_cover_image.html" at <resources.GetRemote>: error calling GetRemote: Get "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2560": Forbidden
+EXIT 1
+
+# DIAGNOSTIC minimal repro: layouts/home.html = {{ $s := newScratch }}{{ $s.Set "set" (dict) }}{{ $s.SetInMap "set" "k" true }}
+$ hugo build
+Total in 22 ms
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "/" failed: "/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/hugotest/layouts/home.html:1:52": execute of template failed: template: home.html:1:52: executing "home.html" at <$s.SetInMap>: error calling SetInMap: assignment to entry in nil map
+EXIT 1
+
+$ hugo161 build
+Total in 27 ms
+EXIT 0
+ok map[k:true]

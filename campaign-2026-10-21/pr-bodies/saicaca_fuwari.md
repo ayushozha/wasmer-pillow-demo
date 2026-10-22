@@ -41,5 +41,6 @@ N/A
 
 ## Additional Notes
 
+- Opening the import link shows the repository, the `main` branch and a static (`node-static`) build preset, with Deploy enabled. I did not run a deployment from it.
 - The `site` setting in `astro.config.mjs` still has to be set before deploying, as the README already says.
 - The import page builds the repository given in the URL and does not create a copy. Redeploy-on-push needs your own repository connected to your Wasmer app.

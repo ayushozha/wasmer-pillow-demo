@@ -1,0 +1,91 @@
+# 2026-10-22T04:30:09Z jktrn/astro-erudite @ 1926b88c549e8505bbe03b9e8585b0e247aaa0c1 node v24.22.1 bun 1.4.2
+$ bun install --frozen-lockfile
+bun install v1.4.2 (744846f84)
+
++ @astrojs/check@0.9.10
++ @biomejs/biome@2.5.1
++ typescript@6.0.3
++ @astrojs/markdown-satteri@0.3.2
++ @astrojs/rss@4.0.18
++ @astrojs/sitemap@3.7.3
++ @expressive-code/plugin-collapsible-sections@0.42.0
++ @expressive-code/plugin-line-numbers@0.42.0
++ astro@7.0.2
++ github-slugger@2.0.0
++ hast-util-select@6.0.4
++ hast-util-to-html@9.0.5
++ hastscript@9.0.1
++ satteri-expressive-code@0.1.15
++ temml@0.13.3
+
+325 packages installed [7.00s]
+EXIT 0
+$ bun run build
+$ astro check && astro build
+04:30:19 [content] Syncing content
+04:30:22 [content] Synced content
+04:30:22 [types] Generated 4.29s
+04:30:22 [check] Getting diagnostics for Astro files in /tmp/claude-0/camp2/jktrn_astro-erudite...
+Result (41 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:30:30 [content] Syncing content
+04:30:30 [content] Synced content
+04:30:30 [types] Generated 637ms
+04:30:30 [build] output: "static"
+04:30:30 [build] mode: "static"
+04:30:30 [build] directory: /tmp/claude-0/camp2/jktrn_astro-erudite/dist/
+04:30:30 [build] Collecting build info...
+04:30:30 [build] ✓ Completed in 657ms.
+04:30:30 [build] Building static entrypoints...
+04:30:31 [vite] ✓ built in 801ms
+04:30:31 [vite] ✓ built in 48ms
+04:30:31 [build] Rearranging server assets...
+
+ generating static routes 
+04:30:31   ├─ /404.html (+75ms) 
+04:30:31   ├─ /authors/index.html (+16ms) 
+04:30:31   ├─ /authors/enscribe/index.html (+20ms) 
+04:30:31   ├─ /blog/index.html (+5ms) 
+04:30:31   ├─ /blog/introducing-v2/index.html (+45ms) 
+04:30:31   ├─ /blog/v1-posts/index.html (+21ms) 
+04:30:31   ├─ /blog/v1-posts/the-state-of-static-blogs/index.html (+16ms) 
+04:30:31   ├─ /blog/v1-posts/rehype-patch/index.html (+18ms) 
+04:30:31   ├─ /blog/v1-posts/callouts-component/index.html (+15ms) 
+04:30:31   ├─ /blog/v1-posts/mobile-nav-and-subposts/index.html (+18ms) 
+04:30:31   ├─ /projects/index.html (+10ms) 
+04:30:31   ├─ /robots.txt (+2ms) 
+04:30:31   ├─ /rss.xml (+30ms) 
+04:30:31   ├─ /tags/index.html (+6ms) 
+04:30:31   ├─ /tags/v1.0.0/index.html (+2ms) 
+04:30:31   ├─ /tags/v1.3.0/index.html (+2ms) 
+04:30:31   ├─ /tags/v1.5.0/index.html (+2ms) 
+04:30:31   ├─ /tags/v1.6.0/index.html (+5ms) 
+04:30:31   ├─ /tags/v2/index.html (+9ms) 
+04:30:31   ├─ /index.html (+2ms) 
+04:30:31 ✓ Completed in 392ms.
+
+ generating optimized images 
+04:30:31   ▶ /_astro/banner.BgMVCBV6_L4Y7.webp (before: 92kB, after: 2kB) (+148ms) (1/14)
+04:30:31   ▶ /_astro/old-toc.BaApZnsD_Z2qd2al.webp (before: 109kB, after: 47kB) (+171ms) (2/14)
+04:30:31   ▶ /_astro/new-toc-closed.D0O2kEAI_Z1GBMSi.webp (before: 100kB, after: 33kB) (+172ms) (3/14)
+04:30:32   ▶ /_astro/subposts-listing.Bwod0qY1_Z2lAIt8.webp (before: 19kB, after: 7kB) (+32ms) (4/14)
+04:30:32   ▶ /_astro/banner.Cswqwce0_2hAaVU.webp (before: 89kB, after: 2kB) (+209ms) (5/14)
+04:30:32   ▶ /_astro/new-toc-open.8IYMSzlj_W0wY7.webp (before: 106kB, after: 29kB) (+131ms) (6/14)
+04:30:32   ▶ /_astro/banner.BgMVCBV6_Z1qfzXU.webp (before: 92kB, after: 5kB) (+155ms) (7/14)
+04:30:32   ▶ /_astro/subpost-navigation.BdZGIOLv_Z1x8wRg.webp (before: 29kB, after: 12kB) (+99ms) (8/14)
+04:30:32   ▶ /_astro/banner.Cswqwce0_Z24zzy6.webp (before: 89kB, after: 4kB) (+286ms) (9/14)
+04:30:32   ▶ /_astro/rehype-patch.NA-nlcP7_1Ffcbj.webp (before: 91kB, after: 4kB) (+192ms) (10/14)
+04:30:32   ▶ /_astro/the-state-of-static-blogs.B6Zx1Yf-_Z1cfeaE.webp (before: 77kB, after: 2kB) (+224ms) (11/14)
+04:30:32   ▶ /_astro/callouts-component.rG8okoRK_1YiiiE.webp (before: 90kB, after: 4kB) (+224ms) (12/14)
+04:30:32   ▶ /_astro/mobile-nav-and-subposts.DOdyxynl_Z7LsCg.webp (before: 91kB, after: 4kB) (+80ms) (13/14)
+04:30:32   ▶ /_astro/the-state-of-static-blogs.B6Zx1Yf-_Z1t15jJ.webp (before: 77kB, after: 1kB) (+50ms) (14/14)
+04:30:32 ✓ Completed in 578ms.
+
+04:30:32 [build] ✓ Completed in 1.87s.
+04:30:32 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:30:32 [build] 18 page(s) built in 2.54s
+04:30:32 [build] Complete!
+EXIT 0

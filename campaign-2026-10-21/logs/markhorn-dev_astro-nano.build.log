@@ -1,0 +1,110 @@
+$ npx -y pnpm@8.15.9 install --frozen-lockfile
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +698
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 698, reused 425, downloaded 15, added 373
+Progress: resolved 698, reused 425, downloaded 144, added 564
+Progress: resolved 698, reused 425, downloaded 271, added 698, done
+.../esbuild@0.21.5/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.24.0/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.21.5/node_modules/esbuild postinstall: Done
+.../esbuild@0.24.0/node_modules/esbuild postinstall: Done
+
+dependencies:
++ @astrojs/check 0.9.4
++ @astrojs/mdx 4.0.2
++ @astrojs/rss 4.0.10
++ @astrojs/sitemap 3.2.1
++ @astrojs/tailwind 5.1.3
++ @fontsource/inter 5.0.17
++ @fontsource/lora 5.0.16
++ @tailwindcss/typography 0.5.10
++ @typescript-eslint/eslint-plugin 7.3.1
++ @typescript-eslint/parser 7.3.1
++ astro 5.0.5
++ clsx 2.1.0
++ eslint 8.57.0
++ eslint-plugin-astro 0.32.0
++ eslint-plugin-jsx-a11y 6.8.0
++ sharp 0.33.3
++ tailwind-merge 2.2.2
++ tailwindcss 3.4.1
++ typescript 5.4.2
+
+Done in 3.9s
+EXIT 0
+$ npx -y pnpm@8.15.9 build
+
+> astro-nano@1.0.0 build /tmp/claude-0/camp2/markhorn-dev_astro-nano
+> astro check && astro build
+
+04:29:12 [content] Syncing content
+04:29:12 [content] Content config changed
+04:29:12 [content] Astro version changed
+04:29:12 [content] Clearing content store
+04:29:13 [content] Synced content
+04:29:13 [types] Generated 1.74s
+04:29:13 [check] Getting diagnostics for Astro files in /tmp/claude-0/camp2/markhorn-dev_astro-nano...
+Result (0 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:29:18 [content] Syncing content
+04:29:18 [content] Synced content
+04:29:18 [types] Generated 491ms
+04:29:18 [build] output: "static"
+04:29:18 [build] directory: /tmp/claude-0/camp2/markhorn-dev_astro-nano/dist/
+04:29:18 [build] Collecting build info...
+04:29:18 [build] ✓ Completed in 529ms.
+04:29:18 [build] Building static entrypoints...
+Browserslist: browsers data (caniuse-lite) is 22 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:29:24 [vite] ✓ built in 6.18s
+04:29:24 [build] ✓ Completed in 6.22s.
+
+ building client (vite) 
+04:29:25 [vite] transforming...
+04:29:25 [vite] ✓ 13 modules transformed.
+04:29:25 [vite] rendering chunks...
+04:29:25 [vite] computing gzip size...
+04:29:25 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js  14.30 kB │ gzip: 4.88 kB
+04:29:25 [vite] ✓ built in 495ms
+
+ generating static routes 
+04:29:25 ▶ src/pages/blog/index.astro
+04:29:25   └─ /blog/index.html (+21ms)
+04:29:25 ▶ src/pages/blog/[...slug].astro
+04:29:25   ├─ /blog/01-getting-started/index.html (+4ms)
+04:29:25   ├─ /blog/02-blog-collection/index.html (+2ms)
+04:29:25   ├─ /blog/03-projects-collection/index.html (+2ms)
+04:29:25   ├─ /blog/04-work-collection/index.html (+2ms)
+04:29:25   ├─ /blog/05-markdown-syntax/index.html (+8ms)
+04:29:25   ├─ /blog/06-mdx-syntax/index.html (+8ms)
+04:29:25   ├─ /blog/07-year-sorting-example/index.html (+2ms)
+04:29:25   └─ /blog/08-draft-example/index.html (+2ms)
+04:29:25 ▶ src/pages/projects/index.astro
+04:29:25   └─ /projects/index.html (+2ms)
+04:29:25 ▶ src/pages/projects/[...slug].astro
+04:29:25   ├─ /projects/project-2/index.html (+2ms)
+04:29:25   └─ /projects/project-1/index.html (+2ms)
+04:29:25 λ src/pages/robots.txt.ts
+04:29:25   └─ /robots.txt (+1ms)
+04:29:25 λ src/pages/rss.xml.ts
+04:29:25   └─ /rss.xml (+3ms)
+04:29:25 ▶ src/pages/work/index.astro
+04:29:25   └─ /work/index.html (+2ms)
+04:29:25 ▶ src/pages/index.astro
+04:29:25   └─ /index.html (+3ms)
+04:29:25 ✓ Completed in 108ms.
+
+ generating optimized images 
+04:29:25   ▶ /_astro/spongebob.DNKR31Tf_Z1KJld.webp (before: 32kB, after: 20kB) (+449ms) (1/1)
+04:29:25 ✓ Completed in 450ms.
+
+04:29:25 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:29:25 [build] 14 page(s) built in 7.89s
+04:29:25 [build] Complete!
+EXIT 0

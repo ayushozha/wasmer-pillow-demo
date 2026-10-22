@@ -1,0 +1,51 @@
+{
+  "dir": "TailGrids_play-tailwind",
+  "base": "/",
+  "html_files": 9,
+  "local_refs_checked": 1,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 265381,
+      "title": "Play | Free Tailwind CSS Template for Startup and SaaS By TailGrids"
+    },
+    "/about.html": {
+      "status": 200,
+      "bytes": 123635,
+      "title": "About | Play Tailwind"
+    },
+    "/pricing.html": {
+      "status": 200,
+      "bytes": 56658,
+      "title": "Pricing | Play Tailwind"
+    },
+    "/blog-grids.html": {
+      "status": 200,
+      "bytes": 68003,
+      "title": "Blog Grids | Play Tailwind"
+    },
+    "/signin.html": {
+      "status": 200,
+      "bytes": 64754,
+      "title": "Sign In | Play Tailwind"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 84412,
+      "title": "404 Page | Play Tailwind"
+    },
+    "/src/css/tailwind.css": {
+      "status": 200,
+      "bytes": 61017,
+      "title": null
+    },
+    "/assets/js/main.js": {
+      "status": 200,
+      "bytes": 4405,
+      "title": null
+    }
+  },
+  "ok": true
+}

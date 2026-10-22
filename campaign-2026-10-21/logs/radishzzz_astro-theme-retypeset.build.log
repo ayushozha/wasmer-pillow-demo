@@ -1,0 +1,97 @@
+# 2026-10-22T04:31:04Z radishzzz/astro-theme-retypeset @ a636b6d393be714cab52d3fc4baddd3f3905f701 node v24.22.1 pnpm 10.33.0
+$ export PATH=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad:$PATH; pnpm --version && pnpm install --frozen-lockfile
+10.33.0
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +896
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 896, reused 210, downloaded 80, added 47
+Progress: resolved 896, reused 210, downloaded 191, added 121
+Progress: resolved 896, reused 210, downloaded 292, added 188
+Progress: resolved 896, reused 210, downloaded 457, added 314
+Progress: resolved 896, reused 210, downloaded 642, added 443
+Progress: resolved 896, reused 210, downloaded 686, added 896, done
+.../sharp@0.34.5/node_modules/sharp install$ node install/check.js || npm run build
+.../esbuild@0.27.7/node_modules/esbuild postinstall$ node install.js
+.../node_modules/simple-git-hooks postinstall$ node ./postinstall.js
+.../node_modules/simple-git-hooks postinstall: [INFO] Successfully set the pre-commit with command: pnpm lint-staged
+.../sharp@0.34.5/node_modules/sharp install: Done
+.../esbuild@0.27.7/node_modules/esbuild postinstall: Done
+.../node_modules/simple-git-hooks postinstall: Done
+
+dependencies:
++ @astrojs/mdx 5.0.3
++ @astrojs/partytown 2.1.6
++ @astrojs/sitemap 3.7.2
++ @waline/client 3.13.0
++ astro 6.1.5
++ astro-compress 2.4.1
++ astro-og-canvas 0.11.0
++ canvaskit-wasm 0.41.1
++ feed 5.2.0
++ katex 0.16.45
++ lite-youtube-embed 0.3.4
++ markdown-it 14.1.1
++ mdast-util-to-string 4.0.0
++ mermaid 11.14.0
++ node-html-parser 7.1.0
++ reading-time 1.5.0
++ rehype-katex 7.0.1
++ rehype-mermaid 3.0.0
++ rehype-slug 6.0.0
++ remark-directive 4.0.0
++ remark-math 6.0.0
++ sanitize-html 2.17.2
++ sharp 0.34.5
++ twikoo 1.7.7
++ unist-util-visit 5.1.0
+
+devDependencies:
++ @antfu/eslint-config 8.1.1
++ @astrojs/check 0.9.8
++ @types/markdown-it 14.1.2
++ @types/node 25.6.0
++ @types/sanitize-html 2.16.1
++ @unocss/astro 66.6.8
++ @unocss/eslint-plugin 66.6.8
++ @unocss/preset-attributify 66.6.8
++ @unocss/reset 66.6.8
++ astro-eslint-parser 1.4.0
++ autocorrect-node 2.14.0
++ eslint 10.2.0
++ eslint-plugin-astro 1.7.0
++ fast-glob 3.3.3
++ lint-staged 16.4.0
++ playwright 1.59.1
++ simple-git-hooks 2.13.1
++ tsx 4.21.0
++ typescript 6.0.2
++ unocss 66.6.8
++ unocss-preset-theme 0.14.1
+
+Done in 7.4s using pnpm v10.33.0
+EXIT 0
+$ export PATH=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad:$PATH; pnpm run build
+
+> astro-theme-retypeset@1.0.0 build /tmp/claude-0/camp2/radishzzz_astro-theme-retypeset
+> astro check && astro build && pnpm apply-lqip
+
+04:31:20 [content] Syncing content
+04:31:23 [content] Synced content
+04:31:23 [types] Generated 3.73s
+04:31:23 [check] Getting diagnostics for Astro files in /tmp/claude-0/camp2/radishzzz_astro-theme-retypeset...
+Result (59 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:31:31 [content] Syncing content
+04:31:31 [content] Synced content
+04:31:31 [types] Generated 720ms
+04:31:31 [build] output: "static"
+04:31:31 [build] mode: "static"
+04:31:31 [build] directory: /tmp/claude-0/camp2/radishzzz_astro-theme-retypeset/dist/
+04:31:31 [build] Collecting build info...
+04:31:31 [build] ✓ Completed in 1.07s.
+04:31:31 [build] Building static entrypoints...
+04:31:34 [vite] ✓ built in 2.95s

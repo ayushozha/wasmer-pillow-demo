@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge to deployment options
 
 ## Summary
 
-Adds Wasmer Edge to the README's Deployment list, in the same one-line format as the other hosts. The link opens `https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio`, the Wasmer Edge import page for this repository. README only.
+Adds Wasmer Edge to the README's Deployment list, in the same one-line format as the other hosts, with a Deploy to Wasmer badge as the link. The badge opens `https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio`, the Wasmer Edge import page for this repository. README only.
 
 ## Why this repository
 
@@ -15,5 +15,5 @@ The Deployment section is already a list of static hosts, and the template build
 
 ## Limitations
 
-- I did not run a full deployment from the import link.
+- Opening the import link shows the repository, the `master` branch and a static (`node-static`) build preset, with Deploy enabled. I did not run a deployment from it.
 - Redeploy-on-push works only for a repository you connect to your own Wasmer app.

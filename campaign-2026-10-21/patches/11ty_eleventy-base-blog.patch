@@ -1,4 +1,4 @@
-From 4ace7383f7ada5c864c7051f18ab91f2bd4ecd19 Mon Sep 17 00:00:00 2001
+From 897c455785e1352e12a17421b80f3ab9270b3186 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:23:50 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -8,14 +8,14 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  1 file changed, 1 insertion(+)
 
 diff --git a/README.md b/README.md
-index 6abdbba..acb3889 100644
+index 6abdbba..f4bc84e 100644
 --- a/README.md
 +++ b/README.md
 @@ -92,6 +92,7 @@ Deploy this Eleventy site in just a few clicks on these services:
  - Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
  - [Deploy this to **Netlify**](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
  - [Deploy this to **Vercel**](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-+- [Deploy this to **Wasmer Edge**](https://wasmer.io/apps/create?github=11ty%2Feleventy-base-blog)
++- Deploy this to **Wasmer Edge**: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=11ty%2Feleventy-base-blog)
  - Look in `.github/workflows/gh-pages.yml.sample` for information on [Deploying to **GitHub Pages**](https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-git-hub-pages).
  - [Try it out on **Stackblitz**](https://stackblitz.com/github/11ty/eleventy-base-blog)
  

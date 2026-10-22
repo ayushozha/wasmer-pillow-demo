@@ -1,0 +1,292 @@
+# 2026-10-22T04:29:15Z zeon-studio/astroplate @ 501646d0fede2471105ef0cf3c2a154cbb814c4a node v24.22.1 pnpm 11.17.0
+$ npx -y pnpm@11.17.0 install --frozen-lockfile
+? Verifying lockfile against supply-chain policies (741 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +596
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 596, reused 22, downloaded 0, added 0
+Progress: resolved 596, reused 51, downloaded 0, added 0
+Progress: resolved 596, reused 77, downloaded 0, added 0
+Progress: resolved 596, reused 99, downloaded 0, added 0
+Progress: resolved 596, reused 128, downloaded 0, added 0
+Progress: resolved 596, reused 224, downloaded 0, added 0
+Progress: resolved 596, reused 274, downloaded 0, added 0
+Progress: resolved 596, reused 353, downloaded 0, added 0
+Progress: resolved 596, reused 388, downloaded 4, added 0
+Progress: resolved 596, reused 388, downloaded 32, added 4
+Progress: resolved 596, reused 388, downloaded 63, added 5
+Progress: resolved 596, reused 388, downloaded 90, added 8
+[WARN] Request took 10307ms: https://registry.npmjs.org/@tailwindcss%2Foxide
+Progress: resolved 596, reused 388, downloaded 108, added 8
+Progress: resolved 596, reused 388, downloaded 137, added 12
+[WARN] Request took 11075ms: https://registry.npmjs.org/@types%2Fnode
+Progress: resolved 596, reused 388, downloaded 166, added 12
+[WARN] Request took 10636ms: https://registry.npmjs.org/electron-to-chromium
+Progress: resolved 596, reused 388, downloaded 178, added 14
+Progress: resolved 596, reused 388, downloaded 188, added 14
+[WARN] GET https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20260722.1.tgz error (UND_ERR_SOCKET). Will retry in 10 seconds. 2 retries left.
+[WARN] Request took 10198ms: https://registry.npmjs.org/react-refresh
+[WARN] Request took 10443ms: https://registry.npmjs.org/react-dom
+[WARN] Request took 10576ms: https://registry.npmjs.org/react-is
+Progress: resolved 596, reused 388, downloaded 194, added 16
+[WARN] Request took 10725ms: https://registry.npmjs.org/tailwindcss
+[WARN] Request took 10851ms: https://registry.npmjs.org/typescript
+Progress: resolved 596, reused 388, downloaded 206, added 81
+[WARN] Request took 10963ms: https://registry.npmjs.org/wrangler
+Progress: resolved 596, reused 388, downloaded 207, added 317
+✓ Lockfile passes supply-chain policies (741 entries in 23.5s)
+Progress: resolved 596, reused 388, downloaded 207, added 595
+Progress: resolved 596, reused 388, downloaded 208, added 595
+Progress: resolved 596, reused 388, downloaded 208, added 596, done
+.../esbuild@0.28.1/node_modules/esbuild postinstall$ node install.js
+.../node_modules/workerd postinstall$ node install.js
+.../esbuild@0.28.1/node_modules/esbuild postinstall: Done
+.../node_modules/workerd postinstall: Done
+
+dependencies:
++ @astrojs/check 0.9.10
++ @astrojs/markdown-remark 7.2.1
++ @astrojs/mdx 7.0.4
++ @astrojs/react 6.0.1
++ @astrojs/sitemap 3.7.3
++ @digi4care/astro-google-tagmanager 2.0.0
++ @justinribeiro/lite-youtube 1.9.0
++ astro 7.1.4
++ astro-auto-import 0.5.2
++ astro-swiper 2.8.1
++ date-fns 4.4.0
++ disqus-react 1.1.7
++ github-slugger 2.0.0
++ gray-matter 4.0.3
++ marked 18.0.7
++ prop-types 15.8.1
++ react 19.2.8
++ react-dom 19.2.8
++ react-icons 5.7.0
++ remark-collapse 0.1.2
++ remark-toc 9.0.0
++ sharp 0.35.3
++ vite 8.1.5
+
+devDependencies:
++ @tailwindcss/forms 0.5.11
++ @tailwindcss/typography 0.5.20
++ @tailwindcss/vite 4.3.3
++ @types/node 26.1.2
++ @types/react 19.2.17
++ @types/react-dom 19.2.3
++ concurrently 10.0.4
++ eslint 10.8.0
++ glob 13.0.6
++ node-html-parser 9.0.0
++ prettier 3.9.6
++ prettier-plugin-astro 0.14.1
++ prettier-plugin-tailwindcss 0.8.1
++ tailwind-bootstrap-grid 7.0.0
++ tailwindcss 4.3.3
++ turndown 7.2.4
++ typescript 6.0.3
++ wrangler 4.114.0
+
+Done in 35.5s using pnpm v11.17.0
+$ npx -y pnpm@11.17.0 run build
+$ node scripts/themeGenerator.js && node scripts/jsonGenerator.js && astro build && node scripts/llmsGenerator.js
+✅ Theme CSS generated successfully at: /tmp/claude-0/camp2/zeon-studio_astroplate/src/styles/generated-theme.css
+[astro] `markdown.remarkPlugins`, `markdown.rehypePlugins`, and `markdown.remarkRehype` are deprecated. Pass them to `unified({...})` from `@astrojs/markdown-remark` directly instead.
+[2m04:30:03[22m [34m[content][39m Syncing content
+[2m04:30:03[22m [34m[content][39m Synced content
+[2m04:30:03[22m [34m[types][39m Generated [2m2.58s[22m
+[2m04:30:03[22m [34m[build][39m output: [34m"static"[39m
+[2m04:30:03[22m [34m[build][39m mode: [34m"static"[39m
+[2m04:30:03[22m [34m[build][39m directory: [34m/tmp/claude-0/camp2/zeon-studio_astroplate/dist/[39m
+[2m04:30:03[22m [34m[build][39m Collecting build info...
+[2m04:30:03[22m [34m[build][39m [32m✓ Completed in 2.69s.[39m
+[2m04:30:03[22m [34m[build][39m Building static entrypoints...
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+[33m[1m04:30:07[22m [WARN] [assets][39m No data found for font family [1mHeebo[22m. Review your configuration
+[33m[1m04:30:07[22m [WARN] [assets][39m No data found for font family [1mSignika[22m. Review your configuration
+[2m04:30:08[22m [34m[assets][39m Copying fonts (0 files)...
+[2m04:30:08[22m [34m[vite][39m [32m✓ built in 4.84s[39m
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/camp2/zeon-studio_astroplate/node_modules/.pnpm/astro@7.1.4_@astrojs+markdown-remark@7.2.1_supports-color@10.2.2__@emnapi+core@1.11.1_@_b86403fabf411374239638f8159d22f4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+[33m[1m04:30:11[22m [WARN] [assets][39m No data found for font family [1mHeebo[22m. Review your configuration
+[33m[1m04:30:11[22m [WARN] [assets][39m No data found for font family [1mSignika[22m. Review your configuration
+[2m04:30:12[22m [34m[vite][39m [32m✓ built in 3.38s[39m
+[2m04:30:12[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m04:30:13[22m   [34m├─[39m [2m/404.html[22m [2m(+61ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/about/index.html[22m [2m(+11ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/authors/john-doe/index.html[22m [2m(+16ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/authors/sam-wilson/index.html[22m [2m(+5ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/authors/william-jacob/index.html[22m [2m(+10ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/authors/index.html[22m [2m(+9ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/page/2/index.html[22m [2m(+8ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/post-1/index.html[22m [2m(+11ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/post-2/index.html[22m [2m(+8ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/post-3/index.html[22m [2m(+8ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/post-4/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+9ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/application/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/data/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/technology/index.html[22m [2m(+7ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/software/index.html[22m [2m(+5ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/architecture/index.html[22m [2m(+4ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/categories/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+4ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/nextjs/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/tailwind/index.html[22m [2m(+6ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/technology/index.html[22m [2m(+5ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/software/index.html[22m [2m(+5ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/silicon/index.html[22m [2m(+4ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/tags/index.html[22m [2m(+4ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/elements/index.html[22m [2m(+20ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/privacy-policy/index.html[22m [2m(+5ms)[22m 
+[2m04:30:13[22m   [34m├─[39m [2m/index.html[22m [2m(+14ms)[22m 
+[2m04:30:13[22m [32m✓ Completed in 1.68s.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m04:30:13[22m   [32m▶[39m /_astro/logo.Byxv003l_Z2iynRh.webp [2m(before: 2kB, after: 1kB)[22m [2m(+21ms)[22m [2m(1/13)[22m
+[2m04:30:13[22m   [32m▶[39m /_astro/logo-darkmode.BKNj4L4F_ZnyQkD.webp [2m(before: 1kB, after: 1kB)[22m [2m(+21ms)[22m [2m(2/13)[22m
+[2m04:30:13[22m   [32m▶[39m /_astro/avatar.DeQDKSwT_ZEmI25.webp [2m(before: 2kB, after: 0kB)[22m [2m(+22ms)[22m [2m(3/13)[22m
+[2m04:30:13[22m   [32m▶[39m /_astro/avatar.DeQDKSwT_1Rjf6j.webp [2m(before: 2kB, after: 0kB)[22m [2m(+15ms)[22m [2m(4/13)[22m
+[2m04:30:13[22m   [32m▶[39m /_astro/service-1.vcBgDojw_URUy7.webp [2m(before: 11kB, after: 8kB)[22m [2m(+73ms)[22m [2m(5/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/image-placeholder.DyBpoAJD_1yh1uJ.webp [2m(before: 4kB, after: 1kB)[22m [2m(+181ms)[22m [2m(6/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/service-2.DMFtkqmO_Z1TO5w.webp [2m(before: 19kB, after: 11kB)[22m [2m(+153ms)[22m [2m(7/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/avatar-sm.BXWjsrdh_ZJSdBk.webp [2m(before: 3kB, after: 2kB)[22m [2m(+25ms)[22m [2m(8/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/banner.BMwzPDc-_Z17jISl.webp [2m(before: 41kB, after: 18kB)[22m [2m(+220ms)[22m [2m(9/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp [2m(before: 4kB, after: 0kB)[22m [2m(+59ms)[22m [2m(10/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/call-to-action.DNZkTK0I_ZVgue6.webp [2m(before: 19kB, after: 7kB)[22m [2m(+38ms)[22m [2m(11/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/service-3.CK7pyFF__29cxRF.webp [2m(before: 16kB, after: 13kB)[22m [2m(+163ms)[22m [2m(12/13)[22m
+[2m04:30:14[22m   [32m▶[39m /_astro/image-placeholder.DyBpoAJD_uce2f.webp [2m(before: 4kB, after: 1kB)[22m [2m(+68ms)[22m [2m(13/13)[22m
+[2m04:30:14[22m [32m✓ Completed in 310ms.
+[39m
+[2m04:30:14[22m [34m[build][39m [32m✓ Completed in 10.34s.[39m
+[2m04:30:14[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m04:30:14[22m [34m[build][39m 28 page(s) built in [1m13.05s[22m
+[2m04:30:14[22m [34m[build][39m [1mComplete![22m
+📂 Output mode: Static (dist)
+
+🔍 Discovering pre-rendered HTML files...
+   Found 27 pre-rendered HTML files
+   ✓ [static] /about: "Hey, I am John Doe!"
+   ✓ [static] /authors: "Authors"
+   ✓ [static] /authors/john-doe: "John Doe"
+   ✓ [static] /authors/sam-wilson: "Sam Wilson"
+   ✓ [static] /authors/william-jacob: "William Jacob"
+   ✓ [static] /blog: "Blog Posts"
+   ✓ [static] /blog/page/2: "Blog Posts"
+   ✓ [static] /blog/post-1: "How to build an Application with modern Technology"
+   ✓ [static] /blog/post-2: "How to build an Application with modern Technology"
+   ✓ [static] /blog/post-3: "How to build an Application with modern Technology"
+   ✓ [static] /blog/post-4: "How to build an Application with modern Technology"
+   ✓ [static] /categories/application: "Application"
+   ✓ [static] /categories/architecture: "Architecture"
+   ✓ [static] /categories/data: "Data"
+   ✓ [static] /categories: "Categories"
+   ✓ [static] /categories/software: "Software"
+   ✓ [static] /categories/technology: "Technology"
+   ✓ [static] /contact: "Contact"
+   ✓ [static] /elements: "Elements"
+   ✓ [static] /: "The Ultimate Starter Template You Need To Start Your Astro Project"
+   ✓ [static] /privacy-policy: "Privacy"
+   ✓ [static] /tags: "Tags"
+   ✓ [static] /tags/nextjs: "Nextjs"
+   ✓ [static] /tags/silicon: "Silicon"
+   ✓ [static] /tags/software: "Software"
+   ✓ [static] /tags/tailwind: "Tailwind"
+   ✓ [static] /tags/technology: "Technology"
+
+   ✅ Total pages processed: 27
+
+📝 Generating individual .md files...
+   ✓ index.md
+   ✓ about.md
+   ✓ authors.md
+   ✓ authors/john-doe.md
+   ✓ authors/sam-wilson.md
+   ✓ authors/william-jacob.md
+   ✓ blog.md
+   ✓ blog/page/2.md
+   ✓ blog/post-1.md
+   ✓ blog/post-2.md
+   ✓ blog/post-3.md
+   ✓ blog/post-4.md
+   ✓ categories.md
+   ✓ categories/application.md
+   ✓ categories/architecture.md
+   ✓ categories/data.md
+   ✓ categories/software.md
+   ✓ categories/technology.md
+   ✓ contact.md
+   ✓ elements.md
+   ✓ privacy-policy.md
+   ✓ tags.md
+   ✓ tags/nextjs.md
+   ✓ tags/silicon.md
+   ✓ tags/software.md
+   ✓ tags/tailwind.md
+   ✓ tags/technology.md
+   Created 27 .md files
+
+📋 Generating llms.txt...
+   ✓ llms.txt
+
+📚 Generating llms-full.txt...
+   ✓ llms-full.txt
+
+✅ LLMS generation complete!
+
+Summary:
+  Pages processed : 27
+  Sources         : 27 static HTML, 0 SSR-fetched
+  .md files       : 27 (in /)
+  llms.txt        : llms.txt
+  llms-full.txt   : llms-full.txt
+EXIT 0

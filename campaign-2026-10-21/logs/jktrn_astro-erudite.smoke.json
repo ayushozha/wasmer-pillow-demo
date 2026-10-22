@@ -1,0 +1,49 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 18,
+  "local_refs_checked": 48,
+  "missing_local_refs": [
+    "/blog/2024-post",
+    "/blog/rehype-patch"
+  ],
+  "missing_count": 2,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 12422,
+      "title": "astro-erudite"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 13554,
+      "title": "Blog | astro-erudite"
+    },
+    "/blog/introducing-v2/": {
+      "status": 200,
+      "bytes": 489299,
+      "title": "Introducing astro-erudite v2 | astro-erudite"
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 11163,
+      "title": "Tags | astro-erudite"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 10001,
+      "title": "404 | astro-erudite"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 949,
+      "title": "astro-erudite"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 195,
+      "title": null
+    }
+  },
+  "ok": false
+}
