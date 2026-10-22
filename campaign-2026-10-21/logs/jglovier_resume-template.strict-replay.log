@@ -1,0 +1,258 @@
+# 2026-10-22T05:57:22Z strict-inputs replay of anybuild 0.33.0 jekyll.bzl for jglovier_resume-template @ 1884d91e36887002cca3d8287cdd634930a6f7be; ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux] (planned ruby 3.4.7); bundler 4.0.18
+# install step sees only: Gemfile Gemfile.lock
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Bundler 4.0.18 is running, but your lockfile was generated with 2.1.4. Installing Bundler 2.1.4 and restarting using that version.
+Fetching gem metadata from https://rubygems.org/.
+Fetching bundler 2.1.4
+Installing bundler 2.1.4
+Calling `DidYouMean::SPELL_CHECKERS.merge!(error_name => spell_checker)' has been deprecated. Please call `DidYouMean.correct_error(error_name, spell_checker)' instead.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+Fetching gem metadata from https://rubygems.org/.........
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Gem::Platform.match called from /tmp/claude-0/flat-replay/jglovier_resume-template-strict/gems/gems/bundler-2.1.4/lib/bundler/index.rb:198.
+nokogiri-1.14.1-x86_64-linux requires ruby version < 3.3.dev, >= 2.7, which is
+incompatible with the current version, ruby 3.3.6p108
+EXIT 5
+# result exit=5

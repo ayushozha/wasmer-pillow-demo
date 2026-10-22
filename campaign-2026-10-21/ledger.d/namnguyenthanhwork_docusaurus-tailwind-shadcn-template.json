@@ -33,5 +33,6 @@
   "patch": "patches/namnguyenthanhwork_docusaurus-tailwind-shadcn-template.patch",
   "pr_body": "pr-bodies/namnguyenthanhwork_docusaurus-tailwind-shadcn-template.md",
   "import_url": "https://wasmer.io/apps/create?github=namnguyenthanhwork%2Fdocusaurus-tailwind-shadcn-template",
-  "reason": null
+  "reason": null,
+  "license_root_verified": "Root verified 2026-10-22: actual LICENSE is MIT despite GitHub NOASSERTION."
 }

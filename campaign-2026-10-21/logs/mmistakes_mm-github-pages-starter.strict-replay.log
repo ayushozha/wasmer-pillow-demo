@@ -209,3 +209,114 @@ Installing jekyll-algolia 1.7.1
 Installing jekyll-include-cache 0.3.1
 Installing tzinfo 2.0.6
 Installing tzinfo-data 1.2026.5
+Bundle complete! 9 Gemfile dependencies, 102 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from algoliasearch:
+A new major version is available for Algolia! Please now use the https://rubygems.org/gems/algolia gem to get the latest features.
+Post-install message from dnsruby:
+Installing dnsruby...
+  For issues and source code: https://github.com/alexdalitz/dnsruby
+  For general discussion (please tell us how you use dnsruby): https://groups.google.com/forum/#!forum/dnsruby
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+Post-install message from html-pipeline:
+-------------------------------------------------
+Thank you for installing html-pipeline!
+You must bundle Filter gem dependencies.
+See html-pipeline README.md for more details.
+https://github.com/jch/html-pipeline#dependencies
+-------------------------------------------------
+Post-install message from rubyzip:
+RubyZip 3.0 is coming!
+**********************
+
+The public API of some Rubyzip classes has been modernized to use named
+parameters for optional arguments. Please check your usage of the
+following classes:
+  * `Zip::File`
+  * `Zip::Entry`
+  * `Zip::InputStream`
+  * `Zip::OutputStream`
+  * `Zip::DOSTime`
+
+Run your test suite with the `RUBYZIP_V3_API_WARN` environment
+variable set to see warnings about usage of the old API. This will
+help you to identify any changes that you need to make to your code.
+See https://github.com/rubyzip/rubyzip/wiki/Updating-to-version-3.x for
+more information.
+
+Please ensure that your Gemfiles and .gemspecs are suitably restrictive
+to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
+See https://github.com/rubyzip/rubyzip for details. The Changelog also
+lists other enhancements and bugfixes that have been implemented since
+version 2.3.0.
+EXIT 0
+# copy . (ignore .git)
+$ jekyll build
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+/tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/log_adapter.rb:43: warning: Logger not initialized properly
+/tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/stevenson.rb:5: info: Jekyll::Stevenson#initialize: does not call super probably
+Configuration file: /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/opt/temp/_config.yml
+            Source: /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/opt/temp
+       Destination: /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/opt/temp/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+      Remote Theme: Using theme mmistakes/minimal-mistakes
+       Jekyll Feed: Generating feed for posts
+[31m  Liquid Exception: undefined method `tainted?' for nil in /_layouts/single.html[0m
+jekyll 3.9.0 | Error:  undefined method `tainted?' for nil
+/tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/variable.rb:124:in `taint_check': undefined method `tainted?' for nil (NoMethodError)
+
+      return unless obj.tainted?
+                       ^^^^^^^^^
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/variable.rb:89:in `render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/tags/assign.rb:26:in `render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/block_body.rb:103:in `render_node_to_output'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/block_body.rb:91:in `render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/template.rb:208:in `block in render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/template.rb:242:in `with_profiling'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/template.rb:207:in `render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/liquid-4.0.3/lib/liquid/template.rb:220:in `render!'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/liquid_renderer/file.rb:30:in `block (2 levels) in render!'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/liquid_renderer/file.rb:42:in `measure_bytes'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/liquid_renderer/file.rb:29:in `block in render!'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/liquid_renderer/file.rb:49:in `measure_time'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/liquid_renderer/file.rb:28:in `render!'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/renderer.rb:126:in `render_liquid'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/renderer.rb:195:in `render_layout'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/renderer.rb:158:in `place_in_layouts'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/renderer.rb:88:in `render_document'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/renderer.rb:62:in `run'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:479:in `render_regenerated'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:464:in `block (2 levels) in render_docs'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:463:in `each'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:463:in `block in render_docs'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:462:in `each_value'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:462:in `render_docs'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:191:in `render'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/site.rb:71:in `process'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/command.rb:28:in `process_site'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/commands/build.rb:65:in `build'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/commands/build.rb:36:in `process'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `block in execute'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `each'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `execute'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/mercenary-0.3.6/lib/mercenary/program.rb:42:in `go'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/mercenary-0.3.6/lib/mercenary.rb:19:in `program'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/gems/jekyll-3.9.0/exe/jekyll:15:in `<top (required)>'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/bin/jekyll:25:in `load'
+	from /tmp/claude-0/flat-replay/mmistakes_mm-github-pages-starter-strict/gems/bin/jekyll:25:in `<main>'
+EXIT 1
+# result exit=1

@@ -1,6 +1,6 @@
 {
   "repo": "kuizuo/blog",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 343,
   "forks": 176,
   "stars_source": "GitHub MCP search_repositories",
@@ -33,5 +33,6 @@
   "pr_body": "pr-bodies/kuizuo_blog.md",
   "import_url": "https://wasmer.io/apps/create?github=kuizuo%2Fblog",
   "reason": null,
-  "publication_note": "Publication APPROVED by root 2026-10-22 after faithful all-files replay and generated-route review (343 stars)."
+  "publication_note": "Publication APPROVED by root 2026-10-22 after faithful all-files replay and generated-route review (343 stars).",
+  "upstream_pr": "https://github.com/kuizuo/blog/pull/371 (published as ayushfromwasmer; reported by root)"
 }
