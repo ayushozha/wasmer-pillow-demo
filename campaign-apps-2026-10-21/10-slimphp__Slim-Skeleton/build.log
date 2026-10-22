@@ -243,3 +243,35 @@ total 8
 The container runs as root (permission bits are ignored) and the scratch path is not traversable by an
 unprivileged user, so the "logs/ not writable" case could not be reproduced honestly here. /users and
 /users/{id} call $logger->info() -> StreamHandler(logs/app.log); '/' does not log.
+
+=== Second run: the exact install command Wasmer's builder uses (Anybuild v0.33.0, crates/anybuild/resources/starlib/tools/php.bzl:71) ===
+$ COMPOSER_ALLOW_SUPERUSER=1 composer install --optimize-autoloader --ignore-platform-reqs --no-scripts --no-interaction  (tail)
+                                             
+  Could not authenticate against github.com  
+                                             
+
+install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]
+
+exit=100
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3403/  -> 500
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3403/users  -> 500
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3403/users/1  -> 500
+
+NOTE: exit=100 above is this container's network policy (GitHub API dist downloads are blocked here), not a repo problem; the failing package is a require-dev one fetched as a GitHub zip. Retrying with --prefer-source (git clone, allowed here) as an environment workaround:
+$ COMPOSER_ALLOW_SUPERUSER=1 composer install --optimize-autoloader --ignore-platform-reqs --no-scripts --no-interaction --prefer-source  (tail)
+                                             
+  Could not authenticate against github.com  
+                                             
+
+install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]
+
+exit=100
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3404/  -> 500
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3404/users  -> 500
+$ curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3404/users/1  -> 500
+
+Diagnosis (composer -vvv): "[403] https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/4c378e1a…" then
+"Failed to download squizlabs/php_codesniffer from dist: Could not authenticate against github.com". api.github.com is
+blocked by this container's proxy; squizlabs/php_codesniffer is require-dev. The 500s above are only because vendor/ was
+left incomplete by the aborted install. Wasmer's builder has normal network access, so this run does not tell us anything
+about Wasmer; the --no-dev run at the top of this log is the valid runtime proof.
