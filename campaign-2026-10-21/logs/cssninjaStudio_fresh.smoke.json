@@ -1,0 +1,31 @@
+{
+  "dir": "/tmp/claude-0/camp2/cssninjaStudio_fresh/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 24,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 23670,
+      "title": "Fresh - Home"
+    },
+    "/api/search.json": {
+      "status": 200,
+      "bytes": 2490,
+      "title": null
+    },
+    "/_astro/index.DJrTxuCU.css": {
+      "status": 200,
+      "bytes": 227204,
+      "title": null
+    },
+    "/img/illustrations/worker.png": {
+      "status": 200,
+      "bytes": 18912,
+      "title": null
+    }
+  },
+  "ok": true
+}

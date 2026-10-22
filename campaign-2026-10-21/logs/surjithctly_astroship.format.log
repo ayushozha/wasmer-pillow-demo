@@ -1,0 +1,12 @@
+# 2026-10-22T04:32:00Z surjithctly/astroship: repo has .prettierrc but no prettier dependency/script; ad-hoc prettier 3.6.2 check (informational)
+$ npx -y prettier@3.6.2 --check README.md   (patched)
+Checking formatting...
+[warn] README.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+$ npx -y prettier@3.6.2 --check README.md   (base)
+Checking formatting...
+[warn] README.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+Prettier diffs touching added Wasmer lines: 0

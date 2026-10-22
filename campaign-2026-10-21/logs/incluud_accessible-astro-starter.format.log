@@ -1,0 +1,5 @@
+# 2026-10-22T04:31:43Z incluud/accessible-astro-starter prettier (repo devDependency, repo .prettierrc)
+$ npx prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+EXIT 0

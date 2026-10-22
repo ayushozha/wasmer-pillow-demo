@@ -95,3 +95,14 @@ Result (59 files):
 04:31:31 [build] ✓ Completed in 1.07s.
 04:31:31 [build] Building static entrypoints...
 04:31:34 [vite] ✓ built in 2.95s
+04:31:46 [vite] ✓ built in 12.29s
+04:31:46 [build] Rearranging server assets...
+
+ generating static routes 
+Failed to parse image reference: {&#x22;inferSize&#x22;:true,&#x22;src&#x22;:&#x22;https://image.radishzz.cc/picsmaller/03.webp&#x22;,&#x22;alt&#x22;:&#x22;_Here&#x27;s the description of the picture&#x22;,&#x22;index&#x22;:0}
+  Stack trace:
+    at updateImageReferencesInBody (file:///tmp/claude-0/camp2/radishzzz_astro-theme-retypeset/dist/.prerender/chunks/_astro_content_DKowqsfA.mjs:208:13)
+    at async renderEntry (file:///tmp/claude-0/camp2/radishzzz_astro-theme-retypeset/dist/.prerender/chunks/_astro_content_DKowqsfA.mjs:266:82)
+    at async Promise.all (index 2)
+ ELIFECYCLE  Command failed with exit code 1.
+EXIT 1

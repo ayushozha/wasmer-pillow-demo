@@ -1,0 +1,27 @@
+From 80f3672fbf5bcab7a4b8bcd7e3dcb1c4bad4e384 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:32:14 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index ed1e114..61e8f6f 100644
+--- a/README.md
++++ b/README.md
+@@ -55,6 +55,10 @@ Click here to deploy on Netlify:
+ 
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/astroship)
+ 
++Click here to deploy on Wasmer Edge. The import builds this repository's static `dist` output and does not create a copy in your GitHub account, so import your own fork to customize the site:
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=surjithctly%2Fastroship)
++
+ ## Preview
+ 
+ ![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
+-- 
+2.43.0
+

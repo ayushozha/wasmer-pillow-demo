@@ -1,0 +1,27 @@
+From f16b7ee3d80e0c89486ad8fcedcd4c28b1061a8e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:32:15 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index a410abd..ba3126c 100644
+--- a/README.md
++++ b/README.md
+@@ -70,6 +70,10 @@ Clone this theme locally and run any of the following commands in your terminal:
+ | `npm run build`   | Build your production site to `./dist/`      |
+ | `npm run preview` | Preview your build locally, before deploying |
+ 
++## Deploy
++
++`npm run build` outputs a static site to `./dist/`. To deploy it on Wasmer Edge, [import this repository](https://wasmer.io/apps/create?github=incluud%2Faccessible-astro-starter). The import does not create a copy in your GitHub account, so import your own fork to deploy your customized site.
++
+ ## Create a project with the CLI
+ 
+ You can now scaffold projects directly from this starter with the create CLI:
+-- 
+2.43.0
+

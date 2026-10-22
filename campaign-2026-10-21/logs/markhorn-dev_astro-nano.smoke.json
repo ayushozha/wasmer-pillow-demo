@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/camp2/markhorn-dev_astro-nano/dist",
+  "base": "/",
+  "html_files": 14,
+  "local_refs_checked": 29,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 21303,
+      "title": "Home | Astro Nano"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 18552,
+      "title": "Blog | Astro Nano"
+    },
+    "/blog/01-getting-started/": {
+      "status": 200,
+      "bytes": 17864,
+      "title": "Getting started | Astro Nano"
+    },
+    "/projects/": {
+      "status": 200,
+      "bytes": 12588,
+      "title": "Projects | Astro Nano"
+    },
+    "/work/": {
+      "status": 200,
+      "bytes": 12593,
+      "title": "Work | Astro Nano"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 3398,
+      "title": "Home"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 197,
+      "title": null
+    }
+  },
+  "ok": true
+}
