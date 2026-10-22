@@ -1,0 +1,28 @@
+diff --git a/README.md b/README.md
+index 4adae6d..0655079 100644
+--- a/README.md
++++ b/README.md
+@@ -22,6 +22,16 @@ Simply download
+ [pev2.html](https://www.github.com/dalibo/pev2/releases/latest/download/pev2.html),
+ open it in your favorite internet browser.
+ 
++## Self-hosted on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=dalibo%2Fpev2)
++
++Wasmer runs `npm install` and `npm run build`, then serves the generated
++`dist-app` folder (set in the `Staticfile`) as static files. The button opens
++Wasmer's import page for this public repository, where you review the
++configuration and click Deploy; it does not create a copy of the repository in
++your GitHub account.
++
+ ## Integrated in a web application
+ 
+ ### Without building tools
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..7d8a9e1
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: dist-app

@@ -1,0 +1,14 @@
+# npm audit in the replay work dir (same install), 2026-10-22, npm 10.9.4
+$ npm audit --omit=dev
+found 0 vulnerabilities
+exit=0
+
+$ npm audit (all, summary)
+@vitest/mocker  <=4.1.11
+Severity: moderate
+braces  *
+Severity: high
+vite  8.0.0 - 8.1.5
+Severity: high
+8 vulnerabilities (2 moderate, 6 high)
+exit=0

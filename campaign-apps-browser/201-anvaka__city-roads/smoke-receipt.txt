@@ -1,0 +1,11 @@
+200	page	/	text/html	2167
+--	title	/	Draw all roads in a city at once	
+404	page	/favicon.ico	text/html	0
+--	title	/favicon.ico	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/index.46c74633.js	text/javascript	273782
+200	ref	/assets/index.d9d15598.css	text/css	9366
+SUMMARY pages=3 refs_checked=2 failures=2
+FAIL	404	page	/favicon.ico	text/html	0
+FAIL	404	page	/nope	text/html	0

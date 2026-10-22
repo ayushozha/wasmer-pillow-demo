@@ -1,0 +1,75 @@
+# replay of C-201-cityroads  source=rup/anvaka__city-roads  upstream HEAD=35d6497db70debf4508b4d75f17d80c4367d66a6
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-201-cityroads/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+
+added 259 packages, and audited 260 packages in 4s
+
+14 vulnerabilities (8 moderate, 6 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.14.54 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> city-roads@1.0.0 build
+> vite build
+
+[36mvite v2.9.18 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 193 modules transformed.
+rendering chunks...
+[90m[37m[2mdist/[22m[90m[39m[32mindex.html                 [39m [2m2.12 KiB[22m
+[90m[37m[2mdist/[22m[90m[39m[35massets/index.d9d15598.css  [39m [2m9.15 KiB / gzip: 2.44 KiB[22m
+[90m[37m[2mdist/[22m[90m[39m[36massets/index.46c74633.js   [39m [2m267.37 KiB / gzip: 92.39 KiB[22m
+exit=0
+
+$ static-web-server --root=$S/replay/C-201-cityroads/static_app --log-level=info --port=4013 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	2167
+--	title	/	Draw all roads in a city at once	
+404	page	/favicon.ico	text/html	0
+--	title	/favicon.ico	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/index.46c74633.js	text/javascript	273782
+200	ref	/assets/index.d9d15598.css	text/css	9366
+SUMMARY pages=3 refs_checked=2 failures=2
+FAIL	404	page	/favicon.ico	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 3

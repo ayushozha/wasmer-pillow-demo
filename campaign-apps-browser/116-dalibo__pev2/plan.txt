@@ -2,7 +2,7 @@
     Framework: Vite
     Server: Node.js
     Package manager: npm
-    Output directory: dist
+    Output directory: dist-app
 
-  Generated Anybuild at <tmp>
-Plan saved to $S/plantmp/laneA/pev2.json
+  Generated Anybuild at /tmp/AnybuildQMcXRF
+Plan saved to $S/replay/X116-pev2/plan.json

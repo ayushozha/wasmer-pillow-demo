@@ -1,0 +1,34 @@
+diff --git a/README.md b/README.md
+index 5f4ca2d..7793cde 100644
+--- a/README.md
++++ b/README.md
+@@ -204,6 +204,12 @@ docker run -d \
+ 
+ 启动后访问 `http://localhost:8080/`。更新版本时，重新构建镜像并替换容器即可。
+ 
++### 部署到 Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=SeanWong17%2FFuture-Style-Periodic-Table)
++
++Wasmer 会执行 `npm install` 和 `npm run build`，然后将生成的 `dist/` 目录作为静态文件提供服务。该按钮会打开 Wasmer 针对本公开仓库的导入页面，你可以在页面上检查配置后点击 Deploy；它不会在你的 GitHub 账号中创建仓库副本。如需部署自己的修改，请先 Fork 本仓库，再在 Wasmer 上导入你的 Fork。
++
+ ### 浏览器兼容性
+ - ✅ Chrome 90+
+ - ✅ Firefox 88+
+diff --git a/README_en.md b/README_en.md
+index cebc341..21f95f1 100644
+--- a/README_en.md
++++ b/README_en.md
+@@ -178,6 +178,12 @@ docker run -d \
+ 
+ Open `http://localhost:8080/` after the container starts. To update the app, rebuild the image and replace the container.
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=SeanWong17%2FFuture-Style-Periodic-Table)
++
++Wasmer runs `npm install` and `npm run build`, then serves the generated `dist/` directory as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To deploy your own changes, fork this repository and import your fork on Wasmer.
++
+ ### Browser Compatibility
+ - ✅ Chrome 90+
+ - ✅ Firefox 88+

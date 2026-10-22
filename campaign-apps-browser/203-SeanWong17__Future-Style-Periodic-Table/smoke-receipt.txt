@@ -1,0 +1,11 @@
+200	page	/	text/html	16555
+--	title	/	宇宙的5%	
+404	page	/favicon.ico	text/html	0
+--	title	/favicon.ico	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/index-CFAAkAlt.js	text/javascript	300023
+200	ref	/assets/index-CeJkRRve.css	text/css	20427
+SUMMARY pages=3 refs_checked=2 failures=2
+FAIL	404	page	/favicon.ico	text/html	0
+FAIL	404	page	/nope	text/html	0

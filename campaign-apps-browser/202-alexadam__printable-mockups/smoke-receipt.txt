@@ -1,0 +1,11 @@
+200	page	/	text/html	558
+--	title	/	Printable Mockups	
+404	page	/favicon.ico	text/html	0
+--	title	/favicon.ico	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/index-EEthew8B.js	text/javascript	813943
+200	ref	/assets/index-yusnO53H.css	text/css	17268
+SUMMARY pages=3 refs_checked=2 failures=2
+FAIL	404	page	/favicon.ico	text/html	0
+FAIL	404	page	/nope	text/html	0

@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/Anybuild0KuOXx
+Plan saved to $S/replay/C-201-cityroads/plan.json

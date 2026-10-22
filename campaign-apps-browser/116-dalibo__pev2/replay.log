@@ -1,0 +1,77 @@
+# replay of X116-pev2  source=$S/rup/dalibo__pev2  upstream HEAD=e41d4e8b3006c479f9364d68a5d538d81cb7d110
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist-app
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/X116-pev2/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist-app' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+> pev2@1.25.0 prepare
+> husky
+
+.git can't be found
+added 370 packages, and audited 371 packages in 8s
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> pev2@1.25.0 build
+> vue-tsc --noEmit && vite build
+
+[36mvite v8.1.5 [32mbuilding client environment for production...[36m[39m
+[warn] `inlineDynamicImports` option is ignored because `codeSplitting: false` is set.
+[2Ktransforming...✓ 1068 modules transformed.
+rendering chunks...
+[plugin vite:singlefile] 
+
+[plugin vite:singlefile] Inlining: index-9L2KIJkq.js
+[plugin vite:singlefile] Inlining: style-DBGHoXbE.css
+computing gzip size...
+dist-app/index.html  1,308.08 kB │ gzip: 305.63 kB
+
+[32m✓ built in 2.25s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/X116-pev2/static_app --log-level=info --port=4151 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1308080
+--	title	/	Postgres EXPLAIN Visualizer 2 (pev2)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+404	page	/pev2.html	text/html	0
+--	title	/pev2.html	(none)	
+SUMMARY pages=3 refs_checked=0 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	page	/pev2.html	text/html	0
+# static_app files: 1

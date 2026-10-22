@@ -1,0 +1,85 @@
+# replay of C-202-mockups  source=rup/alexadam__printable-mockups  upstream HEAD=4ac3ff3042cddb12c764c1706388df9ddd2532c9
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/C-202-mockups/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+added 171 packages, and audited 172 packages in 6s
+
+5 vulnerabilities (1 low, 4 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   core-js@3.49.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> printable-mockups-app-new@0.0.0 build
+> vite build
+
+[36mvite v8.2.0 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 271 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        0.55 kB │ gzip:   0.34 kB
+dist/assets/index-yusnO53H.css        17.26 kB │ gzip:   4.28 kB
+dist/assets/purify.es-BlKBIatO.js     27.12 kB │ gzip:  10.54 kB
+dist/assets/index.es-D-slkgG_.js     151.27 kB │ gzip:  48.86 kB
+dist/assets/html2canvas-DLgjU1lF.js  199.48 kB │ gzip:  46.76 kB
+dist/assets/index-EEthew8B.js        813.94 kB │ gzip: 254.08 kB
+
+[33m[33m[PREFER_BUILTIN_FEATURE] [0mRolldown supports `inject` natively. Please refer https://rolldown.rs/reference/ for more details. It is more performant than passing `@rollup/plugin-inject` to plugins option.
+ [38;5;240m │[0m 
+ [38;5;240m │[0m [38;5;115mHelp[0m: This diagnostic may be false positive, you could turn it off via `checks.preferBuiltinFeature`
+[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 2.45s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/C-202-mockups/static_app --log-level=info --port=4014 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	558
+--	title	/	Printable Mockups	
+404	page	/favicon.ico	text/html	0
+--	title	/favicon.ico	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/index-EEthew8B.js	text/javascript	813943
+200	ref	/assets/index-yusnO53H.css	text/css	17268
+SUMMARY pages=3 refs_checked=2 failures=2
+FAIL	404	page	/favicon.ico	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 6

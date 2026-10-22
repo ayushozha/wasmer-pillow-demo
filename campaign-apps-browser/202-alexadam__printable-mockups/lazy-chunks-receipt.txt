@@ -1,0 +1,6 @@
+200	text/javascript	813943	/assets/index-EEthew8B.js
+200	text/javascript	151271	/assets/index.es-D-slkgG_.js
+200	text/css	17268	/assets/index-yusnO53H.css
+200	text/javascript	199483	/assets/html2canvas-DLgjU1lF.js
+200	text/javascript	27126	/assets/purify.es-BlKBIatO.js
+200	text/html	558	/index.html
