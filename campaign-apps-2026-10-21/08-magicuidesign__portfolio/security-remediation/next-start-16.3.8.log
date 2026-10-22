@@ -1,0 +1,33 @@
+▲ Next.js 16.3.8
+- Local:         http://127.0.0.1:3774
+- Network:       http://127.0.0.1:3774
+✓ Ready in 214ms
+✓ Running next.config.mjs took 34ms
+Can't load image https://dillion.io/me.png: fetch failed
+`z-index` is currently not supported.
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:47100)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}
+⨯ Error: failed to pipe response
+    at ignore-listed frames {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at aS (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:2224)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:47100)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async a7 (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:54:48166)
+      at async sH (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:29726)
+      at async ly (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:40376)
+      at async Object.start (.next/server/edge/chunks/[root-of-the-server]__01yh6d8._.js:55:41916)
+}

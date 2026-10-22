@@ -1,0 +1,14 @@
+$ pnpm add next@16.3.8 --save-exact --lockfile-only
+Progress: resolved 696, reused 0, downloaded 0, added 0
+Progress: resolved 756, reused 0, downloaded 0, added 0
+Progress: resolved 780, reused 0, downloaded 0, added 0, done
+
+Done in 4.5s using pnpm v10.34.7
+exit=0
+$ pnpm add -D eslint-config-next@16.3.8 --save-exact --lockfile-only
+Progress: resolved 661, reused 0, downloaded 0, added 0
+Progress: resolved 768, reused 0, downloaded 0, added 0
+Progress: resolved 777, reused 0, downloaded 0, added 0, done
+
+Done in 4.5s using pnpm v10.34.7
+exit=0

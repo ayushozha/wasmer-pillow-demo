@@ -1,0 +1,83 @@
+next@16.1.1: 38 advisories
+   high      GHSA-8h8q-6873-q5fj    vuln=>=16.0.0 <16.2.5 | Next.js Vulnerable to Denial of Service with Server Components
+   high      GHSA-26hh-7cqf-hhc6    vuln=>=16.0.0 <16.2.6 | Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch ro
+   low       GHSA-3g8h-86w9-wvmq    vuln=>=16.0.0 <16.2.5 | Next.js's Middleware / Proxy redirects can be cache-poisoned
+   moderate  GHSA-ffhc-5mcf-pf4q    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cross-site scripting in App Router applications using CSP nonces
+   low       GHSA-vfv6-92ff-j949    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cache poisoning via collisions in React Server Component cache-busti
+   moderate  GHSA-gx5p-jg67-6x7h    vuln=>=16.0.0 <16.2.5 | Next.js has cross-site scripting in beforeInteractive scripts with untrusted input
+   high      GHSA-mg66-mrh9-m8jx    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to Denial of Service via connection exhaustion in applications using Ca
+   moderate  GHSA-h64f-5h5j-jqjh    vuln=>=16.0.0 <16.2.5 | Next.js has a Denial of Service in the Image Optimization API
+   high      GHSA-c4j6-fc7j-m34r    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to server-side request forgery in applications using WebSocket upgrades
+   high      GHSA-492v-c6pp-mqqv    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass through dynamic route parameter injection
+   moderate  GHSA-wfc6-r584-vfw7    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cache poisoning in React Server Component responses
+   high      GHSA-267c-6grr-h53f    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch ro
+   high      GHSA-36qx-fr4f-26g5    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass in Pages Router applications using i18n
+   moderate  GHSA-9g9p-9gw9-jx7f    vuln=>=15.6.0-canary.0 <16.1.5 | Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns conf
+   high      GHSA-h25m-26qc-wcjf    vuln=>=16.1.0-canary.0 <16.1.5 | Next.js HTTP request deserialization can lead to DoS when using insecure React Server Comp
+   moderate  GHSA-ggv3-7p47-pfv8    vuln=>=16.0.0-beta.0 <16.1.7 | Next.js: HTTP request smuggling in rewrites
+   moderate  GHSA-3x4c-7xq6-9pq8    vuln=>=16.0.0-beta.0 <16.1.7 | Next.js: Unbounded next/image disk cache growth can exhaust storage
+   moderate  GHSA-h27x-g6w4-24gq    vuln=>=16.0.1 <16.1.7 | Next.js: Unbounded postponed resume buffering can lead to DoS
+   moderate  GHSA-mq59-m269-xvcx    vuln=>=16.0.1 <16.1.7 | Next.js: null origin can bypass Server Actions CSRF checks
+   low       GHSA-jcc7-9wpm-mj36    vuln=>=16.0.1 <16.1.7 | Next.js: null origin can bypass dev HMR websocket CSRF checks
+   moderate  GHSA-5f7q-jpqc-wp7h    vuln=>=16.0.0-beta.0 <16.1.5 | Next.js has Unbounded Memory Consumption via PPR Resume Endpoint 
+   high      GHSA-q4gf-8mx6-v5v3    vuln=>=16.0.0-beta.0 <16.2.3 | Next.js has a Denial of Service with Server Components
+   high      GHSA-89xv-2m56-2m9x    vuln=>=16.0.0 <16.2.11 | Next.js: Server-Side Request Forgery in Server Actions on custom servers
+   moderate  GHSA-68g3-v927-f742    vuln=>=16.0.0 <16.2.11 | Next.js: Cache confusion of response bodies for requests with bodies
+   high      GHSA-6gpp-xcg3-4w24    vuln=>=16.0.0 <16.2.11 | Next.js: Middleware / Proxy bypass in App Router applications using Turbopack and single l
+   high      GHSA-m99w-x7hq-7vfj    vuln=>=16.0.0 <16.2.11 | Next.js: Denial of Service in App Router using Server Actions
+   moderate  GHSA-4633-3j49-mh5q    vuln=>=16.0.0 <16.2.11 | Next.js: Cache confusion of response bodies for requests with bodies containing invalid UT
+   moderate  GHSA-4c39-4ccg-62r3    vuln=>=16.0.0 <16.2.11 | Next.js: Unbounded Server Action payload in Edge runtime
+   high      GHSA-p9j2-gv94-2wf4    vuln=>=16.0.0 <16.2.11 | Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostn
+   moderate  GHSA-q8wf-6r8g-63ch    vuln=>=16.0.0 <16.2.11 | Next.js: Denial of Service in the Image Optimization API using SVGs
+   moderate  GHSA-955p-x3mx-jcvp    vuln=>=16.0.0 <16.2.11 | Next.js: Unauthenticated disclosure of internal Server Function endpoints
+   high      GHSA-cjq9-62q9-8jv4    vuln=>=16.0.0 <16.3.8 | Next.js has Server-Side Request Forgery in Image Optimization
+   critical  GHSA-p293-qw3h-jr36    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution on windows-hosted servers
+   critical  GHSA-2xp9-vwfh-vxw4    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files a
+   moderate  GHSA-f87g-xv8r-7p7x    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in App Router metadata image routes via dynamicParams b
+   moderate  GHSA-mcj8-r9mp-w47p    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning in SSG/ISR rendering that leads to cross-user content substitu
+   moderate  GHSA-4jqv-mc3x-m676    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning of SSG and ISR pages in self-hosted applications
+   low       GHSA-39w2-rjm5-chcv    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in development server's Model Context Protocol endpoint
+next@16.1.7: 30 advisories
+   high      GHSA-8h8q-6873-q5fj    vuln=>=16.0.0 <16.2.5 | Next.js Vulnerable to Denial of Service with Server Components
+   high      GHSA-26hh-7cqf-hhc6    vuln=>=16.0.0 <16.2.6 | Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch ro
+   low       GHSA-3g8h-86w9-wvmq    vuln=>=16.0.0 <16.2.5 | Next.js's Middleware / Proxy redirects can be cache-poisoned
+   moderate  GHSA-ffhc-5mcf-pf4q    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cross-site scripting in App Router applications using CSP nonces
+   low       GHSA-vfv6-92ff-j949    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cache poisoning via collisions in React Server Component cache-busti
+   moderate  GHSA-gx5p-jg67-6x7h    vuln=>=16.0.0 <16.2.5 | Next.js has cross-site scripting in beforeInteractive scripts with untrusted input
+   high      GHSA-mg66-mrh9-m8jx    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to Denial of Service via connection exhaustion in applications using Ca
+   moderate  GHSA-h64f-5h5j-jqjh    vuln=>=16.0.0 <16.2.5 | Next.js has a Denial of Service in the Image Optimization API
+   high      GHSA-c4j6-fc7j-m34r    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to server-side request forgery in applications using WebSocket upgrades
+   high      GHSA-492v-c6pp-mqqv    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass through dynamic route parameter injection
+   moderate  GHSA-wfc6-r584-vfw7    vuln=>=16.0.0 <16.2.5 | Next.js vulnerable to cache poisoning in React Server Component responses
+   high      GHSA-267c-6grr-h53f    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch ro
+   high      GHSA-36qx-fr4f-26g5    vuln=>=16.0.0 <16.2.5 | Next.js has a Middleware / Proxy bypass in Pages Router applications using i18n
+   high      GHSA-q4gf-8mx6-v5v3    vuln=>=16.0.0-beta.0 <16.2.3 | Next.js has a Denial of Service with Server Components
+   high      GHSA-89xv-2m56-2m9x    vuln=>=16.0.0 <16.2.11 | Next.js: Server-Side Request Forgery in Server Actions on custom servers
+   moderate  GHSA-68g3-v927-f742    vuln=>=16.0.0 <16.2.11 | Next.js: Cache confusion of response bodies for requests with bodies
+   high      GHSA-6gpp-xcg3-4w24    vuln=>=16.0.0 <16.2.11 | Next.js: Middleware / Proxy bypass in App Router applications using Turbopack and single l
+   high      GHSA-m99w-x7hq-7vfj    vuln=>=16.0.0 <16.2.11 | Next.js: Denial of Service in App Router using Server Actions
+   moderate  GHSA-4633-3j49-mh5q    vuln=>=16.0.0 <16.2.11 | Next.js: Cache confusion of response bodies for requests with bodies containing invalid UT
+   moderate  GHSA-4c39-4ccg-62r3    vuln=>=16.0.0 <16.2.11 | Next.js: Unbounded Server Action payload in Edge runtime
+   high      GHSA-p9j2-gv94-2wf4    vuln=>=16.0.0 <16.2.11 | Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostn
+   moderate  GHSA-q8wf-6r8g-63ch    vuln=>=16.0.0 <16.2.11 | Next.js: Denial of Service in the Image Optimization API using SVGs
+   moderate  GHSA-955p-x3mx-jcvp    vuln=>=16.0.0 <16.2.11 | Next.js: Unauthenticated disclosure of internal Server Function endpoints
+   high      GHSA-cjq9-62q9-8jv4    vuln=>=16.0.0 <16.3.8 | Next.js has Server-Side Request Forgery in Image Optimization
+   critical  GHSA-p293-qw3h-jr36    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution on windows-hosted servers
+   critical  GHSA-2xp9-vwfh-vxw4    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files a
+   moderate  GHSA-f87g-xv8r-7p7x    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in App Router metadata image routes via dynamicParams b
+   moderate  GHSA-mcj8-r9mp-w47p    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning in SSG/ISR rendering that leads to cross-user content substitu
+   moderate  GHSA-4jqv-mc3x-m676    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning of SSG and ISR pages in self-hosted applications
+   low       GHSA-39w2-rjm5-chcv    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in development server's Model Context Protocol endpoint
+next@16.2.12: 8 advisories
+   high      GHSA-cjq9-62q9-8jv4    vuln=>=16.0.0 <16.3.8 | Next.js has Server-Side Request Forgery in Image Optimization
+   critical  GHSA-p293-qw3h-jr36    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution on windows-hosted servers
+   critical  GHSA-2xp9-vwfh-vxw4    vuln=>=16.0.0 <16.3.3 | Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files a
+   critical  GHSA-vcvr-r3jv-pc5j    vuln=>=16.2.0 <16.3.6 | Next.js: Remote Code Execution in next/og ImageResponse
+   moderate  GHSA-f87g-xv8r-7p7x    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in App Router metadata image routes via dynamicParams b
+   moderate  GHSA-mcj8-r9mp-w47p    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning in SSG/ISR rendering that leads to cross-user content substitu
+   moderate  GHSA-4jqv-mc3x-m676    vuln=>=16.0.0 <16.3.8 | Next.js has cache poisoning of SSG and ISR pages in self-hosted applications
+   low       GHSA-39w2-rjm5-chcv    vuln=>=16.0.0 <16.3.8 | Next.js has information disclosure in development server's Model Context Protocol endpoint
+next@16.3.8: 0 advisories
+next@16.4.2: 0 advisories
+react@19.2.3: 0 advisories
+react-dom@19.2.3: 0 advisories
