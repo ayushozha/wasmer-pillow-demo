@@ -26,5 +26,8 @@ States detection/install/docroot (backed by the citations above, to be confirmed
 
 Base branch: `main` (root confirmed merged PRs #347/#348 target `main`; no `4.x` remote).
 
+## Live import page (root reviewer, 2026-10-22)
+Detected source `main`, PHP 8.3, 32-bit, Deploy enabled; install shown as Composer with `--no-scripts --ignore-platform-reqs` (matches `php.bzl:71`). The document root is not exposed in the UI, so `public/` as docroot remains source-derived (`php.rs:260-266`), not UI-confirmed. Filesystem writability (`logs/`) on Wasmer remains unverified; the README gives the `php://stdout` alternative.
+
 ## Verdict: CONDITIONAL
 Patch ready. Before opening: open https://wasmer.io/apps/create?github=slimphp%2FSlim-Skeleton and confirm PHP detection with `public/` as web root. If a test deploy is allowed, check `/users` (it writes `logs/app.log`); if it 500s on Wasmer, add that caveat to the README text or hold.

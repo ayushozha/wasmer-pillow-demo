@@ -17,5 +17,7 @@
 ## Build/runtime here
 pip install exit 0; streamlit health 200; AppTest run without exceptions. See `build.log`.
 
-## Verdict: READY (technical) — moderate acceptance risk
-Remaining check for Codex: open https://wasmer.io/apps/create?github=streamlit%2Fstreamlit-example and confirm the detected start command, and that the badge URL renders (img.shields.io is blocked from the cloud container).
+## Verdict: HOLD (root review, 2026-10-22)
+- Live import page (checked by the root reviewer in a browser) selects a **generic Python** app, not the Streamlit framework that Anybuild v0.33.0's source predicts (`python.rs:785`). The start command it would use is therefore not the `streamlit run streamlit_app.py ...` line this README promises.
+- Local health check and AppTest ran on host CPython 3.13; they do not prove numpy/pandas/pyarrow run on Wasmer's runtime.
+- Unhold only with an officially supported Streamlit runtime proof on Wasmer (e.g. a test deploy that renders the chart) and the README wording matched to what the import page actually configures.

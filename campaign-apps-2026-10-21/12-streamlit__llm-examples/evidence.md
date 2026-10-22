@@ -17,5 +17,8 @@
 ## Build/runtime here
 Python 3.13 and 3.11: install exit 0, `pytest app_test.py` 2 passed (mocked), streamlit health 200. See `build.log`.
 
-## Verdict: CONDITIONAL (HOLD if the check fails)
+## Verdict: HOLD (root review, 2026-10-22)
+The live import page selects generic Python for Streamlit repos (seen on streamlit-example), and Wasmer-native numpy/pandas/pyarrow compatibility is unproven. Earlier conditional notes kept below for reference.
+
+### Earlier conditional notes
 Codex: open https://wasmer.io/apps/create?github=streamlit%2Fllm-examples. If the page lets you set the start command (or a build env var `ANYBUILD_PYTHON_MAIN_FILE=Chatbot.py`), the README text is accurate — adjust the wording to the actual field name, then open. If the create flow fails to infer a start command and offers no override, HOLD: the only fix would be a vendor-specific file or renaming `Chatbot.py`, which is out of scope.
