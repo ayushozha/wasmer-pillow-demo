@@ -1,4 +1,4 @@
-# replay of t-gatsby  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/gatsbyjs__gatsby-starter-blog  upstream HEAD=d75052245100ae3c98807c5f38c6e7ec68910e74
+# replay of rr-02  source=$S/rup/gatsbyjs__gatsby-starter-blog  upstream HEAD=d75052245100ae3c98807c5f38c6e7ec68910e74
 # local diff vs HEAD:  M README.md;
   Detected static Node.js provider
     Framework: Gatsby
@@ -7,14 +7,14 @@
     Output directory: public
 
   Generated Anybuild at <tmp>
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-gatsby/plan.json
+Plan saved to $S/replay/rr-02/plan.json
 # provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='public' pm=npm@11 inputs='package.json' all_files=False
 $ node -v
 v24.22.1
 exit=0
 
 $ npm --version
-10.9.4
+11.21.1
 exit=0
 
 # staged before install: package-lock.json package.json 
@@ -38,16 +38,16 @@ npm warn   peer react@"0.0.0-experimental-c8b778b7f-20220825" from react-server-
 npm warn   node_modules/react-server-dom-webpack
 npm warn     react-server-dom-webpack@"0.0.0-experimental-c8b778b7f-20220825" from gatsby@5.16.1
 npm warn     node_modules/gatsby
-npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
-npm warn deprecated yurnalist@2.1.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-npm warn deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
 npm warn deprecated @types/keyv@4.2.0: This is a stub types definition. keyv provides its own type definitions, so you do not need this installed.
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
 npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
 npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
 npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+npm warn deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+npm warn deprecated yurnalist@2.1.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
-added 1515 packages, and audited 1516 packages in 3m
+added 1515 packages, and audited 1516 packages in 38s
 
 117 vulnerabilities (11 low, 34 moderate, 70 high, 2 critical)
 
@@ -61,6 +61,19 @@ Some issues need review, and may require choosing
 a different dependency.
 
 Run `npm audit` for details.
+npm warn install-scripts 10 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   lmdb@2.5.2 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   @parcel/watcher@2.5.6 (install: node scripts/build-from-source.js)
+npm warn install-scripts   core-js@3.48.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   core-js-pure@3.26.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   es5-ext@0.10.64 (postinstall:  node -e "try{require('./_postinstall')}catch(e){}" || exit 0)
+npm warn install-scripts   gatsby@5.16.1 (postinstall: node scripts/postinstall.js)
+npm warn install-scripts   gatsby-cli@5.16.0 (postinstall: node scripts/postinstall.js)
+npm warn install-scripts   lmdb@2.5.3 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   msgpackr-extract@3.0.3 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   sharp@0.32.6 (install: (node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
 exit=0
 
 $ npm run build
@@ -68,49 +81,49 @@ $ npm run build
 > gatsby-starter-blog@0.1.0 build
 > gatsby build
 
-success compile gatsby files - 1.371s
-success load gatsby config - 0.047s
-success load plugins - 0.762s
+success compile gatsby files - 1.352s
+success load gatsby config - 0.037s
+success load plugins - 0.642s
 success onPreInit - 0.004s
-success initialize cache - 0.052s
-success copy gatsby files - 0.106s
-success Compiling Gatsby Functions - 0.264s
-success onPreBootstrap - 0.278s
-success createSchemaCustomization - 0.009s
+success initialize cache - 0.043s
+success copy gatsby files - 0.155s
+success Compiling Gatsby Functions - 0.219s
+success onPreBootstrap - 0.241s
+success createSchemaCustomization - 0.021s
 success Checking for changed pages - 0.000s
-success source and transform nodes - 0.195s
-info Writing GraphQL type definitions to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-gatsby/work/.cache/schema.gql
-success building schema - 0.237s
-success createPages - 0.046s
-success createPagesStatefully - 0.071s
+success source and transform nodes - 0.328s
+info Writing GraphQL type definitions to $S/replay/rr-02/work/.cache/schema.gql
+success building schema - 0.245s
+success createPages - 0.029s
+success createPagesStatefully - 0.117s
 info Total nodes: 62, SitePage nodes: 7 (use --verbose for breakdown)
 success Checking for changed pages - 0.000s
 success onPreExtractQueries - 0.000s
-success extract queries from components - 1.408s
-success write out redirect data - 0.105s
-success Build manifest and related icons - 0.221s
-success onPostBootstrap - 0.223s
-info bootstrap finished - 7.403s
-success write out requires - 0.009s
+success extract queries from components - 2.572s
+success write out redirect data - 0.132s
+success Build manifest and related icons - 0.224s
+success onPostBootstrap - 0.226s
+info bootstrap finished - 8.280s
+success write out requires - 0.038s
 warning Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
 Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-success Building production JavaScript and CSS bundles - 5.943s
-success Building HTML renderer - 18.629s
-success Execute page configs - 0.044s
+success Building production JavaScript and CSS bundles - 9.843s
+success Building HTML renderer - 19.225s
+success Execute page configs - 0.067s
 success Caching Webpack compilations - 0.000s
-success run queries in workers - 0.452s - 9/9 19.90/s
-success Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 25.565s - 4/4 0.16/s
+success run queries in workers - 0.451s - 9/9 19.96/s
+success Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 30.188s - 4/4 0.13/s
 success Merge worker state - 0.001s
-success Rewriting compilation hashes - 0.005s
-success Writing page-data.json and slice-data.json files to public directory - 0.005s - 7/7 1351.42/s
-success Building static HTML for pages - 2.160s - 7/7 3.24/s
+success Rewriting compilation hashes - 0.010s
+success Writing page-data.json and slice-data.json files to public directory - 0.024s - 7/7 296.29/s
+success Building static HTML for pages - 2.363s - 7/7 2.96/s
 info There are no new or changed slice html files to build.
-success stitching slices - 0.009s
-success onPostBuild - 0.035s
+success stitching slices - 0.015s
+success onPostBuild - 0.092s
 
 Pages
 
@@ -133,10 +146,10 @@ Pages
   │   λ (Function) Gatsby function                                     │
   │                                                                    │
   ╰────────────────────────────────────────────────────────────────────╯
-info Done building in 36.152492551 sec
+info Done building in 41.792851269 sec
 exit=0
 
-$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-gatsby/static_app --log-level=info --port=3612 --host=127.0.0.1
+$ static-web-server --root=$S/replay/rr-02/static_app --log-level=info --port=3787 --host=127.0.0.1
 Version:      2.38.0
 Built:        
 Git commit:   
@@ -152,8 +165,6 @@ Author:       Jose Quintana <https://joseluisq.net>
 200	page	/my-second-post/	text/html	51914
 --	title	/my-second-post/	My Second Post! | Gatsby Starter Blog	
 200	page	/rss.xml	text/xml	22847
-404	page	/does-not-exist	text/html	0
---	title	/does-not-exist	(none)	
 200	ref	/styles.cf3dca79c4c295eec224.css	text/css	42803
 200	ref	/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	1623
 200	ref	/manifest.webmanifest	application/manifest+json	958
@@ -167,11 +178,10 @@ Author:       Jose Quintana <https://joseluisq.net>
 200	ref	/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	27232
 200	ref	/static/6dacf7b2c4db85249eda1745ffb570ed/e5610/profile-pic.png	image/png	2915
 200	ref	/new-beginnings/	text/html	57134
-200	ref	/webpack-runtime-8e46a0ccc9c7cfaf0d28.js	text/javascript	3913
+200	ref	/webpack-runtime-eef5750a9c29c50503e4.js	text/javascript	3913
 200	ref	/framework-eaafbdc76ee9d63d0e1b.js	text/javascript	140350
 200	ref	/app-e791de04d75bab7736c5.js	text/javascript	67958
 200	ref	/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg	image/jpeg	233584
 200	ref	/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg	image/jpeg	33408
-SUMMARY pages=5 refs_checked=18 failures=1
-FAIL	404	page	/does-not-exist	text/html	0
+SUMMARY pages=4 refs_checked=18 failures=0
 # static_app files: 92

@@ -1,4 +1,4 @@
-# replay of t-cureact  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/coreui__coreui-free-react-admin-template  upstream HEAD=2609f5995035973e00c16ec723165a5fff87cceb
+# replay of rr-08  source=$S/rup/coreui__coreui-free-react-admin-template  upstream HEAD=2609f5995035973e00c16ec723165a5fff87cceb
 # local diff vs HEAD:  M README.md; A Staticfile;
   Detected static Node.js provider
     Framework: Vite
@@ -7,21 +7,21 @@
     Output directory: build
 
   Generated Anybuild at <tmp>
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-cureact/plan.json
+Plan saved to $S/replay/rr-08/plan.json
 # provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='build' pm=npm@11 inputs='package.json' all_files=False
 $ node -v
 v24.22.1
 exit=0
 
 $ npm --version
-10.9.4
+11.21.1
 exit=0
 
 # staged before install: package-lock.json package.json 
 $ npm install
 npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
-added 304 packages, and audited 305 packages in 23s
+added 304 packages, and audited 305 packages in 12s
 
 2 high severity vulnerabilities
 
@@ -29,6 +29,11 @@ To address all issues, run:
   npm audit fix
 
 Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   core-js@3.50.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
 exit=0
 
 $ npm run build
@@ -155,8 +160,8 @@ build/assets/Flags-0iq4_E1R.js                             3,168.83 kB │ gzip:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 9.63s[39m
-[33m[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 8.8s of this 9.6s build (92%).
+[32m✓ built in 11.02s[39m
+[33m[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 9.5s of this 10.9s build (87%).
 2 hooks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
   - vite:asset load (12 calls)
   - vite:css transform (3 calls)
@@ -164,7 +169,7 @@ See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more det
 [39m
 exit=0
 
-$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-cureact/static_app --log-level=info --port=3618 --host=127.0.0.1
+$ static-web-server --root=$S/replay/rr-08/static_app --log-level=info --port=3783 --host=127.0.0.1
 Version:      2.38.0
 Built:        
 Git commit:   
@@ -175,14 +180,11 @@ Homepage:     https://static-web-server.net
 Author:       Jose Quintana <https://joseluisq.net>
 200	page	/	text/html	1255
 --	title	/	CoreUI Free React.js Admin Template	
-404	page	/dashboard	text/html	0
---	title	/dashboard	(none)	
-200	page	/#/dashboard	text/html	1255
---	title	/#/dashboard	CoreUI Free React.js Admin Template	
+200	page	/index.html	text/html	1255
+--	title	/index.html	CoreUI Free React.js Admin Template	
 200	ref	/manifest.json	application/json	299
 200	ref	/favicon.ico	image/x-icon	1150
 200	ref	/assets/index-CDF6GZqn.js	text/javascript	530154
 200	ref	/assets/index-BMn7H6x-.css	text/css	308861
-SUMMARY pages=3 refs_checked=4 failures=1
-FAIL	404	page	/dashboard	text/html	0
+SUMMARY pages=2 refs_checked=4 failures=0
 # static_app files: 107

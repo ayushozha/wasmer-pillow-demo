@@ -4,5 +4,5 @@
     Package manager: npm
     Output directory: dist
 
-  Generated Anybuild at /tmp/AnybuildznCakL
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-charca/plan.json
+  Generated Anybuild at /tmp/AnybuildWYlum7
+Plan saved to $S/replay/rr-10/plan.json

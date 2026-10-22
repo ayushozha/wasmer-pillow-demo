@@ -17,7 +17,7 @@ Detection:
 - Output directory: `public`.
 
 Commands and results:
-- `npm install` on Node 24.22.1 with npm 11 exited 0. Only `package.json` and `package-lock.json` were staged, as the builder does.
+- `npm install` on Node 24.22.1 with npm 11.21.1 exited 0. Only `package.json` and `package-lock.json` were staged, as the builder does.
 - `npm run build` exited 0.
 - `public/` was served with static-web-server 2.38.0.
 

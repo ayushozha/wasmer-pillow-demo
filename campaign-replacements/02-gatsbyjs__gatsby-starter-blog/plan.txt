@@ -4,5 +4,5 @@
     Package manager: npm
     Output directory: public
 
-  Generated Anybuild at /tmp/Anybuild3N7i0O
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-gatsby/plan.json
+  Generated Anybuild at /tmp/AnybuildbgQZcg
+Plan saved to $S/replay/rr-02/plan.json

@@ -1,4 +1,9 @@
-# replay of t-moodist  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/remvze__moodist  upstream HEAD=11c0be2200116a3635880d600fd6953899cc51a3
+# Replay of remvze/moodist at 11c0be2200116a3635880d600fd6953899cc51a3 + README patch, run 2026-10-22
+# Harness: <S>/scripts/replay.sh (Anybuild v0.33.0 plan -> pnpm install/build as planned -> static-web-server 2.38.0).
+# Smoke paths: all 92 asset paths found in src/ (91 sound files + /images/hero-background.webp), PWA manifest, sw.js, 7 PWA icons, favicon, og.png, robots.txt, /registerSW.js (probe), /nope (expected 404).
+# Trimmed: pnpm progress bars, a duplicated stack trace and the static-web-server banner. Nothing else removed.
+
+# replay of moodist-r2  source=<S>/rup/remvze__moodist  upstream HEAD=11c0be2200116a3635880d600fd6953899cc51a3
 # local diff vs HEAD:  M README.md;
   Detected static Node.js provider
     Framework: Astro
@@ -7,7 +12,7 @@
     Output directory: dist
 
   Generated Anybuild at <tmp>
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/plan.json
+Plan saved to <S>/replay/moodist-r2/plan.json
 # provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=False
 $ node -v
 v24.22.1
@@ -20,24 +25,7 @@ exit=0
 # staged before install: package.json pnpm-lock.yaml 
 $ pnpm install
 Lockfile is up to date, resolution step is skipped
-Progress: resolved 1, reused 0, downloaded 0, added 0
 Packages: +947
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Progress: resolved 947, reused 17, downloaded 0, added 0
-Progress: resolved 947, reused 269, downloaded 12, added 4
-Progress: resolved 947, reused 269, downloaded 26, added 8
-Progress: resolved 947, reused 269, downloaded 65, added 24
-Progress: resolved 947, reused 269, downloaded 90, added 32
-Progress: resolved 947, reused 269, downloaded 150, added 53
-Progress: resolved 947, reused 269, downloaded 211, added 80
-Progress: resolved 947, reused 269, downloaded 298, added 198
-Progress: resolved 947, reused 269, downloaded 364, added 265
-Progress: resolved 947, reused 269, downloaded 424, added 304
-Progress: resolved 947, reused 269, downloaded 462, added 320
-Progress: resolved 947, reused 269, downloaded 598, added 382
-Progress: resolved 947, reused 269, downloaded 677, added 584
-Progress: resolved 947, reused 269, downloaded 677, added 779
-Progress: resolved 947, reused 269, downloaded 678, added 947, done
 
 dependencies:
 + @astrojs/react 6.0.5
@@ -76,7 +64,7 @@ devDependencies:
 + workbox-window 7.4.1
 
 
-> moodist@3.1.1 prepare /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work
+> moodist@3.1.1 prepare <S>/replay/moodist-r2/work
 > husky
 
 .git can't be found╭ Warning ─────────────────────────────────────────────────────────────────────╮
@@ -86,22 +74,21 @@ devDependencies:
 │   to run scripts.                                                            │
 │                                                                              │
 ╰──────────────────────────────────────────────────────────────────────────────╯
-Done in 18.7s using pnpm v10.34.7
+Done in 3.3s using pnpm v10.34.7
 exit=0
 
 $ pnpm run build
 
-> moodist@3.1.1 build /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work
+> moodist@3.1.1 build <S>/replay/moodist-r2/work
 > astro build
 
-[2m05:09:40[22m [34m[vite][39m [optimizer] bundling dependencies...
-[2m05:09:40[22m [34m[types][39m Generated [2m1.45s[22m
-[2m05:09:40[22m [34m[build][39m output: [34m"static"[39m
-[2m05:09:40[22m [34m[build][39m mode: [34m"static"[39m
-[2m05:09:40[22m [34m[build][39m directory: [34m/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work/dist/[39m
-[2m05:09:40[22m [34m[build][39m Collecting build info...
-[2m05:09:40[22m [34m[build][39m [32m✓ Completed in 1.61s.[39m
-[2m05:09:40[22m [34m[build][39m Building static entrypoints...
+05:34:50 [types] Generated 832ms
+05:34:50 [build] output: "static"
+05:34:50 [build] mode: "static"
+05:34:50 [build] directory: <S>/replay/moodist-r2/work/dist/
+05:34:50 [build] Collecting build info...
+05:34:50 [build] ✓ Completed in 935ms.
+05:34:50 [build] Building static entrypoints...
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
@@ -114,62 +101,164 @@ Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be a
     hostname: 'fonts.google.com'
   }
 }
-[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
-[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mInter Tight[22m. Review your configuration
-[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mFraunces[22m. Review your configuration
-[2m05:09:45[22m [34m[assets][39m Copying fonts (0 files)...
-[2m05:09:45[22m [34m[vite][39m [32m✓ built in 4.48s[39m
+05:34:53 [WARN] [assets] No data found for font family Inter. Review your configuration
+05:34:53 [WARN] [assets] No data found for font family Inter Tight. Review your configuration
+05:34:53 [WARN] [assets] No data found for font family Fraunces. Review your configuration
+05:34:54 [assets] Copying fonts (0 files)...
+05:34:54 [vite] ✓ built in 4.45s
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
 Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
-Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
-  [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
-      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
-    errno: -3008,
-    code: 'ENOTFOUND',
-    syscall: 'getaddrinfo',
-    hostname: 'fonts.google.com'
-  }
-}
-[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
-[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mInter Tight[22m. Review your configuration
-[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mFraunces[22m. Review your configuration
-[2m05:09:54[22m [34m[vite][39m [32m✓ built in 9.31s[39m
-[33m[1m05:09:54[22m [WARN] [vite][39m [33m[plugin builtin:vite-reporter] 
+[second identical fonts.google.com ENOTFOUND trace trimmed]
+05:34:57 [WARN] [assets] No data found for font family Inter. Review your configuration
+05:34:57 [WARN] [assets] No data found for font family Inter Tight. Review your configuration
+05:34:57 [WARN] [assets] No data found for font family Fraunces. Review your configuration
+05:35:01 [WARN] [vite] [plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
-- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[2m05:09:54[22m [34m[build][39m Rearranging server assets...
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+05:35:01 [vite] ✓ built in 6.89s
+05:35:01 [build] Rearranging server assets...
 
-[42m[30m generating static routes [39m[49m
-[2m05:09:56[22m   [34m├─[39m [2m/index.html[22m [2m(+156ms)[22m 
-[2m05:09:56[22m [32m✓ Completed in 1.56s.
-[39m
-[2m05:09:56[22m [34m[build][39m [32m✓ Completed in 15.59s.[39m
-[2m05:09:59[22m [34m[build][39m Waiting for integration [1m"@vite-pwa/astro-integration"[22m, hook [1m"astro:build:done"[22m...
-[2m05:10:00[22m [34m[build][39m 1 page(s) built in [1m20.82s[22m
-[2m05:10:00[22m [34m[build][39m [1mComplete![22m
+ generating static routes 
+05:35:02   ├─ /index.html (+180ms) 
+05:35:03 ✓ Completed in 1.31s.
+
+05:35:03 [build] ✓ Completed in 12.73s.
+05:35:05 [build] 1 page(s) built in 16.42s
+05:35:05 [build] Complete!
 exit=0
 
-$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/static_app --log-level=info --port=3614 --host=127.0.0.1
-Version:      2.38.0
-Built:        
-Git commit:   
-Build target: x86_64-unknown-linux-gnu
-Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
-License:      MIT OR Apache-2.0
-Homepage:     https://static-web-server.net
-Author:       Jose Quintana <https://joseluisq.net>
-200	page	/	text/html	225579
+$ static-web-server --root=<S>/replay/moodist-r2/static_app --log-level=info --port=3971 --host=127.0.0.1   # version 2.38.0
+200	page	/	text/html	225578
 --	title	/	Moodist: Ambient Sounds for Focus and Calm	
 200	page	/manifest.webmanifest	application/manifest+json	705
+200	page	/sw.js	text/javascript	10012
+404	page	/registerSW.js	text/html	0
+--	title	/registerSW.js	(none)	
+200	page	/favicon.svg	image/svg+xml	10410
+200	page	/og.png	image/png	14355
+200	page	/robots.txt	text/plain	24
+200	page	/assets/pwa/72.png	image/png	2331
+200	page	/assets/pwa/128.png	image/png	4013
+200	page	/assets/pwa/144.png	image/png	4464
+200	page	/assets/pwa/152.png	image/png	4831
+200	page	/assets/pwa/192.png	image/png	6049
+200	page	/assets/pwa/256.png	image/png	8223
+200	page	/assets/pwa/512.png	image/png	18111
 404	page	/nope	text/html	0
 --	title	/nope	(none)	
-200	ref	/favicon.svg	image/svg+xml	10410
+200	page	/images/hero-background.webp	image/webp	698490
+200	page	/sounds/alarm.mp3	audio/mpeg	133747
+200	page	/sounds/animals/beehive.mp3	audio/mpeg	978816
+200	page	/sounds/animals/birds.mp3	audio/mpeg	2059536
+200	page	/sounds/animals/cat-purring.mp3	audio/mpeg	450384
+200	page	/sounds/animals/chickens.mp3	audio/mpeg	5017248
+200	page	/sounds/animals/cows.mp3	audio/mpeg	557928
+200	page	/sounds/animals/crickets.mp3	audio/mpeg	2841144
+200	page	/sounds/animals/crows.mp3	audio/mpeg	775776
+200	page	/sounds/animals/dog-barking.mp3	audio/mpeg	226488
+200	page	/sounds/animals/frog.mp3	audio/mpeg	1572960
+200	page	/sounds/animals/horse-gallop.mp3	audio/mpeg	169968
+200	page	/sounds/animals/owl.mp3	audio/mpeg	97309
+200	page	/sounds/animals/seagulls.mp3	audio/mpeg	519900
+200	page	/sounds/animals/sheep.mp3	audio/mpeg	716640
+200	page	/sounds/animals/whale.mp3	audio/mpeg	360552
+200	page	/sounds/animals/wolf.mp3	audio/mpeg	587749
+200	page	/sounds/animals/woodpecker.mp3	audio/mpeg	167784
+200	page	/sounds/binaural/binaural-alpha.wav	audio/wav	2646044
+200	page	/sounds/binaural/binaural-beta.wav	audio/wav	2646044
+200	page	/sounds/binaural/binaural-delta.wav	audio/wav	2646044
+200	page	/sounds/binaural/binaural-gamma.wav	audio/wav	2646044
+200	page	/sounds/binaural/binaural-theta.wav	audio/wav	2646044
+200	page	/sounds/nature/campfire.mp3	audio/mpeg	3245619
+200	page	/sounds/nature/droplets.mp3	audio/mpeg	798168
+200	page	/sounds/nature/howling-wind.mp3	audio/mpeg	522840
+200	page	/sounds/nature/jungle.mp3	audio/mpeg	4077048
+200	page	/sounds/nature/river.mp3	audio/mpeg	3895214
+200	page	/sounds/nature/walk-in-snow.mp3	audio/mpeg	925248
+200	page	/sounds/nature/walk-on-gravel.mp3	audio/mpeg	1148568
+200	page	/sounds/nature/walk-on-leaves.mp3	audio/mpeg	310632
+200	page	/sounds/nature/waterfall.mp3	audio/mpeg	551904
+200	page	/sounds/nature/waves.mp3	audio/mpeg	2347690
+200	page	/sounds/nature/wind-in-trees.mp3	audio/mpeg	1294948
+200	page	/sounds/nature/wind.mp3	audio/mpeg	1606823
+200	page	/sounds/noise/brown-noise.wav	audio/wav	913096
+200	page	/sounds/noise/pink-noise.wav	audio/wav	1676972
+200	page	/sounds/noise/white-noise.wav	audio/wav	1676232
+200	page	/sounds/places/airport.mp3	audio/mpeg	4501440
+200	page	/sounds/places/cafe.mp3	audio/mpeg	1776720
+200	page	/sounds/places/carousel.mp3	audio/mpeg	2326344
+200	page	/sounds/places/church.mp3	audio/mpeg	772224
+200	page	/sounds/places/construction-site.mp3	audio/mpeg	1571208
+200	page	/sounds/places/crowded-bar.mp3	audio/mpeg	855192
+200	page	/sounds/places/laboratory.mp3	audio/mpeg	384384
+200	page	/sounds/places/laundry-room.mp3	audio/mpeg	737186
+200	page	/sounds/places/library.mp3	audio/mpeg	3825455
+200	page	/sounds/places/night-village.mp3	audio/mpeg	2282322
+200	page	/sounds/places/office.mp3	audio/mpeg	1965408
+200	page	/sounds/places/restaurant.mp3	audio/mpeg	3552736
+200	page	/sounds/places/subway-station.mp3	audio/mpeg	2243112
+200	page	/sounds/places/supermarket.mp3	audio/mpeg	2315472
+200	page	/sounds/places/temple.mp3	audio/mpeg	1558056
+200	page	/sounds/places/underwater.mp3	audio/mpeg	526008
+200	page	/sounds/rain/heavy-rain.mp3	audio/mpeg	541741
+200	page	/sounds/rain/light-rain.mp3	audio/mpeg	3775087
+200	page	/sounds/rain/rain-on-car-roof.mp3	audio/mpeg	245005
+200	page	/sounds/rain/rain-on-leaves.mp3	audio/mpeg	697080
+200	page	/sounds/rain/rain-on-tent.mp3	audio/mpeg	1494072
+200	page	/sounds/rain/rain-on-umbrella.mp3	audio/mpeg	1040122
+200	page	/sounds/rain/rain-on-window.mp3	audio/mpeg	838145
+200	page	/sounds/rain/thunder.mp3	audio/mpeg	2193449
+200	page	/sounds/silence.wav	audio/wav	882044
+200	page	/sounds/things/boiling-water.mp3	audio/mpeg	526603
+200	page	/sounds/things/bubbles.mp3	audio/mpeg	102912
+200	page	/sounds/things/ceiling-fan.mp3	audio/mpeg	179273
+200	page	/sounds/things/clock.mp3	audio/mpeg	90674
+200	page	/sounds/things/dryer.mp3	audio/mpeg	136692
+200	page	/sounds/things/keyboard.mp3	audio/mpeg	388702
+200	page	/sounds/things/morse-code.mp3	audio/mpeg	228312
+200	page	/sounds/things/paper.mp3	audio/mpeg	156480
+200	page	/sounds/things/singing-bowl.mp3	audio/mpeg	431808
+200	page	/sounds/things/slide-projector.mp3	audio/mpeg	1888392
+200	page	/sounds/things/tuning-radio.mp3	audio/mpeg	769551
+200	page	/sounds/things/typewriter.mp3	audio/mpeg	341160
+200	page	/sounds/things/vinyl-effect.mp3	audio/mpeg	1556698
+200	page	/sounds/things/washing-machine.mp3	audio/mpeg	191760
+200	page	/sounds/things/wind-chimes.mp3	audio/mpeg	2255187
+200	page	/sounds/things/windshield-wipers.mp3	audio/mpeg	207528
+200	page	/sounds/transport/airplane.mp3	audio/mpeg	840264
+200	page	/sounds/transport/inside-a-train.mp3	audio/mpeg	1441920
+200	page	/sounds/transport/rowing-boat.mp3	audio/mpeg	597072
+200	page	/sounds/transport/sailboat.mp3	audio/mpeg	2186472
+200	page	/sounds/transport/submarine.mp3	audio/mpeg	696408
+200	page	/sounds/transport/train.mp3	audio/mpeg	1277043
+200	page	/sounds/urban/ambulance-siren.mp3	audio/mpeg	337224
+200	page	/sounds/urban/busy-street.mp3	audio/mpeg	2328744
+200	page	/sounds/urban/crowd.mp3	audio/mpeg	610200
+200	page	/sounds/urban/fireworks.mp3	audio/mpeg	581400
+200	page	/sounds/urban/highway.mp3	audio/mpeg	1671552
+200	page	/sounds/urban/road.mp3	audio/mpeg	1548480
+200	page	/sounds/urban/traffic.mp3	audio/mpeg	452324
 200	ref	/_astro/index.CAtT-LGi.css	text/css	59721
-200	ref	/images/hero-background.webp	image/webp	698490
 200	ref	/logo.svg	image/svg+xml	10398
-SUMMARY pages=3 refs_checked=4 failures=1
+SUMMARY pages=107 refs_checked=2 failures=2
+FAIL	404	page	/registerSW.js	text/html	0
 FAIL	404	page	/nope	text/html	0
 # static_app files: 122
+
+# Supplementary check (same static_app, static-web-server 2.38.0 on port 3973): every URL in the service worker precache manifest
+$ python3 -I <S>/tools/precache_check.py http://127.0.0.1:3973 static_app/sw.js
+PRECACHE sw.js entries=121 ok_200=121 failures=0 bytes=153804719
+PRECACHE content-type application/manifest+json: 2
+PRECACHE content-type audio/mpeg: 82
+PRECACHE content-type audio/wav: 9
+PRECACHE content-type image/png: 10
+PRECACHE content-type image/svg+xml: 2
+PRECACHE content-type image/webp: 1
+PRECACHE content-type text/css: 1
+PRECACHE content-type text/html: 1
+PRECACHE content-type text/javascript: 12
+PRECACHE content-type text/plain: 1
+range /sounds/rain/light-rain.mp3 bytes=0-99: 206 100

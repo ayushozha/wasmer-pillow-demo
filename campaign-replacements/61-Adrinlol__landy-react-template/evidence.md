@@ -16,11 +16,11 @@
 - Provider: node-static, framework Create React App, npm (`package-lock.json` staged with `package.json`), build `npm run build` (`react-scripts build`), output `build` (`plan.txt`). No Staticfile needed.
 - Router: `BrowserRouter` (react-router 5). Routes are only `/` and `/home` (`src/router/config.ts`), and no in-app link points to `/home` (all links are `to="/"` or scroll anchors). `/home` returns 404 on a direct load because there is no SPA fallback. This is a minor limitation because the site is a single page.
 
-## Replay (patched clone, Node 24.22.1, npm 11)
+## Replay (patched clone, Node 24.22.1, npm 11.21.1; re-run after the harness npm-version fix)
 - `npm install` exit 0 (npm audit reports build-tool vulnerabilities in react-scripts dev deps; the output is pure static, so no server runtime is affected).
 - `npm run build` exit 0 ("Compiled successfully"); 42 files.
 - Smoke: `/` 200 ("Landy - React Template"); `/manifest.json`, `/robots.txt` and all 3 referenced assets 200; `/home` 404 (expected, see above).
-- Supplementary: all 13 SVGs referenced from `src/` exist in `img/svg/`; a lazy route chunk returned 200.
+- Supplementary (first run, same build inputs, npm 10.9.4 harness): all 13 SVGs referenced from `src/` exist in `img/svg/`; a lazy route chunk returned 200.
 
 ## Owner comments (root request)
 - `commenter:Adrinlol` PR search (GitHub API, 2026-10-22) returns only #79, #77, #66 and #43. **The owner did not comment on #100 or #101.** The 1-2 comments on those PRs came from someone else, and their text and the `closed_by` field could not be read: `issue_read` and `gh api` are refused for repos outside this session's allowlist, and github.com HTML returns 403 through the proxy.

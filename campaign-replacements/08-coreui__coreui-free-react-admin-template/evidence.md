@@ -17,7 +17,7 @@
 - Existing deploy docs: README "#### Build" only. The patch adds "#### Deploy on Wasmer" right after it, before "## What's included".
 
 ## Anybuild detection (v0.33.0)
-- Provider: node-static, framework Vite, Strong (60). Package manager: npm 11 (`package-lock.json`). Install runs `npm install` with `package.json` and `package-lock.json` staged. Build runs `npm run build` (`vite build`).
+- Provider: node-static, framework Vite, Strong (60). Package manager: npm 11 (planned; executed 11.21.1) (`package-lock.json`). Install runs `npm install` with `package.json` and `package-lock.json` staged. Build runs `npm run build` (`vite build`).
 - **Without the patch, the plan says static_dir `dist`.** Anybuild does not read Vite `build.outDir` (`get_static_dir`, `node_static.rs:454-488`, falls to the framework default `dist`, `node.rs:334`). This repo sets `outDir: 'build'` (`vite.config.mjs`), and `build/` is not committed. So the unpatched Wasmer build would copy a MISSING `dist`.
 - **The fix is a root `Staticfile` containing `root: build`.**
   - The StaticFile provider only scores 50 (`mod.rs:442-449`), while node-static scores 60 (Strong, Vite).
@@ -26,6 +26,8 @@
   - This answers the coordinator's concern that "StaticFile does not build": the StaticFile provider is not selected here.
 
 ## Replay (patched clone, Node 24.22.1, npm 11)
+
+> Correction (2026-10-22): the first replay of this target (`replay-npm10-host-superseded.log`) ran the host's npm 10.9.4 because of a harness bug, although this evidence said npm 11. Re-ran on the exact planned toolchain (Node 24.22.1, **npm 11.21.1**, staged `package.json` + `package-lock.json`); install/build exit 0 and smoke 0 failures — `replay.log` is that run.
 - `npm install` succeeded (exit 0). `npm run build` succeeded (exit 0). `static_app` holds 107 files.
 - Smoke:
   - `/` returned 200 ("CoreUI Free React.js Admin Template").

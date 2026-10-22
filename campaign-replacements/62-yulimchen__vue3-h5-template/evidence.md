@@ -19,7 +19,7 @@
 
 ## Replay (patched clone, Node 24.22.1, pnpm 10.34.7)
 - `pnpm install` exit 0; `pnpm run build` (`vite build` then `vue-tsc --noEmit`) exit 0; 38 files in `static_app`.
-- Smoke: `/`, `/#/tools`, `/#/about` 200 (title "vue3-h5-template"); all 3 referenced assets 200. failures=0.
+- Smoke: `/` 200 (title "vue3-h5-template"); all 3 referenced assets 200. failures=0. The smoke also requested `/#/tools` and `/#/about`. The fragment is never sent to the server, so those requests only re-fetch `/`. Hash routes resolve client-side and were not browser-tested here.
 - Observed: pnpm printed "Ignored build scripts: rs-module-lexer@2.6.0, vue-demi@0.14.10" although the replay exported `pnpm_config_dangerously_allow_all_builds=true` (node.bzl:123). Build output was unaffected. Reported to coordinator as a builder observation, not a repo problem.
 
 ## Limitations

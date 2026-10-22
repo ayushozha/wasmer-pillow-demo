@@ -10,9 +10,9 @@ Landy is used as a quick landing page for a product or project, and its users ar
 
 Local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `8c3aa8bfc8fdeddf4c90046594835455b50d6494` with this change:
 - Detection: static Node.js provider, framework Create React App, npm, output `build`.
-- `npm install` (Node 24.22.1, npm 11): exit 0.
+- `npm install` (Node 24.22.1, npm 11.21.1): exit 0.
 - `npm run build`: exit 0, "Compiled successfully".
-- `build/` served with static-web-server 2.38.0: `/` returned 200, and the JS/CSS bundles, the lazy route chunk, `manifest.json` and the `img/svg` icons returned 200.
+- `build/` served with static-web-server 2.38.0: `/` returned 200, and the JS/CSS bundles and `manifest.json` returned 200.
 
 ## Limitations
 

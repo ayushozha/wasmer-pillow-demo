@@ -22,7 +22,7 @@ Detection:
 - Output directory: `build`. Without the `Staticfile` it is `dist`, which does not exist after the build.
 
 Commands and results:
-- `npm install` on Node 24.22.1 with npm 11 exited 0.
+- `npm install` on Node 24.22.1 with npm 11.21.1 exited 0.
 - `npm run build` exited 0.
 - `build/` was served with static-web-server 2.38.0.
 

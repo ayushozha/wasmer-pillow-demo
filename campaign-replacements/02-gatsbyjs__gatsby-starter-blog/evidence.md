@@ -20,9 +20,11 @@
 ## Anybuild detection (v0.33.0)
 - Provider: node-static, framework Gatsby, Strong detection (60; `mod.rs:421-426`).
 - Static dir: `public` (`providers/node.rs:336`).
-- Package manager: npm 11 (`package-lock.json`). Install runs `npm install` with inputs `package.json` and `package-lock.json`. Build runs `npm run build` (`gatsby build`).
+- Package manager: npm 11 (planned; executed 11.21.1) (`package-lock.json`). Install runs `npm install` with inputs `package.json` and `package-lock.json`. Build runs `npm run build` (`gatsby build`).
 
 ## Replay (patched clone, Node 24.22.1, npm 11; see `replay.log`)
+
+> Correction (2026-10-22): the first replay of this target (`replay-npm10-host-superseded.log`) ran the host's npm 10.9.4 because of a harness bug, although this evidence said npm 11. Re-ran on the exact planned toolchain (Node 24.22.1, **npm 11.21.1**, staged `package.json` + `package-lock.json`); install/build exit 0 and smoke 0 failures — `replay.log` is that run.
 - `npm install` succeeded (exit 0), with peer-dependency warnings only. `npm run build` succeeded (exit 0; "Done building in 36.2 sec").
 - `static_app` holds 92 files. Smoke results:
   - `/` returned 200 ("All posts | Gatsby Starter Blog").

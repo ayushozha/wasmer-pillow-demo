@@ -4,5 +4,5 @@
     Package manager: npm
     Output directory: build
 
-  Generated Anybuild at /tmp/AnybuildhEE0x2
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-cureact/plan.json
+  Generated Anybuild at /tmp/Anybuilds3V24G
+Plan saved to $S/replay/rr-08/plan.json
