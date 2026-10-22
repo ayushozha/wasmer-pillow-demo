@@ -18,12 +18,23 @@ Stars/forks: GitHub API 2026-10-22. SHA = pinned upstream HEAD (full SHA in each
 | 12 | streamlit/llm-examples | 936 / 1,711 | 7cf260745675 | CONDITIONAL | pip 0 + `pytest app_test.py` 2 passed (mocked) on Py 3.13 and 3.11; health 200 | `Chatbot.py` not auto-detected (`python.rs:655-680`); needs start-command / `ANYBUILD_PYTHON_MAIN_FILE` override on create page, else HOLD |
 | 13 | streamlit/streamlit-example | 440 / 24,528 | 8bd2197e4ba6 | READY | pip 0 Py 3.13; health 200; AppTest no exceptions | create-URL check; Streamlit-owned repo, acceptance risk |
 | 14 | timlrx/tailwind-nextjs-starter-blog | 10,560 / 2,596 | b45bef66b40c | HOLD | yarn build + `yarn serve` 200, feed/sitemap OK | builder: `.yarnrc.yml` not in install inputs (PnP), `yarn dlx next-bundle` misdetects, `trailingSlash` 308 loop — report to wasmerio |
-| 15 | ixartz/Next-JS-Landing-Page-Starter-Template | 2,140 / 716 | cd6694e6c69e | CONDITIONAL | npm build/start 200 | unknown paths may 308-loop under next-bundle (`trailingSlash`) |
+| 15 | ixartz/Next-JS-Landing-Page-Starter-Template | 2,140 / 716 | cd6694e6c69e | CONDITIONAL | npm build/start 200 | `next start`: unknown path 404; under Wasmer's next-bundle build/serve unknown paths 308-loop (`trailingSlash`), noted in Limitations; README's `out/` text is stale (no static export) |
 | 16 | cruip/open-react-template | 4,712 / 2,088 | 9da36763df21 | HOLD | build log only | README: "please don't republish, redistribute, or resell the template" |
-| 17 | arthelokyo/tailnext | 431 / 161 | bad459314c91 | CONDITIONAL | prettier/lint/typecheck/build/start OK; `/_next/image` 200 locally | sharp image optimization on Wasmer |
-| 18 | vercel/nextjs-portfolio-starter | 730 / 302 | 90cfee0f74c2 | PENDING | (worker running) | Vercel-owned, acceptance risk |
+| 17 | arthelokyo/tailnext | 431 / 161 | bad459314c91 | CONDITIONAL | prettier/lint/typecheck/build/start OK; `/_next/image` 200 locally | sharp on Wasmer; next-bundle's image optimizer returned a 147 KB WebP vs 9.8 KB under `next start` and accepted q=80 |
+| 18 | vercel/nextjs-portfolio-starter | 730 / 302 | 90cfee0f74c2 | HOLD | yarn frozen install + `yarn build` 0; `/`, post, `feed.xml` 200 | builder's generated `yarn dlx next-bundle` fails ("target project does not declare a next dependency", next-bundle `bin/build.mjs:54-57` uses `INIT_CWD`); Vercel-owned, inactive since 2023; patch staged anyway |
 | 19 | codebucks27/Next.js-Developer-Portfolio-Starter-Code (replaces 11) | 1,351 / 664 | b6f8ee2d3a75 | HOLD | npm install/build/start + next-bundle 200 | repo is stock create-next-app page, not the portfolio; no LICENSE; no lockfile |
 
 Excluded per brief: vercel/commerce, Chanzhaoyu/chatgpt-web, shadcn-ui/next-template, langchain-ai/streamlit-agent (archived), httpbin, symfony/demo. Other replacements (mldangelo/personal-site, m4tt72/terminal, TailAdmin/free-react-tailwind-admin-dashboard) are static-export targets left to the static session to avoid duplicates.
 
 Duplicate check: GitHub PR search `wasmer` across all targets → 0 (2026-10-22).
+
+## Wasmer builder issues found (worth reporting to wasmerio, not upstream)
+
+- Yarn + Next.js: `yarn dlx next-bundle@1.0.0` resolves the project from `INIT_CWD`, which is the dlx temp folder → "target project does not declare a next dependency" (18, 14).
+- Yarn Berry repos: `.yarnrc.yml` is not among install inputs (`node.rs:1782` overwrites them) → PnP install, build fails (14). Yarn 1 repos get Berry-only commands (01).
+- `trailingSlash: true` → unknown paths 308-loop under `node .next-bundle/server.mjs` (14, 15).
+- next-bundle image optimizer ignores `images.qualities` and returned much larger output than `next start` (17).
+- Streamlit entry file only detected by fixed names (`python.rs:655-680`) (12).
+- Builder ignores `engines`/`.nvmrc`; Node 24 default (06 old Next 13 untested on 24).
+
+Local `anybuild` v0.33.0 CLI was built from source and `anybuild plan` was run on 15–18 (binary at scratchpad `w/anybuild-v0.33.0`, not committed).

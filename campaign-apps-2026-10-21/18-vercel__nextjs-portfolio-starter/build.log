@@ -1,0 +1,244 @@
+# build.log for 18-vercel__nextjs-portfolio-starter — generated 2026-10-22 in a copy of the pinned clone
+$ node -v; npm -v; pnpm -v; yarn -v; git -C $SCRATCH/up/18-vercel__nextjs-portfolio-starter rev-parse HEAD
+v22.22.0
+10.9.4
+10.28.0
+1.22.22
+90cfee0f74c25bb3688369a0587e435f8b8f114d
+exit=0
+
+$ yarn install --frozen-lockfile --non-interactive
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning Workspaces can only be enabled in private projects.
+[4/4] Building fresh packages...
+Done in 72.50s.
+exit=0
+
+$ yarn build
+yarn run v1.22.22
+$ node ./scripts/gen-rss.js && next build
+   Linting and checking validity of types ...
+   Creating an optimized production build ...
+[nextra] Found "_app.js" file, refactor it to "_app.mdx" for better performance.
+[nextra] The repository is shallow cloned, so the latest modified time will not be presented.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8) 
+   Generating static pages (4/8) 
+   Generating static pages (6/8) 
+ ✓ Generating static pages (8/8) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      1.79 kB         115 kB
+├   /_app                                  0 B            84.6 kB
+├ ○ /404                                   180 B          84.8 kB
+├ ○ /photos (340 ms)                       1.29 kB         114 kB
+├ ○ /posts (840 ms)                        1.1 kB          114 kB
+├ ○ /posts/markdown (950 ms)               2.62 kB         116 kB
+├ ○ /posts/pages (374 ms)                  5.95 kB         119 kB
+└ ○ /tags/[tag]                            1.22 kB         114 kB
++ First Load JS shared by all              93.7 kB
+  ├ chunks/framework-0c7baedefba6b077.js   45.4 kB
+  ├ chunks/main-c82464b9be3d3aaf.js        37.7 kB
+  ├ chunks/pages/_app-6c1a10a36fd83e50.js  502 B
+  ├ chunks/webpack-445a5fe7cadeec28.js     1.02 kB
+  └ css/8561bb13ecd83214.css               9.1 kB
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+Done in 92.18s.
+exit=0
+
+$ cd 18-vercel__nextjs-portfolio-starter && PORT=3311 yarn start -p 3311   (background)
+ready after ~3s
+yarn run v1.22.22
+$ next start -p 3311
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3311
+
+ ✓ Ready in 1302ms
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3311/
+200
+exit=0
+$ curl -sS http://127.0.0.1:3311/ | grep -o '<title>[^<]*</title>'
+<title>About</title>
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3311/posts/markdown
+200
+exit=0
+$ curl -sS http://127.0.0.1:3311/posts/markdown | grep -o '<h1[^>]*>[^<]*' | head -1
+<h1>Markdown Examples
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}\n' http://127.0.0.1:3311/feed.xml
+200 application/xml
+exit=0
+$ curl -sS http://127.0.0.1:3311/feed.xml | grep -c '<item>'
+2
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3311/tags/web%20development
+200
+exit=0
+$ kill <server pid>  (server stopped)
+
+
+# Anybuild plan, wasmerio/shipit v0.33.0 (587be23132ea), CLI built locally from that tag; run against the unmodified clone
+$ $SCRATCH/w/cargo-target/debug/anybuild plan --temp-anybuild --wasmer $SCRATCH/up/18-vercel__nextjs-portfolio-starter -o $SCRATCH/w/plan18.json 2>&1 | sed 's#/tmp/Anybuild[A-Za-z0-9]*#<tmpfile>#'; python3 -I -c "import json;c=json.load(open('$SCRATCH/w/plan18.json'))['config'];print(json.dumps(c['commands']));print('node_version', c.get('node_version'), '| package manager', c.get('node_package_manager'), c.get(c.get('node_package_manager','')+'_version'))"
+  Detected Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: yarn
+    Node version: 24
+
+  Generated Anybuild at <tmpfile>
+Plan saved to $SCRATCH/w/plan18.json
+{"install": "yarn install", "build": "yarn dlx next-bundle@1.0.0 --build-command 'yarn run build'", "start": "node .next-bundle/server.mjs"}
+node_version None | package manager yarn None
+exit=0
+
+
+# Builder-equivalent run: pristine copy without .git, Node 24 (Anybuild default). Anybuild v0.33.0 leaves yarn unpinned and emits Berry-only commands (yarn dlx, yarn workspaces focus; see node.rs:2226-2240), so Yarn 4.18.1 (current npm 'latest' of @yarnpkg/cli-dist, installed from the npm registry because repo.yarnpkg.com is blocked here) stands in for the builder's yarn
+$ node -v; yarn --version
+v24.22.1
+4.18.1
+exit=0
+
+# (an earlier attempt hit ENOSPC on the shared disk during the link step; space was freed and the copy reset to pristine before this run)
+$ yarn install
+➤ YN0087: Migrated your project to the latest Yarn version 🚀
+
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + gray-matter@npm:4.0.3, next@npm:13.5.6, nextra-theme-blog@npm:2.13.2, nextra@npm:2.13.2, react-dom@npm:18.2.0, react@npm:18.2.0, rss@npm:1.2.2, and 365 more.
+➤ YN0000: └ Completed in 0s 649ms
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 655ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 6s 349ms
+➤ YN0000: · Done in 7s 761ms
+exit=0
+
+$ cat .yarnrc.yml; git diff --no-index --stat $SCRATCH/up/18-vercel__nextjs-portfolio-starter/package.json package.json; head -5 yarn.lock
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+nodeLinker: node-modules
+
+npmMinimalAgeGate: 0
+# This file is generated by running "yarn install" inside your project.
+# Manual changes might be lost - proceed with caution!
+
+__metadata:
+  version: 10
+exit=0
+
+$ yarn dlx next-bundle@1.0.0 --build-command 'yarn run build'
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + next-bundle@npm:1.0.0, @bytecodealliance/preview2-shim@npm:0.17.6, @cf-wasm/internals@npm:0.1.2, @cf-wasm/photon@npm:0.3.5, and 406 more.
+➤ YN0000: └ Completed in 6s 744ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 328 packages were added to the project (+ 206.18 MiB).
+➤ YN0000: └ Completed in 8s 221ms
+➤ YN0000: ┌ Link step
+➤ YN0007: │ esbuild@npm:0.27.0 must be built because it never has been before or the last one failed
+➤ YN0007: │ esbuild@npm:0.27.7 must be built because it never has been before or the last one failed
+➤ YN0000: └ Completed in 4s 511ms
+➤ YN0000: · Done with warnings in 19s 557ms
+
+Error: The target project does not declare a next dependency.
+    at main (file:///tmp/xfs-c67cc0ee/dlx-4857/node_modules/next-bundle/bin/build.mjs:529:11)
+exit=1
+
+# Diagnosis: next-bundle bin/build.mjs:54-57 resolves the project from process.env.INIT_CWD || process.cwd(); under 'yarn dlx' (Berry) INIT_CWD is the temporary dlx project, hence the error above. Same command with an explicit absolute project root (NOT what Anybuild generates):
+$ yarn dlx next-bundle@1.0.0 "$PWD" --build-command 'yarn run build'
+   Creating an optimized production build ...
+[nextra] Found "_app.js" file, refactor it to "_app.mdx" for better performance.
+[nextra] Init git repository failed Discover git repo from [$SCRATCH/build/wl/18-vercel__nextjs-portfolio-starter] failed: could not find repository from '$SCRATCH/build/wl/18-vercel__nextjs-portfolio-starter'; class=Repository (6); code=NotFound (-3)
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8) 
+   Generating static pages (4/8) 
+   Generating static pages (6/8) 
+ ✓ Generating static pages (8/8) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      1.79 kB         115 kB
+├   /_app                                  0 B            84.6 kB
+├ ○ /404                                   180 B          84.8 kB
+├ ○ /photos                                1.29 kB         114 kB
+├ ○ /posts                                 1.1 kB          114 kB
+├ ○ /posts/markdown                        2.62 kB         116 kB
+├ ○ /posts/pages                           5.95 kB         119 kB
+└ ○ /tags/[tag]                            1.22 kB         114 kB
++ First Load JS shared by all              93.7 kB
+  ├ chunks/framework-0c7baedefba6b077.js   45.4 kB
+  ├ chunks/main-c82464b9be3d3aaf.js        37.7 kB
+  ├ chunks/pages/_app-6c1a10a36fd83e50.js  502 B
+  ├ chunks/webpack-445a5fe7cadeec28.js     1.02 kB
+  └ css/8561bb13ecd83214.css               9.1 kB
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+Collected static files (public/, static/, .next/static): 4.875ms
+Build output written to .next-bundle
+Materialized 1114 traced files into .next-bundle/node_modules
+Materialized 0 function files and 0 shared dependency files
+Materialized 57 local runtime package files
+Run it with: node .next-bundle/server.mjs
+exit=0
+
+$ yarn workspaces focus --all --production
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 538ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 276ms
+➤ YN0000: · Done in 0s 925ms
+exit=0
+
+$ cd 18-vercel__nextjs-portfolio-starter && PORT=3312 node .next-bundle/server.mjs   (background)
+ready after ~2s
+Serving $SCRATCH/build/wl/18-vercel__nextjs-portfolio-starter/.next-bundle
+Listening on http://127.0.0.1:3312
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3312/
+200
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3312/posts/markdown
+200
+exit=0
+$ curl -sS http://127.0.0.1:3312/posts/markdown | grep -o '<h1[^>]*>[^<]*' | head -1
+<h1>Markdown Examples
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}\n' http://127.0.0.1:3312/feed.xml
+200 application/octet-stream
+exit=0
+$ curl -sS http://127.0.0.1:3312/feed.xml | grep -c '<item>'
+2
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3312/does-not-exist
+404
+exit=0
+$ kill <server pid>  (server stopped)
+
