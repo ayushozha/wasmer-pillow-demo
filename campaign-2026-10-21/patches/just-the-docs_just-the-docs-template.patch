@@ -1,0 +1,29 @@
+From c482cc93862427c38f92ec47ef855c73650454c8 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:48:45 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index 1f3b392..8f41d13 100644
+--- a/README.md
++++ b/README.md
+@@ -89,6 +89,12 @@ Assuming [Jekyll] and [Bundler] are installed on your computer:
+ 
+ Just upload all the files in the directory `_site`.
+ 
++To build and host the site on [Wasmer Edge](https://docs.wasmer.io/edge/) instead:
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=just-the-docs%2Fjust-the-docs-template)
++
++The button imports this public template repository; it does not create a copy in your GitHub account. To customize your site and redeploy on push, first create your own repository from this template, then import that repository in Wasmer. Set `url` in `_config.yml` to your site's address.
++
+ ## Customization
+ 
+ You're free to customize sites that you create with this template, however you like!
+-- 
+2.43.0
+
