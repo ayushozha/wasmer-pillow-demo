@@ -1,0 +1,5 @@
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneE/plan_simonw__datasette-lite.json

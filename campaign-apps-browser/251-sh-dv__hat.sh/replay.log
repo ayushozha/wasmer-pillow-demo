@@ -1,0 +1,155 @@
+# replay of D-hat  source=$S/rup/sh-dv__hat.sh  upstream HEAD=540d3ccfd2a12b4ed96b78a776c764f899678b6c
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: npm
+    Output directory: out
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/D-hat/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='out' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+
+added 400 packages, and audited 401 packages in 15s
+
+26 vulnerabilities (7 moderate, 13 high, 6 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   core-js-pure@3.22.5 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> hat.sh@2.3.6 build
+> browserify service-worker/sw.js -o public/service-worker.js && next build && next export
+
+info  - Loaded env from $S/replay/D-hat/work/.env
+warn  - No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+info  - Checking validity of types...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+info  - Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/5)
+info  - Generating static pages (1/5)
+info  - Generating static pages (2/5)
+info  - Generating static pages (3/5)
+info  - Generating static pages (5/5)
+info  - Finalizing page optimization...
+
+Page                                       Size     First Load JS
+┌ ○ /                                      421 kB          956 kB
+├   /_app                                  0 B             128 kB
+├ ○ /404                                   599 B           129 kB
+├ ● /about                                 27.3 kB         212 kB
+└ ○ /generate-keys                         464 B           536 kB
++ First Load JS shared by all              128 kB
+  ├ chunks/framework-5f4595e5518b5600.js   42.1 kB
+  ├ chunks/main-b680bac5455cc527.js        28.7 kB
+  ├ chunks/pages/_app-3e4fc50571907e5a.js  56.3 kB
+  ├ chunks/webpack-5752944655d749a0.js     845 B
+  └ css/ad8172df0ff7f2ff.css               974 B
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+
+info  - Loaded env from $S/replay/D-hat/work/.env
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+info  - using build directory: $S/replay/D-hat/work/.next
+info  - Copying "static build" directory
+info  - No "exportPathMap" found in "$S/replay/D-hat/work/next.config.js". Generating map from "./pages"
+info  - Launching 3 workers
+info  - Exporting (0/4)
+info  - Copying "public" directory
+info  - Exporting (1/4)
+info  - Exporting (2/4)
+info  - Exporting (3/4)
+info  - Exporting (4/4)
+Export successful. Files written to $S/replay/D-hat/work/out
+
+> hat.sh@2.3.6 postbuild
+> node ./post-build.js
+
+exit=0
+
+$ static-web-server --root=$S/replay/D-hat/static_app --log-level=info --port=4101 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	3750
+--	title	/	Hat.sh - Simple, fast, secure client-side file encryption	
+200	page	/about/	text/html	294172
+--	title	/about/	Hat.sh - Simple, fast, secure client-side file encryption	
+200	page	/about	text/html	294172
+--	title	/about	Hat.sh - Simple, fast, secure client-side file encryption	
+200	page	/generate-keys/	text/html	60819
+--	title	/generate-keys/	Hat.sh - Simple, fast, secure client-side file encryption	
+200	page	/service-worker.js	text/javascript	1316116
+200	page	/404.html	text/html	2516
+--	title	/404.html	Hat.sh - Simple, fast, secure client-side file encryption	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+404	page	/file	text/html	0
+--	title	/file	(none)	
+200	ref	/favicon.ico	image/x-icon	5483
+200	ref	/_next/static/css/ad8172df0ff7f2ff.css	text/css	2669
+200	ref	/_next/static/chunks/polyfills-5cd94c89d3acac5f.js	text/javascript	91434
+200	ref	/_next/static/chunks/webpack-5752944655d749a0.js	text/javascript	1651
+200	ref	/_next/static/chunks/framework-5f4595e5518b5600.js	text/javascript	129979
+200	ref	/_next/static/chunks/main-b680bac5455cc527.js	text/javascript	105289
+200	ref	/_next/static/chunks/pages/_app-3e4fc50571907e5a.js	text/javascript	223195
+200	ref	/_next/static/chunks/102d0109-4ac6ca3d3e238301.js	text/javascript	469880
+200	ref	/_next/static/chunks/fec483df-e8839be9c8ac0593.js	text/javascript	365864
+200	ref	/_next/static/chunks/4afafdf3-c9f9f9194b3cbcdd.js	text/javascript	792962
+200	ref	/_next/static/chunks/659-b6e389bbd250de1a.js	text/javascript	176053
+200	ref	/_next/static/chunks/95-5692147147aa7258.js	text/javascript	202941
+200	ref	/_next/static/chunks/514-ff48dc2e689276fd.js	text/javascript	66219
+200	ref	/_next/static/chunks/697-26bf00220e348609.js	text/javascript	9516
+200	ref	/_next/static/chunks/253-1f0407103a8baa57.js	text/javascript	10609
+200	ref	/_next/static/chunks/pages/index-ce6944ec6c75fe92.js	text/javascript	87418
+200	ref	/_next/static/kU1SuFE8iWH3QqnKA85Fs/_buildManifest.js	text/javascript	936
+200	ref	/_next/static/kU1SuFE8iWH3QqnKA85Fs/_ssgManifest.js	text/javascript	93
+200	ref	/_next/static/kU1SuFE8iWH3QqnKA85Fs/_middlewareManifest.js	text/javascript	92
+200	ref	/assets/images/logo.png	image/png	10978
+200	ref	/_next/static/chunks/423-2996c940d77ddeec.js	text/javascript	74405
+200	ref	/_next/static/chunks/pages/about-262a1bd4047339d8.js	text/javascript	6834
+200	ref	/assets/icons/xmr-logo.png	image/png	1825
+SUMMARY pages=8 refs_checked=23 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	page	/file	text/html	0
+# static_app files: 53

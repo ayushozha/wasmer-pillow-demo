@@ -1,0 +1,23 @@
+{
+    "provider": "node",
+    "config": {
+        "name": "flat_ricktu288__ray-optics",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build",
+            "start": "webpack serve --open simulator/ --mode=development"
+        },
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "npm",
+        "node_server": "node",
+        "node_build_command": "npm run build",
+        "npm_version": "11",
+        "node_remove_native_binaries": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "ray-optics"
+    },
+    "services": []
+}

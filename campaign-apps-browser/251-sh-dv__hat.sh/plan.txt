@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: npm
+    Output directory: out
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/D-hat/plan.json

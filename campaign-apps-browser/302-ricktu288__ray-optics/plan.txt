@@ -1,0 +1,7 @@
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneE/plan_ricktu288__ray-optics.json

@@ -1,0 +1,7 @@
+# GitHub API receipts (mcp__github__search_repositories / search_pull_requests), 2026-10-22
+repo:sh-dv/hat.sh -> stars 2289, forks 271, pushed_at 2024-07-17, archived false, default_branch master, license MIT
+search_pull_requests "repo:sh-dv/hat.sh wasmer" -> total_count 0
+search_pull_requests "repo:sh-dv/hat.sh deploy in:title" -> total_count 0
+search_pull_requests "repo:sh-dv/hat.sh is:merged" (sorted by created) -> total_count 24; newest merged: #68 closed 2022-05-18, #65 2022-05-18, #64 2022-05-18, #63 2022-05-18
+=> merged PRs since 2025-10-01: 0
+campaign-author check: "wasmer author:ayushozha" (45 results) and "wasmer author:ayushfromwasmer" (8 results) contain no sh-dv repo

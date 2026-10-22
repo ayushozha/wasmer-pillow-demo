@@ -1,0 +1,52 @@
+# replay of laneE-306-crossnote  source=$S/rup/0xGG__crossnote-app  upstream HEAD=b843a10de961c507b829af433c90b0ddd182790e
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/laneE-306-crossnote/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@11.17.0 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+11.17.0
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+? Verifying lockfile against supply-chain policies (915 entries)...
+✓ Lockfile passes supply-chain policies (915 entries in 10ms)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "overrides" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+exit=1
+
+INSTALL FAILED
+$ pnpm run build
+✓ Lockfile passes supply-chain policies (verified 1s ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +855
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 855, reused 240, downloaded 62, added 4
+Progress: resolved 855, reused 240, downloaded 219, added 16
+Progress: resolved 855, reused 240, downloaded 462, added 32
+Progress: resolved 855, reused 240, downloaded 615, added 321
+[ERROR] Command was killed with SIGTERM (Termination): pnpm install
+
+pnpm: Command was killed with SIGTERM (Termination): pnpm install
+    at getFinalError (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:88203:14)
+    at makeError (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:90510:21)
+    at getSyncResult (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:92354:10)
+    at spawnSubprocessSync (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:92314:14)
+    at execaCoreSync (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:92244:23)
+    at callBoundExeca (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:94772:23)
+    at boundExeca (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:94749:49)
+    at sync2 (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:94904:14)
+    at runPnpmCli (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:249523:5)
+    at runDepsStatusCheck (file://$S/pm/pnpm-11.17.0/lib/node_modules/pnpm/dist/pnpm.mjs:251287:7)

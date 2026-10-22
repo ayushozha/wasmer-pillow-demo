@@ -1,0 +1,784 @@
+# Asset/route receipt for mermaid-live-editor, SAME build as replay.log (static_app = docs/), 2026-10-22
+# refs = every _app/immutable/* path referenced by any built .html/.js file, plus every ./ href/src in the built .html files (57 unique paths)
+
+## local NATIVE static-web-server 2.38.0 (x86_64, not the hosted WASI build), --root=static_app --port=4155 --host=127.0.0.1 (defaults otherwise)
+### routes: code content_type bytes path
+200 text/html 4285 /
+200 text/html 4886 /edit
+200 text/html 4519 /view
+200 text/html 4226 /embed
+200 text/html 4886 /edit.html
+200 text/html 4519 /view.html
+200 text/html 4226 /embed.html
+200 text/html 1905 /404.html
+200 text/html 4886 /edit/
+404 text/html; charset=utf-8 1904 /nope
+404 text/html; charset=utf-8 1904 /edit/nope
+200 application/json 359 /manifest.json
+200 text/javascript 107 /service-worker.js
+200 text/xml 404 /sitemap.xml
+### assets: code bytes path
+200 45252 /_app/immutable/assets/0.DBCesUhI.css
+200 14368 /_app/immutable/assets/2.Cjn3HSOQ.css
+200 2389 /_app/immutable/assets/4.BmjKRsT_.css
+200 238 /_app/immutable/assets/6.HIdZaORI.css
+200 77662 /_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 242 /_app/immutable/assets/View.XCPtWYBK.css
+200 145983 /_app/immutable/assets/editor.BuC0XPbM.css
+200 2792 /_app/immutable/chunks/3wb6cqg42.js
+200 46374 /_app/immutable/chunks/B0rX6SVR2.js
+200 4658 /_app/immutable/chunks/BDs-ZApX2.js
+200 49290 /_app/immutable/chunks/BFF754qB.js
+200 1959 /_app/immutable/chunks/BHenalxy2.js
+200 11298 /_app/immutable/chunks/BPUrPjek.js
+200 876 /_app/immutable/chunks/BRJ1fhT_2.js
+200 2314 /_app/immutable/chunks/BWPyau1x.js
+200 115449 /_app/immutable/chunks/B_1BlN2i2.js
+200 107 /_app/immutable/chunks/BifhSqXX2.js
+200 919 /_app/immutable/chunks/Bokn4ipt2.js
+200 51847 /_app/immutable/chunks/Bu7IKW0P2.js
+200 3626930 /_app/immutable/chunks/C-CLZV1r2.js
+200 85 /_app/immutable/chunks/CI1ENdm4.js
+200 1377 /_app/immutable/chunks/CL9ZlnHI2.js
+200 239377 /_app/immutable/chunks/CO0xo6tz.js
+200 27103 /_app/immutable/chunks/CSKSodPl2.js
+200 27614 /_app/immutable/chunks/Ch2K029j.js
+200 30855 /_app/immutable/chunks/CjIIRWRU2.js
+200 3108 /_app/immutable/chunks/Ck3zr9PN.js
+200 1923 /_app/immutable/chunks/DAO4cTYb2.js
+200 620 /_app/immutable/chunks/DJPf-qFn2.js
+200 134371 /_app/immutable/chunks/DKUnCU7f.js
+200 2156 /_app/immutable/chunks/DNEpR40I.js
+200 63534 /_app/immutable/chunks/DPsjFTCs.js
+200 39 /_app/immutable/chunks/DTI5f4_b.js
+200 5598 /_app/immutable/chunks/De9uGZY3.js
+200 55089 /_app/immutable/chunks/DkHCXhz7.js
+200 5801 /_app/immutable/chunks/Dq6ULnIM2.js
+200 155 /_app/immutable/chunks/DsF7k-Jl.js
+200 1211 /_app/immutable/chunks/HclGiUj8.js
+200 145457 /_app/immutable/chunks/JloBEC982.js
+200 14762 /_app/immutable/chunks/_A7_fnyq2.js
+200 1084 /_app/immutable/chunks/aKtaBQYM.js
+200 45701 /_app/immutable/chunks/nC082SSK.js
+200 287 /_app/immutable/chunks/r6JrPz0H2.js
+200 22 /_app/immutable/chunks/w4i0Cq3X.js
+200 37762 /_app/immutable/chunks/wfUqJqTc2.js
+200 65 /_app/immutable/chunks/xihTtKlq.js
+200 5452 /_app/immutable/entry/app.BEh6h9by.js
+200 82 /_app/immutable/entry/start.C7WK7JsF.js
+200 311 /_app/immutable/nodes/0.B00RScJc.js
+200 24577 /_app/immutable/nodes/2.BZSy8-pU.js
+200 443 /_app/immutable/nodes/3.DHM1qntz.js
+200 1010568 /_app/immutable/nodes/4.B93L1ZvI.js
+200 394 /_app/immutable/nodes/5.D83vjPBX.js
+200 6422 /_app/immutable/nodes/6.ChBXMIIB.js
+200 12392 /favicon.png
+200 1068 /favicon.svg
+200 359 /manifest.json
+### asset summary sws 2.38.0: 200=57 non200=0
+
+## local NATIVE static-web-server 2.32.2 (x86_64, not the hosted WASI build), --root=static_app --port=4156 --host=127.0.0.1 (defaults otherwise)
+### routes: code content_type bytes path
+200 text/html 4285 /
+200 text/html 4886 /edit
+200 text/html 4519 /view
+200 text/html 4226 /embed
+200 text/html 4886 /edit.html
+200 text/html 4519 /view.html
+200 text/html 4226 /embed.html
+200 text/html 1905 /404.html
+200 text/html 4886 /edit/
+404 text/html; charset=utf-8 1904 /nope
+404 text/html; charset=utf-8 1904 /edit/nope
+200 application/json 359 /manifest.json
+200 text/javascript 107 /service-worker.js
+200 text/xml 404 /sitemap.xml
+### assets: code bytes path
+200 45252 /_app/immutable/assets/0.DBCesUhI.css
+200 14368 /_app/immutable/assets/2.Cjn3HSOQ.css
+200 2389 /_app/immutable/assets/4.BmjKRsT_.css
+200 238 /_app/immutable/assets/6.HIdZaORI.css
+200 77662 /_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 242 /_app/immutable/assets/View.XCPtWYBK.css
+200 145983 /_app/immutable/assets/editor.BuC0XPbM.css
+200 2792 /_app/immutable/chunks/3wb6cqg42.js
+200 46374 /_app/immutable/chunks/B0rX6SVR2.js
+200 4658 /_app/immutable/chunks/BDs-ZApX2.js
+200 49290 /_app/immutable/chunks/BFF754qB.js
+200 1959 /_app/immutable/chunks/BHenalxy2.js
+200 11298 /_app/immutable/chunks/BPUrPjek.js
+200 876 /_app/immutable/chunks/BRJ1fhT_2.js
+200 2314 /_app/immutable/chunks/BWPyau1x.js
+200 115449 /_app/immutable/chunks/B_1BlN2i2.js
+200 107 /_app/immutable/chunks/BifhSqXX2.js
+200 919 /_app/immutable/chunks/Bokn4ipt2.js
+200 51847 /_app/immutable/chunks/Bu7IKW0P2.js
+200 3626930 /_app/immutable/chunks/C-CLZV1r2.js
+200 85 /_app/immutable/chunks/CI1ENdm4.js
+200 1377 /_app/immutable/chunks/CL9ZlnHI2.js
+200 239377 /_app/immutable/chunks/CO0xo6tz.js
+200 27103 /_app/immutable/chunks/CSKSodPl2.js
+200 27614 /_app/immutable/chunks/Ch2K029j.js
+200 30855 /_app/immutable/chunks/CjIIRWRU2.js
+200 3108 /_app/immutable/chunks/Ck3zr9PN.js
+200 1923 /_app/immutable/chunks/DAO4cTYb2.js
+200 620 /_app/immutable/chunks/DJPf-qFn2.js
+200 134371 /_app/immutable/chunks/DKUnCU7f.js
+200 2156 /_app/immutable/chunks/DNEpR40I.js
+200 63534 /_app/immutable/chunks/DPsjFTCs.js
+200 39 /_app/immutable/chunks/DTI5f4_b.js
+200 5598 /_app/immutable/chunks/De9uGZY3.js
+200 55089 /_app/immutable/chunks/DkHCXhz7.js
+200 5801 /_app/immutable/chunks/Dq6ULnIM2.js
+200 155 /_app/immutable/chunks/DsF7k-Jl.js
+200 1211 /_app/immutable/chunks/HclGiUj8.js
+200 145457 /_app/immutable/chunks/JloBEC982.js
+200 14762 /_app/immutable/chunks/_A7_fnyq2.js
+200 1084 /_app/immutable/chunks/aKtaBQYM.js
+200 45701 /_app/immutable/chunks/nC082SSK.js
+200 287 /_app/immutable/chunks/r6JrPz0H2.js
+200 22 /_app/immutable/chunks/w4i0Cq3X.js
+200 37762 /_app/immutable/chunks/wfUqJqTc2.js
+200 65 /_app/immutable/chunks/xihTtKlq.js
+200 5452 /_app/immutable/entry/app.BEh6h9by.js
+200 82 /_app/immutable/entry/start.C7WK7JsF.js
+200 311 /_app/immutable/nodes/0.B00RScJc.js
+200 24577 /_app/immutable/nodes/2.BZSy8-pU.js
+200 443 /_app/immutable/nodes/3.DHM1qntz.js
+200 1010568 /_app/immutable/nodes/4.B93L1ZvI.js
+200 394 /_app/immutable/nodes/5.D83vjPBX.js
+200 6422 /_app/immutable/nodes/6.ChBXMIIB.js
+200 12392 /favicon.png
+200 1068 /favicon.svg
+200 359 /manifest.json
+### asset summary sws 2.32.2: 200=57 non200=0
+
+# Part 2: relative imports. Every "./x.js" / "../chunks/x.js"-style specifier (js/css/wasm/font/svg/png/json) found in any built _app/**/*.js|css, resolved against the importing file, unioned with part 1 (296 unique paths). Extractor: relrefs.py (below).
+```
+import os,re,sys
+A=sys.argv[1]; refs=set()
+pat=re.compile(r'''["'`](\.{1,2}/[A-Za-z0-9_./@-]+\.(?:js|css|wasm|woff2?|ttf|svg|png|json))["'`]''')
+for root,_,files in os.walk(os.path.join(A,'_app')):
+    for f in files:
+        if not f.endswith(('.js','.css')): continue
+        p=os.path.join(root,f); t=open(p,encoding='utf-8',errors='replace').read()
+        for m in pat.findall(t):
+            full=os.path.normpath(os.path.join(root,m))
+            if full.startswith(A): refs.add('/'+os.path.relpath(full,A))
+for r in sorted(refs): print(r)
+```
+## local NATIVE static-web-server 2.38.0, port 4157
+200 45252 /_app/immutable/assets/0.DBCesUhI.css
+200 14368 /_app/immutable/assets/2.Cjn3HSOQ.css
+200 2389 /_app/immutable/assets/4.BmjKRsT_.css
+200 238 /_app/immutable/assets/6.HIdZaORI.css
+200 77662 /_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 242 /_app/immutable/assets/View.XCPtWYBK.css
+200 145983 /_app/immutable/assets/editor.BuC0XPbM.css
+200 18418 /_app/immutable/chunks/-q_WeFZc.js
+200 11690 /_app/immutable/chunks/08VXUWAP.js
+200 2792 /_app/immutable/chunks/3wb6cqg42.js
+200 7364 /_app/immutable/chunks/43DmfD33.js
+200 259092 /_app/immutable/chunks/4qKpQvhr.js
+200 1660 /_app/immutable/chunks/5-lk1ZJq.js
+200 5501 /_app/immutable/chunks/5OxHQk7T.js
+200 10116 /_app/immutable/chunks/6RTg0lbw2.js
+200 629668 /_app/immutable/chunks/7OdYKPZF.js
+200 46374 /_app/immutable/chunks/B0rX6SVR2.js
+200 106368 /_app/immutable/chunks/B2985qJz.js
+200 15538 /_app/immutable/chunks/B3EWhdL_2.js
+200 62718 /_app/immutable/chunks/B4a6Onfr2.js
+200 2367 /_app/immutable/chunks/B5-_aFwp.js
+200 2625 /_app/immutable/chunks/B8J7ngcE.js
+200 15598 /_app/immutable/chunks/B8KVkUCb.js
+200 3749 /_app/immutable/chunks/B9JPFI3C2.js
+200 4658 /_app/immutable/chunks/BDs-ZApX2.js
+200 15992 /_app/immutable/chunks/BEEn4gHE.js
+200 2906 /_app/immutable/chunks/BEtHBSE62.js
+200 49290 /_app/immutable/chunks/BFF754qB.js
+200 91 /_app/immutable/chunks/BGPo2iCu.js
+200 1959 /_app/immutable/chunks/BHenalxy2.js
+200 446 /_app/immutable/chunks/BJ-ChhCE.js
+200 8079 /_app/immutable/chunks/BJVAJXQA2.js
+200 20172 /_app/immutable/chunks/BJuU5Ddr.js
+200 4117 /_app/immutable/chunks/BKxtCVv1.js
+200 3041 /_app/immutable/chunks/BOotOW0E2.js
+200 11298 /_app/immutable/chunks/BPUrPjek.js
+200 90 /_app/immutable/chunks/BR4vzYOz.js
+200 876 /_app/immutable/chunks/BRJ1fhT_2.js
+200 588 /_app/immutable/chunks/BT-1xLpG.js
+200 3469 /_app/immutable/chunks/BWPQTe0t.js
+200 2314 /_app/immutable/chunks/BWPyau1x.js
+200 99 /_app/immutable/chunks/BXBkWsqh.js
+200 3744 /_app/immutable/chunks/BYgofb2h.js
+200 115449 /_app/immutable/chunks/B_1BlN2i2.js
+200 54 /_app/immutable/chunks/B_1O55qH2.js
+200 3364 /_app/immutable/chunks/Ba7i2nA0.js
+200 65288 /_app/immutable/chunks/BaKHy2Ym.js
+200 4665 /_app/immutable/chunks/BbHxBJfT2.js
+200 3334 /_app/immutable/chunks/Bboa-8u-2.js
+200 3462 /_app/immutable/chunks/Bc-UZqZI2.js
+200 707 /_app/immutable/chunks/Bc_sGQ0U.js
+200 1626 /_app/immutable/chunks/BeGwcela.js
+200 6107 /_app/immutable/chunks/BhvaKfH2.js
+200 92 /_app/immutable/chunks/Bi3LETfS.js
+200 107 /_app/immutable/chunks/BifhSqXX2.js
+200 2303 /_app/immutable/chunks/BjRW0lAL2.js
+200 444 /_app/immutable/chunks/BjqSQlRZ.js
+200 1365 /_app/immutable/chunks/Bjy-W4x22.js
+200 919 /_app/immutable/chunks/Bokn4ipt2.js
+200 1465758 /_app/immutable/chunks/BpGmw8i_2.js
+200 1210 /_app/immutable/chunks/Bpm0hvYe2.js
+200 6505 /_app/immutable/chunks/Bri6UV-V2.js
+200 30474 /_app/immutable/chunks/BsLEIi0j2.js
+200 51847 /_app/immutable/chunks/Bu7IKW0P2.js
+200 2836 /_app/immutable/chunks/BwWrilGY.js
+200 4483 /_app/immutable/chunks/Bxkupp3x.js
+200 6850 /_app/immutable/chunks/Bz4Y3fRF.js
+200 3626930 /_app/immutable/chunks/C-CLZV1r2.js
+200 2350 /_app/immutable/chunks/C-y9NEjX2.js
+200 92 /_app/immutable/chunks/C-yowl8Q.js
+200 451 /_app/immutable/chunks/C4m3c2Y9.js
+200 8897 /_app/immutable/chunks/C531GsRP.js
+200 1669 /_app/immutable/chunks/C5_-GSwl2.js
+200 95 /_app/immutable/chunks/C64-g8F2.js
+200 87 /_app/immutable/chunks/C70Conur.js
+200 22809 /_app/immutable/chunks/C7DZbr25.js
+200 4743 /_app/immutable/chunks/C7h46wYY.js
+200 30428 /_app/immutable/chunks/C880z0v7.js
+200 2651 /_app/immutable/chunks/C8Ef5oNN2.js
+200 4646 /_app/immutable/chunks/C8Fc0cco.js
+200 3445 /_app/immutable/chunks/C9jvLYJC.js
+200 1913 /_app/immutable/chunks/CBb6Ju5X2.js
+200 2811 /_app/immutable/chunks/CC2rA5mh.js
+200 1169 /_app/immutable/chunks/CGhzzHe4.js
+200 347 /_app/immutable/chunks/CHdTS7qa2.js
+200 85 /_app/immutable/chunks/CI1ENdm4.js
+200 2325 /_app/immutable/chunks/CIPQ_RoX2.js
+200 12207 /_app/immutable/chunks/CL6KR6-I2.js
+200 1377 /_app/immutable/chunks/CL9ZlnHI2.js
+200 239377 /_app/immutable/chunks/CO0xo6tz.js
+200 41412 /_app/immutable/chunks/CPeIEjhZ.js
+200 435277 /_app/immutable/chunks/CQFVGiJu2.js
+200 2481 /_app/immutable/chunks/CRfGWb83.js
+200 27103 /_app/immutable/chunks/CSKSodPl2.js
+200 1571564 /_app/immutable/chunks/CSiE7U0S.js
+200 176 /_app/immutable/chunks/CTgm3pse2.js
+200 909 /_app/immutable/chunks/CU8zxmPf.js
+200 3048 /_app/immutable/chunks/CVaqCwHa.js
+200 10215 /_app/immutable/chunks/CZseBnjb2.js
+200 1029 /_app/immutable/chunks/CaHgWlcF.js
+200 1688 /_app/immutable/chunks/CcwsVR0C.js
+200 21872 /_app/immutable/chunks/Ceny-Yp72.js
+200 2288 /_app/immutable/chunks/CfSJPG6W2.js
+200 92 /_app/immutable/chunks/Cg3sy2Ph.js
+200 27614 /_app/immutable/chunks/Ch2K029j.js
+200 28926 /_app/immutable/chunks/ChWgtpbe.js
+200 3639 /_app/immutable/chunks/Cimd5fb32.js
+200 30855 /_app/immutable/chunks/CjIIRWRU2.js
+200 443 /_app/immutable/chunks/CjtHh7gc.js
+200 3108 /_app/immutable/chunks/Ck3zr9PN.js
+200 3032 /_app/immutable/chunks/ClamHrr6.js
+200 8211 /_app/immutable/chunks/Cm7r79vr.js
+200 10836 /_app/immutable/chunks/Co-8njcA2.js
+200 584 /_app/immutable/chunks/CoaHZNfd.js
+200 1542 /_app/immutable/chunks/CopQ2nXW.js
+200 3449 /_app/immutable/chunks/CpzslTdj2.js
+200 1982 /_app/immutable/chunks/CsQS60Ue2.js
+200 860 /_app/immutable/chunks/CuRJVwEq.js
+200 81392 /_app/immutable/chunks/Cuh4mgWG2.js
+200 6274 /_app/immutable/chunks/Cx0iOlpp2.js
+200 30902 /_app/immutable/chunks/Cz3kc_lF.js
+200 80308 /_app/immutable/chunks/D-1nCINd2.js
+200 2520 /_app/immutable/chunks/D-oSqn_W2.js
+200 1859 /_app/immutable/chunks/D-ptJ9y-.js
+200 4623 /_app/immutable/chunks/D05T4iGw2.js
+200 15343 /_app/immutable/chunks/D3hlyOfw.js
+200 41148 /_app/immutable/chunks/D3oG3TqN.js
+200 146 /_app/immutable/chunks/D6jRqBbL.js
+200 102 /_app/immutable/chunks/D76YdDgn2.js
+200 44451 /_app/immutable/chunks/D7l1YWQ4.js
+200 1923 /_app/immutable/chunks/DAO4cTYb2.js
+200 770 /_app/immutable/chunks/DDdyfk2q2.js
+200 15594 /_app/immutable/chunks/DDpsfCPi2.js
+200 678 /_app/immutable/chunks/DE6MezYz2.js
+200 1995 /_app/immutable/chunks/DEpTAE_X2.js
+200 7112 /_app/immutable/chunks/DHpiXF5c.js
+200 1116 /_app/immutable/chunks/DHwMPyMe.js
+200 4361 /_app/immutable/chunks/DIMkf-bt.js
+200 3271 /_app/immutable/chunks/DISqw1ZD.js
+200 620 /_app/immutable/chunks/DJPf-qFn2.js
+200 134371 /_app/immutable/chunks/DKUnCU7f.js
+200 22780 /_app/immutable/chunks/DLNeptnl.js
+200 1975 /_app/immutable/chunks/DMUM7wLl.js
+200 2156 /_app/immutable/chunks/DNEpR40I.js
+200 4506 /_app/immutable/chunks/DPevzBS-2.js
+200 63534 /_app/immutable/chunks/DPsjFTCs.js
+200 5966 /_app/immutable/chunks/DQjFNj1i2.js
+200 25132 /_app/immutable/chunks/DRr7FNoh.js
+200 589 /_app/immutable/chunks/DS0j440C.js
+200 10331 /_app/immutable/chunks/DT7zqm-g.js
+200 39 /_app/immutable/chunks/DTI5f4_b.js
+200 11913 /_app/immutable/chunks/DTj74zXo.js
+200 89 /_app/immutable/chunks/DU0SFjLb.js
+200 5300 /_app/immutable/chunks/DV3o63ZY.js
+200 1728 /_app/immutable/chunks/DZFCIeNp.js
+200 2217 /_app/immutable/chunks/D_Lu-MrJ.js
+200 91 /_app/immutable/chunks/DaorKoZD.js
+200 4270 /_app/immutable/chunks/DauUninz2.js
+200 6946 /_app/immutable/chunks/DbInun42.js
+200 91 /_app/immutable/chunks/Dbnf3ORG.js
+200 3661 /_app/immutable/chunks/DdL9SqIa.js
+200 47157 /_app/immutable/chunks/DdQqBouc2.js
+200 5781 /_app/immutable/chunks/De2hgUGE.js
+200 5598 /_app/immutable/chunks/De9uGZY3.js
+200 2958 /_app/immutable/chunks/DeNaHEVP2.js
+200 8217 /_app/immutable/chunks/DezsRK8O.js
+200 188011 /_app/immutable/chunks/DfRA7GlK.js
+200 1933 /_app/immutable/chunks/Dgi_GhH02.js
+200 886 /_app/immutable/chunks/DhxGH80Q.js
+200 8103 /_app/immutable/chunks/DjD0gczZ.js
+200 55089 /_app/immutable/chunks/DkHCXhz7.js
+200 2722 /_app/immutable/chunks/DkqhCAOL.js
+200 399 /_app/immutable/chunks/Dm1o4DZ-2.js
+200 3057 /_app/immutable/chunks/DmHpPYUd.js
+200 96 /_app/immutable/chunks/Dmftzpe0.js
+200 3412 /_app/immutable/chunks/Dn8vQFgK2.js
+200 96 /_app/immutable/chunks/DnOwxx-_.js
+200 7182 /_app/immutable/chunks/DpFanUEy.js
+200 5801 /_app/immutable/chunks/Dq6ULnIM2.js
+200 2639 /_app/immutable/chunks/DrH0SRf2.js
+200 155 /_app/immutable/chunks/DsF7k-Jl.js
+200 117698 /_app/immutable/chunks/Dt2IJEiX.js
+200 9811 /_app/immutable/chunks/Dt32m8D32.js
+200 540 /_app/immutable/chunks/Du3djNOg2.js
+200 5616 /_app/immutable/chunks/DyMi60oD.js
+200 23142 /_app/immutable/chunks/Dytbh3Pb.js
+200 1942 /_app/immutable/chunks/Dz3cOKaV.js
+200 822 /_app/immutable/chunks/F8U4Gcod.js
+200 2102 /_app/immutable/chunks/FvmIjYaQ.js
+200 1211 /_app/immutable/chunks/HclGiUj8.js
+200 145457 /_app/immutable/chunks/JloBEC982.js
+200 208 /_app/immutable/chunks/KythIMN8.js
+200 4255 /_app/immutable/chunks/L6TPLfm12.js
+200 88 /_app/immutable/chunks/LJFKmrmY.js
+200 1447 /_app/immutable/chunks/LaXNxXoJ.js
+200 64986 /_app/immutable/chunks/Lq6F0D0N2.js
+200 149170 /_app/immutable/chunks/M54VuJdu2.js
+200 33511 /_app/immutable/chunks/MCHQYvoe.js
+200 95 /_app/immutable/chunks/MGddyeP2.js
+200 452 /_app/immutable/chunks/Meg-IJKx.js
+200 8840 /_app/immutable/chunks/NEE52Syq.js
+200 28243 /_app/immutable/chunks/OUBadHtz2.js
+200 1669076 /_app/immutable/chunks/SKB7j1Zd.js
+200 9659 /_app/immutable/chunks/SOo6toE52.js
+200 485 /_app/immutable/chunks/T0PCfa2j.js
+200 17269 /_app/immutable/chunks/UddR1yIt.js
+200 639 /_app/immutable/chunks/VEF6q5-2.js
+200 4830 /_app/immutable/chunks/VExApbQR2.js
+200 4468 /_app/immutable/chunks/Z5eAx3Zn.js
+200 14762 /_app/immutable/chunks/_A7_fnyq2.js
+200 4309 /_app/immutable/chunks/aFhRjMaC2.js
+200 1084 /_app/immutable/chunks/aKtaBQYM.js
+200 1278 /_app/immutable/chunks/bTuwJoIa.js
+200 5410 /_app/immutable/chunks/e5iOcuU62.js
+404 1904 /_app/immutable/chunks/elk-api.js
+404 1904 /_app/immutable/chunks/elk-worker.min.js
+200 96 /_app/immutable/chunks/fWep2IrU.js
+200 2119 /_app/immutable/chunks/fmXr3nnJ2.js
+200 6260 /_app/immutable/chunks/gp-XZpBa.js
+200 1696 /_app/immutable/chunks/i0X4ZdIN.js
+200 243 /_app/immutable/chunks/jddmLYXk2.js
+200 1046 /_app/immutable/chunks/mNeLXRPS.js
+200 45701 /_app/immutable/chunks/nC082SSK.js
+200 7743 /_app/immutable/chunks/nr791fC2.js
+200 3931 /_app/immutable/chunks/onAF5SnQ.js
+200 7352 /_app/immutable/chunks/oz_6vUea.js
+200 49546 /_app/immutable/chunks/pnPBv1sB2.js
+200 97 /_app/immutable/chunks/qRULkPLS.js
+200 287 /_app/immutable/chunks/r6JrPz0H2.js
+200 960 /_app/immutable/chunks/sBoK_t0W2.js
+200 1782 /_app/immutable/chunks/snXgsW9G.js
+200 22 /_app/immutable/chunks/w4i0Cq3X.js
+200 42312 /_app/immutable/chunks/wcsLiR4B2.js
+200 37762 /_app/immutable/chunks/wfUqJqTc2.js
+200 3533 /_app/immutable/chunks/xeqyYkYZ2.js
+200 65 /_app/immutable/chunks/xihTtKlq.js
+200 1595 /_app/immutable/chunks/xxzYb2L3.js
+200 5452 /_app/immutable/entry/app.BEh6h9by.js
+200 82 /_app/immutable/entry/start.C7WK7JsF.js
+200 311 /_app/immutable/nodes/0.B00RScJc.js
+200 1067 /_app/immutable/nodes/1.Bmcvyii6.js
+200 24577 /_app/immutable/nodes/2.BZSy8-pU.js
+200 443 /_app/immutable/nodes/3.DHM1qntz.js
+200 1010568 /_app/immutable/nodes/4.B93L1ZvI.js
+200 394 /_app/immutable/nodes/5.D83vjPBX.js
+200 6422 /_app/immutable/nodes/6.ChBXMIIB.js
+200 1054697 /_app/immutable/workers/css.worker-yKcq13f2.js
+200 280014 /_app/immutable/workers/editor.worker-tytyn86m.js
+200 719633 /_app/immutable/workers/html.worker-DSJ9zmd7.js
+200 409273 /_app/immutable/workers/json.worker-Oa9UrkKE.js
+200 6895078 /_app/immutable/workers/ts.worker-BtjBFNHX.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/api.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/cancellation.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/connection.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/disposable.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/events.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/is.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/linkedMap.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageBuffer.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageReader.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageWriter.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messages.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/ral.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/semaphore.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/sharedArrayCancellation.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/api.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/connection.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/messages.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.callHierarchy.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.colorProvider.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.configuration.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.declaration.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.diagnostic.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.fileOperations.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.foldingRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.implementation.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlayHint.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlineCompletion.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlineValue.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.linkedEditingRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.moniker.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.notebook.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.progress.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.selectionRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.semanticTokens.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.showDocument.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.textDocumentContent.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.typeDefinition.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.typeHierarchy.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.workspaceFolder.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/utils/is.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-types@3.18.4/node_modules/vscode-languageserver-types/lib/esm/main.js
+200 12392 /favicon.png
+200 1068 /favicon.svg
+200 359 /manifest.json
+### part-2 summary sws 2.38.0: 200=252 non200=44
+## local NATIVE static-web-server 2.32.2, port 4158
+200 45252 /_app/immutable/assets/0.DBCesUhI.css
+200 14368 /_app/immutable/assets/2.Cjn3HSOQ.css
+200 2389 /_app/immutable/assets/4.BmjKRsT_.css
+200 238 /_app/immutable/assets/6.HIdZaORI.css
+200 77662 /_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 242 /_app/immutable/assets/View.XCPtWYBK.css
+200 145983 /_app/immutable/assets/editor.BuC0XPbM.css
+200 18418 /_app/immutable/chunks/-q_WeFZc.js
+200 11690 /_app/immutable/chunks/08VXUWAP.js
+200 2792 /_app/immutable/chunks/3wb6cqg42.js
+200 7364 /_app/immutable/chunks/43DmfD33.js
+200 259092 /_app/immutable/chunks/4qKpQvhr.js
+200 1660 /_app/immutable/chunks/5-lk1ZJq.js
+200 5501 /_app/immutable/chunks/5OxHQk7T.js
+200 10116 /_app/immutable/chunks/6RTg0lbw2.js
+200 629668 /_app/immutable/chunks/7OdYKPZF.js
+200 46374 /_app/immutable/chunks/B0rX6SVR2.js
+200 106368 /_app/immutable/chunks/B2985qJz.js
+200 15538 /_app/immutable/chunks/B3EWhdL_2.js
+200 62718 /_app/immutable/chunks/B4a6Onfr2.js
+200 2367 /_app/immutable/chunks/B5-_aFwp.js
+200 2625 /_app/immutable/chunks/B8J7ngcE.js
+200 15598 /_app/immutable/chunks/B8KVkUCb.js
+200 3749 /_app/immutable/chunks/B9JPFI3C2.js
+200 4658 /_app/immutable/chunks/BDs-ZApX2.js
+200 15992 /_app/immutable/chunks/BEEn4gHE.js
+200 2906 /_app/immutable/chunks/BEtHBSE62.js
+200 49290 /_app/immutable/chunks/BFF754qB.js
+200 91 /_app/immutable/chunks/BGPo2iCu.js
+200 1959 /_app/immutable/chunks/BHenalxy2.js
+200 446 /_app/immutable/chunks/BJ-ChhCE.js
+200 8079 /_app/immutable/chunks/BJVAJXQA2.js
+200 20172 /_app/immutable/chunks/BJuU5Ddr.js
+200 4117 /_app/immutable/chunks/BKxtCVv1.js
+200 3041 /_app/immutable/chunks/BOotOW0E2.js
+200 11298 /_app/immutable/chunks/BPUrPjek.js
+200 90 /_app/immutable/chunks/BR4vzYOz.js
+200 876 /_app/immutable/chunks/BRJ1fhT_2.js
+200 588 /_app/immutable/chunks/BT-1xLpG.js
+200 3469 /_app/immutable/chunks/BWPQTe0t.js
+200 2314 /_app/immutable/chunks/BWPyau1x.js
+200 99 /_app/immutable/chunks/BXBkWsqh.js
+200 3744 /_app/immutable/chunks/BYgofb2h.js
+200 115449 /_app/immutable/chunks/B_1BlN2i2.js
+200 54 /_app/immutable/chunks/B_1O55qH2.js
+200 3364 /_app/immutable/chunks/Ba7i2nA0.js
+200 65288 /_app/immutable/chunks/BaKHy2Ym.js
+200 4665 /_app/immutable/chunks/BbHxBJfT2.js
+200 3334 /_app/immutable/chunks/Bboa-8u-2.js
+200 3462 /_app/immutable/chunks/Bc-UZqZI2.js
+200 707 /_app/immutable/chunks/Bc_sGQ0U.js
+200 1626 /_app/immutable/chunks/BeGwcela.js
+200 6107 /_app/immutable/chunks/BhvaKfH2.js
+200 92 /_app/immutable/chunks/Bi3LETfS.js
+200 107 /_app/immutable/chunks/BifhSqXX2.js
+200 2303 /_app/immutable/chunks/BjRW0lAL2.js
+200 444 /_app/immutable/chunks/BjqSQlRZ.js
+200 1365 /_app/immutable/chunks/Bjy-W4x22.js
+200 919 /_app/immutable/chunks/Bokn4ipt2.js
+200 1465758 /_app/immutable/chunks/BpGmw8i_2.js
+200 1210 /_app/immutable/chunks/Bpm0hvYe2.js
+200 6505 /_app/immutable/chunks/Bri6UV-V2.js
+200 30474 /_app/immutable/chunks/BsLEIi0j2.js
+200 51847 /_app/immutable/chunks/Bu7IKW0P2.js
+200 2836 /_app/immutable/chunks/BwWrilGY.js
+200 4483 /_app/immutable/chunks/Bxkupp3x.js
+200 6850 /_app/immutable/chunks/Bz4Y3fRF.js
+200 3626930 /_app/immutable/chunks/C-CLZV1r2.js
+200 2350 /_app/immutable/chunks/C-y9NEjX2.js
+200 92 /_app/immutable/chunks/C-yowl8Q.js
+200 451 /_app/immutable/chunks/C4m3c2Y9.js
+200 8897 /_app/immutable/chunks/C531GsRP.js
+200 1669 /_app/immutable/chunks/C5_-GSwl2.js
+200 95 /_app/immutable/chunks/C64-g8F2.js
+200 87 /_app/immutable/chunks/C70Conur.js
+200 22809 /_app/immutable/chunks/C7DZbr25.js
+200 4743 /_app/immutable/chunks/C7h46wYY.js
+200 30428 /_app/immutable/chunks/C880z0v7.js
+200 2651 /_app/immutable/chunks/C8Ef5oNN2.js
+200 4646 /_app/immutable/chunks/C8Fc0cco.js
+200 3445 /_app/immutable/chunks/C9jvLYJC.js
+200 1913 /_app/immutable/chunks/CBb6Ju5X2.js
+200 2811 /_app/immutable/chunks/CC2rA5mh.js
+200 1169 /_app/immutable/chunks/CGhzzHe4.js
+200 347 /_app/immutable/chunks/CHdTS7qa2.js
+200 85 /_app/immutable/chunks/CI1ENdm4.js
+200 2325 /_app/immutable/chunks/CIPQ_RoX2.js
+200 12207 /_app/immutable/chunks/CL6KR6-I2.js
+200 1377 /_app/immutable/chunks/CL9ZlnHI2.js
+200 239377 /_app/immutable/chunks/CO0xo6tz.js
+200 41412 /_app/immutable/chunks/CPeIEjhZ.js
+200 435277 /_app/immutable/chunks/CQFVGiJu2.js
+200 2481 /_app/immutable/chunks/CRfGWb83.js
+200 27103 /_app/immutable/chunks/CSKSodPl2.js
+200 1571564 /_app/immutable/chunks/CSiE7U0S.js
+200 176 /_app/immutable/chunks/CTgm3pse2.js
+200 909 /_app/immutable/chunks/CU8zxmPf.js
+200 3048 /_app/immutable/chunks/CVaqCwHa.js
+200 10215 /_app/immutable/chunks/CZseBnjb2.js
+200 1029 /_app/immutable/chunks/CaHgWlcF.js
+200 1688 /_app/immutable/chunks/CcwsVR0C.js
+200 21872 /_app/immutable/chunks/Ceny-Yp72.js
+200 2288 /_app/immutable/chunks/CfSJPG6W2.js
+200 92 /_app/immutable/chunks/Cg3sy2Ph.js
+200 27614 /_app/immutable/chunks/Ch2K029j.js
+200 28926 /_app/immutable/chunks/ChWgtpbe.js
+200 3639 /_app/immutable/chunks/Cimd5fb32.js
+200 30855 /_app/immutable/chunks/CjIIRWRU2.js
+200 443 /_app/immutable/chunks/CjtHh7gc.js
+200 3108 /_app/immutable/chunks/Ck3zr9PN.js
+200 3032 /_app/immutable/chunks/ClamHrr6.js
+200 8211 /_app/immutable/chunks/Cm7r79vr.js
+200 10836 /_app/immutable/chunks/Co-8njcA2.js
+200 584 /_app/immutable/chunks/CoaHZNfd.js
+200 1542 /_app/immutable/chunks/CopQ2nXW.js
+200 3449 /_app/immutable/chunks/CpzslTdj2.js
+200 1982 /_app/immutable/chunks/CsQS60Ue2.js
+200 860 /_app/immutable/chunks/CuRJVwEq.js
+200 81392 /_app/immutable/chunks/Cuh4mgWG2.js
+200 6274 /_app/immutable/chunks/Cx0iOlpp2.js
+200 30902 /_app/immutable/chunks/Cz3kc_lF.js
+200 80308 /_app/immutable/chunks/D-1nCINd2.js
+200 2520 /_app/immutable/chunks/D-oSqn_W2.js
+200 1859 /_app/immutable/chunks/D-ptJ9y-.js
+200 4623 /_app/immutable/chunks/D05T4iGw2.js
+200 15343 /_app/immutable/chunks/D3hlyOfw.js
+200 41148 /_app/immutable/chunks/D3oG3TqN.js
+200 146 /_app/immutable/chunks/D6jRqBbL.js
+200 102 /_app/immutable/chunks/D76YdDgn2.js
+200 44451 /_app/immutable/chunks/D7l1YWQ4.js
+200 1923 /_app/immutable/chunks/DAO4cTYb2.js
+200 770 /_app/immutable/chunks/DDdyfk2q2.js
+200 15594 /_app/immutable/chunks/DDpsfCPi2.js
+200 678 /_app/immutable/chunks/DE6MezYz2.js
+200 1995 /_app/immutable/chunks/DEpTAE_X2.js
+200 7112 /_app/immutable/chunks/DHpiXF5c.js
+200 1116 /_app/immutable/chunks/DHwMPyMe.js
+200 4361 /_app/immutable/chunks/DIMkf-bt.js
+200 3271 /_app/immutable/chunks/DISqw1ZD.js
+200 620 /_app/immutable/chunks/DJPf-qFn2.js
+200 134371 /_app/immutable/chunks/DKUnCU7f.js
+200 22780 /_app/immutable/chunks/DLNeptnl.js
+200 1975 /_app/immutable/chunks/DMUM7wLl.js
+200 2156 /_app/immutable/chunks/DNEpR40I.js
+200 4506 /_app/immutable/chunks/DPevzBS-2.js
+200 63534 /_app/immutable/chunks/DPsjFTCs.js
+200 5966 /_app/immutable/chunks/DQjFNj1i2.js
+200 25132 /_app/immutable/chunks/DRr7FNoh.js
+200 589 /_app/immutable/chunks/DS0j440C.js
+200 10331 /_app/immutable/chunks/DT7zqm-g.js
+200 39 /_app/immutable/chunks/DTI5f4_b.js
+200 11913 /_app/immutable/chunks/DTj74zXo.js
+200 89 /_app/immutable/chunks/DU0SFjLb.js
+200 5300 /_app/immutable/chunks/DV3o63ZY.js
+200 1728 /_app/immutable/chunks/DZFCIeNp.js
+200 2217 /_app/immutable/chunks/D_Lu-MrJ.js
+200 91 /_app/immutable/chunks/DaorKoZD.js
+200 4270 /_app/immutable/chunks/DauUninz2.js
+200 6946 /_app/immutable/chunks/DbInun42.js
+200 91 /_app/immutable/chunks/Dbnf3ORG.js
+200 3661 /_app/immutable/chunks/DdL9SqIa.js
+200 47157 /_app/immutable/chunks/DdQqBouc2.js
+200 5781 /_app/immutable/chunks/De2hgUGE.js
+200 5598 /_app/immutable/chunks/De9uGZY3.js
+200 2958 /_app/immutable/chunks/DeNaHEVP2.js
+200 8217 /_app/immutable/chunks/DezsRK8O.js
+200 188011 /_app/immutable/chunks/DfRA7GlK.js
+200 1933 /_app/immutable/chunks/Dgi_GhH02.js
+200 886 /_app/immutable/chunks/DhxGH80Q.js
+200 8103 /_app/immutable/chunks/DjD0gczZ.js
+200 55089 /_app/immutable/chunks/DkHCXhz7.js
+200 2722 /_app/immutable/chunks/DkqhCAOL.js
+200 399 /_app/immutable/chunks/Dm1o4DZ-2.js
+200 3057 /_app/immutable/chunks/DmHpPYUd.js
+200 96 /_app/immutable/chunks/Dmftzpe0.js
+200 3412 /_app/immutable/chunks/Dn8vQFgK2.js
+200 96 /_app/immutable/chunks/DnOwxx-_.js
+200 7182 /_app/immutable/chunks/DpFanUEy.js
+200 5801 /_app/immutable/chunks/Dq6ULnIM2.js
+200 2639 /_app/immutable/chunks/DrH0SRf2.js
+200 155 /_app/immutable/chunks/DsF7k-Jl.js
+200 117698 /_app/immutable/chunks/Dt2IJEiX.js
+200 9811 /_app/immutable/chunks/Dt32m8D32.js
+200 540 /_app/immutable/chunks/Du3djNOg2.js
+200 5616 /_app/immutable/chunks/DyMi60oD.js
+200 23142 /_app/immutable/chunks/Dytbh3Pb.js
+200 1942 /_app/immutable/chunks/Dz3cOKaV.js
+200 822 /_app/immutable/chunks/F8U4Gcod.js
+200 2102 /_app/immutable/chunks/FvmIjYaQ.js
+200 1211 /_app/immutable/chunks/HclGiUj8.js
+200 145457 /_app/immutable/chunks/JloBEC982.js
+200 208 /_app/immutable/chunks/KythIMN8.js
+200 4255 /_app/immutable/chunks/L6TPLfm12.js
+200 88 /_app/immutable/chunks/LJFKmrmY.js
+200 1447 /_app/immutable/chunks/LaXNxXoJ.js
+200 64986 /_app/immutable/chunks/Lq6F0D0N2.js
+200 149170 /_app/immutable/chunks/M54VuJdu2.js
+200 33511 /_app/immutable/chunks/MCHQYvoe.js
+200 95 /_app/immutable/chunks/MGddyeP2.js
+200 452 /_app/immutable/chunks/Meg-IJKx.js
+200 8840 /_app/immutable/chunks/NEE52Syq.js
+200 28243 /_app/immutable/chunks/OUBadHtz2.js
+200 1669076 /_app/immutable/chunks/SKB7j1Zd.js
+200 9659 /_app/immutable/chunks/SOo6toE52.js
+200 485 /_app/immutable/chunks/T0PCfa2j.js
+200 17269 /_app/immutable/chunks/UddR1yIt.js
+200 639 /_app/immutable/chunks/VEF6q5-2.js
+200 4830 /_app/immutable/chunks/VExApbQR2.js
+200 4468 /_app/immutable/chunks/Z5eAx3Zn.js
+200 14762 /_app/immutable/chunks/_A7_fnyq2.js
+200 4309 /_app/immutable/chunks/aFhRjMaC2.js
+200 1084 /_app/immutable/chunks/aKtaBQYM.js
+200 1278 /_app/immutable/chunks/bTuwJoIa.js
+200 5410 /_app/immutable/chunks/e5iOcuU62.js
+404 1904 /_app/immutable/chunks/elk-api.js
+404 1904 /_app/immutable/chunks/elk-worker.min.js
+200 96 /_app/immutable/chunks/fWep2IrU.js
+200 2119 /_app/immutable/chunks/fmXr3nnJ2.js
+200 6260 /_app/immutable/chunks/gp-XZpBa.js
+200 1696 /_app/immutable/chunks/i0X4ZdIN.js
+200 243 /_app/immutable/chunks/jddmLYXk2.js
+200 1046 /_app/immutable/chunks/mNeLXRPS.js
+200 45701 /_app/immutable/chunks/nC082SSK.js
+200 7743 /_app/immutable/chunks/nr791fC2.js
+200 3931 /_app/immutable/chunks/onAF5SnQ.js
+200 7352 /_app/immutable/chunks/oz_6vUea.js
+200 49546 /_app/immutable/chunks/pnPBv1sB2.js
+200 97 /_app/immutable/chunks/qRULkPLS.js
+200 287 /_app/immutable/chunks/r6JrPz0H2.js
+200 960 /_app/immutable/chunks/sBoK_t0W2.js
+200 1782 /_app/immutable/chunks/snXgsW9G.js
+200 22 /_app/immutable/chunks/w4i0Cq3X.js
+200 42312 /_app/immutable/chunks/wcsLiR4B2.js
+200 37762 /_app/immutable/chunks/wfUqJqTc2.js
+200 3533 /_app/immutable/chunks/xeqyYkYZ2.js
+200 65 /_app/immutable/chunks/xihTtKlq.js
+200 1595 /_app/immutable/chunks/xxzYb2L3.js
+200 5452 /_app/immutable/entry/app.BEh6h9by.js
+200 82 /_app/immutable/entry/start.C7WK7JsF.js
+200 311 /_app/immutable/nodes/0.B00RScJc.js
+200 1067 /_app/immutable/nodes/1.Bmcvyii6.js
+200 24577 /_app/immutable/nodes/2.BZSy8-pU.js
+200 443 /_app/immutable/nodes/3.DHM1qntz.js
+200 1010568 /_app/immutable/nodes/4.B93L1ZvI.js
+200 394 /_app/immutable/nodes/5.D83vjPBX.js
+200 6422 /_app/immutable/nodes/6.ChBXMIIB.js
+200 1054697 /_app/immutable/workers/css.worker-yKcq13f2.js
+200 280014 /_app/immutable/workers/editor.worker-tytyn86m.js
+200 719633 /_app/immutable/workers/html.worker-DSJ9zmd7.js
+200 409273 /_app/immutable/workers/json.worker-Oa9UrkKE.js
+200 6895078 /_app/immutable/workers/ts.worker-BtjBFNHX.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/api.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/cancellation.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/connection.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/disposable.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/events.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/is.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/linkedMap.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageBuffer.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageReader.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messageWriter.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/messages.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/ral.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/semaphore.js
+404 1904 /_app/node_modules/.pnpm/vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/sharedArrayCancellation.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/api.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/connection.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/messages.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.callHierarchy.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.colorProvider.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.configuration.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.declaration.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.diagnostic.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.fileOperations.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.foldingRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.implementation.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlayHint.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlineCompletion.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.inlineValue.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.linkedEditingRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.moniker.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.notebook.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.progress.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.selectionRange.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.semanticTokens.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.showDocument.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.textDocumentContent.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.typeDefinition.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.typeHierarchy.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/protocol.workspaceFolder.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-protocol@3.18.4/node_modules/vscode-languageserver-protocol/lib/common/utils/is.js
+404 1904 /_app/node_modules/.pnpm/vscode-languageserver-types@3.18.4/node_modules/vscode-languageserver-types/lib/esm/main.js
+200 12392 /favicon.png
+200 1068 /favicon.svg
+200 359 /manifest.json
+### part-2 summary sws 2.32.2: 200=252 non200=44
+
+# Classification of the 44 part-2 non-200 paths (identical on both servers): none is a URL the browser fetches
+- 42 x /_app/node_modules/.pnpm/vscode-jsonrpc|vscode-languageserver-protocol/... : bundler CJS-wrapper module ids (object keys), context:
+vscode-jsonrpc@9.0.3/node_modules/vscode-jsonrpc/lib/common/cancellation.js"(e){var t=e&&e.__createBinding||(Object
+- 2 x /_app/immutable/chunks/elk-api.js, elk-worker.min.js : browserify internal module map inside the bundled elkjs, context:
+.exports,"__esModule",{value:!0}),t.exports=o,o.default=o},{"./elk-api.js":1,"./elk-worker.min.js":2,"web-worker":4}],4:[function(e,t,n){t.exports=Worker},{}
+$ ls static_app/_app/immutable/workers 2>/dev/null; find static_app -name '*worker*'
+css.worker-yKcq13f2.js
+editor.worker-tytyn86m.js
+html.worker-DSJ9zmd7.js
+json.worker-Oa9UrkKE.js
+ts.worker-BtjBFNHX.js
+static_app/_app/immutable/workers
+static_app/_app/immutable/workers/css.worker-yKcq13f2.js
+static_app/_app/immutable/workers/editor.worker-tytyn86m.js
+static_app/_app/immutable/workers/html.worker-DSJ9zmd7.js
+static_app/_app/immutable/workers/json.worker-Oa9UrkKE.js
+static_app/_app/immutable/workers/ts.worker-BtjBFNHX.js
+static_app/service-worker.js

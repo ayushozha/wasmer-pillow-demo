@@ -3,7 +3,7 @@
 > **HOLD (security, root review 2026-10-22; confirmed by local DOM probe) — DO NOT PUBLISH a deployment PR** until a proper remediation/disclosure process has run. No public security comment, issue or app change has been made. The Staticfile/README patch below is technically proven but is not recommended for submission.
 
 ## HTML reinterpretation check (local, DOM-only)
-- Source at pinned SHA `e41d4e8`: `src/components/Plan.vue:426` `v-if="!store.plan"` (invalid-plan branch) renders `src/components/Plan.vue:439` `<code v-html="planSource"></code>`. `planSource` is the raw prop (`Plan.vue:52`), with no escaping. The example app passes it unchanged: `example/src/views/HomeView.vue:89-104` `submitPlan()` → `setPlanData(name, planInput.value, ...)`. Other entry points with third-party content reach the same prop: dropped plan files (`HomeView.vue:69`, `196-203` FileReader) and imported saved-plan JSON (`HomeView.vue:242-258` → `idb.importPlans` → `loadPlan` → `setPlanData`, `HomeView.vue:129-149`).
+- Source at pinned SHA `e41d4e8`: `src/components/Plan.vue:427` `v-if="!store.plan"` (invalid-plan branch) renders `src/components/Plan.vue:439` `<code v-html="planSource"></code>`. `planSource` is the raw prop (`Plan.vue:52`), with no escaping. The example app passes it unchanged: `example/src/views/HomeView.vue:89-104` `submitPlan()` → `setPlanData(name, planInput.value, ...)`. Other entry points with third-party content reach the same prop: dropped plan files fill the same textarea (`HomeView.vue:69` drop zone, `194-204` `onDrop` FileReader) and imported saved-plan JSON (`HomeView.vue:240-258` `onImport` → `idb.importPlans` → `loadPlan` → `setPlanData`, `HomeView.vue:129-149`).
 - History (blobless clone of upstream, `git log -S'v-html="planSource"' -- src/components/Plan.vue`): introduced in `e4fbe012537eac8d0f9edc1a50ab1e0aa74b3be4` (Pierre Giraud, 2024-08-21, "Improve parsing error message"), and still present at `e41d4e8` (v1.25.0, 2026-10-20). I could not read issue #847 or its comments: the GitHub API is not enabled for dalibo/pev2 in this session (403). So I can't verify the maintainer's "last unsafe use was fixed" statement, or its date. A related issue, #892 "unsafe usage of innerHTML for `Output` node" (opened 2026-05-19, closed 2026-06-08), concerned `PlanNodeDetail.vue`/`filters.ts`, not this branch.
 - Probe (`receipt-vhtml-probe.cjs`, output `receipt-vhtml-probe.json`): headless Chromium 1194 (Playwright) against the replayed `dist-app/index.html`, served by a local native static-web-server 2.38.0 on 127.0.0.1:4154. Every non-localhost request was aborted; the only attempted one was `api.github.com/.../releases/latest`, the version check. The payload `not a plan <b data-wasmer-marker="probe">marker</b>` (no script, handlers or URLs) was typed into `#planInput` and submitted with the form's submit button.
 - Result: the "Couldn't parse plan" card was shown, and `[data-wasmer-marker]` count = 1 (a `B` element, text "marker"). `pre code` innerHTML is the payload verbatim, and textContent is "not a plan marker". **The plan text is reinterpreted as HTML.** Not tested, deliberately: any script-bearing or event-handler payload, and the file-drop/import paths.
@@ -11,7 +11,7 @@
 
 **Verdict: HOLD (security).** Technical status: the Staticfile fix is proven (re-evaluated 2026-10-22). The lane A HOLD (output-dir mismatch, kept below as history) is resolved by a one-line root `Staticfile` with `root: dist-app`. This is the supported Anybuild mechanism: in a node-static project the Staticfile `root:` becomes `static_dir`, and install and build still run (`crates/anybuild/src/providers/node_static.rs:202-205`, `260-276`). The patched plan still says "Detected static Node.js provider" (`plan.txt`), not the copy-only StaticFile provider.
 
-Remaining reviewer note: the patch is README plus a one-line `Staticfile`, so it is not documentation-only. The PR body says so up front.
+Note: the patch is README plus a one-line `Staticfile`, so it is not documentation-only (the PR body says so). It would only be relevant after the security HOLD is resolved.
 
 ## Repository and policy
 - Pinned SHA: `e41d4e8b3006c479f9364d68a5d538d81cb7d110` (tag v1.25.0) on `master`, committed 2026-10-20. `master` is the default branch and the branch CI runs PRs against (`.github/workflows/build.yml`: `pull_request: branches: ["master"]`).
@@ -40,11 +40,12 @@ Remaining reviewer note: the patch is README plus a one-line `Staticfile`, so it
 - Env and keys: no `import.meta.env` or `process.env` reads in `example/` or `src/` (besides the build-time `LIB` switch in vite.config). No keys. Data stays in IndexedDB (`example/src/idb.ts`) and localStorage.
 
 ## Security (`audit-receipt.txt`)
-- `npm audit --omit=dev`: 0 vulnerabilities, so nothing known is shipped to the browser.
+- `npm audit --omit=dev`: 0 vulnerabilities, so no known dependency advisory is shipped to the browser. This says nothing about app code; see the `v-html` HOLD above.
 - Full audit: 8 (2 moderate, 6 high), all dev/build tooling (vite 8.0.0-8.1.5 dev-server advisories, braces, @vitest/mocker). None of it is shipped.
 - (Audit run with host npm 10.9.4 against the replay's lockfile/node_modules.)
 
 ## Remaining checks for the reviewer
+0. Security HOLD above: no deployment PR until the `v-html="planSource"` branch is remediated through a proper process (not by this campaign).
 1. Verify the badge and import page in a browser; img.shields.io and wasmer.io are blocked here.
 2. Optionally, after deploying, paste a sample plan and check the visualization renders.
 

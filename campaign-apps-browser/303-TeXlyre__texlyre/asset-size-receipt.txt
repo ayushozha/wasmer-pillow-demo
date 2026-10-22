@@ -1,0 +1,11 @@
+$ curl -sSIL https://github.com/TeXlyre/texlyre-busytex/releases/download/assets-v1.4.1/busytex-assets.tar.gz  (2026-10-22T06:08:37Z)
+HTTP/1.1 200 Connection Established
+HTTP/1.1 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1138132759/dbf8f8b8-b3fc-4432-9f1b-b4bd9617902b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-22T06%3A56%3A49Z&rscd=attachment%3B+filename%3Dbusytex-assets.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-22T05%3A56%3A19Z&ske=2026-10-22T06%3A56%3A49Z&sks=b&skv=2018-11-09&sig=3iWCrcYQYqYUIUAKymOKuoVcYkJ5HPaixBiY7r7Uk%2Bg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjY1MjkxNywibmJmIjoxNzkyNjQ5MzE3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.63q4vq4Ivpde3mpTu7j9lv3xQJFi0H6-ABpGLV9heyQ&response-content-disposition=attachment%3B%20filename%3Dbusytex-assets.tar.gz&response-content-type=application%2Foctet-stream
+Content-Length: 0
+HTTP/1.1 200 Connection Established
+HTTP/1.1 200 OK
+Content-Length: 521748902
+$ curl -sS https://texlyre.github.io/texlyre/
+curl: (56) CONNECT tunnel failed, response 403
+000

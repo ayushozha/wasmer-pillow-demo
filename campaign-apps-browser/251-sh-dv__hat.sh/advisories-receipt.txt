@@ -1,0 +1,24 @@
+next@12.1.6: 14 advisories
+   moderate  GHSA-g77x-44xx-532m    vuln=>=10.0.0 <14.2.7 | Denial of Service condition in Next.js image optimization
+   moderate  GHSA-g5qg-72qw-gw5v    vuln=>=0.9.9 <14.2.31 | Next.js Affected by Cache Key Confusion for Image Optimization API Routes
+   high      GHSA-7gfc-8cq8-jh5f    vuln=>=9.5.5 <14.2.15 | Next.js authorization bypass vulnerability
+   moderate  GHSA-4342-x723-ch2f    vuln=>=0.9.9 <14.2.32 | Next.js Improper Middleware Redirect Handling Leads to SSRF
+   moderate  GHSA-xv57-4mr9-wg8v    vuln=>=0.9.9 <14.2.31 | Next.js Content Injection Vulnerability for Image Optimization
+   low       GHSA-qpjv-v59x-3qc4    vuln=>=0.9.9 <14.2.24 | Next.js Race Condition to Cache Poisoning
+   moderate  GHSA-h64f-5h5j-jqjh    vuln=>=10.0.0 <15.5.16 | Next.js has a Denial of Service in the Image Optimization API
+   moderate  GHSA-9g9p-9gw9-jx7f    vuln=>=10.0.0 <15.5.10 | Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns conf
+   critical  GHSA-f82v-jwr5-mffw    vuln=>=12.0.0 <12.3.5 | Authorization Bypass in Next.js Middleware
+   moderate  GHSA-ggv3-7p47-pfv8    vuln=>=9.5.0 <15.5.13 | Next.js: HTTP request smuggling in rewrites
+   moderate  GHSA-3x4c-7xq6-9pq8    vuln=>=10.0.0 <15.5.14 | Next.js: Unbounded next/image disk cache growth can exhaust storage
+   high      GHSA-p9j2-gv94-2wf4    vuln=>=12.0.0 <15.5.21 | Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostn
+   low       GHSA-c59h-r6p8-q9wc    vuln=>=0.9.9 <13.4.20-canary.13 | Next.js missing cache-control header may lead to CDN caching empty reply
+   critical  GHSA-2xp9-vwfh-vxw4    vuln=>=10.0.0 <15.5.24 | Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files a
+react-dom@17.0.2: 0 advisories
+libsodium-wrappers@0.7.10: 0 advisories
+libsodium@0.7.10: 0 advisories
+marked@4.0.16: 0 advisories
+prismjs@1.28.0: 1 advisories
+   moderate  GHSA-x7hr-w5r2-h6wg    vuln=<1.30.0 | PrismJS DOM Clobbering vulnerability
+react-dropzone@14.2.1: 0 advisories
+zxcvbn@4.4.2: 0 advisories
+{'nanoid': ('high', False, ['Predictable results in nanoid generation when given non-integer values', 'nanoid: non-secure generators can loop indefinitely with negative size']), 'next': ('critical', True, ['Next.js missing cache-control header may lead to CDN caching empty reply', 'Denial of Service condition in Next.js image optimization']), 'postcss': ('high', False, ['PostCSS line return parsing error', 'PostCSS has XSS via Unescaped </style> in its CSS Stringify Output']), 'source-map-js': ('high', False, ['source-map-js allows event-loop denial of service through indexed source-map section offsets'])}

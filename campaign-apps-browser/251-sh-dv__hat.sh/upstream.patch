@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index f795c0f..e4ae586 100644
+--- a/README.md
++++ b/README.md
+@@ -56,6 +56,12 @@ The libsodium library is used for all cryptographic algorithms.
+ 
+ The app can be easily self hosted, please follow the [installation](https://hat.sh/about/#installation) instructions.
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=sh-dv%2Fhat.sh)
++
++Wasmer runs `npm install` and `npm run build` (which runs `next export`), then serves the generated `out` folder as static files; encryption still happens entirely in the visitor's browser. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the app and redeploy on every push, fork this repository and import your own repository on Wasmer.
++
+ <br>
+ 
+ ## Browser Compatibility

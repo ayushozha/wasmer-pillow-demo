@@ -1,0 +1,82 @@
+$ git -C rup/rgab1508__PixelCraft ls-files  (HEAD 45a5d4821caeebaea4ee507bdabf8e2645631418)
+Canvas.js
+LICENSE
+README.MD
+gif.worker.js
+global.css
+icons/logo.png
+images/overview.png
+images/toolbar.png
+index.html
+lib/Matrix.js
+lib/Shapes.js
+lib/Transformation.js
+lib/gif.js
+lib/gif.js.map
+lib/gif.worker.js.map
+manifest.json
+new/pixelcraft/.gitignore
+new/pixelcraft/README.md
+new/pixelcraft/package-lock.json
+new/pixelcraft/package.json
+new/pixelcraft/public/favicon.ico
+new/pixelcraft/public/index.html
+new/pixelcraft/public/logo192.png
+new/pixelcraft/public/logo512.png
+new/pixelcraft/public/manifest.json
+new/pixelcraft/public/robots.txt
+new/pixelcraft/src/App.js
+new/pixelcraft/src/AppBody.js
+new/pixelcraft/src/Board.js
+new/pixelcraft/src/Draw.js
+new/pixelcraft/src/Palette.js
+new/pixelcraft/src/Tools.js
+new/pixelcraft/src/config.js
+new/pixelcraft/src/index.js
+new/pixelcraft/yarn.lock
+sw.js
+
+$ git -C rup/antimatter15__splat ls-files  (HEAD ba182b51b7c2ad5738cdd6741cd63336d27470fb)
+.gitignore
+LICENSE
+README.md
+convert.py
+index.html
+main.js
+
+$ git -C rup/simonw__datasette-lite ls-files  (HEAD 779b2d4da76a5dc2f1d9aea0d7c8d854f6e1497b)
+.github/workflows/test.yml
+.gitignore
+CNAME
+LICENSE
+README.md
+app.css
+dev-requirements.txt
+index.html
+serve.sh
+test.sh
+tests/test_datasette_lite.py
+webworker.js
+
+$ grep -n huggingface antimatter15__splat/main.js
+747-        // "nike.splat",
+748-        // location.href,
+749-        params.get("url") || "train.splat",
+750:        "https://huggingface.co/cakewalk/splat-data/resolve/main/",
+751-    );
+$ grep -nE "https?://" simonw__datasette-lite/webworker.js simonw__datasette-lite/index.html (runtime fetches)
+simonw__datasette-lite/webworker.js:1:importScripts("https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js");
+simonw__datasette-lite/webworker.js:51:    toLoad.push(...databaseFiles(sqliteUrls));
+simonw__datasette-lite/webworker.js:65:    toLoad.push(["data.db", 0]);
+simonw__datasette-lite/webworker.js:68:    toLoad.push(["fixtures.db", "https://latest.datasette.io/fixtures.db"]);
+simonw__datasette-lite/webworker.js:69:    toLoad.push(["content.db", "https://datasette.io/content.db"]);
+simonw__datasette-lite/webworker.js:72:    indexURL: "https://cdn.jsdelivr.net/pyodide/v0.27.2/full/",
+simonw__datasette-lite/index.html:33:<script defer data-domain="lite.datasette.io" src="https://plausible.io/js/script.manual.js"></script>
+simonw__datasette-lite/index.html:34:<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+simonw__datasette-lite/index.html:102:    return `https://raw.githubusercontent.com/${githubMatch[1]}/${githubMatch[2]}/${githubMatch[3]}`;
+simonw__datasette-lite/index.html:106:    return `https://gist.githubusercontent.com/${gistMatch[1]}/${gistMatch[2]}/raw`;
+simonw__datasette-lite/index.html:178:useAnalytics && plausible('pageview');
+simonw__datasette-lite/index.html:216:  useAnalytics && plausible('pageview', {u: location.href.replace('?', '').replace('#', '/')});
+$ curl https://huggingface.co/api/models/cakewalk/splat-data
+curl: (56) CONNECT tunnel failed, response 403
+000
