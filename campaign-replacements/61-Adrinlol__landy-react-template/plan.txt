@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Create React App
+    Server: Node.js
+    Package manager: npm
+    Output directory: build
+
+  Generated Anybuild at /tmp/AnybuildeqAvBi
+Plan saved to $S/replay/61-landy/plan.json

@@ -1,0 +1,98 @@
+# replay of 66-mpj  source=$S/rup/midudev__minimalist-portfolio-json  upstream HEAD=02749efb52cae4e1628e5c2e971b9bfac855b8d9
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/66-mpj/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +266
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 266, reused 158, downloaded 7, added 4
+Progress: resolved 266, reused 158, downloaded 35, added 14
+Progress: resolved 266, reused 158, downloaded 95, added 37
+Progress: resolved 266, reused 158, downloaded 108, added 266, done
+
+dependencies:
++ astro 7.4.0
++ hotkeypad 1.0.2
+
+devDependencies:
++ @astrojs/check 0.9.10
++ typescript 6.0.3
+
+Done in 4.1s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> minimalist-portfolio-json@0.0.1 build $S/replay/66-mpj/work
+> astro check && astro build
+
+[2m05:29:26[22m [34m[types][39m Generated [2m729ms[22m
+[2m05:29:26[22m [34m[check][39m Getting diagnostics for Astro files in $S/replay/66-mpj/work...
+Result (49 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+[2m05:29:32[22m [34m[types][39m Generated [2m50ms[22m
+[2m05:29:32[22m [34m[build][39m output: [34m"static"[39m
+[2m05:29:32[22m [34m[build][39m mode: [34m"static"[39m
+[2m05:29:32[22m [34m[build][39m directory: [34m$S/replay/66-mpj/work/dist/[39m
+[2m05:29:32[22m [34m[build][39m Collecting build info...
+[2m05:29:32[22m [34m[build][39m [32m✓ Completed in 163ms.[39m
+[2m05:29:32[22m [34m[build][39m Building static entrypoints...
+[2m05:29:33[22m [34m[vite][39m [32m✓ built in 1.31s[39m
+[2m05:29:34[22m [34m[vite][39m [32m✓ built in 114ms[39m
+[2m05:29:34[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m05:29:34[22m   [34m├─[39m [2m/index.html[22m [2m(+24ms)[22m 
+[2m05:29:34[22m   [34m├─[39m [2m/en/index.html[22m [2m(+8ms)[22m 
+[2m05:29:34[22m [32m✓ Completed in 74ms.
+[39m
+[2m05:29:34[22m [34m[build][39m [32m✓ Completed in 1.58s.[39m
+[2m05:29:34[22m [34m[build][39m 2 page(s) built in [1m1.75s[22m
+[2m05:29:34[22m [34m[build][39m [1mComplete![22m
+exit=0
+
+$ static-web-server --root=$S/replay/66-mpj/static_app --log-level=info --port=3804 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	47185
+--	title	/	Portafolio de Miguel Ángel Durán - Full Stack Developer con más de 15 años de ex	
+200	page	/en/	text/html	46735
+--	title	/en/	Miguel Ángel Durán&#39;s Portfolio - Full-Stack developer with more than 15 year	
+200	page	/en	text/html	46735
+--	title	/en	Miguel Ángel Durán&#39;s Portfolio - Full-Stack developer with more than 15 year	
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+200	ref	/favicon.svg	image/svg+xml	614
+200	ref	/_astro/portfolio-sans-latin.DO3WxP5z.woff2	font/woff2	58420
+200	ref	/me.webp	image/webp	18824
+200	ref	/_astro/KeyboardManager.astro_astro_type_script_index_0_lang.913Kgqeg.js	text/javascript	9506
+SUMMARY pages=4 refs_checked=4 failures=1
+FAIL	404	page	/404.html	text/html	0
+# static_app files: 7

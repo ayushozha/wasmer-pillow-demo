@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 0633d44..fdeffa9 100644
+--- a/README.md
++++ b/README.md
+@@ -85,6 +85,12 @@ git clone -b js-version https://github.com/yulimchen/vue3-h5-template.git
+ cd vue3-h5-template
+ ```
+ 
++## 部署到 Wasmer Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=yulimchen%2Fvue3-h5-template)
++
++Wasmer 会识别 Vite 项目，执行 `pnpm install` 和 `pnpm run build`，并将生成的 `dist` 目录作为静态站点托管（路由为 hash 模式，无需额外重写规则；Mock 数据仅在开发环境可用）。点击按钮会打开 Wasmer 针对本公开仓库的导入页面，你可以在其中检查配置并点击 Deploy；它不会在你的 GitHub 账号中创建本仓库的副本。如需自定义并在每次推送时重新部署，请先 fork 本仓库或以模板创建自己的仓库，再在 Wasmer 中导入你自己的仓库。
++
+ ## 文档引导
+ 
+ > - [按需引入 vant 组件](#vant)

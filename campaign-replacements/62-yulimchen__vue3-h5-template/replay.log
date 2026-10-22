@@ -1,0 +1,167 @@
+# replay of 62-h5  source=$S/rup/yulimchen__vue3-h5-template  upstream HEAD=95816e6001f6039782166c4299e485884d73fab2
+# local diff vs HEAD:  M CHANGELOG.md; M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/62-h5/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +870
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 870, reused 526, downloaded 45, added 32
+Progress: resolved 870, reused 526, downloaded 261, added 320
+Progress: resolved 870, reused 526, downloaded 343, added 870, done
+
+dependencies:
++ @vueuse/core 14.2.1
++ axios 1.13.2
++ clsx 2.1.1
++ normalize.css 8.0.1
++ nprogress 0.2.0
++ pinia 2.3.1
++ tailwind-merge 2.6.0
++ vant 4.9.21
++ vue 3.5.24
++ vue-router 4.6.3
+
+devDependencies:
++ @antfu/eslint-config 7.2.0
++ @commitlint/config-conventional 19.8.1
++ @iconify-icons/fa6-solid 1.2.13
++ @iconify/vue 4.3.0
++ @tailwindcss/postcss 4.3.0
++ @types/mockjs 1.0.10
++ @types/node 22.19.0
++ @types/nprogress 0.2.3
++ @vitejs/plugin-vue 6.0.7
++ @vitejs/plugin-vue-jsx 5.1.5
++ @vue/tsconfig 0.5.1
++ cnjm-postcss-px-to-viewport 1.0.1
++ commitlint 19.8.1
++ eslint 9.39.1
++ husky 9.1.7
++ less 4.4.2
++ mockjs 1.1.0
++ npm-run-all 4.1.5
++ postcss 8.5.6
++ postcss-rem-to-pixel 4.1.2
++ standard-version 9.5.0
++ tailwindcss 4.3.0
++ typescript 5.6.3
++ unplugin-auto-import 21.0.0
++ unplugin-vue-components 32.0.0
++ vite 8.0.13
++ vite-plugin-cdn2 1.1.0
++ vite-plugin-compression2 2.5.3
++ vite-plugin-mock-dev-server 2.2.1
++ vite-plugin-svg-icons-ng 1.9.1
++ vue-tsc 2.2.12
+
+
+> vue3-h5-template@0.9.0 prepare $S/replay/62-h5/work
+> husky install
+
+husky - install command is DEPRECATED
+.git can't be found╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: rs-module-lexer@2.6.0, vue-demi@0.14.10.            │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 3.8s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> vue3-h5-template@0.9.0 build $S/replay/62-h5/work
+> run-s build-only type-check
+
+
+> vue3-h5-template@0.9.0 build-only $S/replay/62-h5/work
+> vite build
+
+[36mvite v8.0.13 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 433 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/static/js/404-DLHwLzrL.js.br                    0.71 kB
+dist/static/js/404-DLHwLzrL.js.gz                    0.87 kB
+dist/static/js/style-DpMsyccD.js.br                  0.93 kB
+dist/static/js/demo-BzoR5YhX.js.br                   0.99 kB
+dist/static/js/style-DpMsyccD.js.gz                  1.04 kB
+dist/static/js/about-Dj1wCQpB.js.br                  1.15 kB
+dist/static/js/demo-BzoR5YhX.js.gz                   1.19 kB
+dist/static/js/about-Dj1wCQpB.js.gz                  1.32 kB
+dist/static/css/style-B9YTdn5M.css.br                1.39 kB
+dist/static/css/style-B9YTdn5M.css.gz                1.63 kB
+dist/static/css/tools-g3nhuD6g.css.br                1.78 kB
+dist/static/svg/check-in-CEKQsVGS.svg.br             1.87 kB
+dist/static/css/tools-g3nhuD6g.css.gz                2.05 kB
+dist/static/svg/check-in-CEKQsVGS.svg.gz             2.17 kB
+dist/index.html.br                                   3.84 kB
+dist/index.html.gz                                   4.54 kB
+dist/static/js/grid-pattern-dashed-BRntZuFo.js.br    6.71 kB
+dist/static/js/grid-pattern-dashed-BRntZuFo.js.gz    7.54 kB
+dist/static/svg/check-in-CEKQsVGS.svg                8.28 kB │ gzip:  2.18 kB
+dist/index.html                                     14.20 kB │ gzip:  4.57 kB
+dist/static/js/tools-D2CB9ldA.js.br                 29.89 kB
+dist/static/css/index-BS8aOL7R.css.br               33.12 kB
+dist/static/js/tools-D2CB9ldA.js.gz                 33.92 kB
+dist/static/css/index-BS8aOL7R.css.gz               36.04 kB
+dist/static/js/index-yHSIFXHl.js.br                 47.49 kB
+dist/static/png/logo_melomini-ZRQ-Oxzz.png          52.58 kB
+dist/static/js/index-yHSIFXHl.js.gz                 53.13 kB
+dist/static/css/style-B9YTdn5M.css                   7.81 kB │ gzip:  1.63 kB
+dist/static/css/tools-g3nhuD6g.css                   9.50 kB │ gzip:  2.06 kB
+dist/static/css/index-BS8aOL7R.css                  72.48 kB │ gzip: 36.10 kB
+dist/static/js/404-DLHwLzrL.js                       1.30 kB │ gzip:  0.87 kB
+dist/static/js/demo-BzoR5YhX.js                      2.04 kB │ gzip:  1.20 kB
+dist/static/js/style-DpMsyccD.js                     2.26 kB │ gzip:  1.04 kB
+dist/static/js/about-Dj1wCQpB.js                     2.65 kB │ gzip:  1.32 kB
+dist/static/js/grid-pattern-dashed-BRntZuFo.js      21.72 kB │ gzip:  7.63 kB
+dist/static/js/tools-D2CB9ldA.js                    88.36 kB │ gzip: 34.23 kB
+dist/static/js/index-yHSIFXHl.js                   139.30 kB │ gzip: 53.72 kB
+
+[32m✓ built in 1.88s[39m
+
+
+> vue3-h5-template@0.9.0 type-check $S/replay/62-h5/work
+> vue-tsc --noEmit
+
+exit=0
+
+$ static-web-server --root=$S/replay/62-h5/static_app --log-level=info --port=3801 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	14205
+--	title	/	vue3-h5-template	
+200	page	/#/tools	text/html	14205
+--	title	/#/tools	vue3-h5-template	
+200	page	/#/about	text/html	14205
+--	title	/#/about	vue3-h5-template	
+200	ref	/favicon.ico	image/x-icon	4286
+200	ref	/static/js/index-yHSIFXHl.js	text/javascript	139303
+200	ref	/static/css/index-BS8aOL7R.css	text/css	72481
+SUMMARY pages=3 refs_checked=3 failures=0
+# static_app files: 38
