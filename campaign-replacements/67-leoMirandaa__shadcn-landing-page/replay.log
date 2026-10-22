@@ -1,0 +1,87 @@
+# replay of 67-slp  source=$S/rup/leoMirandaa__shadcn-landing-page  upstream HEAD=ae3716dbce5c8a26815222bb743994b5717938f1
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/67-slp/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+10.9.4
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 346 packages, and audited 347 packages in 11s
+
+24 vulnerabilities (1 low, 5 moderate, 18 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> shadcn-landing-page-template@1.1.0 build
+> tsc && vite build
+
+[36mvite v5.2.13 [32mbuilding for production...[36m[39m
+transforming...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[32m✓[39m 1666 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                         [39m[1m[2m  1.93 kB[22m[1m[22m[2m │ gzip:   0.62 kB[22m
+[2mdist/[22m[2massets/[22m[32micon-CNrJe8c_.ico           [39m[1m[2m  5.86 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mlooking-ahead-DDDoMk_3.png  [39m[1m[2m 13.46 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mcube-leg-DppWNJeX.png       [39m[1m[2m 18.19 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mgrowth-DZ7EdHJS.png         [39m[1m[2m 19.14 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mreflecting-tA1rdXzJ.png     [39m[1m[2m 19.89 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mpilot-CA74Nnvm.png          [39m[1m[2m 34.68 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[35mindex-DN2QK1F0.css          [39m[1m[2m 33.64 kB[22m[1m[22m[2m │ gzip:   6.98 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-BikfSMjf.js           [39m[1m[2m411.79 kB[22m[1m[22m[2m │ gzip: 136.31 kB[22m
+[32m✓ built in 4.36s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/67-slp/static_app --log-level=info --port=3805 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1925
+--	title	/	Shadcn/React - Landing template	
+200	page	/#features	text/html	1925
+--	title	/#features	Shadcn/React - Landing template	
+200	ref	/assets/icon-CNrJe8c_.ico	image/x-icon	5862
+200	ref	/vite.svg	image/svg+xml	1497
+200	ref	/assets/index-BikfSMjf.js	text/javascript	411791
+200	ref	/assets/index-DN2QK1F0.css	text/css	33642
+SUMMARY pages=2 refs_checked=4 failures=0
+# static_app files: 10
+200 /assets/cube-leg-DppWNJeX.png
+200 /assets/growth-DZ7EdHJS.png
+200 /assets/looking-ahead-DDDoMk_3.png
+200 /assets/pilot-CA74Nnvm.png
+200 /assets/reflecting-tA1rdXzJ.png

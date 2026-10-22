@@ -1,0 +1,166 @@
+# replay of t-cuvue  source=$S/rup/coreui__coreui-free-vue-admin-template  upstream HEAD=81cc2aef4f2c6a195558fcc414820f2f4fef359f
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/t-cuvue/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+10.9.4
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+added 187 packages, and audited 188 packages in 20s
+
+2 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> @coreui/coreui-free-vue-admin-template@5.6.0 build
+> vite build
+
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.mjs:26:40). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 1999 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                2.76 kB │ gzip:   1.04 kB
+dist/assets/6-DAej8nlJ.jpg                    11.91 kB
+dist/assets/5-C7PguISa.jpg                    12.66 kB
+dist/assets/2-DU4eQes8.jpg                    12.87 kB
+dist/assets/3-D73ZQ4h9.jpg                    13.52 kB
+dist/assets/4-TDOHctEN.jpg                    13.72 kB
+dist/assets/1-Bxx5tbqp.jpg                    13.88 kB
+dist/assets/8-CQnrj2m9.jpg                    15.14 kB
+dist/assets/icons-C5EGodH8.webp               58.49 kB
+dist/assets/components-rl0RgVTV.webp          61.51 kB
+dist/assets/angular-DbhKAn4Z.jpg             169.23 kB
+dist/assets/vue-Ces23Jk5.jpg                 170.59 kB
+dist/assets/react-DmxSGVXA.jpg               199.53 kB
+dist/assets/index-C8tKJUHk.css               314.58 kB │ gzip:  42.68 kB
+dist/assets/vue-k_O_f6-3.js                    0.07 kB │ gzip:   0.08 kB
+dist/assets/4-9RCE49bS.js                      0.11 kB │ gzip:   0.10 kB
+dist/assets/google-CxWwIRpW.js                 0.98 kB │ gzip:   0.49 kB
+dist/assets/PasswordChanged-CPhVPFcN.js        0.98 kB │ gzip:   0.53 kB
+dist/assets/Page404-yUk-qiVz.js                1.00 kB │ gzip:   0.57 kB
+dist/assets/Page500-BOSvcIsF.js                1.02 kB │ gzip:   0.59 kB
+dist/assets/ResetPassword-B64oj3NV.js          1.16 kB │ gzip:   0.61 kB
+dist/assets/CheckEmail-kMN6nOQC.js             1.16 kB │ gzip:   0.62 kB
+dist/assets/ChangePassword-BB7IEEV6.js         1.36 kB │ gzip:   0.61 kB
+dist/assets/eye-LDv_-qr4.js                    1.43 kB │ gzip:   0.71 kB
+dist/assets/Breadcrumb-CuC2VELe.js             2.10 kB │ gzip:   0.75 kB
+dist/assets/Popovers-C4cyQGbd.js               2.18 kB │ gzip:   0.78 kB
+dist/assets/Tooltips-15HlP_M5.js               2.73 kB │ gzip:   1.00 kB
+dist/assets/Login-CjZbNEEL.js                  3.02 kB │ gzip:   1.19 kB
+dist/assets/Range-qhcn1Azi.js                  3.02 kB │ gzip:   0.92 kB
+dist/assets/Register-Dz74ylfP.js               3.22 kB │ gzip:   1.27 kB
+dist/assets/Select-3FtnvJ8Y.js                 3.40 kB │ gzip:   0.81 kB
+dist/assets/Spinners-Bw_hdaEO.js               3.97 kB │ gzip:   1.12 kB
+dist/assets/Charts-BWanqxmb.js                 4.05 kB │ gzip:   1.03 kB
+dist/assets/Collapse-KZuZtlP7.js               4.17 kB │ gzip:   1.19 kB
+dist/assets/SearchButton-Cc1C_goy.js           4.73 kB │ gzip:   1.52 kB
+dist/assets/Badge-D80epf9c.js                  4.75 kB │ gzip:   1.23 kB
+dist/assets/ChipSet-CvJDFPQF.js                5.06 kB │ gzip:   1.43 kB
+dist/assets/ChipInput-vdbQHvJ8.js              5.29 kB │ gzip:   1.62 kB
+dist/assets/Placeholders-kfKwiHaD.js           5.32 kB │ gzip:   1.59 kB
+dist/assets/Alerts-BqqWrkx_.js                 5.77 kB │ gzip:   1.51 kB
+dist/assets/FloatingLabels-CIiBImxU.js         5.80 kB │ gzip:   1.49 kB
+dist/assets/Progress-4iC1Pa4d.js               5.86 kB │ gzip:   1.24 kB
+dist/assets/WidgetsStatsTypeA-DLWPu0kz.js      6.20 kB │ gzip:   1.55 kB
+dist/assets/Chip-B8PvmBZk.js                   6.28 kB │ gzip:   1.67 kB
+dist/assets/Carousel-Dgv5p6Dj.js               6.58 kB │ gzip:   1.44 kB
+dist/assets/FormControl-CErnBeh0.js            6.84 kB │ gzip:   1.62 kB
+dist/assets/Pagination-zZVelkMb.js             7.16 kB │ gzip:   1.70 kB
+dist/assets/Toasts-B85NwgvU.js                 7.56 kB │ gzip:   1.91 kB
+dist/assets/Tabs-Btn4FRhS.js                   7.61 kB │ gzip:   1.09 kB
+dist/assets/Accordion-DHt8rBkX.js              8.10 kB │ gzip:   1.15 kB
+dist/assets/ChecksRadios-D67V9ykx.js           9.38 kB │ gzip:   1.79 kB
+dist/assets/ListGroup-rRd0BEqH.js             12.00 kB │ gzip:   2.38 kB
+dist/assets/Buttons-BmWvpgUs.js               12.25 kB │ gzip:   2.51 kB
+dist/assets/NavsTabs-M_4-2FCC.js              12.53 kB │ gzip:   2.21 kB
+dist/assets/Dropdowns-C6z6RgF6.js             12.61 kB │ gzip:   2.13 kB
+dist/assets/Layout-CmWkjnnq.js                13.33 kB │ gzip:   2.78 kB
+dist/assets/Widgets-DuWf3K_e.js               14.36 kB │ gzip:   2.10 kB
+dist/assets/ButtonGroup-BGu6Wc9F.js           14.72 kB │ gzip:   2.27 kB
+dist/assets/Dashboard-B_Ri83Ts.js             15.55 kB │ gzip:   5.18 kB
+dist/assets/Validation-Fe-VGy6l.js            15.76 kB │ gzip:   2.92 kB
+dist/assets/InputGroup-CSYJ3zhl.js            16.01 kB │ gzip:   2.46 kB
+dist/assets/Modals-DWLELK0v.js                22.95 kB │ gzip:   3.32 kB
+dist/assets/Cards-BoUUZYKc.js                 31.92 kB │ gzip:   4.50 kB
+dist/assets/Tables-BqNzUmh0.js                38.74 kB │ gzip:   3.95 kB
+dist/assets/esm-CXxiMmSv.js                  225.87 kB │ gzip:  78.71 kB
+dist/assets/CoreUIIcons-Cc09Y7T9.js          283.52 kB │ gzip:  81.61 kB
+dist/assets/index-X49BOhzg.js                495.77 kB │ gzip: 142.76 kB
+dist/assets/Brands-CwkVDbtZ.js               985.71 kB │ gzip: 402.34 kB
+dist/assets/Flags-MI2lC_jI.js              3,169.04 kB │ gzip: 969.17 kB
+
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 11.41s[39m
+[33m[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 10.3s of this 11.3s build (91%).
+The slowest hooks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - vite:css transform (77%, 8.7s, 2 calls)
+  - vite:vue transform (13%, 1.5s, 69 calls)
+Additional hook time came from the hooks below and from hooks under 1s.
+1 hook is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - vite:asset load (12 calls)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+exit=0
+
+$ static-web-server --root=$S/replay/t-cuvue/static_app --log-level=info --port=3617 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	2763
+--	title	/	CoreUI Vue.js Admin Template	
+404	page	/dashboard	text/html	0
+--	title	/dashboard	(none)	
+200	page	/#/dashboard	text/html	2763
+--	title	/#/dashboard	CoreUI Vue.js Admin Template	
+200	ref	/apple-icon-57x57.png	image/png	4120
+200	ref	/apple-icon-60x60.png	image/png	4034
+200	ref	/apple-icon-72x72.png	image/png	5297
+200	ref	/apple-icon-76x76.png	image/png	5539
+200	ref	/apple-icon-114x114.png	image/png	9891
+200	ref	/apple-icon-120x120.png	image/png	10620
+200	ref	/apple-icon-144x144.png	image/png	13344
+200	ref	/apple-icon-152x152.png	image/png	14451
+200	ref	/apple-icon-180x180.png	image/png	17458
+200	ref	/android-icon-192x192.png	image/png	17566
+200	ref	/favicon-32x32.png	image/png	2196
+200	ref	/favicon-96x96.png	image/png	7298
+200	ref	/favicon-16x16.png	image/png	1201
+200	ref	/manifest.json	application/json	748
+200	ref	/assets/index-X49BOhzg.js	text/javascript	495775
+200	ref	/assets/index-C8tKJUHk.css	text/css	314582
+SUMMARY pages=3 refs_checked=16 failures=1
+FAIL	404	page	/dashboard	text/html	0
+# static_app files: 96

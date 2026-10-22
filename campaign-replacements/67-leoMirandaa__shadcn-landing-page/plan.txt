@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/AnybuildznOwPB
+Plan saved to $S/replay/67-slp/plan.json

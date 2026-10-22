@@ -22,5 +22,5 @@ No Wasmer deployment was made.
 ## Limitations
 
 - Not deployed; the import page and badge image weren't checked from the test environment.
-- Alpine.js, Chart.js, Google Fonts and demo images load from external CDNs, as in the existing demo.
+- Alpine.js (`@v2.x.x` floating range), Chart.js 2.9.3, Google Fonts and demo images load from external CDNs without SRI, as in the existing demo. Chart.js 2.9.3 has a published prototype-pollution advisory (GHSA-h68q-55jf-x68w, fixed in 2.9.4); the demo feeds it only hard-coded chart data, but anyone building on the template with user-supplied chart options should upgrade. This PR doesn't change any library.
 - The committed `tailwind.output.css` is served as-is; changing Tailwind sources still needs `npm run build` before pushing.

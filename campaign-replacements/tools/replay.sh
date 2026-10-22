@@ -54,8 +54,9 @@ mkdir -p "$WORK" "$APP"
 case "$PROV" in
 node-static)
   export PATH="$NODE24:$PATH"
-  if [ "$PM" != npm ]; then
-    PMDIR=$S/pm/$PM-$PMV; [ -x "$PMDIR/bin/$PM" ] || npm i -g --prefix "$PMDIR" "$PM@$PMV" > /dev/null 2>&1
+  # Use the package-manager version the plan pins (npm included: e.g. npm_version=11), not the host's.
+  if [ "$PM" != npm ] || [ -n "$PMV" ]; then
+    PMDIR=$S/pm/$PM-${PMV:-latest}; [ -x "$PMDIR/bin/$PM" ] || npm i -g --prefix "$PMDIR" "$PM@${PMV:-latest}" > /dev/null 2>&1
     export PATH="$PMDIR/bin:$PATH"
   fi
   run node -v; run $PM --version

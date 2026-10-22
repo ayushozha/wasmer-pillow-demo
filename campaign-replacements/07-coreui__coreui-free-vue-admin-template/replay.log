@@ -1,4 +1,4 @@
-# replay of t-cuvue  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/coreui__coreui-free-vue-admin-template  upstream HEAD=81cc2aef4f2c6a195558fcc414820f2f4fef359f
+# replay of cv-npm11  source=$S/rup/coreui__coreui-free-vue-admin-template  upstream HEAD=81cc2aef4f2c6a195558fcc414820f2f4fef359f
 # local diff vs HEAD:  M README.md;
   Detected static Node.js provider
     Framework: Vite
@@ -7,20 +7,20 @@
     Output directory: dist
 
   Generated Anybuild at <tmp>
-Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-cuvue/plan.json
+Plan saved to $S/replay/cv-npm11/plan.json
 # provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
 $ node -v
 v24.22.1
 exit=0
 
 $ npm --version
-10.9.4
+11.21.1
 exit=0
 
 # staged before install: package-lock.json package.json 
 $ npm install
 
-added 187 packages, and audited 188 packages in 20s
+added 187 packages, and audited 188 packages in 15s
 
 2 high severity vulnerabilities
 
@@ -28,6 +28,11 @@ To address all issues, run:
   npm audit fix
 
 Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   vue-demi@0.13.11 (postinstall: node ./scripts/postinstall.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
 exit=0
 
 $ npm run build
@@ -113,24 +118,15 @@ dist/assets/index-X49BOhzg.js                495.77 kB │ gzip: 142.76 kB
 dist/assets/Brands-CwkVDbtZ.js               985.71 kB │ gzip: 402.34 kB
 dist/assets/Flags-MI2lC_jI.js              3,169.04 kB │ gzip: 969.17 kB
 
+[32m✓ built in 5.91s[39m
 [33m[plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 11.41s[39m
-[33m[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 10.3s of this 11.3s build (91%).
-The slowest hooks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
-  - vite:css transform (77%, 8.7s, 2 calls)
-  - vite:vue transform (13%, 1.5s, 69 calls)
-Additional hook time came from the hooks below and from hooks under 1s.
-1 hook is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
-  - vite:asset load (12 calls)
-See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
-[39m
 exit=0
 
-$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-cuvue/static_app --log-level=info --port=3617 --host=127.0.0.1
+$ static-web-server --root=$S/replay/cv-npm11/static_app --log-level=info --port=3781 --host=127.0.0.1
 Version:      2.38.0
 Built:        
 Git commit:   
@@ -141,10 +137,9 @@ Homepage:     https://static-web-server.net
 Author:       Jose Quintana <https://joseluisq.net>
 200	page	/	text/html	2763
 --	title	/	CoreUI Vue.js Admin Template	
-404	page	/dashboard	text/html	0
---	title	/dashboard	(none)	
-200	page	/#/dashboard	text/html	2763
---	title	/#/dashboard	CoreUI Vue.js Admin Template	
+200	page	/index.html	text/html	2763
+--	title	/index.html	CoreUI Vue.js Admin Template	
+200	page	/favicon.ico	image/x-icon	1150
 200	ref	/apple-icon-57x57.png	image/png	4120
 200	ref	/apple-icon-60x60.png	image/png	4034
 200	ref	/apple-icon-72x72.png	image/png	5297
@@ -161,6 +156,5 @@ Author:       Jose Quintana <https://joseluisq.net>
 200	ref	/manifest.json	application/json	748
 200	ref	/assets/index-X49BOhzg.js	text/javascript	495775
 200	ref	/assets/index-C8tKJUHk.css	text/css	314582
-SUMMARY pages=3 refs_checked=16 failures=1
-FAIL	404	page	/dashboard	text/html	0
+SUMMARY pages=3 refs_checked=16 failures=0
 # static_app files: 96
