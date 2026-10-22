@@ -1,0 +1,11 @@
+{
+  "repo": "ATQQ/sugar-blog",
+  "status": "EXCLUDED",
+  "stars": 589,
+  "stars_source": "GitHub MCP search_repositories",
+  "stars_at": "2026-10-22T05:1xZ (approx, discovery query)",
+  "archived": false,
+  "patch": null,
+  "pr_body": null,
+  "reason": "Root is a pnpm monorepo (packages/theme, plugins, create-theme); root build is 'pnpm --filter blogpress build' of a sub-package, so the root is not the site (brief v3: monorepo whose root is not the site)."
+}

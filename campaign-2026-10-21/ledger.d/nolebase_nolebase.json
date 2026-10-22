@@ -1,0 +1,11 @@
+{
+  "repo": "nolebase/nolebase",
+  "status": "EXCLUDED",
+  "stars": 636,
+  "stars_source": "GitHub MCP search_repositories",
+  "stars_at": "2026-10-22T05:1xZ (approx, discovery query)",
+  "archived": false,
+  "patch": null,
+  "pr_body": null,
+  "reason": "Clone is 475 MB (>300 MB disk-hygiene limit in brief v3); not processed further. Clone deleted."
+}

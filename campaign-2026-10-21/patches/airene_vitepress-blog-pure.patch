@@ -1,6 +1,6 @@
-From 755064e5d2c429f843a58df14b543c1c599e17fe Mon Sep 17 00:00:00 2001
-From: Ayush Ojha <ayushozha@outlook.com>
-Date: Thu, 22 Oct 2026 05:31:51 +0000
+From 691ffa57b27183350ec8b06ce8dfe6c423f073bd Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:34:54 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
