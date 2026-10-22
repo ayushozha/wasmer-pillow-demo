@@ -2,7 +2,7 @@
 
 **Verdict: HOLD.** There are two independent blockers:
 1. **The build hits the Node heap limit in the faithful replay.** `npm run build` (`npm run lint && tsc -b && vite build`) aborted with exit 134 ("JavaScript heap out of memory"). That was Node 24.22.1's default heap here, about 2.2 GB. With `NODE_OPTIONS=--max-old-space-size=4096` (a diagnostic deviation, not what Anybuild runs) it built in about 3 minutes. Whether Wasmer's builder has enough default heap is unknown. Anybuild v0.33.0 sets no `NODE_OPTIONS` (no `max-old-space` anywhere in its resources).
-2. **History-router reloads 404.** `createBrowserRouter` (`src/router.tsx:144`). When a saved diagram exists, the editor auto-navigates from `/` to `/diagrams/<id>` (`src/pages/editor-page/use-diagram-loader.tsx`, `navigate(\`/diagrams/${config.defaultDiagramId}\`)`). Create, open and import also navigate there. Reloading that URL on static-web-server 2.38.0, which has no SPA fallback, returns a bare 404. The repo's own nginx config uses `try_files $uri $uri/ /index.html`.
+2. **History-router reloads 404.** `createBrowserRouter` (`src/router.tsx:144`). When a saved diagram exists, the editor auto-navigates from `/` to `/diagrams/<id>` (`src/pages/editor-page/use-diagram-loader.tsx`, `navigate(\`/diagrams/${config.defaultDiagramId}\`)`). Create, open and import also navigate there. Reloading that URL on the local native static-web-server 2.38.0 that Anybuild's plan pins returns a bare 404 (no SPA fallback is configured; Wasmer's hosted WASI static-web-server package has no page-fallback option, per root). The repo's own nginx config uses `try_files $uri $uri/ /index.html`.
 
 ## Repository
 - Pinned SHA: `c24936a402bb3e24b4858f05282d69a04fcfe25b` on `main`.
@@ -41,5 +41,5 @@
 - No critical advisories in shipped code. A reviewer should still note that react-router <7.18 is shipped.
 
 ## Remaining check for the reviewer
-- Both blockers need upstream or builder changes: a build memory setting, and an SPA fallback (or a `404.html` copy of `index.html`, which static-web-server serves with status 404 and which boots the app). Neither belongs in a README PR.
+- Both blockers are outside a README PR: the build heap, and history-router reloads that 404 on Wasmer's static hosting. No SPA-fallback configuration is proposed. The target stays HOLD.
 - If ever reconsidered: confirm Wasmer's builder heap, the account owner decides on the CLA (unresolved; never signed by us), and verify the badge and import page in a browser (blocked here).

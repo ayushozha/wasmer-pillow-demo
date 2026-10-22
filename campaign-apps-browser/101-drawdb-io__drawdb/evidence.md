@@ -32,7 +32,7 @@
   - `/editor`, `/templates`, `/editor/templates/1`, `/editor/diagrams/1` and `/bug-report` returned **404**, with an empty body (no 404.html).
   - `/nope` returned 404.
   - Client-side navigation from `/` to the editor works in principle (React Router), but I did not test it in a browser.
-- Extra check: I placed a copy of `index.html` at `404.html` in a scratch copy of the output. static-web-server 2.38.0 then returned that page with status 404 for `/editor` (2,291 bytes), so the SPA would boot. That would need a repo build change (for example, copying `dist/index.html` to `dist/404.html` after the build), which is outside a README-only PR. static-web-server 2.38.0 also has `--page-fallback`, which serves a page with 200 for missing paths, but Anybuild v0.33.0 does not emit it.
+- Extra check (local native static-web-server 2.38.0 only): a scratch copy of the output with `index.html` duplicated as `404.html` returned that page with status 404 for `/editor`. This is recorded as a fact about the local server, not as a proposed fix. Wasmer's hosted server (`wasmer/static-web-server@=1.1.0`, SWS 2.32.2 for WASI, per root) has no page-fallback option and was not tested here, and no SPA-fallback configuration is proposed.
 
 ## Env vars read by the client
 - `import.meta.env.VITE_BACKEND_URL` and `VITE_GIST_BACKEND_URL` (`src/config/index.js`). Runtime override: `window.__DRAWDB_CONFIG__` from `public/config.js`, which is `{}` in the repo. Without either, sharing and gist calls go to `http://localhost:5000` and fail. Diagram editing, SQL import/export and IndexedDB storage are local, so the core works with no vars. Any `VITE_*` value is baked into public JS. These are URLs, not secrets.

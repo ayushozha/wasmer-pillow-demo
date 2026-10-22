@@ -1,0 +1,179 @@
+# replay of B-SVG-Edit__svgedit  source=$S/rup/SVG-Edit__svgedit  upstream HEAD=c44f061d2f9a626d2771cc931298af5a45522d87
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist/editor
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-SVG-Edit__svgedit/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist/editor' pm=npm@11 inputs='package.json packages/react-test/package.json packages/svgcanvas/package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 803 packages, and audited 806 packages in 13s
+
+24 vulnerabilities (7 moderate, 16 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   core-js@3.47.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> svgedit@7.4.2 build
+> vite build packages/svgcanvas && vite build packages/react-test && vite build
+
+[36mvite v8.1.4 [32mbuilding client environment for production...[36m[39m
+[warn] `inlineDynamicImports` option is deprecated, please use `codeSplitting: false` instead.
+[2Ktransforming...✓ 249 modules transformed.
+rendering chunks...
+computing gzip size...
+packages/svgcanvas/dist/svgcanvas.js  1,445.13 kB │ gzip: 361.67 kB │ map: 3,809.37 kB
+
+[32m✓ built in 2.01s[39m
+[36mvite v8.1.4 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 11 modules transformed.
+rendering chunks...
+computing gzip size...
+packages/react-test/dist/react-test.js  259.65 kB │ gzip: 67.56 kB │ map: 845.64 kB
+
+[32m✓ built in 135ms[39m
+[36mvite v8.1.4 [32mbuilding client environment for production...[36m[39m
+[warn] `inlineDynamicImports` option is deprecated, please use `codeSplitting: false` instead.
+[2Ktransforming...✓ 213 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/editor/Editor.js  2,774.35 kB │ gzip: 594.70 kB │ map: 5,279.04 kB
+
+[warn] `inlineDynamicImports` option is ignored because `codeSplitting: false` is set.
+[2Ktransforming...✓ 213 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/editor/iife-Editor.js  2,234.03 kB │ gzip: 545.03 kB │ map: 5,282.14 kB
+
+[32m✓ built in 3.63s[39m
+
+> svgedit@7.4.2 postbuild
+> node scripts/copy-static.mjs && node scripts/build-extensions.mjs
+
+Copied static editor assets to dist/editor
+[36mvite v8.1.4 [32mbuilding client environment for production...[36m[39m
+[warn] `inlineDynamicImports` option is deprecated, please use `codeSplitting: false` instead.
+[2Ktransforming...✓ 63 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/editor/extensions/ext-grid/locale/en.js                                 0.21 kB │ gzip: 0.18 kB │ map:  0.32 kB
+dist/editor/extensions/ext-grid/locale/fr.js                                 0.21 kB │ gzip: 0.18 kB │ map:  0.32 kB
+dist/editor/extensions/ext-grid/locale/sv.js                                 0.22 kB │ gzip: 0.18 kB │ map:  0.32 kB
+dist/editor/extensions/ext-eyedropper/locale/sv.js                           0.23 kB │ gzip: 0.18 kB │ map:  0.34 kB
+dist/editor/extensions/ext-eyedropper/locale/fr.js                           0.23 kB │ gzip: 0.18 kB │ map:  0.35 kB
+dist/editor/extensions/ext-grid/locale/tr.js                                 0.23 kB │ gzip: 0.19 kB │ map:  0.34 kB
+dist/editor/extensions/ext-grid/locale/zh-CN.js                              0.23 kB │ gzip: 0.21 kB │ map:  0.33 kB
+dist/editor/extensions/ext-eyedropper/locale/uk.js                           0.23 kB │ gzip: 0.20 kB │ map:  0.35 kB
+dist/editor/extensions/ext-eyedropper/locale/en.js                           0.23 kB │ gzip: 0.19 kB │ map:  0.35 kB
+dist/editor/extensions/ext-eyedropper/locale/tr.js                           0.24 kB │ gzip: 0.20 kB │ map:  0.35 kB
+dist/editor/extensions/ext-eyedropper/locale/zh-CN.js                        0.24 kB │ gzip: 0.21 kB │ map:  0.35 kB
+dist/editor/extensions/ext-grid/locale/uk.js                                 0.24 kB │ gzip: 0.21 kB │ map:  0.35 kB
+dist/editor/extensions/ext-layer_view/locale/en.js                           0.25 kB │ gzip: 0.21 kB │ map:  0.37 kB
+dist/editor/extensions/ext-panning/locale/en.js                              0.26 kB │ gzip: 0.20 kB │ map:  0.37 kB
+dist/editor/extensions/ext-panning/locale/sv.js                              0.26 kB │ gzip: 0.21 kB │ map:  0.38 kB
+dist/editor/extensions/ext-panning/locale/zh-CN.js                           0.26 kB │ gzip: 0.24 kB │ map:  0.38 kB
+dist/editor/extensions/ext-panning/locale/tr.js                              0.27 kB │ gzip: 0.22 kB │ map:  0.39 kB
+dist/editor/extensions/ext-opensave/locale/en.js                             0.27 kB │ gzip: 0.19 kB │ map:  0.39 kB
+dist/editor/extensions/ext-opensave/locale/sv.js                             0.27 kB │ gzip: 0.20 kB │ map:  0.39 kB
+dist/editor/extensions/ext-helloworld/locale/en.js                           0.28 kB │ gzip: 0.22 kB │ map:  0.40 kB
+dist/editor/extensions/ext-opensave/locale/tr.js                             0.28 kB │ gzip: 0.21 kB │ map:  0.39 kB
+dist/editor/extensions/ext-helloworld/locale/zh-CN.js                        0.29 kB │ gzip: 0.24 kB │ map:  0.40 kB
+dist/editor/extensions/ext-helloworld/locale/tr.js                           0.29 kB │ gzip: 0.23 kB │ map:  0.41 kB
+dist/editor/extensions/ext-opensave/locale/zh-CN.js                          0.29 kB │ gzip: 0.24 kB │ map:  0.40 kB
+dist/editor/extensions/ext-helloworld/locale/fr.js                           0.30 kB │ gzip: 0.23 kB │ map:  0.42 kB
+dist/editor/extensions/ext-opensave/locale/fr.js                             0.31 kB │ gzip: 0.22 kB │ map:  0.43 kB
+dist/editor/extensions/ext-layer_view/locale/zh-CN.js                        0.33 kB │ gzip: 0.28 kB │ map:  0.45 kB
+dist/editor/extensions/ext-opensave/locale/uk.js                             0.33 kB │ gzip: 0.25 kB │ map:  0.44 kB
+dist/editor/extensions/ext-panning/locale/uk.js                              0.33 kB │ gzip: 0.27 kB │ map:  0.45 kB
+dist/editor/extensions/ext-connector/locale/en.js                            0.33 kB │ gzip: 0.21 kB │ map:  0.50 kB
+dist/editor/extensions/ext-helloworld/locale/uk.js                           0.33 kB │ gzip: 0.26 kB │ map:  0.45 kB
+dist/editor/extensions/ext-connector/locale/fr.js                            0.34 kB │ gzip: 0.21 kB │ map:  0.51 kB
+dist/editor/extensions/ext-connector/locale/zh-CN.js                         0.34 kB │ gzip: 0.25 kB │ map:  0.51 kB
+dist/editor/extensions/ext-polystar/locale/zh-CN.js                          0.50 kB │ gzip: 0.30 kB │ map:  0.84 kB
+dist/editor/extensions/ext-polystar/locale/en.js                             0.51 kB │ gzip: 0.28 kB │ map:  0.86 kB
+dist/editor/extensions/ext-polystar/locale/sv.js                             0.53 kB │ gzip: 0.30 kB │ map:  0.88 kB
+dist/editor/extensions/ext-polystar/locale/fr.js                             0.53 kB │ gzip: 0.29 kB │ map:  0.88 kB
+dist/editor/extensions/ext-polystar/locale/tr.js                             0.54 kB │ gzip: 0.31 kB │ map:  0.89 kB
+dist/editor/extensions/ext-shapes/locale/zh-CN.js                            0.58 kB │ gzip: 0.44 kB │ map:  0.88 kB
+dist/editor/extensions/ext-shapes/locale/en.js                               0.59 kB │ gzip: 0.36 kB │ map:  0.90 kB
+dist/editor/extensions/ext-shapes/locale/fr.js                               0.60 kB │ gzip: 0.39 kB │ map:  0.92 kB
+dist/editor/extensions/ext-shapes/locale/sv.js                               0.61 kB │ gzip: 0.40 kB │ map:  0.92 kB
+dist/editor/extensions/ext-polystar/locale/uk.js                             0.63 kB │ gzip: 0.36 kB │ map:  0.98 kB
+dist/editor/extensions/ext-shapes/locale/tr.js                               0.63 kB │ gzip: 0.42 kB │ map:  0.94 kB
+dist/editor/extensions/ext-shapes/locale/uk.js                               0.75 kB │ gzip: 0.50 kB │ map:  1.06 kB
+dist/editor/extensions/ext-storage/storageDialog.js                          1.58 kB │ gzip: 0.70 kB │ map:  2.11 kB
+dist/editor/extensions/ext-overview_window/dragmove/dragmove.js              1.92 kB │ gzip: 0.74 kB │ map:  4.19 kB
+dist/editor/extensions/_virtual/_vite/preload-helper.js                      2.21 kB │ gzip: 0.99 kB
+dist/editor/extensions/ext-panning/ext-panning.js                            2.88 kB │ gzip: 1.13 kB │ map:  3.45 kB
+dist/editor/extensions/ext-helloworld/ext-helloworld.js                      2.93 kB │ gzip: 1.19 kB │ map:  3.91 kB
+dist/editor/extensions/ext-layer_view/ext-layer_view.js                      3.20 kB │ gzip: 1.25 kB │ map:  4.56 kB
+dist/editor/extensions/ext-storage/storageDialog2.js                         4.45 kB │ gzip: 1.22 kB │ map:  7.18 kB
+dist/editor/extensions/ext-shapes/ext-shapes.js                              5.08 kB │ gzip: 1.83 kB │ map:  7.43 kB
+dist/editor/extensions/ext-grid/ext-grid.js                                  5.53 kB │ gzip: 1.94 kB │ map:  8.34 kB
+dist/editor/extensions/ext-storage/ext-storage.js                            6.28 kB │ gzip: 2.35 kB │ map: 12.77 kB
+dist/editor/extensions/ext-overview_window/ext-overview_window.js            6.72 kB │ gzip: 1.64 kB │ map: 11.71 kB
+dist/editor/extensions/ext-eyedropper/ext-eyedropper.js                      6.94 kB │ gzip: 2.14 kB │ map: 10.74 kB
+dist/editor/extensions/node_modules/browser-fs-access/dist/index.modern.js   7.43 kB │ gzip: 2.52 kB │ map: 13.31 kB
+dist/editor/extensions/ext-opensave/ext-opensave.js                          9.58 kB │ gzip: 3.14 kB │ map: 15.91 kB
+dist/editor/extensions/ext-markers/ext-markers.js                            9.62 kB │ gzip: 3.17 kB │ map: 17.14 kB
+dist/editor/extensions/ext-polystar/ext-polystar.js                         14.02 kB │ gzip: 3.16 kB │ map: 24.65 kB
+dist/editor/extensions/ext-connector/ext-connector.js                       16.68 kB │ gzip: 4.83 kB │ map: 35.41 kB
+
+[32m✓ built in 604ms[39m
+Bundled 12 extensions
+exit=0
+
+$ static-web-server --root=$S/replay/B-SVG-Edit__svgedit/static_app --log-level=info --port=3904 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1793
+--	title	/	SVG-edit	
+200	page	/index.html	text/html	1793
+--	title	/index.html	SVG-edit	
+200	page	/iife-index.html	text/html	1028
+--	title	/iife-index.html	SVG-edit (IIFE)	
+200	page	/browser-not-supported.html	text/html	1630
+--	title	/browser-not-supported.html	Browser does not support SVG | SVG-edit	
+200	ref	/images/logo.svg	image/svg+xml	2394
+200	ref	/svgedit.css	text/css	10007
+200	ref	/browser-not-supported.js	text/javascript	244
+200	ref	/iife-Editor.js	text/javascript	2234035
+SUMMARY pages=4 refs_checked=4 failures=0
+# static_app files: 370

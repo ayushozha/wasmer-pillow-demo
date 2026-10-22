@@ -1,0 +1,1 @@
+docs: add Deploy to Wasmer option to the hosting section
