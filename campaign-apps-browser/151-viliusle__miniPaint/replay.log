@@ -1,0 +1,37 @@
+# replay of B-viliusle__miniPaint  source=$S/rup/viliusle__miniPaint  upstream HEAD=a79733eb803fc97084ef0ee4faa96b031e69e1c0
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-viliusle__miniPaint/plan.json
+# provider=staticfile install='' build='' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='.' pm=@ inputs='' all_files=False
+$ cp -R '$S/replay/B-viliusle__miniPaint/flat/./.' '$S/replay/B-viliusle__miniPaint/static_app/'
+exit=0
+
+$ static-web-server --root=$S/replay/B-viliusle__miniPaint/static_app --log-level=info --port=3907 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	4689
+--	title	/	miniPaint - image editor	
+200	page	/dist/bundle.js	text/javascript	1358169
+200	page	/images/test-collection.json	application/json	35935
+200	page	/images/logo-colors.png	image/png	5665
+200	page	/images/icons/brush.svg	image/svg+xml	2156
+200	page	/images/icons/grid.png	image/png	84
+200	page	/images/icons/undo.svg	image/svg+xml	330
+200	page	/src/js/libs/gifjs/gif.worker.js	text/javascript	10817
+200	page	/images/logo.svg	image/svg+xml	33615
+200	page	/images/icons/gradient.png	image/png	265
+200	ref	/images/favicon.png	image/png	4557
+404	ref	/dist/manifest.json	text/html	0
+SUMMARY pages=10 refs_checked=2 failures=1
+FAIL	404	ref	/dist/manifest.json	text/html	0
+# static_app files: 293

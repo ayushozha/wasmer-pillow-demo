@@ -1,0 +1,203 @@
+# replay of 68-skb  source=$S/rup/josh-collinsworth__sveltekit-blog-starter  upstream HEAD=6a1873dca5c2912d49ce38ff76242bed9b513b4c
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: SvelteKit
+    Server: Node.js
+    Package manager: npm
+    Output directory: build
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/68-skb/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='build' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 200 packages, and audited 201 packages in 5s
+
+11 vulnerabilities (1 low, 2 moderate, 8 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> sveltekit-blog-starter@2.0.2 build
+> vite build
+
+[36mvite v8.0.3 [32mbuilding ssr environment for production...[36m[39m
+[2Ktransforming...failed to load language css
+✓ 185 modules transformed.
+rendering chunks...
+[36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 197 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                        0.02 kB │ gzip:  0.04 kB
+.svelte-kit/output/client/.vite/manifest.json                      8.72 kB │ gzip:  1.09 kB
+.svelte-kit/output/client/_app/immutable/chunks/B4Mv0fOj.js        0.03 kB │ gzip:  0.05 kB
+.svelte-kit/output/client/_app/immutable/chunks/t62M88qj.js        0.06 kB │ gzip:  0.08 kB
+.svelte-kit/output/client/_app/immutable/chunks/BtoUCSc5.js        0.07 kB │ gzip:  0.09 kB
+.svelte-kit/output/client/_app/immutable/entry/start.BS3NXpR8.js   0.08 kB │ gzip:  0.09 kB
+.svelte-kit/output/client/_app/immutable/nodes/11.C39YqdZ3.js      0.12 kB │ gzip:  0.10 kB
+.svelte-kit/output/client/_app/immutable/nodes/8.CgHQWDCf.js       0.12 kB │ gzip:  0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/C8bMs3nG.js        0.21 kB │ gzip:  0.18 kB
+.svelte-kit/output/client/_app/immutable/chunks/kh3hw6BG.js        0.28 kB │ gzip:  0.20 kB
+.svelte-kit/output/client/_app/immutable/nodes/4.DIue1Oue.js       0.58 kB │ gzip:  0.38 kB
+.svelte-kit/output/client/_app/immutable/chunks/RZPyGfwP.js        0.63 kB │ gzip:  0.37 kB
+.svelte-kit/output/client/_app/immutable/nodes/6.DUDNTpdH.js       0.67 kB │ gzip:  0.44 kB
+.svelte-kit/output/client/_app/immutable/nodes/2.DnugImgI.js       0.74 kB │ gzip:  0.43 kB
+.svelte-kit/output/client/_app/immutable/nodes/1.43zjwFbC.js       0.76 kB │ gzip:  0.48 kB
+.svelte-kit/output/client/_app/immutable/nodes/3.PHl2GViO.js       0.88 kB │ gzip:  0.56 kB
+.svelte-kit/output/client/_app/immutable/nodes/7.CkOn8gXA.js       1.05 kB │ gzip:  0.61 kB
+.svelte-kit/output/client/_app/immutable/nodes/12.CoRbr3TE.js      1.15 kB │ gzip:  0.64 kB
+.svelte-kit/output/client/_app/immutable/nodes/10.CdKbIeDr.js      1.17 kB │ gzip:  0.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/C-OaypFN.js        1.20 kB │ gzip:  0.68 kB
+.svelte-kit/output/client/_app/immutable/nodes/9.CyqH7bTz.js       1.36 kB │ gzip:  0.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/BQPspAou.js        1.38 kB │ gzip:  0.77 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bq5Xn-F9.js        1.45 kB │ gzip:  0.82 kB
+.svelte-kit/output/client/_app/immutable/chunks/CjmSncdl.js        1.62 kB │ gzip:  0.68 kB
+.svelte-kit/output/client/_app/immutable/nodes/13.BIBc4-Zu.js      1.76 kB │ gzip:  0.89 kB
+.svelte-kit/output/client/_app/immutable/nodes/5.D3g7zt5F.js       3.24 kB │ gzip:  1.52 kB
+.svelte-kit/output/client/_app/immutable/entry/app.DXxGp36Z.js     4.40 kB │ gzip:  1.63 kB
+.svelte-kit/output/client/_app/immutable/chunks/BTKkKPlL.js        4.54 kB │ gzip:  1.27 kB
+.svelte-kit/output/client/_app/immutable/nodes/0.CPlOGMts.js       4.79 kB │ gzip:  2.14 kB
+.svelte-kit/output/client/_app/immutable/chunks/DiSXkwhF.js       14.60 kB │ gzip:  5.30 kB
+.svelte-kit/output/client/_app/immutable/chunks/CcNpTETx.js       32.02 kB │ gzip: 12.34 kB
+.svelte-kit/output/client/_app/immutable/chunks/CY-esowx.js       49.64 kB │ gzip: 19.28 kB
+
+[32m✓ built in 438ms[39m
+  301 /blog/page -> /blog
+computing gzip size...
+  301 /blog/category/*/page/* -> /blog/category/*
+  301 /blog/category/page/* -> /blog
+  301 /blog/page/* -> /blog
+  301 /blog/category/*/page -> /blog/category
+.svelte-kit/output/server/.vite/manifest.json                                                  12.43 kB │ gzip:  1.23 kB
+.svelte-kit/output/server/entries/pages/blog/page/_page.svelte.js                               0.15 kB │ gzip:  0.13 kB
+.svelte-kit/output/server/entries/pages/blog/page/_page.server.js                               0.16 kB │ gzip:  0.14 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/page/_page.svelte.js           0.18 kB │ gzip:  0.15 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/page/_page.server.js           0.20 kB │ gzip:  0.16 kB
+.svelte-kit/output/server/entries/pages/_page.js                                                0.24 kB │ gzip:  0.20 kB
+.svelte-kit/output/server/entries/pages/blog/_page.server.js                                    0.26 kB │ gzip:  0.18 kB
+.svelte-kit/output/server/entries/pages/_layout.js                                              0.26 kB │ gzip:  0.20 kB
+.svelte-kit/output/server/entries/endpoints/api/posts.json/_server.js                           0.31 kB │ gzip:  0.22 kB
+.svelte-kit/output/server/chunks/Callout.js                                                     0.38 kB │ gzip:  0.26 kB
+.svelte-kit/output/server/entries/endpoints/api/posts/page/_page_/_server.js                    0.39 kB │ gzip:  0.27 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/_page.server.js                0.40 kB │ gzip:  0.25 kB
+.svelte-kit/output/server/internal.js                                                           0.40 kB │ gzip:  0.20 kB
+.svelte-kit/output/server/entries/pages/blog/category/page/_page_/_page.server.js               0.54 kB │ gzip:  0.34 kB
+.svelte-kit/output/server/entries/pages/blog/page/_page_/_page.server.js                        0.54 kB │ gzip:  0.34 kB
+.svelte-kit/output/server/entries/pages/blog/category/_page.server.js                           0.56 kB │ gzip:  0.32 kB
+.svelte-kit/output/server/entries/endpoints/api/posts/count/_server.js                          0.58 kB │ gzip:  0.29 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                                         0.61 kB │ gzip:  0.31 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/page/_page_/_page.server.js    0.63 kB │ gzip:  0.38 kB
+.svelte-kit/output/server/chunks/config.js                                                      0.76 kB │ gzip:  0.45 kB
+.svelte-kit/output/server/entries/pages/blog/_page.svelte.js                                    0.87 kB │ gzip:  0.40 kB
+.svelte-kit/output/server/entries/pages/about/_page.md.js                                       0.91 kB │ gzip:  0.53 kB
+.svelte-kit/output/server/entries/pages/blog/category/_page.svelte.js                           1.06 kB │ gzip:  0.52 kB
+.svelte-kit/output/server/chunks/fetchPosts.js                                                  1.30 kB │ gzip:  0.58 kB
+.svelte-kit/output/server/chunks/environment.js                                                 1.31 kB │ gzip:  0.56 kB
+.svelte-kit/output/server/entries/pages/blog/_post_/_page.js                                    1.44 kB │ gzip:  0.70 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/_page.svelte.js                1.47 kB │ gzip:  0.61 kB
+.svelte-kit/output/server/chunks/mdsvex-component-example.js                                    1.55 kB │ gzip:  0.80 kB
+.svelte-kit/output/server/entries/pages/blog/page/_page_/_page.svelte.js                        1.70 kB │ gzip:  0.64 kB
+.svelte-kit/output/server/chunks/heading-links-example.js                                       1.71 kB │ gzip:  0.71 kB
+.svelte-kit/output/server/entries/endpoints/api/rss.xml/_server.js                              1.72 kB │ gzip:  0.86 kB
+.svelte-kit/output/server/entries/pages/blog/category/page/_page_/_page.svelte.js               1.74 kB │ gzip:  0.65 kB
+.svelte-kit/output/server/entries/pages/contact/_page.svelte.js                                 1.88 kB │ gzip:  0.82 kB
+.svelte-kit/output/server/entries/pages/_error.svelte.js                                        1.98 kB │ gzip:  0.90 kB
+.svelte-kit/output/server/entries/pages/blog/category/_category_/page/_page_/_page.svelte.js    2.00 kB │ gzip:  0.72 kB
+.svelte-kit/output/server/chunks/Pagination.js                                                  2.33 kB │ gzip:  0.89 kB
+.svelte-kit/output/server/chunks/client.js                                                      2.71 kB │ gzip:  1.20 kB
+.svelte-kit/output/server/entries/pages/blog/_post_/_page.svelte.js                             2.74 kB │ gzip:  0.92 kB
+.svelte-kit/output/server/chunks/syntax-highlighting-example.js                                 4.55 kB │ gzip:  1.24 kB
+.svelte-kit/output/server/chunks/shared.js                                                      4.96 kB │ gzip:  1.86 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                       6.50 kB │ gzip:  1.93 kB
+.svelte-kit/output/server/chunks/internal.js                                                    9.47 kB │ gzip:  3.37 kB
+.svelte-kit/output/server/chunks/exports.js                                                    11.24 kB │ gzip:  3.51 kB
+.svelte-kit/output/server/chunks/README.js                                                     14.53 kB │ gzip:  5.25 kB
+.svelte-kit/output/server/chunks/legacy-server.js                                              15.84 kB │ gzip:  4.79 kB
+.svelte-kit/output/server/remote-entry.js                                                      28.57 kB │ gzip:  6.06 kB
+.svelte-kit/output/server/chunks/utils.js                                                      28.63 kB │ gzip:  8.32 kB
+.svelte-kit/output/server/index.js                                                            118.63 kB │ gzip: 30.29 kB
+.svelte-kit/output/server/chunks/server.js                                                    122.50 kB │ gzip: 31.78 kB
+
+[32m✓ built in 2.21s[39m
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done
+exit=0
+
+$ static-web-server --root=$S/replay/68-skb/static_app --log-level=info --port=3809 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	18951
+--	title	/	My Awesome Blog	
+200	page	/about	text/html	5159
+--	title	/about	About	
+200	page	/blog	text/html	6707
+--	title	/blog	Blog	
+200	page	/blog/heading-links-example	text/html	6875
+--	title	/blog/heading-links-example	Automatic heading links in mdsvex	
+404	page	/blog/page/2	text/html	0
+--	title	/blog/page/2	(none)	
+200	page	/contact	text/html	5907
+--	title	/contact	Contact	
+200	page	/api/rss.xml	text/xml	1450
+200	page	/blog/category/svelte	text/html	5590
+--	title	/blog/category/svelte	Category: svelte	
+200	ref	/favicon.png	image/png	1571
+200	ref	/_app/immutable/entry/start.BS3NXpR8.js	text/javascript	82
+200	ref	/_app/immutable/chunks/CcNpTETx.js	text/javascript	32024
+200	ref	/_app/immutable/chunks/CY-esowx.js	text/javascript	49645
+200	ref	/_app/immutable/chunks/RZPyGfwP.js	text/javascript	636
+200	ref	/_app/immutable/entry/app.DXxGp36Z.js	text/javascript	4407
+200	ref	/_app/immutable/chunks/C-OaypFN.js	text/javascript	1208
+200	ref	/_app/immutable/chunks/t62M88qj.js	text/javascript	65
+200	ref	/_app/immutable/nodes/0.CPlOGMts.js	text/javascript	4792
+200	ref	/_app/immutable/chunks/BtoUCSc5.js	text/javascript	77
+200	ref	/_app/immutable/chunks/B4Mv0fOj.js	text/javascript	39
+200	ref	/_app/immutable/chunks/kh3hw6BG.js	text/javascript	284
+200	ref	/_app/immutable/nodes/2.DnugImgI.js	text/javascript	748
+200	ref	/css/vars.css	text/css	602
+200	ref	/css/root.css	text/css	299
+200	ref	/css/fonts.css	text/css	954
+200	ref	/css/typography.css	text/css	1010
+200	ref	/css/layout.css	text/css	1320
+200	ref	/css/components.css	text/css	999
+200	ref	/css/header-and-footer.css	text/css	3916
+200	ref	/css/forms.css	text/css	1005
+200	ref	/css/animation.css	text/css	136
+200	ref	/css/utilities.css	text/css	258
+200	ref	/css/code.css	text/css	444
+200	ref	/css/prism.css	text/css	1780
+200	ref	/_app/immutable/nodes/3.PHl2GViO.js	text/javascript	884
+SUMMARY pages=8 refs_checked=26 failures=1
+FAIL	404	page	/blog/page/2	text/html	0
+# static_app files: 92

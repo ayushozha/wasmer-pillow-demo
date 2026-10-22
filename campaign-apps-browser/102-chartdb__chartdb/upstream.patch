@@ -1,0 +1,19 @@
+diff --git a/README.md b/README.md
+index e25d7ec..8a2743a 100644
+--- a/README.md
++++ b/README.md
+@@ -138,6 +138,14 @@ VITE_OPENAI_API_ENDPOINT=http://localhost:8000/v1
+ VITE_LLM_MODEL_NAME=Qwen/Qwen2.5-32B-Instruct-AWQ
+ ```
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=chartdb%2Fchartdb)
++
++Wasmer detects the Vite app, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files; diagram editing works without any environment variables. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account.
++
++> **Note:** `VITE_*` variables are embedded in the built JavaScript and visible to every visitor, so do not set `VITE_OPENAI_API_KEY` on a public deployment. AI export runs in the browser; use the custom inference server option above with an endpoint that enforces its own access control.
++
+ ## Try it on our website
+ 
+ 1. Go to [ChartDB.io](https://chartdb.io?ref=github_readme_2)

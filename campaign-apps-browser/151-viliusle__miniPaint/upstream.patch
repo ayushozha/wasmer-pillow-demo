@@ -1,0 +1,23 @@
+diff --git a/README.md b/README.md
+index 8f0f308..9283efb 100644
+--- a/README.md
++++ b/README.md
+@@ -45,6 +45,11 @@ To embed this app on another page, use the following HTML code:
+ ## Build instructions
+ See [Wiki > Build instructions](https://github.com/viliusle/miniPaint/wiki/Build-instructions)
+ 
++## Deploy on Wasmer
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=viliusle%2FminiPaint)
++
++Wasmer serves the repository root as a static site, including the prebuilt `dist/bundle.js`: the `Staticfile` in the repository root selects static hosting, and no build step runs. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the editor, fork this repository, rebuild `dist/` with `npm run build` after changing `src/`, and import your own repository on Wasmer.
++
+ ## Wiki
+ See [Wiki](https://github.com/viliusle/miniPaint/wiki)
+ 
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..fdbb02c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: .
