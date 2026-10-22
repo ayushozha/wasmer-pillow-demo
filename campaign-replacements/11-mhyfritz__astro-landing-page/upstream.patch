@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index e41d398..052da32 100644
+--- a/README.md
++++ b/README.md
+@@ -35,6 +35,12 @@
+ | `npm run format`       | Format code with [Prettier](https://prettier.io/) |
+ | `npm run clean`        | Remove `node_modules` and build output            |
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=mhyfritz%2Fastro-landing-page)
++
++Wasmer detects the Astro site, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files. The button imports and builds this public repository as-is; it does not fork it. To customize the site and redeploy on every push, fork this repository and import your own repository on Wasmer.
++
+ ## Credits
+ 
+ - astronaut image

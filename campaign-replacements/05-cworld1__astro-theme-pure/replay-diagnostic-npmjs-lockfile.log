@@ -1,0 +1,165 @@
+# replay of t-pure-diag  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/w2/pure-diag  upstream HEAD=4ecd4762e1e750daf7a51978092d7cea8e14c0d6
+# local diff vs HEAD:  M README.md; M bun.lock;
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: bun
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/plan.json
+# provider=node-static install='bun install --no-save' build='bun run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=bun@1 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ bun --version
+1.4.3
+exit=0
+
+# staged before install: bun.lock package.json 
+$ bun install --no-save
+bun install v1.4.3 (c6da4a4d3)
+
++ @ianvs/prettier-plugin-sort-imports@4.7.1
++ @typescript-eslint/parser@8.70.1
++ eslint@10.11.0
++ eslint-plugin-astro@1.7.0
++ prettier@3.9.8
++ prettier-plugin-astro@0.14.1
++ @astrojs/check@0.9.9
++ @astrojs/compiler-rs@0.1.10
++ @astrojs/rss@4.0.18
++ @astrojs/vercel@10.0.6
++ @waline/client@3.15.2
++ astro@6.4.8
++ astro-pure@1.4.9
++ katex@0.16.47
++ rehype-katex@7.0.1
++ remark-math@6.0.0
++ sharp@0.34.5
++ typescript@6.0.3
+
+697 packages installed [5.21s]
+exit=0
+
+$ bun run build
+$ astro-pure check && astro check && astro build
+BUN_LINK_PKG is not set to true. Skipping commands.
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run "astro telemetry disable" to opt-out.
+  https://astro.build/telemetry
+
+[astro] `markdown.remarkPlugins`, `markdown.rehypePlugins`, and `markdown.remarkRehype` are deprecated. Pass them to `unified({...})` from `@astrojs/markdown-remark` directly instead.
+05:11:07 [content] Syncing content
+05:11:08 [content] Synced content
+05:11:08 [types] Generated 3.21s
+05:11:08 [check] Getting diagnostics for Astro files in /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work...
+Result (132 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+[astro] `markdown.remarkPlugins`, `markdown.rehypePlugins`, and `markdown.remarkRehype` are deprecated. Pass them to `unified({...})` from `@astrojs/markdown-remark` directly instead.
+05:11:26 [content] Syncing content
+05:11:26 [content] Synced content
+05:11:26 [types] Generated 1.12s
+05:11:26 [build] output: "server"
+05:11:26 [build] mode: "server"
+05:11:26 [build] directory: /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/
+05:11:26 [build] adapter: @astrojs/vercel
+05:11:26 [build] Collecting build info...
+05:11:26 [build] ✓ Completed in 1.74s.
+05:11:26 [build] Building server entrypoints...
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontshare-91e88c1c3344001c`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontshare.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontshare.com'
+  }
+}
+05:11:29 [WARN] [assets] No data found for font family Satoshi. Review your configuration
+05:11:34 [assets] Copying fonts (0 files)...
+05:11:35 [vite] ✓ built in 9.13s
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontshare-91e88c1c3344001c`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontshare.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontshare.com'
+  }
+}
+05:11:38 [WARN] [assets] No data found for font family Satoshi. Review your configuration
+05:11:43 [vite] ✓ built in 7.99s
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontshare.com/v2/fonts?offset=0&limit=100`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontshare-91e88c1c3344001c`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontshare.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontshare.com'
+  }
+}
+05:11:46 [WARN] [assets] No data found for font family Satoshi. Review your configuration
+05:11:48 [vite] ✓ built in 4.76s
+
+ prerendering static routes 
+05:11:48   ├─ /archives/index.html05:11:48 [ERROR] Error: Failed to parse image reference: {&#x22;inferSize&#x22;:true,&#x22;src&#x22;:&#x22;https://gravatar.loli.net/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200&#x22;,&#x22;alt&#x22;:&#x22;CWorld&#x22;,&#x22;class&#x22;:&#x22;zoomable&#x22;,&#x22;index&#x22;:0}
+    at updateImageReferencesInBody (file:///tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/server/.prerender/chunks/server_CSlqMz4g.mjs:328:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async renderEntry (file:///tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/server/.prerender/chunks/server_CSlqMz4g.mjs:388:82)
+    at async file:///tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/server/.prerender/chunks/BaseLayout_C-N0wc3T.mjs:88:39
+05:11:48 [ERROR] [build] Caught error rendering /archives: Error: Failed to parse image reference: {&#x22;inferSize&#x22;:true,&#x22;src&#x22;:&#x22;https://gravatar.loli.net/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200&#x22;,&#x22;alt&#x22;:&#x22;CWorld&#x22;,&#x22;class&#x22;:&#x22;zoomable&#x22;,&#x22;index&#x22;:0}
+Failed to parse image reference: {&#x22;inferSize&#x22;:true,&#x22;src&#x22;:&#x22;https://gravatar.loli.net/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200&#x22;,&#x22;alt&#x22;:&#x22;CWorld&#x22;,&#x22;class&#x22;:&#x22;zoomable&#x22;,&#x22;index&#x22;:0}
+  Stack trace:
+    at updateImageReferencesInBody (file:///tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/server/.prerender/chunks/server_CSlqMz4g.mjs:328:13)
+    at async renderEntry (file:///tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/work/dist/server/.prerender/chunks/server_CSlqMz4g.mjs:388:82)
+error: script "build" exited with code 1
+exit=1
+
+BUILD FAILED
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure-diag/static_app --log-level=info --port=3616 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/blog/	text/html	0
+--	title	/blog/	(none)	
+404	page	/about/	text/html	0
+--	title	/about/	(none)	
+404	page	/docs/	text/html	0
+--	title	/docs/	(none)	
+404	page	/rss.xml	text/html	0
+--	title	/rss.xml	(none)	
+404	page	/archives/	text/html	0
+--	title	/archives/	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=7 refs_checked=0 failures=7
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/blog/	text/html	0
+FAIL	404	page	/about/	text/html	0
+FAIL	404	page	/docs/	text/html	0
+FAIL	404	page	/rss.xml	text/html	0
+FAIL	404	page	/archives/	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 269

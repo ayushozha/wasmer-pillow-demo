@@ -1,0 +1,15 @@
+diff --git a/README.md b/README.md
+index 3404f1c..2b32c29 100644
+--- a/README.md
++++ b/README.md
+@@ -8,6 +8,10 @@ It is primarily Astro, Tailwind and Typescript, with a very small amount of Soli
+ 
+ [![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+ 
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-sphere)
++
++Wasmer detects the Astro site, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files. The button imports and builds this public repository as-is; it does not fork it. To customize the site and redeploy on every push, fork this repository and import your own repository on Wasmer.
++
+ ## 📋 Features
+ 
+ - ✅ 100/100 Lighthouse performance

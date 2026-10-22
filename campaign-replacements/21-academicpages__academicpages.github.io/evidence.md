@@ -1,0 +1,2 @@
+# 21 academicpages/academicpages.github.io — HOLD (declined by root)
+Not pursued. Recorded before the decline: 17,741 stars. CONTRIBUTING says "some mild LLM / Agentic AI checks are in place to ensure that contributions are submitted by humans", and a bad-pr.yml auto-closes PRs that keep the template comment. A feasibility replay passed (Jekyll, `bundle install` + `jekyll build`, 126 files), but `_config.yml` has `url: https://academicpages.github.io`, so the CSS and nav links of a Wasmer copy point back to the upstream GitHub Pages site.

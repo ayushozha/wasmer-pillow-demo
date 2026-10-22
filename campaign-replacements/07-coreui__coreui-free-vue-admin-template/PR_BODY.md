@@ -1,0 +1,32 @@
+## Summary
+
+Adds a short "Deploy on Wasmer" subsection after the README's Build instructions. It has a Deploy to Wasmer badge, one sentence on how the template is built, and one on what the button does. There are no code or config changes.
+
+## Why this repo
+
+People evaluating an admin template usually want a live instance to click through, or to share with their team, before adopting it. The template is a pure client-side Vite build with hash routing, so it runs on any static host without rewrites. Wasmer detects Vite, runs `npm install` and `npm run build`, and serves `dist/`, so the template goes from source to a live URL in one click. The README currently documents only the local build.
+
+## Testing
+
+I ran a local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `81cc2aef4f2c6a195558fcc414820f2f4fef359f` with this change.
+
+Detection:
+- Provider: static Node.js.
+- Framework: Vite.
+- Package manager: npm.
+- Output directory: `dist`.
+
+Commands and results:
+- `npm install` on Node 24.22.1 with npm 11 exited 0. Only `package.json` and `package-lock.json` were staged, as the builder does.
+- `npm run build` exited 0.
+- `dist/` was served with static-web-server 2.38.0.
+
+Smoke test:
+- `/` returned 200 ("CoreUI Vue.js Admin Template").
+- `/#/dashboard` returned 200.
+- All 16 referenced assets returned 200.
+
+## Limitations
+
+- No deployment was made. The badge image and the Wasmer import page could not be checked from the test environment.
+- The button builds this public repository as-is; it does not fork it. To customize and redeploy on push, fork the repo and import the fork.

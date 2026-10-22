@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 8450feb..fab5c49 100644
+--- a/README.md
++++ b/README.md
+@@ -16,6 +16,12 @@ npm init astro -- --template Charca/astro-blog-template
+ 
+ [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
+ 
++### On Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Charca%2Fastro-blog-template)
++
++Wasmer detects the Astro site, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files. The button imports and builds this public repository as-is; it does not fork it. To customize the site and redeploy on every push, create your own copy of the template and import your own repository on Wasmer.
++
+ ## ✨ Features:
+ 
+ - ✅ Astro 4.0

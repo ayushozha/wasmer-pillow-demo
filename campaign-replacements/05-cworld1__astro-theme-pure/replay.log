@@ -1,0 +1,131 @@
+# replay of t-pure  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/cworld1__astro-theme-pure  upstream HEAD=4ecd4762e1e750daf7a51978092d7cea8e14c0d6
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: bun
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure/plan.json
+# provider=node-static install='bun install --no-save' build='bun run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=bun@1 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ bun --version
+1.4.3
+exit=0
+
+# staged before install: bun.lock package.json 
+$ bun install --no-save
+bun install v1.4.3 (c6da4a4d3)
+warn: ProxyConnectFailed (403) downloading tarball @img/sharp-libvips-linux-x64@1.2.4
+
+warn: ProxyConnectFailed (403) downloading tarball @img/sharp-linux-x64@0.34.5
+
+warn: ProxyConnectFailed (403) downloading tarball @img/sharp-linuxmusl-x64@0.34.5
+
+warn: ProxyConnectFailed (403) downloading tarball @img/sharp-libvips-linuxmusl-x64@1.2.4
+
+warn: ProxyConnectFailed (403) downloading tarball @astrojs/compiler-binding-linux-x64-musl@0.1.10
+
+warn: ProxyConnectFailed (403) downloading tarball @astrojs/compiler-binding-linux-x64-gnu@0.1.10
+
+warn: ProxyConnectFailed (403) downloading tarball @pagefind/linux-x64@1.5.2
+
+warn: ProxyConnectFailed (403) downloading tarball @rollup/rollup-linux-x64-gnu@4.63.4
+
+warn: ProxyConnectFailed (403) downloading tarball @rollup/rollup-linux-x64-musl@4.63.4
+
+warn: ProxyConnectFailed (403) downloading tarball @napi-rs/lzma-linux-x64-gnu@1.5.1
+
+warn: ProxyConnectFailed (403) downloading tarball @oxc-parser/binding-linux-x64-musl@0.150.0
+
+warn: ProxyConnectFailed (403) downloading tarball @oxc-parser/binding-linux-x64-gnu@0.150.0
+
+warn: ProxyConnectFailed (403) downloading tarball @esbuild/linux-x64@0.27.7
+
+error: ProxyConnectFailed (403) downloading tarball optionator@0.9.4
+
+error: ProxyConnectFailed (403) downloading tarball @typescript-eslint/parser@8.70.1
+
+error: ProxyConnectFailed (403) downloading tarball remark-math@6.0.0
+
+error: ProxyConnectFailed (403) downloading tarball @eslint/config-helpers@0.7.0
+
+error: ProxyConnectFailed (403) downloading tarball @typescript-eslint/scope-manager@8.70.1
+
+error: ProxyConnectFailed (403) downloading tarball @astrojs/rss@4.0.18
+
+error: ProxyConnectFailed (403) downloading tarball typescript@6.0.3
+
+error: ProxyConnectFailed (403) downloading tarball globals@16.5.0
+
+error: ProxyConnectFailed (403) downloading tarball @jridgewell/sourcemap-codec@1.6.0
+
+error: ProxyConnectFailed (403) downloading tarball is-glob@4.0.3
+
+error: ProxyConnectFailed (403) downloading tarball cross-spawn@7.0.6
+
+... [1316 further 'ProxyConnectFailed (403) downloading tarball <pkg>' lines from registry.npmmirror.com trimmed; 1446 lines total] ...
+error: ProxyConnectFailed (403) downloading tarball mdast-util-gfm@3.1.0
+
+error: ProxyConnectFailed (403) downloading tarball hast-util-to-string@3.0.1
+
+error: ProxyConnectFailed (403) downloading tarball balanced-match@4.0.4
+
+error: ProxyConnectFailed (403) downloading tarball p-locate@5.0.0
+exit=1
+
+INSTALL FAILED
+$ bun run build
+$ astro-pure check && astro check && astro build
+BUN_LINK_PKG is not set to true. Skipping commands.
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs-parser' imported from /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure/work/node_modules/astro/dist/cli/index.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:331:9)
+    at packageResolve (node:internal/modules/esm/resolve:784:25)
+    at moduleResolve (node:internal/modules/esm/resolve:873:18)
+    at defaultResolve (node:internal/modules/esm/resolve:1006:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)
+    at #resolve (node:internal/modules/esm/loader:687:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+error: script "build" exited with code 1
+exit=1
+
+BUILD FAILED
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-pure/static_app --log-level=info --port=3615 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/blog/	text/html	0
+--	title	/blog/	(none)	
+404	page	/about/	text/html	0
+--	title	/about/	(none)	
+404	page	/docs/	text/html	0
+--	title	/docs/	(none)	
+404	page	/rss.xml	text/html	0
+--	title	/rss.xml	(none)	
+404	page	/archives/	text/html	0
+--	title	/archives/	(none)	
+SUMMARY pages=6 refs_checked=0 failures=6
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/blog/	text/html	0
+FAIL	404	page	/about/	text/html	0
+FAIL	404	page	/docs/	text/html	0
+FAIL	404	page	/rss.xml	text/html	0
+FAIL	404	page	/archives/	text/html	0
+# static_app files: 0

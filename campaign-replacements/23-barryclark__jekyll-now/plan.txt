@@ -1,0 +1,7 @@
+  Detected Jekyll provider
+    Jekyll version: 4.3.0
+    Ruby version: 3.4.7
+    Output directory: _site
+
+  Generated Anybuild at /tmp/AnybuildWMMcaj
+Plan saved to $S/replay/jekyll-now/plan.json

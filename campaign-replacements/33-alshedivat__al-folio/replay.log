@@ -1,0 +1,404 @@
+# replay of pre-alshedivat__al-folio  source=$S/rup/alshedivat__al-folio  upstream HEAD=f2a2765c8a9413f6ec703fc02070fbe6becf1572
+# local diff vs HEAD: 
+  Detected Jekyll provider
+    Jekyll version: 4.3.0
+    Ruby version: 3.4.7
+    Output directory: _site
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/pre-alshedivat__al-folio/plan.json
+# provider=jekyll install='bundle install' build='jekyll build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='' pm=@ inputs='' all_files=False
+$ ruby -v
+ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [x86_64-linux]
+exit=0
+
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Bundler 2.6.9 is running, but your lockfile was generated with 4.0.6. Installing Bundler 4.0.6 and restarting using that version.
+Fetching gem metadata from https://rubygems.org/.
+Fetching bundler 4.0.6
+Installing bundler 4.0.6
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching https://github.com/RobertoJBeltran/jekyll-terser.git
+Fetching gem metadata from https://rubygems.org/........
+Fetching rake 13.4.2
+Installing rake 13.4.2
+Fetching base64 0.3.0
+Fetching benchmark 0.5.0
+Fetching bigdecimal 4.1.2
+Fetching concurrent-ruby 1.3.7
+Installing base64 0.3.0
+Fetching connection_pool 3.0.2
+Installing concurrent-ruby 1.3.7
+Installing bigdecimal 4.1.2 with native extensions
+Installing benchmark 0.5.0
+Installing connection_pool 3.0.2
+Fetching drb 2.2.3
+Fetching logger 1.7.0
+Installing drb 2.2.3
+Installing logger 1.7.0
+Fetching minitest 5.27.0
+Fetching securerandom 0.4.1
+Installing minitest 5.27.0
+Installing securerandom 0.4.1
+Fetching public_suffix 7.0.5
+Fetching colorator 1.1.0
+Fetching csv 3.3.5
+Installing public_suffix 7.0.5
+Installing colorator 1.1.0
+Installing csv 3.3.5
+Fetching eventmachine 1.2.7
+Fetching http_parser.rb 0.8.1
+Fetching rb-fsevent 0.11.2
+Installing http_parser.rb 0.8.1 with native extensions
+Installing eventmachine 1.2.7 with native extensions
+Installing rb-fsevent 0.11.2
+Fetching ffi 1.17.4 (x86_64-linux-gnu)
+Installing ffi 1.17.4 (x86_64-linux-gnu)
+Fetching json 2.19.9
+Installing json 2.19.9 with native extensions
+Fetching rexml 3.4.4
+Installing rexml 3.4.4
+Fetching liquid 4.0.4
+Installing liquid 4.0.4
+Fetching mercenary 0.4.0
+Installing mercenary 0.4.0
+Fetching forwardable-extended 2.6.0
+Installing forwardable-extended 2.6.0
+Fetching rouge 4.7.0
+Installing rouge 4.7.0
+Fetching safe_yaml 1.0.5
+Installing safe_yaml 1.0.5
+Fetching unicode-display_width 2.6.0
+Installing unicode-display_width 2.6.0
+Fetching webrick 1.9.2
+Installing webrick 1.9.2
+Fetching crass 1.0.7
+Installing crass 1.0.7
+Fetching sax-machine 1.3.2
+Installing sax-machine 1.3.2
+Fetching mini_mime 1.1.5
+Installing mini_mime 1.1.5
+Fetching latex-decode 0.4.2
+Installing latex-decode 0.4.2
+Fetching date 3.5.1
+Installing date 3.5.1 with native extensions
+Fetching forwardable 1.4.0
+Installing forwardable 1.4.0
+Fetching stringio 3.2.0
+Installing stringio 3.2.0 with native extensions
+Fetching uri 1.1.1
+Installing uri 1.1.1
+Fetching set 1.1.3
+Installing set 1.1.3
+Fetching singleton 0.3.0
+Installing singleton 0.3.0
+Fetching fast-stemmer 1.0.2
+Installing fast-stemmer 1.0.2 with native extensions
+Fetching matrix 0.4.3
+Installing matrix 0.4.3
+Fetching cssminify2 2.1.0
+Fetching deep_merge 1.2.2
+Installing cssminify2 2.1.0
+Installing deep_merge 1.2.2
+Fetching execjs 2.10.1
+Fetching gemoji 4.1.0
+Fetching htmlcompressor 0.4.0
+Installing execjs 2.10.1
+Fetching jekyll-email-protect 1.1.0
+Installing gemoji 4.1.0
+Fetching jekyll-link-attributes 2.0.1
+Installing htmlcompressor 0.4.0
+Installing jekyll-email-protect 1.1.0
+Fetching jekyll-regex-replace 1.1.0
+Fetching jekyll-twitter-plugin 2.1.0
+Installing jekyll-link-attributes 2.0.1
+Fetching ostruct 0.6.3
+Installing jekyll-regex-replace 1.1.0
+Fetching i18n 1.14.8
+Installing jekyll-twitter-plugin 2.1.0
+Installing ostruct 0.6.3
+Fetching tzinfo 2.0.6
+Fetching addressable 2.9.0
+Installing i18n 1.14.8
+Fetching rb-inotify 0.11.1
+Installing tzinfo 2.0.6
+Installing addressable 2.9.0
+Fetching kramdown 2.5.2
+Fetching pathutil 0.16.2
+Installing rb-inotify 0.11.1
+Fetching terminal-table 3.0.2
+Installing kramdown 2.5.2
+Installing pathutil 0.16.2
+Fetching nokogiri 1.19.4 (x86_64-linux-gnu)
+Installing terminal-table 3.0.2
+Fetching namae 1.2.0
+Installing namae 1.2.0
+Fetching bibtex-ruby 6.2.0
+Installing bibtex-ruby 6.2.0
+Fetching json-minify 0.0.3
+Installing json-minify 0.0.3
+Fetching time 0.4.2
+Fetching google-protobuf 4.35.0 (x86_64-linux-gnu)
+Installing time 0.4.2
+Fetching multi_xml 0.9.1
+Installing multi_xml 0.9.1
+Fetching classifier-reborn 2.3.0
+Installing classifier-reborn 2.3.0
+Installing google-protobuf 4.35.0 (x86_64-linux-gnu)
+Fetching terser 1.2.7
+Installing nokogiri 1.19.4 (x86_64-linux-gnu)
+Installing terser 1.2.7
+Fetching activesupport 7.2.3.1
+Fetching css_parser 1.22.0
+Installing css_parser 1.22.0
+Installing activesupport 7.2.3.1
+Fetching listen 3.10.0
+Installing listen 3.10.0
+Fetching kramdown-parser-gfm 1.1.0
+Installing kramdown-parser-gfm 1.1.0
+Fetching open-uri 0.5.0
+Fetching httparty 0.24.2
+Fetching sass-embedded 1.100.0 (x86_64-linux-gnu)
+Installing open-uri 0.5.0
+Fetching jekyll-watch 2.2.1
+Installing httparty 0.24.2
+Fetching loofah 2.25.2
+Installing jekyll-watch 2.2.1
+Installing loofah 2.25.2
+Fetching html-pipeline 2.14.3
+Installing html-pipeline 2.14.3
+Fetching citeproc 1.1.0
+Fetching csl 2.2.1
+Installing citeproc 1.1.0
+Fetching feedjira 4.0.2
+Installing csl 2.2.1
+Installing sass-embedded 1.100.0 (x86_64-linux-gnu)
+Fetching citeproc-ruby 2.1.8
+Installing feedjira 4.0.2
+Installing citeproc-ruby 2.1.8
+Fetching csl-styles 2.0.2
+Fetching jekyll-sass-converter 3.1.0
+Installing jekyll-sass-converter 3.1.0
+Installing csl-styles 2.0.2
+Fetching em-websocket 0.5.3
+Installing em-websocket 0.5.3
+Fetching jekyll 4.4.1
+Installing jekyll 4.4.1
+Fetching al_analytics 1.0.2
+Fetching al_charts 1.0.1
+Fetching al_citations 1.0.1
+Fetching al_comments 1.0.0
+Installing al_analytics 1.0.2
+Fetching al_cookie 1.0.1
+Installing al_comments 1.0.0
+Fetching al_email_protect 1.0.1
+Installing al_citations 1.0.1
+Fetching al_ext_posts 1.0.3
+Installing al_charts 1.0.1
+Fetching al_folio_bootstrap_compat 1.0.0
+Installing al_cookie 1.0.1
+Fetching al_folio_core 1.0.15
+Installing al_email_protect 1.0.1
+Fetching al_folio_cv 1.0.2
+Installing al_ext_posts 1.0.3
+Fetching al_folio_distill 1.0.3
+Installing al_folio_bootstrap_compat 1.0.0
+Fetching al_icons 1.0.0
+Installing al_folio_core 1.0.15
+Fetching jekyll-3rd-party-libraries 0.0.1
+Installing al_folio_cv 1.0.2
+Fetching al_marimo 1.0.0
+Installing al_folio_distill 1.0.3
+Fetching al_math 1.0.2
+Installing al_icons 1.0.0
+Fetching al_newsletter 1.0.0
+Installing jekyll-3rd-party-libraries 0.0.1
+Fetching al_rtl 1.0.0
+Installing al_marimo 1.0.0
+Fetching al_search 1.0.3
+Installing al_math 1.0.2
+Fetching jekyll-archives-v2 0.0.8
+Installing al_newsletter 1.0.0
+Fetching jekyll-cache-bust 0.0.1
+Installing al_rtl 1.0.0
+Fetching jekyll-feed 0.17.0
+Installing al_search 1.0.3
+Fetching jekyll-get-json 1.0.0
+Installing jekyll-archives-v2 0.0.8
+Fetching jekyll-imagemagick 1.4.0
+Installing jekyll-cache-bust 0.0.1
+Fetching jekyll-jupyter-notebook 0.0.6
+Installing jekyll-feed 0.17.0
+Fetching jekyll-minifier 0.2.2
+Installing jekyll-get-json 1.0.0
+Fetching jekyll-paginate-v2 3.0.0
+Installing jekyll-imagemagick 1.4.0
+Fetching jekyll-scholar 7.3.0
+Installing jekyll-jupyter-notebook 0.0.6
+Fetching jekyll-sitemap 1.4.0
+Installing jekyll-minifier 0.2.2
+Fetching jekyll-socials 0.0.7
+Installing jekyll-paginate-v2 3.0.0
+Fetching jekyll-tabs 1.2.1
+Installing jekyll-scholar 7.3.0
+Fetching jekyll-toc 0.19.0
+Installing jekyll-sitemap 1.4.0
+Fetching jemoji 0.13.0
+Installing jekyll-socials 0.0.7
+Fetching al_folio_upgrade 1.0.3
+Installing jekyll-tabs 1.2.1
+Fetching al_img_tools 1.0.3
+Installing jekyll-toc 0.19.0
+Installing jemoji 0.13.0
+Installing al_folio_upgrade 1.0.3
+Installing al_img_tools 1.0.3
+Bundle complete! 44 Gemfile dependencies, 119 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from minitest:
+NOTE: minitest 5 will be the last in the minitest family to support
+      ruby 1.8 to 2.7. If you need to keep using these versions,
+      you need to pin your dependency to minitest with something
+      like "~> 5.0". See History.rdoc to locate compatible
+      versions.
+
+      Further, minitest 6 will be dropping the following:
+
+      + MiniTest (it's been Minitest for >10 years)
+      + MiniTest::Unit
+      + MiniTest::Unit::TestCase
+      + assert_send (unless you argue for it well)
+      + assert_equal nil, obj
+      + mocks and stubs: moving minitest/mock.rb to its own gem
+Post-install message from httparty:
+When you HTTParty, you must party hard!
+Post-install message from html-pipeline:
+-------------------------------------------------
+Thank you for installing html-pipeline!
+You must bundle Filter gem dependencies.
+See html-pipeline README.md for more details.
+https://github.com/jch/html-pipeline#dependencies
+-------------------------------------------------
+exit=0
+
+$ jekyll build
+Configuration file: $S/replay/pre-alshedivat__al-folio/work/_config.yml
+[33m     al_folio_core: jekyll-jupyter-notebook is enabled but `jupyter-nbconvert` is not on PATH.[0m
+[33m     al_folio_core: Notebook rendering will be skipped for Jupyter posts until Python deps are installed.[0m
+[33m     al_folio_core: Install with `python3 -m pip install --user jupyter nbconvert`[0m
+[33m     al_folio_core: or run starter helper `./bin/setup-python-deps` if available.[0m
+            Source: $S/replay/pre-alshedivat__al-folio/work
+       Destination: $S/replay/pre-alshedivat__al-folio/work/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+DEPRECATION WARNING: to_time will always preserve the timezone offset of the receiver in Rails 8.0. To opt in to the new behavior, set `ActiveSupport.to_time_preserves_timezone = true`. (called from Kernel#load at $S/replay/pre-alshedivat__al-folio/gems/bin/jekyll:25)
+Fetching external posts from medium.com:
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `build` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+$S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'TCPSocket#initialize': Failed to open TCP connection to medium.com:443 (getaddrinfo(3): Name or service not known) (Socket::ResolutionError)
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'IO.open'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'block in Net::HTTP#connect'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/timeout.rb:185:in 'block in Timeout.timeout'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/timeout.rb:192:in 'Timeout.timeout'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1657:in 'Net::HTTP#connect'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1636:in 'Net::HTTP#do_start'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1625:in 'Net::HTTP#start'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:2369:in 'Net::HTTP#request'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty/request.rb:159:in 'HTTParty::Request#perform'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:621:in 'HTTParty::ClassMethods#perform_request'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:531:in 'HTTParty::ClassMethods#get'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:654:in 'HTTParty.get'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:34:in 'AlExtPosts::ExternalPostsGenerator#fetch_from_rss'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:25:in 'block in AlExtPosts::ExternalPostsGenerator#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:22:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:22:in 'AlExtPosts::ExternalPostsGenerator#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:193:in 'block in Jekyll::Site#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:191:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:191:in 'Jekyll::Site#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:79:in 'Jekyll::Site#process'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in 'Jekyll::Command.process_site'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in 'Jekyll::Commands::Build.build'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in 'Jekyll::Commands::Build.process'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'block in Jekyll::Command.process_with_graceful_fail'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'Jekyll::Command.process_with_graceful_fail'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in 'block (2 levels) in Jekyll::Commands::Build.init_with_program'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'block in Mercenary::Command#execute'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'Mercenary::Command#execute'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in 'Mercenary::Program#go'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary.rb:21:in 'Mercenary.program'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/exe/jekyll:15:in '<top (required)>'
+	from $S/replay/pre-alshedivat__al-folio/gems/bin/jekyll:25:in 'Kernel#load'
+	from $S/replay/pre-alshedivat__al-folio/gems/bin/jekyll:25:in '<main>'
+$S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'TCPSocket#initialize': getaddrinfo(3): Name or service not known (Socket::ResolutionError)
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'IO.open'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1659:in 'block in Net::HTTP#connect'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/timeout.rb:185:in 'block in Timeout.timeout'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/timeout.rb:192:in 'Timeout.timeout'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1657:in 'Net::HTTP#connect'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1636:in 'Net::HTTP#do_start'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:1625:in 'Net::HTTP#start'
+	from $S/ruby/3.4.7/lib/ruby/3.4.0/net/http.rb:2369:in 'Net::HTTP#request'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty/request.rb:159:in 'HTTParty::Request#perform'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:621:in 'HTTParty::ClassMethods#perform_request'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:531:in 'HTTParty::ClassMethods#get'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/httparty-0.24.2/lib/httparty.rb:654:in 'HTTParty.get'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:34:in 'AlExtPosts::ExternalPostsGenerator#fetch_from_rss'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:25:in 'block in AlExtPosts::ExternalPostsGenerator#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:22:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/al_ext_posts-1.0.3/lib/al_ext_posts.rb:22:in 'AlExtPosts::ExternalPostsGenerator#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:193:in 'block in Jekyll::Site#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:191:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:191:in 'Jekyll::Site#generate'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/site.rb:79:in 'Jekyll::Site#process'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in 'Jekyll::Command.process_site'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in 'Jekyll::Commands::Build.build'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in 'Jekyll::Commands::Build.process'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'block in Jekyll::Command.process_with_graceful_fail'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in 'Jekyll::Command.process_with_graceful_fail'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in 'block (2 levels) in Jekyll::Commands::Build.init_with_program'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'block in Mercenary::Command#execute'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'Array#each'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in 'Mercenary::Command#execute'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in 'Mercenary::Program#go'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/mercenary-0.4.0/lib/mercenary.rb:21:in 'Mercenary.program'
+	from $S/replay/pre-alshedivat__al-folio/gems/gems/jekyll-4.4.1/exe/jekyll:15:in '<top (required)>'
+	from $S/replay/pre-alshedivat__al-folio/gems/bin/jekyll:25:in 'Kernel#load'
+	from $S/replay/pre-alshedivat__al-folio/gems/bin/jekyll:25:in '<main>'
+exit=1
+
+BUILD FAILED
+$ cp -R _site/* '$S/replay/pre-alshedivat__al-folio/static_app/'
+cp: cannot stat '_site/*': No such file or directory
+exit=1
+
+COPY FAILED
+$ static-web-server --root=$S/replay/pre-alshedivat__al-folio/static_app --log-level=info --port=3663 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+404	page	/feed.xml	text/html	0
+--	title	/feed.xml	(none)	
+404	page	/sitemap.xml	text/html	0
+--	title	/sitemap.xml	(none)	
+SUMMARY pages=4 refs_checked=0 failures=4
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/404.html	text/html	0
+FAIL	404	page	/feed.xml	text/html	0
+FAIL	404	page	/sitemap.xml	text/html	0
+# static_app files: 0

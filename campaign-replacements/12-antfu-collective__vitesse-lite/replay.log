@@ -1,0 +1,141 @@
+# replay of t-vlite2  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/antfu-collective__vitesse-lite  upstream HEAD=0b352977755e1f7f6399698e308777760409ca71
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-vlite2/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@12.3.4 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+12.3.4
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Error: ERR_PNPM_LOCKFILE_CONFIG_MISMATCH
+
+  × installing dependencies
+  ╰─▶ Cannot proceed with the frozen installation. The current "catalogs"
+      configuration doesn't match the value found in the lockfile
+  help: Update your lockfile using "pnpm install --no-frozen-lockfile"
+
+exit=1
+
+INSTALL FAILED
+$ pnpm run build
+✓ Lockfile passes supply-chain policies (verified 12m ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Packages: +624
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 624, reused 624, downloaded 0, added 624, done
+. postinstall$ npx simple-git-hooks
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: [INFO] No `.git` root folder found, skipping
+. postinstall: Done
+
+dependencies:
++ @vueuse/core 14.4.0
++ vue 3.5.42
++ vue-router 5.3.1
+
+devDependencies:
++ @antfu/eslint-config 9.5.1
++ @iconify-json/carbon 1.2.26
++ @types/node 26.5.0
++ @unocss/eslint-plugin 66.10.0
++ @vitejs/plugin-vue 6.0.8
++ @vue-macros/volar 3.1.4
++ @vue/test-utils 2.5.0
++ eslint 10.10.0
++ eslint-plugin-format 2.0.1
++ jsdom 30.0.1
++ lint-staged 17.5.0
++ simple-git-hooks 2.14.0
++ taze 21.1.0
++ typescript 6.0.3
++ unocss 66.10.0
++ unplugin-auto-import 21.1.0
++ unplugin-vue-components 32.1.0
++ unplugin-vue-macros 2.14.5
++ vite 8.2.2
++ vitest 5.0.0
++ vue-tsc 3.3.11
+
+Done in 3.3s using pnpm v12.3.4
+$ vite build
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.ts:16:29). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                    1.06 kB │ gzip:  0.58 kB
+dist/assets/index-dw0Xbbyy.css    15.99 kB │ gzip:  4.37 kB
+dist/assets/_...all_-ZUgBIOOq.js   0.16 kB │ gzip:  0.15 kB
+dist/assets/_name_-WbEs9uK2.js     0.51 kB │ gzip:  0.35 kB
+dist/assets/pages-BEe680Ds.js      1.35 kB │ gzip:  0.80 kB
+dist/assets/index-BYh21xOI.js     97.73 kB │ gzip: 37.98 kB
+
+[32m✓ built in 2.06s[39m
+exit=0
+
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-vlite2/static_app --log-level=info --port=3622 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1064
+--	title	/	Vitesse Lite	
+404	page	/about	text/html	0
+--	title	/about	(none)	
+404	page	/hi/test	text/html	0
+--	title	/hi/test	(none)	
+200	ref	/favicon.svg	image/svg+xml	347
+200	ref	/assets/index-BYh21xOI.js	text/javascript	97737
+200	ref	/assets/index-dw0Xbbyy.css	text/css	15994
+SUMMARY pages=3 refs_checked=3 failures=2
+FAIL	404	page	/about	text/html	0
+FAIL	404	page	/hi/test	text/html	0
+# static_app files: 7

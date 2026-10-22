@@ -1,0 +1,62 @@
+# replay of pre-jeffreytse__jekyll-theme-yat  source=$S/rup/jeffreytse__jekyll-theme-yat  upstream HEAD=f63b78f74dc12ad90badd484a841fd70a6453dbe
+# local diff vs HEAD: 
+  Detected Jekyll provider
+    Jekyll version: 4.3.0
+    Ruby version: 3.4.7
+    Output directory: _site
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/pre-jeffreytse__jekyll-theme-yat/plan.json
+# provider=jekyll install='bundle install' build='jekyll build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='' pm=@ inputs='' all_files=False
+$ ruby -v
+ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [x86_64-linux]
+exit=0
+
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+
+[!] There was an error parsing `Gemfile`: There are no gemspecs at $S/replay/pre-jeffreytse__jekyll-theme-yat/work. Bundler cannot continue.
+
+ #  from $S/replay/pre-jeffreytse__jekyll-theme-yat/work/Gemfile:4
+ #  -------------------------------------------
+ #  source "https://rubygems.org"
+ >  gemspec
+ #  
+ #  -------------------------------------------
+exit=15
+
+INSTALL FAILED
+$ jekyll build
+$S/scripts/replay.sh: line 20: jekyll: command not found
+exit=127
+
+BUILD FAILED
+$ cp -R _site/* '$S/replay/pre-jeffreytse__jekyll-theme-yat/static_app/'
+cp: cannot stat '_site/*': No such file or directory
+exit=1
+
+COPY FAILED
+$ static-web-server --root=$S/replay/pre-jeffreytse__jekyll-theme-yat/static_app --log-level=info --port=3659 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+404	page	/feed.xml	text/html	0
+--	title	/feed.xml	(none)	
+404	page	/sitemap.xml	text/html	0
+--	title	/sitemap.xml	(none)	
+SUMMARY pages=4 refs_checked=0 failures=4
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/404.html	text/html	0
+FAIL	404	page	/feed.xml	text/html	0
+FAIL	404	page	/sitemap.xml	text/html	0
+# static_app files: 0

@@ -1,0 +1,175 @@
+# replay of t-moodist  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/remvze__moodist  upstream HEAD=11c0be2200116a3635880d600fd6953899cc51a3
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +947
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 947, reused 17, downloaded 0, added 0
+Progress: resolved 947, reused 269, downloaded 12, added 4
+Progress: resolved 947, reused 269, downloaded 26, added 8
+Progress: resolved 947, reused 269, downloaded 65, added 24
+Progress: resolved 947, reused 269, downloaded 90, added 32
+Progress: resolved 947, reused 269, downloaded 150, added 53
+Progress: resolved 947, reused 269, downloaded 211, added 80
+Progress: resolved 947, reused 269, downloaded 298, added 198
+Progress: resolved 947, reused 269, downloaded 364, added 265
+Progress: resolved 947, reused 269, downloaded 424, added 304
+Progress: resolved 947, reused 269, downloaded 462, added 320
+Progress: resolved 947, reused 269, downloaded 598, added 382
+Progress: resolved 947, reused 269, downloaded 677, added 584
+Progress: resolved 947, reused 269, downloaded 677, added 779
+Progress: resolved 947, reused 269, downloaded 678, added 947, done
+
+dependencies:
++ @astrojs/react 6.0.5
++ @types/howler 2.2.10
++ @types/react 19.2.17
++ @types/react-dom 19.2.3
++ @vite-pwa/astro 1.2.0
++ astro 7.3.1
++ cmdk 1.1.1
++ deepmerge 4.3.1
++ focus-trap-react 10.2.3
++ howler 2.2.4
++ js-confetti 0.12.0
++ motion 12.23.24
++ radix-ui 1.5.0
++ react 19.2.7
++ react-dom 19.2.7
++ react-hotkeys-hook 3.2.1
++ react-icons 4.11.0
++ react-wrap-balancer 1.1.0
++ react-youtube 10.1.0
++ uuid 14.0.0
++ zustand 4.4.3
+
+devDependencies:
++ @biomejs/biome 2.4.16
++ @commitlint/cli 21.0.2
++ @commitlint/config-conventional 21.0.2
++ autoprefixer 10.5.0
++ commitizen 4.3.1
++ cz-conventional-changelog 3.3.0
++ husky 9.1.7
++ lint-staged 17.0.7
++ postcss-nesting 14.0.0
++ standard-version 9.5.0
++ workbox-window 7.4.1
+
+
+> moodist@3.1.1 prepare /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work
+> husky
+
+.git can't be found╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.28.2.                                     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 18.7s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> moodist@3.1.1 build /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work
+> astro build
+
+[2m05:09:40[22m [34m[vite][39m [optimizer] bundling dependencies...
+[2m05:09:40[22m [34m[types][39m Generated [2m1.45s[22m
+[2m05:09:40[22m [34m[build][39m output: [34m"static"[39m
+[2m05:09:40[22m [34m[build][39m mode: [34m"static"[39m
+[2m05:09:40[22m [34m[build][39m directory: [34m/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/work/dist/[39m
+[2m05:09:40[22m [34m[build][39m Collecting build info...
+[2m05:09:40[22m [34m[build][39m [32m✓ Completed in 1.61s.[39m
+[2m05:09:40[22m [34m[build][39m Building static entrypoints...
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'fonts.google.com'
+  }
+}
+[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mInter Tight[22m. Review your configuration
+[33m[1m05:09:44[22m [WARN] [assets][39m No data found for font family [1mFraunces[22m. Review your configuration
+[2m05:09:45[22m [34m[assets][39m Copying fonts (0 files)...
+[2m05:09:45[22m [34m[vite][39m [32m✓ built in 4.48s[39m
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'fonts.google.com'
+  }
+}
+[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mInter Tight[22m. Review your configuration
+[33m[1m05:09:48[22m [WARN] [assets][39m No data found for font family [1mFraunces[22m. Review your configuration
+[2m05:09:54[22m [34m[vite][39m [32m✓ built in 9.31s[39m
+[33m[1m05:09:54[22m [WARN] [vite][39m [33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[2m05:09:54[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m05:09:56[22m   [34m├─[39m [2m/index.html[22m [2m(+156ms)[22m 
+[2m05:09:56[22m [32m✓ Completed in 1.56s.
+[39m
+[2m05:09:56[22m [34m[build][39m [32m✓ Completed in 15.59s.[39m
+[2m05:09:59[22m [34m[build][39m Waiting for integration [1m"@vite-pwa/astro-integration"[22m, hook [1m"astro:build:done"[22m...
+[2m05:10:00[22m [34m[build][39m 1 page(s) built in [1m20.82s[22m
+[2m05:10:00[22m [34m[build][39m [1mComplete![22m
+exit=0
+
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/t-moodist/static_app --log-level=info --port=3614 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	225579
+--	title	/	Moodist: Ambient Sounds for Focus and Calm	
+200	page	/manifest.webmanifest	application/manifest+json	705
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.svg	image/svg+xml	10410
+200	ref	/_astro/index.CAtT-LGi.css	text/css	59721
+200	ref	/images/hero-background.webp	image/webp	698490
+200	ref	/logo.svg	image/svg+xml	10398
+SUMMARY pages=3 refs_checked=4 failures=1
+FAIL	404	page	/nope	text/html	0
+# static_app files: 122
