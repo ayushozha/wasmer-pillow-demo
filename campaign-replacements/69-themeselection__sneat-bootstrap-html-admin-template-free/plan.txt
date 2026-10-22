@@ -1,0 +1,6 @@
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/AnybuildPfFBIe
+Plan saved to $S/replay/69-sneat/plan.json
