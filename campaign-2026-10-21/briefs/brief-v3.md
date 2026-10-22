@@ -130,3 +130,14 @@ A table per repo (status, stars, license, provider/static_dir, normal build, rep
   - static_dir is `destination`, or `_site` by default.
   - HOLD a site whose plugins aren't in the Gemfile, or that needs GitHub Pages-only behaviour (the `github-pages` gem, or `remote_theme` without the jekyll-remote-theme plugin).
 - **Replay:** tools/anybuild_flat_replay.py now supports providers hugo and jekyll. It copies the full source, runs the planned install and build, and uses the default static_dir. The SWS smoke dir is `/tmp/claude-0/flat-replay/<key>/opt/temp/<public|_site|publishDir>`.
+
+## Addendum: wave 3 (2026-10-22)
+
+- Replay tool fixes:
+  - Node: it honours `node_install_requires_all_files`.
+  - Jekyll: it stages only Gemfile and Gemfile.lock before install, and puts the gem bindir on PATH.
+  - It removes the untracked `Anybuild` file that `plan` writes.
+- Wasmer serves with SWS 2.32.2 compiled to wasm. Native SWS smokes are evidence of default static serving only; say so in PR bodies.
+- SPA fallback: Wasmer has no page-fallback. Root has PROVEN exact `[[advanced.rewrites]]` via `static_redirects_config` for known routes. A history-router app stays HELD_RUNTIME. Do NOT write rewrites yourself; the TailAdmin pilot is still being corrected and replayed. Flag such apps as "rewrite candidate" with their finite route list.
+- Publishing is paused (GitHub rate limit). Keep preparing artifacts only.
+- Prefer apps with concrete hosted value and an active maintainer: outside merges in 2025-2026, or an owner who still commits and has no refusal. Disclose maintenance risk honestly.
