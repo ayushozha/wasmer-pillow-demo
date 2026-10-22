@@ -1,5 +1,5 @@
---- /tmp/claude-0/rw/Anybuild.generated	2026-10-22 05:59:15.999575911 +0000
-+++ Anybuild	2026-10-22 05:59:16.017048149 +0000
+--- Anybuild.generated
++++ Anybuild
 @@ -12,6 +12,70 @@
      node_server = "node",
      node_version = "24",

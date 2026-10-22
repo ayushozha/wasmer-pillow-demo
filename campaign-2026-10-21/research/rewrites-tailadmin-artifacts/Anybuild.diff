@@ -1,5 +1,5 @@
---- /home/user/wasmer-pillow-demo/campaign-2026-10-21/research/rewrites-tailadmin-artifacts/Anybuild.generated	2026-10-22 06:04:49.530428164 +0000
-+++ Anybuild	2026-10-22 06:09:38.013130250 +0000
+--- Anybuild.generated
++++ Anybuild
 @@ -12,6 +12,71 @@
      node_server = "node",
      node_version = "24",

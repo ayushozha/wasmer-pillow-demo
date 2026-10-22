@@ -18,7 +18,7 @@ The `Anybuild` file fixes this for exactly the routes the app defines. Wasmer th
 
 The file is what Anybuild 0.33.0 generates with `anybuild generate .` (npm, Vite, `dist`, `schema = 1`, `sws_version = "2.38.0"`). One argument is added to `nodestatic_config(...)`: `static_redirects_config`, which holds a static-web-server TOML config.
 
-The config is 15 `[[advanced.rewrites]]` rules, one for each route in `src/App.tsx` apart from `/`. Each rule has the shape `source = "/profile"`, `destination = "/index.html"`, and none has a `redirect` key.
+The config is 15 `[[advanced.rewrites]]` rules, one for each route in `src/App.tsx` apart from `/`. Each rule has the shape `source = "{/profile,/profile/}"`, `destination = "/index.html"`, so the route works with or without a trailing slash. None of the rules has a `redirect` key.
 
 Public sources:
 
@@ -30,11 +30,12 @@ Public sources:
   - `source` is a glob.
   - Without a `redirect` key, the server does an internal rewrite. It serves the `destination` file with its normal 200 response, and no redirect is sent to the browser.
   - A source with no wildcards matches only that exact path.
+- **globset** [syntax](https://docs.rs/globset/0.4.14/globset/#syntax) (the glob crate static-web-server uses): `{a,b}` matches `a` or `b`. static-web-server compiles each source to an anchored regex, so `{/profile,/profile/}` becomes `^(/profile/|/profile)$`.
 - **static-web-server** [Configuration File](https://static-web-server.net/configuration/config-file/) documents the `[advanced]` and `[[advanced.rewrites]]` syntax.
 
-Because every rule is an exact path, behaviour for anything else stays the same:
+Because every rule lists exact paths, behaviour for anything else stays the same:
 
-- unknown URLs such as `/nope` still return 404;
+- unknown URLs such as `/nope` and nested paths such as `/profile/extra` still return 404;
 - missing assets such as `/assets/nope.js` still return 404;
 - real files under `/assets/` and `/images/` are served as before.
 
@@ -49,7 +50,7 @@ Everything below ran on Linux at base commit `e888dd1716b9803b535c7c2fa4f2c6b7d3
 
 **Build**
 - `anybuild build . --builder=local` ran `npm ci` and `npm run build` and exited 0.
-- The written `sws.toml` matches the TOML in the `Anybuild` file byte for byte (sha256 `fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0`).
+- The written `sws.toml` matches the TOML in the `Anybuild` file byte for byte (sha256 `a58d026a0a8b8ec7e2e30bdff89e81e8758a7b458cd6a1c24ddac206a806d06f`).
 
 **Rendered Wasmer files**
 - `anybuild build . --runner=wasmer` rendered `wasmer.toml`. Nothing was deployed.
@@ -57,14 +58,14 @@ Everything below ran on Linux at base commit `e888dd1716b9803b535c7c2fa4f2c6b7d3
 
 **HTTP checks**
 
-I served the build with `anybuild run . --start`, on native static-web-server 2.32.2 and on 2.38.0. Both gave the same results:
+I served the build with `anybuild run . --start`, on native static-web-server 2.32.2 and on 2.38.0. Both gave the same results (86 requests, all as expected):
 
 | Request | Result |
 |---|---|
-| `/` and all 15 routes | 200 `text/html`, body identical to `index.html` |
-| `/profile?x=1` | 200 |
-| `/images` (a route that is also a folder in `public/`) | 200 |
-| `/nope`, `/profile/extra`, `/profile/`, `/assets/nope.js`, `/images/nope.png` | 404 |
+| `/` and all 15 routes, each as `/route`, `/route/`, `/route?x=1` and `/route/?x=1` | 200 `text/html`, body identical to `index.html` |
+| `/images` and `/images/` (a route that is also a folder in `public/`) | 200 |
+| `HEAD /profile`, `HEAD /profile/` | 200 |
+| `/nope`, `/nope/`, `/profile/extra`, `/profile/extra/`, `/profile//`, `/profiles`, `/signin/x`, `/assets/`, `/assets/nope.js`, `/images/nope.png` | 404 |
 | hashed JS | 200 `text/javascript` |
 | hashed CSS | 200 `text/css` |
 | `/favicon.png` | 200 `image/png` |
@@ -73,9 +74,12 @@ I served the build with `anybuild run . --start`, on native static-web-server 2.
 
 In headless Chromium I tested:
 - a direct load and a refresh of every route, plus `/profile?x=1` and `/calendar#today`;
+- a direct load and a refresh of `/profile/`, `/calendar/`, `/signin/`, `/basic-tables/?x=1` and `/images/`. React Router renders the same page as without the slash;
 - sidebar navigation from `/` to `/profile` and `/calendar`, each followed by a refresh.
 
-Each page rendered its expected title. There were no failed same-origin requests and no JS errors. The YouTube embeds on `/videos` could not load in my offline sandbox.
+Each page rendered its expected title. There were no failed same-origin requests and no JS errors, with two exceptions:
+- on `/profile/`, the profile card's avatar returns 404. `src/components/UserProfile/UserMetaCard.tsx` line 24 uses the relative path `./images/user/owner.png`, which resolves to `/profile/images/user/owner.png` under a trailing slash. This happens on any host that serves `/profile/`, and the rest of the page renders;
+- the YouTube embeds on `/videos` could not load in my offline sandbox.
 
 **Control**
 
@@ -89,7 +93,7 @@ The same build without the `Anybuild` argument returns 404 for every route, and 
 
 - **Known routes only.** The list mirrors `src/App.tsx`. When you add a route there, add the same path to `static_redirects_config` in `Anybuild`, or that page will return 404 when someone opens it directly. The README section says so.
 - **Unknown URLs return a server 404 on direct load.** The app's own "404" page (`path="*"`) only appears after in-app navigation.
-- **Trailing slashes are not covered.** `/profile/` returns 404.
+- **Trailing slashes.** `/route/` is served like `/route`. On `/profile/`, one avatar uses a relative image path and shows as broken (see Testing). Deeper paths such as `/profile/extra` return 404.
 - **Anybuild and Wasmer only.** Other hosts ignore the `Anybuild` file.
 - **Regeneration drops the rules.** `anybuild generate` does not keep `static_redirects_config`, so re-add it if you regenerate the file.
 - **Build environment variables override the rules.** If `ANYBUILD_STATIC_REDIRECTS_CONFIG` or `SHIPIT_STATIC_REDIRECTS_CONFIG` is set in the build environment, it replaces the rules.
