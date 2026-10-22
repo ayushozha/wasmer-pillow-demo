@@ -1,0 +1,35 @@
+{
+  "payload": "x\" data-wasmer-marker=\"probe",
+  "sanitized": "x\" data-wasmer-marker=\"probe",
+  "generic": {
+    "html": "<span title=\"x\" data-wasmer-marker=\"probe\">x\" data-wasmer-marker=\"probe</span>",
+    "attrs": [
+      "title=\"x\"",
+      "data-wasmer-marker=\"probe\""
+    ],
+    "markerAttrPresent": true
+  },
+  "importMeta": {
+    "html": "\n  <div class=\"import-name\">\n    <span class=\"import-meta-label\">Name</span>\n    <span class=\"import-meta-value\" title=\"x\" data-wasmer-marker=\"probe\">x\" data-wasmer-marker=\"probe</span>\n  </div>\n  <div class=\"import-dimensions\">\n    <span class=\"import-meta-label\">Dimensions</span>\n    <span class=\"import-meta-value\">1x1</span>\n  </div>\n  <div class=\"import-frames\">\n    <span class=\"import-meta-label\">Frames</span>\n    <span class=\"import-meta-value\">1</span>\n  </div>\n  <div class=\"import-layers\">\n    <span class=\"import-meta-label\">Layers</span>\n    <span class=\"import-meta-value\">1</span>\n  </div>\n",
+    "attrs": [
+      "class=\"import-meta-value\"",
+      "title=\"x\"",
+      "data-wasmer-marker=\"probe\""
+    ],
+    "markerAttrPresent": true
+  },
+  "layerTemplateId": "layer-name-input-template",
+  "layerInput": {
+    "html": "\n    <input class=\"textfield layer-name-input\" type=\"text\" autocomplete=\"off\" value=\"x\" data-wasmer-marker=\"probe\" data-test-id=\"layer-name-input\" />\n  ",
+    "attrs": [
+      "class=\"textfield layer-name-input\"",
+      "type=\"text\"",
+      "autocomplete=\"off\"",
+      "value=\"x\"",
+      "data-wasmer-marker=\"probe\"",
+      "data-test-id=\"layer-name-input\""
+    ],
+    "markerAttrPresent": true
+  },
+  "blockedOrigins": []
+}

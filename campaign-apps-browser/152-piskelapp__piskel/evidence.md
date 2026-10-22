@@ -1,6 +1,18 @@
+> **HOLD (security, root review 2026-10-22) — DO NOT PUBLISH a deployment PR** until a proper remediation/disclosure process has run. No public security comment, issue or app change has been made.
+
+## Attribute-injection check (local, DOM-only)
+Source path (root's review, lines re-checked in the pinned tree): `src/js/utils/Template.js:78-85` `sanitize()` sets `div.textContent = value` and returns `div.innerHTML`, which escapes `<`, `>` and `&` but **not double quotes**; `Template.replace()` applies it to every value (`Template.js:54`) and substitutes into templates that place values inside double-quoted attributes. An imported `.piskel` file's `piskel.name` flows `Deserializer.js:34-39` → descriptor → `AbstractImportStep.js:64-73` → `templates/dialogs/import.html:90` `title="{{name}}"`; layer names reach `templates/layers-list.html:80` `value="{{layername}}"` (layer-name-input-template) on rename.
+
+Probe (`receipt-attr-probe.script.js`, output `receipt-attr-probe.json`): headless Chromium against the locally replayed build, served from 127.0.0.1 only (every other request aborted; none were attempted), payload `x" data-wasmer-marker="probe` (no script). Each result was parsed into a **detached** element and only its attributes were read:
+- `sanitize(payload)` returns the payload unchanged (quote not escaped).
+- Generic `replace('<span title="{{name}}">…')`, the real `import-meta-content` template and the real `layer-name-input-template`: in all three the parsed element gains a **new `data-wasmer-marker="probe"` attribute** (`markerAttrPresent: true`).
+Confirmed: a crafted name in an imported file or a layer name can add attributes to elements rendered from these templates. Not tested (deliberately): any script-bearing payload, the full file-import UI flow, or any network effect.
+
+Correction: the earlier line "The editor renders no third-party content" was wrong — imported `.piskel` files are third-party input that reaches these templates.
+
 # piskelapp/piskel: evidence
 
-**Verdict: READY.** One caveat for the reviewer: the patch adds a one-line `Staticfile`, so it is slightly more than "documentation only". The README's contribution guidance accepts small changes of "only a few words or lines"; it is the reviewer's call whether to mention the Staticfile up front, as the PR body does.
+**Verdict: HOLD (security; see top).** Previously READY on build grounds: One caveat for the reviewer: the patch adds a one-line `Staticfile`, so it is slightly more than "documentation only". The README's contribution guidance accepts small changes of "only a few words or lines"; it is the reviewer's call whether to mention the Staticfile up front, as the PR body does.
 
 ## Repository
 - Pinned SHA: `d828941fa9fe76464d69d91d5fd862067c98c02c` on `master`. The commit is from 2026-10-21. `master` is the default branch and the branch CI runs on.
@@ -45,7 +57,7 @@
   - jquery-ui 1.10.3: 5 moderate.
   - bootstrap-tooltip (Bootstrap 2.x era; I assumed version 2.3.2 for the lookup): 6 moderate.
   - jszip 2.1.1.
-- None of these are high or critical. They are moderate XSS issues that need attacker-controlled HTML passed into those APIs. The editor renders no third-party content, but these are long-standing upstream debts and should be noted.
+- None of these are high or critical. They are moderate XSS issues that need attacker-controlled HTML passed into those APIs. (Earlier wording here claimed the editor renders no third-party content; that was wrong — see the attribute-injection section above.) These are long-standing upstream debts and should be noted.
 - `npm audit` reported 41 issues (7 critical), all in dev/build tooling (karma, nw-builder, request, and others). None of it is shipped to the browser.
 
 ## Remaining checks for the reviewer
