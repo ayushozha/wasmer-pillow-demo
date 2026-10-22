@@ -1,0 +1,116 @@
+# build.log for 06-Nutlope__roomGPT -- real output captured 2026-10-22 in a copy of the pinned clone ($SCRATCH = worker scratch dir)
+
+$ node -v
+v22.22.0
+exit=0
+
+$ npm -v
+10.9.4
+exit=0
+
+$ git -C $SCRATCH/up/06-Nutlope__roomGPT rev-parse HEAD
+611398c78da64f1794df2d99018c3d02d3ab0048
+exit=0
+
+$ npm ci
+
+added 190 packages, and audited 191 packages in 1m
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+20 vulnerabilities (1 low, 10 moderate, 7 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> build
+> next build
+
+- info Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+- info Compiled successfully
+- info Linting and checking validity of types...
+- info Collecting page data...
+- info Generating static pages (0/5)
+- info Generating static pages (1/5)
+- info Generating static pages (2/5)
+
+- warn metadata.metadataBase is not set for resolving social open graph or twitter images, fallbacks to "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+
+
+
+- info Generating static pages (3/5)
+
+
+
+
+- info Generating static pages (5/5)
+- info Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+┌ ○ /                                      184 B          87.4 kB
+├ ○ /dream                                 109 kB          196 kB
+└ λ /generate                              0 B                0 B
++ First Load JS shared by all              77.4 kB
+  ├ chunks/2443530c-572b24363cbae43f.js    50.6 kB
+  ├ chunks/488-bb8ec137247bd86f.js         24.8 kB
+  ├ chunks/main-app-c6591c6f2184642d.js    216 B
+  └ chunks/webpack-11b1332dbdd47028.js     1.82 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   181 B          74.9 kB
++ First Load JS shared by all              74.7 kB
+  ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
+  ├ chunks/main-8b078dc4c5678e25.js        27.7 kB
+  ├ chunks/pages/_app-b555d5e1eab47959.js  194 B
+  └ chunks/webpack-11b1332dbdd47028.js     1.82 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+exit=0
+
+$ PORT=3106 npm start   (background; output below after smoke)
+$ curl -sS -o /dev/null -w "%{http_code}" http://localhost:3106/
+200
+$ curl -sS http://localhost:3106/ | grep -o "Generating dream rooms using AI for everyone.\|Redesign your room\|roomGPT" | sort -u
+roomGPT
+$ curl -sS -o /dev/null -w "%{http_code}" http://localhost:3106/dream
+200
+$ curl -sS http://localhost:3106/dream | grep -o -i "upload a photo of your room\|choose your room theme\|Generate your dream" | sort -u
+Choose your room theme
+Generate your dream
+$ curl -sS -X POST -H "Content-Type: application/json" -d "not-json" -o /dev/null -w "%{http_code}" http://localhost:3106/generate   # malformed body, no outbound call
+500
+--- server output (npm start) ---
+
+> start
+> next start
+
+- ready started server on 0.0.0.0:3106, url: http://localhost:3106
+(node:5688) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+- error SyntaxError: Unexpected token 'o', "not-json" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5852:19)
+    at successSteps (node:internal/deps/undici/undici:5833:27)
+    at fullyReadBody (node:internal/deps/undici/undici:4725:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async consumeBody (node:internal/deps/undici/undici:5842:7)
+    at async POST ($SCRATCH/build/06-Nutlope__roomGPT/.next/server/app/generate/route.js:108:42)
+    at async $SCRATCH/build/06-Nutlope__roomGPT/.next/server/chunks/434.js:4286:37
+$ kill <npm start pid>  (server stopped)

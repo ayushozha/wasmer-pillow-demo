@@ -1,0 +1,21 @@
+diff --git a/README.md b/README.md
+index 3f9430d..8358f46 100644
+--- a/README.md
++++ b/README.md
+@@ -50,6 +50,16 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/roomGPT&env=REPLICATE_API_KEY&project-name=room-GPT&repo-name=roomGPT)
+ 
++Or deploy it to [Wasmer](https://wasmer.io):
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=Nutlope%2FroomGPT)
++
++Wasmer detects Next.js, installs dependencies with npm (from `package-lock.json`), runs `npm run build` (`next build`) and serves the production build with Node. The button builds this public repo as-is and does not fork or copy it; to customize the app (start with `app/dream/page.tsx`) and redeploy on every push, fork it and connect your fork from the Wasmer dashboard. Set these in the app's Settings → Environment Vars:
++
++- `REPLICATE_API_KEY` (required): used by `/generate` to run the ControlNet model on Replicate.
++- `NEXT_PUBLIC_UPLOAD_API_KEY` (optional): your Bytescale key for image uploads; it is inlined at build time, so set it before building. Without it the upload widget uses Bytescale's `free` demo key.
++- `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` (optional): enable rate limiting (5 generations per IP per day); skipped when unset.
++
+ ## License
+ 
+ This repo is MIT licensed.
