@@ -1,0 +1,62 @@
+# SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.
+[advanced]
+
+[[advanced.rewrites]]
+source = "/profile"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/calendar"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/blank"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/form-elements"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/basic-tables"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/alerts"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/avatars"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/badge"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/buttons"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/images"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/videos"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/line-chart"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/bar-chart"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/signin"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/signup"
+destination = "/index.html"

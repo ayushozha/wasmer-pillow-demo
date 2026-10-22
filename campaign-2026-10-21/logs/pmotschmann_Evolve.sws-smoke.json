@@ -7,7 +7,7 @@
         "path": "/",
         "status": 200,
         "location": null,
-        "bytes": 3230
+        "bytes": 3100
       }
     ],
     "/index.html": [
@@ -15,7 +15,7 @@
         "path": "/index.html",
         "status": 200,
         "location": null,
-        "bytes": 3230
+        "bytes": 3100
       }
     ],
     "/wiki.html": [
@@ -23,7 +23,7 @@
         "path": "/wiki.html",
         "status": 200,
         "location": null,
-        "bytes": 2570
+        "bytes": 2438
       }
     ],
     "/save.html": [
@@ -31,7 +31,7 @@
         "path": "/save.html",
         "status": 200,
         "location": null,
-        "bytes": 1321
+        "bytes": 1484
       }
     ],
     "/evolve/main.js": [
@@ -39,7 +39,7 @@
         "path": "/evolve/main.js",
         "status": 200,
         "location": null,
-        "bytes": 2303101
+        "bytes": 3287172
       }
     ],
     "/evolve/evolve.css": [
@@ -47,7 +47,15 @@
         "path": "/evolve/evolve.css",
         "status": 200,
         "location": null,
-        "bytes": 194688
+        "bytes": 260018
+      }
+    ],
+    "/evolve/save-codec.js": [
+      {
+        "path": "/evolve/save-codec.js",
+        "status": 200,
+        "location": null,
+        "bytes": 7635
       }
     ],
     "/wiki/wiki.js": [
@@ -55,7 +63,7 @@
         "path": "/wiki/wiki.js",
         "status": 200,
         "location": null,
-        "bytes": 2432597
+        "bytes": 3374391
       }
     ],
     "/wiki/wiki.css": [
@@ -63,7 +71,7 @@
         "path": "/wiki/wiki.css",
         "status": 200,
         "location": null,
-        "bytes": 5965
+        "bytes": 6026
       }
     ],
     "/strings/strings.json": [
@@ -71,15 +79,7 @@
         "path": "/strings/strings.json",
         "status": 200,
         "location": null,
-        "bytes": 849541
-      }
-    ],
-    "/strings/strings.cs-CZ.json": [
-      {
-        "path": "/strings/strings.cs-CZ.json",
-        "status": 200,
-        "location": null,
-        "bytes": 355751
+        "bytes": 1116331
       }
     ],
     "/strings/strings.ja-JP.json": [
@@ -87,7 +87,15 @@
         "path": "/strings/strings.ja-JP.json",
         "status": 200,
         "location": null,
-        "bytes": 971284
+        "bytes": 1000627
+      }
+    ],
+    "/strings/strings.zh-CN.json": [
+      {
+        "path": "/strings/strings.zh-CN.json",
+        "status": 200,
+        "location": null,
+        "bytes": 850904
       }
     ],
     "/lib/lz-string.min.js": [
@@ -96,6 +104,14 @@
         "status": 200,
         "location": null,
         "bytes": 4718
+      }
+    ],
+    "/lib/fflate.min.js": [
+      {
+        "path": "/lib/fflate.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 32665
       }
     ],
     "/lib/buefy.min.0.9.22.css": [
@@ -120,6 +136,14 @@
         "status": 200,
         "location": null,
         "bytes": 107706
+      }
+    ],
+    "/debug.html": [
+      {
+        "path": "/debug.html",
+        "status": 200,
+        "location": null,
+        "bytes": 5550
       }
     ]
   },

@@ -1,12 +1,10 @@
-# 2026-10-22T06:01:03Z serve via anybuild run --start; static-web-server resolved to /tmp/claude-0/tools/sws/bin/static-web-server
+# 2026-10-22T06:10:53Z CORRECTION v2 serve via anybuild run --start; static-web-server resolved to /tmp/claude-0/tools/sws/bin/static-web-server
 Version:      2.38.0
-Built:        
-Git commit:   
-Build target: x86_64-unknown-linux-gnu
-Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
-License:      MIT OR Apache-2.0
-Homepage:     https://static-web-server.net
-Author:       Jose Quintana <https://joseluisq.net>
+
+thread 'main' (3440) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/std/src/io/stdio.rs:1166:9:
+failed printing to stdout: Broken pipe (os error 32)
+stack backtrace:
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
 $ SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start
 ╭─────────────────╮
 │ Anybuild 0.33.0 │
@@ -15,250 +13,284 @@ $ SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start
 
   Run start command
   ─────────────────
-2026-10-22T06:01:03.466348Z  WARN static_web_server::settings: config file empty or no `general` settings found, using default values
-2026-10-22T06:01:03.472158Z  INFO static_web_server::server: static-web-server 2.38.0
-2026-10-22T06:01:03.472190Z  INFO static_web_server::server: log level: info
-2026-10-22T06:01:03.472213Z  INFO static_web_server::server: config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
-2026-10-22T06:01:03.472289Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:8080
-2026-10-22T06:01:03.472296Z  INFO static_web_server::server: runtime worker threads: 4
-2026-10-22T06:01:03.472298Z  INFO static_web_server::server: runtime max blocking threads: 512
-2026-10-22T06:01:03.472315Z  INFO static_web_server::server: redirect trailing slash: enabled=true
-2026-10-22T06:01:03.472317Z  INFO static_web_server::server: ignore hidden files: enabled=false
-2026-10-22T06:01:03.472319Z  INFO static_web_server::server: disable symlinks: enabled=false
-2026-10-22T06:01:03.472321Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
-2026-10-22T06:01:03.472325Z  INFO static_web_server::server: index files: index.html
-2026-10-22T06:01:03.472330Z  INFO static_web_server::directory_listing: directory listing: enabled=false
-2026-10-22T06:01:03.472332Z  INFO static_web_server::directory_listing: directory listing order code: 6
-2026-10-22T06:01:03.472335Z  INFO static_web_server::directory_listing: directory listing format: Html
-2026-10-22T06:01:03.472337Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
-2026-10-22T06:01:03.472340Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
-2026-10-22T06:01:03.472343Z  INFO static_web_server::health: health endpoint: enabled=false
-2026-10-22T06:01:03.472345Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
-2026-10-22T06:01:03.472348Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
-2026-10-22T06:01:03.472350Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
-2026-10-22T06:01:03.472352Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
-2026-10-22T06:01:03.472356Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
-2026-10-22T06:01:03.472359Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
-2026-10-22T06:01:03.472361Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
-2026-10-22T06:01:03.472364Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
-2026-10-22T06:01:03.472366Z  INFO static_web_server::compression_static: compression static: enabled=false
-2026-10-22T06:01:03.472376Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
-2026-10-22T06:01:03.472379Z  INFO static_web_server::control_headers: cache control headers: enabled=true
-2026-10-22T06:01:03.472381Z  INFO static_web_server::security_headers: security headers: enabled=false
-2026-10-22T06:01:03.472478Z  INFO Server::start_server{addr_str="127.0.0.1:8080" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.53µs
-2026-10-22T06:01:03.472514Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:8080
-2026-10-22T06:01:03.472529Z  INFO static_web_server::server: press ctrl+c to shut down the server
-2026-10-22T06:01:04.465732Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:01:04.510635Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:01:04.529673Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index.html
-2026-10-22T06:01:04.546417Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:01:04.560741Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:01:04.577696Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
-2026-10-22T06:01:04.593333Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
-2026-10-22T06:01:04.609852Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
-2026-10-22T06:01:04.624772Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
-2026-10-22T06:01:04.639953Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
-2026-10-22T06:01:04.656875Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
-2026-10-22T06:01:04.673044Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
-2026-10-22T06:01:04.689714Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
-2026-10-22T06:01:04.706805Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
-2026-10-22T06:01:04.723829Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
-2026-10-22T06:01:04.738394Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
-2026-10-22T06:01:04.756910Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
-2026-10-22T06:01:04.772284Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
-2026-10-22T06:01:04.786820Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
-2026-10-22T06:01:04.800538Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar?view=month&d=1
-2026-10-22T06:01:04.820201Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/
-2026-10-22T06:01:04.820303Z  WARN static_web_server::error_page: method=GET uri=/profile/ status=404 error="Not Found"
-2026-10-22T06:01:04.834224Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/
-2026-10-22T06:01:04.834327Z  WARN static_web_server::error_page: method=GET uri=/images/ status=404 error="Not Found"
-2026-10-22T06:01:04.848913Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/extra
-2026-10-22T06:01:04.849010Z  WARN static_web_server::error_page: method=GET uri=/profile/extra status=404 error="Not Found"
-2026-10-22T06:01:04.867748Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Profile
-2026-10-22T06:01:04.867843Z  WARN static_web_server::error_page: method=GET uri=/Profile status=404 error="Not Found"
-2026-10-22T06:01:04.881631Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope
-2026-10-22T06:01:04.881700Z  WARN static_web_server::error_page: method=GET uri=/nope status=404 error="Not Found"
-2026-10-22T06:01:04.895945Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/does/not/exist
-2026-10-22T06:01:04.896017Z  WARN static_web_server::error_page: method=GET uri=/does/not/exist status=404 error="Not Found"
-2026-10-22T06:01:04.910609Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/404.html
-2026-10-22T06:01:04.910696Z  WARN static_web_server::error_page: method=GET uri=/404.html status=404 error="Not Found"
-2026-10-22T06:01:04.924005Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/nope.js
-2026-10-22T06:01:04.924082Z  WARN static_web_server::error_page: method=GET uri=/assets/nope.js status=404 error="Not Found"
-2026-10-22T06:01:04.937349Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/nope.css
-2026-10-22T06:01:04.937441Z  WARN static_web_server::error_page: method=GET uri=/assets/nope.css status=404 error="Not Found"
-2026-10-22T06:01:04.950358Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/nope.png
-2026-10-22T06:01:04.950440Z  WARN static_web_server::error_page: method=GET uri=/images/nope.png status=404 error="Not Found"
-2026-10-22T06:01:04.964487Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BCqG7Liu.js
-2026-10-22T06:01:04.992719Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-lqHzMpjd.css
-2026-10-22T06:01:05.012193Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
-2026-10-22T06:01:05.026336Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/favicon.ico
-2026-10-22T06:01:05.041178Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo.svg
-2026-10-22T06:01:05.055034Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/profile
-2026-10-22T06:01:36.680284Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:01:36.693204Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BCqG7Liu.js
-2026-10-22T06:01:36.755118Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-lqHzMpjd.css
-2026-10-22T06:01:37.289466Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo.svg
-2026-10-22T06:01:37.294647Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo-dark.svg
-2026-10-22T06:01:37.297440Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/owner.png
-2026-10-22T06:01:37.297737Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-01.svg
-2026-10-22T06:01:37.300361Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-02.svg
-2026-10-22T06:01:37.300798Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-01.jpg
-2026-10-22T06:01:37.303447Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-02.jpg
-2026-10-22T06:01:37.307722Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-03.jpg
-2026-10-22T06:01:37.310114Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-04.jpg
-2026-10-22T06:01:37.316741Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-05.jpg
-2026-10-22T06:01:37.573472Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
-2026-10-22T06:01:38.310874Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:01:39.107562Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:01:39.765587Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:01:40.415491Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:01:41.178292Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:01:41.882236Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
-2026-10-22T06:01:42.513114Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
-2026-10-22T06:01:43.157021Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
-2026-10-22T06:01:43.858943Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
-2026-10-22T06:01:44.521137Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
-2026-10-22T06:01:44.583838Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-17.jpg
-2026-10-22T06:01:44.589479Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-25.jpg
-2026-10-22T06:01:44.589686Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-22.jpg
-2026-10-22T06:01:44.589811Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-23.jpg
-2026-10-22T06:01:44.589928Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-24.jpg
-2026-10-22T06:01:44.590034Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-18.jpg
-2026-10-22T06:01:44.596883Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-26.jpg
-2026-10-22T06:01:44.597827Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-27.jpg
-2026-10-22T06:01:44.598669Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-20.jpg
-2026-10-22T06:01:44.599390Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-28.jpg
-2026-10-22T06:01:44.599706Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-30.jpg
-2026-10-22T06:01:44.599747Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-29.jpg
-2026-10-22T06:01:44.603048Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-21.jpg
-2026-10-22T06:01:44.603432Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-32.jpg
-2026-10-22T06:01:44.603437Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-31.jpg
-2026-10-22T06:01:44.603437Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-33.jpg
-2026-10-22T06:01:45.194999Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
-2026-10-22T06:01:45.850920Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
-2026-10-22T06:01:46.534214Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
-2026-10-22T06:01:47.178483Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
-2026-10-22T06:01:47.240141Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-01.jpg
-2026-10-22T06:01:47.241258Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-02.jpg
-2026-10-22T06:01:47.243702Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-06.jpg
-2026-10-22T06:01:47.243804Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-04.jpg
-2026-10-22T06:01:47.243839Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-05.jpg
-2026-10-22T06:01:47.243897Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-03.jpg
-2026-10-22T06:01:47.837709Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
-2026-10-22T06:01:48.480505Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
-2026-10-22T06:01:49.145789Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
-2026-10-22T06:01:49.772246Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
-2026-10-22T06:01:50.416862Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
-2026-10-22T06:01:51.049638Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
-2026-10-22T06:01:51.122669Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-01.png
-2026-10-22T06:01:51.124063Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-05.png
-2026-10-22T06:01:51.124355Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-02.png
-2026-10-22T06:01:51.124702Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-03.png
-2026-10-22T06:01:51.125228Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-04.png
-2026-10-22T06:01:51.128079Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-06.png
-2026-10-22T06:01:51.701434Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
-2026-10-22T06:01:52.355326Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
-2026-10-22T06:01:53.708809Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
-2026-10-22T06:01:55.274055Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
-2026-10-22T06:01:55.993625Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
-2026-10-22T06:01:56.731870Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
-2026-10-22T06:01:57.408915Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
-2026-10-22T06:01:58.116371Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
-2026-10-22T06:01:58.180126Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/shape/grid-01.svg
-2026-10-22T06:01:58.181566Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/auth-logo.svg
-2026-10-22T06:01:58.779853Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
-2026-10-22T06:01:59.440381Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
-2026-10-22T06:02:00.066625Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
-2026-10-22T06:02:00.695411Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
-2026-10-22T06:02:01.339369Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
-2026-10-22T06:02:02.692907Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:02:04.319134Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:02:49.082299Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:02:49.097884Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BCqG7Liu.js
-2026-10-22T06:02:49.098170Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-lqHzMpjd.css
-2026-10-22T06:02:49.602859Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo.svg
-2026-10-22T06:02:49.605430Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo-dark.svg
-2026-10-22T06:02:49.607049Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/owner.png
-2026-10-22T06:02:49.607224Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-01.svg
-2026-10-22T06:02:49.608391Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-02.svg
-2026-10-22T06:02:49.609258Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-01.jpg
-2026-10-22T06:02:49.613027Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-02.jpg
-2026-10-22T06:02:49.616299Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-03.jpg
-2026-10-22T06:02:49.616642Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-04.jpg
-2026-10-22T06:02:49.616805Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-05.jpg
-2026-10-22T06:02:49.823071Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
-2026-10-22T06:02:50.620386Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
-2026-10-22T06:02:51.426754Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:02:52.074656Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:02:52.744767Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:02:53.569765Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:02:54.275240Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
-2026-10-22T06:02:54.928123Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
-2026-10-22T06:02:55.590735Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
-2026-10-22T06:02:56.265427Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
-2026-10-22T06:02:56.952943Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
-2026-10-22T06:02:57.013685Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-17.jpg
-2026-10-22T06:02:57.015876Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-22.jpg
-2026-10-22T06:02:57.018390Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-23.jpg
-2026-10-22T06:02:57.019127Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-18.jpg
-2026-10-22T06:02:57.019177Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-25.jpg
-2026-10-22T06:02:57.019204Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-24.jpg
-2026-10-22T06:02:57.024904Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-26.jpg
-2026-10-22T06:02:57.026015Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-20.jpg
-2026-10-22T06:02:57.026147Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-27.jpg
-2026-10-22T06:02:57.026209Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-28.jpg
-2026-10-22T06:02:57.026257Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-29.jpg
-2026-10-22T06:02:57.026353Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-30.jpg
-2026-10-22T06:02:57.034790Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-21.jpg
-2026-10-22T06:02:57.035012Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-33.jpg
-2026-10-22T06:02:57.035073Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-31.jpg
-2026-10-22T06:02:57.035136Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-32.jpg
-2026-10-22T06:02:57.616092Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
-2026-10-22T06:02:58.269002Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
-2026-10-22T06:02:58.908617Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
-2026-10-22T06:02:59.552765Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
-2026-10-22T06:02:59.615971Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-01.jpg
-2026-10-22T06:02:59.617230Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-02.jpg
-2026-10-22T06:02:59.617424Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-03.jpg
-2026-10-22T06:02:59.617573Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-04.jpg
-2026-10-22T06:02:59.620751Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-05.jpg
-2026-10-22T06:02:59.620929Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-06.jpg
-2026-10-22T06:03:00.205687Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
-2026-10-22T06:03:00.847046Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
-2026-10-22T06:03:01.477814Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
-2026-10-22T06:03:02.123451Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
-2026-10-22T06:03:02.778327Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
-2026-10-22T06:03:03.395642Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
-2026-10-22T06:03:03.459125Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-01.png
-2026-10-22T06:03:03.461472Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-02.png
-2026-10-22T06:03:03.461906Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-04.png
-2026-10-22T06:03:03.461945Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-03.png
-2026-10-22T06:03:03.464057Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-05.png
-2026-10-22T06:03:03.466142Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-06.png
-2026-10-22T06:03:04.059945Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
-2026-10-22T06:03:04.698211Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
-2026-10-22T06:03:06.270099Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
-2026-10-22T06:03:07.956320Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
-2026-10-22T06:03:08.680675Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
-2026-10-22T06:03:09.386329Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
-2026-10-22T06:03:10.092597Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
-2026-10-22T06:03:10.828088Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
-2026-10-22T06:03:10.908359Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/shape/grid-01.svg
-2026-10-22T06:03:10.911429Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/auth-logo.svg
-2026-10-22T06:03:11.478061Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
-2026-10-22T06:03:12.107792Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
-2026-10-22T06:03:12.750645Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
-2026-10-22T06:03:13.438630Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
-2026-10-22T06:03:14.087196Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
-2026-10-22T06:03:15.479999Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:03:17.220124Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
-2026-10-22T06:03:18.089285Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
-2026-10-22T06:03:18.835878Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope
-2026-10-22T06:03:18.835960Z  WARN static_web_server::error_page: method=GET uri=/nope status=404 error="Not Found"
-2026-10-22T06:03:18.869286Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.ico
-2026-10-22T06:03:18.869359Z  WARN static_web_server::error_page: method=GET uri=/favicon.ico status=404 error="Not Found"
-2026-10-22T06:03:19.227144Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/error/404.svg
-2026-10-22T06:03:19.228452Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/error/404-dark.svg
-2026-10-22T06:03:29.386111Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
-2026-10-22T06:03:29.386245Z  INFO static_web_server::signals: delegating server's graceful shutdown
-2026-10-22T06:03:29.386689Z  WARN static_web_server::server: termination signal caught, shutting down the server execution
+2026-10-22T06:10:53.583971Z  WARN static_web_server::settings: config file empty or no `general` settings found, using default values
+2026-10-22T06:10:53.585828Z  INFO static_web_server::server: static-web-server 2.38.0
+2026-10-22T06:10:53.585867Z  INFO static_web_server::server: log level: info
+2026-10-22T06:10:53.585889Z  INFO static_web_server::server: config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+2026-10-22T06:10:53.585926Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:8080
+2026-10-22T06:10:53.585947Z  INFO static_web_server::server: runtime worker threads: 4
+2026-10-22T06:10:53.585952Z  INFO static_web_server::server: runtime max blocking threads: 512
+2026-10-22T06:10:53.585967Z  INFO static_web_server::server: redirect trailing slash: enabled=true
+2026-10-22T06:10:53.585986Z  INFO static_web_server::server: ignore hidden files: enabled=false
+2026-10-22T06:10:53.585991Z  INFO static_web_server::server: disable symlinks: enabled=false
+2026-10-22T06:10:53.585994Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
+2026-10-22T06:10:53.585998Z  INFO static_web_server::server: index files: index.html
+2026-10-22T06:10:53.586018Z  INFO static_web_server::directory_listing: directory listing: enabled=false
+2026-10-22T06:10:53.586023Z  INFO static_web_server::directory_listing: directory listing order code: 6
+2026-10-22T06:10:53.586026Z  INFO static_web_server::directory_listing: directory listing format: Html
+2026-10-22T06:10:53.586030Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
+2026-10-22T06:10:53.586034Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+2026-10-22T06:10:53.586037Z  INFO static_web_server::health: health endpoint: enabled=false
+2026-10-22T06:10:53.586040Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
+2026-10-22T06:10:53.586049Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
+2026-10-22T06:10:53.586051Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
+2026-10-22T06:10:53.586053Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
+2026-10-22T06:10:53.586057Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
+2026-10-22T06:10:53.586060Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
+2026-10-22T06:10:53.586063Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
+2026-10-22T06:10:53.586066Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
+2026-10-22T06:10:53.586172Z  INFO static_web_server::compression_static: compression static: enabled=false
+2026-10-22T06:10:53.586187Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+2026-10-22T06:10:53.586191Z  INFO static_web_server::control_headers: cache control headers: enabled=true
+2026-10-22T06:10:53.586194Z  INFO static_web_server::security_headers: security headers: enabled=false
+2026-10-22T06:10:53.586301Z  INFO Server::start_server{addr_str="127.0.0.1:8080" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.44µs
+2026-10-22T06:10:53.586338Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:8080
+2026-10-22T06:10:53.586371Z  INFO static_web_server::server: press ctrl+c to shut down the server
+2026-10-22T06:10:54.584940Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-22T06:10:54.648005Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-22T06:10:54.668384Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index.html
+2026-10-22T06:10:54.687491Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
+2026-10-22T06:10:54.706880Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/
+2026-10-22T06:10:54.726661Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
+2026-10-22T06:10:54.742602Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/?x=1
+2026-10-22T06:10:54.758503Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
+2026-10-22T06:10:54.776318Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar/
+2026-10-22T06:10:54.793500Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar?x=1
+2026-10-22T06:10:54.811848Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar/?x=1
+2026-10-22T06:10:54.836726Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
+2026-10-22T06:10:54.857688Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank/
+2026-10-22T06:10:54.878369Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank?x=1
+2026-10-22T06:10:54.900196Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank/?x=1
+2026-10-22T06:10:54.916815Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
+2026-10-22T06:10:54.935971Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements/
+2026-10-22T06:10:54.953350Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements?x=1
+2026-10-22T06:10:54.970414Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements/?x=1
+2026-10-22T06:10:54.986953Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
+2026-10-22T06:10:55.003104Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables/
+2026-10-22T06:10:55.020265Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables?x=1
+2026-10-22T06:10:55.036350Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables/?x=1
+2026-10-22T06:10:55.054262Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
+2026-10-22T06:10:55.070843Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts/
+2026-10-22T06:10:55.086761Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts?x=1
+2026-10-22T06:10:55.104854Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts/?x=1
+2026-10-22T06:10:55.124585Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
+2026-10-22T06:10:55.142393Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars/
+2026-10-22T06:10:55.165403Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars?x=1
+2026-10-22T06:10:55.183181Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars/?x=1
+2026-10-22T06:10:55.205217Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
+2026-10-22T06:10:55.233080Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge/
+2026-10-22T06:10:55.254131Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge?x=1
+2026-10-22T06:10:55.279269Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge/?x=1
+2026-10-22T06:10:55.298216Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
+2026-10-22T06:10:55.317821Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons/
+2026-10-22T06:10:55.336589Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons?x=1
+2026-10-22T06:10:55.355936Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons/?x=1
+2026-10-22T06:10:55.383056Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
+2026-10-22T06:10:55.403356Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/
+2026-10-22T06:10:55.420461Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images?x=1
+2026-10-22T06:10:55.436511Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/?x=1
+2026-10-22T06:10:55.451711Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
+2026-10-22T06:10:55.468047Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos/
+2026-10-22T06:10:55.483767Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos?x=1
+2026-10-22T06:10:55.500424Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos/?x=1
+2026-10-22T06:10:55.516113Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
+2026-10-22T06:10:55.532382Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart/
+2026-10-22T06:10:55.549795Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart?x=1
+2026-10-22T06:10:55.567758Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart/?x=1
+2026-10-22T06:10:55.589080Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
+2026-10-22T06:10:55.611574Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart/
+2026-10-22T06:10:55.628931Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart?x=1
+2026-10-22T06:10:55.649282Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart/?x=1
+2026-10-22T06:10:55.670068Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
+2026-10-22T06:10:55.687671Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin/
+2026-10-22T06:10:55.704999Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin?x=1
+2026-10-22T06:10:55.723208Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin/?x=1
+2026-10-22T06:10:55.738924Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
+2026-10-22T06:10:55.754870Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup/
+2026-10-22T06:10:55.772316Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup?x=1
+2026-10-22T06:10:55.787780Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup/?x=1
+2026-10-22T06:10:55.804726Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?q=a%20b&tab=%2Fx
+2026-10-22T06:10:55.828028Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/profile
+2026-10-22T06:10:55.847181Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/profile/
+2026-10-22T06:10:55.862962Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope
+2026-10-22T06:10:55.863048Z  WARN static_web_server::error_page: method=GET uri=/nope status=404 error="Not Found"
+2026-10-22T06:10:55.877756Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope/
+2026-10-22T06:10:55.877888Z  WARN static_web_server::error_page: method=GET uri=/nope/ status=404 error="Not Found"
+2026-10-22T06:10:55.895185Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/extra
+2026-10-22T06:10:55.895295Z  WARN static_web_server::error_page: method=GET uri=/profile/extra status=404 error="Not Found"
+2026-10-22T06:10:55.911959Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/extra/
+2026-10-22T06:10:55.912056Z  WARN static_web_server::error_page: method=GET uri=/profile/extra/ status=404 error="Not Found"
+2026-10-22T06:10:55.927255Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile//
+2026-10-22T06:10:55.927393Z  WARN static_web_server::error_page: method=GET uri=/profile// status=404 error="Not Found"
+2026-10-22T06:10:55.942610Z  INFO static_web_server::log_addr: incoming request: method=GET uri=//profile
+2026-10-22T06:10:55.942720Z  WARN static_web_server::error_page: method=GET uri=//profile status=404 error="Not Found"
+2026-10-22T06:10:55.957599Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profiles
+2026-10-22T06:10:55.957726Z  WARN static_web_server::error_page: method=GET uri=/profiles status=404 error="Not Found"
+2026-10-22T06:10:55.972822Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Profile
+2026-10-22T06:10:55.972978Z  WARN static_web_server::error_page: method=GET uri=/Profile status=404 error="Not Found"
+2026-10-22T06:10:55.990023Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin/x
+2026-10-22T06:10:55.990124Z  WARN static_web_server::error_page: method=GET uri=/signin/x status=404 error="Not Found"
+2026-10-22T06:10:56.006319Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/brand/
+2026-10-22T06:10:56.006439Z  WARN static_web_server::error_page: method=GET uri=/images/brand/ status=404 error="Not Found"
+2026-10-22T06:10:56.021689Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/404.html
+2026-10-22T06:10:56.021803Z  WARN static_web_server::error_page: method=GET uri=/404.html status=404 error="Not Found"
+2026-10-22T06:10:56.037097Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/nope.js
+2026-10-22T06:10:56.037192Z  WARN static_web_server::error_page: method=GET uri=/assets/nope.js status=404 error="Not Found"
+2026-10-22T06:10:56.060574Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/nope.css
+2026-10-22T06:10:56.060669Z  WARN static_web_server::error_page: method=GET uri=/assets/nope.css status=404 error="Not Found"
+2026-10-22T06:10:56.075415Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/nope.png
+2026-10-22T06:10:56.075506Z  WARN static_web_server::error_page: method=GET uri=/images/nope.png status=404 error="Not Found"
+2026-10-22T06:10:56.095879Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/
+2026-10-22T06:10:56.096037Z  WARN static_web_server::error_page: method=GET uri=/assets/ status=404 error="Not Found"
+2026-10-22T06:10:56.111855Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/brand
+2026-10-22T06:10:56.126653Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BCqG7Liu.js
+2026-10-22T06:10:56.149435Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-lqHzMpjd.css
+2026-10-22T06:10:56.167308Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-22T06:10:56.187007Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/favicon.ico
+2026-10-22T06:10:56.204775Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo.svg
+2026-10-22T06:10:56.219730Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
+2026-10-22T06:10:56.219857Z  INFO static_web_server::signals: delegating server's graceful shutdown
+2026-10-22T06:10:56.220176Z  WARN static_web_server::server: termination signal caught, shutting down the server execution
+# 2026-10-22T06:11:54Z CORRECTION v2 serve for Playwright with /tmp/claude-0/tools/sws/bin/static-web-server
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+
+  Run start command
+  ─────────────────
+2026-10-22T06:11:54.823894Z  WARN static_web_server::settings: config file empty or no `general` settings found, using default values
+2026-10-22T06:11:54.826496Z  INFO static_web_server::server: static-web-server 2.38.0
+2026-10-22T06:11:54.826547Z  INFO static_web_server::server: log level: info
+2026-10-22T06:11:54.826593Z  INFO static_web_server::server: config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+2026-10-22T06:11:54.826659Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:8080
+2026-10-22T06:11:54.826689Z  INFO static_web_server::server: runtime worker threads: 4
+2026-10-22T06:11:54.826697Z  INFO static_web_server::server: runtime max blocking threads: 512
+2026-10-22T06:11:54.826721Z  INFO static_web_server::server: redirect trailing slash: enabled=true
+2026-10-22T06:11:54.826742Z  INFO static_web_server::server: ignore hidden files: enabled=false
+2026-10-22T06:11:54.826748Z  INFO static_web_server::server: disable symlinks: enabled=false
+2026-10-22T06:11:54.826770Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
+2026-10-22T06:11:54.826778Z  INFO static_web_server::server: index files: index.html
+2026-10-22T06:11:54.826797Z  INFO static_web_server::directory_listing: directory listing: enabled=false
+2026-10-22T06:11:54.826804Z  INFO static_web_server::directory_listing: directory listing order code: 6
+2026-10-22T06:11:54.826808Z  INFO static_web_server::directory_listing: directory listing format: Html
+2026-10-22T06:11:54.826825Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
+2026-10-22T06:11:54.826835Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+2026-10-22T06:11:54.826848Z  INFO static_web_server::health: health endpoint: enabled=false
+2026-10-22T06:11:54.826866Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
+2026-10-22T06:11:54.826886Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
+2026-10-22T06:11:54.826906Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
+2026-10-22T06:11:54.826924Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
+2026-10-22T06:11:54.826949Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
+2026-10-22T06:11:54.826968Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
+2026-10-22T06:11:54.826974Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
+2026-10-22T06:11:54.827003Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
+2026-10-22T06:11:54.827009Z  INFO static_web_server::compression_static: compression static: enabled=false
+2026-10-22T06:11:54.827028Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+2026-10-22T06:11:54.827049Z  INFO static_web_server::control_headers: cache control headers: enabled=true
+2026-10-22T06:11:54.827054Z  INFO static_web_server::security_headers: security headers: enabled=false
+2026-10-22T06:11:54.827226Z  INFO Server::start_server{addr_str="127.0.0.1:8080" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.99µs
+2026-10-22T06:11:54.827292Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:8080
+2026-10-22T06:11:54.827300Z  INFO static_web_server::server: press ctrl+c to shut down the server
+2026-10-22T06:11:55.822982Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-22T06:11:56.892109Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-22T06:11:56.917683Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BCqG7Liu.js
+2026-10-22T06:11:56.918295Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-lqHzMpjd.css
+2026-10-22T06:11:57.500855Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo.svg
+2026-10-22T06:11:57.503727Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/logo-dark.svg
+2026-10-22T06:11:57.504340Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/owner.png
+2026-10-22T06:11:57.505516Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-01.svg
+2026-10-22T06:11:57.506155Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/country/country-02.svg
+2026-10-22T06:11:57.506704Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-01.jpg
+2026-10-22T06:11:57.510382Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-02.jpg
+2026-10-22T06:11:57.513434Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-03.jpg
+2026-10-22T06:11:57.513866Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-04.jpg
+2026-10-22T06:11:57.515938Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/product/product-05.jpg
+2026-10-22T06:11:57.835170Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-22T06:11:58.521011Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-22T06:11:59.409859Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
+2026-10-22T06:12:00.097071Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
+2026-10-22T06:12:00.733720Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
+2026-10-22T06:12:01.523972Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
+2026-10-22T06:12:02.220354Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
+2026-10-22T06:12:02.871358Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/blank
+2026-10-22T06:12:03.523066Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
+2026-10-22T06:12:04.194685Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/form-elements
+2026-10-22T06:12:04.867336Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
+2026-10-22T06:12:04.956555Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-17.jpg
+2026-10-22T06:12:04.965190Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-22.jpg
+2026-10-22T06:12:04.967801Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-24.jpg
+2026-10-22T06:12:04.967841Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-23.jpg
+2026-10-22T06:12:04.967870Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-18.jpg
+2026-10-22T06:12:04.968100Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-25.jpg
+2026-10-22T06:12:04.972249Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-26.jpg
+2026-10-22T06:12:04.974213Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-27.jpg
+2026-10-22T06:12:04.975726Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-20.jpg
+2026-10-22T06:12:04.977272Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-28.jpg
+2026-10-22T06:12:04.977660Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-30.jpg
+2026-10-22T06:12:04.977751Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-29.jpg
+2026-10-22T06:12:04.980764Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-21.jpg
+2026-10-22T06:12:04.985931Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-33.jpg
+2026-10-22T06:12:04.986429Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-31.jpg
+2026-10-22T06:12:04.989850Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-32.jpg
+2026-10-22T06:12:05.584178Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables
+2026-10-22T06:12:06.261458Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
+2026-10-22T06:12:06.920438Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/alerts
+2026-10-22T06:12:07.576467Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
+2026-10-22T06:12:07.637240Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-01.jpg
+2026-10-22T06:12:07.638514Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-02.jpg
+2026-10-22T06:12:07.638683Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-03.jpg
+2026-10-22T06:12:07.639493Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-04.jpg
+2026-10-22T06:12:07.641504Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-05.jpg
+2026-10-22T06:12:07.641677Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/user/user-06.jpg
+2026-10-22T06:12:08.223174Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/avatars
+2026-10-22T06:12:08.871221Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
+2026-10-22T06:12:09.528341Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/badge
+2026-10-22T06:12:10.224566Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
+2026-10-22T06:12:10.903050Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/buttons
+2026-10-22T06:12:11.550753Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
+2026-10-22T06:12:11.619644Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-01.png
+2026-10-22T06:12:11.620834Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-02.png
+2026-10-22T06:12:11.622828Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-03.png
+2026-10-22T06:12:11.623557Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-04.png
+2026-10-22T06:12:11.624076Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-06.png
+2026-10-22T06:12:11.624150Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/grid-image/image-05.png
+2026-10-22T06:12:12.209208Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images
+2026-10-22T06:12:12.856505Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
+2026-10-22T06:12:14.467820Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/videos
+2026-10-22T06:12:16.033908Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
+2026-10-22T06:12:16.712118Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/line-chart
+2026-10-22T06:12:17.412379Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
+2026-10-22T06:12:18.084066Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/bar-chart
+2026-10-22T06:12:18.773301Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
+2026-10-22T06:12:18.824666Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/shape/grid-01.svg
+2026-10-22T06:12:18.825243Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/logo/auth-logo.svg
+2026-10-22T06:12:19.408934Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin
+2026-10-22T06:12:20.016705Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
+2026-10-22T06:12:20.635100Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signup
+2026-10-22T06:12:21.282433Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
+2026-10-22T06:12:21.943423Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile?x=1
+2026-10-22T06:12:23.316715Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
+2026-10-22T06:12:24.047334Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/
+2026-10-22T06:12:24.117874Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/images/user/owner.png
+2026-10-22T06:12:24.117984Z  WARN static_web_server::error_page: method=GET uri=/profile/images/user/owner.png status=404 error="Not Found"
+2026-10-22T06:12:24.712191Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile/
+2026-10-22T06:12:25.389063Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar/
+2026-10-22T06:12:26.133417Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar/
+2026-10-22T06:12:26.906964Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin/
+2026-10-22T06:12:27.528866Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/signin/
+2026-10-22T06:12:28.183316Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables/?x=1
+2026-10-22T06:12:28.848138Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/basic-tables/?x=1
+2026-10-22T06:12:29.533159Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/
+2026-10-22T06:12:30.213164Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/
+2026-10-22T06:12:31.829445Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/profile
+2026-10-22T06:12:32.604843Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/calendar
+2026-10-22T06:12:33.312840Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope
+2026-10-22T06:12:33.312950Z  WARN static_web_server::error_page: method=GET uri=/nope status=404 error="Not Found"
+2026-10-22T06:12:33.344115Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.ico
+2026-10-22T06:12:33.344195Z  WARN static_web_server::error_page: method=GET uri=/favicon.ico status=404 error="Not Found"
+2026-10-22T06:12:33.636837Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/error/404.svg
+2026-10-22T06:12:33.637495Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/error/404-dark.svg
+2026-10-22T06:12:33.873248Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
+2026-10-22T06:12:33.873312Z  INFO static_web_server::signals: delegating server's graceful shutdown
+2026-10-22T06:12:33.873680Z  WARN static_web_server::server: termination signal caught, shutting down the server execution

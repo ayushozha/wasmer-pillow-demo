@@ -1,0 +1,23 @@
+# Wasmer manifest generated with Anybuild v0.33.0
+
+[package]
+entrypoint = "start"
+
+[dependencies]
+"wasmer/static-web-server" = "=1.1.0"
+
+[fs]
+"/opt/static_app" = "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app"
+"/opt/static_config" = "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config"
+[[command]]
+name = "start"
+module = "wasmer/static-web-server:webserver"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = [
+    "--root=/opt/static_app",
+    "--log-level=info",
+    "--config-file=/opt/static_config/sws.toml",
+    "--port=8080",
+]

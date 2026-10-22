@@ -1,4 +1,4 @@
-# 2026-10-22T06:08:04Z patch verification
+# 2026-10-22T06:14:17Z CORRECTION v2 patch verification (patch sha256 32954f552ea04ae1d296e044013733e5b0f07cd96c578f1b3a76d445c1ce3ac5)
 $ anybuild plan . -o /tmp/claude-0/rw/plan-base.json  [base]
   Detected static Node.js provider
     Framework: Vite
@@ -9,13 +9,14 @@ $ anybuild plan . -o /tmp/claude-0/rw/plan-base.json  [base]
   Generated Anybuild at /tmp/claude-0/rw/check-base/free-react-tailwind-admin-dashboard/Anybuild
 Plan saved to /tmp/claude-0/rw/plan-base.json
 EXIT 0
-provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config set: False | start: static-web-server False
+provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config sha256: None | --config-file in start: False
 ?? Anybuild
 deleting plan-written Anybuild
 $ git apply --check patch (on base e888dd17)
 EXIT 0
  M README.md
 ?? Anybuild
+Anybuild == artifacts/Anybuild
 $ anybuild plan . -o /tmp/claude-0/rw/plan-patched.json  [patched]
   Using static Node.js provider declared in Anybuild
     Framework: Vite
@@ -24,6 +25,6 @@ $ anybuild plan . -o /tmp/claude-0/rw/plan-patched.json  [patched]
     Output directory: dist
 Plan saved to /tmp/claude-0/rw/plan-patched.json
 EXIT 0
-provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config set: True | start: static-web-server True
+provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config sha256: a58d026a0a8b8ec7e2e30bdff89e81e8758a7b458cd6a1c24ddac206a806d06f | --config-file in start: True
  M README.md
 ?? Anybuild

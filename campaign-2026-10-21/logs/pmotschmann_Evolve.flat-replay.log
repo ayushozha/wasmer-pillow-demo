@@ -1,4 +1,4 @@
-# 2026-10-22T06:08:00Z flat replay of anybuild 0.33.0 planned steps for pmotschmann_Evolve @ 54ea8748d8f889b0ac560eb2d19b093968609afa (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+# 2026-10-22T06:10:41Z flat replay of anybuild 0.33.0 planned steps for pmotschmann_Evolve @ 2620dcc79222f4251c69f53fe35ec61de714cfb5 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
 $ (cd /tmp/claude-0/flat-replay/pmotschmann_Evolve && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/pmotschmann_Evolve/src --out /tmp/claude-0/flat-replay/pmotschmann_Evolve/plan.json)
   Detected static site provider
     Output directory: .
@@ -14,4 +14,4 @@ EXIT 0
 # node_install_requires_all_files=False
 $ (cd /tmp/claude-0/flat-replay/pmotschmann_Evolve/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/pmotschmann_Evolve/opt/temp)
 EXIT 0
-# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/wiki.html": 200, "/save.html": 200, "/evolve/main.js": 200, "/evolve/evolve.css": 200, "/wiki/wiki.js": 200, "/strings/strings.json": 200, "/lib/lz-string.min.js": 200}}
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/wiki.html": 200, "/save.html": 200, "/evolve/main.js": 200, "/evolve/evolve.css": 200, "/evolve/save-codec.js": 200, "/wiki/wiki.js": 200, "/strings/strings.json": 200, "/lib/fflate.min.js": 200}}

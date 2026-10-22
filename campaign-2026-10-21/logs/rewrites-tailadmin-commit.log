@@ -1,8 +1,18 @@
-# 2026-10-22T06:07:53Z commit (hooks allowed to run; none installed: 0 non-sample hooks, core.hooksPath unset, no husky/lint-staged in package.json)
-[deploy-to-wasmer c089bc1] docs: add Wasmer Edge deploy option
- 2 files changed, 95 insertions(+)
+# 2026-10-22T06:13:54Z CORRECTION v2 amend (hooks allowed to run; none installed, core.hooksPath unset)
+[deploy-to-wasmer 4c33a8f] docs: add Wasmer Edge deploy option
+ 2 files changed, 96 insertions(+)
  create mode 100644 Anybuild
 EXIT 0
-c089bc1d84b1b78b672b955751c04e418ff96452
+4c33a8fd88b7c5e5c34eeab3cbaf4a4883d25e48
+author: Claude <noreply@anthropic.com>
+committer: Claude <noreply@anthropic.com>
+ Anybuild  | 84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md | 12 +++++++++
+ 2 files changed, 96 insertions(+)
+[deploy-to-wasmer 8ad9ecf] docs: add Wasmer Edge deploy option
+ 2 files changed, 96 insertions(+)
+ create mode 100644 Anybuild
+EXIT 0
+8ad9ecf6b213963b3a2c8c98273e8b7bce1d2d31
 author: Claude <noreply@anthropic.com>
 committer: Claude <noreply@anthropic.com>

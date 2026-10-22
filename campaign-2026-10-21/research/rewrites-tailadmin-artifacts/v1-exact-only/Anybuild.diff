@@ -1,0 +1,73 @@
+--- /tmp/claude-0/rw/Anybuild.generated	2026-10-22 05:59:15.999575911 +0000
++++ Anybuild	2026-10-22 05:59:16.017048149 +0000
+@@ -12,6 +12,70 @@
+     node_server = "node",
+     node_version = "24",
+     npm_version = "11",
++    # static-web-server config: serve index.html for the client-side routes in src/App.tsx.
++    static_redirects_config = """# SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.
++[advanced]
++
++[[advanced.rewrites]]
++source = "/profile"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/calendar"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/blank"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/form-elements"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/basic-tables"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/alerts"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/avatars"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/badge"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/buttons"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/images"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/videos"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/line-chart"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/bar-chart"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/signin"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/signup"
++destination = "/index.html"
++""",
+ )
+ 
+ build = nodestatic_build(config)

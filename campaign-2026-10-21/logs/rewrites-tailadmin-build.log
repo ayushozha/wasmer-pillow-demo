@@ -1,4 +1,4 @@
-# 2026-10-22T05:59:44Z clean build, HEAD e888dd1716b9803b535c7c2fa4f2c6b7d39b3da9 + uncommitted Anybuild sha256 a975ecaf95dfdd0929d0ad9ebc267ed85cf7710c36fb8ab4af3264a7b09ca257; node v24.22.1 npm 11.19.1; static-web-server on PATH: /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+# 2026-10-22T06:10:02Z CORRECTION v2 clean build (no .anybuild, no node_modules), HEAD c089bc1d84b1b78b672b955751c04e418ff96452 + working-tree Anybuild sha256 464aae04e15e7d1f9c5a30cd4d8e98501c345bcdbef8507b7167affeed9427a8; node v24.22.1 npm 11.19.1
 $ anybuild build . --builder=local
 ╭─────────────────╮
 │ Anybuild 0.33.0 │
@@ -44,7 +44,7 @@ $ anybuild build . --builder=local
 
   $ npm install # using package.json
 
-added 330 packages, and audited 331 packages in 10s
+added 330 packages, and audited 331 packages in 12s
 
 3 high severity vulnerabilities
 
@@ -69,7 +69,7 @@ dist/index.html                     0.45 kB │ gzip:   0.31 kB
 dist/assets/index-lqHzMpjd.css    179.59 kB │ gzip:  27.34 kB
 dist/assets/index-BCqG7Liu.js   2,009.25 kB │ gzip: 582.38 kB
 
-[32m✓ built in 4.25s[39m
+[32m✓ built in 4.48s[39m
 [33m[plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
@@ -81,7 +81,7 @@ dist/assets/index-BCqG7Liu.js   2,009.25 kB │ gzip: 582.38 kB
   Write file /opt/static_config/sws.toml
 
   ╭──────────────────────────╮
-  │ Build complete in 22.90s │
+  │ Build complete in 24.60s │
   ╰──────────────────────────╯
 
 Building serve

@@ -1,0 +1,16 @@
+# 2026-10-22T06:12:57Z ALTERNATIVE redirect variant probe (NOT shipped), native SWS 2.32.2
+# ALTERNATIVE (not shipped): canonicalize /profile/ -> /profile with a 301, then rewrite /profile internally.
+[advanced]
+
+[[advanced.rewrites]]
+source = "/profile/"
+destination = "/profile"
+redirect = 301
+
+[[advanced.rewrites]]
+source = "/profile"
+destination = "/index.html"
+/profile/ -> 301 location=http://127.0.0.1:8083/profile
+/profile/?x=1 -> 301 location=http://127.0.0.1:8083/profile
+/profile -> 200 location=
+/profile/?x=1 followed -> 200 final=http://127.0.0.1:8083/profile

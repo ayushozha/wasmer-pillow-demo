@@ -1,38 +1,90 @@
-# 2026-10-22T06:00:39Z curl matrix, server pid 29753 exe /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+# 2026-10-22T06:10:51Z CORRECTION v2 curl matrix, server pid 3060 exe /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
 index.html sha256=dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5 size=455
-REQUEST                            STATUS CONTENT-TYPE               BYTES     SHA256[:10] NOTE
-/                                  200    text/html                  455       dc1a7e1e1b body==index.html
-/index.html                        200    text/html                  455       dc1a7e1e1b body==index.html
-/profile                           200    text/html                  455       dc1a7e1e1b body==index.html
-/calendar                          200    text/html                  455       dc1a7e1e1b body==index.html
-/blank                             200    text/html                  455       dc1a7e1e1b body==index.html
-/form-elements                     200    text/html                  455       dc1a7e1e1b body==index.html
-/basic-tables                      200    text/html                  455       dc1a7e1e1b body==index.html
-/alerts                            200    text/html                  455       dc1a7e1e1b body==index.html
-/avatars                           200    text/html                  455       dc1a7e1e1b body==index.html
-/badge                             200    text/html                  455       dc1a7e1e1b body==index.html
-/buttons                           200    text/html                  455       dc1a7e1e1b body==index.html
-/images                            200    text/html                  455       dc1a7e1e1b body==index.html
-/videos                            200    text/html                  455       dc1a7e1e1b body==index.html
-/line-chart                        200    text/html                  455       dc1a7e1e1b body==index.html
-/bar-chart                         200    text/html                  455       dc1a7e1e1b body==index.html
-/signin                            200    text/html                  455       dc1a7e1e1b body==index.html
-/signup                            200    text/html                  455       dc1a7e1e1b body==index.html
-/profile?x=1                       200    text/html                  455       dc1a7e1e1b body==index.html
-/calendar?view=month&d=1           200    text/html                  455       dc1a7e1e1b body==index.html
-/profile/                          404    text/html; charset=utf-8   106       10c24a13a7 
-/images/                           404    text/html; charset=utf-8   106       10c24a13a7 
-/profile/extra                     404    text/html; charset=utf-8   106       10c24a13a7 
-/Profile                           404    text/html; charset=utf-8   106       10c24a13a7 
-/nope                              404    text/html; charset=utf-8   106       10c24a13a7 
-/does/not/exist                    404    text/html; charset=utf-8   106       10c24a13a7 
-/404.html                          404    text/html; charset=utf-8   106       10c24a13a7 
-/assets/nope.js                    404    text/html; charset=utf-8   106       10c24a13a7 
-/assets/nope.css                   404    text/html; charset=utf-8   106       10c24a13a7 
-/images/nope.png                   404    text/html; charset=utf-8   106       10c24a13a7 
-/assets/index-BCqG7Liu.js          200    text/javascript            2009250   2d73e4317f 
-/assets/index-lqHzMpjd.css         200    text/css                   179599    688da9f146 
-/favicon.png                       200    image/png                  2367      e8171c5230 
-/images/favicon.ico                200    image/x-icon               15406     3a63e12d5d 
-/images/logo/logo.svg              200    image/svg+xml              6391      8fb3c41267 
-HEAD /profile -> 200
+RESULT REQUEST                        EXPECT  STATUS CONTENT-TYPE               BYTES     SHA256[:10] NOTE
+PASS   GET /                          idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /index.html                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /profile                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /profile/                  idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /profile?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /profile/?x=1              idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /calendar                  idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /calendar/                 idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /calendar?x=1              idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /calendar/?x=1             idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /blank                     idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /blank/                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /blank?x=1                 idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /blank/?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /form-elements             idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /form-elements/            idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /form-elements?x=1         idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /form-elements/?x=1        idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /basic-tables              idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /basic-tables/             idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /basic-tables?x=1          idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /basic-tables/?x=1         idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /alerts                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /alerts/                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /alerts?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /alerts/?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /avatars                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /avatars/                  idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /avatars?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /avatars/?x=1              idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /badge                     idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /badge/                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /badge?x=1                 idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /badge/?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /buttons                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /buttons/                  idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /buttons?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /buttons/?x=1              idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /images                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /images/                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /images?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /images/?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /videos                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /videos/                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /videos?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /videos/?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /line-chart                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /line-chart/               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /line-chart?x=1            idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /line-chart/?x=1           idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /bar-chart                 idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /bar-chart/                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /bar-chart?x=1             idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /bar-chart/?x=1            idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signin                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signin/                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signin?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signin/?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signup                    idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signup/                   idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signup?x=1                idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /signup/?x=1               idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   GET /profile?q=a%20b&tab=%2Fx  idx     200    text/html                  455       dc1a7e1e1b body==index.html
+PASS   HEAD /profile                  200     200    text/html                  0         e3b0c44298 
+PASS   HEAD /profile/                 200     200    text/html                  0         e3b0c44298 
+PASS   GET /nope                      404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /nope/                     404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /profile/extra             404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /profile/extra/            404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /profile//                 404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET //profile                  404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /profiles                  404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /Profile                   404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /signin/x                  404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /images/brand/             404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /404.html                  404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /assets/nope.js            404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /assets/nope.css           404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /images/nope.png           404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /assets/                   404     404    text/html; charset=utf-8   106       10c24a13a7 
+PASS   GET /images/brand              308     308                               0         e3b0c44298  location=http://127.0.0.1:8080/images/brand/
+PASS   GET /assets/index-BCqG7Liu.js  200     200    text/javascript            2009250   2d73e4317f 
+PASS   GET /assets/index-lqHzMpjd.css 200     200    text/css                   179599    688da9f146 
+PASS   GET /favicon.png               200     200    image/png                  2367      e8171c5230 
+PASS   GET /images/favicon.ico        200     200    image/x-icon               15406     3a63e12d5d 
+PASS   GET /images/logo/logo.svg      200     200    image/svg+xml              6391      8fb3c41267 
+TOTAL 86 FAILS 0

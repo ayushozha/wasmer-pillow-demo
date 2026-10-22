@@ -1,0 +1,141 @@
+# 2026-10-22T06:00:13Z packaging inspection
+.anybuild
+.anybuild/artifact.json
+.anybuild/local
+.anybuild/local/.path
+.anybuild/local/build
+.anybuild/local/build/opt
+.anybuild/local/build/opt/static_app
+.anybuild/local/build/opt/static_config
+.anybuild/local/build/opt/temp
+.anybuild/runner
+.anybuild/runner/local
+.anybuild/runner/local/bin
+.anybuild/runner/local/bin/start
+.anybuild/volumes
+.anybuild/volumes/mappings.json
+--- sws.toml ---
+-rw-r--r-- 1 root root 1179 Oct 22 06:00 .anybuild/local/build/opt/static_config/sws.toml
+fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0  .anybuild/local/build/opt/static_config/sws.toml
+fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0  /tmp/claude-0/rw/sws.expected.toml
+sws.toml BYTE-IDENTICAL to authored TOML
+--- rendered start script ---
+== .anybuild/runner/local/bin/start
+#!/bin/bash
+static-web-server --root=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --log-level=info --config-file=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml --port=8080
+--- dist tree (static_app) ---
+2d73e4317ff640a5f9a500188086c0b3bbe46925418ff3356e21522f223ec501  ./assets/index-BCqG7Liu.js
+688da9f146c835bf0248c48af041791db2b70bdf548aee29e548ae4d02d2a9b3  ./assets/index-lqHzMpjd.css
+e8171c5230b7e97bbf3219b49ec5d14eb2acda1cb8ce28fdaf8a23b1565eca93  ./favicon.png
+25fdb75e852bc5d42b8746cc875b36ab07f26d438d247585cd58a70cf522b1a3  ./images/brand/brand-01.svg
+a8e8fd56f3a734464e6ad262b28cce36c8ea9b81dd1ffafd064daa3c3602c6f0  ./images/brand/brand-02.svg
+68a4d975cba1c9825900ddff7805492a7b7b207655ec8886c764c13c562e5845  ./images/brand/brand-03.svg
+0f39ceaf938a1978275a190491bbe6f91f8faa822477c3e41e4995832065eba9  ./images/brand/brand-04.svg
+3c4434711c290f51050f5eaf8c0b71b4361a9d8b472a82a4fc8cb5ea234b4db8  ./images/brand/brand-05.svg
+e76a149be5bf57355e92fbffe544d8d8154d32a269ac440849a7bb5ed15f9e2c  ./images/brand/brand-06.svg
+9d867f5146e59e8b147da19d22b60b4cca714b7030760884c3e4939262b28a0a  ./images/brand/brand-07.svg
+863f664aa932a01d7d6006bcc3104629456c65ac868628de9e77ca99598a1e57  ./images/brand/brand-08.svg
+2264ff54eb55a48123a538ce6fba186f861e0edffeb1442479f5e86641da2548  ./images/brand/brand-09.svg
+d65b4e3dbed928ee52171c2bd07df4f301611f31a25c496697b79660f7d35b9b  ./images/brand/brand-10.svg
+8376af5ad82d9ba49b880b1d671760310eeb2104d5aa13a27945b34dc927901a  ./images/brand/brand-11.svg
+ce8bb1bc1b0e7255f27537a607a9f1facffe5ee6a0f8df894539e3c308f699b2  ./images/brand/brand-12.svg
+265afa10c58cc305fdbc0f80dd24806aef7d523c78cdd7fa7ac9b4ab6118ca30  ./images/brand/brand-13.svg
+acdbbd19be0f1e281d1ebfda236bca471459b1dd8da34dca384e214555741c07  ./images/brand/brand-14.svg
+6721af44bb27aa5c5d1bda5c0babbef97f84ac0ac8259416e61bbf391d229afb  ./images/brand/brand-15.svg
+994cdadf94987f878bb86ccc513ba6be308f690c89be6c60027de42873e1ea83  ./images/cards/card-01.jpg
+ecceea9079ea93a67654bcff6039b67dafac2ad8be86ee2e9c167b5c2b528fdf  ./images/cards/card-01.png
+0d3f1aa6f3604620ade0ca34cbc8ba075441839f6ef1898f63aa9b2ac482621a  ./images/cards/card-02.jpg
+8a78bc3786c49ea3eda5973fe2ba175a1142f90c3a563d12f912b581ed9138c2  ./images/cards/card-02.png
+7d65418fb0c3afd21a2ae4714a35e0f0507913bb394ee1a1133593ebd786c162  ./images/cards/card-03.jpg
+8704a3789b8049c26ae51f209fadf39c1893664457a762dd7ed38ec7d8dc7304  ./images/cards/card-03.png
+6e5bd21595f3683bc64db55840298187de0b84963086f39fddbb85dd96fb23e3  ./images/carousel/carousel-01.png
+43a2217756c89bce88632cd1d75feaa296c559f67ca01c1557b91636b8c8855c  ./images/carousel/carousel-02.png
+1b2a92f126469238869266e9fc62b60d9dd5ac82b0ceea976c0d82db7f4ecd19  ./images/carousel/carousel-03.png
+d302897bfbcafcf1c02dc3f3807478348ad8d669507bb4839e145b0a33b98efd  ./images/carousel/carousel-04.png
+ae76157a75462bd2cf2aa7b580fb69e376ffbf0b6827da7b52e63fd88629575b  ./images/chat/chat.jpg
+b7db135622298324e77ee30bdacbf4056b4f5c03398a0e63748c58dbd7b7eca5  ./images/country/country-01.svg
+4897a349e7bc1234e1c8f75254f82dadae7e6a7c22973fb775d6325c907e6c3c  ./images/country/country-02.svg
+03e8c952a305f52b9149c4daa1e4aeffb23386164d815deddf2b524648080b2e  ./images/country/country-03.svg
+e876643f10bbc0c36ba4338419abdb8aab8e7a4592fb0e440b292fdef2d0b495  ./images/country/country-04.svg
+4d45e4db9b028a580a33f5c738ab83252165559f6d4ee13f521b1d049bb41575  ./images/country/country-05.svg
+93f9be3453acc7552a189223a47d8109997913b8f1ca04059d68a469a9c2cecc  ./images/country/country-06.svg
+8bacd6efe1a47fb879a8baeee8aa247517b247d29c3c7844c416a911b91121b5  ./images/country/country-07.svg
+9a79da4ee388379ad29df9636a46519be25f88c8308b130f8de4506f256a1cf3  ./images/country/country-08.svg
+392d9c665cb48f6f5508cdb819c17821a5bb63b2db786af658a51a39ff0758a4  ./images/error/404-dark.svg
+c15faae9cb5ae59e7f6e6e5674de2336b8e671d4aaf8a9bf5839557ccae0c0d6  ./images/error/404.svg
+e4f1c477e8d4ebd85ae6765a14cadce19faea6db15c87f6cb5b7ac364526f03d  ./images/error/500-dark.svg
+34389f37b06e9592fe30014125286d56fc275b178c7465079545be672e45611d  ./images/error/500.svg
+889b706b6c2994d7cd2c077eeda4e9e8a722809b313617ad60211384b0a38a5c  ./images/error/503-dark.svg
+8474a1f1e03f70e6e670e065b9d794f9fde248c439b34e2bd5961e01c9aa5efc  ./images/error/503.svg
+4850c9db9a9e1eaa8eed756ed33f79a5594f4e9f17acd0fec1b653b11a2f7ae5  ./images/error/maintenance-dark.svg
+a1f6204e27ce7b62cd459f2f8ae062fe449143c90df1dd0554961709c79b6903  ./images/error/maintenance.svg
+c45bc3437f16f0bb8e1d52ff8e9926fb096763e4a5b6b93fae405b32f7148774  ./images/error/success-dark.svg
+a80145e3ef1042fb2a091157c3f014a9755fcdc3ba1545663a948a64b5f221ca  ./images/error/success.svg
+3a63e12d5d71ababd72cf6f3c6d7019d8b35dd6fb5ebed151363c0324e9fafb7  ./images/favicon.ico
+5725626d38ba6d25101a3e2aee0be59efc0055a2a22c288263c19ff388cf97b8  ./images/grid-image/image-01.png
+895b430644a396393c1154c625b0fa44384ac9dbada9e7f88fcbb8f4b619baf7  ./images/grid-image/image-02.png
+2104d792c60b50d9e7a76467192ebeedf78fb5a13503826720a93da1b8543992  ./images/grid-image/image-03.png
+6bddc6a32f98771fa4517f2664c0f041ed919408f93bf8fb82fec8425f89036d  ./images/grid-image/image-04.png
+f1422b89be927267e08fc7824818b57b3d542a3d69cf9118d3417a5358c04568  ./images/grid-image/image-05.png
+2ee147f31d6c541e977c944ab9358153e0f8bb7e15a0ba59fa04da05d14113a6  ./images/grid-image/image-06.png
+119112e4a7a9596dda762789a9718ac3013e7281a64ba631bbb902a260ab14fd  ./images/icons/file-image-dark.svg
+f97ea97b9cf5653205e613640940fcf16cbf297e2736916517dcae801266cf92  ./images/icons/file-image.svg
+10a04544923b12c79de512c0309f39b54566b56ce7242b6ea47fcb75941020b2  ./images/icons/file-pdf-dark.svg
+b8337f38e5b47d293bfd74ca80343b5628d23a1816c1cb54379ba864f99e4690  ./images/icons/file-pdf.svg
+db67544d4754077b8a02df29e24625c94acf40969ac99653444527c3fae2d2b1  ./images/icons/file-video-dark.svg
+ef63e8a7e3064785174645436c543e1146ac602863fb3f0a2671e9ddbf80e796  ./images/icons/file-video.svg
+2ff3c4506ae2a8c21933f34b36408058de9dffca064e2292e596fa61964006bc  ./images/logo/auth-logo.svg
+be158b7c2fff68181eb589dff6d6a1da9c12421eb56d9def88cd74b604c18da5  ./images/logo/logo-dark.svg
+7794e6b4ce1ab4e67e3365b701933e06e7f3d0523225fef5e5df32962d8f541e  ./images/logo/logo-icon.svg
+8fb3c4126769d9716266969eb38504b0f4a01c34a1a58585de1eb739135de1f6  ./images/logo/logo.svg
+46fefe0fe5f72132e50cb0449a3df7c56eeac7b305ecbeff205ebb0bb7245e4c  ./images/product/product-01.jpg
+023e24b591caa64959c340dafec9998ccb67d84240049e4ebdbc80836cb2fbdf  ./images/product/product-02.jpg
+bb2eaa531d1043fc064a54e6c022cbb57ce042a4a004e3e77801a546073894d7  ./images/product/product-03.jpg
+db5d396517f646370e1f704de1675d49898eba777a45c9a9d698b4b78845af00  ./images/product/product-04.jpg
+09807441474f34437f40676417ceeb2359a6f3fc225d05f0396416dad866aec2  ./images/product/product-05.jpg
+4bd148be933633de0c680138ee6c07fc8e2e7fda912a64a208bd20e8d9f65d0d  ./images/shape/grid-01.svg
+4b498b1766a8cb52a83d93e3752849dd18a68e6bcd3c4d504431c1429de15fec  ./images/task/google-drive.svg
+2a9fe03df0a97bf052e3db2ab6ae976ef2ac8b18008f7922b2fb60c3b9debe75  ./images/task/pdf.svg
+85b5b266ab37f8e4b8c76d00f897bc104853c536ab38294e019e1217bf2a2465  ./images/task/task.jpg
+98726ceaed979c497ec6e6b695b438bca76a4fec26e229c133847db80ee98920  ./images/task/task.png
+49f25552180aa7a091bd9a7cf5c1f63d544ad4b16fcb8e7a042c40f1d2a4b9bc  ./images/user/owner.png
+e049a511b10b051967008400092dd2dda8d40f19632cfa7b05616297fcfe40d5  ./images/user/user-01.jpg
+6e2d5d6ed492d90d0c0a51356b9fad7d6bb44b2319d88890389af46a3a82a832  ./images/user/user-02.jpg
+e017fdef2be62258f84bf8b043ca8419ebf50d314d2b9d43e43e9e4cc71cbfae  ./images/user/user-03.jpg
+c7abfcaafd1c85866bd3c1689a08b7d92f17209d10b9fefe2e494adac417f600  ./images/user/user-04.jpg
+260a2e69177bdde04d3bff135ff8ac6b49e623c4916eb76bef9cbf5d46053325  ./images/user/user-05.jpg
+f7ed9f8134410cdb72769c93e9908b90cdcdeedc0d8b6dd33fcf9b39b36bc819  ./images/user/user-06.jpg
+c7759786085c70bee4cfd7d114bbe5c37c0da0ed22b9e9c52d88857ce358f9b5  ./images/user/user-07.jpg
+cfe540f2065a41e2fbacb9cde232235ba99974bc2faeb6daa804872f1c0522ed  ./images/user/user-08.jpg
+d71f3534704b2ca847c5aaf7a6d7ee951b909b54eb44132af78942e9a7e7677c  ./images/user/user-09.jpg
+0a6a0d35448d8c14fb29763c43376a882e5bb20c83741d91021ef417306b6061  ./images/user/user-10.jpg
+ca3d7487fd03fd739ef5b685693fda5873bc63be01bc3954efff76f280497829  ./images/user/user-11.jpg
+e74db47b4312446ad68a1948b11bffed6391c16e3e4200b2e69d32753cac8113  ./images/user/user-12.jpg
+5d41581569f550c2dc8f7fccadb2a5f5df7e161483f2eefe695f7282b4c0938f  ./images/user/user-13.jpg
+ac4e0c8acd98f1c7c9a5e119109fbbd758051fdd0596c5a1da84e9dd68abae86  ./images/user/user-14.jpg
+c00795242873df57deb2f6fa7fd77e4cd7dc6a8058a3c9d13922772393d44fcc  ./images/user/user-15.jpg
+cf3959e30bb77f53c17afde301e771d87b6aa10d6944745676a6fd18c001280a  ./images/user/user-16.jpg
+08812121f5c6f6cb8fd840f1ec9410dc7fd69a8c9a69bafb6c40c895905084c2  ./images/user/user-17.jpg
+12f28512f5f53d8153e38b34dc85e89b5cf0e4d0b4c23d563033e1e5f8474366  ./images/user/user-18.jpg
+05323737a563481979458462e2c88744cc0a96cb7630ace2ee0a92be4ee79d9f  ./images/user/user-19.jpg
+7c214067a273a97b2bf89159f1a5dac6fc26a6b0814f6879cd9f0ba9faea661f  ./images/user/user-20.jpg
+16e205df17eb7c022d36a1b8a4247a77ed53cad763f5271744968b364effcd82  ./images/user/user-21.jpg
+c3061423eb4365fd0f056ce8bdee38da7586cc3e03c8ea5dd3afc630a161a5fe  ./images/user/user-22.jpg
+5b1fe53a4684860e2f1872a64abae4e80279375f9daaabbecc117ce20695aa16  ./images/user/user-23.jpg
+5df08288188acf2bb12731d9ac0465a82adbcea25a02494ee5a4edc1ea25f6e7  ./images/user/user-24.jpg
+0cde4d5ba127faff9e0e1b543650380958cbdf03f4a9d6497a6df3656d296b64  ./images/user/user-25.jpg
+ffc7b4d683dd46de7fca26f7f34f5164603291fe0e7ca4acad5ee3f49166fa0b  ./images/user/user-26.jpg
+4a8ea43db8987f84ae859801837e7f39a4a8c9c2586e036c06a3b927d0ee8464  ./images/user/user-27.jpg
+a898ae5f991f979047730af961c21ca3b96c06b5fd341082cef027ea9834e0b5  ./images/user/user-28.jpg
+d8df279843080779ec154f9da8d332c4885154fdf3328d86017790a08f2233a0  ./images/user/user-29.jpg
+9883a2d894d7fc9004a81d51469214f223d34a1a74bf9ea32fbe15c13e754bc4  ./images/user/user-30.jpg
+44135d1a73fbd0fede43f823013351718f69bf66136ab6c35e7964736152f7a6  ./images/user/user-31.jpg
+7009930f5c2c4cfb33607d2c758a76abede86ce18ad60e6edc01a65782d40853  ./images/user/user-32.jpg
+af3dab17697e0a6cef4f8100103ab064b590d5e115f67dee7df6f4f6067d09bc  ./images/user/user-33.jpg
+683659eedde79c90200ac7e4da14a1a6bfb16fadadbeb8499ebf82a72c91efe6  ./images/user/user-34.jpg
+97955b39d532c5c6c732cdce2952c019a382069bf46ecb37e4a03779998adaab  ./images/user/user-35.jpg
+1f314c49584b1a9507a65b0a9fc463c3134f4150993916ce9e20c89321ee95c5  ./images/user/user-36.jpg
+4037e3ae3dd6fb2fb56da73f6b6fcd72ea21e8556a8ea3732eb5ab0b141f9cd4  ./images/user/user-37.jpg
+b7585db4da415fc6305c8052c85f69cd3263b93d533fc3f694c03efc617d7f09  ./images/video-thumb/thumb-16.png
+b73837de55bf6e5703bfed97681510971fa55b01ebf9f2dab42f8d9955e176c6  ./images/video-thumb/youtube-icon-84.svg
+dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5  ./index.html

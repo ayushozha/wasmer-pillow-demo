@@ -1,12 +1,5 @@
-# 2026-10-22T06:00:34Z serve via anybuild run --start; static-web-server resolved to /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+# 2026-10-22T06:10:50Z CORRECTION v2 serve via anybuild run --start; static-web-server resolved to /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
 Version:      2.32.2
-Built:        
-Git commit:   
-Build target: x86_64-unknown-linux-gnu
-Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
-License:      MIT OR Apache-2.0
-Homepage:     https://static-web-server.net
-Author:       Jose Quintana <https://joseluisq.net>
 $ SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start
 ╭─────────────────╮
 │ Anybuild 0.33.0 │
@@ -15,85 +8,141 @@ $ SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start
 
   Run start command
   ─────────────────
-[2m2026-10-22T06:00:34.402876Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m config file empty or no `general` settings found, using default values
-[2m2026-10-22T06:00:34.404069Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m static-web-server 2.32.2
-[2m2026-10-22T06:00:34.404104Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log level: info
-[2m2026-10-22T06:00:34.404122Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
-[2m2026-10-22T06:00:34.404164Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m server bound to tcp socket 127.0.0.1:8080
-[2m2026-10-22T06:00:34.404185Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime worker threads: 4
-[2m2026-10-22T06:00:34.404191Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime max blocking threads: 512
-[2m2026-10-22T06:00:34.404222Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m redirect trailing slash: enabled=true
-[2m2026-10-22T06:00:34.404239Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m ignore hidden files: enabled=false
-[2m2026-10-22T06:00:34.404245Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m disable symlinks: enabled=false
-[2m2026-10-22T06:00:34.404248Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m grace period before graceful shutdown: 0s
-[2m2026-10-22T06:00:34.404253Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m index files: index.html
-[2m2026-10-22T06:00:34.404270Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing: enabled=false
-[2m2026-10-22T06:00:34.404277Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing order code: 6
-[2m2026-10-22T06:00:34.404297Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing format: Html
-[2m2026-10-22T06:00:34.404304Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m fallback page: enabled=false, value=""
-[2m2026-10-22T06:00:34.404323Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m health endpoint: enabled=false
-[2m2026-10-22T06:00:34.404328Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log requests with remote and real IP addresses: enabled=false
-[2m2026-10-22T06:00:34.404334Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m basic authentication: enabled=false
-[2m2026-10-22T06:00:34.404351Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode: enabled=false
-[2m2026-10-22T06:00:34.404355Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode status: 503
-[2m2026-10-22T06:00:34.404359Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode file: ""
-[2m2026-10-22T06:00:34.404361Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m compression static: enabled=false
-[2m2026-10-22T06:00:34.404365Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
-[2m2026-10-22T06:00:34.404369Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m cache control headers: enabled=true
-[2m2026-10-22T06:00:34.404371Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m security headers: enabled=false
-[2m2026-10-22T06:00:34.404545Z[0m [32m INFO[0m [1mServer::start_server[0m[1m{[0m[3maddr_str[0m[2m=[0m"127.0.0.1:8080" [3mthreads[0m[2m=[0m4[1m}[0m[2m:[0m [2mstatic_web_server::server[0m[2m:[0m close [3mtime.busy[0m[2m=[0m0.00ns [3mtime.idle[0m[2m=[0m1.88µs
-[2m2026-10-22T06:00:34.404584Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m http1 server is listening on http://127.0.0.1:8080
-[2m2026-10-22T06:00:34.404589Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m press ctrl+c to shut down the server
-[2m2026-10-22T06:00:35.400951Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
-[2m2026-10-22T06:00:39.853396Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
-[2m2026-10-22T06:00:39.868339Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/index.html
-[2m2026-10-22T06:00:39.883424Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
-[2m2026-10-22T06:00:39.900667Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
-[2m2026-10-22T06:00:39.915873Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
-[2m2026-10-22T06:00:39.934202Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
-[2m2026-10-22T06:00:39.953187Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
-[2m2026-10-22T06:00:39.970623Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
-[2m2026-10-22T06:00:39.988426Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
-[2m2026-10-22T06:00:40.003438Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
-[2m2026-10-22T06:00:40.022881Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
-[2m2026-10-22T06:00:40.040343Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
-[2m2026-10-22T06:00:40.056614Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
-[2m2026-10-22T06:00:40.074970Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
-[2m2026-10-22T06:00:40.094858Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
-[2m2026-10-22T06:00:40.110497Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
-[2m2026-10-22T06:00:40.125743Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
-[2m2026-10-22T06:00:40.145030Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
-[2m2026-10-22T06:00:40.161669Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar?view=month&d=1
-[2m2026-10-22T06:00:40.177719Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/
-[2m2026-10-22T06:00:40.177831Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.196575Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/
-[2m2026-10-22T06:00:40.196719Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/images/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.212295Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/extra
-[2m2026-10-22T06:00:40.212403Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile/extra [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.233190Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/Profile
-[2m2026-10-22T06:00:40.233305Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/Profile [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.254438Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope
-[2m2026-10-22T06:00:40.254626Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.272683Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/does/not/exist
-[2m2026-10-22T06:00:40.272782Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/does/not/exist [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.286921Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/404.html
-[2m2026-10-22T06:00:40.287004Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/404.html [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.303142Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/nope.js
-[2m2026-10-22T06:00:40.303283Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/assets/nope.js [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.320542Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/nope.css
-[2m2026-10-22T06:00:40.320660Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/assets/nope.css [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.335996Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/nope.png
-[2m2026-10-22T06:00:40.336096Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/images/nope.png [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:00:40.353577Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-BCqG7Liu.js
-[2m2026-10-22T06:00:40.389361Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-lqHzMpjd.css
-[2m2026-10-22T06:00:40.409386Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.png
-[2m2026-10-22T06:00:40.426739Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/favicon.ico
-[2m2026-10-22T06:00:40.442832Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo.svg
-[2m2026-10-22T06:00:40.462742Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=HEAD uri=/profile
-[2m2026-10-22T06:00:47.300333Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m SIGTERM, SIGINT or SIGQUIT signal caught
-[2m2026-10-22T06:00:47.300435Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m delegating server's graceful shutdown
-[2m2026-10-22T06:00:47.300620Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m termination signal caught, shutting down the server execution
-# 2026-10-22T06:03:41Z second serve (for Playwright) via anybuild run --start; static-web-server resolved to /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+[2m2026-10-22T06:10:50.415985Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m config file empty or no `general` settings found, using default values
+[2m2026-10-22T06:10:50.417530Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m static-web-server 2.32.2
+[2m2026-10-22T06:10:50.417571Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log level: info
+[2m2026-10-22T06:10:50.417592Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+[2m2026-10-22T06:10:50.417635Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m server bound to tcp socket 127.0.0.1:8080
+[2m2026-10-22T06:10:50.417643Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime worker threads: 4
+[2m2026-10-22T06:10:50.417646Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime max blocking threads: 512
+[2m2026-10-22T06:10:50.417678Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m redirect trailing slash: enabled=true
+[2m2026-10-22T06:10:50.417681Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m ignore hidden files: enabled=false
+[2m2026-10-22T06:10:50.417685Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m disable symlinks: enabled=false
+[2m2026-10-22T06:10:50.417688Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m grace period before graceful shutdown: 0s
+[2m2026-10-22T06:10:50.417692Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m index files: index.html
+[2m2026-10-22T06:10:50.417697Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing: enabled=false
+[2m2026-10-22T06:10:50.417699Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing order code: 6
+[2m2026-10-22T06:10:50.417702Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing format: Html
+[2m2026-10-22T06:10:50.417707Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m fallback page: enabled=false, value=""
+[2m2026-10-22T06:10:50.417710Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m health endpoint: enabled=false
+[2m2026-10-22T06:10:50.417713Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log requests with remote and real IP addresses: enabled=false
+[2m2026-10-22T06:10:50.417717Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m basic authentication: enabled=false
+[2m2026-10-22T06:10:50.417720Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode: enabled=false
+[2m2026-10-22T06:10:50.417722Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode status: 503
+[2m2026-10-22T06:10:50.417725Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode file: ""
+[2m2026-10-22T06:10:50.417728Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m compression static: enabled=false
+[2m2026-10-22T06:10:50.417732Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+[2m2026-10-22T06:10:50.417742Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m cache control headers: enabled=true
+[2m2026-10-22T06:10:50.417745Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m security headers: enabled=false
+[2m2026-10-22T06:10:50.417822Z[0m [32m INFO[0m [1mServer::start_server[0m[1m{[0m[3maddr_str[0m[2m=[0m"127.0.0.1:8080" [3mthreads[0m[2m=[0m4[1m}[0m[2m:[0m [2mstatic_web_server::server[0m[2m:[0m close [3mtime.busy[0m[2m=[0m0.00ns [3mtime.idle[0m[2m=[0m1.48µs
+[2m2026-10-22T06:10:50.417853Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m http1 server is listening on http://127.0.0.1:8080
+[2m2026-10-22T06:10:50.417856Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m press ctrl+c to shut down the server
+[2m2026-10-22T06:10:51.410935Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
+[2m2026-10-22T06:10:51.450423Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
+[2m2026-10-22T06:10:51.468630Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/index.html
+[2m2026-10-22T06:10:51.483695Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
+[2m2026-10-22T06:10:51.502171Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/
+[2m2026-10-22T06:10:51.519636Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
+[2m2026-10-22T06:10:51.534944Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/?x=1
+[2m2026-10-22T06:10:51.553551Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
+[2m2026-10-22T06:10:51.581883Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar/
+[2m2026-10-22T06:10:51.600574Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar?x=1
+[2m2026-10-22T06:10:51.621685Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar/?x=1
+[2m2026-10-22T06:10:51.650296Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
+[2m2026-10-22T06:10:51.667157Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank/
+[2m2026-10-22T06:10:51.683842Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank?x=1
+[2m2026-10-22T06:10:51.700972Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank/?x=1
+[2m2026-10-22T06:10:51.720014Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
+[2m2026-10-22T06:10:51.737589Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements/
+[2m2026-10-22T06:10:51.755386Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements?x=1
+[2m2026-10-22T06:10:51.770695Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements/?x=1
+[2m2026-10-22T06:10:51.786231Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
+[2m2026-10-22T06:10:51.804800Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables/
+[2m2026-10-22T06:10:51.827996Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables?x=1
+[2m2026-10-22T06:10:51.848795Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables/?x=1
+[2m2026-10-22T06:10:51.872061Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
+[2m2026-10-22T06:10:51.891765Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts/
+[2m2026-10-22T06:10:51.911482Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts?x=1
+[2m2026-10-22T06:10:51.930981Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts/?x=1
+[2m2026-10-22T06:10:51.958082Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
+[2m2026-10-22T06:10:51.981859Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars/
+[2m2026-10-22T06:10:52.002811Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars?x=1
+[2m2026-10-22T06:10:52.028788Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars/?x=1
+[2m2026-10-22T06:10:52.053831Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
+[2m2026-10-22T06:10:52.072719Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge/
+[2m2026-10-22T06:10:52.094789Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge?x=1
+[2m2026-10-22T06:10:52.113918Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge/?x=1
+[2m2026-10-22T06:10:52.130904Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
+[2m2026-10-22T06:10:52.147526Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons/
+[2m2026-10-22T06:10:52.169905Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons?x=1
+[2m2026-10-22T06:10:52.190968Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons/?x=1
+[2m2026-10-22T06:10:52.210653Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
+[2m2026-10-22T06:10:52.230929Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/
+[2m2026-10-22T06:10:52.249171Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images?x=1
+[2m2026-10-22T06:10:52.270435Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/?x=1
+[2m2026-10-22T06:10:52.289336Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
+[2m2026-10-22T06:10:52.306925Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos/
+[2m2026-10-22T06:10:52.324343Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos?x=1
+[2m2026-10-22T06:10:52.345741Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos/?x=1
+[2m2026-10-22T06:10:52.364315Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
+[2m2026-10-22T06:10:52.387156Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart/
+[2m2026-10-22T06:10:52.406844Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart?x=1
+[2m2026-10-22T06:10:52.431932Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart/?x=1
+[2m2026-10-22T06:10:52.450461Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
+[2m2026-10-22T06:10:52.476487Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart/
+[2m2026-10-22T06:10:52.496604Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart?x=1
+[2m2026-10-22T06:10:52.515451Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart/?x=1
+[2m2026-10-22T06:10:52.537678Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
+[2m2026-10-22T06:10:52.557973Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin/
+[2m2026-10-22T06:10:52.579104Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin?x=1
+[2m2026-10-22T06:10:52.597465Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin/?x=1
+[2m2026-10-22T06:10:52.614660Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
+[2m2026-10-22T06:10:52.635986Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup/
+[2m2026-10-22T06:10:52.662294Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup?x=1
+[2m2026-10-22T06:10:52.689203Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup/?x=1
+[2m2026-10-22T06:10:52.711699Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?q=a%20b&tab=%2Fx
+[2m2026-10-22T06:10:52.734018Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=HEAD uri=/profile
+[2m2026-10-22T06:10:52.754448Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=HEAD uri=/profile/
+[2m2026-10-22T06:10:52.773204Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope
+[2m2026-10-22T06:10:52.773319Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.796758Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope/
+[2m2026-10-22T06:10:52.796888Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.833562Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/extra
+[2m2026-10-22T06:10:52.833714Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile/extra [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.859566Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/extra/
+[2m2026-10-22T06:10:52.859744Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile/extra/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.882388Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile//
+[2m2026-10-22T06:10:52.882516Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile// [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.905368Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=//profile
+[2m2026-10-22T06:10:52.905494Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m//profile [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.927961Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profiles
+[2m2026-10-22T06:10:52.928089Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profiles [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.948107Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/Profile
+[2m2026-10-22T06:10:52.948309Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/Profile [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.966972Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin/x
+[2m2026-10-22T06:10:52.967126Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/signin/x [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:52.985672Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/brand/
+[2m2026-10-22T06:10:52.985842Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/images/brand/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.007365Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/404.html
+[2m2026-10-22T06:10:53.007512Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/404.html [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.027244Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/nope.js
+[2m2026-10-22T06:10:53.027402Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/assets/nope.js [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.052475Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/nope.css
+[2m2026-10-22T06:10:53.052645Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/assets/nope.css [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.077041Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/nope.png
+[2m2026-10-22T06:10:53.077223Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/images/nope.png [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.096653Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/
+[2m2026-10-22T06:10:53.096851Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/assets/ [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:10:53.117756Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/brand
+[2m2026-10-22T06:10:53.137731Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-BCqG7Liu.js
+[2m2026-10-22T06:10:53.164971Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-lqHzMpjd.css
+[2m2026-10-22T06:10:53.187730Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.png
+[2m2026-10-22T06:10:53.217645Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/favicon.ico
+[2m2026-10-22T06:10:53.243415Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo.svg
+[2m2026-10-22T06:10:53.269600Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m SIGTERM, SIGINT or SIGQUIT signal caught
+[2m2026-10-22T06:10:53.269647Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m delegating server's graceful shutdown
+[2m2026-10-22T06:10:53.270053Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m termination signal caught, shutting down the server execution
+# 2026-10-22T06:11:15Z CORRECTION v2 serve for Playwright with /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
 ╭─────────────────╮
 │ Anybuild 0.33.0 │
 ╰─────────────────╯
@@ -101,122 +150,134 @@ $ SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start
 
   Run start command
   ─────────────────
-[2m2026-10-22T06:03:41.491050Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m config file empty or no `general` settings found, using default values
-[2m2026-10-22T06:03:41.492418Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m static-web-server 2.32.2
-[2m2026-10-22T06:03:41.492454Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log level: info
-[2m2026-10-22T06:03:41.492476Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
-[2m2026-10-22T06:03:41.492518Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m server bound to tcp socket 127.0.0.1:8080
-[2m2026-10-22T06:03:41.492541Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime worker threads: 4
-[2m2026-10-22T06:03:41.492547Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime max blocking threads: 512
-[2m2026-10-22T06:03:41.492565Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m redirect trailing slash: enabled=true
-[2m2026-10-22T06:03:41.492580Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m ignore hidden files: enabled=false
-[2m2026-10-22T06:03:41.492599Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m disable symlinks: enabled=false
-[2m2026-10-22T06:03:41.492605Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m grace period before graceful shutdown: 0s
-[2m2026-10-22T06:03:41.492619Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m index files: index.html
-[2m2026-10-22T06:03:41.492639Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing: enabled=false
-[2m2026-10-22T06:03:41.492655Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing order code: 6
-[2m2026-10-22T06:03:41.492660Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing format: Html
-[2m2026-10-22T06:03:41.492676Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m fallback page: enabled=false, value=""
-[2m2026-10-22T06:03:41.492693Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m health endpoint: enabled=false
-[2m2026-10-22T06:03:41.492698Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log requests with remote and real IP addresses: enabled=false
-[2m2026-10-22T06:03:41.492714Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m basic authentication: enabled=false
-[2m2026-10-22T06:03:41.492730Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode: enabled=false
-[2m2026-10-22T06:03:41.492735Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode status: 503
-[2m2026-10-22T06:03:41.492749Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode file: ""
-[2m2026-10-22T06:03:41.492754Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m compression static: enabled=false
-[2m2026-10-22T06:03:41.492769Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
-[2m2026-10-22T06:03:41.492786Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m cache control headers: enabled=true
-[2m2026-10-22T06:03:41.492791Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m security headers: enabled=false
-[2m2026-10-22T06:03:41.492909Z[0m [32m INFO[0m [1mServer::start_server[0m[1m{[0m[3maddr_str[0m[2m=[0m"127.0.0.1:8080" [3mthreads[0m[2m=[0m4[1m}[0m[2m:[0m [2mstatic_web_server::server[0m[2m:[0m close [3mtime.busy[0m[2m=[0m0.00ns [3mtime.idle[0m[2m=[0m1.71µs
-[2m2026-10-22T06:03:41.492958Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m http1 server is listening on http://127.0.0.1:8080
-[2m2026-10-22T06:03:41.492964Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m press ctrl+c to shut down the server
-[2m2026-10-22T06:03:42.490210Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
-[2m2026-10-22T06:03:43.538888Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
-[2m2026-10-22T06:03:43.553416Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-BCqG7Liu.js
-[2m2026-10-22T06:03:43.621804Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-lqHzMpjd.css
-[2m2026-10-22T06:03:44.088503Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-01.jpg
-[2m2026-10-22T06:03:44.088560Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/country/country-02.svg
-[2m2026-10-22T06:03:44.088786Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo.svg
-[2m2026-10-22T06:03:44.089585Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo-dark.svg
-[2m2026-10-22T06:03:44.088518Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/owner.png
-[2m2026-10-22T06:03:44.088549Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/country/country-01.svg
-[2m2026-10-22T06:03:44.095545Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-02.jpg
-[2m2026-10-22T06:03:44.095850Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-04.jpg
-[2m2026-10-22T06:03:44.095918Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-03.jpg
-[2m2026-10-22T06:03:44.096640Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-05.jpg
-[2m2026-10-22T06:03:45.171314Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.png
-[2m2026-10-22T06:03:46.431680Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
-[2m2026-10-22T06:03:47.432874Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
-[2m2026-10-22T06:03:48.142304Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
-[2m2026-10-22T06:03:48.788002Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
-[2m2026-10-22T06:03:49.712307Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
-[2m2026-10-22T06:03:50.650528Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
-[2m2026-10-22T06:03:51.439807Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
-[2m2026-10-22T06:03:52.191870Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
-[2m2026-10-22T06:03:53.081015Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
-[2m2026-10-22T06:03:53.932622Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
-[2m2026-10-22T06:03:54.068712Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-17.jpg
-[2m2026-10-22T06:03:54.082492Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-22.jpg
-[2m2026-10-22T06:03:54.086392Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-23.jpg
-[2m2026-10-22T06:03:54.090182Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-24.jpg
-[2m2026-10-22T06:03:54.092766Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-18.jpg
-[2m2026-10-22T06:03:54.095552Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-25.jpg
-[2m2026-10-22T06:03:54.107759Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-21.jpg
-[2m2026-10-22T06:03:54.110706Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-20.jpg
-[2m2026-10-22T06:03:54.112060Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-27.jpg
-[2m2026-10-22T06:03:54.116258Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-33.jpg
-[2m2026-10-22T06:03:54.118544Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-30.jpg
-[2m2026-10-22T06:03:54.121108Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-29.jpg
-[2m2026-10-22T06:03:54.126249Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-26.jpg
-[2m2026-10-22T06:03:54.129079Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-28.jpg
-[2m2026-10-22T06:03:54.129266Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-32.jpg
-[2m2026-10-22T06:03:54.129352Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-31.jpg
-[2m2026-10-22T06:03:54.790864Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
-[2m2026-10-22T06:03:55.663737Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
-[2m2026-10-22T06:03:56.592420Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
-[2m2026-10-22T06:03:57.287295Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
-[2m2026-10-22T06:03:57.367039Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-01.jpg
-[2m2026-10-22T06:03:57.378024Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-02.jpg
-[2m2026-10-22T06:03:57.378241Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-06.jpg
-[2m2026-10-22T06:03:57.378307Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-05.jpg
-[2m2026-10-22T06:03:57.378343Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-03.jpg
-[2m2026-10-22T06:03:57.378602Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-04.jpg
-[2m2026-10-22T06:03:58.112700Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
-[2m2026-10-22T06:03:58.953497Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
-[2m2026-10-22T06:03:59.618524Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
-[2m2026-10-22T06:04:00.288198Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
-[2m2026-10-22T06:04:00.960553Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
-[2m2026-10-22T06:04:01.704972Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
-[2m2026-10-22T06:04:01.783050Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-01.png
-[2m2026-10-22T06:04:01.851985Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-03.png
-[2m2026-10-22T06:04:01.852619Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-02.png
-[2m2026-10-22T06:04:01.852942Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-04.png
-[2m2026-10-22T06:04:01.853172Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-05.png
-[2m2026-10-22T06:04:01.853397Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-06.png
-[2m2026-10-22T06:04:02.492739Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
-[2m2026-10-22T06:04:03.240198Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
-[2m2026-10-22T06:04:04.808508Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
-[2m2026-10-22T06:04:06.674382Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
-[2m2026-10-22T06:04:07.486478Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
-[2m2026-10-22T06:04:08.260953Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
-[2m2026-10-22T06:04:09.252673Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
-[2m2026-10-22T06:04:09.999780Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
-[2m2026-10-22T06:04:10.115379Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/shape/grid-01.svg
-[2m2026-10-22T06:04:10.115863Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/auth-logo.svg
-[2m2026-10-22T06:04:10.714390Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
-[2m2026-10-22T06:04:11.341357Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
-[2m2026-10-22T06:04:12.011864Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
-[2m2026-10-22T06:04:12.683336Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
-[2m2026-10-22T06:04:13.405462Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
-[2m2026-10-22T06:04:14.878815Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
-[2m2026-10-22T06:04:16.592835Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
-[2m2026-10-22T06:04:17.491236Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
-[2m2026-10-22T06:04:18.192268Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope
-[2m2026-10-22T06:04:18.192388Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:04:18.223700Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.ico
-[2m2026-10-22T06:04:18.223811Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/favicon.ico [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
-[2m2026-10-22T06:04:18.503320Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/error/404.svg
-[2m2026-10-22T06:04:18.503722Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/error/404-dark.svg
-[2m2026-10-22T06:04:31.547205Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m SIGTERM, SIGINT or SIGQUIT signal caught
-[2m2026-10-22T06:04:31.547295Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m delegating server's graceful shutdown
-[2m2026-10-22T06:04:31.547661Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m termination signal caught, shutting down the server execution
+[2m2026-10-22T06:11:15.424778Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m config file empty or no `general` settings found, using default values
+[2m2026-10-22T06:11:15.427245Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m static-web-server 2.32.2
+[2m2026-10-22T06:11:15.427414Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log level: info
+[2m2026-10-22T06:11:15.427475Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+[2m2026-10-22T06:11:15.427528Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m server bound to tcp socket 127.0.0.1:8080
+[2m2026-10-22T06:11:15.427551Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime worker threads: 4
+[2m2026-10-22T06:11:15.427557Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime max blocking threads: 512
+[2m2026-10-22T06:11:15.427580Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m redirect trailing slash: enabled=true
+[2m2026-10-22T06:11:15.427674Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m ignore hidden files: enabled=false
+[2m2026-10-22T06:11:15.427701Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m disable symlinks: enabled=false
+[2m2026-10-22T06:11:15.427719Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m grace period before graceful shutdown: 0s
+[2m2026-10-22T06:11:15.427739Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m index files: index.html
+[2m2026-10-22T06:11:15.427761Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing: enabled=false
+[2m2026-10-22T06:11:15.427780Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing order code: 6
+[2m2026-10-22T06:11:15.427797Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing format: Html
+[2m2026-10-22T06:11:15.427819Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m fallback page: enabled=false, value=""
+[2m2026-10-22T06:11:15.427839Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m health endpoint: enabled=false
+[2m2026-10-22T06:11:15.427857Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log requests with remote and real IP addresses: enabled=false
+[2m2026-10-22T06:11:15.427886Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m basic authentication: enabled=false
+[2m2026-10-22T06:11:15.427905Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode: enabled=false
+[2m2026-10-22T06:11:15.427923Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode status: 503
+[2m2026-10-22T06:11:15.427929Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode file: ""
+[2m2026-10-22T06:11:15.427948Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m compression static: enabled=false
+[2m2026-10-22T06:11:15.427955Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+[2m2026-10-22T06:11:15.427960Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m cache control headers: enabled=true
+[2m2026-10-22T06:11:15.427964Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m security headers: enabled=false
+[2m2026-10-22T06:11:15.428141Z[0m [32m INFO[0m [1mServer::start_server[0m[1m{[0m[3maddr_str[0m[2m=[0m"127.0.0.1:8080" [3mthreads[0m[2m=[0m4[1m}[0m[2m:[0m [2mstatic_web_server::server[0m[2m:[0m close [3mtime.busy[0m[2m=[0m0.00ns [3mtime.idle[0m[2m=[0m2.19µs
+[2m2026-10-22T06:11:15.428185Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m http1 server is listening on http://127.0.0.1:8080
+[2m2026-10-22T06:11:15.428204Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m press ctrl+c to shut down the server
+[2m2026-10-22T06:11:16.422748Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
+[2m2026-10-22T06:11:17.616454Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
+[2m2026-10-22T06:11:17.634490Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-BCqG7Liu.js
+[2m2026-10-22T06:11:17.634700Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/assets/index-lqHzMpjd.css
+[2m2026-10-22T06:11:18.125950Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo.svg
+[2m2026-10-22T06:11:18.128520Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/logo-dark.svg
+[2m2026-10-22T06:11:18.131190Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/owner.png
+[2m2026-10-22T06:11:18.132532Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/country/country-01.svg
+[2m2026-10-22T06:11:18.133572Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-01.jpg
+[2m2026-10-22T06:11:18.133659Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/country/country-02.svg
+[2m2026-10-22T06:11:18.135495Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-02.jpg
+[2m2026-10-22T06:11:18.136408Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-03.jpg
+[2m2026-10-22T06:11:18.139077Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-04.jpg
+[2m2026-10-22T06:11:18.139296Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/product/product-05.jpg
+[2m2026-10-22T06:11:18.411658Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.png
+[2m2026-10-22T06:11:19.154162Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/
+[2m2026-10-22T06:11:19.966172Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
+[2m2026-10-22T06:11:20.655211Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
+[2m2026-10-22T06:11:21.318448Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
+[2m2026-10-22T06:11:22.109613Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
+[2m2026-10-22T06:11:22.823188Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
+[2m2026-10-22T06:11:23.491059Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/blank
+[2m2026-10-22T06:11:24.150103Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
+[2m2026-10-22T06:11:24.793114Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/form-elements
+[2m2026-10-22T06:11:25.550736Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
+[2m2026-10-22T06:11:25.613855Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-17.jpg
+[2m2026-10-22T06:11:25.615639Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-22.jpg
+[2m2026-10-22T06:11:25.617048Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-23.jpg
+[2m2026-10-22T06:11:25.617610Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-24.jpg
+[2m2026-10-22T06:11:25.619768Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-18.jpg
+[2m2026-10-22T06:11:25.620591Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-25.jpg
+[2m2026-10-22T06:11:25.624944Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-26.jpg
+[2m2026-10-22T06:11:25.625980Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-27.jpg
+[2m2026-10-22T06:11:25.627042Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-20.jpg
+[2m2026-10-22T06:11:25.628783Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-28.jpg
+[2m2026-10-22T06:11:25.631211Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-29.jpg
+[2m2026-10-22T06:11:25.631331Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-30.jpg
+[2m2026-10-22T06:11:25.633505Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-21.jpg
+[2m2026-10-22T06:11:25.644211Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-32.jpg
+[2m2026-10-22T06:11:25.646658Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-31.jpg
+[2m2026-10-22T06:11:25.647646Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-33.jpg
+[2m2026-10-22T06:11:26.232857Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables
+[2m2026-10-22T06:11:26.886731Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
+[2m2026-10-22T06:11:27.538870Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/alerts
+[2m2026-10-22T06:11:28.209704Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
+[2m2026-10-22T06:11:28.287127Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-06.jpg
+[2m2026-10-22T06:11:28.287168Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-03.jpg
+[2m2026-10-22T06:11:28.287347Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-04.jpg
+[2m2026-10-22T06:11:28.287409Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-01.jpg
+[2m2026-10-22T06:11:28.287472Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-05.jpg
+[2m2026-10-22T06:11:28.287550Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/user/user-02.jpg
+[2m2026-10-22T06:11:28.896971Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/avatars
+[2m2026-10-22T06:11:29.573283Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
+[2m2026-10-22T06:11:30.252022Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/badge
+[2m2026-10-22T06:11:30.897393Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
+[2m2026-10-22T06:11:31.535871Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/buttons
+[2m2026-10-22T06:11:32.190506Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
+[2m2026-10-22T06:11:32.264335Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-01.png
+[2m2026-10-22T06:11:32.267656Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-02.png
+[2m2026-10-22T06:11:32.268164Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-03.png
+[2m2026-10-22T06:11:32.269342Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-04.png
+[2m2026-10-22T06:11:32.269704Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-05.png
+[2m2026-10-22T06:11:32.270582Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/grid-image/image-06.png
+[2m2026-10-22T06:11:32.875272Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images
+[2m2026-10-22T06:11:33.527867Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
+[2m2026-10-22T06:11:34.967252Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/videos
+[2m2026-10-22T06:11:36.443126Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
+[2m2026-10-22T06:11:37.167043Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/line-chart
+[2m2026-10-22T06:11:37.903272Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
+[2m2026-10-22T06:11:38.585825Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/bar-chart
+[2m2026-10-22T06:11:39.277371Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
+[2m2026-10-22T06:11:39.327523Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/shape/grid-01.svg
+[2m2026-10-22T06:11:39.329236Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/logo/auth-logo.svg
+[2m2026-10-22T06:11:39.919713Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin
+[2m2026-10-22T06:11:40.558213Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
+[2m2026-10-22T06:11:41.205683Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signup
+[2m2026-10-22T06:11:41.849143Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
+[2m2026-10-22T06:11:42.513389Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile?x=1
+[2m2026-10-22T06:11:43.895955Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
+[2m2026-10-22T06:11:44.595203Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/
+[2m2026-10-22T06:11:44.656738Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/images/user/owner.png
+[2m2026-10-22T06:11:44.656869Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/profile/images/user/owner.png [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:11:45.260480Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile/
+[2m2026-10-22T06:11:45.950569Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar/
+[2m2026-10-22T06:11:46.731530Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar/
+[2m2026-10-22T06:11:47.483264Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin/
+[2m2026-10-22T06:11:48.157077Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/signin/
+[2m2026-10-22T06:11:48.813027Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables/?x=1
+[2m2026-10-22T06:11:49.508663Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/basic-tables/?x=1
+[2m2026-10-22T06:11:50.212843Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/
+[2m2026-10-22T06:11:50.879558Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/
+[2m2026-10-22T06:11:52.530983Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
+[2m2026-10-22T06:11:53.383407Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/calendar
+[2m2026-10-22T06:11:54.098169Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope
+[2m2026-10-22T06:11:54.098309Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:11:54.129728Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/favicon.ico
+[2m2026-10-22T06:11:54.129840Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/favicon.ico [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:11:54.435778Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/error/404.svg
+[2m2026-10-22T06:11:54.436194Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/images/error/404-dark.svg
+[2m2026-10-22T06:11:54.755836Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m SIGTERM, SIGINT or SIGQUIT signal caught
+[2m2026-10-22T06:11:54.755946Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m delegating server's graceful shutdown
+[2m2026-10-22T06:11:54.756208Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m termination signal caught, shutting down the server execution

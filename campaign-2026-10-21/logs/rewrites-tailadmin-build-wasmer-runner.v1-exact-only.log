@@ -1,0 +1,335 @@
+# 2026-10-22T06:04:56Z wasmer runner rendering with stub wasmer (answers --version only). NOTHING deployed or packaged to a registry.
+$ anybuild build . --builder=local --runner=wasmer --wasmer-bin=/tmp/claude-0/rw/stub/wasmer --show-wasmer-files
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  npm                │  11      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ npm install
+
+  ▸ build
+    $ npm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, npm@11
+
+  Working in /opt/temp
+
+  Copy to package-lock.json from package-lock.json
+
+  Setting environment variables: CI="true" NPM_CONFIG_FUND="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ npm install # using package.json
+
+added 330 packages, and audited 331 packages in 8s
+
+3 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+  Copy to . from . # ignoring node_modules, .git, package-lock.json
+
+  $ npm run build
+
+> tailadmin-react@2.4.0 build
+> tsc -b && vite build
+
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 407 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.45 kB │ gzip:   0.31 kB
+dist/assets/index-lqHzMpjd.css    179.59 kB │ gzip:  27.34 kB
+dist/assets/index-BCqG7Liu.js   2,009.25 kB │ gzip: 582.38 kB
+
+[32m✓ built in 3.36s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+
+  $ cp -R dist/. /opt/static_app/
+
+  Write file /opt/static_config/sws.toml
+
+  ╭──────────────────────────╮
+  │ Build complete in 21.63s │
+  ╰──────────────────────────╯
+
+  Wasmer Deployment
+  ─────────────────
+  Mapping dependencies to Wasmer packages:
+
+  static-web-server@2.38.0  │  wasmer/static-web-server@=1.1.0
+
+  ╭──────────────────────────────╮
+  │ Created wasmer.toml manifest │
+  ╰──────────────────────────────╯
+┌──────────────────────────────────────────────────────────────────────────────┐
+│    1 # Wasmer manifest generated with Anybuild v0.33.0                       │
+│    2                                                                         │
+│    3 [package]                                                               │
+│    4 entrypoint = "start"                                                    │
+│    5                                                                         │
+│    6 [dependencies]                                                          │
+│    7 "wasmer/static-web-server" = "=1.1.0"                                   │
+│    8                                                                         │
+│    9 [fs]                                                                    │
+│   10 "/opt/static_app" = "/tmp/claude-0/rw/free-react-tailwind-admin-dashboa │
+│   11 "/opt/static_config" = "/tmp/claude-0/rw/free-react-tailwind-admin-dash │
+│   12 [[command]]                                                             │
+│   13 name = "start"                                                          │
+│   14 module = "wasmer/static-web-server:webserver"                           │
+│   15 runner = "wasi"                                                         │
+│   16                                                                         │
+│   17 [command.annotations.wasi]                                              │
+│   18 main-args = [                                                           │
+│   19     "--root=/opt/static_app",                                           │
+│   20     "--log-level=info",                                                 │
+│   21     "--config-file=/opt/static_config/sws.toml",                        │
+│   22     "--port=8080",                                                      │
+│   23 ]                                                                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  ╭───────────────────────────╮
+  │ Created app.yaml manifest │
+  ╰───────────────────────────╯
+┌──────────────────────────────────────────────────────────────────────────────┐
+│    1 annotations:                                                            │
+│    2   anybuild.run/config:                                                  │
+│    3     edgejs_enable: true                                                 │
+│    4     edgejs_precompile: true                                             │
+│    5     name: free-react-tailwind-admin-dashboard                           │
+│    6     node_build_command: npm run build                                   │
+│    7     node_framework: vite                                                │
+│    8     node_install_inputs:                                                │
+│    9     - package.json                                                      │
+│   10     node_package_manager: npm                                           │
+│   11     node_package_name: tailadmin-react                                  │
+│   12     node_remove_native_binaries: true                                   │
+│   13     node_server: node                                                   │
+│   14     npm_version: '11'                                                   │
+│   15     static_dir: dist                                                    │
+│   16     static_redirects_config: |                                          │
+│   17       # SPA routes from src/App.tsx: exact paths only, so unknown paths │
+│   18       [advanced]                                                        │
+│   19                                                                         │
+│   20       [[advanced.rewrites]]                                             │
+│   21       source = "/profile"                                               │
+│   22       destination = "/index.html"                                       │
+│   23                                                                         │
+│   24       [[advanced.rewrites]]                                             │
+│   25       source = "/calendar"                                              │
+│   26       destination = "/index.html"                                       │
+│   27                                                                         │
+│   28       [[advanced.rewrites]]                                             │
+│   29       source = "/blank"                                                 │
+│   30       destination = "/index.html"                                       │
+│   31                                                                         │
+│   32       [[advanced.rewrites]]                                             │
+│   33       source = "/form-elements"                                         │
+│   34       destination = "/index.html"                                       │
+│   35                                                                         │
+│   36       [[advanced.rewrites]]                                             │
+│   37       source = "/basic-tables"                                          │
+│   38       destination = "/index.html"                                       │
+│   39                                                                         │
+│   40       [[advanced.rewrites]]                                             │
+│   41       source = "/alerts"                                                │
+│   42       destination = "/index.html"                                       │
+│   43                                                                         │
+│   44       [[advanced.rewrites]]                                             │
+│   45       source = "/avatars"                                               │
+│   46       destination = "/index.html"                                       │
+│   47                                                                         │
+│   48       [[advanced.rewrites]]                                             │
+│   49       source = "/badge"                                                 │
+│   50       destination = "/index.html"                                       │
+│   51                                                                         │
+│   52       [[advanced.rewrites]]                                             │
+│   53       source = "/buttons"                                               │
+│   54       destination = "/index.html"                                       │
+│   55                                                                         │
+│   56       [[advanced.rewrites]]                                             │
+│   57       source = "/images"                                                │
+│   58       destination = "/index.html"                                       │
+│   59                                                                         │
+│   60       [[advanced.rewrites]]                                             │
+│   61       source = "/videos"                                                │
+│   62       destination = "/index.html"                                       │
+│   63                                                                         │
+│   64       [[advanced.rewrites]]                                             │
+│   65       source = "/line-chart"                                            │
+│   66       destination = "/index.html"                                       │
+│   67                                                                         │
+│   68       [[advanced.rewrites]]                                             │
+│   69       source = "/bar-chart"                                             │
+│   70       destination = "/index.html"                                       │
+│   71                                                                         │
+│   72       [[advanced.rewrites]]                                             │
+│   73       source = "/signin"                                                │
+│   74       destination = "/index.html"                                       │
+│   75                                                                         │
+│   76       [[advanced.rewrites]]                                             │
+│   77       source = "/signup"                                                │
+│   78       destination = "/index.html"                                       │
+│   79   anybuild.run/provider: node-static                                    │
+│   80   anybuild.run/version: 0.33.0                                          │
+│   81   wasmer.io/version: 7.5.0 (stub)                                       │
+│   82 kind: wasmer.io/App.v0                                                  │
+│   83 package: .                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0
+--- .anybuild/wasmer tree ---
+.anybuild/wasmer
+.anybuild/wasmer/.env
+.anybuild/wasmer/app.yaml
+.anybuild/wasmer/build-annotations.yaml
+.anybuild/wasmer/wasmer.toml
+--- rendered files ---
+== .anybuild/wasmer/wasmer.toml (627 bytes, sha256 9309129f7f0f06339e837ec28b465541ca28a893ada0ba7576f68df170f0c681)
+# Wasmer manifest generated with Anybuild v0.33.0
+
+[package]
+entrypoint = "start"
+
+[dependencies]
+"wasmer/static-web-server" = "=1.1.0"
+
+[fs]
+"/opt/static_app" = "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app"
+"/opt/static_config" = "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config"
+[[command]]
+name = "start"
+module = "wasmer/static-web-server:webserver"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = [
+    "--root=/opt/static_app",
+    "--log-level=info",
+    "--config-file=/opt/static_config/sws.toml",
+    "--port=8080",
+]
+== .anybuild/wasmer/.env (0 bytes, sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+== .anybuild/wasmer/app.yaml (2041 bytes, sha256 72fffb8ab090c855a969325efdcb0cfc24d02503f16ed89860f39029c78b9ebe)
+annotations:
+  anybuild.run/config:
+    edgejs_enable: true
+    edgejs_precompile: true
+    name: free-react-tailwind-admin-dashboard
+    node_build_command: npm run build
+    node_framework: vite
+    node_install_inputs:
+    - package.json
+    node_package_manager: npm
+    node_package_name: tailadmin-react
+    node_remove_native_binaries: true
+    node_server: node
+    npm_version: '11'
+    static_dir: dist
+    static_redirects_config: |
+      # SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.
+      [advanced]
+
+      [[advanced.rewrites]]
+      source = "/profile"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/calendar"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/blank"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/form-elements"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/basic-tables"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/alerts"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/avatars"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/badge"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/buttons"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/images"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/videos"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/line-chart"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/bar-chart"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/signin"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/signup"
+      destination = "/index.html"
+  anybuild.run/provider: node-static
+  anybuild.run/version: 0.33.0
+  wasmer.io/version: 7.5.0 (stub)
+kind: wasmer.io/App.v0
+package: .
+== .anybuild/wasmer/build-annotations.yaml (32 bytes, sha256 bebc803561051a8cc6b59a0587b96c00abcc2a29d638df7ba5178b5079f234ce)
+wasmer.io/version: 7.5.0 (stub)
+== artifact.json
+{
+  "kind": "wasmer",
+  "directory": "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/wasmer"
+}
+
+sws.toml after wasmer-runner build: fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0  /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml

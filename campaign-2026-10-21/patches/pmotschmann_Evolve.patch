@@ -1,4 +1,4 @@
-From 54ea8748d8f889b0ac560eb2d19b093968609afa Mon Sep 17 00:00:00 2001
+From 2620dcc79222f4251c69f53fe35ec61de714cfb5 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 06:07:45 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -10,7 +10,7 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index 0c5f6e0..72eab23 100644
+index 710a2b2..0f463c5 100644
 --- a/README.md
 +++ b/README.md
 @@ -80,3 +80,8 @@ docker build . -t evolve

@@ -1,8 +1,40 @@
 {
  "anybuild": "0.33.0",
- "base_sha": "3436358dcd03d9f9e071d51ea071e0a78c0322e4",
- "patched_sha": "54ea8748d8f889b0ac560eb2d19b093968609afa",
- "base": {
+ "dev_branch": "DeadSpace",
+ "base_sha": "88aecff2c5ff7b1136e3c3e1db5c786ca79b250c",
+ "patched_sha": "2620dcc79222f4251c69f53fe35ec61de714cfb5",
+ "DeadSpace_base": {
+  "provider": "node",
+  "config": {
+   "name": "pmotschmann_Evolve-ds-base",
+   "commands": {
+    "install": "npm install",
+    "build": "npm run build",
+    "start": "node src/index.js"
+   },
+   "node_package_manager": "npm",
+   "node_server": "node",
+   "node_build_command": "npm run build",
+   "npm_version": "11",
+   "node_install_inputs": [
+    "package.json"
+   ],
+   "node_package_name": "evolveidle"
+  },
+  "services": []
+ },
+ "DeadSpace_patched": {
+  "provider": "staticfile",
+  "config": {
+   "name": "pmotschmann_Evolve-ds-patched",
+   "commands": {
+    "start": "static-web-server --root=/tmp/claude-0/camp2/wt/pmotschmann_Evolve-ds-patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+   },
+   "static_dir": "."
+  },
+  "services": []
+ },
+ "master_base_3436358": {
   "provider": "node",
   "config": {
    "name": "pmotschmann_Evolve-base",
@@ -22,7 +54,7 @@
   },
   "services": []
  },
- "patched": {
+ "master_with_same_patch_54ea874": {
   "provider": "staticfile",
   "config": {
    "name": "pmotschmann_Evolve-patched",

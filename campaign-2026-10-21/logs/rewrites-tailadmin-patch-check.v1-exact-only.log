@@ -1,0 +1,29 @@
+# 2026-10-22T06:08:04Z patch verification
+$ anybuild plan . -o /tmp/claude-0/rw/plan-base.json  [base]
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/rw/check-base/free-react-tailwind-admin-dashboard/Anybuild
+Plan saved to /tmp/claude-0/rw/plan-base.json
+EXIT 0
+provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config set: False | start: static-web-server False
+?? Anybuild
+deleting plan-written Anybuild
+$ git apply --check patch (on base e888dd17)
+EXIT 0
+ M README.md
+?? Anybuild
+$ anybuild plan . -o /tmp/claude-0/rw/plan-patched.json  [patched]
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+Plan saved to /tmp/claude-0/rw/plan-patched.json
+EXIT 0
+provider node-static | static_dir dist | node_framework vite | pm npm 11 | static_redirects_config set: True | start: static-web-server True
+ M README.md
+?? Anybuild

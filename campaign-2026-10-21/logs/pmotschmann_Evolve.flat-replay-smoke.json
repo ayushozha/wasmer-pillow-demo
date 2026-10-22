@@ -1,54 +1,59 @@
 {
   "dir": "/tmp/claude-0/flat-replay/pmotschmann_Evolve/opt/temp/.",
   "base": "/",
-  "html_files": 3,
-  "local_refs_checked": 0,
+  "html_files": 5,
+  "local_refs_checked": 1,
   "missing_local_refs": [],
   "missing_count": 0,
   "routes": {
     "/": {
       "status": 200,
-      "bytes": 3230,
+      "bytes": 3100,
       "title": "Evolve"
     },
     "/index.html": {
       "status": 200,
-      "bytes": 3230,
+      "bytes": 3100,
       "title": "Evolve"
     },
     "/wiki.html": {
       "status": 200,
-      "bytes": 2570,
+      "bytes": 2438,
       "title": "Evolve Wiki"
     },
     "/save.html": {
       "status": 200,
-      "bytes": 1321,
+      "bytes": 1484,
       "title": "Evolve Save String"
     },
     "/evolve/main.js": {
       "status": 200,
-      "bytes": 2303101,
+      "bytes": 3287172,
       "title": null
     },
     "/evolve/evolve.css": {
       "status": 200,
-      "bytes": 194688,
+      "bytes": 259988,
+      "title": null
+    },
+    "/evolve/save-codec.js": {
+      "status": 200,
+      "bytes": 7635,
       "title": null
     },
     "/wiki/wiki.js": {
       "status": 200,
-      "bytes": 2432597,
+      "bytes": 3374391,
       "title": null
     },
     "/strings/strings.json": {
       "status": 200,
-      "bytes": 849446,
+      "bytes": 1116193,
       "title": null
     },
-    "/lib/lz-string.min.js": {
+    "/lib/fflate.min.js": {
       "status": 200,
-      "bytes": 4718,
+      "bytes": 32665,
       "title": null
     }
   },
