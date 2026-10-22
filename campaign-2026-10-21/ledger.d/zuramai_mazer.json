@@ -1,6 +1,6 @@
 {
   "repo": "zuramai/mazer",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 3106,
   "stars_at": "2026-10-22T05:00:49Z",
   "license": "MIT",
@@ -26,5 +26,6 @@
   "stars_source": "GitHub MCP search_repositories",
   "archived": false,
   "reason": null,
-  "hook_check": "No hook manager (.husky/lefthook/pre-commit/simple-git-hooks) in repo; .git/hooks contains only *.sample; plain `git commit` ran, no hooks executed, nothing bypassed."
+  "hook_check": "No hook manager (.husky/lefthook/pre-commit/simple-git-hooks) in repo; .git/hooks contains only *.sample; plain `git commit` ran, no hooks executed, nothing bypassed.",
+  "upstream_pr": "Created upstream per root/Codex campaign list (2026-10-22); PR number/head not reported to this session"
 }

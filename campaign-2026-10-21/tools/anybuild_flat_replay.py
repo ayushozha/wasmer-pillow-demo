@@ -18,6 +18,7 @@ Writes logs/<clone basename>.flat-replay.log and .flat-replay-smoke.json.
 import datetime
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -76,13 +77,32 @@ def main():
     static_dir = cfg.get("static_dir") or "."
     log.write(f"# plan: provider={json.load(open(plan_path))['provider']} install={install!r} build={build!r} static_dir={static_dir!r}\n")
 
-    for name in ["package.json"] + LOCKS:
-        if os.path.exists(f"{src}/{name}"):
-            shutil.copy2(f"{src}/{name}", temp)
-    code = sh(install, temp) if install else 0
-    if code == 0:
-        sh(f"tar --exclude=./node_modules --exclude=./.git {' '.join('--exclude=./' + l for l in LOCKS)} -cf - . | tar -xf - -C {temp}", src)
-        code = sh(build, temp) if build else 0
+    provider = json.load(open(plan_path))["provider"]
+    if provider == "mkdocs":
+        # python.bzl: install runs in the copied source dir with a uv project venv; the
+        # build writes to the static_app mount. Copy the whole source first (a superset
+        # of python_install_inputs), point --site-dir at a temp dir, keep the command.
+        sh(f"tar --exclude=./.git --exclude=./.venv -cf - . | tar -xf - -C {temp}", src)
+        env.update(UV_PROJECT_ENVIRONMENT=f"{temp}/.venv")
+        py = cfg.get("python_version")
+        if py and os.path.exists(f"{src}/pyproject.toml"):
+            env.update(UV_PYTHON_PREFERENCE="only-system", UV_PYTHON=f"python{py}")
+        log.write(f"# mkdocs per python.bzl: planned python_version={py}; host python "
+                  f"{subprocess.run('python3 --version', shell=True, capture_output=True, text=True).stdout.strip()}; "
+                  f"UV_PROJECT_ENVIRONMENT={env['UV_PROJECT_ENVIRONMENT']}\n")
+        build = re.sub(r"--site-dir=\S+", f"--site-dir={temp}/__site", build or "")
+        static_dir = "__site"
+        code = sh(install, temp) if install else 0
+        if code == 0:
+            code = sh(build, temp)
+    else:
+        for name in ["package.json"] + LOCKS:
+            if os.path.exists(f"{src}/{name}"):
+                shutil.copy2(f"{src}/{name}", temp)
+        code = sh(install, temp) if install else 0
+        if code == 0:
+            sh(f"tar --exclude=./node_modules --exclude=./.git {' '.join('--exclude=./' + l for l in LOCKS)} -cf - . | tar -xf - -C {temp}", src)
+            code = sh(build, temp) if build else 0
     result = {"install": install, "build": build, "static_dir": static_dir, "exit": code}
     out = os.path.join(temp, static_dir)
     if code == 0 and os.path.isdir(out):

@@ -1,6 +1,6 @@
 {
   "repo": "puikinsh/sufee-admin-dashboard",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 898,
   "stars_at": "2026-10-22T05:00:49Z",
   "license": "MIT",
@@ -27,5 +27,6 @@
   "archived": false,
   "reason": null,
   "hook_check": "No hook manager (.husky/lefthook/pre-commit/simple-git-hooks) in repo; .git/hooks contains only *.sample; plain `git commit` ran, no hooks executed, nothing bypassed.",
-  "publication_note": "Same maintainer (puikinsh) as Bootstrap-Admin-Template #110 (opened 2026-10-22, campaign). Suggest waiting for a maintainer response on #110 before opening this one."
+  "publication_note": "Same maintainer (puikinsh) as Bootstrap-Admin-Template #110 (opened 2026-10-22, campaign). Suggest waiting for a maintainer response on #110 before opening this one.",
+  "upstream_pr": "Created upstream per root/Codex campaign list (2026-10-22); PR number/head not reported to this session"
 }

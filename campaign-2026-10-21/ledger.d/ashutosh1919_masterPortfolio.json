@@ -1,6 +1,6 @@
 {
   "repo": "ashutosh1919/masterPortfolio",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 4223,
   "stars_source": "GitHub MCP search_repositories (stargazers_count)",
   "stars_at": "2026-10-22T04:28:24Z",
@@ -30,5 +30,6 @@
   "detect_log": "logs/ashutosh1919_masterPortfolio.detect.json",
   "hook_check": "Re-created with hooks intact (logs/ashutosh1919_masterPortfolio.hook-commit.log): Husky v4 pre-commit -> lint-staged -> prettier --write EXIT 0; prettier reformatted existing README lines (18+/9-). Root: hook-formatted patch acceptable (no bypass).",
   "anybuild_replay": "PASS: 2026-10-22T04:50:13Z flat replay of anybuild 0.33.0 planned steps for ashutosh1919_masterPortfolio @ 13640c1659f2e5cf231de8214d85a119f98eb0dc (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='build' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/404.html': 200, '/manifest.json': 200, '/sitemap.xml': 200} | log logs/ashutosh1919_masterPortfolio.flat-replay.log",
-  "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/404.html': '200', '/static/js/main.1c0df698.chunk.js': '200', '/manifest.json': '200'}; missing path -> 404 (logs/ashutosh1919_masterPortfolio.sws-smoke.json)"
+  "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/404.html': '200', '/static/js/main.1c0df698.chunk.js': '200', '/manifest.json': '200'}; missing path -> 404 (logs/ashutosh1919_masterPortfolio.sws-smoke.json)",
+  "upstream_pr": "Created upstream per root/Codex campaign list (2026-10-22); PR number/head not reported to this session"
 }

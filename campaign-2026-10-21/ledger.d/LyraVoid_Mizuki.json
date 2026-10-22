@@ -1,6 +1,6 @@
 {
   "repo": "LyraVoid/Mizuki",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 1899,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T05:06:40Z",
@@ -26,5 +26,6 @@
   "detect_log": "logs/LyraVoid_Mizuki.detect.json",
   "anybuild_replay": "PASS: 2026-10-22T05:05:30Z flat replay @ da138f93f88a8765259d627433f1af0b959c9845 (patched; node v24.22.1, pnpm 11.5.3 pinned per plan) install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0; /, /posts/guide/, /archive/, /about/, /rss.xml, /404.html, /pagefind/pagefind.js all 200. Same sandbox-only api.fontsource.org fetch warnings. logs/LyraVoid_Mizuki.flat-replay.log",
   "reason": null,
-  "sws_smoke": "PASS (run by coordinator): static-web-server 2.38.0 with anybuild 0.33.0 planned flags on flat-replay dist: /, /posts/guide/, /archive/, /about/, /rss.xml, /404.html, /pagefind/pagefind.js all 200; missing probe 404 and serves the site's 404.html body. All routes prerendered. logs/LyraVoid_Mizuki.sws-smoke.json"
+  "sws_smoke": "PASS (run by coordinator): static-web-server 2.38.0 with anybuild 0.33.0 planned flags on flat-replay dist: /, /posts/guide/, /archive/, /about/, /rss.xml, /404.html, /pagefind/pagefind.js all 200; missing probe 404 and serves the site's 404.html body. All routes prerendered. logs/LyraVoid_Mizuki.sws-smoke.json",
+  "upstream_pr": "Created upstream per root/Codex campaign list (2026-10-22); PR number/head not reported to this session"
 }
