@@ -6,7 +6,7 @@ Adds a "Deploy to Wasmer" button and a short paragraph to the README, right afte
 
 Slim-Skeleton is the official starting point for Slim 4 apps (`composer create-project slim/slim-skeleton`). People evaluating Slim usually want to see the skeleton answer real HTTP requests before they commit to it. The skeleton needs no database, no secrets and no build step beyond Composer, so it is a good fit for a one-click build from source: Wasmer installs the Composer dependencies and serves `public/index.php`, and the visitor gets `/` and the sample `/users` JSON endpoints running on a public URL.
 
-The paragraph also states what the skeleton's README already implies for any hosted run: logs go to `logs/app.log` (needs a writable `logs/`) and `displayErrorDetails` is `true` in `app/settings.php`, so both should be changed before production use.
+The section also lists two steps that apply to any production host: make `logs/` writable or point `logger.path` in `app/settings.php` at another destination such as `php://stdout` (the `/users` routes write to `logs/app.log`), and set `displayErrorDetails` to `false`.
 
 ## Testing
 
@@ -22,6 +22,6 @@ No Wasmer deployment was made as part of this PR.
 
 ## Limitations
 
-- Not deployed to Wasmer from this change; Wasmer's PHP detection is documented (any `.php` file, Composer dependencies installed, `public/index.php` entry point supported), but the document root and a writable `logs/` should be confirmed on a first deploy.
+- Not deployed to Wasmer from this change. Detection, Composer install and the `public/` document root follow Wasmer's builder source (Anybuild v0.33.0, `providers/php.rs` and `tools/php.bzl`) and docs, but were not checked against a live deploy. Whether `logs/` is writable on Wasmer was not verified, which is why the README gives the `php://stdout` alternative.
 - The button deploys `slimphp/Slim-Skeleton` itself. Because `composer create-project` copies this README into new apps, the button in a generated project still points at the skeleton; the paragraph tells users to connect their own repository instead.
 - PR targets `main` (CONTRIBUTING.md mentions a `4.x` branch, which does not exist any more).

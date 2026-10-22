@@ -1,8 +1,8 @@
 diff --git a/README.md b/README.md
-index 63f9972..fafb8c1 100644
+index 63f9972..2cc4e93 100644
 --- a/README.md
 +++ b/README.md
-@@ -33,6 +33,12 @@ docker-compose up -d
+@@ -33,6 +33,17 @@ docker-compose up -d
  ```
  After that, open `http://localhost:8080` in your browser.
  
@@ -10,7 +10,12 @@ index 63f9972..fafb8c1 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=slimphp%2FSlim-Skeleton)
 +
-+Wasmer detects the PHP app, runs `composer install` and serves `public/index.php`; no config file is needed. The button builds this public repository as-is and does not fork it. To build your own app on it, create your project with `composer create-project`, push it to GitHub and connect that repository from the Wasmer dashboard. The skeleton writes logs to `logs/app.log` and shows error details (`app/settings.php`); change both before running it in production.
++Wasmer detects the PHP app from `composer.json`, installs the Composer dependencies and serves `public/index.php`; no config file is needed. The button builds this public repository as-is and does not fork it. To build your own app on it, create your project with `composer create-project`, push it to GitHub and connect that repository from the Wasmer dashboard.
++
++Before running the skeleton in production, wherever it is hosted:
++
++* Make sure `logs/` is writable, or set `logger.path` in `app/settings.php` to another destination such as `php://stdout`. The `/users` routes write to `logs/app.log`.
++* Set `displayErrorDetails` to `false` in `app/settings.php`.
 +
  Run this command in the application directory to run the test suite
  
