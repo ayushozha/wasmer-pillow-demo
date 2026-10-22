@@ -1,0 +1,51 @@
+{
+  "dir": "/tmp/claude-0/camp2/airene_vitepress-blog-pure/.vitepress/dist",
+  "base": "/",
+  "html_files": 9,
+  "local_refs_checked": 21,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 10907,
+      "title": "home | Vitepress blog"
+    },
+    "/pages/archives.html": {
+      "status": 200,
+      "bytes": 10187,
+      "title": "Archive | Vitepress blog"
+    },
+    "/pages/tags.html": {
+      "status": 200,
+      "bytes": 9601,
+      "title": "Tags | Vitepress blog"
+    },
+    "/pages/about.html": {
+      "status": 200,
+      "bytes": 19827,
+      "title": "About | Vitepress blog"
+    },
+    "/posts/vitepress-first.html": {
+      "status": 200,
+      "bytes": 17391,
+      "title": "\u4e00\u76f4\u60f3\u627e\u4e00\u4e2a\u7cfb\u7edf\u67b6\u6784\u548c\u8bbe\u8ba1\u90fd\u8db3\u591f\u5e72\u51c0\u7684\u7cfb\u7edf | Vitepress blog"
+    },
+    "/posts/2025/vitepress-second.html": {
+      "status": 200,
+      "bytes": 17407,
+      "title": "2025\u4e00\u76f4\u60f3\u627e\u4e00\u4e2a\u7cfb\u7edf\u67b6\u6784\u548c\u8bbe\u8ba1\u90fd\u8db3\u591f\u5e72\u51c0\u7684\u7cfb\u7edf | Vitepress blog"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 3024,
+      "title": "404 | Vitepress blog"
+    },
+    "/assets/chunks/@localSearchIndexroot.Bq9MgPzV.js": {
+      "status": 200,
+      "bytes": 12676,
+      "title": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,38 @@
+# 2026-10-22T05:30:19Z airene/vitepress-blog-pure @ ff1f46f3e0f53e56c3777616e2def7570cf8b25d node v24.22.1 bun 1.4.2
+$ bun install --frozen-lockfile
+bun install v1.4.2 (744846f84)
+
++ @types/fs-extra@11.0.4
++ @types/node@26.6.5
++ @typescript-eslint/eslint-plugin@8.71.2
++ @typescript-eslint/parser@8.71.2
++ @typescript-eslint/types@8.71.2
++ @vue/compiler-sfc@3.5.44
++ cross-env@10.1.0
++ esbuild@0.28.2
++ eslint@10.12.0
++ eslint-config-prettier@10.1.8
++ eslint-plugin-prettier@5.5.7
++ eslint-plugin-vue@10.11.1
++ fs-extra@11.4.1
++ globby@16.2.4
++ gray-matter@4.0.3
++ prettier@3.9.10
++ typescript@6.0.3
++ vite@8.3.4
++ vitepress@1.6.4
++ vitepress-plugin-comment-with-giscus@1.1.15
+
+303 packages installed [15.57s]
+EXIT 0
+$ bun run build
+$ cross-env NODE_ENV=production vitepress build
+
+  vitepress v1.6.4
+
+- building client + server bundles...
+[32m✓[0m building client + server bundles...
+- rendering pages...
+[32m✓[0m rendering pages...
+build complete in 13.63s.
+EXIT 0
