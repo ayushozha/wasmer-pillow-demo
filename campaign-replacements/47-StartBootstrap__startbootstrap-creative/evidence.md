@@ -22,3 +22,7 @@
 The patch is two files (README subsection + 1-line `Staticfile`) and the replay passes. Acceptance risk is the blocker: zero merged PRs org-wide since 2024 and the earlier third-party deploy-button PR (creative#56) was closed unmerged. Recommendation: send at most one StartBootstrap PR (highest stars: sb-admin-2) as a probe and hold the rest until it gets a response.
 
 Remaining reviewer checks: wasmer.io import page and shields badge render (both blocked from this environment); a real Wasmer import of the patched branch.
+
+
+## Root decision (2026-10-22)
+HOLD: root approved only one StartBootstrap probe PR (sb-admin-2). This target stays held until that probe gets a maintainer response; no response is not approval. Before any later publication, apply the sb-admin-2 wording fix (button opens Wasmer import/configuration; user reviews and clicks Deploy; no GitHub copy is created) and drop causal claims about the local 404 behaviour.

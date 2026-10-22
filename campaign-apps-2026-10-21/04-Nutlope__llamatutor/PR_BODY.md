@@ -9,19 +9,21 @@ Only the README changes.
 
 ## Why this repo
 
-Llama Tutor is a small, self-contained app that people fork to run their own tutor with their own keys. The current code needs Together and Exa keys. Helicone sits in the chat request path. Upstash is optional: it is used only for rate limiting, and it is skipped when `UPSTASH_REDIS_REST_URL` is unset. None of this is spelled out in the README today, so the new table says it explicitly.
+Llama Tutor is a small, self-contained app that people fork to run their own tutor with their own keys. The README does not list which keys the current code needs:
+- Together and Exa keys.
+- A Helicone key. Chat requests always go to Helicone's Together gateway, because `together.helicone.ai` is hardcoded in `utils/TogetherAIStream.ts`. Without the key, the `Helicone-Auth` header is sent as `Bearer undefined`.
+- Upstash is optional. It is only used for rate limiting and is skipped when `UPSTASH_REDIS_REST_URL` is unset.
 
 ## Testing
 
-All tests ran at SHA `5b88de25bccd33524342f5ee34ca49ca38aca7f3` on Node v22.22.0 with pnpm 10.28.0.
+All tests ran at SHA `5b88de25bccd33524342f5ee34ca49ca38aca7f3`. No real keys were used and no outbound or paid calls were made. Servers ran in a loopback-only network namespace, and any upstream traffic went to a local mock.
 
-- `pnpm install --frozen-lockfile`: exit 0.
-- `pnpm build` with no env vars: exit 0.
-- `pnpm start`:
+- Wasmer's builder steps were replayed locally on Node 24 with pnpm 10: `pnpm install`, then `pnpm dlx next-bundle@1.0.0 --build-command 'pnpm run build'`. Both exited 0.
+- I then ran `node .next-bundle/server.mjs`:
   - `/` returned 200.
   - `POST /api/getSources` without `EXA_API_KEY` returned 500.
-  - `POST /api/getChat` with a malformed body returned 500. This shows the route loads without Upstash variables.
-- No outbound or paid calls were made.
+- With `next start`, I pointed the app at a local mock and checked the chat request. Without `HELICONE_API_KEY`, the app sent `Helicone-Auth: Bearer undefined` to `together.helicone.ai`.
+- Chat and answer generation were not tested against the real providers.
 
 ## Limitations
 

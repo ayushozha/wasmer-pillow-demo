@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index 7ef98ba..48f87f5 100644
+index 7ef98ba..1c4408e 100644
 --- a/README.md
 +++ b/README.md
 @@ -41,6 +41,12 @@ After installation, run `npm install` and then run `npm start` which will open u
@@ -10,7 +10,7 @@ index 7ef98ba..48f87f5 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=StartBootstrap%2Fstartbootstrap-sb-admin-2)
 +
-+Wasmer serves the prebuilt HTML, CSS, JS and `vendor` files from the repository root as a static site: the `Staticfile` in the repository root selects static hosting, and no build step runs. The button deploys this repository as-is and does not fork it; to customize the theme, fork it (or use your own copy), rebuild with `gulp` if you change the SCSS or JS sources, then import your own repository on Wasmer.
++Wasmer serves the prebuilt HTML, CSS, JS and `vendor` files from the repository root as a static site: the `Staticfile` in the repository root selects static hosting, and no build step runs. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the theme, fork it (or use your own copy), rebuild with `gulp` if you change the SCSS or JS sources, then import your own repository on Wasmer.
 +
  ## Bugs and Issues
  

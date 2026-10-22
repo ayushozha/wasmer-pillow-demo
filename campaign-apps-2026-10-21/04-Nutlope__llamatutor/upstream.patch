@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index 7446a6e..737e478 100644
+index 7446a6e..274cc11 100644
 --- a/README.md
 +++ b/README.md
 @@ -25,6 +25,19 @@
@@ -16,7 +16,7 @@ index 7446a6e..737e478 100644
 +| --- | --- | --- |
 +| `TOGETHER_API_KEY` | Yes | Chat answers |
 +| `EXA_API_KEY` | Yes | Source search (`/api/getSources` fails without it) |
-+| `HELICONE_API_KEY` | Recommended | Chat requests are sent through Helicone's Together gateway |
++| `HELICONE_API_KEY` | Yes | Chat always goes through Helicone's Together gateway (`together.helicone.ai`, hardcoded in `utils/TogetherAIStream.ts`); without it the `Helicone-Auth` header is sent as `Bearer undefined` |
 +| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | No | Rate limiting (10 chats per IP per day); skipped when unset |
 +
  ## Future Tasks

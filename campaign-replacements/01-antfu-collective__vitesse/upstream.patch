@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 64f8882..85224c6 100644
+--- a/README.md
++++ b/README.md
+@@ -195,6 +195,12 @@ And you will see the generated file in `dist` that ready to be served.
+ 
+ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=antfu-collective%2Fvitesse)
++
++Wasmer detects the Vite app, runs `pnpm install` and `pnpm run build`, and serves the generated `dist` folder as static files. The button imports and builds this public repository as-is; it does not fork it. To customize the site and redeploy on every push, create a repo from this template and import your own repository on Wasmer.
++
+ ### Docker Production Build
+ 
+ First, build the vitesse image by opening the terminal in the project's root directory.

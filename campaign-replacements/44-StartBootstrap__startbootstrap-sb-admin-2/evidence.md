@@ -15,7 +15,7 @@
 
 ## Replay (patched clone, `$S/scripts/replay.sh /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/StartBootstrap__startbootstrap-sb-admin-2 w8-sb-admin-2 3695 /index.html /charts.html /tables.html /login.html /404.html /does-not-exist`)
 - Plan: "Detected static site provider", Output directory `.`, SWS 2.38.0; no install/build steps. `cp -R <flat>//. static_app/` exit=0; 1879 files.
-- Smoke (SUMMARY pages=7 refs_checked=24 failures=1 — the one "failure" is the deliberate `/does-not-exist` probe): Pages `/`, `/index.html`, `/charts.html`, `/tables.html`, `/login.html`, `/404.html` = 200; all 24 same-origin refs 200. `/does-not-exist` = 404 with empty body (static-web-server's default page404 path is not this theme's `404.html`; expected, not a regression). Offline link check of every `.html` in static_app: 331 local refs, 0 unresolved.
+- Smoke (SUMMARY pages=7 refs_checked=24 failures=1 — the one "failure" is the deliberate `/does-not-exist` probe): Pages `/`, `/index.html`, `/charts.html`, `/tables.html`, `/login.html`, `/404.html` = 200; all 24 same-origin refs 200. `/does-not-exist` = 404 with an empty body in this local replay, while `/404.html` itself = 200. The cause was not established (it may depend on the local harness's working directory or static-web-server settings), so the 404 page shown on Wasmer is unverified. Offline link check of every `.html` in static_app: 331 local refs, 0 unresolved.
 - No INSTALL/BUILD FAILED/MISSING lines.
 
 ## Verdict: READY (technically) — LOW ACCEPTANCE, open one probe PR first

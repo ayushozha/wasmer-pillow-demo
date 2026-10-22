@@ -1,41 +1,69 @@
 # Evidence: Nutlope/llamatutor
 
-## Verdict: READY
+## Verdict: HOLD
 
-The patch is ready. The local frozen install, `pnpm build` with **no env at all**, and `pnpm start` all pass. The home page returns 200, and the API routes fail without keys as expected. As a supplement, the exact build command the Wasmer builder generates (`pnpm dlx next-bundle@1.0.0 --build-command 'pnpm run build'`) also completed locally (exit 0).
+Do not open this PR yet. The replay of the Wasmer build path fails at runtime for the app's main feature.
 
-One check remains, the same for every target in this batch. Codex should open `https://wasmer.io/apps/create?github=Nutlope%2Fllamatutor` and confirm that Next.js is detected and that pnpm is the package manager before opening the PR. Serving `node .next-bundle/server.mjs` was not run here.
+The flat Anybuild v0.33.0 replay builds the bundle. `pnpm install`, then `pnpm dlx next-bundle@1.0.0 --build-command 'pnpm run build'`, then `pnpm prune --prod`, all exit 0. When the exported bundle is served with `node .next-bundle/server.mjs` on Node 24.22.1:
+- `/` returns 200.
+- `/api/getSources` fails safely without a key.
+- **`POST /api/getChat` returns 500 `Internal Server Error` every time, with or without keys.** The error is `ReferenceError: self is not defined` at `.next-bundle/functions/api/getChat.func/index.js:24`.
+
+The cause is in the tooling, not in the README. `app/api/getChat/route.ts:54` sets `export const runtime = "edge"`, so @vercel/next emits that route as an edge function (`.vc-config.json`: `runtime: "edge"`, `entrypoint: "index.js"`, no `handler`). next-bundle@1.0.0's `templates/server.mjs` handles the edge runtime only for middleware (`server.mjs:745-793`, check at `:762`). For every other function, `getFunctionHandler` does `require(path.join(functionDir, vcConfig.handler || "index.js"))` (`server.mjs:894-912`). That loads the edge bundle as a Node module, and the module crashes.
+
+A Deploy button would therefore produce an app whose chat endpoint is broken. The PR can be unblocked in either of two ways:
+- next-bundle serves edge functions;
+- upstream drops `runtime = "edge"`. That would need a separate code PR, which is out of scope for a README-only campaign.
+
+The Wasmer runtime itself (Edge.js, `edgejs_enable`/`edgejs_precompile: true` in the plan) was not replayed. The result there could differ, but nothing here shows that it does.
+
+## Fix for reviewer finding 1 (HELICONE_API_KEY)
+The code paths, exactly:
+- `utils/TogetherAIStream.ts:32` hardcodes `fetch("https://together.helicone.ai/v1/chat/completions", …)`. No env var or base-URL setting can bypass Helicone.
+- `utils/TogetherAIStream.ts:35` always sends `"Helicone-Auth": \`Bearer ${process.env.HELICONE_API_KEY}\``. With no `??` fallback, the header value is the literal string `Bearer undefined` when the variable is unset. By contrast, `:37` sends `Authorization: Bearer ${TOGETHER_API_KEY ?? ""}`.
+- `utils/TogetherAIStream.ts:54-65`: on a non-200 upstream response it only `console.log`s and closes the stream. `app/api/getChat/route.ts:36-51` then returns **HTTP 200 with an empty body**, so the failure is silent in the UI. Only a thrown fetch error reaches the `catch` and returns 202 "Error. Answer stream failed."
+
+The local test used a **mock**, not real Helicone. It ran `next start` from the same replay build dir, in a loopback-only netns, with outbound HTTPS forced through a TLS-terminating local logging mock (build.log §1c):
+- With a fake Together key and no Helicone key, the server sent `POST together.helicone.ai/v1/chat/completions` with `helicone-auth: Bearer undefined`. The mock answered 401 (simulated), and the app returned 200 with 0 bytes.
+- With both keys fake, the request carried a real-length `Helicone-Auth`. The mock answered with SSE, and the app streamed `data: {"text":"MOCK_CHAT_TOKEN"}`.
+- With no keys and no route, the result was 202 "Error. Answer stream failed."
+
+Because the URL is hardcoded, optionality cannot be proven locally. The only way to learn how the real gateway treats `Bearer undefined` would be a real outbound call, which was not made. The variable is therefore now documented as **Required**, and the row reads: "Chat always goes through Helicone's Together gateway (`together.helicone.ai`, hardcoded in `utils/TogetherAIStream.ts`); without it the `Helicone-Auth` header is sent as `Bearer undefined`".
+
+## Flat replay facts (build.log §1)
+- The source is the patched clone exported without `.git` to `$SCRATCH/replay/04-Nutlope__llamatutor/src`. No ancestor directory has a `package.json`.
+- The replayed README still had the old "Recommended" row. The README-only fix does not affect the build.
+- `anybuild-v0.33.0 plan --temp-anybuild --wasmer` detected Node.js, Next.js, server `node`, `pnpm_version: "10"` and Node 24. Install is `pnpm install`, build is `pnpm dlx next-bundle@1.0.0 --build-command 'pnpm run build'`, and start is `node .next-bundle/server.mjs`.
+- The steps follow `crates/anybuild/resources/starlib/tools/node.bzl` (tag v0.33.0, `:95-150`). Only `pnpm-lock.yaml` and `package.json` were staged, and the install ran with `CI=true pnpm_config_minimum_release_age=0 pnpm_config_dangerously_allow_all_builds=true pnpm_config_strict_dep_builds=false`. The install was followed by the source copy, the build, `pnpm prune --prod` and `cp -R .next-bundle <app>`. Toolchain: Node 24.22.1, pnpm 10.28.0.
+- Not replayed: `optimize-node-modules.sh` and the Edge.js runtime.
+- **INIT_CWD:** pnpm is not affected. `INIT_CWD` was unset before the call, and next-bundle (`bin/build.mjs:55`, `process.env.INIT_CWD || process.cwd()`) printed `Building …/replay/04-Nutlope__llamatutor/build`, which is the correct project root.
+- A secondary bundle issue was found but has no observed effect here. next-bundle@1.0.0 drops pnpm symlinks under scoped or `.pnpm/node_modules` dirs: 20 traced symlinks are missing from this bundle, including `next/node_modules/@swc/helpers`. The cause is that `bin/build.mjs:234-250` copies only regular files, and `:275-328` relinks only inside covered dirs. `/api/getSources` (Next 16.0.10) still loaded. The same bug breaks blinkshot's API route.
+
+## Runtime smoke (`node .next-bundle/server.mjs`, loopback-only `unshare -n`, build.log §1b)
+- An external connectivity probe failed (no route).
+- `/` returned **200** and contained "Llama Tutor" and "Your Personal". `/favicon.ico` returned 200.
+- `POST /api/getSources` with no env returned **500**, and the server log shows `Error: EXA_API_KEY is required`. With a fake `EXA_API_KEY` and outbound traffic sent to the mock, the server attempted only `api.exa.ai:443 POST /search`. The mock returned 401, so the app returned 500.
+- `POST /api/getChat` returned **500** in all four configurations (no env, mock proxy, fake Together key, fake Together+Helicone+Exa keys), each time with `ReferenceError: self is not defined`. The mock recorded **no** chat request, so the route fails before any outbound call.
+- `X-Vercel-IP-Country: IN` returned 200. `proxy.ts` is a Node-runtime middleware, and next-bundle's server runs only edge middleware (`server.mjs:762`), so the country rule does not run there. It is Vercel-specific anyway.
+
+## Other notes vs current source
+- **Upstash is optional:** `app/api/getChat/route.ts:12-20` creates the limiter only `if (process.env.UPSTASH_REDIS_REST_URL)`.
+- **Exa is required:** `app/api/getSources/route.ts:11-14` throws.
+- The package manager is pnpm (`pnpm-lock.yaml` v9). The README's `npm install` is unchanged.
+- Chat or answer quality was **never** exercised against real Together, Helicone or Exa. Every upstream response came from the local mock.
 
 ## Repo facts
-- Pinned SHA: `5b88de25bccd33524342f5ee34ca49ca38aca7f3` (branch `main`), last commit 2026-07-12T12:12:14-07:00.
-- Stars / forks: 2,053 / 342 (GitHub API, 2026-10-22).
-- License: **none found**. There is no LICENSE file and no `license` field in package.json.
-- Contribution / AI policy: there is no `.github` folder, CONTRIBUTING, PR template or AI policy.
-- Duplicate check: a GitHub search for `wasmer` across all 18 targets returned 0 PRs (2026-10-22).
-- Existing deploy buttons: none. A new `## Deploy on Wasmer` section goes after "Cloning & running". Its wording and table match the turboseek and blinkshot patches.
+- Pinned SHA: `5b88de25bccd33524342f5ee34ca49ca38aca7f3` (main), last commit 2026-07-12.
+- Stars / forks: 2,053 / 342.
+- License: none found. There is no `.github` folder, CONTRIBUTING or AI policy.
+- Duplicate check: 0 `wasmer` PRs.
+- Existing deploy buttons: none.
 
-## Task notes vs current source
-- The package manager is pnpm (`pnpm-lock.yaml` v9). The README still says `npm install`, and that is left unchanged.
-- **Upstash is optional and does not crash the app.** `app/api/getChat/route.ts:12-20` creates the rate limiter only `if (process.env.UPSTASH_REDIS_REST_URL)` (10 requests per 1440 min, prefix `llamatutor`). When the variable is unset, the module loads and the handler runs; smoke tests confirmed this (the handler was reached and failed only on the deliberately malformed body). Caveat: if the URL is set without the token, `Redis.fromEnv()` would be misconfigured. The README therefore lists both together.
-- `EXA_API_KEY`: `app/api/getSources/route.ts` throws `EXA_API_KEY is required` when it is missing, which returns 500. It is required.
-- `TOGETHER_API_KEY` and `HELICONE_API_KEY`: chat is sent with a hand-rolled `fetch` to `https://together.helicone.ai/v1/chat/completions`, with `Helicone-Auth: Bearer ${HELICONE_API_KEY}` and `Authorization: Bearer ${TOGETHER_API_KEY}` (`utils/TogetherAIStream.ts:31-40`). So Helicone is always in the request path. The README marks it "Recommended". I did not test behaviour without a Helicone key, because no outbound calls were made.
-- `proxy.ts` blocks requests where `X-Vercel-IP-Country: IN`. That header is Vercel-specific, so on other hosts the rule does nothing. No change was made.
-- `/api/getChat` uses `runtime = "edge"`. It worked under `next start`, but I did not verify it under Wasmer's server.
-
-## Local results (Node v22.22.0, pnpm 10.28.0)
-- `pnpm install --frozen-lockfile`: exit 0. `pnpm build` with no env: exit 0.
-- `pnpm start` on PORT 3104: `/` returned **200** and contained "Llama Tutor" and "Your Personal".
-- `POST /api/getSources` returned **500** (`EXA_API_KEY is required`).
-- `POST /api/getChat` with a malformed body returned 500 (JSON parse). This shows the route module loads with no Upstash vars set, and no outbound call was made.
-- Supplementary run in a fresh copy: `CI=true pnpm install`, then `pnpm dlx next-bundle@1.0.0 --build-command 'pnpm run build'`, exit 0. It printed "Build output written to .next-bundle" and "Run it with: node .next-bundle/server.mjs". next-bundle is published by wasmerio (`repository: github.com/wasmerio/next-bundle`). After that, the session's permission policy declined further inspection or execution of this external package, so serving the bundle was not tested.
-
-## Wasmer builder (Anybuild) facts
-Source: `wasmerio/shipit@587be23132ea` (2026-10-05). Production may differ.
-- pnpm is detected from the lockfile (`crates/anybuild/src/providers/node.rs:1185-1196`), and its version defaults to 10 (`node.rs:1116-1124`).
-- Install is `pnpm install` with `CI=true` (`resources/starlib/tools/node.bzl:21-26, 120-121`).
-- Next.js is detected (`node.rs:1318`).
-- Build: `node.rs:458-471, 1646-1667`. Start is `node .next-bundle/server.mjs` (`node.rs:473-475, 1765-1769`).
-- Node 24 by default (`node.rs:561, 608`; override with `ANYBUILD_NODE_VERSION`, see `providers/base.rs:34-43`). Local tests ran on Node 22.
+## Patch
+`upstream.patch` is the `git diff` of README.md only (+13 lines), and `git apply --check -R` passes against the clone. The only change from the previous version is the `HELICONE_API_KEY` row, which goes from Recommended to Yes.
 
 ## Limitations
-No Wasmer deployment was submitted. wasmer.io and img.shields.io are blocked here. No real keys were used and no paid calls were made.
+- No Wasmer deployment was made.
+- wasmer.io and img.shields.io are blocked from this environment.
+- No real keys or paid calls were used.
+- The server ran on stock Node 24.22.1, not on Wasmer's Edge.js.
