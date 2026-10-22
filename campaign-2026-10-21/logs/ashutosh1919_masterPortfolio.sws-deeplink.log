@@ -1,0 +1,17 @@
+# 2026-10-22T05:00Z static-web-server 2.38.0 (cargo install --locked from crates.io; the version anybuild 0.33.0 pins) serving the flat-replay build/ output of ashutosh1919/masterPortfolio patched commit
+# Command: anybuild's planned start `static-web-server --root=<static_app> --log-level=info --port=8080` plus `--host=127.0.0.1` (sandbox-only: no IPv6, default bind [::] fails with os error 97)
+# SWS --help: `--page404 ... [default: ./404.html]` (relative to root); `--page-fallback` default empty (off). anybuild passes neither flag.
+curl status / body:
+/                                   200 index.html
+/education                          404 build/404.html (byte-identical except trailing newline)
+/experience                         404 build/404.html
+/projects                           404 build/404.html
+/does-not-exist                     404 build/404.html
+/static/js/main.1c0df698.chunk.js   200
+/?/education                        200 index.html
+Headless Chromium (Playwright, /opt/pw-browsers/chromium-1194), waitUntil networkidle + 1.5s:
+/education  first HTTP 404 -> final URL http://127.0.0.1:8080/education, body "... Education Basic Qualification and Certifc..."
+/experience first HTTP 404 -> final URL /experience, body "... Experience Work, Internship and Volunteer..."
+/projects   first HTTP 404 -> final URL /projects, body "... Projects My projects makes use of vast va..."
+/contact    first HTTP 404 -> final URL /contact, body "... Contact Me I am available on almost every..."
+Conclusion: deep links render correctly in a browser via the existing public/404.html redirect; the initial HTTP status for deep URLs is 404 (affects crawlers/link checkers, not browser users).
