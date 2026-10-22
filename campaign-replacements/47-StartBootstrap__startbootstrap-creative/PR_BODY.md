@@ -4,7 +4,7 @@ Adds a "Deploy to Wasmer" button to the README (new "Deploy on Wasmer" subsectio
 
 Why the `Staticfile` is needed: without it, Wasmer's builder (Anybuild) sees `package.json` and picks its Node.js provider, which would run `npm run build && node scripts/start.js` — the BrowserSync development server with file watching — as the production start command. With the `Staticfile` it copies `dist` as-is and serves it with static-web-server; no install or build step runs.
 
-The button opens Wasmer's import page for this public repository and deploys it as-is; it does not fork it. To customize the theme, users fork it (or use their own copy) and import their own repository.
+The button opens Wasmer's import page for this public repository, where the user reviews the configuration and clicks Deploy; it does not create a copy of the repository in their GitHub account. To customize the theme, users fork it (or use their own copy) and import their own repository.
 
 ## Why this repo
 

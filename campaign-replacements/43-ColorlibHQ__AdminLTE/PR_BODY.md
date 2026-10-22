@@ -4,7 +4,7 @@ Adds a "Deploy the demo on Wasmer" button to the README (under "Developing Admin
 
 Why the `Staticfile` is needed: without it, Wasmer's builder (Anybuild) detects a Node.js/Astro project and uses `npm run dev` (asset watchers plus the Astro dev server) as the start command. With the `Staticfile` it copies `dist/` as-is and serves it with static-web-server; no install or build runs.
 
-The button imports this public repository as-is; it does not fork it. To deploy changes, users fork, rebuild `dist/` with `npm run build`, and import their fork. The README text points to the "Security & production deployment" section, since this publishes the demo pages.
+The button opens Wasmer's import page for this public repository, where the user reviews the configuration and clicks Deploy; it does not create a copy of the repository in their GitHub account. To deploy changes, users fork, rebuild `dist/` with `npm run build`, and import their fork. The README text points to the "Security & production deployment" section, since this publishes the demo pages.
 
 ## Why this repo
 
