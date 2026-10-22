@@ -41,7 +41,7 @@ PUBLISHED: 34 · READY: 5 · HOOK_BLOCKED: 0 · HELD_RUNTIME: 3 · HELD_BUILD: 3
 | 35 | just-the-docs/just-the-docs-template | READY | 228 | PASS | PASS (tool fixed to follow jekyll.bzl | anybuild 0.33.0 plan on  |  |
 | 36 | Kirilllive/ASCII_Art_Paint | READY | 508 | N/A | PASS | pending Codex browser ch |  |
 | 37 | mermaid-js/mermaid-live-editor | READY | 6869 | PASS | PASS | pending Codex browser ch |  |
-| 38 | pmotschmann/Evolve | READY | 1264 | Upstream | PASS (patched DeadSpace 2620dcc) | pending Codex browser ch |  |
+| 38 | pmotschmann/Evolve | READY | 1264 | Upstream | PASS on patched DeadSpace 728e899 | pending Codex browser ch |  |
 | 39 | Yqnn/svg-path-editor | READY | 5339 | PASS | PASS | pending Codex browser ch |  |
 | 40 | antfu-collective/vitesse | HELD_RUNTIME | 9440 | not | not run | pre-patch anybuild plan  |  |
 | 41 | satnaing/shadcn-admin | HELD_RUNTIME | 15845 | PASS |  | needs Codex check of SPA |  |

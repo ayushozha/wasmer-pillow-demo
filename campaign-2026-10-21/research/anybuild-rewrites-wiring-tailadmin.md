@@ -1,0 +1,328 @@
+# Anybuild 0.33.0 `static_redirects_config` rewrites wiring: TailAdmin react dashboard
+
+Date: 2026-10-22 (UTC)
+
+- **Subject:** `TailAdmin/free-react-tailwind-admin-dashboard`, default branch `main`, HEAD `e888dd1716b9803b535c7c2fa4f2c6b7d39b3da9` (2026-09-15T12:44:05+06:00). I re-fetched `origin/main` and it is unchanged.
+- **Anybuild:** 0.33.0, a local release build of public `wasmerio/shipit` @ `587be23132ea9302775d1cd4c075c1b75e2670a2`.
+- **Toolchain:** Node v24.22.1 and npm 11.19.1.
+
+**Scope: native evidence only.** Every HTTP and browser result below was produced with *native* `x86_64` static-web-server 2.32.2 and 2.38.0. **This is not Wasm proof.** Root's actual-WASI replay (Wasmer 7.5.0 with `wasmer/static-web-server@=1.1.0`, which reports SWS 2.32.2) is the authority. Status stays **HELD_RUNTIME** until root replays the v2 (trailing-slash) config.
+
+Hard rules kept:
+- only SWS internal rewrites, with no `redirect` key;
+- no `--page-fallback` and no `SERVER_FALLBACK_PAGE`;
+- no custom server;
+- no edits to the app's routing source;
+- no wildcard or catch-all.
+
+The Wasmer `.env` rendered **empty** (0 bytes).
+
+## Verdict
+
+PASS (native, both binaries) for the **v2 config**, which matches each known route with or without a trailing slash.
+
+- The smallest supported wiring is one added kwarg, `static_redirects_config = """..."""`, in the generated `nodestatic_config(...)` call.
+- Anybuild packages the text byte-for-byte as `static_config/sws.toml` and appends `--config-file=<static_config>/sws.toml` to the serve command.
+- For `--runner=wasmer` it mounts `/opt/static_config` and passes `--config-file=/opt/static_config/sws.toml`.
+
+Native HTTP results (86/86 requests matched their expected result on both 2.32.2 and 2.38.0):
+
+| Request | Result |
+|---|---|
+| All 15 known routes, as `/route`, `/route/`, `/route?x=1` and `/route/?x=1` | 200 with the exact `index.html` |
+| `/images` and `/images/` | 200 |
+| `HEAD /profile` and `HEAD /profile/` | 200 |
+| Unknown, nested-unknown, case-variant and double-slash paths | 404 |
+| Missing assets and `/assets/` | 404 |
+| Real JS, CSS, favicon and images | 200 with the correct type |
+
+Chromium checks:
+- every route and the tested trailing-slash URLs render the right page on hard load and refresh;
+- client-side navigation followed by a refresh works.
+
+**One app-side caveat:** on `/profile/`, one avatar image 404s. The cause is `./images/user/owner.png` at `src/components/UserProfile/UserMetaCard.tsx:24`, a relative URL that resolves under the trailing slash. This is a pre-existing app bug that any host serving `/profile/` would show. It is not caused by the rewrite.
+
+**Policy finding, separate from runtime (see the ledger):**
+- PR #45 "docs: add Deploy on Hostinger button" (README-only provider button) was **closed unmerged** 13 minutes after it was opened, with 0 comments, on 2026-02-20. Who closed it is not visible to me.
+- Several outside fix PRs were closed unmerged on 2026-09-15.
+- The last outside merge was #44 on 2025-11-10.
+- Brief v3 lists "a closed provider-button PR" as a hold reason. So even if root's replay passes, this repo needs a policy decision before any PR. The patch and PR body are staged artifacts only.
+
+## 1. Route list (source)
+
+`src/App.tsx` at `e888dd17` uses `BrowserRouter` from `react-router` (L1, L25). There are no params and no nested path segments.
+
+| Line | Path | Layout |
+|---|---|---|
+| L30 | `/` (index) | AppLayout |
+| L33 | `/profile` | AppLayout |
+| L34 | `/calendar` | AppLayout |
+| L35 | `/blank` | AppLayout |
+| L38 | `/form-elements` | AppLayout |
+| L41 | `/basic-tables` | AppLayout |
+| L44 | `/alerts` | AppLayout |
+| L45 | `/avatars` | AppLayout |
+| L46 | `/badge` | AppLayout |
+| L47 | `/buttons` | AppLayout |
+| L48 | `/images` | AppLayout |
+| L49 | `/videos` | AppLayout |
+| L52 | `/line-chart` | AppLayout |
+| L53 | `/bar-chart` | AppLayout |
+| L57 | `/signin` | none |
+| L58 | `/signup` | none |
+| L61 | `*` | NotFound (client-side only) |
+
+Notes on the list:
+- The sidebar links (`src/layout/AppSidebar.tsx` L43-120) are exactly these paths.
+- `AGENTS.md` says all routes are registered in `src/App.tsx`.
+- `/images` also exists as a **directory** (`public/images/`). Without a rule, SWS 308-redirects `/images` to `/images/` and then returns 404 (see the control below). With the rule, the rewrite runs before static-file and directory handling (SWS `src/handler.rs` order: redirects, then rewrites, then static), so `/images` returns 200.
+
+Design:
+- One rule per route. No globs were needed in v1, because there are no params or nesting.
+- `/` is served natively as the index file.
+- Nothing under `/assets/**` and nothing with a file extension is rewritten.
+
+## 2. Generated file (`anybuild generate .`, verbatim)
+
+Log: `logs/rewrites-tailadmin-generate.log`. sha256 `c0df3e4d0df91b9b43fe9a432b279a29eeb27ddeb891cb786ebd87e10c394346`.
+
+```python
+# Generated by Anybuild v0.33.0 — https://anybuild.run
+# This file is yours to edit: add steps or override the serve below.
+
+load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
+
+config = nodestatic_config(
+    schema = 1,
+    sws_version = "2.38.0",
+    static_dir = "dist",
+    node_package_manager = "npm",
+    node_framework = "vite",
+    node_server = "node",
+    node_version = "24",
+    npm_version = "11",
+)
+
+build = nodestatic_build(config)
+
+nodestatic_serve(config, build, name = "free-react-tailwind-admin-dashboard")
+```
+
+- The only edit is one kwarg plus a one-line comment added after `npm_version`.
+- `schema` and `sws_version` are untouched.
+- The diff for the current version (v2) is at `research/rewrites-tailadmin-artifacts/Anybuild.diff`. The v1 diff is at `.../v1-exact-only/Anybuild.diff`.
+
+## 3. How the wiring works (public source, shipit @ 587be231, `crates/anybuild/`)
+
+**Packaging and serve (`staticfile.bzl`, `node_static.bzl`):**
+- `resources/starlib/tools/staticfile.bzl` L21-30: `SWS_CONFIG_FILE = "sws.toml"`. `sws_config_mount` returns `mount("static_config")` only if `config.static_redirects_config` is truthy. `sws_config_step` then `write`s that string verbatim to `<static_config.path>/sws.toml`.
+- `staticfile.bzl` L69-73: when that mount exists, the start command is `static-web-server --root=<static_app.serve_path> --log-level=info --config-file=<static_config.serve_path>/sws.toml --port=<port>`.
+- `node_static.bzl` L27-56: `nodestatic_build` uses the same `sws_config_mount` / `sws_config_step` (L32, L49).
+
+**Config merge (`src/starlark/config.rs`):**
+- L100-101: the Anybuild-file kwargs go through `validate_patch` and are then `merge_json`ed on top of the provider's auto-loaded config. The provider's own value comes from `_redirects` (`node_static.rs` L245-246), and the kwarg wins over it.
+- L102: `apply_environment` runs **after** the merge.
+
+**Snapshot and Wasmer mapping:**
+- `src/providers/mod.rs` L35-45: `static_redirects_config` is in `SNAPSHOT_EXCLUDED_FIELDS`, so `generate` never writes it.
+- `src/run/wasmer.rs` L272-283: `static-web-server` 2.38.0 maps to `wasmer/static-web-server@=1.1.0`, entrypoint `webserver`.
+
+Caveats, all exercised here:
+1. **`generate` drops the field.** Running `anybuild generate .` on the patched tree silently rewrote `Anybuild` without the kwarg: 64 lines removed, 0 occurrences remaining. Log: `logs/rewrites-tailadmin-regenerate-caveat.log`.
+2. **Env vars override the kwarg.** With `ANYBUILD_STATIC_REDIRECTS_CONFIG='# overridden'`, and separately with `SHIPIT_STATIC_REDIRECTS_CONFIG`, the plan's field became `'# overridden'`. Log: `logs/rewrites-tailadmin-env-override-caveat.log`. No such variable was set in any run here; the plan logs record a count of 0.
+3. **The kwarg replaces any `_redirects`-derived config.** TailAdmin has no `_redirects`, so this was not exercised.
+
+## 4. Plan
+
+`anybuild plan . -o plan.json` (log: `logs/rewrites-tailadmin-plan.log`):
+- printed `Using static Node.js provider declared in Anybuild` (Vite, Node.js, npm, `dist`);
+- the plan JSON **does** expose `config.static_redirects_config`, byte-equal to the authored TOML;
+- `config.commands.start` includes `--config-file=.../static_config/sws.toml`;
+- `plan` wrote no side files, because the target already had an `Anybuild`.
+
+Base vs patched, from clean worktrees (log: `logs/rewrites-tailadmin-patch-check.log`):
+
+| Tree | Provider | static_dir | Redirects config | `--config-file` in start | Note |
+|---|---|---|---|---|---|
+| Base | `node-static` / vite / npm 11 | `dist` | none | no | the plan-written `Anybuild` was deleted |
+| Patched | `node-static` / vite / npm 11 | `dist` | sha256 `a58d026a…` | yes | |
+
+## 5. Build and packaging (local builder, clean)
+
+`anybuild build . --builder=local` (log: `logs/rewrites-tailadmin-build.log`):
+- ran `npm ci` and `npm run build`, copied `dist/.` to `/opt/static_app/`, and logged `Write file /opt/static_config/sws.toml`;
+- exited 0.
+
+On the local runner the mount is `<project>/.anybuild/local/build/opt/static_config/sws.toml`:
+- byte-identical to the authored TOML (`cmp`);
+- v2 sha256 `a58d026a0a8b8ec7e2e30bdff89e81e8758a7b458cd6a1c24ddac206a806d06f`, 1405 bytes;
+- v1 sha256 was `fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0`, 1179 bytes.
+
+Rendered `.anybuild/runner/local/bin/start`:
+
+```sh
+#!/bin/bash
+static-web-server --root=<proj>/.anybuild/local/build/opt/static_app --log-level=info --config-file=<proj>/.anybuild/local/build/opt/static_config/sws.toml --port=8080
+```
+
+The dist tree has 115 files; listing and hashes are in `rewrites-tailadmin-artifacts/dist-tree.{txt,sha256}`. It is identical between v1, v2 and the negative-control build:
+
+| File | sha256 |
+|---|---|
+| `index.html` | `dc1a7e1e…ca6da5` (455 B) |
+| `assets/index-BCqG7Liu.js` | `2d73e431…` |
+| `assets/index-lqHzMpjd.css` | `688da9f1…` |
+
+## 6. Wasmer runner rendering (stub `wasmer`, nothing deployed)
+
+- **Command:** `anybuild build . --builder=local --runner=wasmer --wasmer-bin=<stub> --show-wasmer-files`.
+- **Stub:** `/tmp/claude-0/rw/stub/wasmer` answers only `--version` (`wasmer 7.5.0 (stub)`) and exits 97 for anything else. EXIT 0.
+- **Log:** `logs/rewrites-tailadmin-build-wasmer-runner.log`.
+
+`.anybuild/wasmer/` contains:
+
+| File | What it holds |
+|---|---|
+| `wasmer.toml` | `[dependencies] "wasmer/static-web-server" = "=1.1.0"`. `[fs]` maps `"/opt/static_app"` and **`"/opt/static_config"`** to the local build dirs. `main-args = ["--root=/opt/static_app", "--log-level=info", "--config-file=/opt/static_config/sws.toml", "--port=8080"]`. |
+| `.env` | **0 bytes** (no env, so no `SERVER_FALLBACK_PAGE`). |
+| `app.yaml` | `kind: wasmer.io/App.v0`, `package: .`. The annotation `anybuild.run/config` embeds `static_redirects_config` (the same TOML) and `anybuild.run/provider: node-static`. There is no `env:` block. |
+| `build-annotations.yaml` | `wasmer.io/version: 7.5.0 (stub)` |
+
+The files are copied to `research/rewrites-tailadmin-artifacts/wasmer/`. The `.env` is saved there as `env.txt`. None of them contains a token or secret.
+
+## 7. Original v1 results (exact-path only), kept for the record
+
+v1 used `source = "/profile"` and so on (15 exact rules), with TOML sha256 `fa3f8ea5…cee0`. The artifacts are in `rewrites-tailadmin-artifacts/v1-exact-only/` and the logs in `logs/rewrites-tailadmin-*.v1-exact-only.log`.
+
+Native 2.32.2 and 2.38.0 gave identical results. Servers were started via `SERVER_HOST=127.0.0.1 anybuild run . --builder=local --start`, and the serving binary was confirmed via `/proc/<pid>/exe`.
+
+| Request | v1 status | Notes |
+|---|---|---|
+| `/`, `/index.html`, all 15 routes | 200 text/html 455 B, body == index.html | |
+| `/profile?x=1`, `/calendar?view=month&d=1` | 200, body == index.html | |
+| `/images` | 200, body == index.html | the control gives 308 |
+| `/profile/`, `/images/` | **404** | the trailing slash was not covered; corrected below |
+| `/profile/extra`, `/Profile`, `/nope`, `/does/not/exist`, `/404.html` | 404 | |
+| `/assets/nope.js`, `/assets/nope.css`, `/images/nope.png` | 404 | |
+| `/assets/index-BCqG7Liu.js` | 200 text/javascript 2009250 B | |
+| `/assets/index-lqHzMpjd.css` | 200 text/css 179599 B | |
+| `/favicon.png` | 200 image/png | |
+| `/images/favicon.ico` | 200 image/x-icon | |
+| `HEAD /profile` | 200 | |
+
+SWS logs confirmed the config was loaded:
+- `INFO config file used: .../static_config/sws.toml`;
+- `fallback page: enabled=false`;
+- at debug level, the regexes `^/profile$`, `^/form\-elements$` and so on.
+
+v1 Chromium checks (both binaries, with `playwright-core` 1.64.1 and chromium-1194):
+- a hard load and a refresh of `/` plus all 15 routes, `/profile?x=1` and `/calendar#today`;
+- sidebar navigation `/` → `/profile` (then a refresh) and `/profile` → `/calendar` (then a refresh).
+
+Every page showed its expected `<title>`. There were 0 same-origin failed requests, 0 HTTP errors and 0 JS errors. The only failures were the YouTube embeds on `/videos` (`ERR_TUNNEL_CONNECTION_FAILED`), because the sandbox blocks the host; these are third-party and excluded from the count.
+
+Unknown routes:
+- A direct load of `/nope` gives the SWS 404 page, not the app.
+- In-app navigation (`history.pushState` plus `popstate`) to `/nope` renders the app's own "React.js 404 Page".
+
+**Root's actual-WASI replay of v1** (reported by the coordinator; I did not run it):
+- all 15 routes, encoded-query variants, JS, CSS and `HEAD /profile` passed;
+- unknown and missing paths returned 404;
+- **the only failures were the 15 trailing-slash variants (404)**, matching the native v1 matrix.
+
+## 8. Correction 2026-10-22: trailing-slash variants (v2)
+
+**Change.** Each rule's `source` becomes a globset alternation of the exact path and the path plus `/`:
+
+```toml
+[[advanced.rewrites]]
+source = "{/profile,/profile/}"
+destination = "/index.html"
+```
+
+There is still no wildcard, no `**` and no `redirect` key.
+
+**Why this compiles and matches only those two paths:**
+- **globset syntax** (`globset-0.4.14/src/lib.rs` L83-84, https://docs.rs/globset/0.4.14/globset/#syntax): "`{a,b}` matches `a` or `b` where `a` and `b` are arbitrary glob patterns (N.B. Nesting `{...}` is not currently allowed.)". SWS 2.32.2 pins `globset 0.4.14` (Cargo.lock L537-538).
+- **SWS 2.32.2 compile step** (`src/settings/mod.rs` L441-487): `Glob::new(source).compile_matcher()`, then `.glob().regex()`. It strips `(?-u)` and turns `?:` groups into plain groups, then calls `Regex::new`.
+- **Observed at debug level** (`logs/rewrites-tailadmin-debug-sws2.32.2.log`): `url rewrites glob pattern: {/profile,/profile/}` and then `url rewrites regex equivalent: ^(/profile/|/profile)$`. The same anchored two-way alternation appears for all 15 routes.
+- **Request trace:** `url redirects/rewrites regex equivalent: ^(/profile/|/profile)$ … destination replaced: "/index.html"`. The destination has no `$n` placeholders, so the capture group is harmless (`src/rewrites.rs` `replace_placeholders`).
+
+**The new TOML** (the exact text of the kwarg and of the built `sws.toml`):
+- sha256 `a58d026a0a8b8ec7e2e30bdff89e81e8758a7b458cd6a1c24ddac206a806d06f`;
+- copied to `research/rewrites-tailadmin-artifacts/sws.toml`.
+
+**Native matrix v2** (`logs/rewrites-tailadmin-curl-sws2.32.2.log` and `…-sws2.38.0.log`). 86 requests each, **0 failures on both**, and the two tables are identical:
+
+| Request | Expected | 2.32.2 | 2.38.0 |
+|---|---|---|---|
+| `/`, `/index.html` | 200 index.html | 200 ✓ | 200 ✓ |
+| 15 routes × `/r` | 200 index.html | 200 ✓ (15/15) | 200 ✓ (15/15) |
+| 15 routes × `/r/` | 200 index.html | 200 ✓ (15/15) | 200 ✓ (15/15) |
+| 15 routes × `/r?x=1` | 200 index.html | 200 ✓ (15/15) | 200 ✓ (15/15) |
+| 15 routes × `/r/?x=1` | 200 index.html | 200 ✓ (15/15) | 200 ✓ (15/15) |
+| `/profile?q=a%20b&tab=%2Fx` | 200 index.html | 200 ✓ | 200 ✓ |
+| `HEAD /profile`, `HEAD /profile/` | 200 | 200, 200 ✓ | 200, 200 ✓ |
+| `/nope`, `/nope/` | 404 | 404, 404 ✓ | 404, 404 ✓ |
+| `/profile/extra`, `/profile/extra/`, `/profile//`, `//profile` | 404 | 404 ×4 ✓ | 404 ×4 ✓ |
+| `/profiles`, `/Profile`, `/signin/x` | 404 | 404 ×3 ✓ | 404 ×3 ✓ |
+| `/images/brand/` (directory without an index), `/404.html` | 404 | 404 ✓ | 404 ✓ |
+| `/assets/nope.js`, `/assets/nope.css`, `/images/nope.png`, `/assets/` | 404 | 404 ×4 ✓ | 404 ×4 ✓ |
+| `/images/brand` (a real directory, not a route) | 308 → `/images/brand/` (SWS default, unchanged) | 308 ✓ | 308 ✓ |
+| `/assets/index-BCqG7Liu.js` | 200 text/javascript | 200 ✓ | 200 ✓ |
+| `/assets/index-lqHzMpjd.css` | 200 text/css | 200 ✓ | 200 ✓ |
+| `/favicon.png`, `/images/favicon.ico`, `/images/logo/logo.svg` | 200 with the right type | 200 ✓ | 200 ✓ |
+
+Every 200 route response is `text/html`, 455 B, sha256 `dc1a7e1e…` = `index.html`.
+
+**Chromium v2** (`logs/rewrites-tailadmin-playwright-sws{2.32.2,2.38.0}.log`):
+- the full v1 set passes again;
+- added: a hard load and a refresh of `/profile/`, `/calendar/`, `/signin/`, `/basic-tables/?x=1` and `/images/`;
+- React Router v7 treats `/profile/` as `/profile`, so the same page and title render and the URL keeps the slash.
+
+Result: 2 "failures" per binary, both on `/profile/` (hard load and refresh). The cause:
+- **one same-origin 404, for `/profile/images/user/owner.png`**;
+- `src/components/UserProfile/UserMetaCard.tsx:24` uses the relative `src="./images/user/owner.png"`, where every other image uses a root-absolute `/images/...` (e.g. L199 of the same file);
+- the page renders fully, with the avatar broken;
+- this is an app bug that appears on any host serving `/profile/`;
+- it is not fixable here without editing app source, which is not allowed. It is disclosed in the PR body.
+
+All other trailing-slash URLs had 0 same-origin errors.
+
+**A redirect alternative was considered and rejected.** Log: `logs/rewrites-tailadmin-alt-redirect-probe.log`, native 2.32.2, NOT shipped.
+- The rule `source="/profile/"`, `destination="/profile"`, `redirect=301` followed by the exact `/profile` rewrite gives `/profile/` → 301 → `/profile` → 200.
+- That would fix the avatar.
+- But **SWS drops the query string**: `/profile/?x=1` → `Location: /profile`.
+- It also adds a round trip, and the brief prefers internal rewrites. So v2 keeps the internal rewrite.
+
+**Negative control** (unchanged, same SHA, unedited generated `Anybuild`; log: `logs/rewrites-tailadmin-negative-control.log`):
+- no `static_config` mount and no `--config-file`;
+- all routes return 404 on both binaries, `/images` returns 308 → `/images/`, and `HEAD /profile` returns 404;
+- assets return 200;
+- the dist tree is identical.
+
+**Rebuilt artifacts for root's replay:**
+
+| Item | Value |
+|---|---|
+| Patch (`patches/TailAdmin_free-react-tailwind-admin-dashboard.patch`) | sha256 `32954f552ea04ae1d296e044013733e5b0f07cd96c578f1b3a76d445c1ce3ac5` |
+| Patch apply check | `git apply --check` on `e888dd17`: EXIT 0 |
+| `research/rewrites-tailadmin-artifacts/wasmer/wasmer.toml` | sha256 `9309129f…`, byte-identical to v1 (it holds mounts and args only) |
+| `research/rewrites-tailadmin-artifacts/wasmer/app.yaml` | sha256 `22be5ee3…`, embeds the v2 TOML |
+| `research/rewrites-tailadmin-artifacts/wasmer/env.txt` | empty |
+| Reproducible tarball of `opt/static_app` + `opt/static_config` (kept outside the repo) | `/tmp/claude-0/rw/opt-static_app-static_config.tar.gz`, sha256 `3c7fae3ca722b5f6bd2744c648e3f8a2e80311a02c970202fe77f91f4a89325b` |
+
+Suggested replay additions for root:
+- all `/r/` and `/r/?x=1` variants;
+- `HEAD /profile/`;
+- `/nope/`, `/profile/extra/`, `/profile//`;
+- `/images/brand` (expect 308);
+- the debug log line `^(/profile/|/profile)$` from the WASI build, which confirms the alternation compiles there too.
+
+## 9. Disclosures and limitations
+
+- **Known routes only.** A new route in `src/App.tsx` must also be added to `static_redirects_config`, or it 404s on direct load. The README section says so.
+- **Unknown URLs get a server 404 on direct load.** The app's `*` NotFound page shows only after in-app navigation.
+- **The config only works through Anybuild and Wasmer.** `generate` drops it, and the `ANYBUILD_`/`SHIPIT_STATIC_REDIRECTS_CONFIG` env vars override it.
+- **Nothing was deployed.** No import UI was used. All proof here is native SWS.
+- **Commit trailers.** The staged commit carries the session's required `Co-Authored-By` and `Claude-Session` trailers. Earlier campaign patches have none, so root may want to strip them before any upstream use.

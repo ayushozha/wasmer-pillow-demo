@@ -1,4 +1,4 @@
-From 2620dcc79222f4251c69f53fe35ec61de714cfb5 Mon Sep 17 00:00:00 2001
+From 728e899f5a2cddbf7c1e88406ef23e656275412b Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 06:07:45 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -10,7 +10,7 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index 710a2b2..0f463c5 100644
+index 710a2b2..bb10e97 100644
 --- a/README.md
 +++ b/README.md
 @@ -80,3 +80,8 @@ docker build . -t evolve
@@ -21,7 +21,7 @@ index 710a2b2..0f463c5 100644
 +## Wasmer Edge
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=pmotschmann%2FEvolve)
 +
-+To host your own copy, fork this repository first and import your fork. The import serves the repository you choose and does not copy it into your GitHub account. The root `Staticfile` makes Wasmer serve the committed game files (`index.html`, `wiki.html`, `evolve/`, `wiki/`, `lib/`, `strings/`, `font/`) as they are, without running `npm run build`. If you change the source, rebuild and commit `evolve/` and `wiki/` in your fork before deploying. Saves are stored in each player's browser for that site, so use Export/Import to move a save between hosts. The pages include this project's Google Analytics tag (`G-CPC46V71CB`); change or remove it in your fork.
++To host your own copy, fork this repository first and import your fork. The import serves the repository you choose and does not copy it into your GitHub account. Import a branch that contains the root `Staticfile`; if it is not the default branch, select it in the import page's branch setting. The `Staticfile` makes Wasmer serve the committed game files (`index.html`, `wiki.html`, `evolve/`, `wiki/`, `lib/`, `strings/`, `font/`) as they are, without running `npm run build`. If you change the source, rebuild and commit `evolve/` and `wiki/` in your fork before deploying. Saves are stored in each player's browser for that site, so use Export/Import to move a save between hosts. The pages include this project's Google Analytics tag (`G-CPC46V71CB`); change or remove it in your fork.
 diff --git a/Staticfile b/Staticfile
 new file mode 100644
 index 0000000..fdbb02c
