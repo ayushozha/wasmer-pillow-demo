@@ -1,0 +1,23 @@
+diff --git a/README.md b/README.md
+index 9fd40aa..f8f2ae7 100644
+--- a/README.md
++++ b/README.md
+@@ -121,10 +121,18 @@ The build is a standard Next.js application and runs anywhere Next.js does.
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farthelokyo%2Ftailnext)
+ [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/arthelokyo/tailnext.git)
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=arthelokyo%2Ftailnext)
+ 
+ Set `NEXT_PUBLIC_SITE_ORIGIN` to the deployed domain so canonical URLs, the
+ sitemap and social cards point at the right place.
+ 
++Wasmer detects Next.js and builds the app with `npm run build`. Its button
++builds this public repository as-is and does not fork it; to customize the site
++(`src/config.ts`, `src/shared/data`, `src/content`) and redeploy on push, fork
++the repository and connect the fork from the Wasmer dashboard. On Wasmer,
++`NEXT_PUBLIC_SITE_ORIGIN` goes in the app's Settings → Environment Vars; it is
++read at build time, so redeploy after setting it.
++
+ ## Contributing
+ 
+ See [CONTRIBUTING.md](./CONTRIBUTING.md). Security reports go through

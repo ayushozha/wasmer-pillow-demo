@@ -1,0 +1,328 @@
+# build.log for 01-ChatGPTNextWeb__NextChat -- real output captured 2026-10-22 in a copy of the pinned clone ($SCRATCH = worker scratch dir)
+
+$ node -v
+v22.22.0
+exit=0
+
+$ yarn -v
+1.22.22
+exit=0
+
+$ git -C $SCRATCH/up/01-ChatGPTNextWeb__NextChat rev-parse HEAD
+1d3dc331512929a4b1d3e82354e72acce33b5c7a
+exit=0
+
+$ yarn install --frozen-lockfile --non-interactive
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+
+Node.js v22.22.0
+exit=1
+
+$ yarn build
+yarn run v1.22.22
+$ yarn mask && cross-env BUILD_MODE=standalone next build
+$ npx tsx app/masks/build.ts
+npm warn exec The following package was not found and will be installed: tsx@4.23.15
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+exit=127
+
+# note: first install above hit a transient proxy ECONNRESET; the build then failed only because node_modules was incomplete. Retrying the same frozen install with lower network concurrency:
+
+$ yarn install --frozen-lockfile --non-interactive --network-concurrency 4 --network-timeout 600000
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+
+Node.js v22.22.0
+exit=1
+
+# note: proxy status shows the resets are 403 CONNECT denials for registry.npmmirror.com (390 yarn.lock entries resolve there; the rest use registry.yarnpkg.com).
+# FALLBACK (build copy only, upstream lockfile untouched): rewrite https://registry.npmmirror.com/ -> https://registry.npmjs.org/ in the copy's yarn.lock.
+# Tarball paths and integrity hashes are unchanged, so yarn still verifies every package against the committed sha512.
+
+$ sed -i 's#https://registry.npmmirror.com/#https://registry.npmjs.org/#g' yarn.lock && grep -c npmmirror yarn.lock; true
+0
+exit=0
+
+$ yarn install --frozen-lockfile --non-interactive
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+
+Node.js v22.22.0
+exit=1
+
+# 4 more entries resolve from mirrors.huaweicloud.com/repository/npm/ (also 403 from this proxy); same fallback for them:
+
+$ sed -i 's#https://mirrors.huaweicloud.com/repository/npm/#https://registry.npmjs.org/#g' yarn.lock && grep -o 'resolved "https://[^/]*' yarn.lock | sort | uniq -c
+      1 resolved "https://github.com
+    406 resolved "https://registry.npmjs.org
+    738 resolved "https://registry.yarnpkg.com
+exit=0
+
+$ yarn install --frozen-lockfile --non-interactive --network-concurrency 4
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning " > openapi-client-axios@7.5.5" has unmet peer dependency "js-yaml@^4.1.0".
+[4/4] Building fresh packages...
+$ husky install
+husky - Git hooks installed
+Done in 114.64s.
+exit=0
+
+$ yarn build
+[... 39 earlier lines omitted ...]
+./app/components/chat.tsx
+./app/components/home.tsx
+
+./node_modules/rt-client/dist/esm/index.js
+Module not found: Can't resolve 'utf-8-validate' in '$SCRATCH/build/01-ChatGPTNextWeb__NextChat/node_modules/rt-client/dist/esm'
+
+Import trace for requested module:
+./node_modules/rt-client/dist/esm/index.js
+./app/components/realtime-chat/realtime-chat.tsx
+./app/components/realtime-chat/index.ts
+./app/components/chat.tsx
+./app/components/home.tsx
+
+./app/components/chat.module.scss
+Warning
+
+(1:6647) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/components/chat.module.scss
+./app/components/mask.tsx
+./app/components/home.tsx
+
+   Linting and checking validity of types ...
+ ⨯ ESLint: Cannot read properties of undefined (reading 'loc') Occurred while linting $SCRATCH/build/01-ChatGPTNextWeb__NextChat/app/constant.ts:1 Rule: "unused-imports/no-unused-imports"
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+Attempted to get item "app-config" from localStorage, but localStorage is not available.
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+Attempted to get item "lang" from localStorage, but localStorage is not available.
+Attempted to get item "access-control" from localStorage, but localStorage is not available.
+Attempted to get item "mask-store" from localStorage, but localStorage is not available.
+Attempted to get item "lang" from localStorage, but localStorage is not available.
+Attempted to get item "chat-next-web-store" from localStorage, but localStorage is not available.
+Attempted to get item "chat-update" from localStorage, but localStorage is not available.
+Attempted to get item "chat-next-web-plugin" from localStorage, but localStorage is not available.
+Attempted to get item "prompt-store" from localStorage, but localStorage is not available.
+Attempted to get item "sync" from localStorage, but localStorage is not available.
+skip setItem app-config
+skip setItem access-control
+skip setItem mask-store
+skip setItem chat-next-web-store
+skip setItem chat-update
+skip setItem chat-next-web-plugin
+skip setItem prompt-store
+skip setItem sync
+Attempted to set item "app-config" in localStorage, but localStorage is not available.
+Attempted to set item "access-control" in localStorage, but localStorage is not available.
+Attempted to set item "mask-store" in localStorage, but localStorage is not available.
+Attempted to set item "chat-next-web-store" in localStorage, but localStorage is not available.
+Attempted to set item "chat-update" in localStorage, but localStorage is not available.
+Attempted to set item "chat-next-web-plugin" in localStorage, but localStorage is not available.
+Attempted to set item "prompt-store" in localStorage, but localStorage is not available.
+Attempted to set item "sync" in localStorage, but localStorage is not available.
+ ✓ Generating static pages (4/4) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    626 kB          716 kB
+├ ○ /_not-found                          891 B            87 kB
+├ ℇ /api/[provider]/[...path]            0 B                0 B
+├ ℇ /api/artifacts                       0 B                0 B
+├ ℇ /api/config                          0 B                0 B
+├ ℇ /api/tencent                         0 B                0 B
+├ ℇ /api/upstash/[action]/[...key]       0 B                0 B
+└ ℇ /api/webdav/[...path]                0 B                0 B
++ First Load JS shared by all            86.1 kB
+  ├ chunks/8069-4c78fbb07bc7891a.js      29.2 kB
+  ├ chunks/fd9d1056-c19853f8a5992bd8.js  53.4 kB
+  └ other shared chunks (total)          3.58 kB
+
+
+○  (Static)        prerendered as static content
+ℇ  (Edge Runtime)  server-rendered on demand using the Edge Runtime
+
+Done in 215.30s.
+exit=0
+
+$ python3 -I $W/mock_openai.py 3191 &   # local OpenAI-compatible SSE mock (no real provider)
+# run A: OPENAI_API_KEY=sk-mock-**** (mock), CODE=mockcode, BASE_URL=http://127.0.0.1:3191
+$ OPENAI_API_KEY=sk-mock-**** CODE=mockcode BASE_URL=http://127.0.0.1:3191 yarn start   (background, PORT=3101)
+ready=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3101/
+200
+$ curl -sS http://localhost:3101/ | grep -o '<title>[^<]*</title>'
+<title>NextChat</title>
+
+$ curl -sS http://localhost:3101/api/config -X POST -w '\nhttp=%{http_code}'
+{"needCode":true,"hideUserApiKey":false,"disableGPT4":false,"hideBalanceQuery":true,"disableFastLink":false,"customModels":"","defaultModel":"","visionModels":""}
+http=200
+$ curl -sS -X POST -H 'Content-Type: application/json' -d '{"model":"gpt-4o-mini","stream":true,"messages":[{"role":"user","content":"hi"}]}' -w '\nhttp=%{http_code}' http://localhost:3101/api/openai/v1/chat/completions   # no access code
+{"error":true,"msg":"empty access code"}
+http=401
+$ curl -sS -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer nk-wrongcode' -d '{"model":"gpt-4o-mini","stream":true,"messages":[{"role":"user","content":"hi"}]}' -w '\nhttp=%{http_code}' http://localhost:3101/api/openai/v1/chat/completions   # wrong access code
+{"error":true,"msg":"wrong access code"}
+http=401
+$ curl -sS -N -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer nk-mockcode' -d '{"model":"gpt-4o-mini","stream":true,"messages":[{"role":"user","content":"hi"}]}' -D - -w '\nhttp=%{http_code}' http://localhost:3101/api/openai/v1/chat/completions | grep -i 'http/\|content-type\|^data\|http='   # correct access code -> streamed from mock
+HTTP/1.1 200 OK
+content-type: text/event-stream
+server: BaseHTTP/0.6 Python/3.13.16
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "MOCK"}}]}
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "-STREAM"}}]}
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "-OK"}}]}
+data: [DONE]
+http=200
+
+$ <stop server on port 3101>
+--- server output ---
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[openai Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[OpenAI Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] allowed hashed codes:  [ '86d10c5713fed78c3220da9f83b45b0c' ]
+[Auth] got access code: 
+[Auth] hashed access code: d41d8cd98f00b204e9800998ecf8427e
+[User IP]  127.0.0.1
+[Time]  10/22/2026, 4:40:50 AM
+[openai Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[OpenAI Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] allowed hashed codes:  [ '86d10c5713fed78c3220da9f83b45b0c' ]
+[Auth] got access code: wrongcode
+[Auth] hashed access code: ffeb5920d6d05acd05270d3183b1dda0
+[User IP]  127.0.0.1
+[Time]  10/22/2026, 4:40:50 AM
+[openai Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[OpenAI Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] allowed hashed codes:  [ '86d10c5713fed78c3220da9f83b45b0c' ]
+[Auth] got access code: mockcode
+[Auth] hashed access code: 86d10c5713fed78c3220da9f83b45b0c
+[User IP]  127.0.0.1
+[Time]  10/22/2026, 4:40:50 AM
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] use system api key
+[Proxy]  v1/chat/completions
+[Base Url] http://127.0.0.1:3191
+fetchUrl http://127.0.0.1:3191/v1/chat/completions
+[Org ID] is not set up.
+Done in 3.06s.
+
+# run B: same mock key and BASE_URL, CODE unset
+$ OPENAI_API_KEY=sk-mock-**** BASE_URL=http://127.0.0.1:3191 yarn start   (background, PORT=3101)
+ready=0
+$ curl -sS -N -X POST -H 'Content-Type: application/json' -d '{"model":"gpt-4o-mini","stream":true,"messages":[{"role":"user","content":"hi"}]}' -w '\nhttp=%{http_code}' http://localhost:3101/api/openai/v1/chat/completions | grep '^data\|http='   # no Authorization at all, CODE unset -> served with the server key
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "MOCK"}}]}
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "-STREAM"}}]}
+data: {"id": "mock", "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"content": "-OK"}}]}
+data: [DONE]
+http=200
+
+$ <stop server on port 3101>
+--- server output ---
+yarn run v1.22.22
+$ next start
+   ▲ Next.js 14.1.1
+   - Local:        http://localhost:3101
+
+[Next] build mode standalone
+[Next] build with chunk:  true
+ ⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+ ✓ Ready in 509ms
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Server Config] using 1 of 1 api key - sk-mock-****
+[openai Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[OpenAI Route] params  { provider: 'openai', path: [ 'v1', 'chat', 'completions' ] }
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] allowed hashed codes:  []
+[Auth] got access code: 
+[Auth] hashed access code: d41d8cd98f00b204e9800998ecf8427e
+[User IP]  127.0.0.1
+[Time]  10/22/2026, 4:41:01 AM
+[Server Config] using 1 of 1 api key - sk-mock-****
+[Auth] use system api key
+[Proxy]  v1/chat/completions
+[Base Url] http://127.0.0.1:3191
+fetchUrl http://127.0.0.1:3191/v1/chat/completions
+[Org ID] is not set up.
+Done in 3.50s.
+

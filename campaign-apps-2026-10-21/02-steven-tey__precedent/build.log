@@ -1,0 +1,183 @@
+# build.log for 02-steven-tey__precedent -- real output captured 2026-10-22 in a copy of the pinned clone ($SCRATCH = worker scratch dir)
+
+$ node -v
+v22.22.0
+exit=0
+
+$ corepack pnpm -v   # packageManager pins pnpm@9.3.0
+9.3.0
+exit=0
+
+$ git -C $SCRATCH/up/02-steven-tey__precedent rev-parse HEAD
+3be40205d7cdf56082cd284f07f12251b9208f79
+exit=0
+
+$ corepack pnpm install --frozen-lockfile
+[... 23 earlier lines omitted ...]
+dependencies:
++ @clerk/nextjs 5.6.2
++ @radix-ui/react-dialog 1.0.5
++ @radix-ui/react-popover 1.0.7
++ @radix-ui/react-tooltip 1.0.7
++ @types/node 18.11.18
++ @types/react 18.2.24
++ @types/react-dom 18.2.8
++ @vercel/analytics 0.1.11
++ @vercel/og 0.0.26
++ classnames 2.3.2
++ clsx 2.0.0
++ eslint 8.31.0
++ eslint-config-next 13.1.1
++ focus-trap-react 10.2.2
++ framer-motion 8.5.5
++ lucide-react 0.105.0-alpha.4
++ ms 2.1.3
++ next 14.3.0-canary.57
++ react 18.3.1
++ react-dom 18.3.1
++ react-markdown 8.0.7
++ tailwind-merge 1.14.0
++ typescript 5.2.2
++ use-debounce 9.0.4
++ vaul 0.6.8
+
+devDependencies:
++ @tailwindcss/forms 0.5.6
++ @tailwindcss/line-clamp 0.4.4
++ @tailwindcss/typography 0.5.10
++ @types/ms 0.7.32
++ autoprefixer 10.4.16
++ concurrently 7.6.0
++ postcss 8.4.31
++ prettier 2.8.8
++ prettier-plugin-tailwindcss 0.2.8
++ tailwindcss 3.3.3
+
+Done in 17.9s
+exit=0
+
+$ corepack pnpm build
+
+> precedent@0.1.0 build $SCRATCH/build/02-steven-tey__precedent
+> next build
+
+  ▲ Next.js 14.3.0-canary.57
+
+   Creating an optimized production build ...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Pages directory cannot be found at $SCRATCH/build/02-steven-tey__precedent/pages or $SCRATCH/build/02-steven-tey__precedent/src/pages. If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ƒ /                                    67.4 kB         159 kB
+├ ƒ /_not-found                          895 B          87.1 kB
+├ ƒ /opengraph-image                     0 B                0 B
+└ ○ /sitemap                             0 B                0 B
++ First Load JS shared by all            86.2 kB
+  ├ chunks/284-3679b32d4bf0c483.js       33.5 kB
+  ├ chunks/733ed927-283725d3940b1d25.js  50.8 kB
+  └ other shared chunks (total)          1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+exit=0
+
+$ corepack pnpm start   (background, PORT=3102)
+ready=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3102/   # no Clerk keys set
+500
+$ curl -sS http://localhost:3102/ | head -c 600; echo
+<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-1a6ce58d6ed82e16.js"/><script src="/_next/static/chunks/733ed927-283725d3940b1d25.js" async=""></script><script src="/_next/static/chunks/284-3679b32d4bf0c483.js" async=""></script><script src="/_next/static/chunks/main-app-6b66feee546ff334.js" async=""></script><meta name="robots" content="noindex"/><title>Precedent - Building blocks for your Next.js project</title><metacurl: (23) Failure writing output to destination
+
+
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3102/opengraph-image
+curl: (52) Empty reply from server
+000
+$ curl -sS -o /dev/null -w '%{http_code} %{redirect_url}' http://localhost:3102/github
+307 https://github.com/steven-tey/precedent
+$ <stop server on port 3102>
+--- server output ---
+    at nS ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:40750)
+    at nw ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:42328)
+    at n_ ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:59634)
+    at nw ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:56232)
+    at n_ ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:59634) {
+  digest: '3778486607'
+}
+Error: @clerk/nextjs: Missing publishableKey. You can get your key at https://dashboard.clerk.com/last-active?path=api-keys.
+    at Object.throwMissingPublishableKeyError ($SCRATCH/build/02-steven-tey__precedent/.next/server/chunks/206.js:65:67570)
+    at $SCRATCH/build/02-steven-tey__precedent/.next/server/chunks/206.js:65:64325
+    at nb ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:40398)
+    at nw ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:42307)
+    at n_ ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:59634)
+    at nS ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:40750)
+    at nw ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:42328)
+    at n_ ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:59634)
+    at nw ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:56232)
+    at n_ ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:20:59634) {
+  digest: '3778486607'
+}
+Can't load image https://precedent.dev/logo.png: fetch failed
+ ⨯ Error: failed to pipe response
+    at pipeToNodeResponse ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/pipe-readable.js:126:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async NextNodeServer.runEdgeFunction ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:1254:13)
+    at async NextNodeServer.handleCatchallRenderRequest ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:249:37)
+    at async NextNodeServer.handleRequestImpl ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:798:17)
+    at async invokeRender ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener ($SCRATCH/build/02-steven-tey__precedent/node_modules/.pnpm/next@14.3.0-canary.57_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/start-server.js:142:13) {
+  [cause]: Error: Image size cannot be determined. Please provide the width and height of the image.
+      at iC ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:110:2224)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async i4 ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:110:52036)
+      at async i4 ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:110:52979)
+      at async aG ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:111:27941)
+      at async sv ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:111:65462)
+      at async Object.start ($SCRATCH/build/02-steven-tey__precedent/.next/server/app/opengraph-image/route.js:111:68722)
+}
+
+# placeholder publishable key = pk_test_ + base64('example.clerk.accounts.dev$') (format-valid, not a real Clerk app); CLERK_SECRET_KEY=sk_test_placeholder. Set at runtime only, no rebuild.
+$ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_ZXhhbXBsZS5jbGVyay5hY2NvdW50cy5kZXYk CLERK_SECRET_KEY=sk_test_placeholder corepack pnpm start   (background, PORT=3102)
+ready=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3102/
+200
+$ curl -sS http://localhost:3102/ | grep -o 'Building blocks for your Next project\|Sign In\|Precedent' | sort -u
+Building blocks for your Next project
+Precedent
+
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3102/sitemap.xml
+404
+$ <stop server on port 3102>
+--- server output ---
+
+> precedent@0.1.0 start $SCRATCH/build/02-steven-tey__precedent
+> next start
+
+  ▲ Next.js 14.3.0-canary.57
+  - Local:        http://localhost:3102
+
+ ✓ Starting...
+ ✓ Ready in 354ms
+

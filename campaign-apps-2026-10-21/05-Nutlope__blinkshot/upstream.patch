@@ -1,0 +1,25 @@
+diff --git a/README.md b/README.md
+index fcabec6..7ba71e0 100644
+--- a/README.md
++++ b/README.md
+@@ -21,6 +21,20 @@
+ 2. Create a `.env.local` file and add your [Together AI API key](https://togetherai.link/?utm_source=blinkshot&utm_medium=referral&utm_campaign=example-app): `TOGETHER_API_KEY=`
+ 3. Run `npm install` and `npm run dev` to install dependencies and run locally
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=Nutlope%2Fblinkshot)
++
++Wasmer detects Next.js, installs dependencies with pnpm (from `pnpm-lock.yaml`), runs `pnpm run build` (`next build`) and serves the production build with Node. The button builds this public repo as-is and does not fork or copy it; to customize the app (start with `app/page.tsx`) and redeploy on every push, fork it and connect your fork from the Wasmer dashboard. Set these in the app's Settings → Environment Vars:
++
++| Variable | Required | Purpose |
++| --- | --- | --- |
++| `TOGETHER_API_KEY` | Yes | Image generation (also needed when visitors enter their own Together key) |
++| `HELICONE_API_KEY` | No | Sends requests through Helicone for observability |
++| `BRAINTRUST_API_KEY`, `BRAINTRUST_PROJECT` | No | Generation tracing (project defaults to `blinkshot`) |
++| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | No | Rate limiting (5 requests per IP per day without a user key); skipped when unset |
++| `NEXT_PUBLIC_SITE_URL` | No | Extra allowed origin for the API origin check |
++
+ ## Future Tasks
+ 
+ - [ ] Show a download button so people can get their images

@@ -1,0 +1,223 @@
+# build.log for 03-Nutlope__turboseek -- real output captured 2026-10-22 in a copy of the pinned clone ($SCRATCH = worker scratch dir)
+
+$ node -v
+v22.22.0
+exit=0
+
+$ pnpm -v
+10.28.0
+exit=0
+
+$ git -C $SCRATCH/up/03-Nutlope__turboseek rev-parse HEAD
+9e16b401d5595cbe0fadaad12ef7d32b3635deec
+exit=0
+
+$ pnpm install --frozen-lockfile
+[... 10 earlier lines omitted ...]
+Progress: resolved 433, reused 306, downloaded 50, added 20
+Progress: resolved 433, reused 306, downloaded 51, added 20
+Progress: resolved 433, reused 306, downloaded 52, added 20
+Progress: resolved 433, reused 306, downloaded 64, added 24
+Progress: resolved 433, reused 306, downloaded 114, added 42
+Progress: resolved 433, reused 306, downloaded 127, added 432
+Progress: resolved 433, reused 306, downloaded 127, added 433, done
+
+dependencies:
++ @ai-sdk/togetherai 1.0.29
++ ai 5.0.106
++ exa-js 2.0.11
++ next 16.0.10
++ next-plausible 3.12.5
++ react 19.2.1
++ react-dom 19.2.1
++ react-hot-toast 2.5.2
++ together-ai 0.32.0
+
+devDependencies:
++ @types/jsdom 21.1.7
++ @types/node 20.19.9
++ @types/react 19.2.7
++ @types/react-dom 19.2.3
++ eslint 9.39.1
++ eslint-config-next 16.0.7
++ postcss 8.5.6
++ prettier 3.6.2
++ prettier-plugin-tailwindcss 0.6.14
++ tailwindcss 3.4.17
++ typescript 5.9.2
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: sharp@0.34.5, unrs-resolver@1.11.1.                 │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 24.9s using pnpm v10.28.0
+exit=0
+
+$ pnpm build
+
+> turbo-seek@0.1.0 build $SCRATCH/build/03-Nutlope__turboseek
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ✓ Compiled successfully in 23.5s
+   Running TypeScript ...
+   Collecting page data using 3 workers ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Error: The TOGETHER_API_KEY environment variable is missing or empty; either provide it, or instantiate the Together client with an apiKey option, like new Together({ apiKey: 'My API Key' }).
+    at new ih (.next/server/chunks/[root-of-the-server]__8dc424b9._.js:15:5146)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__8dc424b9._.js:60:7180)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__eab99a58._.js:8:45828)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18)
+
+> Build error occurred
+Error: Failed to collect page data for /api/getSimilarQuestions
+    at ignore-listed frames {
+  type: 'Error'
+}
+ ELIFECYCLE  Command failed with exit code 1.
+exit=1
+
+$ TOGETHER_API_KEY=placeholder-not-a-real-key pnpm build
+[... 26 earlier lines omitted ...]
+  statusCode: 401,
+  timestamp: '2026-10-22T04:28:08.306Z',
+  path: undefined
+}
+Error [ExaError]: API key must be provided as an argument or as an environment variable (EXA_API_KEY)
+    at new tD (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:40:25845)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:60:7438)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18) {
+  statusCode: 401,
+  timestamp: '2026-10-22T04:28:08.409Z',
+  path: undefined
+}
+Error [ExaError]: API key must be provided as an argument or as an environment variable (EXA_API_KEY)
+    at new tD (.next/server/chunks/[root-of-the-server]__8dc424b9._.js:5:25845)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__8dc424b9._.js:60:7438)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__1c53dc1c._.js:1:1270)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18) {
+  statusCode: 401,
+  timestamp: '2026-10-22T04:28:08.437Z',
+  path: undefined
+}
+
+> Build error occurred
+Error: Failed to collect page data for /api/getSimilarQuestions
+    at ignore-listed frames {
+  type: 'Error'
+}
+ ELIFECYCLE  Command failed with exit code 1.
+exit=1
+
+$ TOGETHER_API_KEY=placeholder-not-a-real-key EXA_API_KEY=placeholder-not-a-real-key pnpm build
+
+> turbo-seek@0.1.0 build $SCRATCH/build/03-Nutlope__turboseek
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ✓ Compiled successfully in 15.1s
+   Running TypeScript ...
+   Collecting page data using 3 workers ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   Generating static pages using 3 workers (0/7) ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   Generating static pages using 3 workers (1/7) 
+   Generating static pages using 3 workers (3/7) 
+   Generating static pages using 3 workers (5/7) 
+ ✓ Generating static pages using 3 workers (7/7) in 1132.0ms
+   Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/getAnswer
+├ ƒ /api/getSimilarQuestions
+└ ƒ /api/getSources
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+exit=0
+
+$ pnpm start   (background, PORT=3103)
+ready=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3103/
+200
+$ curl -sS http://localhost:3103/ | grep -o -m1 'TurboSeek\|Search smarter\|Ask anything' | sort -u
+Ask anything
+Search smarter
+TurboSeek
+
+$ curl -sS -X POST -H 'Content-Type: application/json' -d '{"question":"test"}' -w '\nhttp=%{http_code}' http://localhost:3103/api/getSources
+Internal Server Error
+http=500
+$ curl -sS -X POST -H 'Content-Type: application/json' -d '{"question":"test"}' -w '\nhttp=%{http_code}' http://localhost:3103/api/getAnswer
+Internal Server Error
+http=500
+$ <stop server on port 3103>
+--- server output ---
+
+> turbo-seek@0.1.0 start $SCRATCH/build/03-Nutlope__turboseek
+> next start
+
+   ▲ Next.js 16.0.10
+   - Local:         http://localhost:3103
+   - Network:       http://192.0.2.2:3103
+
+ ✓ Starting...
+ ✓ Ready in 649ms
+ ⨯ Error: The TOGETHER_API_KEY environment variable is missing or empty; either provide it, or instantiate the Together client with an apiKey option, like new Together({ apiKey: 'My API Key' }).
+    at new ih (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:50:5146)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:60:7180)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18)
+ ⨯ Error: The TOGETHER_API_KEY environment variable is missing or empty; either provide it, or instantiate the Together client with an apiKey option, like new Together({ apiKey: 'My API Key' }).
+    at new ih (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:50:5146)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__3ee4185f._.js:60:7180)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18)
+

@@ -1,0 +1,289 @@
+# build.log for 17-arthelokyo__tailnext — generated 2026-10-22 in a copy of the pinned clone
+$ node -v; npm -v; pnpm -v; yarn -v; git -C $SCRATCH/up/17-arthelokyo__tailnext rev-parse HEAD
+v22.22.0
+10.9.4
+10.28.0
+1.22.22
+bad459314c915bc1424045523a23360eee2aed6e
+exit=0
+
+$ npm ci --no-audit --no-fund
+npm warn deprecated git-raw-commits@5.0.1: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
+npm warn deprecated tsconfck@3.1.6: unmaintained
+npm warn deprecated tsconfck@3.1.6: unmaintained
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> @arthelokyo/tailnext@1.0.0-beta.4 prepare
+> husky
+
+
+added 850 packages in 1m
+exit=0
+
+$ node -e "const s=require('sharp'); console.log('sharp', s.versions)"
+  lcms: '2.19.1',
+  mozjpeg: '0826579',
+  pango: '1.58.2',
+  pixman: '0.46.4',
+  png: '1.6.58',
+  'proxy-libintl': '0.5',
+  rsvg: '2.62.91',
+  tiff: '4.7.2',
+  uhdr: '2.0.2',
+  vips: '8.18.6',
+  webp: '1.6.0',
+  xml2: '2.15.3',
+  'zlib-ng': '2.3.3',
+  sharp: '0.35.4'
+}
+exit=0
+
+$ npm run build
+
+> @arthelokyo/tailnext@1.0.0-beta.4 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+Starting content-collections content-collections.ts
+build started ...
+... finished build of 2 collections and 6 documents in 2905ms
+✓ Running next.config.ts took 4.0s
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 39.6s
+  Running TypeScript ...
+  Finished TypeScript in 13.2s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/20) ...
+  Generating static pages using 3 workers (5/20) 
+  Generating static pages using 3 workers (10/20) 
+  Generating static pages using 3 workers (15/20) 
+✓ Generating static pages using 3 workers (20/20) in 2.1s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /apple-icon
+├ ○ /blog
+├   /blog/[slug]
+│ ├ ● /blog/demo-post-1
+│ ├ ● /blog/demo-post-2
+│ ├ ● /blog/demo-post-3
+│ └ ● /blog/demo-post-4
+├ ● /blog/[slug]/opengraph-image-1r5u6l/[__metadata_id__]
+├ ○ /contact
+├ ○ /faqs
+├ ○ /icon
+├ ○ /opengraph-image
+├ ○ /pricing
+├ ○ /privacy
+├ ○ /robots.txt
+├ ○ /services
+├ ○ /sitemap.xml
+└ ○ /terms
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+exit=0
+
+$ cd 17-arthelokyo__tailnext && PORT=3321 npm start   (background)
+ready after ~2s
+
+> @arthelokyo/tailnext@1.0.0-beta.4 start
+> next start
+
+▲ Next.js 16.3.4
+- Local:         http://localhost:3321
+- Network:       http://192.0.2.2:3321
+✓ Ready in 172ms
+✓ Running next.config.ts took 79ms
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3321/
+200
+exit=0
+$ curl -sS http://127.0.0.1:3321/ | grep -o '<title>[^<]*</title>'
+<title>TailNext — Your website with Next.js + Tailwind CSS</title>
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3321/blog/demo-post-1
+200
+exit=0
+$ curl -sS http://127.0.0.1:3321/blog/demo-post-1 | grep -o '<title>[^<]*</title>'
+<title>Nulla amet fugiat qui minim deserunt enim eu — TailNext</title>
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}\n' http://127.0.0.1:3321/sitemap.xml
+200 application/xml
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}\n' -H 'Accept: image/avif,image/webp' 'http://127.0.0.1:3321/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=50'
+200 image/webp
+exit=0
+$ curl -sS -D - -o /dev/null 'http://127.0.0.1:3321/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=50' | grep -i -E '^(x-nextjs-cache|content-type|content-length)'
+Content-Type: image/jpeg
+X-Nextjs-Cache: MISS
+Content-Length: 9842
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' 'http://127.0.0.1:3321/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=80'   # quality not in images.qualities, expected 400
+400
+exit=0
+$ kill <server pid>  (server stopped)
+
+$ stat -c '%s bytes (unoptimized source)' .next/static/media/camera-back.44v0h9y7i51fr.jpg; ls .next/cache/images | wc -l
+156914 bytes (unoptimized source)
+2
+exit=0
+
+
+# Repo checks in the Node 22 build copy, with the patched README copied in
+$ npx prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+
+$ npm run prettier:check
+
+> @arthelokyo/tailnext@1.0.0-beta.4 prettier:check
+> prettier --check --ignore-unknown .
+
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+
+$ npm run typegen && npm run typecheck
+
+Starting content-collections content-collections.ts
+build started ...
+... finished build of 2 collections and 6 documents in 122ms
+Generating route types...
+✓ Types generated successfully
+
+> @arthelokyo/tailnext@1.0.0-beta.4 typecheck
+> tsc --noEmit
+
+exit=0
+
+$ npm run lint
+
+> @arthelokyo/tailnext@1.0.0-beta.4 lint
+> eslint .
+
+exit=0
+
+
+# Anybuild plan, wasmerio/shipit v0.33.0 (587be23132ea), CLI built locally from that tag; run against the unmodified clone
+$ $SCRATCH/w/cargo-target/debug/anybuild plan --temp-anybuild --wasmer $SCRATCH/up/17-arthelokyo__tailnext -o $SCRATCH/w/plan17.json 2>&1 | sed 's#/tmp/Anybuild[A-Za-z0-9]*#<tmpfile>#'; python3 -I -c "import json;c=json.load(open('$SCRATCH/w/plan17.json'))['config'];print(json.dumps(c['commands']));print('node_version', c.get('node_version'), '| package manager', c.get('node_package_manager'), c.get(c.get('node_package_manager','')+'_version'))"
+  Detected Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <tmpfile>
+Plan saved to $SCRATCH/w/plan17.json
+{"install": "npm install", "build": "npx -y next-bundle@1.0.0 --build-command 'npm run build'", "start": "node .next-bundle/server.mjs"}
+node_version None | package manager npm 11
+exit=0
+
+
+# Builder-equivalent run: pristine copy without .git, Node 24 (Anybuild default; also this repo's .nvmrc), commands as generated by wasmerio/shipit@587be231
+$ node -v; npm -v
+v24.22.1
+10.9.4
+exit=0
+
+$ CI=true NPM_CONFIG_FUND=false npm install
+.git can't be found
+added 850 packages, and audited 851 packages in 42s
+
+28 vulnerabilities (1 low, 14 moderate, 10 high, 3 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+exit=0
+
+$ npx -y next-bundle@1.0.0 --build-command 'npm run build'
+├ ○ /blog
+├   /blog/[slug]
+│ ├ ● /blog/demo-post-1
+│ ├ ● /blog/demo-post-2
+│ ├ ● /blog/demo-post-3
+│ └ ● /blog/demo-post-4
+├ ● /blog/[slug]/opengraph-image-1r5u6l/[__metadata_id__]
+├ ○ /contact
+├ ○ /faqs
+├ ○ /icon
+├ ○ /opengraph-image
+├ ○ /pricing
+├ ○ /privacy
+├ ○ /robots.txt
+├ ○ /services
+├ ○ /sitemap.xml
+└ ○ /terms
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Traced Next.js server files in: 77.219ms
+Created all serverless functions in: 1.134s
+Collected static files (public/, static/, .next/static): 5.231ms
+Build output written to .next-bundle
+Materialized 927 traced files into .next-bundle/node_modules
+Materialized 194 function files and 11 shared dependency files
+Materialized 57 local runtime package files
+Run it with: node .next-bundle/server.mjs
+exit=0
+
+$ ls .next-bundle/node_modules/@img .next-bundle/node_modules/@cf-wasm
+.next-bundle/node_modules/@cf-wasm:
+internals
+photon
+
+.next-bundle/node_modules/@img:
+colour
+sharp-libvips-linux-x64
+sharp-libvips-linuxmusl-x64
+sharp-linux-x64
+sharp-linuxmusl-x64
+sharp-wasm32
+exit=0
+
+$ cd 17-arthelokyo__tailnext && PORT=3322 node .next-bundle/server.mjs   (background)
+ready after ~2s
+Serving $SCRATCH/build/wl/17-arthelokyo__tailnext/.next-bundle
+Listening on http://127.0.0.1:3322
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3322/
+200
+exit=0
+$ curl -sS http://127.0.0.1:3322/ | grep -o '<title>[^<]*</title>'
+<title>TailNext — Your website with Next.js + Tailwind CSS</title>
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3322/blog/demo-post-1
+200
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}\n' http://127.0.0.1:3322/sitemap.xml
+200 application/xml
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download} bytes\n' -H 'Accept: image/avif,image/webp' 'http://127.0.0.1:3322/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=50'
+200 image/webp 147038 bytes
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download} bytes\n' 'http://127.0.0.1:3322/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=50'
+200 image/webp 147038 bytes
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' 'http://127.0.0.1:3322/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcamera-back.44v0h9y7i51fr.jpg&w=640&q=80'
+200
+exit=0
+$ curl -sS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:3322/does-not-exist
+404
+exit=0
+$ kill <server pid>  (server stopped)
+

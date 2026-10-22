@@ -1,0 +1,124 @@
+# build.log for 05-Nutlope__blinkshot -- real output captured 2026-10-22 in a copy of the pinned clone ($SCRATCH = worker scratch dir)
+
+$ node -v
+v22.22.0
+exit=0
+
+$ pnpm -v
+10.28.0
+exit=0
+
+$ git -C $SCRATCH/up/05-Nutlope__blinkshot rev-parse HEAD
+e730e2a9dfd9aeb4e18856ba96f8b02a740343b9
+exit=0
+
+$ pnpm install --frozen-lockfile
+[... 30 earlier lines omitted ...]
++ class-variance-authority 0.7.1
++ clsx 2.1.1
++ date-fns 4.1.0
++ dedent 1.6.0
++ embla-carousel-react 8.6.0
++ lucide-react 0.447.0
++ next 16.2.6
++ next-plausible 3.12.5
++ react 18.3.1
++ react-dom 18.3.1
++ react-hot-toast 2.6.0
++ server-only 0.0.1
++ tailwind-merge 2.6.0
++ tailwindcss-animate 1.0.7
++ together-ai 0.44.1
++ zod 3.25.76
+
+devDependencies:
++ @types/node 20.19.11
++ @types/react 18.3.23
++ @types/react-dom 18.3.7
++ @types/request-ip 0.0.41
++ eslint 9.39.5
++ eslint-config-next 16.2.6
++ postcss 8.5.6
++ prettier 3.6.2
++ prettier-plugin-tailwindcss 0.6.14
++ tailwindcss 3.4.17
++ tsx 4.23.0
++ typescript 5.9.2
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: braintrust@3.21.0, esbuild@0.28.0, sharp@0.34.5,    │
+│   unrs-resolver@1.11.1.                                                      │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 16.4s using pnpm v10.28.0
+exit=0
+
+$ pnpm build
+
+> blinkshot@0.1.0 build $SCRATCH/build/05-Nutlope__blinkshot
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 32.4s
+  Running TypeScript ...
+  Finished TypeScript in 12.1s ...
+  Collecting page data using 3 workers ...
+[moderation:perf] init boot=1787ms decode=11ms vocab=43ms total=54ms (lazy dequant, 29528 vocab)
+[moderation:perf] init boot=1831ms decode=10ms vocab=9ms total=19ms (lazy dequant, 29528 vocab)
+  Generating static pages using 3 workers (0/8) ...
+  Generating static pages using 3 workers (2/8) 
+  Generating static pages using 3 workers (4/8) 
+  Generating static pages using 3 workers (6/8) 
+✓ Generating static pages using 3 workers (8/8) in 496ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/generateImages
+├ ƒ /api/moderate
+├ ○ /icon.png
+└ ○ /robots.txt
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+exit=0
+
+$ pnpm start   (background, PORT=3105)
+ready=0
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3105/
+200
+$ curl -sS http://localhost:3105/ | grep -o -i 'blinkshot\|Juggernaut' | sort -u
+BlinkShot
+blinkshot
+
+$ curl -sS -o /dev/null -w '%{http_code}' http://localhost:3105/robots.txt
+200
+$ curl -sS -X POST -H 'Content-Type: application/json' -d '{"prompt":"a red apple on a wooden table","iterativeMode":false}' -w '\nhttp=%{http_code}' http://localhost:3105/api/generateImages   # no Origin/Sec-Fetch-Site: origin guard
+{"error":"Forbidden"}
+http=403
+$ curl -sS -X POST -H 'Content-Type: application/json' -H 'Sec-Fetch-Site: same-origin' -d '{"prompt":"a red apple on a wooden table","iterativeMode":false,"userAPIKey":"placeholder-not-a-real-key"}' -w '\nhttp=%{http_code}' http://localhost:3105/api/generateImages   # same-origin, no server TOGETHER_API_KEY; Together client constructor throws before any network call
+{"error":"Error: The TOGETHER_API_KEY environment variable is missing or empty; either provide it, or instantiate the Together client with an apiKey option, like new Together({ apiKey: 'My API Key' })."}
+http=400
+$ <stop server on port 3105>
+--- server output ---
+
+> blinkshot@0.1.0 start $SCRATCH/build/05-Nutlope__blinkshot
+> next start
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3105
+- Network:       http://192.0.2.2:3105
+✓ Ready in 180ms
+[moderation:perf] init boot=947ms decode=6ms vocab=9ms total=15ms (lazy dequant, 29528 vocab)
+ ELIFECYCLE  Command failed with exit code 143.
+
