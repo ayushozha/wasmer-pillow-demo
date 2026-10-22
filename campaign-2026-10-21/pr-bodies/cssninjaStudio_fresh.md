@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds a fourth step to the README's "Usage" list linking to a Wasmer Edge import of this repository, with one sentence explaining what the link does. README-only; no config files or code changes.
+Adds a fourth step to the README's "Usage" list: a Deploy to Wasmer badge linking to the Wasmer Edge import page for this repository (`https://wasmer.io/apps/create?github=cssninjaStudio%2Ffresh`), with one sentence explaining what the link does. README-only; no config files or code changes.
 
 ## Why this repository
 

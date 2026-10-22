@@ -1,0 +1,27 @@
+From 0ff7a58b81f1b088d64a533b1583582c7aef6caf Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:36:08 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index 93cd2d3..5536b02 100644
+--- a/README.md
++++ b/README.md
+@@ -230,6 +230,10 @@ If you are stuck somewhere and want to observe the deployment process in depth,
+   </a>
+ </p>
+ 
++**Deploy on Wasmer Edge:**
++
++- `npm run build` outputs the static site to the `build` folder. To host it on Wasmer Edge instead, import your own copy of this repository from the [Wasmer import page](https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio) so the deployed site includes your customizations.
++
+ # Technologies used 🛠️
+ 
+ - [React](https://reactjs.org/)
+-- 
+2.43.0
+

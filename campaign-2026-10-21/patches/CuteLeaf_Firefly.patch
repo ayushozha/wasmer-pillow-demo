@@ -1,0 +1,41 @@
+From 0a7b8c1496959bd202ee73b0d722038c9c21af29 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:35:51 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.en.md | 3 +++
+ README.md    | 3 +++
+ 2 files changed, 6 insertions(+)
+
+diff --git a/README.en.md b/README.en.md
+index 4a6f7ff..ccf9441 100644
+--- a/README.en.md
++++ b/README.en.md
+@@ -147,6 +147,9 @@ If you have useful features and optimizations, please submit a [Pull Request](ht
+ 
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CuteLeaf/Firefly&project-name=Firefly&repository-name=Firefly)
+    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CuteLeaf/Firefly)
++   [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=CuteLeaf%2FFirefly)
++
++   The Wasmer button imports this repository for building; to customize it and redeploy on push, import your own fork instead.
+ 
+ ## 📖 Configuration
+ 
+diff --git a/README.md b/README.md
+index 2fc31a7..aac8bcb 100644
+--- a/README.md
++++ b/README.md
+@@ -147,6 +147,9 @@
+ 
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CuteLeaf/Firefly&project-name=Firefly&repository-name=Firefly)
+    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CuteLeaf/Firefly)
++   [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=CuteLeaf%2FFirefly)
++
++   Wasmer 按钮会导入本仓库用于构建；如需自定义并在推送后自动重新部署，请导入你自己的 fork。
+ 
+ ## 📖 配置说明
+ 
+-- 
+2.43.0
+

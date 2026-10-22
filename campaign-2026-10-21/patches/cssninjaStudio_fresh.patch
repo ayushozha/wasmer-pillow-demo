@@ -1,4 +1,4 @@
-From daf25a071136d2983b63f3b9295ab0109fde8dfb Mon Sep 17 00:00:00 2001
+From 6e9bf89d0746c2377beeabf8e85644d715376f9d Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:32:40 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -8,14 +8,14 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  1 file changed, 2 insertions(+)
 
 diff --git a/README.md b/README.md
-index cbda096..f2530bf 100644
+index cbda096..c4d6324 100644
 --- a/README.md
 +++ b/README.md
 @@ -36,6 +36,8 @@ pnpm dev
  pnpm build
  ```
  
-+4. Or deploy to Wasmer Edge: [import into Wasmer](https://wasmer.io/apps/create?github=cssninjaStudio%2Ffresh). The link imports this public repository for building; it does not copy it into your GitHub account, so import your own copy or fork if you want to customize the site and redeploy on push.
++4. Or deploy to Wasmer Edge: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=cssninjaStudio%2Ffresh) The link imports this public repository for building; it does not copy it into your GitHub account, so import your own copy or fork if you want to customize the site and redeploy on push.
 +
  ## 🍔 Issues
  

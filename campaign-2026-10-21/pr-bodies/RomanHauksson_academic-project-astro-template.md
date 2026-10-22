@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds one paragraph to the README's "Usage" section, right after the existing "build the site locally, and copy the output to wherever you'd like to host the site" note. It gives Wasmer Edge as an alternative host to GitHub Pages and explains what the import link does. README-only; no config files, workflow or code changes. Credits and the CC BY-SA 4.0 attribution are unchanged.
+Adds one paragraph to the README's "Usage" section, right after the existing "build the site locally, and copy the output to wherever you'd like to host the site" note. It gives Wasmer Edge as an alternative host to GitHub Pages, shows the import URL pattern for your own repository (`https://wasmer.io/apps/create?github=<owner>%2F<repo>`), and adds a Deploy to Wasmer badge for previewing this template. README-only; no config files, workflow or code changes. Credits and the CC BY-SA 4.0 attribution are unchanged.
 
 ## Why this repository
 

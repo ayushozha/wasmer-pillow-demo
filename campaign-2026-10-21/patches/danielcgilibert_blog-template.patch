@@ -1,0 +1,41 @@
+From 191b264bc80c6f9e8206c56084ed658691474669 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:36:07 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.es.md | 3 +++
+ README.md    | 3 +++
+ 2 files changed, 6 insertions(+)
+
+diff --git a/README.es.md b/README.es.md
+index 8b42c5b..b1878e7 100644
+--- a/README.es.md
++++ b/README.es.md
+@@ -10,6 +10,9 @@
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdanielcgilibert%2Fblog-template)
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcgilibert/blog-template)
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=danielcgilibert%2Fblog-template)
++
++<sub>El botón de Wasmer importa este repositorio tal cual. Para publicar tu propio blog, haz primero un fork e importa tu fork.</sub>
+ 
+ </div>
+ 
+diff --git a/README.md b/README.md
+index db07aca..2183951 100644
+--- a/README.md
++++ b/README.md
+@@ -10,6 +10,9 @@
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdanielcgilibert%2Fblog-template)
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcgilibert/blog-template)
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=danielcgilibert%2Fblog-template)
++
++<sub>The Wasmer button imports this repository as-is. To publish your own blog, fork it first and import your fork.</sub>
+ 
+ </div>
+ 
+-- 
+2.43.0
+

@@ -1,12 +1,12 @@
-From 37a1f2dffce4627e79be809456a877dae8844168 Mon Sep 17 00:00:00 2001
+From 8e0ce79026a069604d3fe29e408d8d67039e0b2c Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:32:40 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
  Staticfile | 1 +
- readme.md  | 5 +++++
- 2 files changed, 6 insertions(+)
+ readme.md  | 7 +++++++
+ 2 files changed, 8 insertions(+)
  create mode 100644 Staticfile
 
 diff --git a/Staticfile b/Staticfile
@@ -17,7 +17,7 @@ index 0000000..91377cd
 @@ -0,0 +1 @@
 +root: dist
 diff --git a/readme.md b/readme.md
-index 8eaaaf8..f1dd744 100644
+index 8eaaaf8..70d0132 100644
 --- a/readme.md
 +++ b/readme.md
 @@ -15,6 +15,7 @@ If you end up using this starter, feel free to send me a link, I'd love to see i
@@ -28,13 +28,15 @@ index 8eaaaf8..f1dd744 100644
    - [Built with Eleventy Excellent](#built-with-eleventy-excellent)
    - [Credits and Thank yous](#credits-and-thank-yous)
  
-@@ -83,6 +84,10 @@ Minify JS, CSS and HTML.
+@@ -83,6 +84,12 @@ Minify JS, CSS and HTML.
  npm run build
  ```
  
 +### Deploying to Wasmer Edge
 +
-+[Import into Wasmer](https://wasmer.io/apps/create?github=madrilene%2Feleventy-excellent) to build and host the `dist` output on Wasmer Edge. The link imports this public repository; it does not copy it into your GitHub account, so import your own copy or fork to customize the site and redeploy on push. The headers in `netlify.toml` / `vercel.json` and the Netlify `_redirects` file are not applied by Wasmer.
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=madrilene%2Feleventy-excellent)
++
++Import into Wasmer to build and host the `dist` output on Wasmer Edge. The link imports this public repository; it does not copy it into your GitHub account, so import your own copy or fork to customize the site and redeploy on push. The headers in `netlify.toml` / `vercel.json` and the Netlify `_redirects` file are not applied by Wasmer.
 +
  ## Built with Eleventy Excellent
  

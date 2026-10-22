@@ -1,0 +1,5 @@
+# 2026-10-22T04:35:27Z prettier 2.8.1
+$ npx prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+EXIT 0

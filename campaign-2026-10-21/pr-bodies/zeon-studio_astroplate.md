@@ -1,6 +1,6 @@
 Title: docs: add Wasmer Edge deploy option
 
-**Summary:** Adds a short "👉 Deploy to Wasmer Edge" subsection to the Getting Started part of `readme.md`, between "Deploy to Cloudflare Workers" and "Build and Run With Docker". It follows the existing heading style and links to `https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate`, the Wasmer Edge import page for this repository. README only, 4 added lines. No code or config changes.
+**Summary:** Adds a short "👉 Deploy to Wasmer Edge" subsection to the Getting Started part of `readme.md`, between "Deploy to Cloudflare Workers" and "Build and Run With Docker". It follows the existing heading style and has a Deploy to Wasmer badge linking to `https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate`, the Wasmer Edge import page for this repository. README only, 6 added lines. No code or config changes.
 
 **Why this repository:** Astroplate already documents several hosts: `netlify.toml` (`pnpm build`, publish `dist`), a Cloudflare Workers static-assets setup in `wrangler.jsonc`, a GitHub Pages workflow and a Docker image. Its build output is fully static. `astro.config.mjs` has no adapter and no `output` mode, and `pnpm run build` runs the theme and JSON generators, `astro build`, and then `scripts/llmsGenerator.js`, which writes `llms.txt` and `llms-full.txt` from the HTML in `dist`. The Wasmer import serves that folder as-is, so the subsection needs only one sentence and no new config.
 

@@ -1,4 +1,4 @@
-From 4382cda1b596e673c8b1e956f4f6659f1e43d2f4 Mon Sep 17 00:00:00 2001
+From b9a754a94006cf39cb59d94ae566c29bad68fa15 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:32:40 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -8,14 +8,14 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  1 file changed, 2 insertions(+)
 
 diff --git a/README.md b/README.md
-index 49f27c5..bb72c81 100644
+index 49f27c5..886421b 100644
 --- a/README.md
 +++ b/README.md
 @@ -76,6 +76,8 @@ Alternatively, you can build the site locally, and copy the output to wherever y
  npm run build
  ```
  
-+To host the page on Wasmer Edge instead of GitHub Pages, [import your copy of the repository into Wasmer](https://wasmer.io/apps/create?github=RomanHauksson%2Facademic-project-astro-template). The link above points at this template repository and does not copy it into your GitHub account, so swap in your own repository (or import it from the Wasmer dashboard) to deploy your paper's content and redeploy on push.
++To host the page on Wasmer Edge instead of GitHub Pages, import your repository at `https://wasmer.io/apps/create?github=<owner>%2F<repo>`. To preview this template first: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=RomanHauksson%2Facademic-project-astro-template) The import does not copy the repository into your GitHub account.
 +
  For more information, consult [`./documentation.md`](./documentation.md).
  

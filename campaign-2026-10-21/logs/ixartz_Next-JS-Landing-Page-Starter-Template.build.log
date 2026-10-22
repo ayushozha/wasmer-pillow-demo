@@ -48,3 +48,33 @@ https://nextjs.org/telemetry
 Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                             Size     First Load JS
+┌ ○ /                                     18.6 kB         105 kB
+├   /_app                                 0 B            86.5 kB
+└ ○ /404                                  2.8 kB         89.3 kB
++ First Load JS shared by all             88.7 kB
+  ├ chunks/framework-5429a50ba5373c56.js  45.2 kB
+  ├ chunks/main-7a36f1771810ece5.js       38.8 kB
+  └ other shared chunks (total)           4.77 kB
+
+○  (Static)  prerendered as static content
+
+ls: cannot access 'out': No such file or directory
+.next
+EXIT 2

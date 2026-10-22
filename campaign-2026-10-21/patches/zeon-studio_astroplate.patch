@@ -1,23 +1,25 @@
-From 05eda7f095ca3199568d5e8e802cf202dd35d34f Mon Sep 17 00:00:00 2001
+From b192691196c91902c7d7d9a59a740fe20901353c Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:32:14 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
- readme.md | 4 ++++
- 1 file changed, 4 insertions(+)
+ readme.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
 
 diff --git a/readme.md b/readme.md
-index aa9ef82..3ff9a2c 100755
+index aa9ef82..5c0bc6f 100755
 --- a/readme.md
 +++ b/readme.md
-@@ -133,6 +133,10 @@ pnpm run preview:cf-workers
+@@ -133,6 +133,12 @@ pnpm run preview:cf-workers
  pnpm run deploy:cf-workers
  ```
  
 +### 👉 Deploy to Wasmer Edge
 +
-+`pnpm run build` outputs a static site to `dist`. To deploy it on Wasmer Edge, [import this repository](https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate). The import does not create a copy in your GitHub account, so import your own fork to deploy your customized site.
++`pnpm run build` outputs a static site to `dist`. To deploy it on Wasmer Edge, import this repository. The import does not create a copy in your GitHub account, so import your own fork to deploy your customized site.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate)
 +
  ### 👉 Build and Run With Docker
  
