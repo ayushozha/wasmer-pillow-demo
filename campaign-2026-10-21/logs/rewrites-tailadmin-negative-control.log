@@ -1,0 +1,2 @@
+# 2026-10-22T06:05:40Z NEGATIVE CONTROL: same SHA, unedited generated Anybuild (sha256 c0df3e4d0df91b9b43fe9a432b279a29eeb27ddeb891cb786ebd87e10c394346)
+$ anybuild build . --builder=local

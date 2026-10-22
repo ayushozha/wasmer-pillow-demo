@@ -1,0 +1,83 @@
+annotations:
+  anybuild.run/config:
+    edgejs_enable: true
+    edgejs_precompile: true
+    name: free-react-tailwind-admin-dashboard
+    node_build_command: npm run build
+    node_framework: vite
+    node_install_inputs:
+    - package.json
+    node_package_manager: npm
+    node_package_name: tailadmin-react
+    node_remove_native_binaries: true
+    node_server: node
+    npm_version: '11'
+    static_dir: dist
+    static_redirects_config: |
+      # SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.
+      [advanced]
+
+      [[advanced.rewrites]]
+      source = "/profile"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/calendar"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/blank"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/form-elements"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/basic-tables"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/alerts"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/avatars"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/badge"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/buttons"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/images"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/videos"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/line-chart"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/bar-chart"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/signin"
+      destination = "/index.html"
+
+      [[advanced.rewrites]]
+      source = "/signup"
+      destination = "/index.html"
+  anybuild.run/provider: node-static
+  anybuild.run/version: 0.33.0
+  wasmer.io/version: 7.5.0 (stub)
+kind: wasmer.io/App.v0
+package: .
