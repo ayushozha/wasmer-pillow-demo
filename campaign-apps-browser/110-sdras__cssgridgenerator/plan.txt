@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Vue
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/Anybuilde4z9jJ
+Plan saved to $S/replay/T-sdras__cssgridgenerator/plan.json

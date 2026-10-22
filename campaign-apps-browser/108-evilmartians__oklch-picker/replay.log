@@ -1,0 +1,157 @@
+# replay of T-evilmartians__oklch-picker  source=$S/rup/evilmartians__oklch-picker  upstream HEAD=8b3b727a3108ee931a91ef9bb328ef5224b02936
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/T-evilmartians__oklch-picker/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +272
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 272, reused 149, downloaded 32, added 13
+Progress: resolved 272, reused 149, downloaded 85, added 39
+Progress: resolved 272, reused 149, downloaded 122, added 271
+Progress: resolved 272, reused 149, downloaded 123, added 272, done
+.../node_modules/simple-git-hooks postinstall$ node ./postinstall.js
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: [INFO] No `.git` root folder found, skipping
+.../node_modules/simple-git-hooks postinstall: Done
+
+dependencies:
++ @colordx/core 7.3.0
++ @colordx/gpu 1.0.0
++ @csstools/postcss-oklab-function 5.0.15
++ @nanostores/persistent 1.3.5
++ autoprefixer 10.6.1
++ delaunator 5.1.0
++ jstransformer-markdown-it 3.0.0
++ lightningcss 1.33.0
++ nanodelay 2.0.2
++ nanostores 1.5.4
++ plausible-client 2.0.0
++ postcss 8.5.28
++ postcss-media-minmax 5.0.0
++ postcss-mixins 12.1.2
++ postcss-nesting 14.0.2
++ postcss-opacity-percentage 3.0.0
++ three 0.186.1
++ vite 8.3.2
++ vite-plugin-pug-transformer 1.0.8
+
+devDependencies:
++ @logux/oxc-configs 1.2.0
++ @logux/stylelint-config 1.1.0
++ @size-limit/file 14.1.0
++ @types/delaunator 5.0.3
++ @types/node 26.6.4
++ @types/three 0.186.0
++ better-node-test 1.0.0
++ happy-dom 20.14.5
++ nano-staged 1.0.2
++ oxlint 1.86.0
++ oxlint-tsgolint 7.0.2003
++ simple-git-hooks 2.14.0
++ size-limit 14.1.0
++ stylelint 17.16.0
++ svgo 4.1.0
++ typescript 7.0.2
+
+Done in 4.3s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> oklch-picker@ build $S/replay/T-evilmartians__oklch-picker/work
+> vite build -m production
+
+[36mvite v8.3.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 124 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/decrease-oLoIKH9-.svg                  0.19 kB │ gzip:   0.16 kB
+dist/external-Bj3-Qq--.svg                  0.46 kB │ gzip:   0.26 kB
+dist/oklch-BhPJAgVY.svg                     0.82 kB │ gzip:   0.41 kB
+dist/apple-touch-icon-oklch-DsExz0f-.png   16.62 kB
+dist/index.html                            22.64 kB │ gzip:   6.06 kB
+dist/MartianMono-1.0.0-BAPe8MFi.woff2      23.78 kB
+dist/index-Br25cmds.css                    20.01 kB │ gzip:   5.01 kB
+dist/index-CJPBJqAl.js                     98.21 kB │ gzip:  35.70 kB
+dist/model-CPTFtWtU.js                    556.10 kB │ gzip: 139.42 kB
+
+[32m✓ built in 1.98s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+exit=0
+
+$ static-web-server --root=$S/replay/T-evilmartians__oklch-picker/static_app --log-level=info --port=3862 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	22642
+--	title	/	OKLCH Color Picker &amp; Converter	
+404	page	/samples	text/html	0
+--	title	/samples	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/MartianMono-1.0.0-BAPe8MFi.woff2	font/woff2	23784
+200	ref	/external-Bj3-Qq--.svg	image/svg+xml	463
+200	ref	/decrease-oLoIKH9-.svg	image/svg+xml	196
+200	ref	/favicon.ico	image/x-icon	4286
+200	ref	/oklch-BhPJAgVY.svg	image/svg+xml	823
+200	ref	/apple-touch-icon-oklch-DsExz0f-.png	image/png	16624
+200	ref	/oklch.webmanifest	application/manifest+json	267
+200	ref	/index-CJPBJqAl.js	text/javascript	98211
+200	ref	/index-Br25cmds.css	text/css	20010
+SUMMARY pages=3 refs_checked=9 failures=2
+FAIL	404	page	/samples	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 19

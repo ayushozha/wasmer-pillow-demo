@@ -1,0 +1,195 @@
+# replay of T-sdras__cssgridgenerator  source=$S/rup/sdras__cssgridgenerator  upstream HEAD=be1e0a53497a7381ed5e60ba6c759bed0f271baf
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vue
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/T-sdras__cssgridgenerator/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+npm warn deprecated @babel/plugin-proposal-unicode-property-regex@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
+npm warn deprecated whatwg-encoding@1.0.5: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated @babel/plugin-proposal-json-strings@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
+npm warn deprecated @babel/plugin-proposal-object-rest-spread@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+npm warn deprecated @babel/plugin-proposal-optional-catch-binding@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+npm warn deprecated @babel/plugin-proposal-async-generator-functions@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+npm warn deprecated left-pad@1.3.0: use String.prototype.padStart()
+npm warn deprecated domexception@1.0.1: Use your platform's native DOMException instead
+npm warn deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated source-map-url@0.4.0: See https://github.com/lydell/source-map-url#deprecated
+npm warn deprecated set-value@2.0.0: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated request-promise-native@1.0.7: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm warn deprecated uuid@3.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm warn deprecated path-dirname@1.0.2: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated source-map-resolve@0.5.2: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated webpack-chain@4.12.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated move-concurrently@1.0.1: This package is no longer supported.
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated har-validator@5.1.3: this library is no longer supported
+npm warn deprecated glob@7.1.4: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated figgy-pudding@3.5.1: This module is no longer supported.
+npm warn deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated html-webpack-plugin@3.2.0: 3.x is no longer supported
+npm warn deprecated fs-write-stream-atomic@1.0.10: This package is no longer supported.
+npm warn deprecated consolidate@0.15.1: Please upgrade to consolidate v1.0.0+ as it has been modernized with several long-awaited fixes implemented. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/consolidate for updates and release changelog
+npm warn deprecated copy-concurrently@1.0.5: This package is no longer supported.
+npm warn deprecated vue-i18n@8.11.2: v9 and v10 no longer supported. please migrate to v11. about maintenance status, see https://vue-i18n.intlify.dev/guide/maintenance.html
+npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm warn deprecated acorn-dynamic-import@3.0.0: This is probably built in to whatever tool you're using. If you still need it... idk
+npm warn deprecated @hapi/topo@3.1.0: This version has been deprecated and is no longer supported or maintained
+npm warn deprecated @babel/plugin-proposal-class-properties@7.4.4: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated @hapi/hoek@6.2.4: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated @hapi/address@2.0.0: Moved to 'npm install @sideway/address'
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+npm warn deprecated
+npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated svgo@1.2.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+npm warn deprecated buffer@4.9.1: This version of 'buffer' is out-of-date. You must update to v4.9.2 or newer
+npm warn deprecated @hapi/joi@15.0.3: Switch to 'npm install joi'
+npm warn deprecated highlight.js@9.15.8: Version no longer supported. Upgrade to @latest
+npm warn deprecated vue@2.6.10: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
+npm warn deprecated core-js@2.6.9: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm warn deprecated core-js@2.6.9: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm warn deprecated core-js@2.6.9: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+
+added 1276 packages, and audited 1277 packages in 49s
+
+188 vulnerabilities (6 low, 100 moderate, 57 high, 25 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 4 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   core-js@2.6.9 (postinstall: node scripts/postinstall || echo "ignore")
+npm warn install-scripts   core-js@2.6.9 (postinstall: node scripts/postinstall || echo "ignore")
+npm warn install-scripts   core-js@2.6.9 (postinstall: node scripts/postinstall || echo "ignore")
+npm warn install-scripts   yorkie@2.0.0 (install: node bin/install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> cssgridgen@0.1.0 build
+> vue-cli-service build
+
+
+-  Building for production...
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:143:21)
+    at Object.createHash (node:crypto:151:10)
+    at module.exports ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/util/createHash.js:90:53)
+    at NormalModule._initBuildHash ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:401:16)
+    at handleParseError ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:449:10)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:481:5
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:342:12
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at runSyncOrAsync ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:130:11)
+    at iterateNormalLoaders ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:232:2)
+    at Array.<anonymous> ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:205:4)
+    at Storage.finished ($S/replay/T-sdras__cssgridgenerator/work/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:43:16)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:79:9
+$S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:114
+			throw e;
+			^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:143:21)
+    at Object.createHash (node:crypto:151:10)
+    at module.exports ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/util/createHash.js:90:53)
+    at NormalModule._initBuildHash ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:401:16)
+    at handleParseError ($S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:449:10)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:481:5
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/webpack/lib/NormalModule.js:342:12
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback ($S/replay/T-sdras__cssgridgenerator/work/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/cache-loader/dist/index.js:118:7
+    at $S/replay/T-sdras__cssgridgenerator/work/node_modules/graceful-fs/graceful-fs.js:45:10
+    at FSReqCallback.oncomplete (node:fs:187:23) {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v24.22.1
+exit=1
+
+BUILD FAILED
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=$S/replay/T-sdras__cssgridgenerator/static_app --log-level=info --port=3864 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/samples	text/html	0
+--	title	/samples	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+SUMMARY pages=3 refs_checked=0 failures=3
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/samples	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 0
