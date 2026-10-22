@@ -1,6 +1,6 @@
 {
   "repo": "moeyua/astro-theme-typography",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 628,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:35:23Z",
@@ -23,5 +23,6 @@
   "import_url": "https://wasmer.io/apps/create?github=moeyua%2Fastro-theme-typography",
   "detection_verified": "pending Codex browser check",
   "reason": null,
-  "anybuild_replay": "PASS: 2026-10-22T04:50:40Z flat replay of anybuild 0.33.0 planned steps for moeyua_astro-theme-typography @ a110341ff02b4c6015ee750d976e9e46a04ae053 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10.13.1 -> pnpm on PATH 10.13.1; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/hometown/': 200, '/categories/Articles/': 200, '/atom.xml': 200, '/sitemap-index.xml': 200} | log logs/moeyua_astro-theme-typography.flat-replay.log"
+  "anybuild_replay": "PASS: 2026-10-22T04:50:40Z flat replay of anybuild 0.33.0 planned steps for moeyua_astro-theme-typography @ a110341ff02b4c6015ee750d976e9e46a04ae053 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10.13.1 -> pnpm on PATH 10.13.1; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/hometown/': 200, '/categories/Articles/': 200, '/atom.xml': 200, '/sitemap-index.xml': 200} | log logs/moeyua_astro-theme-typography.flat-replay.log",
+  "upstream_pr": "https://github.com/moeyua/astro-theme-typography/pull/255 (OPEN, head 3c4727d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }

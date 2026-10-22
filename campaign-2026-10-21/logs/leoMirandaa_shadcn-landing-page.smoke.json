@@ -1,0 +1,36 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 4,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 1925,
+      "title": "Shadcn/React - Landing template"
+    },
+    "/vite.svg": {
+      "status": 200,
+      "bytes": 1497,
+      "title": null
+    },
+    "/assets/index-BikfSMjf.js": {
+      "status": 200,
+      "bytes": 411790,
+      "title": null
+    },
+    "/assets/index-DN2QK1F0.css": {
+      "status": 200,
+      "bytes": 33642,
+      "title": null
+    },
+    "/assets/pilot-CA74Nnvm.png": {
+      "status": 200,
+      "bytes": 32804,
+      "title": null
+    }
+  },
+  "ok": true
+}

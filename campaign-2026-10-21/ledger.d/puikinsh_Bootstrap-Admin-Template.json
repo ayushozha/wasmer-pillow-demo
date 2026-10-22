@@ -1,6 +1,6 @@
 {
   "repo": "puikinsh/Bootstrap-Admin-Template",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 2848,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:35:23Z",
@@ -23,5 +23,6 @@
   "import_url": "https://wasmer.io/apps/create?github=puikinsh%2FBootstrap-Admin-Template",
   "detection_verified": "local anybuild plan: node-static vite dist-modern (with patch); pending Codex browser check",
   "reason": null,
-  "anybuild_replay": "PASS: 2026-10-22T04:49:30Z flat replay of anybuild 0.33.0 planned steps for puikinsh_Bootstrap-Admin-Template @ 62842673498b237292771757f7ef30bdeb10ff02 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist-modern' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/analytics.html': 200, '/calendar.html': 200, '/login.html': 200, '/404.html': 200, '/settings.html': 200} | log logs/puikinsh_Bootstrap-Admin-Template.flat-replay.log"
+  "anybuild_replay": "PASS: 2026-10-22T04:49:30Z flat replay of anybuild 0.33.0 planned steps for puikinsh_Bootstrap-Admin-Template @ 62842673498b237292771757f7ef30bdeb10ff02 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist-modern' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/analytics.html': 200, '/calendar.html': 200, '/login.html': 200, '/404.html': 200, '/settings.html': 200} | log logs/puikinsh_Bootstrap-Admin-Template.flat-replay.log",
+  "upstream_pr": "https://github.com/puikinsh/Bootstrap-Admin-Template/pull/110 (OPEN, head 4df3d5d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }

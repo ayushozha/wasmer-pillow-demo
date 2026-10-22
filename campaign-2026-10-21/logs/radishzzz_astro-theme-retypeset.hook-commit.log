@@ -1,0 +1,8 @@
+# 2026-10-22T05:03:07Z staging commit with repo hook intact (simple-git-hooks pre-commit -> pnpm lint-staged; pnpm 10.33.0, node v24.22.1)
+$ git commit -m "docs: add Wasmer Edge deploy option"
+→ lint-staged could not find any staged files matching configured tasks.
+[deploy-to-wasmer 95bb98a] docs: add Wasmer Edge deploy option
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+EXIT 0
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)

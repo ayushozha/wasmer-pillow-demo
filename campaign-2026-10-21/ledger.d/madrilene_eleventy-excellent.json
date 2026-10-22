@@ -1,6 +1,6 @@
 {
   "repo": "madrilene/eleventy-excellent",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 616,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:15Z",
@@ -25,5 +25,6 @@
   "reason": null,
   "detect_log": "logs/madrilene_eleventy-excellent.detect.json",
   "build_external": "PASS (root, local, network) @69f0948c: Node 24.22.1 / npm 11.19.1; npm ci EXIT 0; npm run build EXIT 0 (55 files, 10.42s, 73 images, 26 cached); api.github.com fetch works. 7 routes 200 (/, /blog/, /blog/post-with-an-image/, /about/, /404.html, /feed.xml, /sitemap.xml). Root-relative scan: 34 HTML, 318 refs, 1 missing pre-existing /blog/built-with/ (actual page /built-with/) -> NOT a clean smoke. npm audit 8 (6 high, 2 moderate, 0 critical), build tooling only.",
-  "hook_check": "No git hooks configured in the repo (no .husky, no lint-staged/simple-git-hooks config); staging commit made normally."
+  "hook_check": "No git hooks configured in the repo (no .husky, no lint-staged/simple-git-hooks config); staging commit made normally.",
+  "upstream_pr": "https://github.com/madrilene/eleventy-excellent/pull/131 (OPEN, head c3c61f1); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }

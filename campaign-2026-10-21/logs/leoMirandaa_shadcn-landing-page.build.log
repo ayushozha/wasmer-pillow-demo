@@ -150,3 +150,52 @@ $ npm run build
 tsconfig.json(23,5): error TS5101: Option 'baseUrl' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
   Visit https://aka.ms/ts6 for migration information.
 EXIT 2
+# note: npm ci rejected the committed package-lock.json (out of sync with package.json); falling back to npm install, which is what Anybuild plans
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 346 packages, and audited 347 packages in 7s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+23 vulnerabilities (1 low, 5 moderate, 17 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.20.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> shadcn-landing-page-template@1.1.0 build
+> tsc && vite build
+
+vite v5.2.13 building for production...
+transforming...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 1666 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           1.93 kB │ gzip:   0.62 kB
+dist/assets/icon-CNrJe8c_.ico             5.86 kB
+dist/assets/looking-ahead-DDDoMk_3.png   13.46 kB
+dist/assets/cube-leg-DppWNJeX.png        18.19 kB
+dist/assets/growth-DZ7EdHJS.png          19.14 kB
+dist/assets/reflecting-tA1rdXzJ.png      19.89 kB
+dist/assets/pilot-CA74Nnvm.png           34.68 kB
+dist/assets/index-DN2QK1F0.css           33.64 kB │ gzip:   6.98 kB
+dist/assets/index-BikfSMjf.js           411.79 kB │ gzip: 136.31 kB
+✓ built in 2.90s
+EXIT 0

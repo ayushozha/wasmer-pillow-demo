@@ -1,6 +1,6 @@
 {
   "repo": "adminkit/adminkit",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 1657,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:35:23Z",
@@ -23,5 +23,6 @@
   "import_url": "https://wasmer.io/apps/create?github=adminkit%2Fadminkit",
   "detection_verified": "local anybuild plan: staticfile root static (with patch); pending Codex browser check",
   "reason": null,
-  "anybuild_replay": "PASS: 2026-10-22T04:49:28Z flat replay of anybuild 0.33.0 planned steps for adminkit_adminkit @ 2ea20d60e4707d301ac4b7997edd4879538f6166 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='static' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/pages-profile.html': 200, '/charts-chartjs.html': 200, '/pages-sign-in.html': 200, '/js/app.js': 200, '/css/app.css': 200} | log logs/adminkit_adminkit.flat-replay.log"
+  "anybuild_replay": "PASS: 2026-10-22T04:49:28Z flat replay of anybuild 0.33.0 planned steps for adminkit_adminkit @ 2ea20d60e4707d301ac4b7997edd4879538f6166 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='static' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/pages-profile.html': 200, '/charts-chartjs.html': 200, '/pages-sign-in.html': 200, '/js/app.js': 200, '/css/app.css': 200} | log logs/adminkit_adminkit.flat-replay.log",
+  "upstream_pr": "https://github.com/adminkit/adminkit/pull/152 (OPEN, head f571c5f); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }
