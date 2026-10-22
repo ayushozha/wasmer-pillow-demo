@@ -1,6 +1,6 @@
 {
   "repo": "zeon-studio/astroplate",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 1215,
   "stars_source": "GitHub search API via GitHub MCP (as ayushozha)",
   "stars_at": "2026-10-22T04:28Z",
@@ -23,5 +23,6 @@
   "import_url": "https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate",
   "detection_verified": "pending Codex browser check (build script runs Node generators before and after astro build; output is the standard dist)",
   "detect_log": "logs/zeon-studio_astroplate.detect.json",
-  "anybuild_replay": "PASS: 2026-10-22T04:51:42Z flat replay of anybuild 0.33.0 planned steps for zeon-studio_astroplate @ b192691196c91902c7d7d9a59a740fe20901353c (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=11.17.0 -> pnpm on PATH 11.17.0; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about': 200, '/blog': 200, '/blog/post-1': 200, '/contact': 200, '/404.html': 200, '/llms.txt': 200, '/sitemap-index.xml': 200} | log logs/zeon-studio_astroplate.flat-replay.log 28 pages; pinned pnpm 11.17.0 per packageManager. Python's test server 301-redirects /about to /about/; SWS trailing-slash behavior not executed here."
+  "anybuild_replay": "PASS: 2026-10-22T04:51:42Z flat replay of anybuild 0.33.0 planned steps for zeon-studio_astroplate @ b192691196c91902c7d7d9a59a740fe20901353c (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=11.17.0 -> pnpm on PATH 11.17.0; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about': 200, '/blog': 200, '/blog/post-1': 200, '/contact': 200, '/404.html': 200, '/llms.txt': 200, '/sitemap-index.xml': 200} | log logs/zeon-studio_astroplate.flat-replay.log 28 pages; pinned pnpm 11.17.0 per packageManager. Python's test server 301-redirects /about to /about/; SWS trailing-slash behavior not executed here.",
+  "upstream_pr": "https://github.com/zeon-studio/astroplate/pull/97 (OPEN, head 1b1ff87); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }

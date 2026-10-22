@@ -1,6 +1,6 @@
 {
   "repo": "TailGrids/play-tailwind",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 1163,
   "archived": false,
   "license": "MIT",
@@ -19,9 +19,10 @@
   "patch": "patches/TailGrids_play-tailwind.patch",
   "pr_body": "pr-bodies/TailGrids_play-tailwind.md",
   "import_url": "https://wasmer.io/apps/create?github=TailGrids%2Fplay-tailwind",
-  "detection_verified": "local anybuild plan: staticfile, root '.'; pending Codex browser check",
+  "detection_verified": "Root live import (initial, main): node base preset detected on the import page for the upstream repo (Staticfile not yet merged upstream). Root also found: on a fork feature branch, Edit keeps the old preset because the frontend's updateAutobuildConfig passes presetName and effect only [detectedPreset]; manually selecting staticfile works. Local patched anybuild plan supports staticfile after merge; this is not proof of hosted UI auto-detection.",
   "reason": null,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:10Z",
-  "anybuild_replay": "PASS: 2026-10-22T04:50:04Z flat replay of anybuild 0.33.0 planned steps for TailGrids_play-tailwind @ 203a763fe61fd10ed9d5f25984fb5bedd5192768 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about.html': 200, '/pricing.html': 200, '/blog-grids.html': 200, '/signin.html': 200, '/404.html': 200, '/src/css/tailwind.css': 200, '/assets/js/main.js': 200} | log logs/TailGrids_play-tailwind.flat-replay.log"
+  "anybuild_replay": "PASS: 2026-10-22T04:50:04Z flat replay of anybuild 0.33.0 planned steps for TailGrids_play-tailwind @ 203a763fe61fd10ed9d5f25984fb5bedd5192768 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about.html': 200, '/pricing.html': 200, '/blog-grids.html': 200, '/signin.html': 200, '/404.html': 200, '/src/css/tailwind.css': 200, '/assets/js/main.js': 200} | log logs/TailGrids_play-tailwind.flat-replay.log",
+  "upstream_pr": "https://github.com/TailGrids/play-tailwind/pull/8 (OPEN, head e8df9fe); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }
