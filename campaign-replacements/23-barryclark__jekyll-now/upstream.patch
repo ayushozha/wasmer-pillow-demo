@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index 45c2020..62da8a5 100644
+index 45c2020..43e090c 100644
 --- a/README.md
 +++ b/README.md
 @@ -56,6 +56,12 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
@@ -10,7 +10,7 @@ index 45c2020..62da8a5 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=barryclark%2Fjekyll-now)
 +
-+Wasmer detects this as a Jekyll site: it runs `bundle init && bundle add jekyll -v 4.3.0` (there is no `Gemfile`), then `jekyll build`, and serves the `_site` folder. The button builds this public repository as-is and does not fork it; to deploy your own blog, fork Jekyll Now, edit `_config.yml` and your posts, then import your fork on Wasmer. Because only Jekyll is installed, the `jekyll-sitemap` and `jekyll-feed` plugins listed in `_config.yml` are not run there.
++Wasmer detects this as a Jekyll site: it runs `bundle init && bundle add jekyll -v 4.3.0` (there is no `Gemfile`), then `jekyll build`, and serves the `_site` folder. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account; to deploy your own blog, fork Jekyll Now, edit `_config.yml` and your posts, then import your fork on Wasmer. Because only Jekyll is installed, the `jekyll-sitemap` and `jekyll-feed` plugins listed in `_config.yml` are not run there.
 +
  ## Moar!
  

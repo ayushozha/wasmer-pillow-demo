@@ -1,6 +1,6 @@
 ## Summary
 
-Adds a "Deploy on Wasmer" section after "Local Development". It contains a Deploy to Wasmer badge, one sentence on what Wasmer runs, and one sentence on what the button does. Wasmer has no Gemfile to work from here, so it runs `bundle init && bundle add jekyll -v 4.3.0` and `jekyll build`, then serves `_site`. The button deploys this repo as-is (no fork), so people should fork, edit `_config.yml` and import their fork. The section also notes that `jekyll-sitemap`/`jekyll-feed` are not run there. README only.
+Adds a "Deploy on Wasmer" section after "Local Development". It contains a Deploy to Wasmer badge, one sentence on what Wasmer runs, and one sentence on what the button does. Wasmer has no Gemfile to work from here, so it runs `bundle init && bundle add jekyll -v 4.3.0` and `jekyll build`, then serves `_site`. The button opens Wasmer's import page for this public repository (the user reviews the configuration and clicks Deploy; no GitHub copy is created), so people should fork, edit `_config.yml` and import their fork. The section also notes that `jekyll-sitemap`/`jekyll-feed` are not run there. README only.
 
 ## Why this repo
 

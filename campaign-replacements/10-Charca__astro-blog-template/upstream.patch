@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index 8450feb..fab5c49 100644
+index 8450feb..531aff4 100644
 --- a/README.md
 +++ b/README.md
 @@ -16,6 +16,12 @@ npm init astro -- --template Charca/astro-blog-template
@@ -10,7 +10,7 @@ index 8450feb..fab5c49 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Charca%2Fastro-blog-template)
 +
-+Wasmer detects the Astro site, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files. The button imports and builds this public repository as-is; it does not fork it. To customize the site and redeploy on every push, create your own copy of the template and import your own repository on Wasmer.
++Wasmer detects the Astro site, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the site and redeploy on every push, create your own copy of the template and import your own repository on Wasmer.
 +
  ## ✨ Features:
  

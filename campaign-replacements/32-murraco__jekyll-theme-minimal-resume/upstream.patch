@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index 93f8373..240ebe7 100644
+index 93f8373..e055a17 100644
 --- a/README.md
 +++ b/README.md
 @@ -160,6 +160,12 @@ If you change the port, map it in `docker-compose.yml` as well (e.g. `"8080:8080
@@ -10,7 +10,7 @@ index 93f8373..240ebe7 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=murraco%2Fjekyll-theme-minimal-resume)
 +
-+Wasmer detects this repository as a Jekyll site: it runs `bundle install` (from the committed `Gemfile.lock`) and `jekyll build`, then serves `_site`. Gulp is not run there, so commit the compiled files in `assets/` after changing `src/` (`npm run build`). The button deploys this demo as-is and does not fork it; to publish your own resume, fork the repository, edit `_config.yml` and `_data/`, and import your fork on Wasmer.
++Wasmer detects this repository as a Jekyll site: it runs `bundle install` (from the committed `Gemfile.lock`) and `jekyll build`, then serves `_site`. Gulp is not run there, so commit the compiled files in `assets/` after changing `src/` (`npm run build`). The button opens Wasmer's import page for this demo, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account; to publish your own resume, fork the repository, edit `_config.yml` and `_data/`, and import your fork on Wasmer.
 +
  ## Settings
  

@@ -26,4 +26,4 @@ Smoke test: `/`, `/blog/` and `/about/` returned 200, and all 10 referenced URLs
 ## Limitations
 
 - No deployment was made. The badge image and the Wasmer import page could not be checked from the test environment.
-- The button builds this public repository as-is; it does not fork it. To customize and redeploy on push, fork the repo (or create your own copy of the template) and import that repository.
+- The button opens Wasmer's import page for this public repository, where the user reviews the configuration and clicks Deploy; it does not create a copy of the repository in their GitHub account. To customize and redeploy on push, they import their own copy of the repo.

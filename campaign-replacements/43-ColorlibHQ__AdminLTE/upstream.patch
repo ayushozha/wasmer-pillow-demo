@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index f6e1382..ff4724e 100644
+index f6e1382..4868b15 100644
 --- a/README.md
 +++ b/README.md
 @@ -110,6 +110,12 @@ or copy one of the demo pages.
@@ -10,7 +10,7 @@ index f6e1382..ff4724e 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ColorlibHQ%2FAdminLTE)
 +
-+Wasmer serves the committed `dist/` folder (the same files the Netlify demo publishes) as a static site: the `Staticfile` in the repository root points it at `dist`, and no build step runs. The button deploys this repository as-is and does not fork it; to deploy your own changes, fork the repository, rebuild `dist/` with `npm run build`, then import your fork on Wasmer. This publishes the demo pages, so follow [Security & production deployment](#security--production-deployment) for real applications.
++Wasmer serves the committed `dist/` folder (the same files the Netlify demo publishes) as a static site: the `Staticfile` in the repository root points it at `dist`, and no build step runs. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account; to deploy your own changes, fork the repository, rebuild `dist/` with `npm run build`, then import your fork on Wasmer. This publishes the demo pages, so follow [Security & production deployment](#security--production-deployment) for real applications.
 +
  ## What's new in v4
  

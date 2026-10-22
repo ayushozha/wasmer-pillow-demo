@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index ade6499..9c8c45e 100644
+index ade6499..36d4aef 100644
 --- a/README.md
 +++ b/README.md
 @@ -45,6 +45,12 @@ Clone the source files of the theme and navigate into the theme's root directory
@@ -10,7 +10,7 @@ index ade6499..9c8c45e 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=StartBootstrap%2Fstartbootstrap-freelancer)
 +
-+Wasmer serves the prebuilt `dist` directory as a static site: the `Staticfile` in the repository root points it at `dist`, and no build step runs. The button deploys this repository as-is and does not fork it; to customize the theme, fork it (or use your own copy), update `dist` by editing it directly or running `npm run build`, then import your own repository on Wasmer.
++Wasmer serves the prebuilt `dist` directory as a static site: the `Staticfile` in the repository root points it at `dist`, and no build step runs. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account; to customize the theme, fork it (or use your own copy), update `dist` by editing it directly or running `npm run build`, then import your own repository on Wasmer.
 +
  ### Contact Form
  

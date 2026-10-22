@@ -18,7 +18,7 @@
 - Smoke (SUMMARY pages=2 refs_checked=15 failures=0): `/` and `/index.html` 200; 15 same-origin refs checked, all 200. External CDN refs (cdn.jsdelivr.net, cdnjs.cloudflare.com, Google Fonts, cdn.startbootstrap.com SB Forms) are not fetched by the smoke test.
 - No INSTALL/BUILD FAILED/MISSING lines.
 
-## Verdict: READY (technically) — LOW ACCEPTANCE, open one probe PR first
+## Verdict: HOLD (root: one StartBootstrap probe only; see Root decision below) (technically) — LOW ACCEPTANCE, open one probe PR first
 The patch is two files (README subsection + 1-line `Staticfile`) and the replay passes. Acceptance risk is the blocker: zero merged PRs org-wide since 2024 and the earlier third-party deploy-button PR (creative#56) was closed unmerged. Recommendation: send at most one StartBootstrap PR (highest stars: sb-admin-2) as a probe and hold the rest until it gets a response.
 
 Remaining reviewer checks: wasmer.io import page and shields badge render (both blocked from this environment); a real Wasmer import of the patched branch.

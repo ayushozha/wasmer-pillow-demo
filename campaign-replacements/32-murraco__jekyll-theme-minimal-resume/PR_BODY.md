@@ -1,6 +1,6 @@
 ## Summary
 
-Adds a short "Deploy on Wasmer" section to the README, just before "Settings": a Deploy to Wasmer badge, one sentence on what Wasmer builds (Jekyll provider: `bundle install` from the committed `Gemfile.lock`, `jekyll build`, serve `_site`), a note that Gulp is not run there so the compiled `assets/` must be committed, and one sentence saying the button deploys this demo as-is (no fork), so people should fork, edit `_config.yml`/`_data/` and import their own fork. README only, no code or config changes.
+Adds a short "Deploy on Wasmer" section to the README, just before "Settings": a Deploy to Wasmer badge, one sentence on what Wasmer builds (Jekyll provider: `bundle install` from the committed `Gemfile.lock`, `jekyll build`, serve `_site`), a note that Gulp is not run there so the compiled `assets/` must be committed, and one sentence saying the button opens Wasmer's import page for this demo (the user reviews the configuration and clicks Deploy; no GitHub copy is created), so people should fork, edit `_config.yml`/`_data/` and import their own fork. README only, no code or config changes.
 
 ## Why this repo
 

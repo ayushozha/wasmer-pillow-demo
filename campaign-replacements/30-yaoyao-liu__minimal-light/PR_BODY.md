@@ -1,6 +1,6 @@
 ## Summary
 
-Adds a short "Deploying on Wasmer" subsection under "Getting Started", between "Using Locally with Jekyll" and "Using the HTML version". It contains a Deploy to Wasmer badge, one sentence on what Wasmer runs (Jekyll: `bundle install`, `jekyll build`, serve `_site`), and one sentence explaining that the button deploys this template's example page as-is. To get their own homepage, people fork or use the template, edit `_config.yml` and `index.md`, and import their own repository. README only.
+Adds a short "Deploying on Wasmer" subsection under "Getting Started", between "Using Locally with Jekyll" and "Using the HTML version". It contains a Deploy to Wasmer badge, one sentence on what Wasmer runs (Jekyll: `bundle install`, `jekyll build`, serve `_site`), and one sentence explaining that the button opens Wasmer's import page for this template's example page (the user reviews the configuration and clicks Deploy; no GitHub copy is created). To get their own homepage, people fork or use the template, edit `_config.yml` and `index.md`, and import their own repository. README only.
 
 ## Why this repo
 

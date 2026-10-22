@@ -29,5 +29,5 @@ Smoke test:
 ## Limitations
 
 - No deployment was made. The badge image and the Wasmer import page could not be checked from the test environment.
-- The button imports and builds this public repository as-is; it does not fork it. To customize the blog and redeploy on push, users fork the starter and import their own repository.
+- The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the blog and redeploy on push, users fork the starter and import their own repository.
 - In the local replay, unknown paths returned a plain 404 rather than the starter's `404.html`.
