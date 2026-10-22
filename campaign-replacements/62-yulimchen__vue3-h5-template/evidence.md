@@ -1,3 +1,5 @@
+> **Ownership note (2026-10-22):** this is a hash-router app; root assigned hash-router apps to the other Claude session. Hand off rather than publish from this lane; evidence kept for them.
+
 # yulimchen/vue3-h5-template: evidence
 
 **Verdict: READY** (README-only patch; replay passes). Note for coordinator: this is a hash-router app (a lead you assigned, not self-found). If the hash-router lane owns it, hand this folder over rather than duplicating.
