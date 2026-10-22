@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index a81c063..216bf70 100644
+--- a/README.md
++++ b/README.md
+@@ -30,6 +30,12 @@ https://youtu.be/Yw7yWHigGKI <br />
+ ![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+ 
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=codebucks27%2FNext.js-Developer-Portfolio-Starter-Code)
++
++Wasmer detects Next.js, runs the project's `build` script (`npm run build`) and serves the production build with Node. The button builds this public starter code as-is (the default Next.js starter page, not the finished portfolio) and does not fork or copy it into your GitHub account. To deploy your own portfolio as you build it in the tutorial (pages in `src/pages`, images in `public/images`) and redeploy on every push, fork the repository and connect your fork from the Wasmer dashboard. No environment variables are required.
++
+ ### Resources Used in This Project
+ 
+ - Profile image in the home page created by using https://www.midjourney.com/ tool.

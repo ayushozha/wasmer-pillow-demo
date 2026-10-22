@@ -1,0 +1,158 @@
+$ node -v; npm -v; git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/19-codebucks27__Next.js-Developer-Portfolio-Starter-Code rev-parse HEAD; ls package-lock.json yarn.lock pnpm-lock.yaml bun.lock 2>&1
+v22.22.0
+10.9.4
+b6f8ee2d3a75664858d02436f697e4b68118396b
+ls: cannot access 'package-lock.json': No such file or directory
+ls: cannot access 'yarn.lock': No such file or directory
+ls: cannot access 'pnpm-lock.yaml': No such file or directory
+ls: cannot access 'bun.lock': No such file or directory
+exit=2
+
+## No lockfile in repo: plain 'npm install' (resolves fresh, as Wasmer's 'npm install' would; node.bzl:21-26)
+$ npm install --no-audit --no-fund
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.1.7: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated @humanwhocodes/config-array@0.11.14: Use @eslint/config-array instead
+npm warn deprecated eslint@8.36.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T04_43_22_815Z-debug-0.log
+exit=1
+
+$ npm ls next react react-dom framer-motion --depth=0
+developer-portfolio-starter-code@0.1.0 /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/build/19-codebucks27__Next.js-Developer-Portfolio-Starter-Code
++-- framer-motion@10.18.0
++-- next@ invalid: "15.5.24" from the root project
++-- react-dom@18.2.0
+`-- react@18.2.0
+
+npm error code ELSPROBLEMS
+npm error invalid: next@ /tmp/claude-0/-home-user-wasmer-pillow-demo/***/scratchpad/build/19-codebucks27__Next.js-Developer-Portfolio-Starter-Code/node_modules/next
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T04_43_45_711Z-debug-0.log
+exit=1
+
+$ npm run build
+
+> developer-portfolio-starter-code@0.1.0 build
+> next build
+
+sh: 1: next: not found
+exit=127
+
+## The attempt above hit ENOSPC (shared container disk full, not a repo problem). Freed my own scratch dirs, fresh copy, retry:
+$ npm install --no-audit --no-fund
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.11.14: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated glob@7.1.7: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@8.36.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 309 packages in 30s
+exit=0
+
+$ npm ls next react react-dom framer-motion --depth=0
+developer-portfolio-starter-code@0.1.0 /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/build/19-codebucks27__Next.js-Developer-Portfolio-Starter-Code
++-- framer-motion@10.18.0
++-- next@15.5.24
++-- react-dom@18.2.0
+`-- react@18.2.0
+
+exit=0
+
+$ npm run build
+
+> developer-portfolio-starter-code@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.24
+
+   Linting and checking validity of types ...
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.5s
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                                Size  First Load JS
+┌ ○ /                                     5.59 kB        87.7 kB
+├   └ css/3ebfa8c13248b58b.css            1.95 kB
+├   /_app                                     0 B        82.1 kB
+├ ○ /404                                    180 B        82.3 kB
+└ ƒ /api/hello                                0 B        82.1 kB
++ First Load JS shared by all             82.8 kB
+  ├ chunks/framework-37f3832b4337c515.js  44.8 kB
+  ├ chunks/main-89f9e620512ae042.js       36.3 kB
+  └ other shared chunks (total)           1.73 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+exit=0
+
+$ PORT=3251 npm start &
+
+> developer-portfolio-starter-code@0.1.0 start
+> next start
+
+   ▲ Next.js 15.5.24
+   - Local:        http://localhost:3251
+   - Network:      http://192.0.2.2:3251
+
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/
+200 bytes=4411 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/api/hello
+200 bytes=19 type=application/json; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/about
+404 bytes=2191 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/projects
+404 bytes=2191 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/articles
+404 bytes=2191 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/next.svg
+200 bytes=1375 type=image/svg+xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/vercel.svg
+200 bytes=629 type=image/svg+xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/favicon.ico
+200 bytes=25931 type=image/x-icon
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3251/_next/image?url=%2Fimages%2Fprojects%2Fdevdreaming.jpg&w=640&q=75
+200 bytes=27397 type=image/jpeg
+marker 'Get started by editing' on /: 1; /api/hello body: {"name":"John Doe"}
+exit: server stopped
+## Node 24 is not installed in this container (only /opt/node20, /opt/node22); emulation runs on Node 22.22.0
+## Emulation of Anybuild v0.33.0 Next.js build (node.rs:458-471,1646-1667): npx -y next-bundle@1.0.0 --build-command 'npm run build'
+$ npx -y next-bundle@1.0.0 --build-command 'npm run build'
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Traced Next.js server files in: 47.523ms
+Created all serverless functions in: 70.04ms
+Collected static files (public/, static/, .next/static): 19.877ms
+Build output written to .next-bundle
+Materialized 668 traced files into .next-bundle/node_modules
+Materialized 26 function files and 8 shared dependency files
+Materialized 57 local runtime package files
+Run it with: node .next-bundle/server.mjs
+exit=0
+
+## Serve: cp -R .next-bundle into empty dir (node.bzl:209-211), 'node .next-bundle/server.mjs' (node.rs:473-475)
+Serving /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/app19/.next-bundle
+Listening on http://127.0.0.1:3252
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/
+200 bytes=4411 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/api/hello
+200 bytes=19 type=application/json; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/about
+404 bytes=2191 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/next.svg
+200 bytes=1375 type=image/svg+xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/favicon.ico
+200 bytes=25931 type=image/x-icon
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3252/_next/image?url=%2Fimages%2Fprojects%2Fdevdreaming.jpg&w=640&q=75
+200 bytes=127228 type=image/webp
+marker on /: 1; /api/hello: {"name":"John Doe"}
+exit: server stopped
