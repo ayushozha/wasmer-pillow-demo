@@ -14,7 +14,7 @@ README-only change to the starter's own documentation.
 
 ### Tests
 
-Replayed Wasmer's builder (Anybuild v0.33.0, the version Wasmer pins) locally on the starter's exact tree (`gatsbyjs/gatsby-starter-blog` @ `d75052245100…`, whose files match `starters/blog` here): `anybuild plan` → static Node.js provider, Gatsby, `npm install` / `npm run build`, output `public`; staged install with only `package.json` + `package-lock.json` as the builder does; Node 24.22.1; build exit 0; served with static-web-server 2.38.0: `/`, all three sample posts, and `/rss.xml` return 200, with every same-origin asset 200. No deployment was made.
+Replayed Wasmer's builder (Anybuild v0.33.0, the version Wasmer pins) locally on the starter's exact tree (`gatsbyjs/gatsby-starter-blog` @ `d75052245100…`, whose files match `starters/blog` here): `anybuild plan` → static Node.js provider, Gatsby, `npm install` / `npm run build`, output `public`; staged install with only `package.json` + `package-lock.json` as the builder does; Node 24.22.1; build exit 0; served with static-web-server 2.38.0: `/`, `/hello-world/`, `/my-second-post/` and `/rss.xml` return 200, all 18 same-origin assets checked return 200, and `/does-not-exist` returns 404. No deployment was made.
 
 ## Related Issues
 
