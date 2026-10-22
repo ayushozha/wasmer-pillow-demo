@@ -1,0 +1,386 @@
+$ node -v; yarn -v; git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/14-timlrx__tailwind-nextjs-starter-blog rev-parse HEAD
+v22.22.0
+3.6.1
+b45bef66b40c63b6f57c15ee8cd090682238df4c
+exit=0
+
+$ yarn install --immutable
+➤ YN0013: │ ws@npm:7.5.10 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xtend@npm:4.0.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ y18n@npm:5.0.8 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:3.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:4.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xtend@npm:4.0.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ y18n@npm:5.0.8 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:3.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:4.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:5.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ y18n@npm:5.0.8 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:3.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:4.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:5.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yaml@npm:2.8.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:3.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:4.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:5.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yaml@npm:2.8.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:4.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:5.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yaml@npm:2.8.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:21.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yallist@npm:5.0.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yaml@npm:2.8.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:21.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yaml@npm:2.8.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:21.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:17.7.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:21.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:17.7.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yocto-queue@npm:0.1.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs-parser@npm:21.1.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:17.7.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yocto-queue@npm:0.1.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.25.76 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yargs@npm:17.7.2 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yocto-queue@npm:0.1.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.25.76 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zwitch@npm:2.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0066: │ typescript@patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=14eedb: Cannot apply hunk #1
+➤ YN0000: └ Completed in 2m 8s
+➤ YN0000: ┌ Link step
+➤ YN0007: │ esbuild@npm:0.27.3 must be built because it never has been before or the last one failed
+➤ YN0007: │ sharp@npm:0.34.5 must be built because it never has been before or the last one failed
+➤ YN0007: │ unrs-resolver@npm:1.11.1 must be built because it never has been before or the last one failed
+➤ YN0007: │ protobufjs@npm:7.5.4 must be built because it never has been before or the last one failed
+➤ YN0007: │ contentlayer2@npm:0.5.8 must be built because it never has been before or the last one failed
+➤ YN0000: └ Completed in 44s 52ms
+➤ YN0000: Done with warnings in 2m 53s
+exit=0
+
+$ yarn build
+   ▲ Next.js 15.5.12
+
+   Creating an optimized production build ...
+(node:13946) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+successCallback /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/build/14-timlrx__tailwind-nextjs-starter-blog/.contentlayer
+Local search index generated...
+Generated 13 documents in .contentlayer
+ ✓ Compiled successfully in 31.1s
+   Linting and checking validity of types ...
+ ⚠ TypeScript project references are not fully supported. Attempting to build in incremental mode.
+   Collecting page data ...
+   Generating static pages (0/60) ...
+   Generating static pages (15/60) 
+   Generating static pages (30/60) 
+   Generating static pages (45/60) 
+ ✓ Generating static pages (60/60)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    1.12 kB         107 kB
+├ ○ /_not-found                            134 B         102 kB
+├ ○ /about                                 486 B         108 kB
+├ ƒ /api/newsletter                        134 B         102 kB
+├ ○ /blog                                  123 B         112 kB
+├ ● /blog/[...slug]                      4.08 kB         115 kB
+├   ├ /blog/code-sample
+├   ├ /blog/deriving-ols-estimator
+├   ├ /blog/github-markdown-guide
+├   └ [+8 more paths]
+├ ● /blog/page/[page]                      123 B         112 kB
+├   ├ /blog/page/1
+├   ├ /blog/page/2
+├   └ /blog/page/3
+├ ○ /projects                              174 B         111 kB
+├ ○ /robots.txt                            134 B         102 kB
+├ ○ /sitemap.xml                           134 B         102 kB
+├ ○ /tags                                  161 B         106 kB
+├ ● /tags/[tag]                            123 B         112 kB
+├   ├ /tags/markdown
+├   ├ /tags/code
+├   ├ /tags/features
+├   └ [+14 more paths]
+└ ● /tags/[tag]/page/[page]                123 B         112 kB
+    ├ /tags/markdown/page/1
+    ├ /tags/code/page/1
+    ├ /tags/features/page/1
+    └ [+15 more paths]
++ First Load JS shared by all             102 kB
+  ├ chunks/255-300146a1fbdb333d.js       45.9 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+RSS feed generated...
+exit=0
+
+$ (cd 14-timlrx__tailwind-nextjs-starter-blog && PORT=3204 yarn serve) &
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3204
+   - Network:      http://192.0.2.2:3204
+
+ ✓ Starting...
+ ✓ Ready in 1058ms
+ready=1 after 3s
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/
+200 bytes=66663 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/blog
+308 bytes=6 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/blog/code-sample
+308 bytes=18 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/blog/guide-to-using-images-in-nextjs
+308 bytes=38 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/feed.xml
+200 bytes=7115 type=application/xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/sitemap.xml
+200 bytes=2040 type=application/xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/_next/image?url=%2Fstatic%2Fimages%2Focean.jpg&w=640&q=75
+308 bytes=59 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/static/images/ocean.jpg
+404 bytes=46317 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/tags/markdown
+308 bytes=15 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3204/api/newsletter
+308 bytes=16 type=
+$ markers: site title on /, post title on /blog/code-sample, <rss and item count in /feed.xml, image content-type
+siteMetadata.title='Next.js Starter Blog' found on /: 1
+'Sample .md file' on /blog/code-sample: 0
+/feed.xml <rss: 1 items: 10
+$ kill server; server log tail:
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3204
+   - Network:      http://192.0.2.2:3204
+
+ ✓ Starting...
+ ✓ Ready in 1058ms
+
+## Re-run: next.config.js sets trailingSlash: true (308 above are the expected redirects); file on disk is ocean.jpeg
+$ (cd 14-timlrx__tailwind-nextjs-starter-blog && PORT=3205 yarn serve) &
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3205
+   - Network:      http://192.0.2.2:3205
+
+ ✓ Starting...
+ ✓ Ready in 729ms
+ready=1 after 3s
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/blog/
+200 bytes=74311 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/blog/code-sample/
+200 bytes=74004 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/blog/guide-to-using-images-in-nextjs/
+200 bytes=87379 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/tags/markdown/
+200 bytes=52085 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/static/images/ocean.jpeg
+200 bytes=262353 type=image/jpeg
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/_next/image/?url=%2Fstatic%2Fimages%2Focean.jpeg&w=640&q=75
+200 bytes=25333 type=image/jpeg
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3205/api/newsletter/
+500 bytes=0 type=
+'Sample .md file' on /blog/code-sample/: 2
+$ curl -X POST /api/newsletter/ -d '{"email":"test@example.com"}' (no BUTTONDOWN_API_KEY)
+{"error":"fetch failed"} http=500
+$ kill server; server log tail:
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3205
+   - Network:      http://192.0.2.2:3205
+
+ ✓ Starting...
+ ✓ Ready in 729ms
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at <unknown> (.next/server/app/api/newsletter/route.js:1:69994)
+    at Generator.next (<anonymous>)
+    at <unknown> (.next/server/chunks/129.js:31:4672)
+    at new Promise (<anonymous>)
+    at k (.next/server/chunks/129.js:31:4492)
+
+$ yarn prettier --check README.md   # upstream README, unpatched
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+
+$ yarn prettier --check README.md   # PATCHED README copied from clone
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+
+## Emulation of Anybuild's Next.js build/start (wasmerio/shipit@587be23 node.rs:458-475,1646-1667), using the correctly installed node_modules from 'yarn install --immutable' above (NOT Anybuild's install step)
+$ yarn dlx next-bundle@1.0.0 --build-command 'yarn run build'
+➤ YN0013: │ yauzl-clone@npm:1.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-app-paths@npm:5.1.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-app-paths@npm:5.5.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-portable@npm:7.3.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-clone@npm:1.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-promise@npm:2.1.3 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-app-paths@npm:5.5.1 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-portable@npm:7.3.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-clone@npm:1.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-promise@npm:2.1.3 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl@npm:2.10.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ xdg-portable@npm:7.3.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-clone@npm:1.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-promise@npm:2.1.3 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl@npm:2.10.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.22.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-clone@npm:1.0.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-promise@npm:2.1.3 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl@npm:2.10.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.22.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.24.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl-promise@npm:2.1.3 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl@npm:2.10.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.22.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.24.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:4.1.11 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ yauzl@npm:2.10.0 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.22.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:3.24.4 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:4.1.11 can't be found in the cache and will be fetched from the remote registry
+➤ YN0013: │ zod@npm:4.6.7 can't be found in the cache and will be fetched from the remote registry
+➤ YN0000: └ Completed in 35s 264ms
+➤ YN0000: ┌ Link step
+➤ YN0007: │ esbuild@npm:0.27.0 must be built because it never has been before or the last one failed
+➤ YN0007: │ esbuild@npm:0.27.7 must be built because it never has been before or the last one failed
+➤ YN0000: └ Completed in 9s 744ms
+➤ YN0000: Done with warnings in 56s 611ms
+
+Error: The target project does not declare a next dependency.
+    at main (file:///tmp/xfs-fa7ae1d1/dlx-28392/node_modules/next-bundle/bin/build.mjs:529:11)
+exit=1
+
+## Diagnostic only (NOT what Anybuild runs): same next-bundle@1.0.0 invoked via npx instead of 'yarn dlx', to see whether the bundle itself serves this app
+$ npx -y next-bundle@1.0.0 --build-command 'yarn run build'
+    └ [+15 more paths]
++ First Load JS shared by all             102 kB
+  ├ chunks/255-300146a1fbdb333d.js       45.9 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+RSS feed generated...
+Traced Next.js server files in: 117.103ms
+Created all serverless functions in: 253.019ms
+Collected static files (public/, static/, .next/static): 34.086ms
+Build output written to .next-bundle
+Materialized 682 traced files into .next-bundle/node_modules
+Materialized 121 function files and 12 shared dependency files
+Materialized 57 local runtime package files
+Run it with: node .next-bundle/server.mjs
+exit=0
+
+## Diagnostic serve: 'node .next-bundle/server.mjs' from an empty dir holding only .next-bundle (port 3209)
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/
+200 bytes=66663 type=text/html; charset=utf-8
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/blog/
+308 bytes=0 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/blog/code-sample/
+308 bytes=0 type=
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/feed.xml
+200 bytes=7115 type=application/octet-stream
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/sitemap.xml
+200 bytes=2040 type=application/xml
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/static/images/ocean.jpeg
+200 bytes=262353 type=image/jpeg
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/_next/image/?url=%2Fstatic%2Fimages%2Focean.jpeg&w=640&q=75
+200 bytes=399248 type=image/webp
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3209/tags/markdown/
+308 bytes=0 type=
+'Sample .md file' on /blog/code-sample/: 0
+feed.xml items: 10
+server log tail:
+Serving /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/app14/.next-bundle
+Listening on http://127.0.0.1:3209
+
+## Diagnostic: follow trailing-slash redirects
+$ curl -sS -o /dev/null -D - http://127.0.0.1:3209/blog | grep -i '^HTTP\|^location'
+HTTP/1.1 308 Permanent Redirect
+Location: /blog/
+$ curl -sS -o /dev/null -D - http://127.0.0.1:3209/blog/ | grep -i '^HTTP\|^location'
+HTTP/1.1 308 Permanent Redirect
+Location: /blog/
+$ curl -sS -o /dev/null -D - http://127.0.0.1:3209/blog/code-sample/ | grep -i '^HTTP\|^location'
+HTTP/1.1 308 Permanent Redirect
+Location: /blog/code-sample/
+$ curl -sSL --max-redirs 5 -o /dev/null -w '%{http_code} redirects=%{num_redirects}' http://127.0.0.1:3209/blog/code-sample/
+curl: (47) Maximum (5) redirects followed
+308 redirects=5
+
+########## Anybuild install-step simulation ##########
+## Simulation of Anybuild install step: only package.json + yarn.lock present (node.bzl:95-139: lockfile copied at :115-116, install run with inputs=[package.json] at :139), then 'yarn install' (node.bzl:24). No .yarnrc.yml => no yarnPath / nodeLinker.
+## (a) yarn 3.6.1 (repo's own release, as corepack would pick from packageManager)
+$ CI=true node /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/yarn361.cjs --version; CI=true node /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/yarn361.cjs install; echo '--- files after install:'; ls -A
+➤ YN0007: │ sharp@npm:0.34.5 must be built because it never has been before or the last one failed
+➤ YN0000: │ protobufjs@npm:7.5.4 STDERR (node:24819) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+➤ YN0000: │ protobufjs@npm:7.5.4 STDERR (Use `node --trace-warnings ...` to show where the warning was created)
+➤ YN0000: │ unrs-resolver@npm:1.11.1 STDERR (node:24837) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+➤ YN0000: │ unrs-resolver@npm:1.11.1 STDERR (Use `node --trace-warnings ...` to show where the warning was created)
+➤ YN0000: │ sharp@npm:0.34.5 STDERR (node:24848) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+➤ YN0000: │ sharp@npm:0.34.5 STDERR (Use `node --trace-warnings ...` to show where the warning was created)
+➤ YN0000: │ esbuild@npm:0.27.3 STDERR (node:24826) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+➤ YN0000: │ esbuild@npm:0.27.3 STDERR (Use `node --trace-warnings ...` to show where the warning was created)
+➤ YN0007: │ contentlayer2@npm:0.5.8 must be built because it never has been before or the last one failed
+➤ YN0000: │ contentlayer2@npm:0.5.8 STDERR (node:24993) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+➤ YN0000: │ contentlayer2@npm:0.5.8 STDERR (Use `node --trace-warnings ...` to show where the warning was created)
+➤ YN0000: └ Completed in 20s 781ms
+➤ YN0000: Done with warnings in 23s 522ms
+--- files after install:
+.pnp.cjs
+.pnp.loader.mjs
+.yarn
+package.json
+yarn.lock
+exit=0
+
+## (b) yarn 4.18.1 (latest Berry on npm, standalone; yarn version floats in Anybuild, node.rs:1116-1124). NOTE: the exit=0 below is from the trailing `ls`; the install itself failed with YN0028.
+$ CI=true node /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/yarn4/package/bin/yarn.js --version; CI=true node /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/yarn4/package/bin/yarn.js install; echo '--- files after install:'; ls -A
+4.18.1
+➤ YN0087: Migrated your project to the latest Yarn version 🚀
+
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + typescript@patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5, and 3 more.
+➤ YN0085: │ - fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=df0bf1, and 3 more.
+➤ YN0000: └ Completed in 34s 901ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ react is listed by your project with version 19.2.4 (pd44256), which doesn't satisfy what kbar (via pliny) and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ react-dom is listed by your project with version 19.2.4 (p237dd5), which doesn't satisfy what kbar (via pliny) and other dependencies request (^18.2.0).
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0028: │ The lockfile would have been modified by this install, which is explicitly forbidden.
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 35s 34ms
+--- files after install:
+.yarnrc.yml
+package.json
+yarn.lock
+exit=0
+
+## (a) continued: node_copy_step copies sources incl. .yarnrc.yml (node.bzl:142-151), then build 'yarn run build' (node.rs:1655) inside next-bundle
+$ CI=true yarn --version; CI=true timeout 600 yarn run build
+3.6.1
+Usage Error: Couldn't find the node_modules state file - running an install might help (findPackageLocation)
+
+$ yarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] <scriptName> ...
+exit=1
+
