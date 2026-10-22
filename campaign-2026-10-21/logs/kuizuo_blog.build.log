@@ -62,3 +62,110 @@ Progress: resolved 1597, reused 711, downloaded 2, added 0
 Progress: resolved 1597, reused 711, downloaded 3, added 12
 Progress: resolved 1597, reused 711, downloaded 4, added 12
 Progress: resolved 1597, reused 711, downloaded 5, added 12
+Progress: resolved 1597, reused 712, downloaded 8, added 26
+Progress: resolved 1597, reused 712, downloaded 16, added 125
+Progress: resolved 1597, reused 712, downloaded 55, added 756
+Progress: resolved 1597, reused 712, downloaded 146, added 857
+Progress: resolved 1597, reused 712, downloaded 177, added 880
+Progress: resolved 1597, reused 712, downloaded 242, added 943
+Progress: resolved 1597, reused 712, downloaded 319, added 1023
+Progress: resolved 1597, reused 712, downloaded 333, added 1046
+Progress: resolved 1597, reused 712, downloaded 396, added 1101
+Progress: resolved 1597, reused 712, downloaded 486, added 1196
+Progress: resolved 1597, reused 712, downloaded 522, added 1227
+Progress: resolved 1597, reused 712, downloaded 608, added 1309
+Progress: resolved 1597, reused 712, downloaded 657, added 1362
+Progress: resolved 1597, reused 712, downloaded 738, added 1442
+Progress: resolved 1597, reused 712, downloaded 772, added 1481
+Progress: resolved 1597, reused 712, downloaded 819, added 1519
+Progress: resolved 1597, reused 712, downloaded 884, added 1597, done
+.../node_modules/@swc/core postinstall$ node postinstall.js
+.../core-js@3.32.1/node_modules/core-js postinstall$ node -e "try{require('./postinstall')}catch(e){}"
+.../core-js@3.49.0/node_modules/core-js postinstall$ node -e "try{require('./postinstall')}catch(e){}"
+.../sharp@0.32.6/node_modules/sharp install$ (node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)
+.../core-js@3.32.1/node_modules/core-js postinstall: Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+.../core-js@3.32.1/node_modules/core-js postinstall: The project needs your help! Please consider supporting core-js:
+.../core-js@3.32.1/node_modules/core-js postinstall: > https://opencollective.com/core-js 
+.../core-js@3.32.1/node_modules/core-js postinstall: > https://patreon.com/zloirock 
+.../core-js@3.32.1/node_modules/core-js postinstall: > https://boosty.to/zloirock 
+.../core-js@3.32.1/node_modules/core-js postinstall: > bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz 
+.../core-js@3.32.1/node_modules/core-js postinstall: I highly recommend reading this: https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md 
+.../core-js@3.32.1/node_modules/core-js postinstall: Done
+.../node_modules/@swc/core postinstall: Done
+.../core-js@3.49.0/node_modules/core-js postinstall: Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+.../core-js@3.49.0/node_modules/core-js postinstall: The project needs your help! Please consider supporting core-js:
+.../core-js@3.49.0/node_modules/core-js postinstall: > https://opencollective.com/core-js 
+.../core-js@3.49.0/node_modules/core-js postinstall: > https://patreon.com/zloirock 
+.../core-js@3.49.0/node_modules/core-js postinstall: > https://boosty.to/zloirock 
+.../core-js@3.49.0/node_modules/core-js postinstall: > bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz 
+.../core-js@3.49.0/node_modules/core-js postinstall: I highly recommend reading this: https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md 
+.../core-js@3.49.0/node_modules/core-js postinstall: Done
+.../sharp@0.32.6/node_modules/sharp install: sharp: Using cached /root/.npm/_libvips/libvips-8.14.5-linux-x64.tar.br
+.../sharp@0.32.6/node_modules/sharp install: sharp: Integrity check passed for linux-x64
+.../sharp@0.32.6/node_modules/sharp install: (node:2302) [DEP0176] DeprecationWarning: fs.R_OK is deprecated, use fs.constants.R_OK instead
+.../sharp@0.32.6/node_modules/sharp install: (Use `node --trace-deprecation ...` to show where the warning was created)
+.../sharp@0.32.6/node_modules/sharp install: Done
+
+dependencies:
++ @docusaurus/core 3.10.1
++ @docusaurus/faster 3.10.1
++ @docusaurus/plugin-ideal-image 3.10.1
++ @docusaurus/plugin-pwa 3.10.1
++ @docusaurus/plugin-vercel-analytics 3.10.1
++ @docusaurus/preset-classic 3.10.1
++ @docusaurus/theme-search-algolia 3.10.1
++ @giscus/react 3.1.0
++ @popperjs/core 2.11.8
++ @radix-ui/react-slot 1.1.1
++ @tailwindcss/postcss 4.3.1
++ class-variance-authority 0.7.1
++ docusaurus-plugin-baidu-tongji 0.0.0-beta.4
++ docusaurus-plugin-image-zoom 2.0.0
++ mini-svg-data-uri 1.4.4
++ motion 12.24.10
++ ora 8.1.1
++ plyr 3.8.4
++ postcss 8.5.15
++ prism-react-renderer 2.4.1
++ raw-loader 4.0.2
++ react 19.0.0
++ react-dom 19.0.0
++ react-github-calendar 4.5.4
++ react-icon-cloud 4.1.7
++ react-popper 2.3.0
++ react-tweet 3.3.0
++ tailwind-merge 3.6.0
++ tailwindcss 4.3.1
+
+devDependencies:
++ @docusaurus/module-type-aliases 3.10.1
++ @docusaurus/tsconfig 3.10.1
++ @docusaurus/types 3.10.1
++ @iconify/react 5.2.0
++ @inquirer/prompts 8.5.2
++ @stylistic/eslint-plugin 2.13.0
++ @swc/helpers 0.5.23
++ @tailwindcss/typography 0.5.20
++ @typescript-eslint/eslint-plugin 8.20.0
++ eslint 9.39.2
++ eslint-plugin-react 7.37.4
++ eslint-plugin-tailwindcss 3.18.3
++ typescript 5.7.3
++ typescript-eslint 8.20.0
+
+Done in 1m 34.1s
+EXIT 0
+$ npx -y pnpm@9.15.4 build
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> blog@3.0.0 build /tmp/claude-0/camp2/kuizuo_blog
+> docusaurus build
+
+[INFO] [zh-CN] Creating an optimized production build...
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+EXIT 0

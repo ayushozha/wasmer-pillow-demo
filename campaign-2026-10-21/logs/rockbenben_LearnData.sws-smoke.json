@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/rockbenben_LearnData/opt/temp/src/.vuepress/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 24592
+      }
+    ],
+    "/intro.html": [
+      {
+        "path": "/intro.html",
+        "status": 200,
+        "location": null,
+        "bytes": 21681
+      }
+    ],
+    "/deploy/": [
+      {
+        "path": "/deploy/",
+        "status": 200,
+        "location": null,
+        "bytes": 25535
+      }
+    ],
+    "/posts/2024-03-01-blog_example.html": [
+      {
+        "path": "/posts/2024-03-01-blog_example.html",
+        "status": 200,
+        "location": null,
+        "bytes": 24197
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 14835
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 2129
+      }
+    ],
+    "/slimsearch.worker.js": [
+      {
+        "path": "/slimsearch.worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 251195
+      }
+    ],
+    "/assets/app-F8ExcH0K.js": [
+      {
+        "path": "/assets/app-F8ExcH0K.js",
+        "status": 200,
+        "location": null,
+        "bytes": 304516
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 14834
+    }
+  ],
+  "ok": true
+}

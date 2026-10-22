@@ -1,0 +1,22 @@
+# 2026-10-22T05:32:03Z anybuild plan @ ff1f46f3e0f53e56c3777616e2def7570cf8b25d (ff1f46f3e0f53e56c3777616e2def7570cf8b25d)
+  Detected static Node.js provider
+    Framework: VitePress
+    Server: Node.js
+    Package manager: bun
+    Output directory: .vitepress/dist
+
+  Generated Anybuild at /tmp/claude-0/x_det/Anybuild
+Plan saved to /tmp/claude-0/x_det.json
+EXIT 0
+provider= node-static framework= vitepress static_dir= .vitepress/dist pm= bun bun= 1 pnpm= None install= bun install --no-save build= bun run build
+# 2026-10-22T05:32:03Z anybuild plan @ deploy-to-wasmer (755064e5d2c429f843a58df14b543c1c599e17fe)
+  Detected static Node.js provider
+    Framework: VitePress
+    Server: Node.js
+    Package manager: bun
+    Output directory: .vitepress/dist
+
+  Generated Anybuild at /tmp/claude-0/x_det/Anybuild
+Plan saved to /tmp/claude-0/x_det.json
+EXIT 0
+provider= node-static framework= vitepress static_dir= .vitepress/dist pm= bun bun= 1 pnpm= None install= bun install --no-save build= bun run build

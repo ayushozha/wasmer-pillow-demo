@@ -1,0 +1,65 @@
+# 2026-10-22T05:32:00Z rockbenben/LearnData @ b3df7d6e60a47e272a54ab3f0cef1be4521cac47 node v24.22.1 pnpm 12.11.2
+$ npx -y pnpm@12.11.2 install --frozen-lockfile
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Downloading dashjs@4.7.4: 0.00 B/8.85 MB
+Downloading @mathjax/src@4.1.3: 0.00 B/7.51 MB
+Downloading hls.js@1.7.3: 0.00 B/8.00 MB
+Downloading @mathjax/mathjax-newcm-font@4.1.3: 0.00 B/13.87 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+Downloading @mathjax/mathjax-newcm-font@4.1.3: 6.18 MB/13.87 MB
+Downloading @mathjax/mathjax-newcm-font@4.1.3: 13.87 MB/13.87 MB, done
+Downloading hls.js@1.7.3: 8.00 MB/8.00 MB, done
+Progress: resolved 518, reused 220, downloaded 213, added 412
+Progress: resolved 518, reused 220, downloaded 246, added 444
+Progress: resolved 518, reused 220, downloaded 284, added 476
+Packages: +518
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 518, reused 220, downloaded 298, added 518, done
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/@parcel/watcher install: Done
+
+devDependencies:
++ @mathjax/src 4.1.3
++ @vuepress/bundler-vite 2.0.0-rc.31
++ @vuepress/plugin-docsearch 2.0.0-rc.137
++ @vuepress/plugin-feed 2.0.0-rc.137
++ @vuepress/plugin-google-analytics 2.0.0-rc.135
++ @vuepress/plugin-slimsearch 2.0.0-rc.137
++ @waline/client 3.16.1
++ artplayer 5.4.0
++ cpx2 8.0.2
++ dashjs 4.7.4
++ gray-matter 4.0.3
++ hls.js 1.7.3
++ markdownlint-cli 0.47.0
++ prettier 3.9.10
++ sass-embedded 1.105.1
++ vue 3.5.44
++ vuepress 2.0.0-rc.31
++ vuepress-theme-hope 2.0.0-rc.110
+
+Done in 27.1s using pnpm v12.11.2
+EXIT 0
+$ NODE_OPTIONS=--max_old_space_size=8192 npx -y pnpm@12.11.2 cpx "src/reading/**" src/.vuepress/public/reading && npx -y pnpm@12.11.2 run docs:build   # mirrors .github/workflows/main.yml
+$ vuepress build src && node scripts/llms-txt.js
+@vuepress/plugin-icon:  [33m‼[39m The `scan` option is ignored, as the offline mode is not enabled.
+- Initializing and preparing data
+[32m√[39m Initializing and preparing data - done in 2.96s
+- Compiling with vite
+
+new URL(`worker/dev.js`,import.meta.url) doesn't exist at build time, it will remain unchanged to be resolved at runtime. If this is intended, you can use the /* @vite-ignore */ comment to suppress this warning.
+[32m√[39m Compiling with vite - done in 4.71s
+- Rendering 55 pages
+[32m√[39m Rendering 55 pages - done in 867ms
+@vuepress/plugin-seo:  [32m√[39m Generating robots.txt
+@vuepress/plugin-feed:  [32m√[39m added 2 pages as feed items in locale /
+@vuepress/plugin-sitemap:  [32m√[39m Generating sitemap to sitemap.xml
+@vuepress/plugin-sitemap:  [32m√[39m Appending sitemap path to robots.txt
+@vuepress/plugin-redirect:  [32m√[39m Generating redirect files
+success VuePress build completed in 11.79s!
+🔍 Scanning for Markdown files...
+🌐 Base URL: https://newzone.top
+📄 Found 72 files.
+✅ Generated /tmp/claude-0/camp2/rockbenben_LearnData/src/.vuepress/dist/llms.txt with 71 pages.
+EXIT 0

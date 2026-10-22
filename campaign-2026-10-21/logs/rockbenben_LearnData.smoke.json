@@ -1,0 +1,61 @@
+{
+  "dir": "/tmp/claude-0/camp2/rockbenben_LearnData/src/.vuepress/dist",
+  "base": "/",
+  "html_files": 56,
+  "local_refs_checked": 113,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 23156,
+      "title": "LearnData \u5f00\u6e90\u7b14\u8bb0 | LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/intro.html": {
+      "status": 200,
+      "bytes": 20780,
+      "title": "\u4e2a\u4eba\u4ecb\u7ecd | LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/deploy/": {
+      "status": 200,
+      "bytes": 24689,
+      "title": "Deploy | LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/posts/2024-03-01-blog_example.html": {
+      "status": 200,
+      "bytes": 23668,
+      "title": "\u535a\u5ba2\u6587\u7ae0\u6837\u4f8b | LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/web/VuePress.html": {
+      "status": 200,
+      "bytes": 58300,
+      "title": "VuePress | LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 14297,
+      "title": "LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 1865,
+      "title": "LearnData \u5f00\u6e90\u7b14\u8bb0"
+    },
+    "/slimsearch.worker.js": {
+      "status": 200,
+      "bytes": 250741,
+      "title": null
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 5678,
+      "title": null
+    },
+    "/reading/": {
+      "status": 200,
+      "bytes": 14379,
+      "title": "LearnData - \u8bfb\u4e66\u7b14\u8bb0"
+    }
+  },
+  "ok": true
+}

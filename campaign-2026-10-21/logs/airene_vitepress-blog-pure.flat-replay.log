@@ -1,0 +1,54 @@
+# 2026-10-22T05:32:12Z flat replay of anybuild 0.33.0 planned steps for airene_vitepress-blog-pure @ 755064e5d2c429f843a58df14b543c1c599e17fe (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/airene_vitepress-blog-pure && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/src --out /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/plan.json)
+  Detected static Node.js provider
+    Framework: VitePress
+    Server: Node.js
+    Package manager: bun
+    Output directory: .vitepress/dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/plan.json
+EXIT 0
+# env per node.bzl for bun: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=1
+# plan: provider=node-static install='bun install --no-save' build='bun run build' static_dir='.vitepress/dist'
+$ (cd /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/opt/temp && bun install --no-save)
+bun install v1.4.2 (744846f84)
+
++ @types/fs-extra@11.0.4
++ @types/node@26.6.5
++ @typescript-eslint/eslint-plugin@8.71.2
++ @typescript-eslint/parser@8.71.2
++ @typescript-eslint/types@8.71.2
++ @vue/compiler-sfc@3.5.44
++ cross-env@10.1.0
++ esbuild@0.28.2
++ eslint@10.12.0
++ eslint-config-prettier@10.1.8
++ eslint-plugin-prettier@5.5.7
++ eslint-plugin-vue@10.11.1
++ fs-extra@11.4.1
++ globby@16.2.4
++ gray-matter@4.0.3
++ prettier@3.9.10
++ typescript@6.0.3
++ vite@8.3.4
++ vitepress@1.6.4
++ vitepress-plugin-comment-with-giscus@1.1.15
+
+303 packages installed [516.00ms]
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/airene_vitepress-blog-pure/opt/temp && bun run build)
+$ cross-env NODE_ENV=production vitepress build
+
+  vitepress v1.6.4
+
+- building client + server bundles...
+[32m✓[0m building client + server bundles...
+- rendering pages...
+[32m✓[0m rendering pages...
+build complete in 11.40s.
+EXIT 0
+# result {"install": "bun install --no-save", "build": "bun run build", "static_dir": ".vitepress/dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/pages/archives.html": 200, "/pages/tags.html": 200, "/posts/vitepress-first.html": 200, "/404.html": 200}}

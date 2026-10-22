@@ -1,0 +1,103 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/airene_vitepress-blog-pure/opt/temp/.vitepress/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 11780
+      }
+    ],
+    "/pages/archives.html": [
+      {
+        "path": "/pages/archives.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10716
+      }
+    ],
+    "/pages/tags.html": [
+      {
+        "path": "/pages/tags.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10046
+      }
+    ],
+    "/pages/category.html": [
+      {
+        "path": "/pages/category.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10734
+      }
+    ],
+    "/pages/about.html": [
+      {
+        "path": "/pages/about.html",
+        "status": 200,
+        "location": null,
+        "bytes": 20482
+      }
+    ],
+    "/posts/vitepress-first.html": [
+      {
+        "path": "/posts/vitepress-first.html",
+        "status": 200,
+        "location": null,
+        "bytes": 18972
+      }
+    ],
+    "/posts/2025/vitepress-second.html": [
+      {
+        "path": "/posts/2025/vitepress-second.html",
+        "status": 200,
+        "location": null,
+        "bytes": 18988
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 3468
+      }
+    ],
+    "/assets/app.C71ov7gz.js": [
+      {
+        "path": "/assets/app.C71ov7gz.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1352
+      }
+    ],
+    "/assets/chunks/@localSearchIndexroot.Bq9MgPzV.js": [
+      {
+        "path": "/assets/chunks/@localSearchIndexroot.Bq9MgPzV.js",
+        "status": 200,
+        "location": null,
+        "bytes": 15658
+      }
+    ],
+    "/hashmap.json": [
+      {
+        "path": "/hashmap.json",
+        "status": 200,
+        "location": null,
+        "bytes": 249
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 3468
+    }
+  ],
+  "ok": true
+}
