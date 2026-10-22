@@ -1,0 +1,48 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 18,
+  "local_refs_checked": 3,
+  "missing_local_refs": [
+    "/reset-password.html"
+  ],
+  "missing_count": 1,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 131287,
+      "title": "eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template"
+    },
+    "/calendar.html": {
+      "status": 200,
+      "bytes": 104935,
+      "title": "Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template"
+    },
+    "/profile.html": {
+      "status": 200,
+      "bytes": 136264,
+      "title": "Profile | TailAdmin - Tailwind CSS Admin Dashboard Template"
+    },
+    "/signin.html": {
+      "status": 200,
+      "bytes": 21454,
+      "title": "Sign In | TailAdmin - Tailwind CSS Admin Dashboard Template"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 3332,
+      "title": "404 Error Page | TailAdmin - Tailwind CSS Admin Dashboard Template"
+    },
+    "/bundle.js": {
+      "status": 200,
+      "bytes": 4487015,
+      "title": null
+    },
+    "/style.css": {
+      "status": 200,
+      "bytes": 190846,
+      "title": null
+    }
+  },
+  "ok": false
+}

@@ -22,5 +22,6 @@
   "patch": "patches/RomanHauksson_academic-project-astro-template.patch",
   "pr_body": "pr-bodies/RomanHauksson_academic-project-astro-template.md",
   "import_url": "https://wasmer.io/apps/create?github=RomanHauksson%2Facademic-project-astro-template",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/RomanHauksson_academic-project-astro-template.detect.json"
 }

@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds a short "Deploy on Wasmer Edge" item at the end of the README's "Deployment 📦" section, in the same bold-label-plus-bullet style as the existing options. It links to `https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio`, the Wasmer Edge import page for this repository. It also tells readers to import their own copy so the deployed site includes their changes. README only; no code or config changes.
+Adds a short "Deploy on Wasmer Edge" item at the end of the README's "Deployment 📦" section, in the same bold-label-plus-bullet style as the existing options, followed by a "Deploy to Wasmer" badge. The badge links to `https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio`, the Wasmer Edge import page for this repository. The bullet also tells readers to import their own copy so the deployed site includes their changes. README only; no code or config changes.
 
 ## Why this repository
 

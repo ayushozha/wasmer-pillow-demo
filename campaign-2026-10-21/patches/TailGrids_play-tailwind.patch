@@ -1,0 +1,38 @@
+From 203a763fe61fd10ed9d5f25984fb5bedd5192768 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:39:51 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md  | 6 ++++++
+ Staticfile | 1 +
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Staticfile
+
+diff --git a/README.md b/README.md
+index 6d187c2..5dbd13d 100644
+--- a/README.md
++++ b/README.md
+@@ -11,6 +11,12 @@ Play crafted in a way that you can use with almost all sort of web project. This
+ 
+ [![play-tailwind](https://cdn.tailgrids.com/play-tailwind.jpg)](https://play-tailwind.tailgrids.com/)
+ 
++## 🚀 Deploy
++
++The template is prebuilt HTML and CSS, so it can be served as-is. The `Staticfile` tells Wasmer Edge to serve the repository root as a static site. To host your own copy, fork this repository and import your fork; the button below opens the Wasmer import page for this repository and does not copy it into your GitHub account.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=TailGrids%2Fplay-tailwind)
++
+ ## 📃 License
+ 
+ Play is an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..fdbb02c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: .
+-- 
+2.43.0
+

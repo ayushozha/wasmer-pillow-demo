@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:15Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "saicaca/fuwari",
+  "base_sha": "6d39b0dec41282e7852e23e032998a5789abee28",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

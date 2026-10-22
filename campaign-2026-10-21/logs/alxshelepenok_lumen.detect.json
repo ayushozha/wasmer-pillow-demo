@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:16Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "alxshelepenok/lumen",
+  "base_sha": "4d965a9dd99f3c331ccd52b31fb492c2334ef5eb",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "bun",
+      "build": "bun run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "target",
+      "pm": "bun",
+      "build": "bun run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

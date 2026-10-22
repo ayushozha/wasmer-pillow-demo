@@ -1,6 +1,6 @@
 {
   "repo": "cssninjaStudio/fresh",
-  "status": "READY",
+  "status": "HELD_BUILD",
   "stars": 671,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:15Z",
@@ -20,7 +20,8 @@
   "policy": "Read README (no deploy section; Usage steps), package.json, Dockerfile, docker-compose.yml, nginx conf, workflows (deploy.yml Docker->SSH, release.yml, standard-version.yml => conventional commits). No CONTRIBUTING/PR template/AGENTS.md. No Wasmer mention; PR search shows no provider-button PRs or refusals.",
   "why": "Static Astro starter whose own Docker/nginx setup proves plain static hosting; template repo users self-host.",
   "patch": "patches/cssninjaStudio_fresh.patch",
-  "pr_body": "pr-bodies/cssninjaStudio_fresh.md",
+  "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=cssninjaStudio%2Ffresh",
-  "reason": null
+  "reason": "Wasmer detector mismatch: anybuild 0.33.0 plan selects provider `node` with start `astro dev` (package.json start script) because the build script `run-s build:*` is not recognized as an Astro build, so node_static is only Weak. Adding `Staticfile root: dist` makes the plain staticfile provider win with NO build step (would serve a missing dist). No README-only or minimal-config fix; needs an upstream script change or a dashboard override. Evidence: logs/cssninjaStudio_fresh.detect.json.",
+  "detect_log": "logs/cssninjaStudio_fresh.detect.json"
 }

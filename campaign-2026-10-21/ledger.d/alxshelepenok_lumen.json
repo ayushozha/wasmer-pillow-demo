@@ -22,5 +22,6 @@
   "patch": "patches/alxshelepenok_lumen.patch (README.md + Staticfile)",
   "pr_body": "pr-bodies/alxshelepenok_lumen.md",
   "import_url": "https://wasmer.io/apps/create?github=alxshelepenok%2Flumen",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/alxshelepenok_lumen.detect.json"
 }

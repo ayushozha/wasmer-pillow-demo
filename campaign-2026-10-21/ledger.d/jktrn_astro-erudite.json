@@ -22,5 +22,6 @@
   "patch": "patches/jktrn_astro-erudite.patch",
   "pr_body": "pr-bodies/jktrn_astro-erudite.md",
   "import_url": "https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/jktrn_astro-erudite.detect.json"
 }

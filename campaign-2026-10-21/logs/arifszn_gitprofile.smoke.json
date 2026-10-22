@@ -1,0 +1,38 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 6,
+  "missing_local_refs": [
+    "/gitprofile/apple-touch-icon.png",
+    "/gitprofile/assets/index-OGly83xM.js",
+    "/gitprofile/assets/index-om9misNi.css",
+    "/gitprofile/favicon.ico",
+    "/gitprofile/manifest.webmanifest",
+    "/gitprofile/registerSW.js"
+  ],
+  "missing_count": 6,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 1291,
+      "title": "Portfolio of Ariful Alam"
+    },
+    "/manifest.webmanifest": {
+      "status": 200,
+      "bytes": 317,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 67,
+      "title": null
+    },
+    "/sw.js": {
+      "status": 200,
+      "bytes": 1073,
+      "title": null
+    }
+  },
+  "ok": false
+}

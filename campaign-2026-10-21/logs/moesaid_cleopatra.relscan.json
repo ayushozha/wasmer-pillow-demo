@@ -1,0 +1,8 @@
+{
+ "dir": "/tmp/claude-0/camp2/moesaid_cleopatra/dist",
+ "relative_refs_checked": 24,
+ "missing_count": 1,
+ "missing": [
+  "index.html -> ./images/fav.png"
+ ]
+}

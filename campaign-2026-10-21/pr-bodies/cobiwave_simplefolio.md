@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds one plain-text line to the README's "Deployment 📦" section, matching its existing prose style. The line points to `https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio`, the Wasmer Edge import page for this repository. It says that `npm run build` outputs the site to `dist/` and that readers should import their own fork or copy to publish a customized portfolio. README only; no code or config changes.
+Adds a short paragraph and a "Deploy to Wasmer" badge to the README's "Deployment 📦" section, right after the Netlify recommendation. The badge links to `https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio`, the Wasmer Edge import page for this repository. The paragraph says that `npm run build` outputs the site to `dist/` and that readers should import their own fork or copy to publish a customized portfolio. README only; no code or config changes.
 
 ## Why this repository
 

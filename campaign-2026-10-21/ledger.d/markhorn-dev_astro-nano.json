@@ -22,5 +22,6 @@
   "patch": "patches/markhorn-dev_astro-nano.patch",
   "pr_body": "pr-bodies/markhorn-dev_astro-nano.md",
   "import_url": "https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-nano",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/markhorn-dev_astro-nano.detect.json"
 }

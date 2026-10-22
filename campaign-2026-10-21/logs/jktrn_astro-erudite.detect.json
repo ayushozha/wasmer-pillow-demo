@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:17Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "jktrn/astro-erudite",
+  "base_sha": "1926b88c549e8505bbe03b9e8585b0e247aaa0c1",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "bun",
+      "build": "bun run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "bun",
+      "build": "bun run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

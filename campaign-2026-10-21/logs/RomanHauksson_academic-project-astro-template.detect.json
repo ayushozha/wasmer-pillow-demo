@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:17Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "RomanHauksson/academic-project-astro-template",
+  "base_sha": "0e90d4f36bad6ee0af330964bdf0002fe451283d",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

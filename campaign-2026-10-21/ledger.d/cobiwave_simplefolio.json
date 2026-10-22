@@ -25,10 +25,11 @@
   "format_check": "PASS: prettier 2.8.1 --check README.md (/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/cobiwave_simplefolio.format.log)",
   "compat_notes": "gh-pages.yml triggers on `main` but default branch is `master` (workflow inert). master HEAD commit 2022-12-26; recent pushed_at 2026-01-21 reflects develop-branch work / PR triage.",
   "policy": "Read README (Deployment section recommends Netlify in plain prose), .github/workflows only, no CONTRIBUTING/PR template/AI policy. No wasmer mention or wasmer PRs. Owner PR #356 \"Initial configuration for V3 Simplefolio (gsap, vite)\" open since 2026-01-21 on develop; owner bulk-closed many old PRs on 2026-01-21. Fit concern: master unchanged since 2022 and a V3 rewrite may replace README; low-quality spam PRs common.",
-  "why": "Very popular plain static portfolio (Parcel to dist), README Deployment section already points to a static host; one plain-text line matches its style.",
+  "why": "Very popular plain static portfolio (Parcel to dist), README Deployment section already points to a static host; a short paragraph plus Deploy to Wasmer badge is added there.",
   "patch": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/patches/cobiwave_simplefolio.patch",
   "pr_body": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/pr-bodies/cobiwave_simplefolio.md",
   "import_url": "https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio",
   "detection_verified": "pending Codex browser check (Parcel default dist; no Staticfile needed)",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/cobiwave_simplefolio.detect.json"
 }

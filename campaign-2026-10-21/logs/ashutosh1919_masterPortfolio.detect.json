@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:16Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "ashutosh1919/masterPortfolio",
+  "base_sha": "33b04a568a92a44e538a1795d8eab742dac47d81",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "create-react-app",
+      "static_dir": "build",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "create-react-app",
+      "static_dir": "build",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

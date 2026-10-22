@@ -1,0 +1,47 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 48,
+  "local_refs_checked": 17,
+  "missing_local_refs": [
+    "/images/fav.png",
+    "/pages/alert.html",
+    "/pages/buttons.html",
+    "/pages/email.html",
+    "/pages/ui/button.html"
+  ],
+  "missing_count": 5,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 29867,
+      "title": "Cleopatra \u2014 Build beautiful dashboards"
+    },
+    "/pages/index-crypto.html": {
+      "status": 200,
+      "bytes": 77320,
+      "title": "Dashboard"
+    },
+    "/pages/apps/calendar.html": {
+      "status": 200,
+      "bytes": 61281,
+      "title": "Calendar"
+    },
+    "/pages/apps/email.html": {
+      "status": 200,
+      "bytes": 44159,
+      "title": "Email"
+    },
+    "/pages/extra/404.html": {
+      "status": 200,
+      "bytes": 27384,
+      "title": "404 - Page Not Found"
+    },
+    "/css/": {
+      "status": 200,
+      "bytes": 238,
+      "title": "Directory listing for /css/"
+    }
+  },
+  "ok": false
+}

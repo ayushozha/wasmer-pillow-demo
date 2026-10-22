@@ -21,5 +21,6 @@
   "patch": "patches/JustGoodUI_dante-astro-theme.patch",
   "pr_body": "pr-bodies/JustGoodUI_dante-astro-theme.md",
   "import_url": "https://wasmer.io/apps/create?github=JustGoodUI%2Fdante-astro-theme",
-  "detection_verified": "pending Codex browser check"
+  "detection_verified": "pending Codex browser check",
+  "detect_log": "logs/JustGoodUI_dante-astro-theme.detect.json"
 }

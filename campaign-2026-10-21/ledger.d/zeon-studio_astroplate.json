@@ -21,5 +21,6 @@
   "patch": "patches/zeon-studio_astroplate.patch",
   "pr_body": "pr-bodies/zeon-studio_astroplate.md",
   "import_url": "https://wasmer.io/apps/create?github=zeon-studio%2Fastroplate",
-  "detection_verified": "pending Codex browser check (build script runs Node generators before and after astro build; output is the standard dist)"
+  "detection_verified": "pending Codex browser check (build script runs Node generators before and after astro build; output is the standard dist)",
+  "detect_log": "logs/zeon-studio_astroplate.detect.json"
 }

@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:16Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "cobiwave/simplefolio",
+  "base_sha": "af03c0cb90d03844de2b5a4cf2045aa0f72c2442",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "parcel",
+      "static_dir": "dist",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "parcel",
+      "static_dir": "dist",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

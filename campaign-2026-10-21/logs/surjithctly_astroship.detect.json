@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:17Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "surjithctly/astroship",
+  "base_sha": "da1272bb141abf42a3435d81774df92f0427ad57",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "astro",
+      "static_dir": "dist",
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

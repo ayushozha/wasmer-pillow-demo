@@ -1,0 +1,16 @@
+{
+  "dir": ".",
+  "base": "/gitprofile/",
+  "html_files": 1,
+  "local_refs_checked": 6,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 1291,
+      "title": "Portfolio of Ariful Alam"
+    }
+  },
+  "ok": true
+}

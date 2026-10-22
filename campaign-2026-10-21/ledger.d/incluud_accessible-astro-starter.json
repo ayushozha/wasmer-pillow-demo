@@ -22,5 +22,6 @@
   "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=incluud%2Faccessible-astro-starter",
   "detection_verified": "pending Codex browser check; also needs an external build with network access to jsonplaceholder.typicode.com",
-  "reason": "The build is blocked here by sandbox egress (jsonplaceholder.typicode.com is fetched at build time), so I could not run the smoke test. It needs a build with network access (e.g. Codex) before READY."
+  "reason": "The build is blocked here by sandbox egress (jsonplaceholder.typicode.com is fetched at build time), so I could not run the smoke test. It needs a build with network access (e.g. Codex) before READY.",
+  "detect_log": "logs/incluud_accessible-astro-starter.detect.json"
 }

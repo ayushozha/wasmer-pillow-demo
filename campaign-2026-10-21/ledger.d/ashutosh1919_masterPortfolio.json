@@ -30,5 +30,6 @@
   "pr_body": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/pr-bodies/ashutosh1919_masterPortfolio.md",
   "import_url": "https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio",
   "detection_verified": "pending Codex browser check (CRA default build/; no Staticfile needed)",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/ashutosh1919_masterPortfolio.detect.json"
 }

@@ -1,0 +1,41 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 13,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 26608,
+      "title": "AdminKit Demo - Bootstrap 5 Admin Template"
+    },
+    "/pages-profile.html": {
+      "status": 200,
+      "bytes": 20799,
+      "title": "Profile | AdminKit Demo"
+    },
+    "/charts-chartjs.html": {
+      "status": 200,
+      "bytes": 18883,
+      "title": "Chart.js | AdminKit Demo"
+    },
+    "/pages-sign-in.html": {
+      "status": 200,
+      "bytes": 2675,
+      "title": "Sign In | AdminKit Demo"
+    },
+    "/js/app.js": {
+      "status": 200,
+      "bytes": 885350,
+      "title": null
+    },
+    "/css/app.css": {
+      "status": 200,
+      "bytes": 239994,
+      "title": null
+    }
+  },
+  "ok": true
+}

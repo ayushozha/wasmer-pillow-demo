@@ -1,0 +1,52 @@
+# 2026-10-22T04:38:05Z arifszn/gitprofile @ 0e58cd05cc68a1295694fc2003cf282c08c8f781 node v24.22.1 npm 11.19.1
+$ npm ci
+npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 562 packages, and audited 563 packages in 15s
+
+175 packages are looking for funding
+  run `npm fund` for details
+
+9 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+EXIT 0
+$ npm run build
+
+> @arifszn/gitprofile@4.0.0 build
+> tsc && vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+/*! 🌼 daisyUI 5.7.22 */
+✓ 412 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/registerSW.js                0.15 kB
+dist/manifest.webmanifest         0.31 kB
+dist/index.html                   1.29 kB │ gzip:   0.47 kB
+dist/assets/index-om9misNi.css  107.28 kB │ gzip:  19.11 kB
+dist/assets/index-OGly83xM.js   517.36 kB │ gzip: 170.56 kB
+
+✓ built in 1.84s
+
+ WARN  [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+ℹ
+PWA v1.3.0
+mode      generateSW
+precache  6 entries (611.42 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-0bb07689.js
+EXIT 0

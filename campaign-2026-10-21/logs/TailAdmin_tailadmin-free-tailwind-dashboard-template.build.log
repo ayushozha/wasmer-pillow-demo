@@ -1,0 +1,56 @@
+# 2026-10-22T04:38:05Z TailAdmin/tailadmin-free-tailwind-dashboard-template @ 1bd2dc42a8467ae0281cf00bd0050da4c9c4be07 node v24.22.1 npm 11.19.1
+$ npm ci
+
+added 563 packages, and audited 564 packages in 10s
+
+142 packages are looking for funding
+  run `npm fund` for details
+
+16 vulnerabilities (1 low, 2 moderate, 11 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+EXIT 0
+$ npm run build
+
+> tailadmin-free@2.4.0 build
+> webpack --config webpack.config.js
+
+assets by path src/images/ 2.9 MiB 89 assets
+assets by path *.html 1.53 MiB
+  asset form-elements.html 166 KiB [emitted]
+  asset profile.html 133 KiB [emitted]
+  asset index.html 128 KiB [emitted]
+  asset badge.html 121 KiB [emitted]
+  asset alerts.html 105 KiB [emitted]
+  asset buttons.html 104 KiB [emitted]
+  asset calendar.html 102 KiB [emitted]
+  + 11 assets
+assets by chunk 4.47 MiB (name: main)
+  asset bundle.js 4.28 MiB [emitted] (name: main)
+  asset style.css 186 KiB [emitted] (name: main)
+asset src/css/style.css 23.1 KiB [emitted] [from: src/css/style.css] [copied]
+asset favicon.ico 15 KiB [emitted]
+Entrypoint main 4.47 MiB (650 bytes) = style.css 186 KiB bundle.js 4.28 MiB 1 auxiliary asset
+runtime modules 8.11 KiB 35 modules
+orphan modules 207 KiB [orphan] 19 modules
+javascript modules 3.81 MiB
+  modules by path ./node_modules/ 3.76 MiB 71 modules
+  modules by path ./src/ 46.2 KiB
+    modules by path ./src/js/components/ 38.9 KiB 6 modules
+    modules by path ./src/js/*.js 7.33 KiB 2 modules
+    + 1 module
+css modules 183 KiB
+  modules by path ./node_modules/ 46.2 KiB 6 modules
+  modules by path ./src/ 137 KiB
+    css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/css/style.css (layer base) (in base) 88 bytes [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/css/style.css (1) 137 KiB [built] [code generated]
+./src/locales/en/common.json 18.1 KiB [built] [code generated]
+./src/images/flag/flag-us.svg 650 bytes (asset) 42 bytes (javascript) [built] [code generated]
+webpack 5.110.3 compiled successfully in 3879 ms
+EXIT 0

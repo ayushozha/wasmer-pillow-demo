@@ -22,5 +22,6 @@
   "patch": "patches/trevortylerlee_astro-micro.patch",
   "pr_body": "pr-bodies/trevortylerlee_astro-micro.md",
   "import_url": "https://wasmer.io/apps/create?github=trevortylerlee%2Fastro-micro",
-  "reason": null
+  "reason": null,
+  "detect_log": "logs/trevortylerlee_astro-micro.detect.json"
 }

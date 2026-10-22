@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:15Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "11ty/eleventy-base-blog",
+  "base_sha": "cf0cc1f1b5972d9d7d06b9a0f0488e61839f3207",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "eleventy",
+      "static_dir": "_site",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node-static",
+      "framework": "eleventy",
+      "static_dir": "_site",
+      "pm": "npm",
+      "build": "npm run build",
+      "node_version": null,
+      "start": "static-web-server"
+    },
+    "stderr_tail": []
+  }
+}

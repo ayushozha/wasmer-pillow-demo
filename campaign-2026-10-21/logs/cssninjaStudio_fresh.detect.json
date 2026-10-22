@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-22T04:39:17Z",
+  "tool": "anybuild 0.33.0 plan (wasmerio/shipit@587be231 local release build)",
+  "repo": "cssninjaStudio/fresh",
+  "base_sha": "420e73e597569ecf5d812017aeab3e696aef981d",
+  "base": {
+    "exit": 0,
+    "plan": {
+      "provider": "node",
+      "framework": "astro",
+      "static_dir": null,
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "astro dev"
+    },
+    "stderr_tail": []
+  },
+  "patched": {
+    "exit": 0,
+    "plan": {
+      "provider": "node",
+      "framework": "astro",
+      "static_dir": null,
+      "pm": "pnpm",
+      "build": "pnpm run build",
+      "node_version": null,
+      "start": "astro dev"
+    },
+    "stderr_tail": []
+  }
+}

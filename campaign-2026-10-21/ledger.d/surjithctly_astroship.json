@@ -21,5 +21,6 @@
   "patch": "patches/surjithctly_astroship.patch",
   "pr_body": "pr-bodies/surjithctly_astroship.md",
   "import_url": "https://wasmer.io/apps/create?github=surjithctly%2Fastroship",
-  "detection_verified": "pending Codex browser check"
+  "detection_verified": "pending Codex browser check",
+  "detect_log": "logs/surjithctly_astroship.detect.json"
 }

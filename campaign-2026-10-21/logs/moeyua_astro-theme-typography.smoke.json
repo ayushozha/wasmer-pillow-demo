@@ -1,0 +1,46 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 9,
+  "local_refs_checked": 17,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 8050,
+      "title": "\u6d3b\u7248\u5370\u5b57"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 5298,
+      "title": "\u6d3b\u7248\u5370\u5b57"
+    },
+    "/archive/": {
+      "status": 200,
+      "bytes": 5856,
+      "title": "\u6d3b\u7248\u5370\u5b57"
+    },
+    "/posts/hometown/": {
+      "status": 200,
+      "bytes": 14308,
+      "title": "\u6545\u9109"
+    },
+    "/categories/Articles/": {
+      "status": 200,
+      "bytes": 5576,
+      "title": "\u6d3b\u7248\u5370\u5b57"
+    },
+    "/atom.xml": {
+      "status": 200,
+      "bytes": 75454,
+      "title": "\u6d3b\u7248\u5370\u5b57"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 204,
+      "title": null
+    }
+  },
+  "ok": true
+}
