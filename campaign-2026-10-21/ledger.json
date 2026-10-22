@@ -140,7 +140,7 @@
       "reason": null,
       "detect_log": "logs/incluud_accessible-astro-starter.detect.json",
       "build_external": "PASS (root, local, network): Node 24.22.1 / npm 11.19.1 official runtime; npm ci; npm run build built 135 pages in 18.21s, the jsonplaceholder build-time fetch succeeded; npx eslint . EXIT 0 (no `lint` script); 8 routes 200; root-relative ref check found 0 refs because the minifier emits unquoted attrs, so no asset-coverage claim. npm audit: 25 (3 moderate, 21 high, 1 critical AVIF-only).",
-      "anybuild_replay": "FAIL: 2026-10-22T04:50:55Z flat replay of anybuild 0.33.0 planned steps for incluud_accessible-astro-starter @ dad27482fb329e904c6566935078a5e342169733 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/incluud_accessible-astro-starter.flat-replay.log",
+      "anybuild_replay": "FAIL_ENV: 2026-10-22T04:50:55Z flat replay of anybuild 0.33.0 planned steps for incluud_accessible-astro-starter @ dad27482fb329e904c6566935078a5e342169733 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/incluud_accessible-astro-starter.flat-replay.log Cause: build-time fetch ENOTFOUND jsonplaceholder.typicode.com (sandbox-denied) after npm install succeeded; root's networked normal build passed.",
       "upstream_pr": "https://github.com/incluud/accessible-astro-starter/pull/204 (OPEN, head ad6079d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
     },
     {
@@ -280,7 +280,7 @@
       "import_url": "https://wasmer.io/apps/create?github=satnaing%2Fastro-paper",
       "detection_verified": "yes (Codex browser, node-static)",
       "upstream_pr": "https://github.com/satnaing/astro-paper/pull/697 (OPEN, commit 2e927d5, reported by Codex/root)",
-      "anybuild_replay": "FAIL: 2026-10-22T04:47:00Z flat replay of anybuild 0.33.0 planned steps for satnaing_astro-paper @ 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/satnaing_astro-paper.flat-replay.log Fails here only at fonts.google.com (sandbox-denied); install with pnpm 10 succeeded."
+      "anybuild_replay": "FAIL_ENV: 2026-10-22T04:47:00Z flat replay of anybuild 0.33.0 planned steps for satnaing_astro-paper @ 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/satnaing_astro-paper.flat-replay.log Fails here only at fonts.google.com (sandbox-denied); install with pnpm 10 succeeded."
     },
     {
       "repo": "surjithctly/astroship",

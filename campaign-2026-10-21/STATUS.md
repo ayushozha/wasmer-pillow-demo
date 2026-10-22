@@ -7,12 +7,12 @@ PUBLISHED: 11 · READY: 11 · HOOK_BLOCKED: 0 · HELD_BUILD: 15 · HELD_POLICY: 
 | 1 | 11ty/eleventy-base-blog | PUBLISHED | 1548 | PASS | PASS | yes: Codex browser | https://github.com/11ty/eleventy-base-blog/pull/262 |
 | 2 | chrismwilliams/astro-theme-cactus | PUBLISHED | 1737 | PASS | PASS | yes | https://github.com/chrismwilliams/astro-theme-cactus/pull/495 |
 | 3 | cobiwave/simplefolio | PUBLISHED | 14221 | PASS | PASS | pending Codex browser ch | https://github.com/cobiwave/simplefolio/pull/377 |
-| 4 | incluud/accessible-astro-starter | PUBLISHED | 1190 | FAIL_ENV / ext PASS | FAIL | local anybuild plan: nod | https://github.com/incluud/accessible-astro-starter/pull/204 |
+| 4 | incluud/accessible-astro-starter | PUBLISHED | 1190 | FAIL_ENV / ext PASS | FAIL_ENV | local anybuild plan: nod | https://github.com/incluud/accessible-astro-starter/pull/204 |
 | 5 | JustGoodUI/dante-astro-theme | PUBLISHED | 518 | PASS | PASS | pending Codex browser ch | https://github.com/JustGoodUI/dante-astro-theme/pull/87 |
 | 6 | RomanHauksson/academic-project-astro-template | PUBLISHED | 554 | PASS | PASS | pending Codex browser ch | https://github.com/RomanHauksson/academic-project-astro-template/pull/76 |
 | 7 | RyanFitzgerald/devportfolio | PUBLISHED | 4985 | PASS | PASS | yes | https://github.com/RyanFitzgerald/devportfolio/pull/310 |
 | 8 | saicaca/fuwari | PUBLISHED | 5097 | PASS | PASS | yes | https://github.com/saicaca/fuwari/pull/780 |
-| 9 | satnaing/astro-paper | PUBLISHED | 5139 | FAIL_ENV / ext PASS | FAIL | yes | https://github.com/satnaing/astro-paper/pull/697 |
+| 9 | satnaing/astro-paper | PUBLISHED | 5139 | FAIL_ENV / ext PASS | FAIL_ENV | yes | https://github.com/satnaing/astro-paper/pull/697 |
 | 10 | surjithctly/astroship | PUBLISHED | 1988 | PASS | PASS | pending Codex browser ch | https://github.com/surjithctly/astroship/pull/68 |
 | 11 | trevortylerlee/astro-micro | PUBLISHED | 537 | PASS | PASS | pending Codex browser ch | https://github.com/trevortylerlee/astro-micro/pull/157 |
 | 12 | adminkit/adminkit | READY | 1657 | PASS | PASS | local anybuild plan: sta |  |
