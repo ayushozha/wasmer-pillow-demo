@@ -1,0 +1,161 @@
+# replay of T-mermaid-live  source=$S/rup/mermaid-js__mermaid-live-editor  upstream HEAD=eb4141dd51247259e95ecd890c1bf3dabf314913
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: SvelteKit
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: build
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/T-mermaid-live/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='build' pm=pnpm@10.34.7 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +750
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 750, reused 346, downloaded 95, added 71
+Progress: resolved 750, reused 346, downloaded 149, added 100
+Progress: resolved 750, reused 346, downloaded 215, added 130
+Progress: resolved 750, reused 346, downloaded 370, added 282
+Progress: resolved 750, reused 346, downloaded 403, added 620
+Progress: resolved 750, reused 346, downloaded 404, added 750, done
+.../node_modules/svelte-preprocess postinstall$ echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+.../node_modules/svelte-preprocess postinstall: [svelte-preprocess] Don't forget to install the preprocessors packages that will be used: sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+.../node_modules/svelte-preprocess postinstall: Done
+
+dependencies:
++ @codemirror/lang-json 6.0.2
++ @codemirror/lang-markdown 6.5.2
++ @codemirror/lang-yaml 6.1.3
++ @codemirror/language 6.12.4
++ @codemirror/state 6.7.6
++ @codemirror/view 6.43.14
++ @fontsource-variable/recursive 5.2.8
++ @fsegurai/codemirror-theme-vscode-dark 6.2.8
++ @fsegurai/codemirror-theme-vscode-light 6.2.8
++ @mermaid-js/examples 2.0.0
++ @mermaid-js/layout-tidy-tree 1.0.1
++ @mermaid-js/mermaid-zenuml 1.0.1
++ codemirror 6.0.2
++ dayjs 1.11.23
++ hammerjs 2.0.8
++ js-base64 3.7.8
++ lodash-es 4.18.1
++ mermaid 12.2.0
++ mode-watcher 1.1.0
++ monaco-editor 0.55.1
++ pako 2.1.0
++ plausible-tracker 0.3.9
++ random-word-slugs 0.1.7
++ svg-pan-zoom 3.6.2
++ svg2roughjs 3.2.3
++ uuid 14.0.3
+
+devDependencies:
++ @eslint/compat 2.1.1
++ @eslint/eslintrc 3.3.7
++ @eslint/js 10.0.1
++ @fortawesome/fontawesome-free 7.2.0
++ @iconify-json/hugeicons 1.2.35
++ @iconify-json/logos 1.2.17
++ @iconify-json/material-symbols 1.2.95
++ @iconify-json/mdi 1.2.3
++ @playwright/test 1.60.0
++ @sveltejs/adapter-static 3.0.10
++ @sveltejs/kit 2.69.1
++ @sveltejs/vite-plugin-svelte 7.2.0
++ @tailwindcss/typography 0.5.20
++ @tailwindcss/vite 4.3.3
++ @types/hammerjs 2.0.46
++ @types/lodash-es 4.17.12
++ @types/node 24.13.6
++ @types/pako 2.0.4
++ @vitest/coverage-v8 4.1.12
++ @vitest/ui 4.1.12
++ autoprefixer 10.6.1
++ bits-ui 2.19.5
++ c8 11.0.0
++ chai 6.2.2
++ clsx 2.1.1
++ cssnano 8.0.10
++ dotenv 17.4.2
++ eslint 10.4.1
++ eslint-config-prettier 10.1.8
++ eslint-plugin-es 4.1.0
++ eslint-plugin-no-only-tests 3.4.0
++ eslint-plugin-sort-keys 2.3.5
++ eslint-plugin-svelte 3.19.0
++ eslint-plugin-tailwindcss 3.18.3
++ eslint-plugin-unicorn 65.0.1
++ globals 17.6.0
++ husky 9.1.7
++ jsdom 29.1.1
++ lint-staged 17.0.8
++ lucide-svelte 1.0.1
++ node-html-parser 7.1.0
++ paneforge 1.0.2
++ prettier 3.9.10
++ prettier-plugin-svelte 4.1.1
++ prettier-plugin-tailwindcss 0.8.1
++ svelte 5.57.2
++ svelte-check 4.6.0
++ svelte-preprocess 6.0.5
++ svelte-sonner 1.1.1
++ tailwind-merge 3.6.0
++ tailwind-variants 3.2.2
++ tailwindcss 4.3.3
++ tslib 2.8.1
++ tw-animate-css 1.4.0
++ typescript 6.0.3
++ typescript-eslint 8.60.1
+... [trimmed install/build output] ...
+.svelte-kit/output/server/index.js                                                               132.13 kB │ gzip:  33.22 kB
+.svelte-kit/output/server/entries/pages/(app)/edit/_page.svelte.js                               506.51 kB │ gzip: 110.83 kB
+
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite-plugin-sveltekit-guard (70%)
+  - unplugin-icons (16%)
+  - vite-plugin-svelte:compile (5%)
+  - vite-plugin-svelte:preprocess (4%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+[32m✓ built in 23.15s[39m
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "docs"
+  ✔ done
+exit=0
+
+STATIC_DIR 'build' MISSING
+$ static-web-server --root=$S/replay/T-mermaid-live/static_app --log-level=info --port=3875 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/edit	text/html	0
+--	title	/edit	(none)	
+404	page	/view	text/html	0
+--	title	/view	(none)	
+SUMMARY pages=3 refs_checked=0 failures=3
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/edit	text/html	0
+FAIL	404	page	/view	text/html	0
+# static_app files: 0

@@ -1,0 +1,24 @@
+diff --git a/README.md b/README.md
+index ca07db7..f530e05 100644
+--- a/README.md
++++ b/README.md
+@@ -93,6 +93,12 @@ Visit: <http://localhost:8080>
+ docker stop mermaid-live-editor
+ ```
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=mermaid-js%2Fmermaid-live-editor)
++
++Wasmer runs `pnpm install` and `pnpm run build`, then serves the generated `docs/` folder (set in the `Staticfile`) as static files, using the defaults from `.env`. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account.
++
+ ## Setup
+ 
+ Below link will help you making a copy of the repository in your local system.
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..3ef78c9
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: docs

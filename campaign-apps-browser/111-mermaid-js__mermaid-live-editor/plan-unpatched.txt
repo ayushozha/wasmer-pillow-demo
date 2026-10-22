@@ -1,0 +1,21 @@
+  Detected static Node.js provider
+    Framework: SvelteKit
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: build
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/mermaid-js__mermaid-live-editor.json
+{
+ "commands": {
+  "install": "pnpm install",
+  "build": "pnpm run build",
+  "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+ },
+ "static_dir": "build",
+ "node_package_manager": "pnpm",
+ "node_install_inputs": [
+  "package.json"
+ ],
+ "node_framework": "sveltekit"
+}

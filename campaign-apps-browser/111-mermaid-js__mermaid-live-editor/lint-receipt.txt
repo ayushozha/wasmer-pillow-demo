@@ -1,0 +1,9 @@
+# prettier receipts (replay work dir, patched tree, repo's own prettier + config), 2026-10-22
+$ prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+$ prettier --check .   (as in the lint script; Staticfile has no inferable parser and is skipped on directory expansion)
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
