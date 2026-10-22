@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Gatsby
+    Server: Node.js
+    Package manager: npm
+    Output directory: public
+
+  Generated Anybuild at /tmp/AnybuilddvKoPZ
+Plan saved to $S/replay/r-gsd/plan.json

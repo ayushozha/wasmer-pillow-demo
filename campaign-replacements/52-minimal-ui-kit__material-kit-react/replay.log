@@ -1,0 +1,137 @@
+# replay of r-mkr  source=$S/rup/minimal-ui-kit__material-kit-react  upstream HEAD=69e780a40c455d664b2e13c525faf1d492a072a7
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/r-mkr/plan.json
+# provider=node-static install='yarn install' build='yarn run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=yarn@ inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ yarn --version
+1.22.22
+exit=0
+
+# staged before install: package.json yarn.lock 
+$ yarn install
+yarn install v1.22.22
+warning package.json: No license field
+warning @minimal/material-kit-react@3.0.0: No license field
+[1/5] Validating package.json...
+warning @minimal/material-kit-react@3.0.0: No license field
+[2/5] Resolving packages...
+[3/5] Fetching packages...
+[4/5] Linking dependencies...
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+[5/5] Building fresh packages...
+success Saved lockfile.
+Done in 36.42s.
+exit=0
+
+$ yarn run build
+yarn run v1.22.22
+$ tsc && vite build
+vite v6.2.5 building for production...
+(node:17667) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+transforming...
+✓ 1086 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                             0.49 kB │ gzip:   0.30 kB
+dist/assets/barlow-vietnamese-400-normal-Dcxa7Lg7.woff      5.18 kB
+dist/assets/barlow-vietnamese-500-normal-OcIDFxwj.woff      5.24 kB
+dist/assets/barlow-vietnamese-800-normal-B95advN4.woff      5.29 kB
+dist/assets/barlow-vietnamese-700-normal-CtEmPuX0.woff      5.30 kB
+dist/assets/barlow-vietnamese-600-normal--rM-LJkj.woff      5.30 kB
+dist/assets/barlow-vietnamese-400-normal-B8B3d_DU.woff2     6.75 kB
+dist/assets/barlow-vietnamese-500-normal-Ds--_AhX.woff2     6.89 kB
+dist/assets/barlow-vietnamese-700-normal-DQ6dlXpV.woff2     7.03 kB
+dist/assets/barlow-vietnamese-800-normal-DDiAQIYO.woff2     7.04 kB
+dist/assets/barlow-vietnamese-600-normal-gKnznvH6.woff2     7.04 kB
+dist/assets/barlow-latin-ext-400-normal-DGsTVCL_.woff      11.10 kB
+dist/assets/barlow-latin-ext-500-normal-B8S-Wk_i.woff      11.20 kB
+dist/assets/barlow-latin-ext-800-normal-DHjhf6ta.woff      11.29 kB
+dist/assets/barlow-latin-ext-700-normal-BgGd7r2K.woff      11.36 kB
+dist/assets/barlow-latin-ext-600-normal-DxfNEZIW.woff      11.37 kB
+dist/assets/barlow-latin-ext-400-normal-DsA6LmuC.woff2     13.32 kB
+dist/assets/barlow-latin-ext-500-normal-D9Q9nrG3.woff2     13.44 kB
+dist/assets/barlow-latin-ext-700-normal-sk8_kpF-.woff2     13.78 kB
+dist/assets/barlow-latin-ext-600-normal-Brs4HSvV.woff2     13.88 kB
+dist/assets/barlow-latin-ext-800-normal-uSolDMqV.woff2     14.05 kB
+dist/assets/dm-sans-latin-ext-wght-normal-D1bw2c55.woff2   18.12 kB
+dist/assets/barlow-latin-500-normal-BAaAwKGi.woff          18.42 kB
+dist/assets/barlow-latin-400-normal-Gqj0RTbC.woff          18.46 kB
+dist/assets/barlow-latin-800-normal-Dp3TYPAo.woff          18.53 kB
+dist/assets/barlow-latin-700-normal-AkmsA7ur.woff          18.64 kB
+dist/assets/barlow-latin-600-normal-DznpAvW9.woff          18.75 kB
+dist/assets/barlow-latin-500-normal-BRhHB0xN.woff2         20.96 kB
+dist/assets/barlow-latin-400-normal-CtwdMZP0.woff2         21.14 kB
+dist/assets/barlow-latin-700-normal-Bku5AOSK.woff2         21.72 kB
+dist/assets/barlow-latin-600-normal-DMnFtVx9.woff2         21.80 kB
+dist/assets/barlow-latin-800-normal-B50OFIWa.woff2         22.05 kB
+dist/assets/dm-sans-latin-wght-normal-DeBecvsH.woff2       36.85 kB
+dist/assets/index-UubDbPx4.css                             11.71 kB │ gzip:   2.21 kB
+dist/assets/config-global-BwHnWRtc.js                       0.05 kB │ gzip:   0.07 kB
+dist/assets/LastPage-BCAMhJjB.js                            0.25 kB │ gzip:   0.20 kB
+dist/assets/Card-Cpnfa5jq.js                                1.00 kB │ gzip:   0.59 kB
+dist/assets/page-not-found-BybY9qTJ.js                      1.02 kB │ gzip:   0.60 kB
+dist/assets/sign-in-5FE6QSzZ.js                             2.03 kB │ gzip:   0.92 kB
+dist/assets/FormControlLabel-CAmOtmfO.js                    4.49 kB │ gzip:   1.96 kB
+dist/assets/Checkbox-Byy6WR5w.js                            5.18 kB │ gzip:   2.11 kB
+dist/assets/format-number-Cq3HjwMU.js                       5.77 kB │ gzip:   2.21 kB
+dist/assets/Pagination-KMCdW1Xa.js                          9.85 kB │ gzip:   3.09 kB
+dist/assets/TextField-Cwz3CVEZ.js                          10.99 kB │ gzip:   3.67 kB
+dist/assets/Select-Bi9EmbSH.js                             21.93 kB │ gzip:   6.95 kB
+dist/assets/user-sNlekkEN.js                               22.19 kB │ gzip:   7.28 kB
+dist/assets/products-EsxUZWGL.js                           23.87 kB │ gzip:   8.40 kB
+dist/assets/dashboard-BSqdKx0V.js                          28.72 kB │ gzip:   8.90 kB
+dist/assets/blog-Clf_4SqT.js                               35.80 kB │ gzip:  11.68 kB
+dist/assets/react-apexcharts.min-Bmqo-KlG.js              578.45 kB │ gzip: 157.59 kB
+dist/assets/index-CtIaN6qI.js                             660.56 kB │ gzip: 215.44 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.38s
+Done in 19.74s.
+exit=0
+
+$ static-web-server --root=$S/replay/r-mkr/static_app --log-level=info --port=3762 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	494
+--	title	/	Minimal UI Kit	
+404	page	/user	text/html	0
+--	title	/user	(none)	
+404	page	/products	text/html	0
+--	title	/products	(none)	
+404	page	/blog	text/html	0
+--	title	/blog	(none)	
+404	page	/sign-in	text/html	0
+--	title	/sign-in	(none)	
+404	page	/404	text/html	0
+--	title	/404	(none)	
+200	ref	/favicon.ico	image/x-icon	15406
+200	ref	/assets/index-CtIaN6qI.js	text/javascript	660561
+200	ref	/assets/index-UubDbPx4.css	text/css	11707
+SUMMARY pages=6 refs_checked=3 failures=5
+FAIL	404	page	/user	text/html	0
+FAIL	404	page	/products	text/html	0
+FAIL	404	page	/blog	text/html	0
+FAIL	404	page	/sign-in	text/html	0
+FAIL	404	page	/404	text/html	0
+# static_app files: 151

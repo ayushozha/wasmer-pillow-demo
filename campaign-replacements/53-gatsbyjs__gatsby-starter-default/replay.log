@@ -1,0 +1,184 @@
+# replay of r-gsd  source=$S/rup/gatsbyjs__gatsby-starter-default  upstream HEAD=e75499fb47c626b252879f37cadc4d5167dfd59e
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Gatsby
+    Server: Node.js
+    Package manager: npm
+    Output directory: public
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/r-gsd/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='public' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+10.9.4
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"^18.2.0" from the root project
+npm warn   7 more (@gatsbyjs/reach-router, gatsby, gatsby-link, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"0.0.0-experimental-c8b778b7f-20220825" from react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+npm warn node_modules/react-server-dom-webpack
+npm warn   react-server-dom-webpack@"0.0.0-experimental-c8b778b7f-20220825" from gatsby@5.16.1
+npm warn   node_modules/gatsby
+npm warn
+npm warn Conflicting peer dependency: react@0.0.0-experimental-c8b778b7f-20220825
+npm warn node_modules/react
+npm warn   peer react@"0.0.0-experimental-c8b778b7f-20220825" from react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+npm warn   node_modules/react-server-dom-webpack
+npm warn     react-server-dom-webpack@"0.0.0-experimental-c8b778b7f-20220825" from gatsby@5.16.1
+npm warn     node_modules/gatsby
+npm warn deprecated @types/keyv@4.2.0: This is a stub types definition. keyv provides its own type definitions, so you do not need this installed.
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+npm warn deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+npm warn deprecated yurnalist@2.1.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 1373 packages, and audited 1374 packages in 1m
+
+110 vulnerabilities (8 low, 33 moderate, 67 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> gatsby-starter-default@0.1.0 build
+> gatsby build
+
+success compile gatsby files - 1.520s
+success load gatsby config - 0.046s
+success load plugins - 0.532s
+success onPreInit - 0.008s
+success initialize cache - 0.075s
+success copy gatsby files - 0.104s
+success Compiling Gatsby Functions - 0.356s
+success onPreBootstrap - 0.422s
+success createSchemaCustomization - 0.006s
+success Checking for changed pages - 0.003s
+success source and transform nodes - 0.231s
+info Writing GraphQL type definitions to $S/replay/r-gsd/work/.cache/schema.gql
+success building schema - 0.374s
+success createPages - 0.048s
+success createPagesStatefully - 0.139s
+info Total nodes: 42, SitePage nodes: 7 (use --verbose for breakdown)
+success Checking for changed pages - 0.000s
+success onPreExtractQueries - 0.000s
+success extract queries from components - 3.144s
+success write out redirect data - 0.099s
+success Build manifest and related icons - 0.328s
+success onPostBootstrap - 0.331s
+info bootstrap finished - 9.460s
+success write out requires - 0.011s
+warning Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+success Building production JavaScript and CSS bundles - 9.554s
+success Building HTML renderer - 18.914s
+success Execute page configs - 0.037s
+success Building Rendering Engines - 31.138s
+success Validating Rendering Engines - 1.052s
+success Caching Webpack compilations - 0.000s
+success run queries in workers - 0.060s - 7/7 116.72/s
+success Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 61.283s - 3/3 0.05/s
+success Merge worker state - 0.001s
+success Rewriting compilation hashes - 0.001s
+success Writing page-data.json and slice-data.json files to public directory - 0.003s - 5/7 2468.72/s
+success Building static HTML for pages - 2.581s - 5/5 1.94/s
+info There are no new or changed slice html files to build.
+success stitching slices - 0.005s
+success onPostBuild - 0.000s
+
+Pages
+
+┌ src/templates/using-dsg.js
+│ └ D /using-dsg/
+├ src/pages/404.js
+│ ├   /404/
+│ └   /404.html
+├ src/pages/index.js
+│ └   /
+├ src/pages/page-2.js
+│ └   /page-2/
+├ src/pages/using-ssr.js
+│ └ ∞ /using-ssr/
+└ src/pages/using-typescript.tsx
+  └   /using-typescript/
+
+  ╭────────────────────────────────────────────────────────────────────╮
+  │                                                                    │
+  │     (SSG) Generated at build time                                  │
+  │   D (DSG) Deferred static generation - page generated at runtime   │
+  │   ∞ (SSR) Server-side renders at runtime (uses getServerData)      │
+  │   λ (Function) Gatsby function                                     │
+  │                                                                    │
+  ╰────────────────────────────────────────────────────────────────────╯
+info Done building in 74.126870031 sec
+exit=0
+
+$ static-web-server --root=$S/replay/r-gsd/static_app --log-level=info --port=3751 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	18956
+--	title	/	Home | Gatsby Default Starter	
+200	page	/page-2/	text/html	12561
+--	title	/page-2/	Page two | Gatsby Default Starter	
+200	page	/using-typescript/	text/html	13236
+--	title	/using-typescript/	Using TypeScript | Gatsby Default Starter	
+404	page	/using-ssr	text/html	0
+--	title	/using-ssr	(none)	
+200	page	/404/	text/html	12571
+--	title	/404/	404: Not Found | Gatsby Default Starter	
+200	ref	/styles.8dc662cd4ca180166645.css	text/css	3875
+200	ref	/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	1623
+200	ref	/manifest.webmanifest	application/manifest+json	962
+200	ref	/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	3328
+200	ref	/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	5209
+200	ref	/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	5184
+200	ref	/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	8765
+200	ref	/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	12154
+200	ref	/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	16277
+200	ref	/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	28515
+200	ref	/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a	image/png	27232
+200	ref	/static/705185e5354a42a4570368356f29b7e5/215bb/example.png	image/png	2033
+404	ref	/using-ssr/	text/html	0
+404	ref	/using-dsg/	text/html	0
+200	ref	/webpack-runtime-6b044e35ca399da6206e.js	text/javascript	5007
+200	ref	/framework-a98cd6097609b685b73f.js	text/javascript	140356
+200	ref	/app-b999236ac28f50088405.js	text/javascript	66759
+SUMMARY pages=5 refs_checked=17 failures=3
+FAIL	404	page	/using-ssr	text/html	0
+FAIL	404	ref	/using-ssr/	text/html	0
+FAIL	404	ref	/using-dsg/	text/html	0
+# static_app files: 75
