@@ -1,0 +1,8 @@
+  Detected Node.js provider
+    Framework: SolidStart
+    Server: Node.js
+    Package manager: pnpm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneD/plans/zhengkyl__qrframe.json

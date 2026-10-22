@@ -1,0 +1,11 @@
+GitHub MCP receipts, 2026-10-22 (lane E)
+mcp__github__search_pull_requests query: "wasmer repo:rgab1508/PixelCraft repo:ricktu288/ray-optics repo:TeXlyre/texlyre repo:simonw/datasette-lite repo:antimatter15/splat repo:0xGG/crossnote-app"
+result: {"incomplete_results":false,"items":[],"total_count":0}
+mcp__github__search_repositories (same six repo: qualifiers) -> stars/forks/license/archived/default_branch/pushed_at:
+rgab1508/PixelCraft      1528 / 83   MIT        archived=false master pushed 2025-03-16T19:39:36Z
+ricktu288/ray-optics     1801 / 268  Apache-2.0 archived=false master pushed 2026-10-05T00:39:59Z
+TeXlyre/texlyre          988 / 79    AGPL-3.0   archived=false main   pushed 2026-10-16T14:14:05Z
+simonw/datasette-lite    410 / 43    Apache-2.0 archived=false main   pushed 2026-08-09T23:06:23Z
+antimatter15/splat       3077 / 335  MIT        archived=false main   pushed 2025-11-16T20:20:59Z
+0xGG/crossnote-app       1091 / 80   AGPL-3.0   archived=false main   pushed 2026-10-01T11:13:44Z
+Exclusion check: none of the six appears in $S/static_excl.txt, campaign-apps-2026-10-21/, campaign-replacements/ or existing campaign-apps-browser/ folders (101-203); none is a ClaudeA-owned repo.

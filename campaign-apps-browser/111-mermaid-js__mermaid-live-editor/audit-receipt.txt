@@ -1,0 +1,116 @@
+# audit receipts, replay work dir (same install), 2026-10-22, pnpm 10.34.7
+$ pnpm audit --prod
+│                     │ leaves detached subtree event handlers armed, causing  │
+│                     │ DOM XSS                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ dompurify                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=3.4.13 <=3.4.15                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=3.4.16                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ .>@mermaid-js/mermaid-zenuml>@zenuml/core>dompurify    │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-p98j-92pf-mc4p      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ low                 │ devalue: Sparse arrays emitted by uneval cause eager   │
+│                     │ allocation when evaluated                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ devalue                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=1.0.0 <=5.9.2                                        │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=5.9.3                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ .>mode-watcher>svelte>devalue                          │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-wf3x-273g-mvxv      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ low                 │ DOMPurify: `CUSTOM_ELEMENT_HANDLING` bypasses          │
+│                     │ `afterSanitizeElements` for allowed custom elements.   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ dompurify                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ <=3.4.11                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=3.4.12                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ .>monaco-editor>dompurify                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-c2j3-45gr-mqc4      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ low                 │ DOMPurify: IN_PLACE returns a force-removed rawtext    │
+│                     │ root whose text carries attacker markup — pure HTML    │
+│                     │ reparse executes                                       │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ dompurify                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ <=3.4.15                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=3.4.16                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ .>@mermaid-js/mermaid-zenuml>@zenuml/core>dompurify    │
+│                     │                                                        │
+│                     │ .>monaco-editor>dompurify                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-6688-9rhm-gjv2      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+31 vulnerabilities found
+Severity: 9 low | 17 moderate | 5 high
+exit=0
+
+$ pnpm audit (all) summary
+└─────────────────────┴────────────────────────────────────────────────────────┘
+75 vulnerabilities found
+Severity: 16 low | 34 moderate | 25 high
+
+$ python3 -I adv.py mermaid@12.2.0 monaco-editor@0.55.1 dompurify@3.4.15 @sveltejs/kit@2.69.1 svelte@5.57.2 codemirror@6.0.2 lodash-es@4.18.1 pako@2.1.0 js-base64@3.7.8 dayjs@1.11.23 svg-pan-zoom@3.6.2 uuid@14.0.3 hammerjs@2.0.8 plausible-tracker@0.3.9 katex@0.18.10 d3@7.9.0 cytoscape@3.34.0 elkjs@0.9.3 
+mermaid@12.2.0: 0 advisories
+monaco-editor@0.55.1: 0 advisories
+dompurify@3.4.15: 2 advisories
+   low       GHSA-p98j-92pf-mc4p    vuln=>=3.4.13 <=3.4.15 | DOMPurify: IN_PLACE: node-removing afterSanitize hook leaves detached subtree event handle
+   low       GHSA-6688-9rhm-gjv2    vuln=<=3.4.15 | DOMPurify: IN_PLACE returns a force-removed rawtext root whose text carries attacker marku
+@sveltejs/kit@2.69.1: 1 advisories
+   moderate  GHSA-29g2-3rmr-qm68    vuln=<=2.70.1 | SvelteKit: ReDoS (O(n^2)) in content negotiation — unauthenticated DoS via the Accept head
+svelte@5.57.2: 0 advisories
+codemirror@6.0.2: 0 advisories
+lodash-es@4.18.1: 0 advisories
+pako@2.1.0: 0 advisories
+js-base64@3.7.8: 0 advisories
+dayjs@1.11.23: 0 advisories
+svg-pan-zoom@3.6.2: 0 advisories
+uuid@14.0.3: 0 advisories
+hammerjs@2.0.8: 0 advisories
+plausible-tracker@0.3.9: 0 advisories
+katex@0.18.10: 0 advisories
+d3@7.9.0: 0 advisories
+cytoscape@3.34.0: 0 advisories
+elkjs@0.9.3: 0 advisories
+exit=0
+
+$ pnpm audit --prod --json | (severity, module, vulnerable_versions, title, first path) for high/moderate
+high devalue >=5.1.0 <=5.9.2 | devalue: `stringify`/`uneval` serialize shared memory | .>mode-watcher>svelte>devalue
+high devalue <=5.9.2 | devalue: Repeated primitive strings cause quadratic expansion in uneval | .>mode-watcher>svelte>devalue
+high devalue >=5.8.0 <=5.9.2 | devalue: stringifyAsync can cause an unhandled rejection despite a caught return | .>mode-watcher>svelte>devalue
+high braces <=3.0.3 | braces vulnerable to stack-exhaustion denial of service through deeply nested pa | .>@mermaid-js/mermaid-zenuml>@zenuml/core>tailwindcss>chokidar>braces
+high devalue <=5.9.2 | devalue: Custom ArrayBuffer revivers can bypass typed-array allocation validatio | .>mode-watcher>svelte>devalue
+moderate dompurify >=3.1.3 <=3.3.1 | DOMPurify contains a Cross-site Scripting vulnerability | .>monaco-editor>dompurify
+moderate dompurify <3.4.0 | DOMPurify: FORBID_TAGS bypassed by function-based ADD_TAGS predicate (asymmetry  | .>monaco-editor>dompurify
+moderate dompurify >=1.0.10 <3.4.0 | DOMPurify has a SAFE_FOR_TEMPLATES bypass in RETURN_DOM mode | .>monaco-editor>dompurify
+moderate dompurify >=3.0.1 <3.4.0 | DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallbac | .>monaco-editor>dompurify
+moderate dompurify <=3.4.5 | DOMPurify: Cross-realm IN_PLACE sanitization leaves executable markup intact via | .>monaco-editor>dompurify
+moderate dompurify <=3.4.5 | DOMPurify: IN_PLACE mode preserves attributes of a clobbered root element, allow | .>monaco-editor>dompurify
+moderate dompurify <=3.4.6 | DOMPurify IN_PLACE Sanitization Bypass via Attached Shadow Root Inside <template | .>monaco-editor>dompurify
+moderate dompurify <=3.4.10 | DOMPurify: Permanent `ALLOWED_ATTR` pollution via `setConfig()` bypassing the ho | .>monaco-editor>dompurify
+moderate dompurify <3.4.7 | DOMPurify: Hook mutation of `data.allowedTags` / `data.allowedAttributes` perman | .>monaco-editor>dompurify
+moderate dompurify <=3.3.3 | DOMPurify's ADD_TAGS function form bypasses FORBID_TAGS due to short-circuit eva | .>monaco-editor>dompurify
+moderate dompurify <=3.3.1 | DOMPurify ADD_ATTR predicate skips URI validation | .>monaco-editor>dompurify
+moderate dompurify <=3.3.1 | DOMPurify USE_PROFILES prototype pollution allows event handlers | .>monaco-editor>dompurify
+moderate dompurify <3.3.2 | DOMPurify is vulnerable to mutation-XSS via Re-Contextualization  | .>monaco-editor>dompurify
+moderate dompurify <=3.4.12 | DOMPurify: IN_PLACE hook removal leaves a detached subtree executable, causing X | .>monaco-editor>dompurify
+moderate devalue <=5.9.2 | devalue: Residual sparse-array CPU amplification in uneval | .>mode-watcher>svelte>devalue
+moderate devalue <=5.9.2 | devalue: Malformed null-prototype object keys bypass __proto__ rejection via pro | .>mode-watcher>svelte>devalue
+moderate postcss-selector-parser <7.1.6 | PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion | .>@mermaid-js/mermaid-zenuml>@zenuml/core>tailwindcss>postcss-selector-parser

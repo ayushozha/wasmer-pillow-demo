@@ -23,6 +23,9 @@ Prepare-only. Proof = exact Anybuild v0.33.0 flat replay + saved receipts, serve
 ## Builder holds (see each evidence.md)
 103 it-tools, 113 omni-tools (history routes) · 106 squoosh, 112 excalidraw, 114 svgomg (Node provider/dev-server start) · 110 cssgridgenerator, 111 mermaid-live-editor, 115 erd-editor (output-dir/Node fixes being tested) · 108 oklch-picker (fit/analytics) · 156 learnGitBranching (`generate` beats `build`) · 157 VERT (required PUB_* env) · 158 mini-qr, 205 rawgraphs, 206 maputnik (`.npmrc` not staged) · 207 llm-viz (Yarn 4 not pinned, `.yarnrc.yml` not staged) · 159 markdown-online-editor, 209 maptoposter-online (FAIL_ENV: blocked mirrors/CDN) · 160 bentopdf (detected as VitePress docs; CLA) · 161 reveal.js, 162 doocs/md, 163 BassoonTracker (library/monorepo/no index).
 
+## Lane E (root-supplied leads, 301-306)
+301 PixelCraft, 304 datasette-lite (also <500★), 305 splat — no build step → other session's lane (305's default sample is fetched from Hugging Face; licence unverified). 302 ray-optics — HOLD: Node provider with `webpack serve` dev-server start; `dist/` not committed (plan/source only, not replayed: disk). 303 texlyre — HOLD: base `/texlyre/` hardcoded in 3 files, no env/flag override; build downloads a 522 MB archive (plan/source only). 306 crossnote-app — HOLD: `pnpm-workspace.yaml` overrides not staged → ERR_PNPM_LOCKFILE_CONFIG_MISMATCH (replayed); defaults to third-party git proxy.
+
 ## Anybuild v0.33.0 issues found by these lanes (for wasmerio)
 - `.npmrc`, `.yarnrc.yml`, `pnpm-workspace.yaml` never staged before install (install_context.rs:124, node.bzl:95-140) → ERESOLVE / catalog / PnP failures.
 - Yarn version floats (`packageManager: yarn@4` ignored); pnpm `packageManager` pin can disable the allow-all-builds env.
