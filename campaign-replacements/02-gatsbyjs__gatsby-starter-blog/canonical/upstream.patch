@@ -1,0 +1,17 @@
+diff --git a/starters/blog/README.md b/starters/blog/README.md
+index f272fcd..6a87c1c 100644
+--- a/starters/blog/README.md
++++ b/starters/blog/README.md
+@@ -46,6 +46,12 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+ 
+ [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
+ 
++## 🚀 Quick start (Wasmer)
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=gatsbyjs%2Fgatsby-starter-blog)
++
++Wasmer detects the Gatsby site, runs `npm install` and `npm run build`, and serves the generated `public` folder as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the site and redeploy on every push, fork this starter and import your own repository on Wasmer.
++
+ ## 🧐 What's inside?
+ 
+ A quick look at the top-level files and directories you'll see in a typical Gatsby project.

@@ -1,3 +1,5 @@
+> **Root correction (2026-10-22): this repo is a read-only mirror — do NOT publish here.** The canonical patch against `gatsbyjs/gatsby` `starters/blog/README.md` is in `canonical/`.
+
 # gatsbyjs/gatsby-starter-blog: evidence
 
 **Verdict: CONDITIONAL.** The build and smoke test pass under the exact replay. The condition is low maintainer activity, plus a history of vendor deploy-button PRs being closed (details below).

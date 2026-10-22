@@ -1,0 +1,1 @@
+chore(starters): add Deploy to Wasmer button to gatsby-starter-blog README
