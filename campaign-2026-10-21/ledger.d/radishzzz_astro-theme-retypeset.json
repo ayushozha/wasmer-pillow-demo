@@ -23,7 +23,7 @@
   "pr_body": "pr-bodies/radishzzz_astro-theme-retypeset.md",
   "import_url": "https://wasmer.io/apps/create?github=radishzzz%2Fastro-theme-retypeset",
   "reason": null,
-  "build_external": "PASS (root, local, network) @a636b6d3: portable Node 24.22.1 + registry pnpm 10.33.0; pnpm install --frozen-lockfile and unchanged pnpm run build EXIT 0; astro check 59 files 0 errors/warnings/hints; 103 pages; 16 optimized WebPs; apply-lqip 16 cached images / 108 HTML image instances; preview /, /en/, /en/posts/markdown-extended-features/, /ja/posts/rashomon/, sitemap, favicon, hashed CSS/JS/WebP 200; missing route 404; image.radishz.cc reachable; source clean.",
+  "build_external": "PASS (root, local, network) @a636b6d3: portable Node 24.22.1 + registry pnpm 10.33.0; pnpm install --frozen-lockfile and unchanged pnpm run build EXIT 0; astro check 59 files 0 errors/warnings/hints; 103 pages; 16 optimized WebPs; apply-lqip 16 cached images / 108 HTML image instances; preview /, /en/, /en/posts/markdown-extended-features/, /ja/posts/rashomon/, sitemap, favicon, hashed CSS/JS/WebP 200; missing route 404; image.radishzz.cc reachable; source clean.",
   "hook_check": "simple-git-hooks installed via `pnpm exec simple-git-hooks` (pnpm 10.33.0); pre-commit `pnpm lint-staged` ran on the staging commit: 'could not find any staged files matching configured tasks', EXIT 0 (logs/radishzzz_astro-theme-retypeset.hook-commit.log). No bypass.",
   "anybuild_replay": "NOT RUN here: replay would fail on sandbox-denied image.radishzz.cc; root's normal build covers the build commands (frozen install vs Anybuild's non-frozen `pnpm install` with the same pinned pnpm 10.33.0)."
 }
