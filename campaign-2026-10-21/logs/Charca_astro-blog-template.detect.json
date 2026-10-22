@@ -1,0 +1,22 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "detwt_Charca_astro-blog-template",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build",
+            "start": "static-web-server --root=/tmp/claude-0/camp2/detwt_Charca_astro-blog-template/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "dist",
+        "node_package_manager": "npm",
+        "node_framework": "astro",
+        "node_server": "node",
+        "node_build_command": "npm run build",
+        "npm_version": "11",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "astro-blog-template"
+    },
+    "services": []
+}

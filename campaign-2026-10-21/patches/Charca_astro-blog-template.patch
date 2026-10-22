@@ -1,0 +1,29 @@
+From 3dd2e80d051c6626cbfe4bb9e362bd3633138e27 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:11:48 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index 8450feb..36194e7 100644
+--- a/README.md
++++ b/README.md
+@@ -16,6 +16,12 @@ npm init astro -- --template Charca/astro-blog-template
+ 
+ [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
+ 
++### Deploy to Wasmer Edge
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Charca%2Fastro-blog-template)
++
++The site builds to static files in `./dist/` (`npm run build`), which Wasmer Edge can host. The button imports this repository; to customize your blog, import your own copy or fork instead.
++
+ ## ✨ Features:
+ 
+ - ✅ Astro 4.0
+-- 
+2.43.0
+

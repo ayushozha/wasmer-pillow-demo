@@ -1,0 +1,41 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 5,
+  "local_refs_checked": 17,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 10228,
+      "title": "My Astro Blog"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 10679,
+      "title": "About"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 9412,
+      "title": "Blog"
+    },
+    "/blog/hello-world/": {
+      "status": 200,
+      "bytes": 9988,
+      "title": "Hello World \ud83d\udc4b"
+    },
+    "/blog/markdown-test/": {
+      "status": 200,
+      "bytes": 31202,
+      "title": "Markdown Test Page"
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 23,
+      "title": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,77 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/Charca_astro-blog-template/opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 10228
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 10679
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 9419
+      }
+    ],
+    "/blog/hello-world/": [
+      {
+        "path": "/blog/hello-world/",
+        "status": 200,
+        "location": null,
+        "bytes": 10003
+      }
+    ],
+    "/blog/markdown-test/": [
+      {
+        "path": "/blog/markdown-test/",
+        "status": 200,
+        "location": null,
+        "bytes": 31202
+      }
+    ],
+    "/robots.txt": [
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "location": null,
+        "bytes": 23
+      }
+    ],
+    "/blog": [
+      {
+        "path": "/blog",
+        "status": 308,
+        "location": "/blog/",
+        "bytes": 0
+      },
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 9419
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

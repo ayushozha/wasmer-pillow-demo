@@ -1,0 +1,36 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 3,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 1320,
+      "title": "Vite App"
+    },
+    "/assets/favicon-C49brna2.svg": {
+      "status": 200,
+      "bytes": 1524,
+      "title": null
+    },
+    "/assets/index-D14XoOZb.js": {
+      "status": 200,
+      "bytes": 768287,
+      "title": null
+    },
+    "/assets/index-BOjkNZ2m.css": {
+      "status": 200,
+      "bytes": 61879,
+      "title": null
+    },
+    "/_redirects": {
+      "status": 200,
+      "bytes": 18,
+      "title": null
+    }
+  },
+  "ok": true
+}
