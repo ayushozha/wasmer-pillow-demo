@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/moeyua_astro-theme-typography//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 10453
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 5403
+      }
+    ],
+    "/archive/": [
+      {
+        "path": "/archive/",
+        "status": 200,
+        "location": null,
+        "bytes": 5933
+      }
+    ],
+    "/posts/hometown/": [
+      {
+        "path": "/posts/hometown/",
+        "status": 200,
+        "location": null,
+        "bytes": 24329
+      }
+    ],
+    "/categories/Articles/": [
+      {
+        "path": "/categories/Articles/",
+        "status": 200,
+        "location": null,
+        "bytes": 5653
+      }
+    ],
+    "/atom.xml": [
+      {
+        "path": "/atom.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 104514
+      }
+    ],
+    "/sitemap-index.xml": [
+      {
+        "path": "/sitemap-index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 204
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

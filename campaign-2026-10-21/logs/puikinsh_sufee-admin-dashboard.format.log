@@ -1,0 +1,5 @@
+# 2026-10-22T05:06:50Z prettier 3.9.6 (repo devDependency, .prettierrc.json)
+$ npx prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+EXIT 0

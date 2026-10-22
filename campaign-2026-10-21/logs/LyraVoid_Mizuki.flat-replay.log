@@ -1,0 +1,321 @@
+# 2026-10-22T05:05:30Z flat replay of anybuild 0.33.0 planned steps for LyraVoid_Mizuki @ da138f93f88a8765259d627433f1af0b959c9845 (v24.22.1; 11.19.1; pnpm: n/a; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/LyraVoid_Mizuki && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/LyraVoid_Mizuki/src --out /tmp/claude-0/flat-replay/LyraVoid_Mizuki/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/LyraVoid_Mizuki/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/LyraVoid_Mizuki/plan.json
+EXIT 0
+# env per node.bzl for pnpm: CI=true, pnpm_config_dangerously_allow_all_builds=true, pnpm_config_minimum_release_age=0, pnpm_config_strict_dep_builds=false
+# pinned per plan: node_version=24 (default) pnpm_version=11.5.3 -> pnpm on PATH 11.5.3; npm_version=None bun_version=None
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp && pnpm install)
+? Verifying lockfile against supply-chain policies (1244 entries)...
+✓ Lockfile passes supply-chain policies (1244 entries in 13ms)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1107
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1107, reused 1107, downloaded 0, added 1107, done
+
+dependencies:
++ @astrojs/check 0.9.9
++ @astrojs/markdown-remark 7.2.1
++ @astrojs/mdx 7.0.3
++ @astrojs/rss 4.0.19
++ @astrojs/sitemap 3.7.3
++ @astrojs/svelte 9.0.1
++ @expressive-code/core 0.44.1
++ @expressive-code/plugin-collapsible-sections 0.44.1
++ @expressive-code/plugin-line-numbers 0.44.1
++ @fancyapps/ui 6.1.14
++ @iconify/svelte 5.2.2
++ @swup/astro 1.8.0
++ @tailwindcss/typography 0.5.20
++ @tailwindcss/vite 4.3.3
++ astro 7.1.3
++ astro-expressive-code 0.44.1
++ astro-icon 1.1.5
++ axios 1.18.1
++ dayjs 1.11.21
++ ec-lang-logo 1.0.5
++ github-slugger 2.0.0
++ gray-matter 4.0.3
++ hastscript 9.0.1
++ katex 0.16.47
++ l2d-widget 0.1.0
++ marked 18.0.7
++ node-html-parser 8.0.4
++ oddmisc 1.2.8
++ overlayscrollbars 2.16.0
++ pagefind 1.5.2
++ pako 3.0.1
++ qrcode 1.5.4
++ reading-time 1.5.0
++ rehype-autolink-headings 7.1.0
++ rehype-code-group 0.3.1
++ rehype-components 0.3.0
++ rehype-katex 7.0.1
++ rehype-slug 6.0.0
++ remark-directive 4.0.0
++ remark-directive-rehype 1.0.0
++ remark-math 6.0.0
++ remark-sectionize 2.1.0
++ sanitize-html 2.17.6
++ sharp 0.35.3
++ stylus 0.64.0
++ svelte 5.56.7
++ tailwindcss 4.3.3
++ takumi-js 2.5.7
++ typescript 6.0.3
++ unist-util-visit 5.1.0
+
+devDependencies:
++ @astrojs/ts-plugin 1.10.10
++ @biomejs/biome 2.5.5
++ @iconify-json/fa7-brands 1.2.4
++ @iconify-json/fa7-regular 1.2.3
++ @iconify-json/fa7-solid 1.2.5
++ @iconify-json/material-symbols 1.2.86
++ @iconify-json/mdi 1.2.3
++ @iconify-json/simple-icons 1.2.91
++ @rollup/plugin-yaml 5.0.0
++ @types/hast 3.0.5
++ @types/mdast 4.0.4
++ @types/pako 2.0.4
++ @types/qrcode 1.5.6
++ @types/sanitize-html 2.16.1
++ fast-xml-parser 5.10.1
++ fonteditor-core 2.6.3
++ glob 13.0.6
++ hast-util-from-html 2.0.3
++ postcss-import 16.1.1
++ postcss-nesting 14.0.0
+
+Done in 2.4s using pnpm v11.5.3
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/LyraVoid_Mizuki/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp && pnpm run build)
+? Verifying lockfile against supply-chain policies (1244 entries)...
+✓ Lockfile passes supply-chain policies (1244 entries in 10ms)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 1.4s using pnpm v11.5.3
+$ node scripts/sync-content.js || true
+已加载 .env 配置文件
+
+开始同步内容...
+
+内容目录不存在：/tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/content
+将使用独立仓库模式
+警告：未设置 CONTENT_REPO_URL，将使用本地内容
+提示：请设置 CONTENT_REPO_URL 环境变量，或手动创建内容目录
+$ node scripts/update-anime.mjs && astro build && node scripts/check-global-style-loading.mjs && pagefind --site dist && node scripts/check-font-loading.mjs
+Anime mode is "local", skipping data update.
+[33m[1m05:05:39[22m [WARN] [vite][39m Cannot optimize dependency: [36m@iconify/svelte[39m, present in client 'optimizeDeps.include'
+[2m05:05:40[22m [34m[content][39m Syncing content
+[2m05:05:41[22m [34m[content][39m Synced content
+[2m05:05:41[22m [34m[types][39m Generated [2m2.91s[22m
+[2m05:05:41[22m [34m[build][39m output: [34m"static"[39m
+[2m05:05:41[22m [34m[build][39m mode: [34m"static"[39m
+[2m05:05:41[22m [34m[build][39m directory: [34m/tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/dist/[39m
+[2m05:05:41[22m [34m[build][39m Collecting build info...
+[2m05:05:41[22m [34m[build][39m [32m✓ Completed in 3.07s.[39m
+[2m05:05:41[22m [34m[build][39m Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://api.fontsource.org/v1/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:420:16
+    at async Object.init (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/providers/index.js:63:29)
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'api.fontsource.org'
+    }
+  }
+}
+[33m[1m05:05:45[22m [WARN] [assets][39m No data found for font family [1mJetBrains Mono[22m. Review your configuration
+[2m05:05:48[22m [34m[assets][39m Copying fonts (2 files)...
+[2m05:05:50[22m [34m[vite][39m [32m✓ built in 8.72s[39m
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://api.fontsource.org/v1/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:420:16
+    at async Object.init (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/providers/index.js:63:29)
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'api.fontsource.org'
+    }
+  }
+}
+[33m[1m05:05:53[22m [WARN] [assets][39m No data found for font family [1mJetBrains Mono[22m. Review your configuration
+[2m05:05:55[22m [34m[vite][39m [32m✓ built in 4.39s[39m
+[2m05:05:55[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+相册 ExternalExample 已设置为隐藏，跳过显示
+相册 HiddenExample 缺少 cover 文件
+[2m05:05:55[22m   [34m├─[39m [2m/404.html[22m [2m(+84ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/about/index.html[22m [2m(+25ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/ai-tools/index.html[22m [2m(+22ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/albums/AcgExample/index.html[22m [2m(+19ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/albums/EncryptedExample/index.html[22m [2m(+32ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/albums/index.html[22m相册 ExternalExample 已设置为隐藏，跳过显示
+相册 HiddenExample 缺少 cover 文件
+ [2m(+25ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/anime/index.html[22m [2m(+32ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/api/allPostMeta.json[22m [2m(+4ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/api/calendar-data.json[22m [2m(+3ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/archive/index.html[22m [2m(+17ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/atom/index.html[22m [2m(+19ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/atom.xml[22m [2m(+151ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/devices/index.html[22m [2m(+21ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/diary/index.html[22m [2m(+18ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/friends/index.html[22m [2m(+18ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/posts/markdown-tutorial/index.html[22m [2m(+28ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/posts/content-pipeline-fixture/index.html[22m [2m(+28ms)[22m 
+[2m05:05:55[22m   [34m├─[39m [2m/posts/image-grid-demo/index.html[22m [2m(+19ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/markdown-extended/index.html[22m [2m(+28ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/guide/index.html[22m [2m(+19ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/encrypted-post/index.html[22m [2m(+35ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/encrypted-example/index.html[22m [2m(+46ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/markdown-mermaid/index.html[22m [2m(+24ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/posts/video/index.html[22m [2m(+21ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/projects/index.html[22m [2m(+31ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/robots.txt[22m [2m(+3ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/rss/index.html[22m [2m(+17ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/rss.xml[22m [2m(+117ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/skills/index.html[22m [2m(+23ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/timeline/index.html[22m [2m(+23ms)[22m 
+[2m05:05:56[22m   [34m├─[39m [2m/index.html[22m [2m(+18ms)[22m 
+[2m05:05:56[22m [32m✓ Completed in 1.20s.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m05:05:56[22m   [32m▶[39m /_astro/avatar.DodcwRNI_ZrnMU5.webp [2m(before: 46kB, after: 48kB)[22m [2m(+105ms)[22m [2m(1/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/2.D4iQai6k_2eKvT9.webp [2m(before: 175kB, after: 61kB)[22m [2m(+131ms)[22m [2m(2/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/1.Dx4M_8s7_xjdyQ.webp [2m(before: 171kB, after: 61kB)[22m [2m(+151ms)[22m [2m(3/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/3.CDMGxzMp_25Ltgh.webp [2m(before: 167kB, after: 59kB)[22m [2m(+159ms)[22m [2m(4/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/4.CiXs-4CC_Z1Qn1AN.webp [2m(before: 116kB, after: 54kB)[22m [2m(+129ms)[22m [2m(5/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/3.CDMGxzMp_1WwyYj.webp [2m(before: 167kB, after: 125kB)[22m [2m(+200ms)[22m [2m(6/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/2.D4iQai6k_Z1BMP67.webp [2m(before: 175kB, after: 128kB)[22m [2m(+243ms)[22m [2m(7/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1JvqA1.webp [2m(before: 171kB, after: 135kB)[22m [2m(+229ms)[22m [2m(8/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/4.CiXs-4CC_Z2v2z5m.webp [2m(before: 116kB, after: 89kB)[22m [2m(+147ms)[22m [2m(9/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/2.D4iQai6k_cRHlU.webp [2m(before: 175kB, after: 61kB)[22m [2m(+100ms)[22m [2m(10/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/3.CDMGxzMp_imGhD.webp [2m(before: 167kB, after: 59kB)[22m [2m(+121ms)[22m [2m(11/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/4.CiXs-4CC_Z1EJhgV.webp [2m(before: 116kB, after: 54kB)[22m [2m(+111ms)[22m [2m(12/62)[22m
+[2m05:05:56[22m   [32m▶[39m /_astro/1.Dx4M_8s7_Z1tyzXn.webp [2m(before: 171kB, after: 61kB)[22m [2m(+124ms)[22m [2m(13/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/4.CiXs-4CC_Z2Se7C.webp [2m(before: 116kB, after: 89kB)[22m [2m(+183ms)[22m [2m(14/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/3.CDMGxzMp_1dtFLj.webp [2m(before: 167kB, after: 125kB)[22m [2m(+202ms)[22m [2m(15/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/2.D4iQai6k_Z1YLOLD.webp [2m(before: 175kB, after: 128kB)[22m [2m(+229ms)[22m [2m(16/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1mwqTu.webp [2m(before: 171kB, after: 135kB)[22m [2m(+235ms)[22m [2m(17/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/2.D6cBMQ9G_1tyDmS.webp [2m(before: 208kB, after: 98kB)[22m [2m(+113ms)[22m [2m(18/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/1.VsNU6eh0_Z1nLjtJ.webp [2m(before: 207kB, after: 87kB)[22m [2m(+151ms)[22m [2m(19/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2r3hF9.webp [2m(before: 239kB, after: 126kB)[22m [2m(+126ms)[22m [2m(20/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/4.QDTqOXV__1HhFSX.webp [2m(before: 105kB, after: 39kB)[22m [2m(+114ms)[22m [2m(21/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/2.D6cBMQ9G_Z1U6eAC.webp [2m(before: 208kB, after: 204kB)[22m [2m(+216ms)[22m [2m(22/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZvjR0N.webp [2m(before: 207kB, after: 138kB)[22m [2m(+203ms)[22m [2m(23/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/4.QDTqOXV__Z2SNFc.webp [2m(before: 105kB, after: 65kB)[22m [2m(+195ms)[22m [2m(24/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/3.SdUNinQ4_ZKw1OI.webp [2m(before: 239kB, after: 235kB)[22m [2m(+239ms)[22m [2m(25/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/2.D6cBMQ9G_1ED8p2.webp [2m(before: 208kB, after: 98kB)[22m [2m(+132ms)[22m [2m(26/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2fXMD0.webp [2m(before: 239kB, after: 126kB)[22m [2m(+124ms)[22m [2m(27/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/4.QDTqOXV__1fRPQi.webp [2m(before: 105kB, after: 96kB)[22m [2m(+254ms)[22m [2m(28/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/1.VsNU6eh0_2ll4Fx.webp [2m(before: 207kB, after: 197kB)[22m [2m(+276ms)[22m [2m(29/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/2.D6cBMQ9G_Z1E5rFb.webp [2m(before: 208kB, after: 204kB)[22m [2m(+207ms)[22m [2m(30/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/4.QDTqOXV__Z1eU0SC.webp [2m(before: 105kB, after: 39kB)[22m [2m(+114ms)[22m [2m(31/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/3.SdUNinQ4_ZuveTh.webp [2m(before: 239kB, after: 235kB)[22m [2m(+227ms)[22m [2m(32/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZEEfrm.webp [2m(before: 207kB, after: 87kB)[22m [2m(+119ms)[22m [2m(33/62)[22m
+[2m05:05:57[22m   [32m▶[39m /_astro/cover.DWJBjMbX_wA4Nm.webp [2m(before: 1289kB, after: 7kB)[22m [2m(+156ms)[22m [2m(34/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/4.QDTqOXV__ZVgORe.webp [2m(before: 105kB, after: 65kB)[22m [2m(+163ms)[22m [2m(35/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/1.VsNU6eh0_Z1pRHSQ.webp [2m(before: 207kB, after: 138kB)[22m [2m(+185ms)[22m [2m(36/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z11H1gK.webp [2m(before: 1289kB, after: 24kB)[22m [2m(+123ms)[22m [2m(37/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/cover.DWJBjMbX_1LLhHP.webp [2m(before: 1289kB, after: 46kB)[22m [2m(+128ms)[22m [2m(38/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/4.QDTqOXV__15fX4G.webp [2m(before: 105kB, after: 96kB)[22m [2m(+233ms)[22m [2m(39/62)[22m
+[2m05:05:58[22m   [32m▶[39m /_astro/1.VsNU6eh0_1CK9gY.webp [2m(before: 207kB, after: 197kB)[22m [2m(+241ms)[22m [2m(40/62)[22m
+[2m05:05:59[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z10zl0l.webp [2m(before: 1289kB, after: 1009kB)[22m [2m(+1.36s)[22m [2m(41/62)[22m
+[2m05:05:59[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z2pyTrY.webp [2m(before: 1289kB, after: 7kB)[22m [2m(+113ms)[22m [2m(42/62)[22m
+[2m05:05:59[22m   [32m▶[39m /_astro/cover.DWJBjMbX_22MGe0.webp [2m(before: 1289kB, after: 24kB)[22m [2m(+128ms)[22m [2m(43/62)[22m
+[2m05:05:59[22m   [32m▶[39m /_astro/cover.DWJBjMbX_HxplO.webp [2m(before: 1289kB, after: 46kB)[22m [2m(+141ms)[22m [2m(44/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_icpkN.webp [2m(before: 1289kB, after: 1009kB)[22m [2m(+1.32s)[22m [2m(45/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_utLRN.jpeg [2m(before: 1289kB, after: 89kB)[22m [2m(+124ms)[22m [2m(46/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_cpBcx.jpeg [2m(before: 1289kB, after: 115kB)[22m [2m(+129ms)[22m [2m(47/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_2maXOl.jpeg [2m(before: 1289kB, after: 134kB)[22m [2m(+129ms)[22m [2m(48/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_ZjO123.jpeg [2m(before: 1289kB, after: 205kB)[22m [2m(+131ms)[22m [2m(49/62)[22m
+[2m05:06:01[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z9x3zN.jpeg [2m(before: 1289kB, after: 240kB)[22m [2m(+139ms)[22m [2m(50/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_ZoDHem.jpeg [2m(before: 1289kB, after: 266kB)[22m [2m(+128ms)[22m [2m(51/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_HnrsX.jpeg [2m(before: 1289kB, after: 397kB)[22m [2m(+152ms)[22m [2m(52/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_ZvfDJg.jpeg [2m(before: 1289kB, after: 535kB)[22m [2m(+201ms)[22m [2m(53/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z1D5vyf.jpeg [2m(before: 1289kB, after: 671kB)[22m [2m(+226ms)[22m [2m(54/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_1oWfa9.webp [2m(before: 1289kB, after: 84kB)[22m [2m(+154ms)[22m [2m(55/62)[22m
+[2m05:06:02[22m   [32m▶[39m /_astro/cover.DWJBjMbX_2g5lhO.webp [2m(before: 1289kB, after: 170kB)[22m [2m(+233ms)[22m [2m(56/62)[22m
+[2m05:06:03[22m   [32m▶[39m /_astro/cover.DWJBjMbX_16mvQm.webp [2m(before: 1289kB, after: 301kB)[22m [2m(+325ms)[22m [2m(57/62)[22m
+[2m05:06:03[22m   [32m▶[39m /_astro/cover.DWJBjMbX_ZFhqDC.webp [2m(before: 1289kB, after: 443kB)[22m [2m(+511ms)[22m [2m(58/62)[22m
+[2m05:06:05[22m   [32m▶[39m /_astro/cover.DWJBjMbX_Z608j4.webp [2m(before: 1289kB, after: 1212kB)[22m [2m(+1.46s)[22m [2m(59/62)[22m
+[2m05:06:05[22m   [32m▶[39m /_astro/cover.DWJBjMbX_1eK4Az.webp [2m(before: 1289kB, after: 13kB)[22m [2m(+127ms)[22m [2m(60/62)[22m
+[2m05:06:05[22m   [32m▶[39m /_astro/cover.DWJBjMbX_2g5M2P.webp [2m(before: 1289kB, after: 41kB)[22m [2m(+130ms)[22m [2m(61/62)[22m
+[2m05:06:05[22m   [32m▶[39m /_astro/cover.DWJBjMbX_29fRVI.webp [2m(before: 1289kB, after: 117kB)[22m [2m(+197ms)[22m [2m(62/62)[22m
+[2m05:06:05[22m [32m✓ Completed in 9.33s.
+[39m
+[2m05:06:05[22m [34m[build][39m [32m✓ Completed in 23.85s.[39m
+[2m05:06:05[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m05:06:05[22m [34m[build][39m 26 page(s) built in [1m26.93s[22m
+[2m05:06:05[22m [34m[build][39m [1mComplete![22m
+Verified homepage styles across 11 linked stylesheet(s).
+Verified about page styles across 13 linked stylesheet(s).
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/flat-replay/LyraVoid_Mizuki/opt/temp"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 27 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 10 pages
+  Indexed 1397 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.146 seconds
+Font loading check passed: 52 references, 2 files, 6455084 bytes.
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/posts/guide/": 200, "/archive/": 200, "/about/": 200, "/rss.xml": 200, "/404.html": 200, "/pagefind/pagefind.js": 200}}

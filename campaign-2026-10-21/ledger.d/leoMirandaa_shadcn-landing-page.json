@@ -25,5 +25,6 @@
   "detection_verified": "pending Codex browser check. Local anybuild 0.33.0 plan on clean patched worktree: node-static, vite, static_dir dist (standard).",
   "detect_log": "logs/leoMirandaa_shadcn-landing-page.detect.json",
   "anybuild_replay": "PASS: 2026-10-22T05:02:58Z flat replay of anybuild 0.33.0 planned steps @ 119171854253d978ed003802e3114495c94f7687 (patched commit; node v24.22.1, npm 11.19.1) install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes / 200, /vite.svg 200, /assets/index-BikfSMjf.js 200. logs/leoMirandaa_shadcn-landing-page.flat-replay.log",
-  "reason": null
+  "reason": null,
+  "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/vite.svg': '200', '/assets/index-BikfSMjf.js': '200'}; missing path -> 404 (logs/leoMirandaa_shadcn-landing-page.sws-smoke.json)"
 }

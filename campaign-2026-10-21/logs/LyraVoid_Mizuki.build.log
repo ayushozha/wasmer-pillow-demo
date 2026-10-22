@@ -98,3 +98,204 @@ $ node scripts/sync-content.js || true
 提示：请设置 CONTENT_REPO_URL 环境变量，或手动创建内容目录
 $ node scripts/update-anime.mjs && astro build && node scripts/check-global-style-loading.mjs && pagefind --site dist && node scripts/check-font-loading.mjs
 Anime mode is "local", skipping data update.
+05:04:16 [WARN] [vite] Cannot optimize dependency: @iconify/svelte, present in client 'optimizeDeps.include'
+05:04:18 [content] Syncing content
+05:04:19 [content] Synced content
+05:04:19 [types] Generated 2.90s
+05:04:19 [build] output: "static"
+05:04:19 [build] mode: "static"
+05:04:19 [build] directory: /tmp/claude-0/camp2/LyraVoid_Mizuki/dist/
+05:04:19 [build] Collecting build info...
+05:04:19 [build] ✓ Completed in 3.10s.
+05:04:19 [build] Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://api.fontsource.org/v1/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:420:16
+    at async Object.init (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/providers/index.js:63:29)
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'api.fontsource.org'
+    }
+  }
+}
+05:04:22 [WARN] [assets] No data found for font family JetBrains Mono. Review your configuration
+05:04:27 [assets] Copying fonts (2 files)...
+05:04:28 [vite] ✓ built in 8.96s
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://api.fontsource.org/v1/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:420:16
+    at async Object.init (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/providers/index.js:63:29)
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/camp2/LyraVoid_Mizuki/node_modules/.pnpm/astro@7.1.3_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.2_@_dc0ffd8f0e84b7c19a22f73659389ad4/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'api.fontsource.org'
+    }
+  }
+}
+05:04:31 [WARN] [assets] No data found for font family JetBrains Mono. Review your configuration
+05:04:33 [vite] ✓ built in 4.53s
+05:04:33 [build] Rearranging server assets...
+
+ generating static routes 
+相册 ExternalExample 已设置为隐藏，跳过显示
+相册 HiddenExample 缺少 cover 文件
+05:04:33   ├─ /404.html (+76ms) 
+05:04:33   ├─ /about/index.html (+23ms) 
+05:04:33   ├─ /ai-tools/index.html (+25ms) 
+05:04:33   ├─ /albums/AcgExample/index.html (+19ms) 
+05:04:33   ├─ /albums/EncryptedExample/index.html (+34ms) 
+05:04:33   ├─ /albums/index.html相册 ExternalExample 已设置为隐藏，跳过显示
+相册 HiddenExample 缺少 cover 文件
+ (+20ms) 
+05:04:33   ├─ /anime/index.html (+35ms) 
+05:04:33   ├─ /api/allPostMeta.json (+3ms) 
+05:04:33   ├─ /api/calendar-data.json (+3ms) 
+05:04:33   ├─ /archive/index.html (+18ms) 
+05:04:33   ├─ /atom/index.html (+20ms) 
+05:04:33   ├─ /atom.xml (+159ms) 
+05:04:34   ├─ /devices/index.html (+23ms) 
+05:04:34   ├─ /diary/index.html (+15ms) 
+05:04:34   ├─ /friends/index.html (+14ms) 
+05:04:34   ├─ /posts/markdown-tutorial/index.html (+22ms) 
+05:04:34   ├─ /posts/content-pipeline-fixture/index.html (+34ms) 
+05:04:34   ├─ /posts/image-grid-demo/index.html (+14ms) 
+05:04:34   ├─ /posts/markdown-extended/index.html (+25ms) 
+05:04:34   ├─ /posts/guide/index.html (+17ms) 
+05:04:34   ├─ /posts/encrypted-post/index.html (+28ms) 
+05:04:34   ├─ /posts/encrypted-example/index.html (+26ms) 
+05:04:34   ├─ /posts/markdown-mermaid/index.html (+13ms) 
+05:04:34   ├─ /posts/video/index.html (+14ms) 
+05:04:34   ├─ /projects/index.html (+22ms) 
+05:04:34   ├─ /robots.txt (+2ms) 
+05:04:34   ├─ /rss/index.html (+12ms) 
+05:04:34   ├─ /rss.xml (+94ms) 
+05:04:34   ├─ /skills/index.html (+18ms) 
+05:04:34   ├─ /timeline/index.html (+20ms) 
+05:04:34   ├─ /index.html (+18ms) 
+05:04:34 ✓ Completed in 1.18s.
+
+ generating optimized images 
+05:04:34   ▶ /_astro/avatar.DodcwRNI_ZrnMU5.webp (before: 46kB, after: 48kB) (+113ms) (1/62)
+05:04:34   ▶ /_astro/2.D4iQai6k_2eKvT9.webp (before: 175kB, after: 61kB) (+148ms) (2/62)
+05:04:34   ▶ /_astro/1.Dx4M_8s7_xjdyQ.webp (before: 171kB, after: 61kB) (+154ms) (3/62)
+05:04:34   ▶ /_astro/3.CDMGxzMp_25Ltgh.webp (before: 167kB, after: 59kB) (+180ms) (4/62)
+05:04:34   ▶ /_astro/4.CiXs-4CC_Z1Qn1AN.webp (before: 116kB, after: 54kB) (+134ms) (5/62)
+05:04:34   ▶ /_astro/4.CiXs-4CC_Z2v2z5m.webp (before: 116kB, after: 89kB) (+119ms) (6/62)
+05:04:34   ▶ /_astro/3.CDMGxzMp_1WwyYj.webp (before: 167kB, after: 125kB) (+195ms) (7/62)
+05:04:34   ▶ /_astro/2.D4iQai6k_Z1BMP67.webp (before: 175kB, after: 128kB) (+228ms) (8/62)
+05:04:34   ▶ /_astro/1.Dx4M_8s7_1JvqA1.webp (before: 171kB, after: 135kB) (+253ms) (9/62)
+05:04:35   ▶ /_astro/4.CiXs-4CC_Z1EJhgV.webp (before: 116kB, after: 54kB) (+133ms) (10/62)
+05:04:35   ▶ /_astro/3.CDMGxzMp_imGhD.webp (before: 167kB, after: 59kB) (+138ms) (11/62)
+05:04:35   ▶ /_astro/1.Dx4M_8s7_Z1tyzXn.webp (before: 171kB, after: 61kB) (+108ms) (12/62)
+05:04:35   ▶ /_astro/2.D4iQai6k_cRHlU.webp (before: 175kB, after: 61kB) (+143ms) (13/62)
+05:04:35   ▶ /_astro/4.CiXs-4CC_Z2Se7C.webp (before: 116kB, after: 89kB) (+136ms) (14/62)
+05:04:35   ▶ /_astro/1.Dx4M_8s7_1mwqTu.webp (before: 171kB, after: 135kB) (+174ms) (15/62)
+05:04:35   ▶ /_astro/3.CDMGxzMp_1dtFLj.webp (before: 167kB, after: 125kB) (+182ms) (16/62)
+05:04:35   ▶ /_astro/2.D4iQai6k_Z1YLOLD.webp (before: 175kB, after: 128kB) (+184ms) (17/62)
+05:04:35   ▶ /_astro/1.VsNU6eh0_Z1nLjtJ.webp (before: 207kB, after: 87kB) (+140ms) (18/62)
+05:04:35   ▶ /_astro/2.D6cBMQ9G_1tyDmS.webp (before: 208kB, after: 98kB) (+101ms) (19/62)
+05:04:35   ▶ /_astro/3.SdUNinQ4_Z2r3hF9.webp (before: 239kB, after: 126kB) (+110ms) (20/62)
+05:04:35   ▶ /_astro/4.QDTqOXV__1HhFSX.webp (before: 105kB, after: 39kB) (+136ms) (21/62)
+05:04:35   ▶ /_astro/1.VsNU6eh0_ZvjR0N.webp (before: 207kB, after: 138kB) (+190ms) (22/62)
+05:04:35   ▶ /_astro/2.D6cBMQ9G_Z1U6eAC.webp (before: 208kB, after: 204kB) (+189ms) (23/62)
+05:04:35   ▶ /_astro/3.SdUNinQ4_ZKw1OI.webp (before: 239kB, after: 235kB) (+199ms) (24/62)
+05:04:35   ▶ /_astro/4.QDTqOXV__Z2SNFc.webp (before: 105kB, after: 65kB) (+198ms) (25/62)
+05:04:35   ▶ /_astro/2.D6cBMQ9G_1ED8p2.webp (before: 208kB, after: 98kB) (+117ms) (26/62)
+05:04:35   ▶ /_astro/3.SdUNinQ4_Z2fXMD0.webp (before: 239kB, after: 126kB) (+111ms) (27/62)
+05:04:35   ▶ /_astro/1.VsNU6eh0_2ll4Fx.webp (before: 207kB, after: 197kB) (+261ms) (28/62)
+05:04:35   ▶ /_astro/2.D6cBMQ9G_Z1E5rFb.webp (before: 208kB, after: 204kB) (+185ms) (29/62)
+05:04:35   ▶ /_astro/4.QDTqOXV__1fRPQi.webp (before: 105kB, after: 96kB) (+244ms) (30/62)
+05:04:35   ▶ /_astro/3.SdUNinQ4_ZuveTh.webp (before: 239kB, after: 235kB) (+192ms) (31/62)
+05:04:35   ▶ /_astro/1.VsNU6eh0_ZEEfrm.webp (before: 207kB, after: 87kB) (+121ms) (32/62)
+05:04:35   ▶ /_astro/4.QDTqOXV__Z1eU0SC.webp (before: 105kB, after: 39kB) (+111ms) (33/62)
+05:04:35   ▶ /_astro/cover.DWJBjMbX_wA4Nm.webp (before: 1289kB, after: 7kB) (+127ms) (34/62)
+05:04:36   ▶ /_astro/cover.DWJBjMbX_Z11H1gK.webp (before: 1289kB, after: 24kB) (+132ms) (35/62)
+05:04:36   ▶ /_astro/1.VsNU6eh0_Z1pRHSQ.webp (before: 207kB, after: 138kB) (+224ms) (36/62)
+05:04:36   ▶ /_astro/4.QDTqOXV__ZVgORe.webp (before: 105kB, after: 65kB) (+217ms) (37/62)
+05:04:36   ▶ /_astro/cover.DWJBjMbX_1LLhHP.webp (before: 1289kB, after: 46kB) (+174ms) (38/62)
+05:04:36   ▶ /_astro/1.VsNU6eh0_1CK9gY.webp (before: 207kB, after: 197kB) (+273ms) (39/62)
+05:04:36   ▶ /_astro/4.QDTqOXV__15fX4G.webp (before: 105kB, after: 96kB) (+241ms) (40/62)
+05:04:37   ▶ /_astro/cover.DWJBjMbX_Z10zl0l.webp (before: 1289kB, after: 1009kB) (+1.22s) (41/62)
+05:04:37   ▶ /_astro/cover.DWJBjMbX_Z2pyTrY.webp (before: 1289kB, after: 7kB) (+124ms) (42/62)
+05:04:37   ▶ /_astro/cover.DWJBjMbX_22MGe0.webp (before: 1289kB, after: 24kB) (+132ms) (43/62)
+05:04:37   ▶ /_astro/cover.DWJBjMbX_HxplO.webp (before: 1289kB, after: 46kB) (+173ms) (44/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_icpkN.webp (before: 1289kB, after: 1009kB) (+1.41s) (45/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_utLRN.jpeg (before: 1289kB, after: 89kB) (+104ms) (46/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_cpBcx.jpeg (before: 1289kB, after: 115kB) (+110ms) (47/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_2maXOl.jpeg (before: 1289kB, after: 134kB) (+108ms) (48/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_ZjO123.jpeg (before: 1289kB, after: 205kB) (+141ms) (49/62)
+05:04:39   ▶ /_astro/cover.DWJBjMbX_Z9x3zN.jpeg (before: 1289kB, after: 240kB) (+132ms) (50/62)
+05:04:40   ▶ /_astro/cover.DWJBjMbX_ZoDHem.jpeg (before: 1289kB, after: 266kB) (+146ms) (51/62)
+05:04:40   ▶ /_astro/cover.DWJBjMbX_HnrsX.jpeg (before: 1289kB, after: 397kB) (+154ms) (52/62)
+05:04:40   ▶ /_astro/cover.DWJBjMbX_ZvfDJg.jpeg (before: 1289kB, after: 535kB) (+210ms) (53/62)
+05:04:40   ▶ /_astro/cover.DWJBjMbX_Z1D5vyf.jpeg (before: 1289kB, after: 671kB) (+223ms) (54/62)
+05:04:40   ▶ /_astro/cover.DWJBjMbX_1oWfa9.webp (before: 1289kB, after: 84kB) (+148ms) (55/62)
+05:04:41   ▶ /_astro/cover.DWJBjMbX_2g5lhO.webp (before: 1289kB, after: 170kB) (+215ms) (56/62)
+05:04:41   ▶ /_astro/cover.DWJBjMbX_16mvQm.webp (before: 1289kB, after: 301kB) (+339ms) (57/62)
+05:04:41   ▶ /_astro/cover.DWJBjMbX_ZFhqDC.webp (before: 1289kB, after: 443kB) (+468ms) (58/62)
+05:04:43   ▶ /_astro/cover.DWJBjMbX_Z608j4.webp (before: 1289kB, after: 1212kB) (+1.41s) (59/62)
+05:04:43   ▶ /_astro/cover.DWJBjMbX_1eK4Az.webp (before: 1289kB, after: 13kB) (+119ms) (60/62)
+05:04:43   ▶ /_astro/cover.DWJBjMbX_2g5M2P.webp (before: 1289kB, after: 41kB) (+168ms) (61/62)
+05:04:43   ▶ /_astro/cover.DWJBjMbX_29fRVI.webp (before: 1289kB, after: 117kB) (+157ms) (62/62)
+05:04:43 ✓ Completed in 9.14s.
+
+05:04:43 [build] ✓ Completed in 23.99s.
+05:04:43 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+05:04:43 [build] 26 page(s) built in 27.12s
+05:04:43 [build] Complete!
+Verified homepage styles across 11 linked stylesheet(s).
+Verified about page styles across 13 linked stylesheet(s).
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/camp2/LyraVoid_Mizuki"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 27 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 10 pages
+  Indexed 1397 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.079 seconds
+Font loading check passed: 52 references, 2 files, 6455084 bytes.
+EXIT 0

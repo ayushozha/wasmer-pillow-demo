@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/markhorn-dev_astro-nano//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 20941
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 18184
+      }
+    ],
+    "/blog/01-getting-started/": [
+      {
+        "path": "/blog/01-getting-started/",
+        "status": 200,
+        "location": null,
+        "bytes": 17496
+      }
+    ],
+    "/projects/": [
+      {
+        "path": "/projects/",
+        "status": 200,
+        "location": null,
+        "bytes": 12220
+      }
+    ],
+    "/work/": [
+      {
+        "path": "/work/",
+        "status": 200,
+        "location": null,
+        "bytes": 12225
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 3398
+      }
+    ],
+    "/sitemap-index.xml": [
+      {
+        "path": "/sitemap-index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 197
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

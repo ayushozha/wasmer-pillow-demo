@@ -1,0 +1,63 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/adminkit_adminkit//opt/temp/static",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 26608
+      }
+    ],
+    "/pages-profile.html": [
+      {
+        "path": "/pages-profile.html",
+        "status": 200,
+        "location": null,
+        "bytes": 20799
+      }
+    ],
+    "/charts-chartjs.html": [
+      {
+        "path": "/charts-chartjs.html",
+        "status": 200,
+        "location": null,
+        "bytes": 18883
+      }
+    ],
+    "/pages-sign-in.html": [
+      {
+        "path": "/pages-sign-in.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2675
+      }
+    ],
+    "/js/app.js": [
+      {
+        "path": "/js/app.js",
+        "status": 200,
+        "location": null,
+        "bytes": 912470
+      }
+    ],
+    "/css/app.css": [
+      {
+        "path": "/css/app.css",
+        "status": 200,
+        "location": null,
+        "bytes": 239999
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

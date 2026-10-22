@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/zuramai_mazer/opt/temp/dist",
+  "base": "/",
+  "html_files": 77,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 53441,
+      "title": "Dashboard - Mazer Admin Dashboard"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 53441,
+      "title": "Dashboard - Mazer Admin Dashboard"
+    },
+    "/auth-login.html": {
+      "status": 200,
+      "bytes": 10191,
+      "title": "Login - Mazer Admin Dashboard"
+    },
+    "/error-404.html": {
+      "status": 200,
+      "bytes": 4609,
+      "title": "404 - Mazer Admin Dashboard"
+    },
+    "/application-checkout.html": {
+      "status": 200,
+      "bytes": 37967,
+      "title": "Checkout Page - Mazer Admin Dashboard"
+    },
+    "/assets/compiled/css/app.css": {
+      "status": 200,
+      "bytes": 334935,
+      "title": null
+    },
+    "/assets/compiled/js/app.js": {
+      "status": 200,
+      "bytes": 174326,
+      "title": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/zuramai_mazer//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 53443
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 53443
+      }
+    ],
+    "/auth-login.html": [
+      {
+        "path": "/auth-login.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10191
+      }
+    ],
+    "/error-404.html": [
+      {
+        "path": "/error-404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 4609
+      }
+    ],
+    "/application-checkout.html": [
+      {
+        "path": "/application-checkout.html",
+        "status": 200,
+        "location": null,
+        "bytes": 37967
+      }
+    ],
+    "/assets/compiled/css/app.css": [
+      {
+        "path": "/assets/compiled/css/app.css",
+        "status": 200,
+        "location": null,
+        "bytes": 339038
+      }
+    ],
+    "/assets/compiled/js/app.js": [
+      {
+        "path": "/assets/compiled/js/app.js",
+        "status": 200,
+        "location": null,
+        "bytes": 174327
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

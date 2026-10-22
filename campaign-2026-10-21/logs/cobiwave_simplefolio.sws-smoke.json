@@ -1,0 +1,55 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/cobiwave_simplefolio//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 6751
+      }
+    ],
+    "/assets/resume.pdf": [
+      {
+        "path": "/assets/resume.pdf",
+        "status": 200,
+        "location": null,
+        "bytes": 3028
+      }
+    ],
+    "/index.f3360eb2.js": [
+      {
+        "path": "/index.f3360eb2.js",
+        "status": 200,
+        "location": null,
+        "bytes": 10472
+      }
+    ],
+    "/index.dc60bf54.css": [
+      {
+        "path": "/index.dc60bf54.css",
+        "status": 200,
+        "location": null,
+        "bytes": 195581
+      }
+    ],
+    "/profile.8f19b361.jpg": [
+      {
+        "path": "/profile.8f19b361.jpg",
+        "status": 200,
+        "location": null,
+        "bytes": 873449
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

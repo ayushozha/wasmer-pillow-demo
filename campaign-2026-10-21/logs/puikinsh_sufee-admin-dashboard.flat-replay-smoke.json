@@ -1,0 +1,48 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/puikinsh_sufee-admin-dashboard/opt/temp/dist",
+  "base": "/",
+  "html_files": 36,
+  "local_refs_checked": 2,
+  "missing_local_refs": [
+    "/main.js"
+  ],
+  "missing_count": 1,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 32414,
+      "title": "Sufee Admin - Modern Dashboard"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 32414,
+      "title": "Sufee Admin - Modern Dashboard"
+    },
+    "/page-login.html": {
+      "status": 200,
+      "bytes": 5685,
+      "title": "Login - Sufee Admin"
+    },
+    "/error-404.html": {
+      "status": 200,
+      "bytes": 3433,
+      "title": "404 - Page Not Found | Sufee Admin"
+    },
+    "/partials/sidebar.html": {
+      "status": 200,
+      "bytes": 18406,
+      "title": null
+    },
+    "/partials/header.html": {
+      "status": 200,
+      "bytes": 16500,
+      "title": null
+    },
+    "/tables-data.html": {
+      "status": 200,
+      "bytes": 32625,
+      "title": "Data Tables - Sufee Admin"
+    }
+  },
+  "ok": false
+}

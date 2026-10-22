@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 18204
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 19304
+      }
+    ],
+    "/blog/post-1/": [
+      {
+        "path": "/blog/post-1/",
+        "status": 200,
+        "location": null,
+        "bytes": 15530
+      }
+    ],
+    "/projects/": [
+      {
+        "path": "/projects/",
+        "status": 200,
+        "location": null,
+        "bytes": 15147
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 9879
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 6675
+      }
+    ],
+    "/sitemap-index.xml": [
+      {
+        "path": "/sitemap-index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 182
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

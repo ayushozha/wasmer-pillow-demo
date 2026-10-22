@@ -1,0 +1,63 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/BulmaTemplates_bulma-templates//opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 42477
+      }
+    ],
+    "/templates/landing.html": [
+      {
+        "path": "/templates/landing.html",
+        "status": 200,
+        "location": null,
+        "bytes": 4767
+      }
+    ],
+    "/templates/admin.html": [
+      {
+        "path": "/templates/admin.html",
+        "status": 200,
+        "location": null,
+        "bytes": 13624
+      }
+    ],
+    "/css/admin.css": [
+      {
+        "path": "/css/admin.css",
+        "status": 200,
+        "location": null,
+        "bytes": 1782
+      }
+    ],
+    "/index.css": [
+      {
+        "path": "/index.css",
+        "status": 200,
+        "location": null,
+        "bytes": 705
+      }
+    ],
+    "/templates/login.html": [
+      {
+        "path": "/templates/login.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2803
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

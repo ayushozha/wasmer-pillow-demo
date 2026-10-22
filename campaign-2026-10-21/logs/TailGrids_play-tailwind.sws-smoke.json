@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/TailGrids_play-tailwind//opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 265421
+      }
+    ],
+    "/about.html": [
+      {
+        "path": "/about.html",
+        "status": 200,
+        "location": null,
+        "bytes": 123639
+      }
+    ],
+    "/pricing.html": [
+      {
+        "path": "/pricing.html",
+        "status": 200,
+        "location": null,
+        "bytes": 56658
+      }
+    ],
+    "/blog-grids.html": [
+      {
+        "path": "/blog-grids.html",
+        "status": 200,
+        "location": null,
+        "bytes": 68003
+      }
+    ],
+    "/signin.html": [
+      {
+        "path": "/signin.html",
+        "status": 200,
+        "location": null,
+        "bytes": 64754
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 84412
+      }
+    ],
+    "/src/css/tailwind.css": [
+      {
+        "path": "/src/css/tailwind.css",
+        "status": 200,
+        "location": null,
+        "bytes": 61017
+      }
+    ],
+    "/assets/js/main.js": [
+      {
+        "path": "/assets/js/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4405
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 84411
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,51 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 27,
+  "local_refs_checked": 190,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 325002,
+      "title": "Mizuki - One demo website"
+    },
+    "/posts/guide/": {
+      "status": 200,
+      "bytes": 354154,
+      "title": "Writing a Blog Post - Mizuki"
+    },
+    "/archive/": {
+      "status": 200,
+      "bytes": 270517,
+      "title": "Archive - Mizuki"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 269734,
+      "title": "About - Mizuki"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 398589,
+      "title": "Mizuki"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 264187,
+      "title": "404 - Mizuki"
+    },
+    "/pagefind/pagefind.js": {
+      "status": 200,
+      "bytes": 45555,
+      "title": null
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 188,
+      "title": null
+    }
+  },
+  "ok": true
+}

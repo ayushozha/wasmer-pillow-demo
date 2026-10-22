@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/CuteLeaf_Firefly//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 342336
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 277460
+      }
+    ],
+    "/archive/": [
+      {
+        "path": "/archive/",
+        "status": 200,
+        "location": null,
+        "bytes": 307405
+      }
+    ],
+    "/posts/code-examples/": [
+      {
+        "path": "/posts/code-examples/",
+        "status": 200,
+        "location": null,
+        "bytes": 464148
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 277000
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 318685
+      }
+    ],
+    "/pagefind/pagefind.js": [
+      {
+        "path": "/pagefind/pagefind.js",
+        "status": 200,
+        "location": null,
+        "bytes": 45555
+      }
+    ],
+    "/sitemap-index.xml": [
+      {
+        "path": "/sitemap-index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 190
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 277000
+    }
+  ],
+  "ok": true
+}

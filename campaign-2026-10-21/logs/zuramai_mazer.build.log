@@ -620,3 +620,17 @@ computing gzip size...
 ../dist/assets/compiled/css/extra-component-flag.css           153.79 kB │ gzip: 35.30 kB
 ../dist/assets/compiled/css/app-dark.css                       260.34 kB │ gzip: 33.57 kB
 ../dist/assets/compiled/css/app.css                            334.94 kB │ gzip: 51.72 kB
+[vite-plugin-static-copy] Copied 34 items.
+✓ built in 8.22s
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "network-concurrency". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> mazer@2.3.1 prettify
+> prettier --write 'dist/*.html'
+
+Done in 8.90s.
+EXIT 0

@@ -47,7 +47,8 @@
       "import_url": "https://wasmer.io/apps/create?github=11ty%2Feleventy-base-blog",
       "detection_verified": "yes: Codex browser (main, node-static, Deploy enabled) + source check: Anybuild v0.33.0 maps Eleventy to _site (providers/node.rs 324-328); nodestatic-eleventy snapshot builds _site and copies _site/. into static_app; backend build definition pins Anybuild 0.33.0 (reported by root). Running binary/deployed app unverified.",
       "upstream_pr": "https://github.com/11ty/eleventy-base-blog/pull/262 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:51:34Z flat replay of anybuild 0.33.0 planned steps for 11ty_eleventy-base-blog @ 897c455785e1352e12a17421b80f3ab9270b3186 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='_site' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/firstpost/': 200, '/about/': 200, '/tags/': 200, '/feed/feed.xml': 200, '/404.html': 200} | log logs/11ty_eleventy-base-blog.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:51:34Z flat replay of anybuild 0.33.0 planned steps for 11ty_eleventy-base-blog @ 897c455785e1352e12a17421b80f3ab9270b3186 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='_site' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/firstpost/': 200, '/about/': 200, '/tags/': 200, '/feed/feed.xml': 200, '/404.html': 200} | log logs/11ty_eleventy-base-blog.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/blog/': '200', '/blog/firstpost/': '200', '/about/': '200', '/tags/': '200', '/feed/feed.xml': '200', '/404.html': '200'}; missing path -> 404 (logs/11ty_eleventy-base-blog.sws-smoke.json)"
     },
     {
       "repo": "adminkit/adminkit",
@@ -75,7 +76,8 @@
       "detection_verified": "local anybuild plan: staticfile root static (with patch); pending Codex browser check",
       "reason": null,
       "anybuild_replay": "PASS: 2026-10-22T04:49:28Z flat replay of anybuild 0.33.0 planned steps for adminkit_adminkit @ 2ea20d60e4707d301ac4b7997edd4879538f6166 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='static' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/pages-profile.html': 200, '/charts-chartjs.html': 200, '/pages-sign-in.html': 200, '/js/app.js': 200, '/css/app.css': 200} | log logs/adminkit_adminkit.flat-replay.log",
-      "upstream_pr": "https://github.com/adminkit/adminkit/pull/152 (OPEN, head f571c5f); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/adminkit/adminkit/pull/152 (OPEN, head f571c5f); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/pages-profile.html': '200', '/charts-chartjs.html': '200', '/pages-sign-in.html': '200', '/js/app.js': '200', '/css/app.css': '200'}; missing path -> 404 (logs/adminkit_adminkit.sws-smoke.json)"
     },
     {
       "repo": "chrismwilliams/astro-theme-cactus",
@@ -102,7 +104,8 @@
       "import_url": "https://wasmer.io/apps/create?github=chrismwilliams%2Fastro-theme-cactus",
       "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)",
       "upstream_pr": "https://github.com/chrismwilliams/astro-theme-cactus/pull/495 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:46:16Z flat replay of anybuild 0.33.0 planned steps for chrismwilliams_astro-theme-cactus @ 5dfcd98afb77a70e03543a21caeb7b06959893af (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/posts/': 200, '/notes/': 200, '/about/': 200, '/404.html': 200, '/pagefind/pagefind.js': 200, '/rss.xml': 200, '/manifest.webmanifest': 200} | log logs/chrismwilliams_astro-theme-cactus.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:46:16Z flat replay of anybuild 0.33.0 planned steps for chrismwilliams_astro-theme-cactus @ 5dfcd98afb77a70e03543a21caeb7b06959893af (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/posts/': 200, '/notes/': 200, '/about/': 200, '/404.html': 200, '/pagefind/pagefind.js': 200, '/rss.xml': 200, '/manifest.webmanifest': 200} | log logs/chrismwilliams_astro-theme-cactus.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/posts/': '200', '/notes/': '200', '/about/': '200', '/404.html': '200', '/pagefind/pagefind.js': '200', '/rss.xml': '200', '/manifest.webmanifest': '200'}; missing path -> 404 (logs/chrismwilliams_astro-theme-cactus.sws-smoke.json)"
     },
     {
       "repo": "cobiwave/simplefolio",
@@ -139,7 +142,8 @@
       "reason": null,
       "detect_log": "logs/cobiwave_simplefolio.detect.json",
       "anybuild_replay": "PASS: 2026-10-22T04:49:50Z flat replay of anybuild 0.33.0 planned steps for cobiwave_simplefolio @ c571fcdcc64f925fee57ea3146318d1be6182907 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/assets/resume.pdf': 200, '/index.f3360eb2.js': 200, '/index.dc60bf54.css': 200, '/profile.8f19b361.jpg': 200} | log logs/cobiwave_simplefolio.flat-replay.log",
-      "upstream_pr": "https://github.com/cobiwave/simplefolio/pull/377 (OPEN, head c10f0c8); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/cobiwave/simplefolio/pull/377 (OPEN, head c10f0c8); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/assets/resume.pdf': '200', '/index.f3360eb2.js': '200', '/index.dc60bf54.css': '200', '/profile.8f19b361.jpg': '200'}; missing path -> 404 (logs/cobiwave_simplefolio.sws-smoke.json)"
     },
     {
       "repo": "ColorlibHQ/gentelella",
@@ -167,7 +171,8 @@
       "detection_verified": "pending Codex browser check",
       "reason": null,
       "anybuild_replay": "PASS: 2026-10-22T04:50:15Z flat replay of anybuild 0.33.0 planned steps for ColorlibHQ_gentelella @ d2c4e192111316b2b7d74306e345ace689536e9c (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/production/index.html': 200, '/production/calendar.html': 200, '/production/login.html': 200, '/production/page_404.html': 200, '/site.webmanifest': 200, '/sw.js': 200} | log logs/ColorlibHQ_gentelella.flat-replay.log",
-      "upstream_pr": "https://github.com/ColorlibHQ/gentelella/pull/1015 (OPEN, head 77eea2b); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/ColorlibHQ/gentelella/pull/1015 (OPEN, head 77eea2b); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/production/index.html': '200', '/production/calendar.html': '200', '/production/login.html': '200', '/production/page_404.html': '200', '/site.webmanifest': '200', '/sw.js': '200'}; missing path -> 404 (logs/ColorlibHQ_gentelella.sws-smoke.json)"
     },
     {
       "repo": "CuteLeaf/Firefly",
@@ -195,7 +200,8 @@
       "detection_verified": "pending Codex browser check",
       "reason": null,
       "anybuild_replay": "BUILD_PASS_SMOKE_NOTE: 2026-10-22T04:52:07Z flat replay of anybuild 0.33.0 planned steps for CuteLeaf_Firefly @ 0a7b8c1496959bd202ee73b0d722038c9c21af29 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=11.22.0 -> pnpm on PATH 11.22.0; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=False missing=1 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/code-examples/': 200, '/404.html': 200, '/rss.xml': 200, '/pagefind/pagefind.js': 200, '/sitemap-index.xml': 200} | log logs/CuteLeaf_Firefly.flat-replay.log The 1 missing ref is the intentional /404/ Astro.redirect target used by disabled-feature pages.",
-      "upstream_pr": "https://github.com/CuteLeaf/Firefly/pull/677 (OPEN, head 44ba15b); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/CuteLeaf/Firefly/pull/677 (OPEN, head 44ba15b); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/about/': '200', '/archive/': '200', '/posts/code-examples/': '200', '/404.html': '200', '/rss.xml': '200', '/pagefind/pagefind.js': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/CuteLeaf_Firefly.sws-smoke.json)"
     },
     {
       "repo": "incluud/accessible-astro-starter",
@@ -225,7 +231,8 @@
       "detect_log": "logs/incluud_accessible-astro-starter.detect.json",
       "build_external": "PASS (root, local, network): Node 24.22.1 / npm 11.19.1 official runtime; npm ci; npm run build built 135 pages in 18.21s, the jsonplaceholder build-time fetch succeeded; npx eslint . EXIT 0 (no `lint` script); 8 routes 200; root-relative ref check found 0 refs because the minifier emits unquoted attrs, so no asset-coverage claim. npm audit: 25 (3 moderate, 21 high, 1 critical AVIF-only).",
       "anybuild_replay": "FAIL_ENV: 2026-10-22T04:50:55Z flat replay of anybuild 0.33.0 planned steps for incluud_accessible-astro-starter @ dad27482fb329e904c6566935078a5e342169733 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/incluud_accessible-astro-starter.flat-replay.log Cause: build-time fetch ENOTFOUND jsonplaceholder.typicode.com (sandbox-denied) after npm install succeeded; root's networked normal build passed.",
-      "upstream_pr": "https://github.com/incluud/accessible-astro-starter/pull/204 (OPEN, head ad6079d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/incluud/accessible-astro-starter/pull/204 (OPEN, head ad6079d); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "N/A: replay produced no complete build output here (FAIL_ENV build-time host), so nothing to serve; see anybuild_replay and build_external (logs/incluud_accessible-astro-starter.sws-smoke.json)"
     },
     {
       "repo": "JustGoodUI/dante-astro-theme",
@@ -253,7 +260,8 @@
       "detection_verified": "pending Codex browser check",
       "detect_log": "logs/JustGoodUI_dante-astro-theme.detect.json",
       "upstream_pr": "https://github.com/JustGoodUI/dante-astro-theme/pull/87 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:48:06Z flat replay of anybuild 0.33.0 planned steps for JustGoodUI_dante-astro-theme @ 2b898095b9390338e7064b1239a79ad30ade45de (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/post-1/': 200, '/projects/': 200, '/about/': 200, '/rss.xml': 200, '/sitemap-index.xml': 200} | log logs/JustGoodUI_dante-astro-theme.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:48:06Z flat replay of anybuild 0.33.0 planned steps for JustGoodUI_dante-astro-theme @ 2b898095b9390338e7064b1239a79ad30ade45de (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/post-1/': 200, '/projects/': 200, '/about/': 200, '/rss.xml': 200, '/sitemap-index.xml': 200} | log logs/JustGoodUI_dante-astro-theme.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/blog/': '200', '/blog/post-1/': '200', '/projects/': '200', '/about/': '200', '/rss.xml': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/JustGoodUI_dante-astro-theme.sws-smoke.json)"
     },
     {
       "repo": "madrilene/eleventy-excellent",
@@ -311,7 +319,8 @@
       "detection_verified": "pending Codex browser check",
       "reason": null,
       "anybuild_replay": "PASS: 2026-10-22T04:50:40Z flat replay of anybuild 0.33.0 planned steps for moeyua_astro-theme-typography @ a110341ff02b4c6015ee750d976e9e46a04ae053 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10.13.1 -> pnpm on PATH 10.13.1; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/hometown/': 200, '/categories/Articles/': 200, '/atom.xml': 200, '/sitemap-index.xml': 200} | log logs/moeyua_astro-theme-typography.flat-replay.log",
-      "upstream_pr": "https://github.com/moeyua/astro-theme-typography/pull/255 (OPEN, head 3c4727d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/moeyua/astro-theme-typography/pull/255 (OPEN, head 3c4727d); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/about/': '200', '/archive/': '200', '/posts/hometown/': '200', '/categories/Articles/': '200', '/atom.xml': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/moeyua_astro-theme-typography.sws-smoke.json)"
     },
     {
       "repo": "puikinsh/Bootstrap-Admin-Template",
@@ -339,7 +348,38 @@
       "detection_verified": "local anybuild plan: node-static vite dist-modern (with patch); pending Codex browser check",
       "reason": null,
       "anybuild_replay": "PASS: 2026-10-22T04:49:30Z flat replay of anybuild 0.33.0 planned steps for puikinsh_Bootstrap-Admin-Template @ 62842673498b237292771757f7ef30bdeb10ff02 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist-modern' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/analytics.html': 200, '/calendar.html': 200, '/login.html': 200, '/404.html': 200, '/settings.html': 200} | log logs/puikinsh_Bootstrap-Admin-Template.flat-replay.log",
-      "upstream_pr": "https://github.com/puikinsh/Bootstrap-Admin-Template/pull/110 (OPEN, head 4df3d5d); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/puikinsh/Bootstrap-Admin-Template/pull/110 (OPEN, head 4df3d5d); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/analytics.html': '200', '/calendar.html': '200', '/login.html': '200', '/404.html': '200', '/settings.html': '200'}; missing path -> 404 (logs/puikinsh_Bootstrap-Admin-Template.sws-smoke.json)"
+    },
+    {
+      "repo": "radishzzz/astro-theme-retypeset",
+      "status": "PUBLISHED",
+      "stars": 707,
+      "stars_source": "GitHub MCP search_repositories",
+      "stars_at": "2026-10-22T04:28:14Z",
+      "archived": false,
+      "license": "MIT",
+      "detection_verified": "Root import: master, node-static, Deploy enabled. Local anybuild plan: node-static astro dist pnpm 10.33.0.",
+      "default_branch": "master",
+      "pushed_at": "2026-04-12T10:39:50Z",
+      "base_sha": "a636b6d393be714cab52d3fc4baddd3f3905f701",
+      "framework": "Astro 6 (static, trailingSlash always, i18n), UnoCSS, pnpm 10.33.0; postbuild apply-lqip (sharp)",
+      "output_dir": "dist (apply-lqip.ts hardcodes distDir='dist')",
+      "build_command": "pnpm install --frozen-lockfile && pnpm run build (astro check && astro build && pnpm apply-lqip)",
+      "build_claude": "FAIL_ENV in this sandbox: image.radishzz.cc denied (proxy 403) during astro build.",
+      "smoke": "External (root): routes and hashed assets 200, missing route 404.",
+      "format_check": "N/A",
+      "compat_notes": "README guidance names the demo-owned settings in src/config.ts to personalize/disable: site.url, comment.waline.serverURL / comment.enabled, seo.umamiAnalyticsID, preload.customUmamiAnalyticsJS, seo.verification, preload.imageHostURL. Build needs network to the configured image host.",
+      "policy": "No CONTRIBUTING/PR template; issue templates only. README Getting Started step 4 lists Netlify/Vercel deploy buttons. No Wasmer mentions; no provider-button refusals found.",
+      "why": "Static multilingual Astro theme with an existing deploy-button row.",
+      "patch": "patches/radishzzz_astro-theme-retypeset.patch",
+      "pr_body": "pr-bodies/radishzzz_astro-theme-retypeset.md",
+      "import_url": "https://wasmer.io/apps/create?github=radishzzz%2Fastro-theme-retypeset",
+      "reason": null,
+      "build_external": "PASS (root, local, network) @a636b6d3: portable Node 24.22.1 + registry pnpm 10.33.0; pnpm install --frozen-lockfile and unchanged pnpm run build EXIT 0; astro check 59 files 0 errors/warnings/hints; 103 pages; 16 optimized WebPs; apply-lqip 16 cached images / 108 HTML image instances; preview /, /en/, /en/posts/markdown-extended-features/, /ja/posts/rashomon/, sitemap, favicon, hashed CSS/JS/WebP 200; missing route 404; image.radishzz.cc reachable; source clean.",
+      "hook_check": "simple-git-hooks installed via `pnpm exec simple-git-hooks` (pnpm 10.33.0); pre-commit `pnpm lint-staged` ran on the staging commit: 'could not find any staged files matching configured tasks', EXIT 0 (logs/radishzzz_astro-theme-retypeset.hook-commit.log). No bypass.",
+      "anybuild_replay": "NOT RUN here: replay would fail on sandbox-denied image.radishzz.cc; root's normal build covers the build commands (frozen install vs Anybuild's non-frozen `pnpm install` with the same pinned pnpm 10.33.0).",
+      "upstream_pr": "https://github.com/radishzzz/astro-theme-retypeset/pull/171 (OPEN, head dc1e71d35b3cd3b9eb0147b7e22f1855c5ec0b57); reported by root/Codex, exact Claude patch; local lint-staged task ran"
     },
     {
       "repo": "RomanHauksson/academic-project-astro-template",
@@ -368,7 +408,8 @@
       "reason": null,
       "detect_log": "logs/RomanHauksson_academic-project-astro-template.detect.json",
       "anybuild_replay": "PASS: 2026-10-22T04:49:02Z flat replay of anybuild 0.33.0 planned steps for RomanHauksson_academic-project-astro-template @ b9a754a94006cf39cb59d94ae566c29bad68fa15 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/favicon.svg': 200, '/BoxVertexColors.glb': 200, '/screenshot-light.png': 200} | log logs/RomanHauksson_academic-project-astro-template.flat-replay.log",
-      "upstream_pr": "https://github.com/RomanHauksson/academic-project-astro-template/pull/76 (OPEN, head 10e3551); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/RomanHauksson/academic-project-astro-template/pull/76 (OPEN, head 10e3551); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/favicon.svg': '200', '/BoxVertexColors.glb': '200', '/screenshot-light.png': '200'}; missing path -> 404 (logs/RomanHauksson_academic-project-astro-template.sws-smoke.json)"
     },
     {
       "repo": "RyanFitzgerald/devportfolio",
@@ -395,7 +436,8 @@
       "import_url": "https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio",
       "detection_verified": "yes (Codex browser: master, node-static, Deploy enabled)",
       "upstream_pr": "https://github.com/RyanFitzgerald/devportfolio/pull/310 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:51:25Z flat replay of anybuild 0.33.0 planned steps for RyanFitzgerald_devportfolio @ b568bd964c39bf466f3b4630b5f5c27d752aa583 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/favicon.svg': 200} | log logs/RyanFitzgerald_devportfolio.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:51:25Z flat replay of anybuild 0.33.0 planned steps for RyanFitzgerald_devportfolio @ b568bd964c39bf466f3b4630b5f5c27d752aa583 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/favicon.svg': 200} | log logs/RyanFitzgerald_devportfolio.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/favicon.svg': '200'}; missing path -> 404 (logs/RyanFitzgerald_devportfolio.sws-smoke.json)"
     },
     {
       "repo": "saicaca/fuwari",
@@ -422,7 +464,8 @@
       "import_url": "https://wasmer.io/apps/create?github=saicaca%2Ffuwari",
       "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)",
       "upstream_pr": "https://github.com/saicaca/fuwari/pull/780 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:51:11Z flat replay of anybuild 0.33.0 planned steps for saicaca_fuwari @ e3eb80a4f67951fb0e3747ed434f1d1c3fc6705e (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=9.14.4 -> pnpm on PATH 9.14.4; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/archive/': 200, '/about/': 200, '/posts/expressive-code/': 200, '/pagefind/pagefind.js': 200, '/rss.xml': 200} | log logs/saicaca_fuwari.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:51:11Z flat replay of anybuild 0.33.0 planned steps for saicaca_fuwari @ e3eb80a4f67951fb0e3747ed434f1d1c3fc6705e (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=9.14.4 -> pnpm on PATH 9.14.4; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/archive/': 200, '/about/': 200, '/posts/expressive-code/': 200, '/pagefind/pagefind.js': 200, '/rss.xml': 200} | log logs/saicaca_fuwari.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/archive/': '200', '/about/': '200', '/posts/expressive-code/': '200', '/pagefind/pagefind.js': '200', '/rss.xml': '200'}; missing path -> 404 (logs/saicaca_fuwari.sws-smoke.json)"
     },
     {
       "repo": "satnaing/astro-paper",
@@ -450,7 +493,8 @@
       "import_url": "https://wasmer.io/apps/create?github=satnaing%2Fastro-paper",
       "detection_verified": "yes (Codex browser, node-static)",
       "upstream_pr": "https://github.com/satnaing/astro-paper/pull/697 (OPEN, commit 2e927d5, reported by Codex/root)",
-      "anybuild_replay": "FAIL_ENV: 2026-10-22T04:47:00Z flat replay of anybuild 0.33.0 planned steps for satnaing_astro-paper @ 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/satnaing_astro-paper.flat-replay.log Fails here only at fonts.google.com (sandbox-denied); install with pnpm 10 succeeded."
+      "anybuild_replay": "FAIL_ENV: 2026-10-22T04:47:00Z flat replay of anybuild 0.33.0 planned steps for satnaing_astro-paper @ 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='pnpm install' build='pnpm run build' static_dir='dist' exit=1 smoke_ok=None missing=None routes=None | log logs/satnaing_astro-paper.flat-replay.log Fails here only at fonts.google.com (sandbox-denied); install with pnpm 10 succeeded.",
+      "sws_smoke": "N/A: replay produced no complete build output here (FAIL_ENV build-time host), so nothing to serve; see anybuild_replay and build_external (logs/satnaing_astro-paper.sws-smoke.json)"
     },
     {
       "repo": "surjithctly/astroship",
@@ -478,7 +522,8 @@
       "detection_verified": "pending Codex browser check",
       "detect_log": "logs/surjithctly_astroship.detect.json",
       "upstream_pr": "https://github.com/surjithctly/astroship/pull/68 (OPEN, reported by root/Codex)",
-      "anybuild_replay": "PASS: 2026-10-22T04:50:05Z flat replay of anybuild 0.33.0 planned steps for surjithctly_astroship @ 80f3672fbf5bcab7a4b8bcd7e3dcb1c4bad4e384 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10 -> pnpm on PATH 10.34.7; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/pricing/': 200, '/blog/': 200, '/blog/kitchensink/': 200, '/404.html': 200, '/sitemap-index.xml': 200, '/robots.txt': 200} | log logs/surjithctly_astroship.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:50:05Z flat replay of anybuild 0.33.0 planned steps for surjithctly_astroship @ 80f3672fbf5bcab7a4b8bcd7e3dcb1c4bad4e384 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10 -> pnpm on PATH 10.34.7; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/pricing/': 200, '/blog/': 200, '/blog/kitchensink/': 200, '/404.html': 200, '/sitemap-index.xml': 200, '/robots.txt': 200} | log logs/surjithctly_astroship.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/about/': '200', '/pricing/': '200', '/blog/': '200', '/blog/kitchensink/': '200', '/404.html': '200', '/sitemap-index.xml': '200', '/robots.txt': '200'}; missing path -> 404 (logs/surjithctly_astroship.sws-smoke.json)"
     },
     {
       "repo": "TailGrids/play-tailwind",
@@ -506,7 +551,8 @@
       "stars_source": "GitHub MCP search_repositories",
       "stars_at": "2026-10-22T04:28:10Z",
       "anybuild_replay": "PASS: 2026-10-22T04:50:04Z flat replay of anybuild 0.33.0 planned steps for TailGrids_play-tailwind @ 203a763fe61fd10ed9d5f25984fb5bedd5192768 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about.html': 200, '/pricing.html': 200, '/blog-grids.html': 200, '/signin.html': 200, '/404.html': 200, '/src/css/tailwind.css': 200, '/assets/js/main.js': 200} | log logs/TailGrids_play-tailwind.flat-replay.log",
-      "upstream_pr": "https://github.com/TailGrids/play-tailwind/pull/8 (OPEN, head e8df9fe); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/TailGrids/play-tailwind/pull/8 (OPEN, head e8df9fe); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/about.html': '200', '/pricing.html': '200', '/blog-grids.html': '200', '/signin.html': '200', '/404.html': '200', '/src/css/tailwind.css': '200', '/assets/js/main.js': '200'}; missing path -> 404 (logs/TailGrids_play-tailwind.sws-smoke.json)"
     },
     {
       "repo": "trevortylerlee/astro-micro",
@@ -535,7 +581,8 @@
       "reason": null,
       "detect_log": "logs/trevortylerlee_astro-micro.detect.json",
       "anybuild_replay": "PASS: 2026-10-22T04:48:43Z flat replay of anybuild 0.33.0 planned steps for trevortylerlee_astro-micro @ 4404c3bc967f8da28da1c4b79daf901d064038f3 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/01-getting-started/': 200, '/projects/project-1/': 200, '/tags/': 200, '/404.html': 200, '/rss.xml': 200, '/pagefind/pagefind-entry.json': 200, '/pagefind/pagefind-ui.js': 200} | log logs/trevortylerlee_astro-micro.flat-replay.log",
-      "upstream_pr": "https://github.com/trevortylerlee/astro-micro/pull/157 (OPEN, head 81c0814); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/trevortylerlee/astro-micro/pull/157 (OPEN, head 81c0814); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/blog/': '200', '/blog/01-getting-started/': '200', '/projects/project-1/': '200', '/tags/': '200', '/404.html': '200', '/rss.xml': '200', '/pagefind/pagefind-entry.json': '200', '/pagefind/pagefind-ui.js': '200'}; missing path -> 404 (logs/trevortylerlee_astro-micro.sws-smoke.json)"
     },
     {
       "repo": "zeon-studio/astroplate",
@@ -563,7 +610,8 @@
       "detection_verified": "pending Codex browser check (build script runs Node generators before and after astro build; output is the standard dist)",
       "detect_log": "logs/zeon-studio_astroplate.detect.json",
       "anybuild_replay": "PASS: 2026-10-22T04:51:42Z flat replay of anybuild 0.33.0 planned steps for zeon-studio_astroplate @ b192691196c91902c7d7d9a59a740fe20901353c (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=11.17.0 -> pnpm on PATH 11.17.0; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about': 200, '/blog': 200, '/blog/post-1': 200, '/contact': 200, '/404.html': 200, '/llms.txt': 200, '/sitemap-index.xml': 200} | log logs/zeon-studio_astroplate.flat-replay.log 28 pages; pinned pnpm 11.17.0 per packageManager. Python's test server 301-redirects /about to /about/; SWS trailing-slash behavior not executed here.",
-      "upstream_pr": "https://github.com/zeon-studio/astroplate/pull/97 (OPEN, head 1b1ff87); reported by root/Codex, exact Claude patch, native finish-dev hooks"
+      "upstream_pr": "https://github.com/zeon-studio/astroplate/pull/97 (OPEN, head 1b1ff87); reported by root/Codex, exact Claude patch, native finish-dev hooks",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/about': '308->200', '/blog': '308->200', '/blog/post-1': '308->200', '/contact': '308->200', '/404.html': '200', '/llms.txt': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/zeon-studio_astroplate.sws-smoke.json)"
     },
     {
       "repo": "ashutosh1919/masterPortfolio",
@@ -584,7 +632,7 @@
         "detail": "Node v24.22.1 / npm 11.19.1: exit 0, \"Compiled successfully\" (react-scripts --openssl-legacy-provider build). CI uses Node 20.x.",
         "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ashutosh1919_masterPortfolio.build.log"
       },
-      "smoke": "PASS on flat replay output: /, /404.html, actual /static/js/main.1c0df698.chunk.js, /manifest.json 200 (logs/ashutosh1919_masterPortfolio.flat-replay-smoke.json). Earlier main.0fe52970 404 was a stale route from a prior build hash. Deep routes VERIFIED with static-web-server 2.38.0 (anybuild's pinned SWS; default --page404 ./404.html, no --page-fallback) + headless Chromium: /education, /experience, /projects, /contact first return HTTP 404 with build/404.html, the spa-github-pages redirect restores the URL and renders the correct page (logs/ashutosh1919_masterPortfolio.sws-deeplink.log). Caveat: initial HTTP status for deep URLs is 404.",
+      "smoke": "PASS on flat replay output: /, /404.html, actual /static/js/main.1c0df698.chunk.js, /manifest.json 200 (logs/ashutosh1919_masterPortfolio.flat-replay-smoke.json). Earlier main.0fe52970 404 was a stale route from a prior build hash. Deep routes VERIFIED with static-web-server 2.38.0 (anybuild's pinned SWS; default --page404 ./404.html, no --page-fallback) + headless Chromium: /education, /experience, /projects, /contact first return HTTP 404 with build/404.html, the spa-github-pages redirect restores the URL and renders the correct page (logs/ashutosh1919_masterPortfolio.sws-deeplink.log). Caveat: initial HTTP status for deep URLs is 404. Root independently verified on SWS 2.38: hard load + refresh with query/hash and client-side navigation all work (initial 404 status disclosed). No fallback code needed.",
       "format_check": "Repo pre-commit hook (Husky v4 -> lint-staged -> prettier --write on staged *.md) ran normally and exited 0 when the staging commit was re-created; it reformatted existing README lines (18+/9-). No separate prettier --check was run on the final file. Log: logs/ashutosh1919_masterPortfolio.hook-commit.log.",
       "compat_notes": "Token handling verified: GITHUB_TOKEN is only used by git_data_fetcher.mjs (optional local script that regenerates committed JSON in src/shared/opensource). src/containers/projects/Projects.js references api.github.com/graphql with atob(openSource.githubConvertedToken) but is not imported anywhere and openSource is not exported; no api.github.com string in built bundle. So zero-config static deploy: no token at build or runtime. public/index.html embeds the author's AdSense/GA IDs.",
       "policy": "Read README (Deployment section: GitHub Pages options as bold labels + bullets), CONTRIBUTING.md (fork/branch/PR welcome; wishlist items), CODE_OF_CONDUCT, workflows; no PR template or AI policy. No wasmer mention. Open PR #295 \"Netlify deployment\" (not refused). Closed #442 (CRA to Vite migration). Maintainer merged PRs as recently as 2026-01-20.",
@@ -596,7 +644,8 @@
       "reason": null,
       "detect_log": "logs/ashutosh1919_masterPortfolio.detect.json",
       "hook_check": "Re-created with hooks intact (logs/ashutosh1919_masterPortfolio.hook-commit.log): Husky v4 pre-commit -> lint-staged -> prettier --write EXIT 0; prettier reformatted existing README lines (18+/9-). Root: hook-formatted patch acceptable (no bypass).",
-      "anybuild_replay": "PASS: 2026-10-22T04:50:13Z flat replay of anybuild 0.33.0 planned steps for ashutosh1919_masterPortfolio @ 13640c1659f2e5cf231de8214d85a119f98eb0dc (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='build' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/404.html': 200, '/manifest.json': 200, '/sitemap.xml': 200} | log logs/ashutosh1919_masterPortfolio.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:50:13Z flat replay of anybuild 0.33.0 planned steps for ashutosh1919_masterPortfolio @ 13640c1659f2e5cf231de8214d85a119f98eb0dc (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='build' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/404.html': 200, '/manifest.json': 200, '/sitemap.xml': 200} | log logs/ashutosh1919_masterPortfolio.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/404.html': '200', '/static/js/main.1c0df698.chunk.js': '200', '/manifest.json': '200'}; missing path -> 404 (logs/ashutosh1919_masterPortfolio.sws-smoke.json)"
     },
     {
       "repo": "codewithsadee/vcard-personal-portfolio",
@@ -623,7 +672,8 @@
       "reason": null,
       "stars_source": "GitHub MCP search_repositories",
       "stars_at": "2026-10-22T04:28:10Z",
-      "anybuild_replay": "PASS: 2026-10-22T04:50:00Z flat replay of anybuild 0.33.0 planned steps for codewithsadee_vcard-personal-portfolio @ e52e85c75314de5ed14f049c1b3d1e8ca1743920 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/assets/css/style.css': 200, '/assets/js/script.js': 200, '/assets/images/my-avatar.png': 200} | log logs/codewithsadee_vcard-personal-portfolio.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:50:00Z flat replay of anybuild 0.33.0 planned steps for codewithsadee_vcard-personal-portfolio @ e52e85c75314de5ed14f049c1b3d1e8ca1743920 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/assets/css/style.css': 200, '/assets/js/script.js': 200, '/assets/images/my-avatar.png': 200} | log logs/codewithsadee_vcard-personal-portfolio.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/index.html': '200', '/assets/css/style.css': '200', '/assets/js/script.js': '200', '/assets/images/my-avatar.png': '200'}; missing path -> 404 (logs/codewithsadee_vcard-personal-portfolio.sws-smoke.json)"
     },
     {
       "repo": "leoMirandaa/shadcn-landing-page",
@@ -652,6 +702,36 @@
       "detection_verified": "pending Codex browser check. Local anybuild 0.33.0 plan on clean patched worktree: node-static, vite, static_dir dist (standard).",
       "detect_log": "logs/leoMirandaa_shadcn-landing-page.detect.json",
       "anybuild_replay": "PASS: 2026-10-22T05:02:58Z flat replay of anybuild 0.33.0 planned steps @ 119171854253d978ed003802e3114495c94f7687 (patched commit; node v24.22.1, npm 11.19.1) install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes / 200, /vite.svg 200, /assets/index-BikfSMjf.js 200. logs/leoMirandaa_shadcn-landing-page.flat-replay.log",
+      "reason": null,
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/vite.svg': '200', '/assets/index-BikfSMjf.js': '200'}; missing path -> 404 (logs/leoMirandaa_shadcn-landing-page.sws-smoke.json)"
+    },
+    {
+      "repo": "LyraVoid/Mizuki",
+      "status": "READY",
+      "stars": 1899,
+      "stars_source": "GitHub MCP search_repositories",
+      "stars_at": "2026-10-22T05:06:40Z",
+      "archived": false,
+      "license": "Apache-2.0 (also ships LICENSE.MIT from upstream fuwari)",
+      "default_branch": "master",
+      "pushed_at": "2026-10-01T08:44:10Z",
+      "base_sha": "c06f0003089ca040d5b599b37f0ad0ae65726e95",
+      "framework": "Astro (output: static, base /) + Svelte + Tailwind + Pagefind; derived from saicaca/fuwari",
+      "output_dir": "dist",
+      "build_command": "pnpm install --frozen-lockfile && pnpm run build (sync-content || true; update-anime; astro build; style check; pagefind --site dist; font check)",
+      "build_claude": "PASS: node v24.22.1, pnpm 11.5.3 (packageManager). install EXIT 0, build EXIT 0; 27 HTML files, pagefind indexed 10 pages, font check passed. Sandbox-only noise: api.fontsource.org denied -> unifont fetch errors + 'No data found for font family JetBrains Mono' warning, build not failed. Anime mode 'local' so no bangumi fetch; content sync skipped (no CONTENT_REPO_URL). Log: logs/LyraVoid_Mizuki.build.log",
+      "smoke": "PASS: /, /posts/guide/, /archive/, /about/, /rss.xml, /404.html, /pagefind/pagefind.js, /sitemap-index.xml all 200; 190 root-relative refs, 0 missing. relscan: 1 relative ref, 1 missing (posts/guide -> ../../../../docs/CONTENT_AUTHORING.md: demo-content link into repo docs, broken on every host, pre-existing). logs/LyraVoid_Mizuki.smoke.json",
+      "format_check": "N/A (biome format covers ./src only; README not covered)",
+      "hook_check": "No git hooks: no husky/lint-staged/simple-git-hooks/lefthook in package.json, .git/hooks only samples. Commit made normally; nothing bypassed.",
+      "compat_notes": "vercel.json headers + cleanUrls and generated dist/_headers (CORS for feeds) are host-specific and not applied on Wasmer; Astro emits dir/index.html so clean URLs resolve. siteURL hardcoded to https://mizuki.mysqil.com/ until user changes it (README already says to). Encrypted posts are client-side decryption only. Patch edits 4 READMEs (zh/en/ja/tw), one list line each.",
+      "policy": "Read README.md/README.en.md deploy sections, CLAUDE.md (generic LLM coding guidelines, no contribution ban), .github/pull_request_template.md (filled in PR body; CONTRIBUTING link points to upstream fuwari, left unchecked), CI workflows. grep -ri wasmer: none. MCP PR search 'deploy': only a 2025 Vercel deployment PR (#6, closed) and unrelated PRs; no provider-button refusal. Active: dependabot merges and collaborator PRs through 2026-10.",
+      "why": "README says 'deploy to any static hosting platform' with a Vercel/Netlify/GitHub Pages/Cloudflare list; static Astro output in dist; actively maintained 1.9k-star theme.",
+      "patch": "patches/LyraVoid_Mizuki.patch",
+      "pr_body": "pr-bodies/LyraVoid_Mizuki.md",
+      "import_url": "https://wasmer.io/apps/create?github=LyraVoid%2FMizuki",
+      "detection_verified": "pending Codex browser check. Local anybuild 0.33.0 plan on clean patched worktree: node-static, astro, static_dir dist, pnpm 11.5.3.",
+      "detect_log": "logs/LyraVoid_Mizuki.detect.json",
+      "anybuild_replay": "PASS: 2026-10-22T05:05:30Z flat replay @ da138f93f88a8765259d627433f1af0b959c9845 (patched; node v24.22.1, pnpm 11.5.3 pinned per plan) install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0; /, /posts/guide/, /archive/, /about/, /rss.xml, /404.html, /pagefind/pagefind.js all 200. Same sandbox-only api.fontsource.org fetch warnings. logs/LyraVoid_Mizuki.flat-replay.log",
       "reason": null
     },
     {
@@ -680,36 +760,8 @@
       "import_url": "https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-nano",
       "reason": null,
       "detect_log": "logs/markhorn-dev_astro-nano.detect.json",
-      "anybuild_replay": "PASS: 2026-10-22T04:53:14Z flat replay of anybuild 0.33.0 planned steps for markhorn-dev_astro-nano @ edc211d2281e3b127e55b521b970e11c9a12f949 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10 -> pnpm on PATH 10.34.7; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/01-getting-started/': 200, '/projects/': 200, '/work/': 200, '/rss.xml': 200, '/sitemap-index.xml': 200} | log logs/markhorn-dev_astro-nano.flat-replay.log Caveat: pnpm 10 (Anybuild default; repo declares no packageManager) prints 'Ignoring not compatible lockfile' for the pnpm 6 lockfile and resolves dependencies fresh, so the Wasmer build is not lockfile-pinned."
-    },
-    {
-      "repo": "radishzzz/astro-theme-retypeset",
-      "status": "READY",
-      "stars": 707,
-      "stars_source": "GitHub MCP search_repositories",
-      "stars_at": "2026-10-22T04:28:14Z",
-      "archived": false,
-      "license": "MIT",
-      "detection_verified": "local anybuild plan base and patched: node-static astro dist, pnpm 10.33.0 (logs/radishzzz_astro-theme-retypeset.plan-*.json); pending Codex browser check",
-      "default_branch": "master",
-      "pushed_at": "2026-04-12T10:39:50Z",
-      "base_sha": "a636b6d393be714cab52d3fc4baddd3f3905f701",
-      "framework": "Astro 6 (static, trailingSlash always, i18n), UnoCSS, pnpm 10.33.0; postbuild apply-lqip (sharp)",
-      "output_dir": "dist (apply-lqip.ts hardcodes distDir='dist')",
-      "build_command": "pnpm install --frozen-lockfile && pnpm run build (astro check && astro build && pnpm apply-lqip)",
-      "build_claude": "FAIL_ENV in this sandbox: image.radishzz.cc denied (proxy 403) during astro build.",
-      "smoke": "External (root): routes and hashed assets 200, missing route 404.",
-      "format_check": "N/A",
-      "compat_notes": "README guidance names the demo-owned settings in src/config.ts to personalize/disable: site.url, comment.waline.serverURL / comment.enabled, seo.umamiAnalyticsID, preload.customUmamiAnalyticsJS, seo.verification, preload.imageHostURL. Build needs network to the configured image host.",
-      "policy": "No CONTRIBUTING/PR template; issue templates only. README Getting Started step 4 lists Netlify/Vercel deploy buttons. No Wasmer mentions; no provider-button refusals found.",
-      "why": "Static multilingual Astro theme with an existing deploy-button row.",
-      "patch": "patches/radishzzz_astro-theme-retypeset.patch",
-      "pr_body": "pr-bodies/radishzzz_astro-theme-retypeset.md",
-      "import_url": "https://wasmer.io/apps/create?github=radishzzz%2Fastro-theme-retypeset",
-      "reason": null,
-      "build_external": "PASS (root, local, network) @a636b6d3: portable Node 24.22.1 + registry pnpm 10.33.0; pnpm install --frozen-lockfile and unchanged pnpm run build EXIT 0; astro check 59 files 0 errors/warnings/hints; 103 pages; 16 optimized WebPs; apply-lqip 16 cached images / 108 HTML image instances; preview /, /en/, /en/posts/markdown-extended-features/, /ja/posts/rashomon/, sitemap, favicon, hashed CSS/JS/WebP 200; missing route 404; image.radishzz.cc reachable; source clean.",
-      "hook_check": "simple-git-hooks installed via `pnpm exec simple-git-hooks` (pnpm 10.33.0); pre-commit `pnpm lint-staged` ran on the staging commit: 'could not find any staged files matching configured tasks', EXIT 0 (logs/radishzzz_astro-theme-retypeset.hook-commit.log). No bypass.",
-      "anybuild_replay": "NOT RUN here: replay would fail on sandbox-denied image.radishzz.cc; root's normal build covers the build commands (frozen install vs Anybuild's non-frozen `pnpm install` with the same pinned pnpm 10.33.0)."
+      "anybuild_replay": "PASS: 2026-10-22T04:53:14Z flat replay of anybuild 0.33.0 planned steps for markhorn-dev_astro-nano @ edc211d2281e3b127e55b521b970e11c9a12f949 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10 -> pnpm on PATH 10.34.7; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/01-getting-started/': 200, '/projects/': 200, '/work/': 200, '/rss.xml': 200, '/sitemap-index.xml': 200} | log logs/markhorn-dev_astro-nano.flat-replay.log Caveat: pnpm 10 (Anybuild default; repo declares no packageManager) prints 'Ignoring not compatible lockfile' for the pnpm 6 lockfile and resolves dependencies fresh, so the Wasmer build is not lockfile-pinned.",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/blog/': '200', '/blog/01-getting-started/': '200', '/projects/': '200', '/work/': '200', '/rss.xml': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/markhorn-dev_astro-nano.sws-smoke.json)"
     },
     {
       "repo": "tailwindtoolbox/Landing-Page",
@@ -736,7 +788,8 @@
       "reason": null,
       "stars_source": "GitHub MCP search_repositories",
       "stars_at": "2026-10-22T04:28:10Z",
-      "anybuild_replay": "PASS: 2026-10-22T04:50:02Z flat replay of anybuild 0.33.0 planned steps for tailwindtoolbox_Landing-Page @ af024ec5621efdccbb3accdeb4468247121a1324 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/hero.png': 200} | log logs/tailwindtoolbox_Landing-Page.flat-replay.log"
+      "anybuild_replay": "PASS: 2026-10-22T04:50:02Z flat replay of anybuild 0.33.0 planned steps for tailwindtoolbox_Landing-Page @ af024ec5621efdccbb3accdeb4468247121a1324 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/hero.png': 200} | log logs/tailwindtoolbox_Landing-Page.flat-replay.log",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/index.html': '200', '/hero.png': '200'}; missing path -> 404 (logs/tailwindtoolbox_Landing-Page.sws-smoke.json)"
     },
     {
       "repo": "arifszn/gitprofile",
@@ -1136,7 +1189,8 @@
       "import_url": "https://wasmer.io/apps/create?github=alxshelepenok%2Flumen",
       "reason": "Repo decision record .grove/state.lock (line ~4262) and D-46: 'Deploy configuration stays out of repository'. The patch needs a Staticfile (root: target) to deploy correctly, which conflicts with that rule; a README-only patch would deploy the wrong dir. Reported by root independent review. Do not publish.",
       "detect_log": "logs/alxshelepenok_lumen.detect.json",
-      "anybuild_replay": "PASS: 2026-10-22T04:46:33Z flat replay of anybuild 0.33.0 planned steps for alxshelepenok_lumen @ 5b62c08a7f1aa1c9b195d9bd1df03009311095a3 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='bun install --no-save' build='bun run build' static_dir='target' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/posts/a-brief-history-of-typography/': 200, '/posts/a-brief-history-of-typography.md': 200, '/404.html': 200, '/atom.xml': 200, '/llms.txt': 200, '/tags/': 200, '/sitemap-index.xml': 200} | log logs/alxshelepenok_lumen.flat-replay.log (repo is HELD_POLICY regardless)"
+      "anybuild_replay": "PASS: 2026-10-22T04:46:33Z flat replay of anybuild 0.33.0 planned steps for alxshelepenok_lumen @ 5b62c08a7f1aa1c9b195d9bd1df03009311095a3 (v24.22.1; 11.19.1; 10.34.7; 1.4.2) |  | install='bun install --no-save' build='bun run build' static_dir='target' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/posts/a-brief-history-of-typography/': 200, '/posts/a-brief-history-of-typography.md': 200, '/404.html': 200, '/atom.xml': 200, '/llms.txt': 200, '/tags/': 200, '/sitemap-index.xml': 200} | log logs/alxshelepenok_lumen.flat-replay.log (repo is HELD_POLICY regardless)",
+      "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/posts/a-brief-history-of-typography/': '200', '/posts/a-brief-history-of-typography.md': '200', '/404.html': '200', '/atom.xml': '200', '/llms.txt': '200', '/tags/': '200', '/sitemap-index.xml': '200'}; missing path -> 404 (logs/alxshelepenok_lumen.sws-smoke.json)"
     },
     {
       "repo": "arthelokyo/astrowind",

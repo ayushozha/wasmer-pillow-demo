@@ -1,0 +1,55 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/codewithsadee_vcard-personal-portfolio//opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 33576
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 33576
+      }
+    ],
+    "/assets/css/style.css": [
+      {
+        "path": "/assets/css/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 30738
+      }
+    ],
+    "/assets/js/script.js": [
+      {
+        "path": "/assets/js/script.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4524
+      }
+    ],
+    "/assets/images/my-avatar.png": [
+      {
+        "path": "/assets/images/my-avatar.png",
+        "status": 200,
+        "location": null,
+        "bytes": 9020
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

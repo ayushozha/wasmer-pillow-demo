@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/surjithctly_astroship//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 26187
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 13514
+      }
+    ],
+    "/pricing/": [
+      {
+        "path": "/pricing/",
+        "status": 200,
+        "location": null,
+        "bytes": 25302
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 15013
+      }
+    ],
+    "/blog/kitchensink/": [
+      {
+        "path": "/blog/kitchensink/",
+        "status": 200,
+        "location": null,
+        "bytes": 30897
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10836
+      }
+    ],
+    "/sitemap-index.xml": [
+      {
+        "path": "/sitemap-index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 198
+      }
+    ],
+    "/robots.txt": [
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "location": null,
+        "bytes": 85
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 10836
+    }
+  ],
+  "ok": true
+}

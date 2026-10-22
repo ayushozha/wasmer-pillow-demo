@@ -1,0 +1,87 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/trevortylerlee_astro-micro//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 34312
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 28295
+      }
+    ],
+    "/blog/01-getting-started/": [
+      {
+        "path": "/blog/01-getting-started/",
+        "status": 200,
+        "location": null,
+        "bytes": 47882
+      }
+    ],
+    "/projects/project-1/": [
+      {
+        "path": "/projects/project-1/",
+        "status": 200,
+        "location": null,
+        "bytes": 27301
+      }
+    ],
+    "/tags/": [
+      {
+        "path": "/tags/",
+        "status": 200,
+        "location": null,
+        "bytes": 18518
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 18452
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 3995
+      }
+    ],
+    "/pagefind/pagefind-entry.json": [
+      {
+        "path": "/pagefind/pagefind-entry.json",
+        "status": 200,
+        "location": null,
+        "bytes": 172
+      }
+    ],
+    "/pagefind/pagefind-ui.js": [
+      {
+        "path": "/pagefind/pagefind-ui.js",
+        "status": 200,
+        "location": null,
+        "bytes": 84597
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 18452
+    }
+  ],
+  "ok": true
+}

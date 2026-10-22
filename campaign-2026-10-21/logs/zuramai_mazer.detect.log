@@ -1,0 +1,32 @@
+# 2026-10-22T05:04:45Z anybuild 0.33.0 (wasmerio/shipit@587be231, local release build) plan on clean worktree of PATCHED commit zuramai_mazer @ 28fa60bc3cfa4deb3c36f6930bad369c7c4950ce
+$ anybuild plan zuramai_mazer --out zuramai_mazer.plan.json
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/gate/zuramai_mazer/Anybuild
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/gate/zuramai_mazer.plan.json
+EXIT 0
+{
+    "provider": "node-static",
+    "config": {
+        "name": "zuramai_mazer",
+        "commands": {
+            "install": "yarn install",
+            "build": "yarn run build",
+            "start": "static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/gate/zuramai_mazer/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "dist",
+        "node_package_manager": "yarn",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "yarn run build",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "mazer"
+    },
+    "services": []
+}

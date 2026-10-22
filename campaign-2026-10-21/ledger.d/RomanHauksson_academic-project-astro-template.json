@@ -25,5 +25,6 @@
   "reason": null,
   "detect_log": "logs/RomanHauksson_academic-project-astro-template.detect.json",
   "anybuild_replay": "PASS: 2026-10-22T04:49:02Z flat replay of anybuild 0.33.0 planned steps for RomanHauksson_academic-project-astro-template @ b9a754a94006cf39cb59d94ae566c29bad68fa15 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/favicon.svg': 200, '/BoxVertexColors.glb': 200, '/screenshot-light.png': 200} | log logs/RomanHauksson_academic-project-astro-template.flat-replay.log",
-  "upstream_pr": "https://github.com/RomanHauksson/academic-project-astro-template/pull/76 (CLOSED: declined by owner, \"interesting gtm strategy\"; leave closed, no follow-up)"
+  "upstream_pr": "https://github.com/RomanHauksson/academic-project-astro-template/pull/76 (CLOSED: declined by owner, \"interesting gtm strategy\"; leave closed, no follow-up)",
+  "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/favicon.svg': '200', '/BoxVertexColors.glb': '200', '/screenshot-light.png': '200'}; missing path -> 404 (logs/RomanHauksson_academic-project-astro-template.sws-smoke.json)"
 }

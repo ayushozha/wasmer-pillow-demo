@@ -1,0 +1,47 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 56563
+      }
+    ],
+    "/favicon.svg": [
+      {
+        "path": "/favicon.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 749
+      }
+    ],
+    "/BoxVertexColors.glb": [
+      {
+        "path": "/BoxVertexColors.glb",
+        "status": 200,
+        "location": null,
+        "bytes": 1924
+      }
+    ],
+    "/screenshot-light.png": [
+      {
+        "path": "/screenshot-light.png",
+        "status": 200,
+        "location": null,
+        "bytes": 1849993
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

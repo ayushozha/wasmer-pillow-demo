@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 15017
+      }
+    ],
+    "/posts/": [
+      {
+        "path": "/posts/",
+        "status": 200,
+        "location": null,
+        "bytes": 16093
+      }
+    ],
+    "/notes/": [
+      {
+        "path": "/notes/",
+        "status": 200,
+        "location": null,
+        "bytes": 11515
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 10996
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 10467
+      }
+    ],
+    "/pagefind/pagefind.js": [
+      {
+        "path": "/pagefind/pagefind.js",
+        "status": 200,
+        "location": null,
+        "bytes": 45555
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 2531
+      }
+    ],
+    "/manifest.webmanifest": [
+      {
+        "path": "/manifest.webmanifest",
+        "status": 200,
+        "location": null,
+        "bytes": 539
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 10467
+    }
+  ],
+  "ok": true
+}

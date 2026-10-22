@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/LyraVoid_Mizuki//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 328703
+      }
+    ],
+    "/posts/guide/": [
+      {
+        "path": "/posts/guide/",
+        "status": 200,
+        "location": null,
+        "bytes": 357926
+      }
+    ],
+    "/archive/": [
+      {
+        "path": "/archive/",
+        "status": 200,
+        "location": null,
+        "bytes": 274198
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 273471
+      }
+    ],
+    "/rss.xml": [
+      {
+        "path": "/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 398743
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 267910
+      }
+    ],
+    "/pagefind/pagefind.js": [
+      {
+        "path": "/pagefind/pagefind.js",
+        "status": 200,
+        "location": null,
+        "bytes": 45555
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 267910
+    }
+  ],
+  "ok": true
+}

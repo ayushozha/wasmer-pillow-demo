@@ -23,5 +23,6 @@
   "reason": null,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:10Z",
-  "anybuild_replay": "PASS: 2026-10-22T04:50:02Z flat replay of anybuild 0.33.0 planned steps for tailwindtoolbox_Landing-Page @ af024ec5621efdccbb3accdeb4468247121a1324 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/hero.png': 200} | log logs/tailwindtoolbox_Landing-Page.flat-replay.log"
+  "anybuild_replay": "PASS: 2026-10-22T04:50:02Z flat replay of anybuild 0.33.0 planned steps for tailwindtoolbox_Landing-Page @ af024ec5621efdccbb3accdeb4468247121a1324 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/index.html': 200, '/hero.png': 200} | log logs/tailwindtoolbox_Landing-Page.flat-replay.log",
+  "sws_smoke": "PASS: static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1; routes {'/': '200', '/index.html': '200', '/hero.png': '200'}; missing path -> 404 (logs/tailwindtoolbox_Landing-Page.sws-smoke.json)"
 }

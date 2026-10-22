@@ -1,0 +1,22 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "detwt_LyraVoid_Mizuki",
+        "commands": {
+            "install": "pnpm install",
+            "build": "pnpm run build",
+            "start": "static-web-server --root=/tmp/claude-0/camp2/detwt_LyraVoid_Mizuki/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "dist",
+        "node_package_manager": "pnpm",
+        "node_framework": "astro",
+        "node_server": "node",
+        "node_build_command": "pnpm run build",
+        "pnpm_version": "11.5.3",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "mizuki"
+    },
+    "services": []
+}

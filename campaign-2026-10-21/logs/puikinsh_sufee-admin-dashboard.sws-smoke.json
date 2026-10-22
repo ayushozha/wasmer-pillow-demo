@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/puikinsh_sufee-admin-dashboard//opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 32414
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 32414
+      }
+    ],
+    "/page-login.html": [
+      {
+        "path": "/page-login.html",
+        "status": 200,
+        "location": null,
+        "bytes": 5685
+      }
+    ],
+    "/error-404.html": [
+      {
+        "path": "/error-404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 3433
+      }
+    ],
+    "/partials/sidebar.html": [
+      {
+        "path": "/partials/sidebar.html",
+        "status": 200,
+        "location": null,
+        "bytes": 18406
+      }
+    ],
+    "/partials/header.html": [
+      {
+        "path": "/partials/header.html",
+        "status": 200,
+        "location": null,
+        "bytes": 16500
+      }
+    ],
+    "/tables-data.html": [
+      {
+        "path": "/tables-data.html",
+        "status": 200,
+        "location": null,
+        "bytes": 32625
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,31 @@
+From c3f64de8384ada3749e695234600091d831413fc Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:06:52 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/README.md b/README.md
+index facdc61..921a6b4 100644
+--- a/README.md
++++ b/README.md
+@@ -180,6 +180,14 @@ come with premium support, regular updates, and everything you need for client p
+    ```
+    Production files will be generated in the `dist/` directory
+ 
++## Deploy
++
++To host your own copy on Wasmer Edge, fork this repository and import your fork. The button below
++opens the Wasmer import page for this repository and does not copy it into your GitHub account.
++Wasmer installs the dependencies, runs `npm run build` and serves the generated `dist/` folder.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=puikinsh%2Fsufee-admin-dashboard)
++
+ ## Project Structure
+ 
+ ```
+-- 
+2.43.0
+

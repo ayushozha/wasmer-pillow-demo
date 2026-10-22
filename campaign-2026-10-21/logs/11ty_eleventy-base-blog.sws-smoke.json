@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/11ty_eleventy-base-blog//opt/temp/_site",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 8380
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 8473
+      }
+    ],
+    "/blog/firstpost/": [
+      {
+        "path": "/blog/firstpost/",
+        "status": 200,
+        "location": null,
+        "bytes": 12644
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 7677
+      }
+    ],
+    "/tags/": [
+      {
+        "path": "/tags/",
+        "status": 200,
+        "location": null,
+        "bytes": 7935
+      }
+    ],
+    "/feed/feed.xml": [
+      {
+        "path": "/feed/feed.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 11527
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 8223
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 8222
+    }
+  ],
+  "ok": true
+}
