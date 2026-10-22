@@ -1,0 +1,205 @@
+# replay of B-aykutkardas__regexlearn.com  source=$S/rup/aykutkardas__regexlearn.com  upstream HEAD=ab2419c23777017f83ec9ca75c2155bbca5bc0ca
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Next.js
+    Server: Node.js
+    Package manager: npm
+    Output directory: out
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-aykutkardas__regexlearn.com/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='out' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 428 packages, and audited 429 packages in 19s
+
+7 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> regexlearn@3.0.2 build
+> next build
+
+▲ Next.js 16.3.8 (Turbopack)
+⚠ Specified "rewrites" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+✓ Running next.config.js took 17ms
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Running TypeScript ...
+  Finished TypeScript in 5.0s ...
+  Creating an optimized production build ...
+⚠ Specified "rewrites" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+✓ Compiled successfully in 7.7s
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/134) ...
+  Generating static pages using 3 workers (33/134) 
+  Generating static pages using 3 workers (66/134) 
+  Generating static pages using 3 workers (100/134) 
+✓ Generating static pages using 3 workers (134/134) in 682ms
+  Finalizing page optimization ...
+⚠ rewrites, redirects, and headers are not applied when exporting your application, detected (rewrites, redirects). See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+  Exporting using 3 workers (0/6) ...
+
+Route (pages)
+┌ ● /
+├   /_app
+├   /[lang] (1683 ms)
+│ ├ ● /en
+│ ├ ● /de
+│ ├ ● /es
+│ └ ● [+18 more paths]
+├   /[lang]/cheatsheet (2213 ms)
+│ ├ ● /en/cheatsheet
+│ ├ ● /de/cheatsheet
+│ ├ ● /es/cheatsheet
+│ └ ● [+18 more paths]
+├   /[lang]/learn (1311 ms)
+│ ├ ● /en/learn
+│ ├ ● /de/learn
+│ ├ ● /es/learn
+│ └ ● [+18 more paths]
+├   /[lang]/learn/[lesson] (4745 ms)
+│ ├ ● /en/learn/regex101
+│ ├ ● /en/learn/regex-for-seo
+│ ├ ● /de/learn/regex101
+│ └ ● [+39 more paths]
+├   /[lang]/playground (3627 ms)
+│ ├ ● /en/playground
+│ ├ ● /de/playground
+│ ├ ● /es/playground
+│ └ ● [+18 more paths]
+├ ○ /404
+├ ● /cheatsheet
+├ ● /learn
+├   /learn/[lesson]
+│ ├ ● /learn/regex101
+│ └ ● /learn/regex-for-seo
+└ ● /playground
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses getStaticProps)
+
+
+> regexlearn@3.0.2 postbuild
+> next-sitemap && node ./scripts/html-lang-fixer.js
+
+✨ [next-sitemap] Loading next-sitemap config: file://$S/replay/B-aykutkardas__regexlearn.com/work/next-sitemap.config.js
+✅ [next-sitemap] Generation completed
+┌───────────────┬────────┐
+│ (index)       │ Values │
+├───────────────┼────────┤
+│ indexSitemaps │ 1      │
+│ sitemaps      │ 1      │
+└───────────────┴────────┘
+-----------------------------------------------------
+ SITEMAP INDICES 
+-----------------------------------------------------
+
+   ○ https://regexlearn.com/sitemap.xml
+
+
+-----------------------------------------------------
+ SITEMAPS 
+-----------------------------------------------------
+
+   ○ https://regexlearn.com/sitemap-0.xml
+
+
+exit=0
+
+$ static-web-server --root=$S/replay/B-aykutkardas__regexlearn.com/static_app --log-level=info --port=3906 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	76348
+--	title	/	Regex Learn - Step by step, from zero to advanced.	
+200	page	/learn	text/html	52206
+--	title	/learn	Regex Learn - Regex Interactive Course	
+200	page	/learn/regex101	text/html	97147
+--	title	/learn/regex101	Regex 101 - EN	
+404	page	/learn/basic-matchers	text/html	0
+--	title	/learn/basic-matchers	(none)	
+200	page	/cheatsheet	text/html	69451
+--	title	/cheatsheet	Regex Learn - Regex Cheatsheet	
+200	page	/playground	text/html	71862
+--	title	/playground	Regex Learn - Playground	
+200	page	/en	text/html	76365
+--	title	/en	Regex Learn - Step by step, from zero to advanced.	
+200	page	/en/learn	text/html	52223
+--	title	/en/learn	Regex Learn - Regex Interactive Course	
+200	page	/tr	text/html	80188
+--	title	/tr	Regex Learn - Adım adım, sıfırdan ileri seviyeye.	
+200	page	/tr/learn	text/html	55750
+--	title	/tr/learn	Regex Learn - Regex İnteraktif Kurs	
+200	page	/tr/cheatsheet	text/html	73139
+--	title	/tr/cheatsheet	Regex Learn - Regex Cheatsheet	
+200	page	/Open%20Source.webp	image/webp	29922
+200	page	/sitemap.xml	text/xml	188
+200	page	/robots.txt	text/plain	120
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.svg	image/svg+xml	514
+200	ref	/_next/static/chunks/0_2vorz7k3dkd.css	text/css	71747
+200	ref	/_next/static/chunks/1q2tktwo0lc_5.js	text/javascript	26261
+200	ref	/_next/static/chunks/2p_8f0rib3423.js	text/javascript	48311
+200	ref	/_next/static/chunks/2h12dvcspth33.js	text/javascript	240039
+200	ref	/_next/static/chunks/0f8djxq4hofw_.js	text/javascript	105549
+200	ref	/_next/static/chunks/turbopack-0ooot-fuq8lq2.js	text/javascript	10986
+200	ref	/_next/static/chunks/3t3wgv837mya7.js	text/javascript	30318
+200	ref	/_next/static/chunks/2s98m3-sdm0xz.js	text/javascript	42188
+200	ref	/_next/static/chunks/20u2726vucsn0.js	text/javascript	86550
+200	ref	/_next/static/chunks/turbopack-1fsif7v9d74ok.js	text/javascript	11018
+200	ref	/_next/static/CFCko_7sxkmtHwLG_Om17/_buildManifest.js	text/javascript	1597
+200	ref	/_next/static/CFCko_7sxkmtHwLG_Om17/_ssgManifest.js	text/javascript	323
+200	ref	/_next/static/CFCko_7sxkmtHwLG_Om17/_clientMiddlewareManifest.js	text/javascript	96
+200	ref	/Done.webp	image/webp	24370
+200	ref	/ahrefs.webp	image/webp	556
+200	ref	/wope.webp	image/webp	962
+200	ref	/Learn.webp	image/webp	12370
+200	ref	/Cheatsheet.webp	image/webp	18330
+200	ref	/Playground.webp	image/webp	12556
+200	ref	/Practise.webp	image/webp	14312
+0	ref	/Open Source.webp	URL can't contain control characters. '/Open Source.webp' (found at least ' ')	0
+200	ref	/_next/static/chunks/3ir5w3ud41gty.js	text/javascript	13050
+200	ref	/_next/static/chunks/turbopack-2nfhrg-m7o8d6.js	text/javascript	11018
+200	ref	/interactively.webp	image/webp	1764
+SUMMARY pages=15 refs_checked=25 failures=3
+FAIL	404	page	/learn/basic-matchers	text/html	0
+FAIL	404	page	/nope	text/html	0
+FAIL	0	ref	/Open Source.webp	URL can't contain control characters. '/Open Source.webp' (found at least ' ')	0
+# static_app files: 339

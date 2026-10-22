@@ -1,0 +1,1 @@
+docs: add a Deploy to Wasmer button to the Development section

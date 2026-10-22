@@ -1,0 +1,193 @@
+# replay of B-VERT-sh__VERT  source=$S/rup/VERT-sh__VERT  upstream HEAD=257bcb3b2bb6a501bae0faf9ffb05060ee00c3f7
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: SvelteKit
+    Server: Node.js
+    Package manager: bun
+    Output directory: build
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-VERT-sh__VERT/plan.json
+# provider=node-static install='bun install --no-save' build='bun run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='build' pm=bun@1 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ bun --version
+1.4.3
+exit=0
+
+# staged before install: bun.lock package.json 
+$ bun install --no-save
+bun install v1.4.3 (c6da4a4d3)
+
++ @inlang/paraglide-js@2.29.0
++ @poppanator/sveltekit-svg@7.0.1
++ @sveltejs/adapter-static@4.0.0
++ @sveltejs/kit@3.1.0
++ @sveltejs/vite-plugin-svelte@7.3.1
++ @types/eslint@9.6.1
++ @types/node@24.19.2
++ @types/sanitize-html@2.16.2
++ autoprefixer@10.6.1
++ css-select@5.1.0
++ eslint@10.12.0
++ eslint-config-prettier@10.1.8
++ eslint-plugin-svelte@3.23.1
++ globals@15.15.0
++ prettier@3.9.10
++ prettier-plugin-organize-imports@4.3.0
++ prettier-plugin-svelte@4.1.1
++ prettier-plugin-tailwindcss@0.8.1
++ sass@1.105.1
++ svelte@5.57.2
++ svelte-check@4.7.6
++ tailwindcss@3.4.19
++ typescript@6.0.3
++ typescript-eslint@8.71.2
++ vite@8.3.4
++ vite-plugin-top-level-await@1.6.0
++ vite-plugin-wasm@3.6.0
++ @ffmpeg/core@0.12.10
++ @ffmpeg/core-mt@0.12.10
++ @ffmpeg/ffmpeg@0.12.15
++ @ffmpeg/util@0.12.2
++ @fontsource/azeret-mono@5.3.0
++ @fontsource/lexend@5.3.0
++ @fontsource/radio-canada-big@5.3.0
++ @imagemagick/magick-wasm@0.0.44
++ @lucide/svelte@1.57.0
++ @mediabunny/aac-encoder@1.61.5
++ @mediabunny/ac3@1.61.5
++ @mediabunny/dts@1.61.5
++ @mediabunny/flac-encoder@1.61.5
++ @mediabunny/mp3-encoder@1.61.5
++ @mediabunny/prores@1.61.5
++ @neplex/vectorizer@0.1.0
++ @neplex/vectorizer-wasm32-wasi@https://registry.npmjs.org/@neplex/vectorizer-wasm32-wasi/-/vectorizer-wasm32-wasi-0.1.0.tgz
++ @stripe/stripe-js@10.1.0
++ byte-data@19.0.1
++ client-zip@2.5.1
++ clsx@2.1.1
++ dicom.ts@1.3.0
++ fflate@0.8.3
++ file-type@22.2.0
++ mediabunny@1.61.5
++ music-metadata@12.2.1
++ overlayscrollbars@2.16.0
++ overlayscrollbars-svelte@0.5.5
++ p-queue@10.0.0
++ pandoc-wasm@1.1.0
++ qoa-format@1.0.1
++ riff-file@1.0.3
++ sanitize-html@2.18.1
++ spessasynth_core@4.3.22
++ svelte-stripe@2.0.0
++ vert-wasm@0.0.2
++ wasm-feature-detect@1.9.0
++ wasm-vips@0.0.19
+
+391 packages installed [10.59s]
+exit=0
+
+$ bun run build
+$ paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide && vite build
+i [paraglide-js] Compiling inlang project ...
+
+ WARN  [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+TypeError: fetch failed
+
+
+ WARN  [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+TypeError: fetch failed
+
+√ [paraglide-js] Successfully compiled inlang project.
+fatal: not a git repository (or any of the parent directories): .git
+Could not determine Git commit hash: Error: Command failed: git rev-parse --short HEAD
+fatal: not a git repository (or any of the parent directories): .git
+
+vite v8.3.4 building ssr environment for production...
+
+ WARN  [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js":
+
+TypeError: fetch failed
+
+
+ WARN  [paraglide-js] PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+PluginImportError: Couldn't import the plugin "https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js":
+
+TypeError: fetch failed
+
+√ [paraglide-js] Compilation complete (message-modules)
+✓ 0 modules transformed.
+✗ Build failed in 2.21s
+error during build:
+Build failed with 1 error:
+
+[plugin vite-plugin-sveltekit-env-vars]
+SvelteKit error: env_invalid
+Invalid environment variables:
+
+PUB_HOSTNAME
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_PLAUSIBLE_URL
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_ENV
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_VERTD_URL
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_DISABLE_ALL_EXTERNAL_REQUESTS
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_DISABLE_FAILURE_BLOCKS
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_DONATION_URL
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+PUB_STRIPE_KEY
+  - Value is missing. If it is optional, add a validator declaring it as such.
+
+https://svelte.dev/e/kit/env_invalid
+    at aggregateBindingErrorsIntoJsError (file://$S/replay/B-VERT-sh__VERT/work/node_modules/rolldown/dist/shared/error-CBG33oNV.mjs:49:18)
+    at unwrapBindingResult (file://$S/replay/B-VERT-sh__VERT/work/node_modules/rolldown/dist/shared/error-CBG33oNV.mjs:19:128)
+    at #build (file://$S/replay/B-VERT-sh__VERT/work/node_modules/rolldown/dist/shared/rolldown-BYX6bV3R.mjs:146:34)
+    at async buildEnvironment (file://$S/replay/B-VERT-sh__VERT/work/node_modules/vite/dist/node/chunks/node.js:34716:66)
+    at async Object.build (file://$S/replay/B-VERT-sh__VERT/work/node_modules/vite/dist/node/chunks/node.js:35137:19)
+    at async BasicMinimalPluginContext.buildApp (file://$S/replay/B-VERT-sh__VERT/work/node_modules/@sveltejs/kit/src/exports/vite/build/index.js:449:20)
+    at async Object.buildApp (file://$S/replay/B-VERT-sh__VERT/work/node_modules/vite/dist/node/chunks/node.js:35131:5)
+    at async CAC.<anonymous> (file://$S/replay/B-VERT-sh__VERT/work/node_modules/vite/dist/node/cli.js:780:3) {
+  errors: [Getter/Setter]
+}
+error: script "build" exited with code 1
+exit=1
+
+BUILD FAILED
+STATIC_DIR 'build' MISSING
+$ static-web-server --root=$S/replay/B-VERT-sh__VERT/static_app --log-level=info --port=3901 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+SUMMARY pages=1 refs_checked=0 failures=1
+FAIL	404	page	/	text/html	0
+# static_app files: 0

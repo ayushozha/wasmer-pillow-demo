@@ -1,0 +1,92 @@
+# replay of B-nicejade__markdown-online-editor  source=$S/rup/nicejade__markdown-online-editor  upstream HEAD=adb413875bde1da1325474f82d1b8282a8638ef8
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vue
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-nicejade__markdown-online-editor/plan.json
+# provider=node-static install='yarn install' build='yarn run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=yarn@ inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ yarn --version
+1.22.22
+exit=0
+
+# staged before install: package.json yarn.lock 
+$ yarn install
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+
+Node.js v24.22.1
+exit=1
+
+INSTALL FAILED
+$ yarn run build
+yarn run v1.22.22
+$ node -e "const{cpSync,mkdirSync}=require('fs');mkdirSync('public/vendor',{recursive:true});cpSync('node_modules/@turbodocx/html-to-docx/dist/html-to-docx.browser.js','public/vendor/html-to-docx.browser.js')"
+node:internal/fs/cp/cp-sync:56
+  fsBinding.cpSyncCheckPaths(src, dest, opts.dereference, opts.recursive);
+            ^
+
+Error: ENOENT: no such file or directory, lstat 'node_modules/@turbodocx/html-to-docx/dist/html-to-docx.browser.js'
+    at cpSyncFn (node:internal/fs/cp/cp-sync:56:13)
+    at cpSync (node:fs:3252:3)
+    at [eval]:1:83
+    at runScriptInThisContext (node:internal/vm:219:10)
+    at node:internal/process/execution:451:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:449:60)
+    at evalFunction (node:internal/process/execution:283:30)
+    at evalTypeScript (node:internal/process/execution:295:3)
+    at node:internal/main/eval_string:71:3 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'lstat',
+  path: 'node_modules/@turbodocx/html-to-docx/dist/html-to-docx.browser.js'
+}
+
+Node.js v24.22.1
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+exit=1
+
+BUILD FAILED
+STATIC_DIR 'dist' MISSING
+$ static-web-server --root=$S/replay/B-nicejade__markdown-online-editor/static_app --log-level=info --port=3905 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/about-arya	text/html	0
+--	title	/about-arya	(none)	
+SUMMARY pages=2 refs_checked=0 failures=2
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/about-arya	text/html	0
+# static_app files: 0

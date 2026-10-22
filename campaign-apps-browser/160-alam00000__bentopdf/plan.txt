@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: VitePress
+    Server: Node.js
+    Package manager: npm
+    Output directory: docs/.vitepress/dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneB/plans/alam00000__bentopdf.json

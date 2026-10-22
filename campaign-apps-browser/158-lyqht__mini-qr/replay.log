@@ -1,0 +1,174 @@
+# replay of B-lyqht__mini-qr  source=$S/rup/lyqht__mini-qr  upstream HEAD=fe46504853c597e44b2e39d3decb5df2184c6605
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-lyqht__mini-qr/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10.0.0 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.0.0
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +829
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 829, reused 497, downloaded 14, added 35
+Progress: resolved 829, reused 497, downloaded 51, added 536
+Progress: resolved 829, reused 497, downloaded 87, added 572
+Progress: resolved 829, reused 497, downloaded 283, added 779
+Progress: resolved 829, reused 497, downloaded 332, added 829, done
+
+dependencies:
++ @floating-ui/vue 1.1.11
++ @lucide/vue 1.17.0
++ @vercel/analytics 2.0.1
++ @vitejs/plugin-vue 5.2.4
++ @vitejs/plugin-vue-jsx 3.1.0
++ @vue/tsconfig 0.5.1
++ @vueuse/core 13.9.0
++ autoprefixer 10.5.0
++ class-variance-authority 0.7.1
++ clsx 2.1.1
++ file-saver 2.0.5
++ html5-qrcode 2.3.8
++ jszip 3.10.1
++ marked 15.0.12
++ qr-scanner 1.4.2
++ qrcode-generator 2.0.4
++ radix-vue 1.9.17
++ reka-ui 2.9.7
++ tailwind-merge 2.6.1
++ tailwindcss 3.4.19
++ tailwindcss-animate 1.0.7
++ vaul-vue 0.4.1
++ vite 5.4.21
++ vue 3.5.34
++ vue-i18n 9.14.5
+
+devDependencies:
++ @eslint/js 9.39.4
++ @playwright/test 1.59.1
++ @storybook/addon-essentials 8.6.14
++ @storybook/test 8.6.15
++ @storybook/vue3 8.6.18
++ @storybook/vue3-vite 8.6.18
++ @tailwindcss/typography 0.5.19
++ @types/node 20.19.40
++ @typescript-eslint/parser 8.59.2
++ @vitest/browser 3.2.4
++ @vue/eslint-config-typescript 14.7.0
++ eslint 9.39.4
++ eslint-plugin-tailwindcss 3.18.3
++ eslint-plugin-vue 10.9.1
++ husky 8.0.3
++ lint-staged 15.5.2
++ playwright 1.59.1
++ postcss 8.5.14
++ prettier 3.8.3
++ prettier-plugin-tailwindcss 0.8.0
++ sharp 0.33.5
++ storybook 8.6.18
++ typescript 5.9.3
++ typescript-eslint 8.59.2
++ vite-plugin-pwa 0.21.2
++ vitest 3.2.4
++ vue-eslint-parser 10.4.0
++ vue-tsc 3.2.8
+
+The following dependencies have build scripts that were ignored: esbuild, sharp, vue-demi
+To allow the execution of build scripts for these packages, add their names to "pnpm.onlyBuiltDependencies" in your "package.json", then run "pnpm rebuild"
+
+
+> mini-qr@0.30.2 postinstall $S/replay/B-lyqht__mini-qr/work
+> husky install
+
+fatal: not a git repository (or any of the parent directories): .git
+husky - git command not found, skipping install
+Done in 6.1s
+exit=0
+
+$ pnpm run build
+
+> mini-qr@0.30.2 build $S/replay/B-lyqht__mini-qr/work
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 5 modules transformed.
+node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.34_typescript@5.9.3_/node_modules/@vueuse/core/dist/index.js (3362:0): A comment
+
+"/* #__PURE__ */"
+
+in "node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.34_typescript@5.9.3_/node_modules/@vueuse/core/dist/index.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.34_typescript@5.9.3_/node_modules/@vueuse/core/dist/index.js (5780:22): A comment
+
+"/* #__PURE__ */"
+
+in "node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.34_typescript@5.9.3_/node_modules/@vueuse/core/dist/index.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+
+PWA v0.21.2
+mode      generateSW
+precache  10 entries (0.00 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-99865a2e.js
+warnings
+  One of the glob patterns doesn't match any files. Please remove or fix the following: {
+  "globDirectory": "$S/replay/B-lyqht__mini-qr/work/dist",
+  "globPattern": "**/*.{js,css,svg,png,jpg,jpeg,gif,ico,woff,woff2}",
+  "globIgnores": [
+    "**/app_preview.*",
+    "**/presets/*.svg",
+    "**/*.html",
+    "sw.js",
+    "workbox-*.js"
+  ]
+}
+
+[31mx[39m Build failed in 9.26s
+[31merror during build:
+[31m[vite-plugin-pwa:build] [plugin vite-plugin-pwa:build] There was an error during the build:
+  [vite]: Rollup failed to resolve import "workbox-window" from "/@vite-plugin-pwa/virtual:pwa-register".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+Additionally, handling the error in the 'buildEnd' hook caused the following error:
+  [vite]: Rollup failed to resolve import "workbox-window" from "/@vite-plugin-pwa/virtual:pwa-register".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`[31m
+    at getRollupError (file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/rollup@4.60.3/node_modules/rollup/dist/es/shared/parseAst.js:406:41)
+    at file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/rollup@4.60.3/node_modules/rollup/dist/es/shared/node-entry.js:23883:39
+    at async catchUnfinishedHookActions (file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/rollup@4.60.3/node_modules/rollup/dist/es/shared/node-entry.js:23341:16)
+    at async rollupInternal (file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/rollup@4.60.3/node_modules/rollup/dist/es/shared/node-entry.js:23866:5)
+    at async build (file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/vite@5.4.21_@types+node@20.19.40_terser@5.47.1/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:65709:14)
+    at async CAC.<anonymous> (file://$S/replay/B-lyqht__mini-qr/work/node_modules/.pnpm/vite@5.4.21_@types+node@20.19.40_terser@5.47.1/node_modules/vite/dist/node/cli.js:829:5)[39m
+ ELIFECYCLE  Command failed with exit code 1.
+exit=1
+
+BUILD FAILED
+$ static-web-server --root=$S/replay/B-lyqht__mini-qr/static_app --log-level=info --port=3903 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+SUMMARY pages=1 refs_checked=0 failures=1
+FAIL	404	page	/	text/html	0
+# static_app files: 2

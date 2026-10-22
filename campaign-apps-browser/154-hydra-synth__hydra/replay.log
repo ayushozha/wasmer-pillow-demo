@@ -1,0 +1,92 @@
+# replay of B-hydra-synth__hydra  source=$S/rup/hydra-synth__hydra  upstream HEAD=523e0feaf3f49899b759ce0e7afabe0114ddfe2b
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-hydra-synth__hydra/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm warn deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+
+added 526 packages, and audited 527 packages in 7s
+
+41 vulnerabilities (3 low, 11 moderate, 16 high, 11 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   core-js@2.6.12 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   esbuild@0.18.12 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> hydra-web-editor@1.5.3 build
+> vite build
+
+[36mvite v4.4.4 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 480 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                [39m[1m[2m  1.62 kB[22m[1m[22m[2m │ gzip:   0.68 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-d47aa2a1.js  [39m[1m[33m898.98 kB[39m[22m[2m │ gzip: 270.04 kB[22m
+[33m
+(!) Some chunks are larger than 500 kBs after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 6.16s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/B-hydra-synth__hydra/static_app --log-level=info --port=3902 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1623
+--	title	/	&lt; hydra &gt;	
+200	page	/bundle.js	text/javascript	4258004
+200	page	/css/style.css	text/css	1651
+200	page	/css/fontawesome.css	text/css	46931
+200	page	/webfonts/fa-solid-900.woff2	font/woff2	74328
+200	page	/webfonts/fa-regular-400.woff2	font/woff2	13584
+200	page	/webfonts/fa-brands-400.woff2	font/woff2	74656
+200	page	/images/hydra-landing.png	image/png	1377790
+200	page	/p5.min.js	text/javascript	913558
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/bundle.js?1.2wsdajk	text/javascript	4258004
+200	ref	/css/codemirror.css	text/css	8542
+200	ref	/css/tomorrow-night-eighties.css	text/css	3124
+200	ref	/css/show-hint.css	text/css	623
+200	ref	/css/modal.css	text/css	4345
+200	ref	/assets/index-d47aa2a1.js	text/javascript	901106
+SUMMARY pages=10 refs_checked=6 failures=1
+FAIL	404	page	/nope	text/html	0
+# static_app files: 30
