@@ -1,0 +1,25 @@
+From 104a1ac9df4f2d8bdd27586899265391a60e0b84 Mon Sep 17 00:00:00 2001
+From: Wasmer Campaign <noreply@example.invalid>
+Date: Thu, 22 Oct 2026 04:34:07 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/README.md b/README.md
+index afdc862..d795951 100644
+--- a/README.md
++++ b/README.md
+@@ -100,6 +100,8 @@ Below are some fantastic examples of websites based on this template. If you wis
+    | `bun run format`       | Format all files using [Biome](https://biomejs.dev/) |
+    | `bun run format:check` | Check formatting without writing                  |
+ 
++6. To deploy on Wasmer Edge, [import a repository on Wasmer](https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite). The link imports this public template for a build and does not copy it into your GitHub account, so import the repository you created from this template instead to customize your site and redeploy on push.
++
+ ### Site configuration
+ 
+ Edit the `src/consts.ts` file to update your site's metadata, navigation links, and social links:
+-- 
+2.43.0
+

@@ -1,0 +1,5 @@
+# 2026-10-22T04:33:37Z trevortylerlee/astro-micro prettier 3.8.1
+$ npx prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+EXIT 0

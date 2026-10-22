@@ -1,0 +1,382 @@
+$ npx -y pnpm@11.22.0 install --frozen-lockfile
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+? Verifying lockfile against supply-chain policies (1361 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1153
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1153, reused 174, downloaded 0, added 0
+Progress: resolved 1153, reused 437, downloaded 0, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 1153, reused 453, downloaded 48, added 4
+✓ Lockfile passes supply-chain policies (1361 entries in 3.4s)
+Progress: resolved 1153, reused 453, downloaded 192, added 16
+Progress: resolved 1153, reused 453, downloaded 333, added 25
+Progress: resolved 1153, reused 453, downloaded 553, added 44
+Progress: resolved 1153, reused 453, downloaded 698, added 1153, done
+.../node_modules/workerd postinstall$ node install.js
+.../node_modules/workerd postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../node_modules/workerd postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../node_modules/workerd postinstall: Done
+
+dependencies:
++ @astrojs/check 0.9.10
++ @astrojs/cloudflare 14.3.1
++ @astrojs/markdown-remark 7.3.1
++ @astrojs/markdown-satteri 0.4.1
++ @astrojs/mdx 8.0.1
++ @astrojs/rss 4.0.19
++ @astrojs/sitemap 3.7.4
++ @astrojs/svelte 9.0.1
++ @expressive-code/plugin-collapsible-sections 0.44.2
++ @expressive-code/plugin-line-numbers 0.44.2
++ @fancyapps/ui 6.1.14
++ @fontsource-variable/noto-sans-sc 5.3.0
++ @iconify-json/fa7-brands 1.2.4
++ @iconify-json/fa7-regular 1.2.3
++ @iconify-json/fa7-solid 1.2.5
++ @iconify-json/material-symbols 1.2.91
++ @iconify-json/mingcute 1.2.8
++ @iconify-json/simple-icons 1.2.95
++ @iconify/svelte 5.2.2
++ @iconify/types 2.0.0
++ @iconify/utils 3.1.7
++ @mermanjs/web 0.8.0-alpha.3
++ @napi-rs/wasm-runtime 1.2.3
++ @swup/astro 1.8.0
++ @tailwindcss/typography 0.5.20
++ @types/hast 3.0.5
++ @types/mdast 4.0.4
++ astro 7.3.2
++ astro-expressive-code 0.44.2
++ astro-icon 1.2.0
++ ci-info 4.4.0
++ dayjs 1.11.23
++ ec-lang-logo 1.0.5
++ expressive-code-collapsible 0.1.0
++ expressive-code-language-badge 1.1.0
++ github-slugger 2.0.0
++ glob 13.0.6
++ gray-matter 4.0.3
++ hast-util-from-html 2.0.3
++ hastscript 9.0.1
++ katex 0.19.0
++ l2d-widget 0.1.2
++ marked 18.1.0
++ mdast-util-to-string 4.0.0
++ pagefind 1.5.2
++ pako 3.0.1
++ qrcode 1.5.4
++ reading-time 1.5.0
++ rehype-autolink-headings 7.1.0
++ rehype-code-group 0.3.1
++ rehype-components 0.3.0
++ rehype-katex 7.0.1
++ rehype-slug 6.0.0
++ remark-admonition-to-blockquote-callout 1.0.0
++ remark-directive 4.0.0
++ remark-math 6.0.0
++ remark-sectionize 2.1.0
++ sanitize-html 2.18.0
++ satteri 0.10.5
++ sharp 0.35.4
++ stylus 0.64.0
++ svelte 5.57.0
++ tailwindcss 4.3.3
++ takumi-js 2.14.0
++ tsx 4.23.13
++ typescript 6.0.3
++ unist-util-visit 5.1.0
++ wrangler 4.147.0
+
+devDependencies:
++ @astrojs/ts-plugin 1.10.11
++ @biomejs/biome 2.5.12
++ @iconify-json/mdi 1.2.3
++ @iconify-json/svg-spinners 1.2.4
++ @tailwindcss/vite 4.3.3
++ @types/qrcode 1.5.6
++ @types/sanitize-html 2.16.2
++ esbuild 0.28.2
++ pinyin-pro 3.29.3
++ postcss-import 16.2.0
++ postcss-nesting 14.0.1
++ rehype-callouts 2.2.0
++ subset-font 2.9.0
+
+Done in 9.3s using pnpm v11.22.0
+EXIT 0
+$ npx -y pnpm@11.22.0 run build
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+$ npx tsx scripts/generate-github-card-data.ts && npx tsx scripts/generate-lqips.ts && npx tsx scripts/generate-vndb-covers.ts && astro build && npx tsx scripts/prune-pio-assets.ts && npx tsx scripts/subset-fonts.ts && npx tsx scripts/minify-inline-scripts.ts && npx tsx scripts/run-pagefind.ts
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+[GITHUB-CARD] Failed to refresh CuteLeaf/Firefly; keeping cached data. Error: GitHub API returned 401 Unauthorized
+    at fetchRepositoryData (/tmp/claude-0/camp2/CuteLeaf_Firefly/scripts/generate-github-card-data.ts:62:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async main (/tmp/claude-0/camp2/CuteLeaf_Firefly/scripts/generate-github-card-data.ts:89:26)
+[GITHUB-CARD] Failed to refresh saicaca/fuwari; keeping cached data. Error: GitHub API returned 401 Unauthorized
+    at fetchRepositoryData (/tmp/claude-0/camp2/CuteLeaf_Firefly/scripts/generate-github-card-data.ts:62:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async main (/tmp/claude-0/camp2/CuteLeaf_Firefly/scripts/generate-github-card-data.ts:89:26)
+[GITHUB-CARD] Cached 2 repositories (0 refreshed).
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Loaded 36 existing entries from src/constants/lqips.json
+Found 36 images, 0 new to process.
+
+Done! Processed 0/0 new images. Total: 36. Output: src/constants/lqips.json
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+[VNDB] Page not enabled, skipping cover download
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+04:33:45 [content] Syncing content
+04:33:49 [content] Synced content
+04:33:49 [types] Generated 4.36s
+04:33:49 [build] output: "static"
+04:33:49 [build] mode: "static"
+04:33:49 [build] directory: /tmp/claude-0/camp2/CuteLeaf_Firefly/dist/
+04:33:49 [build] Collecting build info...
+04:33:49 [build] ✓ Completed in 4.58s.
+04:33:49 [build] Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: DOMException [Error]: Request was cancelled.
+      at new DOMException (node:internal/per_context/domexception:76:18)
+      at makeAppropriateNetworkError (node:internal/deps/undici/undici:11962:182)
+      at httpNetworkFetch (node:internal/deps/undici/undici:13856:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:13715:33)
+      at async httpFetch (node:internal/deps/undici/undici:13537:37)
+      at async mainFetch (node:internal/deps/undici/undici:13298:24) {
+    cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling
+        at connect (/tmp/claude-0/camp2/CuteLeaf_Firefly/node_modules/.pnpm/wrangler@4.147.0_@types+node@26.4.1/node_modules/wrangler/wrangler-dist/cli.js:41212:27)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+      code: 'UND_ERR_ABORTED'
+    }
+  }
+}
+04:33:54 [WARN] [assets] No data found for font family Zen Maru Gothic. Review your configuration
+04:33:54 [WARN] [assets] No data found for font family Inter. Review your configuration
+04:33:54 [WARN] [assets] No data found for font family JetBrains Mono. Review your configuration
+04:33:57 [astro-icon] Loaded icons from src/icons, fa7-brands, fa7-regular, fa7-solid, material-symbols, mingcute, simple-icons, mdi, svg-spinners
+04:33:57 [assets] Copying fonts (0 files)...
+04:33:59 [vite] ✓ built in 9.74s
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: DOMException [Error]: Request was cancelled.
+      at new DOMException (node:internal/per_context/domexception:76:18)
+      at makeAppropriateNetworkError (node:internal/deps/undici/undici:11962:182)
+      at httpNetworkFetch (node:internal/deps/undici/undici:13856:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:13715:33)
+      at async httpFetch (node:internal/deps/undici/undici:13537:37)
+      at async mainFetch (node:internal/deps/undici/undici:13298:24) {
+    cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling
+        at connect (/tmp/claude-0/camp2/CuteLeaf_Firefly/node_modules/.pnpm/wrangler@4.147.0_@types+node@26.4.1/node_modules/wrangler/wrangler-dist/cli.js:41212:27)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+      code: 'UND_ERR_ABORTED'
+    }
+  }
+}
+04:34:03 [WARN] [assets] No data found for font family Zen Maru Gothic. Review your configuration
+04:34:03 [WARN] [assets] No data found for font family Inter. Review your configuration
+04:34:03 [WARN] [assets] No data found for font family JetBrains Mono. Review your configuration
+04:34:04 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+04:34:04 [vite] ✓ built in 5.05s
+04:34:04 [build] Rearranging server assets...
+
+ generating static routes 
+04:34:04   ├─ /404.html (+105ms) 
+04:34:04   ├─ /about/index.html (+37ms) 
+04:34:04   ├─ /api/allPostMeta.json (+3ms) 
+04:34:04   ├─ /api/dynamic.json (+11ms) 
+04:34:04   ├─ /archive/index.html (+27ms) 
+04:34:04   ├─ /atom/index.html (+36ms) 
+04:34:05   ├─ /atom.xml (+184ms) 
+04:34:05   ├─ /bangumi/index.html (+7ms) 
+04:34:05   ├─ /bilibili/index.html (+5ms) 
+04:34:05   ├─ /booknav/index.html (+40ms) 
+04:34:05   ├─ /categories/index.html (+53ms) 
+04:34:05   ├─ /dynamic/comments/index.html (+7ms) 
+04:34:05   ├─ /dynamic/index.html (+44ms) 
+04:34:05   ├─ /friends/index.html (+30ms) 
+04:34:05   ├─ /gallery/firefly-2026/index.html (+25ms) 
+04:34:05   ├─ /gallery/encrypted-test/index.html (+45ms) 
+04:34:05   ├─ /gallery/index.html (+50ms) 
+04:34:05   ├─ /guestbook/index.html (+30ms) 
+04:34:05   ├─ /llms.txt (+4ms) 
+04:34:05   ├─ /myanimelist/index.html (+9ms) 
+04:34:05   ├─ /og/code-examples.png/ (+389ms) 
+04:34:05   ├─ /og/encrypted-demo.png/ (+108ms) 
+04:34:06   ├─ /og/firefly.png/ (+88ms) 
+04:34:06   ├─ /og/guide.png/ (+138ms) 
+04:34:06   ├─ /og/guide/firefly-layout-system.png/ (+98ms) 
+04:34:06   ├─ /og/guide/firefly-wiki-link.png/ (+86ms) 
+04:34:06   ├─ /og/katex-math-example.png/ (+106ms) 
+04:34:06   ├─ /og/markdown-extended.png/ (+83ms) 
+04:34:06   ├─ /og/markdown-mermaid.png/ (+131ms) 
+04:34:06   ├─ /og/markdown-plantuml.png/ (+104ms) 
+04:34:06   ├─ /og/markdown-tutorial.png/ (+92ms) 
+04:34:06   ├─ /og/mdx-example.png/ (+88ms) 
+04:34:07   ├─ /og/video.png/ (+110ms) 
+04:34:07   ├─ /posts/firefly/index.html (+50ms) 
+04:34:07   ├─ /posts/guide/index.html (+24ms) 
+04:34:07   ├─ /posts/code-examples/index.html (+46ms) 
+04:34:07   ├─ /posts/guide/firefly-layout-system/index.html (+110ms) 
+04:34:07   ├─ /posts/guide/firefly-wiki-link/index.html (+81ms) 
+04:34:07   ├─ /posts/encrypted-demo/index.html (+64ms) 
+04:34:07   ├─ /posts/katex-math-example/index.html (+100ms) 
+04:34:07   ├─ /posts/mdx-example/index.html (+90ms) 
+04:34:07   ├─ /posts/markdown-extended/index.html (+39ms) 
+04:34:07   ├─ /posts/markdown-mermaid/index.html (+31ms) 
+04:34:07   ├─ /posts/markdown-plantuml/index.html (+19ms) 
+04:34:07   ├─ /posts/markdown-tutorial/index.html (+33ms) 
+04:34:07   ├─ /posts/video/index.html (+28ms) 
+04:34:07   ├─ /projects/firefly/index.html (+27ms) 
+04:34:07   ├─ /projects/example-project/index.html (+17ms) 
+04:34:07   ├─ /projects/index.html (+24ms) 
+04:34:07   ├─ /robots.txt (+6ms) 
+04:34:07   ├─ /rss/index.html (+35ms) 
+04:34:08   ├─ /rss.xml (+161ms) 
+04:34:08   ├─ /search/index.html (+19ms) 
+04:34:08   ├─ /series/index.html (+33ms) 
+04:34:08   ├─ /sponsor/index.html (+24ms) 
+04:34:08   ├─ /tags/index.html (+20ms) 
+04:34:08   ├─ /vndb/index.html (+4ms) 
+04:34:08   ├─ /index.html (+26ms) 
+04:34:08   ├─ /2/index.html (+21ms) 
+04:34:08 ✓ Completed in 4.06s.
+
+ generating optimized images 
+04:34:08   ▶ /_astro/avatar.BcAu2wMi_yT6PR.webp (before: 28kB, after: 20kB) (+64ms) (1/56)
+04:34:08   ▶ /_astro/m2.DdvPaSds_IzGBP.webp (before: 27kB, after: 31kB) (+147ms) (2/56)
+04:34:08   ▶ /_astro/m3.D3bdkV68_1B5y44.webp (before: 118kB, after: 64kB) (+235ms) (3/56)
+04:34:08   ▶ /_astro/avatar.BcAu2wMi_Z2kMBUQ.webp (before: 28kB, after: 68kB) (+203ms) (4/56)
+04:34:08   ▶ /_astro/m2.DdvPaSds_rxT1.webp (before: 27kB, after: 42kB) (+177ms) (5/56)
+04:34:08   ▶ /_astro/avatar.BcAu2wMi_DTisN.webp (before: 28kB, after: 3kB) (+72ms) (6/56)
+04:34:08   ▶ /_astro/m1.DEh_M2ue_Z1S1lrt.webp (before: 135kB, after: 70kB) (+353ms) (7/56)
+04:34:08   ▶ /_astro/m3.D3bdkV68_1I5aSS.webp (before: 118kB, after: 94kB) (+272ms) (8/56)
+04:34:08   ▶ /_astro/m4.DzLJp29g_1oUPkN.webp (before: 142kB, after: 68kB) (+346ms) (9/56)
+04:34:08   ▶ /_astro/m5.UNwLEw9O_Z1lqfdc.webp (before: 79kB, after: 54kB) (+339ms) (10/56)
+04:34:09   ▶ /_astro/m1.DEh_M2ue_Z1L1IBE.webp (before: 135kB, after: 104kB) (+346ms) (11/56)
+04:34:09   ▶ /_astro/m6.Ca2EuEDu_P3oOm.webp (before: 73kB, after: 42kB) (+290ms) (12/56)
+04:34:09   ▶ /_astro/m4.DzLJp29g_Z1siWVv.webp (before: 142kB, after: 100kB) (+350ms) (13/56)
+04:34:09   ▶ /_astro/m5.UNwLEw9O_16Ihom.webp (before: 79kB, after: 77kB) (+368ms) (14/56)
+04:34:09   ▶ /_astro/d1.v_J1gD3P_tz0F7.webp (before: 71kB, after: 70kB) (+415ms) (15/56)
+04:34:09   ▶ /_astro/m6.Ca2EuEDu_rBfB3.webp (before: 73kB, after: 60kB) (+361ms) (16/56)
+04:34:09   ▶ /_astro/d2.G7EObyHu_Z1DLAKS.webp (before: 56kB, after: 51kB) (+370ms) (17/56)
+04:34:09   ▶ /_astro/d3.CGCRs0-H_Z4ue21.webp (before: 99kB, after: 87kB) (+391ms) (18/56)
+04:34:09   ▶ /_astro/d4.Brgr35k-_QbpD3.webp (before: 73kB, after: 74kB) (+361ms) (19/56)
+04:34:10   ▶ /_astro/d1.v_J1gD3P_ZDw30v.webp (before: 71kB, after: 124kB) (+587ms) (20/56)
+04:34:10   ▶ /_astro/d2.G7EObyHu_2sTS0J.webp (before: 56kB, after: 87kB) (+484ms) (21/56)
+04:34:10   ▶ /_astro/d4.Brgr35k-_ZgTD2z.webp (before: 73kB, after: 126kB) (+363ms) (22/56)
+04:34:10   ▶ /_astro/firefly-light.DZ-mS7Sc_Z4p5YL.webp (before: 3kB, after: 0kB) (+5ms) (23/56)
+04:34:10   ▶ /_astro/firefly-light.DZ-mS7Sc_Z1n8zmu.webp (before: 3kB, after: 1kB) (+8ms) (24/56)
+04:34:10   ▶ /_astro/firefly-light.DZ-mS7Sc_Z3pH8y.webp (before: 3kB, after: 2kB) (+7ms) (25/56)
+04:34:10   ▶ /_astro/firefly-dark.b7MsfgPt_RPm6p.webp (before: 4kB, after: 0kB) (+5ms) (26/56)
+04:34:10   ▶ /_astro/firefly-dark.b7MsfgPt_1Ub8hw.webp (before: 4kB, after: 1kB) (+4ms) (27/56)
+04:34:10   ▶ /_astro/firefly-dark.b7MsfgPt_Zr6Cr1.webp (before: 4kB, after: 2kB) (+8ms) (28/56)
+04:34:10   ▶ /_astro/d3.CGCRs0-H_Z11YS4k.webp (before: 99kB, after: 150kB) (+554ms) (29/56)
+04:34:10   ▶ /_astro/1.BQ4-k1kz_Z17x8Xz.webp (before: 65kB, after: 123kB) (+309ms) (30/56)
+04:34:10   ▶ /_astro/d5.z7QGp_dj_1EwU7g.webp (before: 50kB, after: 60kB) (+556ms) (31/56)
+04:34:10   ▶ /_astro/left-list.CdJfuugk_23fiFf.webp (before: 80kB, after: 153kB) (+327ms) (32/56)
+04:34:10   ▶ /_astro/d6.DetxM4Sl_wvX9N.webp (before: 64kB, after: 62kB) (+457ms) (33/56)
+04:34:10   ▶ /_astro/1.BQ4-k1kz_1pJpyw.webp (before: 65kB, after: 87kB) (+339ms) (34/56)
+04:34:11   ▶ /_astro/right-grid2.BDLeNFG9_Z1Ypd95.webp (before: 89kB, after: 164kB) (+399ms) (35/56)
+04:34:11   ▶ /_astro/d5.z7QGp_dj_H2g4W.webp (before: 50kB, after: 93kB) (+494ms) (36/56)
+04:34:11   ▶ /_astro/d6.DetxM4Sl_ZpXFRv.webp (before: 64kB, after: 106kB) (+430ms) (37/56)
+04:34:11   ▶ /_astro/1.BQ4-k1kz_ZNYbef.webp (before: 65kB, after: 42kB) (+210ms) (38/56)
+04:34:11   ▶ /_astro/left-grid3.DCIbm9j3_Z5Vd5j.webp (before: 102kB, after: 180kB) (+315ms) (39/56)
+04:34:11   ▶ /_astro/both-list.CybtDZTU_xxVkb.webp (before: 86kB, after: 164kB) (+308ms) (40/56)
+04:34:11   ▶ /_astro/both-grid.B-BFe9Al_1g1tLj.webp (before: 101kB, after: 187kB) (+376ms) (41/56)
+04:34:11   ▶ /_astro/cover.bDPQizdp_C8GFs.webp (before: 75kB, after: 29kB) (+92ms) (42/56)
+04:34:11   ▶ /_astro/masonry.BgzRsBcp_2mfpqn.webp (before: 112kB, after: 194kB) (+462ms) (43/56)
+04:34:11   ▶ /_astro/cover.bDPQizdp_1Rz3Bw.webp (before: 75kB, after: 77kB) (+145ms) (44/56)
+04:34:11   ▶ /_astro/firefly2.dxmXG905_Z2o5m8L.webp (before: 94kB, after: 15kB) (+330ms) (45/56)
+04:34:12   ▶ /_astro/firefly1.CZCuCN4V_1uGCKh.webp (before: 112kB, after: 20kB) (+597ms) (46/56)
+04:34:12   ▶ /_astro/obsidian.Cwb2iYzd_1I7Wom.webp (before: 35kB, after: 81kB) (+445ms) (47/56)
+04:34:12   ▶ /_astro/github.urcbElKG_Z1bC9wS.webp (before: 56kB, after: 81kB) (+512ms) (48/56)
+04:34:12   ▶ /_astro/vitepress.D2YnjBWE_Z1rUl1H.webp (before: 33kB, after: 74kB) (+247ms) (49/56)
+04:34:12   ▶ /_astro/docusaurus.Cu-On_k2_Zy4rHX.webp (before: 43kB, after: 99kB) (+329ms) (50/56)
+04:34:12   ▶ /_astro/firefly2.dxmXG905_ZyJm5m.webp (before: 94kB, after: 214kB) (+1.11s) (51/56)
+04:34:12   ▶ /_astro/firefly1.CZCuCN4V_1dgNYg.webp (before: 112kB, after: 244kB) (+891ms) (52/56)
+04:34:13   ▶ /_astro/firefly2.dxmXG905_2aJVld.webp (before: 94kB, after: 38kB) (+274ms) (53/56)
+04:34:13   ▶ /_astro/firefly3.CGzFXcxi_Z1Lz6q8.webp (before: 75kB, after: 172kB) (+819ms) (54/56)
+04:34:13   ▶ /_astro/firefly1.CZCuCN4V_Z1LmOgS.webp (before: 112kB, after: 56kB) (+341ms) (55/56)
+04:34:13   ▶ /_astro/firefly3.CGzFXcxi_ZJA0vM.webp (before: 75kB, after: 38kB) (+218ms) (56/56)
+04:34:13 ✓ Completed in 5.03s.
+
+04:34:13 [build] ✓ Completed in 24.17s.
+04:34:13 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:34:13 [build] 40 page(s) built in 28.77s
+04:34:13 [build] Complete!
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+🎎 Pruning unused mascot assets in dist/...
+   ✂ pio (14.62 MiB)
+   ✂ _astro/Live2DWidget.astro_astro_type_script_index_0_lang.CrcD5cDL.js (0.63 MiB)
+✨ Pruned 2 mascot assets, freed 15.26 MiB
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+🔤 Font subsetting started...
+   ⏭ Skipping '--font-greatvibes' — not referenced in selected or any font region.
+   No local fonts with subset: true found. Skipping.
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+🗜 Minifying inline scripts in dist/...
+✨ Minified 1115 inline scripts in 35/40 HTML files, saved 1508.9 KiB
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/camp2/CuteLeaf_Firefly"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 40 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+5 pages found without an <html> element. 
+Pages without an outer <html> element will not be processed by default. 
+If adding this element is not possible, use the root selector config to target a different root element.
+  * "/bangumi/" has no <html> element
+  * "/myanimelist/" has no <html> element
+  * "/vndb/" has no <html> element
+  * "/bilibili/" has no <html> element
+  * "/dynamic/comments/" has no <html> element
+
+[Reading languages]
+Discovered 1 language: zh-cn
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 18 pages
+  Indexed 2088 words
+  Indexed 0 filters
+  Indexed 0 sorts
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+
+Finished in 0.398 seconds
+EXIT 0

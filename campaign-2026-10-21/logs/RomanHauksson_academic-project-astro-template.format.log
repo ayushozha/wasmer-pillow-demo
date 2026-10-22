@@ -1,0 +1,5 @@
+# 2026-10-22T04:32:29Z RomanHauksson_academic-project-astro-template @ 0e90d4f36bad6ee0af330964bdf0002fe451283d (base) prettier 3.8.3
+$ npx --no-install prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+EXIT 0

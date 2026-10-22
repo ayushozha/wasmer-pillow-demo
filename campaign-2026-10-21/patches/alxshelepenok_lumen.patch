@@ -1,0 +1,27 @@
+From a68b5d409f9c9ea2d33ef1d4fe4b2ac5003d4be3 Mon Sep 17 00:00:00 2001
+From: Wasmer Campaign <noreply@example.invalid>
+Date: Thu, 22 Oct 2026 04:34:07 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index 4ac4b08..eb861d2 100644
+--- a/README.md
++++ b/README.md
+@@ -56,6 +56,10 @@ $ bun install
+ $ bun run start
+ ```
+ 
++## Deploy
++
++`bun run build` writes the static site to `target/`. To host it on Wasmer Edge, [import the repository on Wasmer](https://wasmer.io/apps/create?github=alxshelepenok%2Flumen). The link imports this public repository for a build and does not copy it into your GitHub account, so import your own fork or copy instead if you want to customize the blog and redeploy on push.
++
+ ## Sponsors
+ 
+ Special thanks to our sponsors and partners for supporting the project.
+-- 
+2.43.0
+

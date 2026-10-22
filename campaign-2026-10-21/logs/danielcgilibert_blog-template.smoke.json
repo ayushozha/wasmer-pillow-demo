@@ -1,0 +1,44 @@
+{
+  "dir": "danielcgilibert_blog-template/dist",
+  "base": "/",
+  "html_files": 18,
+  "local_refs_checked": 45,
+  "missing_local_refs": [
+    "/en/core-concepts/framework-components/",
+    "/en/reference/directives-reference/"
+  ],
+  "missing_count": 2,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 24505,
+      "title": "Home \u2022 Astro Theme OpenBlog"
+    },
+    "/post/astro/": {
+      "status": 200,
+      "bytes": 60461,
+      "title": "TypeScript2 \u2022 Astro Theme OpenBlog"
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 13234,
+      "title": "Tags \u2022 Astro Theme OpenBlog"
+    },
+    "/category/category-1/1/": {
+      "status": 200,
+      "bytes": 20527,
+      "title": "Category 1 \u2022 Astro Theme OpenBlog"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 2479,
+      "title": "Astro Theme OpenBlog"
+    },
+    "/pagefind/pagefind.js": {
+      "status": 200,
+      "bytes": 30414,
+      "title": null
+    }
+  },
+  "ok": false
+}

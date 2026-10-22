@@ -1,0 +1,26 @@
+# 2026-10-22T04:33:36Z jktrn/astro-erudite biome Version: 2.5.1
+$ ./node_modules/.bin/biome format README.md
+Checked 0 files in 2ms. No fixes applied.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × No files were processed in the specified paths.
+  
+  i Check your biome.json or biome.jsonc to ensure the paths are not ignored by the configuration.
+  
+  i These paths were provided but ignored:
+  
+  - README.md
+  
+
+EXIT 1
+$ bun run format:check
+Checked 44 files in 78ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1
+EXIT 1
+# note: the only file flagged by format:check is src/components/TableOfContents.astro (unmodified, pre-existing at base sha); README.md is not covered by Biome (ignoreUnknown, markdown unsupported), so no formatter covers README.md.

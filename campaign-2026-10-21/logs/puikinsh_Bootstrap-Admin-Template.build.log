@@ -1,0 +1,103 @@
+$ npm ci
+
+added 133 packages, and audited 134 packages in 3s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+3 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.5.6 (install: node scripts/build-from-source.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> metis-admin-dashboard@3.7.0 build
+> vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 148 modules transformed.
+rendering chunks...
+dist-modern/assets/favicon-B1-NXkMJ.svg                             0.26 kB
+dist-modern/assets/favicon-DiW6HRCs.png                             0.55 kB
+dist-modern/assets/manifest-D0qHSrzp.json                           0.94 kB
+dist-modern/500.html                                                3.36 kB
+dist-modern/maintenance.html                                        3.55 kB
+dist-modern/404.html                                                4.02 kB
+dist-modern/lock-screen.html                                        5.45 kB
+dist-modern/forgot-password.html                                    6.11 kB
+dist-modern/two-factor.html                                         7.17 kB
+dist-modern/reset-password.html                                     7.37 kB
+dist-modern/register.html                                           7.52 kB
+dist-modern/login.html                                              7.75 kB
+dist-modern/assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2     10.25 kB
+dist-modern/assets/inter-greek-ext-wght-normal-DlzME5K_.woff2      11.23 kB
+dist-modern/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2       18.74 kB
+dist-modern/assets/inter-greek-wght-normal-CkhJZR-_.woff2          18.99 kB
+dist-modern/assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2   25.96 kB
+dist-modern/elements.html                                          32.79 kB
+dist-modern/elements-badges.html                                   38.99 kB
+dist-modern/security.html                                          39.53 kB
+dist-modern/elements-alerts.html                                   39.72 kB
+dist-modern/elements-buttons.html                                  40.62 kB
+dist-modern/messages.html                                          40.87 kB
+dist-modern/files.html                                             42.43 kB
+dist-modern/reports.html                                           44.42 kB
+dist-modern/settings.html                                          47.23 kB
+dist-modern/assets/inter-latin-wght-normal-Dx4kXJAl.woff2          48.25 kB
+dist-modern/elements-cards.html                                    51.12 kB
+dist-modern/index.html                                             51.70 kB
+dist-modern/elements-modals.html                                   51.85 kB
+dist-modern/products.html                                          53.92 kB
+dist-modern/orders.html                                            54.64 kB
+dist-modern/elements-forms.html                                    59.25 kB
+dist-modern/analytics.html                                         60.05 kB
+dist-modern/calendar.html                                          61.65 kB
+dist-modern/elements-tables.html                                   61.89 kB
+dist-modern/users.html                                             66.41 kB
+dist-modern/help.html                                              78.77 kB
+dist-modern/assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2      85.06 kB
+dist-modern/forms.html                                             88.85 kB
+dist-modern/assets/bootstrap-icons-mSm7cUeB.woff2                 134.04 kB
+dist-modern/assets/bootstrap-icons-BeopsB42.woff                  180.28 kB
+dist-modern/assets/prism-XjOTrbqP.css                               1.26 kB
+dist-modern/assets/main-ClkrVWiF.css                              412.19 kB
+dist-modern/assets/search-component-7FwxNuMO.js                     0.34 kB
+dist-modern/assets/password-strength-CR79XtXF.js                    0.56 kB
+dist-modern/assets/rolldown-runtime-hePW80VL.js                     0.71 kB
+dist-modern/assets/main-BRpeuKCG.js                                 1.74 kB
+dist-modern/assets/auth-CwAvTly_.js                                 5.25 kB
+dist-modern/assets/settings-C3b0BAup.js                             5.35 kB
+dist-modern/assets/analytics-DLyF_OpZ.js                            7.97 kB
+dist-modern/assets/forms-BkV8J-oP.js                                8.05 kB
+dist-modern/assets/elements-BprsDvyJ.js                             9.32 kB
+dist-modern/assets/security-CXakDHRf.js                             9.86 kB
+dist-modern/assets/messages-CsOe5iDw.js                             9.87 kB
+dist-modern/assets/help-BQKISPnM.js                                11.53 kB
+dist-modern/assets/users-D-c5iPiQ.js                               12.07 kB
+dist-modern/assets/calendar-BrA-RY5Z.js                            13.22 kB
+dist-modern/assets/products-lQumS_mP.js                            14.05 kB
+dist-modern/assets/orders-DrJPyqPi.js                              15.07 kB
+dist-modern/assets/files-DdZHtETI.js                               16.08 kB
+dist-modern/assets/prism-CYH2nXNs.js                               18.93 kB
+dist-modern/assets/main-BomV8aNu.js                                37.61 kB
+dist-modern/assets/reports-BtzS_qVO.js                             43.20 kB
+dist-modern/assets/vendor-bootstrap-Dj44xPS1.js                    80.39 kB
+dist-modern/assets/vendor-ui-Be8JR3ju.js                          132.74 kB
+dist-modern/assets/vendor-charts-D2Sbi086.js                      212.94 kB
+
+✓ built in 8.57s
+[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 8.1s of this 8.5s build (95%).
+2 hooks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+  - vite:build-html transform (30 calls)
+  - vite:css transform (15 calls)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+
+EXIT 0

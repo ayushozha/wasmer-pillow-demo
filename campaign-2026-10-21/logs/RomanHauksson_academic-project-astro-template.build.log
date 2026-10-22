@@ -1,3 +1,4 @@
+# 2026-10-22T04:29:36Z RomanHauksson/academic-project-astro-template @ 0e90d4f36bad6ee0af330964bdf0002fe451283d node v24.22.1 npm 11.19.1
 $ npm ci
 npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 

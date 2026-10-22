@@ -1,0 +1,35 @@
+From 358155ac4b1d38d0070b9a6950ce506089f8ad17 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:32:40 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ readme.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/readme.md b/readme.md
+index 8eaaaf8..f1dd744 100644
+--- a/readme.md
++++ b/readme.md
+@@ -15,6 +15,7 @@ If you end up using this starter, feel free to send me a link, I'd love to see i
+     - [Install dependencies](#install-dependencies)
+     - [Working locally](#working-locally)
+     - [Creating a production build](#creating-a-production-build)
++    - [Deploying to Wasmer Edge](#deploying-to-wasmer-edge)
+   - [Built with Eleventy Excellent](#built-with-eleventy-excellent)
+   - [Credits and Thank yous](#credits-and-thank-yous)
+ 
+@@ -83,6 +84,10 @@ Minify JS, CSS and HTML.
+ npm run build
+ ```
+ 
++### Deploying to Wasmer Edge
++
++[Import into Wasmer](https://wasmer.io/apps/create?github=madrilene%2Feleventy-excellent) to build and host the `dist` output on Wasmer Edge. The link imports this public repository; it does not copy it into your GitHub account, so import your own copy or fork to customize the site and redeploy on push. The headers in `netlify.toml` / `vercel.json` and the Netlify `_redirects` file are not applied by Wasmer.
++
+ ## Built with Eleventy Excellent
+ 
+ [Sites that are based on / built with Eleventy Excellent. ](https://eleventy-excellent.netlify.app/built-with/)
+-- 
+2.43.0
+

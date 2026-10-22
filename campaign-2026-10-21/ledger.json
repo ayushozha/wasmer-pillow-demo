@@ -51,7 +51,7 @@
     },
     {
       "repo": "saicaca/fuwari",
-      "status": "READY",
+      "status": "PUBLISHED",
       "stars": 5097,
       "stars_source": "GitHub search API via GitHub MCP",
       "stars_at": "2026-10-22T04:19Z",
@@ -72,7 +72,8 @@
       "patch": "patches/saicaca_fuwari.patch",
       "pr_body": "pr-bodies/saicaca_fuwari.md",
       "import_url": "https://wasmer.io/apps/create?github=saicaca%2Ffuwari",
-      "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)"
+      "detection_verified": "yes (Codex browser: main, node-static, Deploy enabled)",
+      "upstream_pr": "https://github.com/saicaca/fuwari/pull/780 (OPEN, reported by root/Codex)"
     },
     {
       "repo": "RyanFitzgerald/devportfolio",
@@ -141,13 +142,13 @@
       "build_claude": "PASS Node 24.22.1 (logs/11ty_eleventy-base-blog.build.log): wrote 15 files",
       "smoke": "PASS logs/11ty_eleventy-base-blog.smoke.json: /, /blog/, /blog/firstpost/, /about/, /tags/, /feed/feed.xml, /404.html all 200; 13 HTML files, 0 missing local refs",
       "format_check": "n/a",
-      "compat_notes": "Output is _site, not dist; Codex must confirm the import page picks _site (otherwise this needs config and is not README-only).",
+      "compat_notes": "Output _site matches Anybuild's Eleventy default; README-only patch suffices.",
       "policy": "No CONTRIBUTING or PR template. 'Deploy this to your own site' section lists Netlify/Vercel/GitHub Pages/Stackblitz; one line added in the same format.",
       "why": "Official Eleventy starter whose README section is literally 'Deploy this Eleventy site in just a few clicks on these services'.",
       "patch": "patches/11ty_eleventy-base-blog.patch",
       "pr_body": "pr-bodies/11ty_eleventy-base-blog.md",
       "import_url": "https://wasmer.io/apps/create?github=11ty%2Feleventy-base-blog",
-      "detection_verified": "partial (Codex browser: main, node-static, Deploy enabled; _site output dir not visible in UI, source check in progress)"
+      "detection_verified": "yes: Codex browser (main, node-static, Deploy enabled) + source check: Anybuild v0.33.0 maps Eleventy to _site (providers/node.rs 324-328); nodestatic-eleventy snapshot builds _site and copies _site/. into static_app; backend build definition pins Anybuild 0.33.0 (reported by root). Running binary/deployed app unverified."
     },
     {
       "repo": "arthelokyo/astrowind",
@@ -218,5 +219,13 @@
     "ashutosh1919/masterPortfolio",
     "JustGoodUI/dante-astro-theme",
     "trevortylerlee/astro-micro"
-  ]
+  ],
+  "anybuild_findings": {
+    "source": "wasmerio/shipit@587be23132ea9302775d1cd4c075c1b75e2670a2 (Anybuild 0.33.0, crate version in Cargo.toml)",
+    "custom_output_dir": "node_static uses the framework default output dir (get_static_dir, providers/node_static.rs ~454) and does not read astro.config outDir; a repo-root Staticfile `root:` overrides it (load_static_parts ~260). node_static Strong=60 > Staticfile=50 (providers/mod.rs ~420-450), so the framework build still runs. Minimal fix for non-default output: one-line Staticfile `root: <dir>`.",
+    "plain_html": "No package.json + root index.html => staticfile Html evidence (15); static_dir None => staticfile.bzl:37 serves '.' (repo root). Examples static-nobuild, static-htmlwithjs. No config needed.",
+    "package_json_without_build": "package.json with no start/build/generate/export script + root index.html => staticfile UnbuiltNodeSite (15) > node Package (10) (providers/staticfile.rs ~228).",
+    "hold_rule": "Lacking an existing deploy section is NOT a blocker (user correction 2026-10-22); hold only on concrete policy/PR-disabled/build/runtime/misleading evidence."
+  },
+  "published_count_note": "Count only PUBLISHED upstream PRs toward the 50 goal; root counts unique repos across both Claude sessions."
 }

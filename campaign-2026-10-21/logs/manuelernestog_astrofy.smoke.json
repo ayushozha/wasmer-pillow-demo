@@ -1,0 +1,51 @@
+{
+  "dir": "manuelernestog_astrofy/dist",
+  "base": "/",
+  "html_files": 15,
+  "local_refs_checked": 21,
+  "missing_local_refs": [
+    "/rss.xml"
+  ],
+  "missing_count": 1,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 13917,
+      "title": "Astrofy | Personal Portfolio Website Template"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 11125,
+      "title": "Blog"
+    },
+    "/blog/demo-post-1/": {
+      "status": 200,
+      "bytes": 12352,
+      "title": "Demo Post 1"
+    },
+    "/blog/tag/rust/": {
+      "status": 200,
+      "bytes": 9769,
+      "title": "Blog - rust"
+    },
+    "/cv/": {
+      "status": 200,
+      "bytes": 13786,
+      "title": "Resume"
+    },
+    "/store/item1/": {
+      "status": 200,
+      "bytes": 10734,
+      "title": "Demo Item 1"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 3889,
+      "title": "404: Not Found"
+    },
+    "/rss.xml": {
+      "error": "HTTP Error 404: File not found"
+    }
+  },
+  "ok": false
+}

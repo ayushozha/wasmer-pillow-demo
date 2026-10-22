@@ -1,0 +1,82 @@
+# 2026-10-22T04:32:33Z ixartz/Astro-boilerplate @ 59205bc6cf56fd984c7ad1cb9f3e8ed86e0b3884 node v20.19.5 npm 10.8.2
+$ npm install && npm run build
+
+> astro-boilerplate@1.0.0 prepare
+> husky install
+
+husky - Git hooks installed
+
+added 974 packages, and audited 975 packages in 18s
+
+328 packages are looking for funding
+  run `npm fund` for details
+
+48 vulnerabilities (3 low, 21 moderate, 22 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+
+> astro-boilerplate@1.0.0 build
+> astro build
+
+04:32:52 [WARN] [vite] (!) Experimental optimizeDeps.disabled and deps pre-bundling during build were removed in Vite 5.1.
+    To disable the deps optimizer, set optimizeDeps.noDiscovery to true and optimizeDeps.include as undefined or empty.
+    Please remove optimizeDeps.disabled from your config.
+    
+  
+04:32:52 [build] output: "static"
+04:32:52 [build] directory: /tmp/claude-0/camp2/ixartz_Astro-boilerplate/dist/
+04:32:52 [build] Collecting build info...
+04:32:52 [build] ✓ Completed in 74ms.
+04:32:52 [build] Building static entrypoints...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:32:54 [vite] ✓ built in 1.64s
+04:32:54 [build] ✓ Completed in 1.67s.
+
+ building client (vite) 
+04:32:54 [vite] transforming...
+04:32:54 [vite] ✓ 23 modules transformed.
+04:32:54 [vite] rendering chunks...
+04:32:54 [vite] computing gzip size...
+04:32:54 [vite] dist/_astro/client.DPZcRp_H.js  142.11 kB │ gzip: 45.80 kB
+04:32:54 [vite] ✓ built in 564ms
+
+ generating static routes 
+04:32:54 ▶ src/pages/index.astro
+04:32:54   └─ /index.html (+36ms)
+04:32:54 λ src/pages/rss.xml.ts
+04:32:54   └─ /rss.xml (+1ms)
+04:32:54 ▶ src/pages/posts/hello-world.md
+04:32:54   └─ /posts/hello-world/index.html (+6ms)
+04:32:54 ▶ src/pages/posts/second-post.md
+04:32:54   └─ /posts/second-post/index.html (+7ms)
+04:32:54 ▶ src/pages/posts/fifth-post.md
+04:32:54   └─ /posts/fifth-post/index.html (+4ms)
+04:32:54 ▶ src/pages/posts/first-post.md
+04:32:54   └─ /posts/first-post/index.html (+4ms)
+04:32:54 ▶ src/pages/posts/forth-post.md
+04:32:54   └─ /posts/forth-post/index.html (+4ms)
+04:32:54 ▶ src/pages/posts/sixth-post.md
+04:32:54   └─ /posts/sixth-post/index.html (+4ms)
+04:32:54 ▶ src/pages/posts/third-post.md
+04:32:54   └─ /posts/third-post/index.html (+3ms)
+04:32:54 ▶ src/pages/posts/[...page].astro
+04:32:54   ├─ /posts/index.html (+6ms)
+04:32:54   └─ /posts/2/index.html (+5ms)
+04:32:54 ✓ Completed in 227ms.
+
+[32mastro-robots-txt:[0m `robots.txt` is created.
+
+04:32:55 [build] 10 page(s) built in 2.55s
+04:32:55 [build] Complete!
+EXIT 0
