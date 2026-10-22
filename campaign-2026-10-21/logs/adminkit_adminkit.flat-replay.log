@@ -1,0 +1,14 @@
+# 2026-10-22T04:49:28Z flat replay of anybuild 0.33.0 planned steps for adminkit_adminkit @ 2ea20d60e4707d301ac4b7997edd4879538f6166 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/adminkit_adminkit && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/adminkit_adminkit/src --out /tmp/claude-0/flat-replay/adminkit_adminkit/plan.json)
+  Detected static site provider
+    Output directory: static
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/adminkit_adminkit/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/adminkit_adminkit/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='static'
+$ (cd /tmp/claude-0/flat-replay/adminkit_adminkit/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/adminkit_adminkit/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": "static", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/pages-profile.html": 200, "/charts-chartjs.html": 200, "/pages-sign-in.html": 200, "/js/app.js": 200, "/css/app.css": 200}}

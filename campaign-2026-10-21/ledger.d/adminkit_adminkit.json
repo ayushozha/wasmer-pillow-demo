@@ -15,12 +15,13 @@
   "build_claude": "PASS: exit 0 Node v24.22.1 / npm 11.19.1, webpack compiled successfully. No lockfile in repo (npm install, non-reproducible versions). Build rewrites tracked static/js/app.js(+maps); reverted before patching. Log: logs/adminkit_adminkit.build.log",
   "smoke": "PASS: / /pages-profile.html /charts-chartjs.html /pages-sign-in.html /js/app.js /css/app.css all 200 from static/; 13 HTML; 0 root-relative refs; relative-ref scan 282 refs 0 missing. Logs: logs/adminkit_adminkit.smoke.json, logs/adminkit_adminkit.relscan.json",
   "format_check": "N/A: no markdown formatter configured",
-  "compat_notes": "Unusual output dir static/ (no index.html at repo root). vercel.json cleanUrls not applied on Wasmer. Upgrade-to-pro page present (vendor template).",
+  "compat_notes": "Patch adds Staticfile `root: static`. Without it anybuild plan -> provider node, start `webpack serve` (dev server). With it -> staticfile, static_dir static, no build; committed static/ (28 tracked files) served. Flat replay smoke 6/6 routes 200 (logs/adminkit_adminkit.flat-replay*.json).",
   "policy": "Read README (Quick start/Build tools, no deploy section -> new tiny Deploy subsection per coordinator authorization), .github/CONTRIBUTING.md (PR: present tense, imperative, <=72 char first line, screenshots when possible), .github/PULL_REQUEST_TEMPLATE.md (one checkbox, mirrored). No Wasmer mention. PR search deploy/netlify/vercel/wasmer/readme: no host-button PRs or refusals; #151 WIP Vite/Eleventy v4 toolchain closed (possible future restructure). No git hooks configured.",
   "why": "Static admin template with committed servable static/ folder already published by vercel.json; README lacks hosting guidance.",
   "patch": "patches/adminkit_adminkit.patch",
   "pr_body": "pr-bodies/adminkit_adminkit.md",
   "import_url": "https://wasmer.io/apps/create?github=adminkit%2Fadminkit",
-  "detection_verified": "pending Codex browser check — unusual output dir static/ needs Codex detection check",
-  "reason": null
+  "detection_verified": "local anybuild plan: staticfile root static (with patch); pending Codex browser check",
+  "reason": null,
+  "anybuild_replay": "PASS: 2026-10-22T04:49:28Z flat replay of anybuild 0.33.0 planned steps for adminkit_adminkit @ 2ea20d60e4707d301ac4b7997edd4879538f6166 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='static' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/pages-profile.html': 200, '/charts-chartjs.html': 200, '/pages-sign-in.html': 200, '/js/app.js': 200, '/css/app.css': 200} | log logs/adminkit_adminkit.flat-replay.log"
 }

@@ -1,0 +1,62 @@
+# 2026-10-22T04:49:50Z flat replay of anybuild 0.33.0 planned steps for cobiwave_simplefolio @ c571fcdcc64f925fee57ea3146318d1be6182907 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/cobiwave_simplefolio && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/cobiwave_simplefolio/src --out /tmp/claude-0/flat-replay/cobiwave_simplefolio/plan.json)
+  Detected static Node.js provider
+    Framework: Parcel
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/cobiwave_simplefolio/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/cobiwave_simplefolio/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/cobiwave_simplefolio/opt/temp && npm install)
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+
+added 189 packages, and audited 190 packages in 4s
+
+79 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 7 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.0.7 (install: node-gyp-build)
+npm warn install-scripts   lmdb@2.5.2 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   msgpackr-extract@2.2.0 (install: node-gyp-build-optional-packages)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/cobiwave_simplefolio/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/cobiwave_simplefolio/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/cobiwave_simplefolio/opt/temp && npm run build)
+
+> simplefolio@1.0.1 build
+> parcel build
+
+resize:  can't open terminal /dev/tty
+Building...
+
+console: Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: 
+https://github.com/browserslist/update-db#readme
+Bundling...
+Packaging & Optimizing...
+√ Built in 4.13s
+
+dist/index.html                6.71 KB    1.63s
+dist/favicon.887424ff.png      3.97 KB    144ms
+dist/profile.8f19b361.jpg    852.98 KB    1.44s
+dist/assets/resume.pdf         2.96 KB     83ms
+dist/project.0b14f8de.jpg    415.68 KB    1.44s
+dist/index.dc60bf54.css      191.01 KB    140ms
+dist/index.f3360eb2.js        10.24 KB    1.45s
+EXIT 0
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/assets/resume.pdf": 200, "/index.f3360eb2.js": 200, "/index.dc60bf54.css": 200, "/profile.8f19b361.jpg": 200}}

@@ -1,0 +1,53 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/CuteLeaf_Firefly/opt/temp/dist",
+  "base": "/",
+  "html_files": 40,
+  "local_refs_checked": 116,
+  "missing_local_refs": [
+    "/404/"
+  ],
+  "missing_count": 1,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 336003,
+      "title": "Firefly - Demo site"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 273801,
+      "title": "\u5173\u4e8e\u6211 - Firefly"
+    },
+    "/archive/": {
+      "status": 200,
+      "bytes": 302966,
+      "title": "\u5f52\u6863 - Firefly"
+    },
+    "/posts/code-examples/": {
+      "status": 200,
+      "bytes": 449086,
+      "title": "Firefly \u4ee3\u7801\u5757\u793a\u4f8b - Firefly"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 273663,
+      "title": "404 - Firefly"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 292976,
+      "title": "Firefly"
+    },
+    "/pagefind/pagefind.js": {
+      "status": 200,
+      "bytes": 45555,
+      "title": null
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 190,
+      "title": null
+    }
+  },
+  "ok": false
+}

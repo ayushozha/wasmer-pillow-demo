@@ -1,0 +1,14 @@
+# 2026-10-22T04:50:04Z flat replay of anybuild 0.33.0 planned steps for TailGrids_play-tailwind @ 203a763fe61fd10ed9d5f25984fb5bedd5192768 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/TailGrids_play-tailwind && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/TailGrids_play-tailwind/src --out /tmp/claude-0/flat-replay/TailGrids_play-tailwind/plan.json)
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/TailGrids_play-tailwind/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/TailGrids_play-tailwind/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='.'
+$ (cd /tmp/claude-0/flat-replay/TailGrids_play-tailwind/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/TailGrids_play-tailwind/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/about.html": 200, "/pricing.html": 200, "/blog-grids.html": 200, "/signin.html": 200, "/404.html": 200, "/src/css/tailwind.css": 200, "/assets/js/main.js": 200}}

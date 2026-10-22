@@ -22,5 +22,6 @@
   "pr_body": "pr-bodies/CuteLeaf_Firefly.md",
   "import_url": "https://wasmer.io/apps/create?github=CuteLeaf%2FFirefly",
   "detection_verified": "pending Codex browser check",
-  "reason": null
+  "reason": null,
+  "anybuild_replay": "BUILD_PASS_SMOKE_NOTE: 2026-10-22T04:52:07Z flat replay of anybuild 0.33.0 planned steps for CuteLeaf_Firefly @ 0a7b8c1496959bd202ee73b0d722038c9c21af29 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=11.22.0 -> pnpm on PATH 11.22.0; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=False missing=1 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/code-examples/': 200, '/404.html': 200, '/rss.xml': 200, '/pagefind/pagefind.js': 200, '/sitemap-index.xml': 200} | log logs/CuteLeaf_Firefly.flat-replay.log The 1 missing ref is the intentional /404/ Astro.redirect target used by disabled-feature pages."
 }

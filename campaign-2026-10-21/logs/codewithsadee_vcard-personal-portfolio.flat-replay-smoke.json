@@ -1,0 +1,36 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/codewithsadee_vcard-personal-portfolio/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 33564,
+      "title": "vCard - Personal Portfolio"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 33564,
+      "title": "vCard - Personal Portfolio"
+    },
+    "/assets/css/style.css": {
+      "status": 200,
+      "bytes": 30738,
+      "title": null
+    },
+    "/assets/js/script.js": {
+      "status": 200,
+      "bytes": 4524,
+      "title": null
+    },
+    "/assets/images/my-avatar.png": {
+      "status": 200,
+      "bytes": 8521,
+      "title": null
+    }
+  },
+  "ok": true
+}

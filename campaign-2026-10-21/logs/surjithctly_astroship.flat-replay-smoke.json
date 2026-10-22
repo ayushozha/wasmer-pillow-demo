@@ -1,0 +1,51 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/surjithctly_astroship/opt/temp/dist",
+  "base": "/",
+  "html_files": 10,
+  "local_refs_checked": 18,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 26183,
+      "title": "Astroship - Starter Template for Astro with Tailwind CSS"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 13510,
+      "title": "About | Astroship"
+    },
+    "/pricing/": {
+      "status": 200,
+      "bytes": 25298,
+      "title": "Pricing | Astroship"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 15001,
+      "title": "Blog | Astroship"
+    },
+    "/blog/kitchensink/": {
+      "status": 200,
+      "bytes": 30887,
+      "title": "Typography Example Post | Astroship"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 10832,
+      "title": "404 Not Found | Astroship"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 198,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 85,
+      "title": null
+    }
+  },
+  "ok": true
+}

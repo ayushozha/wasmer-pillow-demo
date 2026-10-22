@@ -1,0 +1,51 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/zeon-studio_astroplate/opt/temp/dist",
+  "base": "/",
+  "html_files": 28,
+  "local_refs_checked": 48,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 36237,
+      "title": "Astroplate"
+    },
+    "/about": {
+      "status": 200,
+      "bytes": 19442,
+      "title": "About"
+    },
+    "/blog": {
+      "status": 200,
+      "bytes": 25903,
+      "title": "Blog Posts"
+    },
+    "/blog/post-1": {
+      "status": 200,
+      "bytes": 30546,
+      "title": "How to build an Application with modern Technology"
+    },
+    "/contact": {
+      "status": 200,
+      "bytes": 18931,
+      "title": "Contact"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 17986,
+      "title": "Page Not Found"
+    },
+    "/llms.txt": {
+      "status": 200,
+      "bytes": 2966,
+      "title": null
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 193,
+      "title": null
+    }
+  },
+  "ok": true
+}

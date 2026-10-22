@@ -15,12 +15,13 @@
   "build_claude": "PASS: exit 0, Node v24.22.1 (.nvmrc 24) / npm 11.19.1, built in 8.57s, 30 HTML pages. Log: logs/puikinsh_Bootstrap-Admin-Template.build.log",
   "smoke": "PASS: / /analytics.html /calendar.html /login.html /404.html /settings.html all 200; 30 HTML; 0 root-relative refs (base './'); relative-ref scan 879 refs, 0 real misses (28 flagged = Alpine :src/:href bindings, false positives). Logs: logs/puikinsh_Bootstrap-Admin-Template.smoke.json, logs/puikinsh_Bootstrap-Admin-Template.relscan.json",
   "format_check": "prettier --check README.md fails on unpatched base too (pre-existing); prettier diff has no change on the added line. Log: logs/puikinsh_Bootstrap-Admin-Template.format.log",
-  "compat_notes": "Unusual output dir dist-modern/ (vite root src-modern, outDir ../dist-modern).",
+  "compat_notes": "Patch adds Staticfile `root: dist-modern`. Without it anybuild plan -> node-static vite static_dir dist (wrong). With it -> node-static vite dist-modern, build npm run build. Flat replay (npm install + npm run build, non-nested) smoke 6/6 routes 200.",
   "policy": "Read README (Documentation & Resources links docs/deployment.md covering Netlify/Vercel/GH Pages/S3/Firebase), CONTRIBUTING.md (conventional commits e.g. docs(readme): ...), CLAUDE.md, CI ci.yml (lint, format:check, build, smoke). No PR template. No Wasmer mention. PR search deploy/netlify/vercel/wasmer: only a dependabot PR; no refusal.",
   "why": "Static Vite admin template with an existing deployment guide for static hosts; README gets a Wasmer bullet beside the Deployment Guide link.",
   "patch": "patches/puikinsh_Bootstrap-Admin-Template.patch",
   "pr_body": "pr-bodies/puikinsh_Bootstrap-Admin-Template.md",
   "import_url": "https://wasmer.io/apps/create?github=puikinsh%2FBootstrap-Admin-Template",
-  "detection_verified": "pending Codex browser check \u2014 unusual output dir dist-modern/ needs Codex detection check",
-  "reason": null
+  "detection_verified": "local anybuild plan: node-static vite dist-modern (with patch); pending Codex browser check",
+  "reason": null,
+  "anybuild_replay": "PASS: 2026-10-22T04:49:30Z flat replay of anybuild 0.33.0 planned steps for puikinsh_Bootstrap-Admin-Template @ 62842673498b237292771757f7ef30bdeb10ff02 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist-modern' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/analytics.html': 200, '/calendar.html': 200, '/login.html': 200, '/404.html': 200, '/settings.html': 200} | log logs/puikinsh_Bootstrap-Admin-Template.flat-replay.log"
 }

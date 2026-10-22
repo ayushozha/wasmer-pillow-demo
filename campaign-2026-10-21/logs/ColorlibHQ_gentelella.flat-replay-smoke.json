@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/ColorlibHQ_gentelella/opt/temp/dist",
+  "base": "/",
+  "html_files": 60,
+  "local_refs_checked": 35,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 163,
+      "title": "Gentelella v4"
+    },
+    "/production/index.html": {
+      "status": 200,
+      "bytes": 45118,
+      "title": "Dashboard | Gentelella 2026 v4"
+    },
+    "/production/calendar.html": {
+      "status": 200,
+      "bytes": 26689,
+      "title": "Calendar | Gentelella 2026 v4"
+    },
+    "/production/login.html": {
+      "status": 200,
+      "bytes": 5583,
+      "title": "Sign in | Gentelella 2026 v4"
+    },
+    "/production/page_404.html": {
+      "status": 200,
+      "bytes": 2980,
+      "title": "Page not found | Gentelella 2026 v4"
+    },
+    "/site.webmanifest": {
+      "status": 200,
+      "bytes": 1099,
+      "title": null
+    },
+    "/sw.js": {
+      "status": 200,
+      "bytes": 2429,
+      "title": null
+    }
+  },
+  "ok": true
+}

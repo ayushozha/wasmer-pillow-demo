@@ -1,0 +1,109 @@
+# 2026-10-22T04:50:55Z flat replay of anybuild 0.33.0 planned steps for incluud_accessible-astro-starter @ dad27482fb329e904c6566935078a5e342169733 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/incluud_accessible-astro-starter && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/src --out /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/opt/temp && npm install)
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 759 packages, and audited 761 packages in 9s
+
+335 packages are looking for funding
+  run `npm fund` for details
+
+25 vulnerabilities (3 moderate, 21 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/opt/temp && npm run build)
+
+> accessible-astro-starter@6.0.2 build
+> astro build
+
+04:51:08 [content] Syncing content
+04:51:08 [content] Synced content
+04:51:08 [types] Generated 1.21s
+04:51:08 [build] output: "static"
+04:51:08 [build] mode: "static"
+04:51:08 [build] directory: /tmp/claude-0/flat-replay/incluud_accessible-astro-starter/opt/temp/dist/
+04:51:08 [build] Collecting build info...
+04:51:08 [build] ✓ Completed in 1.31s.
+04:51:08 [build] Building static entrypoints...
+04:51:09 [vite] ✓ built in 1.67s
+04:51:09 [vite] ✓ built in 60ms
+04:51:09 [build] Rearranging server assets...
+
+ generating static routes 
+Failed to fetch blog posts [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'jsonplaceholder.typicode.com'
+  }
+}
+Failed to fetch blog posts [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'jsonplaceholder.typicode.com'
+  }
+}
+04:51:09   ├─ /404.html (+32ms) 
+04:51:09   ├─ /accessibility-statement/index.html (+18ms) 
+04:51:09   ├─ /accessible-components/index.html (+62ms) 
+04:51:10   ├─ /accessible-launcher/index.html (+19ms) 
+04:51:10   ├─ /color-contrast-checker/index.html (+13ms) 
+04:51:10   ├─ /contact/index.html (+58ms) 
+04:51:10   ├─ /markdown-page/index.html (+10ms) 
+04:51:10   ├─ /mdx-page/index.html (+9ms) 
+04:51:10   ├─ /portfolio/tag/accessibility/index.html (+13ms) 
+04:51:10   ├─ /portfolio/tag/accessibility/2/index.html (+9ms) 
+04:51:10   ├─ /portfolio/tag/ai/index.html (+7ms) 
+04:51:10   ├─ /portfolio/tag/computer-vision/index.html (+10ms) 
+04:51:10   ├─ /portfolio/tag/education/index.html (+12ms) 
+04:51:10   ├─ /portfolio/tag/finance/index.html (+11ms) 
+04:51:10   ├─ /portfolio/tag/healthcare/index.html (+11ms) 
+04:51:10   ├─ /portfolio/tag/iot/index.html (+11ms) 
+04:51:10   ├─ /portfolio/tag/security/index.html (+11ms) 
+04:51:10   ├─ /portfolio/tag/smart-home/index.html (+12ms) 
+04:51:10   ├─ /portfolio/project-01/index.html (+16ms) 
+04:51:10   ├─ /portfolio/project-02/index.html (+10ms) 
+04:51:10   ├─ /portfolio/project-03/index.html (+10ms) 
+04:51:10   ├─ /portfolio/project-04/index.html (+10ms) 
+04:51:10   ├─ /portfolio/project-05/index.html (+9ms) 
+04:51:10   ├─ /portfolio/project-06/index.html (+9ms) 
+04:51:10   ├─ /portfolio/project-07/index.html (+10ms) 
+04:51:10   ├─ /portfolio/index.html (+9ms) 
+04:51:10   ├─ /portfolio/2/index.html (+7ms) 
+04:51:10   ├─ /sitemap/index.html (+12ms) 
+04:51:10   ├─ /thank-you/index.html (+8ms) 
+04:51:10   ├─ /index.html04:51:10 [ERROR] TypeError: fetch failed
+04:51:10 [ERROR] [build] Caught error rendering /: TypeError: fetch failed
+fetch failed
+  Stack trace:
+
+  Caused by:
+  getaddrinfo ENOTFOUND jsonplaceholder.typicode.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26)
+EXIT 1
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 1}

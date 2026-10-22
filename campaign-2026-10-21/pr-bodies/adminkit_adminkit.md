@@ -4,7 +4,9 @@ Title: Add Wasmer Edge deploy option to README
 
 ## Summary
 
-This adds a short **Deploy** subsection to `README.md` under "Build tools". It says the compiled demo pages are in `static/`, a folder any static host can serve. Below that it shows a visible **Deploy to Wasmer** badge linking to `https://wasmer.io/apps/create?github=adminkit%2Fadminkit`, the Wasmer Edge import page for this repository, and a one-line note to import your own fork to customize the template and get redeploys on push. Only `README.md` changes. There are no UI changes, so I have no screenshots.
+This adds a short **Deploy** subsection to `README.md` under "Build tools". It says the compiled demo pages are in `static/`, a folder any static host can serve. Below that it shows a visible **Deploy to Wasmer** badge linking to `https://wasmer.io/apps/create?github=adminkit%2Fadminkit`, the Wasmer Edge import page for this repository, and a one-line note to import your own fork to customize the template and get redeploys on push. It also adds a one-line `Staticfile` at the repository root (`root: static`). There are no UI changes, so I have no screenshots.
+
+**Why the `Staticfile` is needed:** without it, Wasmer's project detector (Anybuild 0.33.0, run locally with `anybuild plan`) picks its plain Node provider and would start `webpack serve`, the dev server. With `root: static` it serves the committed `static/` folder as a static site with no build step. I replayed that from a clean checkout and served the result: `/`, `/pages-profile.html`, `/charts-chartjs.html`, `/pages-sign-in.html`, `/js/app.js` and `/css/app.css` all returned 200.
 
 ## Why this repository
 

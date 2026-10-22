@@ -1,0 +1,56 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/trevortylerlee_astro-micro/opt/temp/dist",
+  "base": "/",
+  "html_files": 20,
+  "local_refs_checked": 34,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 34291,
+      "title": "Home | Astro Micro"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 28279,
+      "title": "Blog | Astro Micro"
+    },
+    "/blog/01-getting-started/": {
+      "status": 200,
+      "bytes": 47860,
+      "title": "Getting started | Astro Micro"
+    },
+    "/projects/project-1/": {
+      "status": 200,
+      "bytes": 27185,
+      "title": "Astro Sphere | Astro Micro"
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 18502,
+      "title": "Tags | Astro Micro"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 18436,
+      "title": "404 | Astro Micro"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 3995,
+      "title": "Astro Micro"
+    },
+    "/pagefind/pagefind-entry.json": {
+      "status": 200,
+      "bytes": 154,
+      "title": null
+    },
+    "/pagefind/pagefind-ui.js": {
+      "status": 200,
+      "bytes": 84597,
+      "title": null
+    }
+  },
+  "ok": true
+}

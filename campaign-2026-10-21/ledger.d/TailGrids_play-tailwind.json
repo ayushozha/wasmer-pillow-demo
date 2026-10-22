@@ -22,5 +22,6 @@
   "detection_verified": "local anybuild plan: staticfile, root '.'; pending Codex browser check",
   "reason": null,
   "stars_source": "GitHub MCP search_repositories",
-  "stars_at": "2026-10-22T04:28:10Z"
+  "stars_at": "2026-10-22T04:28:10Z",
+  "anybuild_replay": "PASS: 2026-10-22T04:50:04Z flat replay of anybuild 0.33.0 planned steps for TailGrids_play-tailwind @ 203a763fe61fd10ed9d5f25984fb5bedd5192768 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None | install=None build=None static_dir='.' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about.html': 200, '/pricing.html': 200, '/blog-grids.html': 200, '/signin.html': 200, '/404.html': 200, '/src/css/tailwind.css': 200, '/assets/js/main.js': 200} | log logs/TailGrids_play-tailwind.flat-replay.log"
 }

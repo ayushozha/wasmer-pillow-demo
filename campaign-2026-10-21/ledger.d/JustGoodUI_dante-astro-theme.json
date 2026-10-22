@@ -23,5 +23,6 @@
   "import_url": "https://wasmer.io/apps/create?github=JustGoodUI%2Fdante-astro-theme",
   "detection_verified": "pending Codex browser check",
   "detect_log": "logs/JustGoodUI_dante-astro-theme.detect.json",
-  "upstream_pr": "https://github.com/JustGoodUI/dante-astro-theme/pull/87 (OPEN, reported by root/Codex)"
+  "upstream_pr": "https://github.com/JustGoodUI/dante-astro-theme/pull/87 (OPEN, reported by root/Codex)",
+  "anybuild_replay": "PASS: 2026-10-22T04:48:06Z flat replay of anybuild 0.33.0 planned steps for JustGoodUI_dante-astro-theme @ 2b898095b9390338e7064b1239a79ad30ade45de (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/blog/': 200, '/blog/post-1/': 200, '/projects/': 200, '/about/': 200, '/rss.xml': 200, '/sitemap-index.xml': 200} | log logs/JustGoodUI_dante-astro-theme.flat-replay.log"
 }

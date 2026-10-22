@@ -63,6 +63,14 @@ def main():
             subprocess.run(["npm", "i", "-g", "--prefix", prefix, f"pnpm@{pnpm_version}"], check=True, capture_output=True)
         env["PATH"] = f"{prefix}/bin:" + env["PATH"]
         env["COREPACK_ENABLE_STRICT"] = env.get("COREPACK_ENABLE_STRICT", "0")
+    # Same ENV that resources/starlib/tools/node.bzl adds before the install step.
+    manager = cfg.get("node_package_manager")
+    if manager == "pnpm":
+        env.update(pnpm_config_minimum_release_age="0", CI="true",
+                   pnpm_config_dangerously_allow_all_builds="true", pnpm_config_strict_dep_builds="false")
+    elif manager == "npm":
+        env.update(CI="true", NPM_CONFIG_FUND="false")
+    log.write(f"# env per node.bzl for {manager}: " + ", ".join(f"{k}={env[k]}" for k in sorted(env) if k.lower().startswith(("pnpm_config", "npm_config_fund")) or k == "CI") + "\n")
     pin = subprocess.run("pnpm --version", shell=True, env=env, capture_output=True, text=True).stdout.strip()
     log.write(f"# pinned per plan: node_version={cfg.get('node_version') or '24 (default)'} pnpm_version={pnpm_version} -> pnpm on PATH {pin}; npm_version={cfg.get('npm_version')} bun_version={cfg.get('bun_version')}\n")
     static_dir = cfg.get("static_dir") or "."

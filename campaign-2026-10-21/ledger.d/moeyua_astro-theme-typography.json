@@ -15,12 +15,13 @@
   "build_claude": "PASS: exit 0 Node v24.22.1 / pnpm 10.13.1; astro check 0 errors/0 warnings (41 files); 9 pages. Log: logs/moeyua_astro-theme-typography.build.log",
   "smoke": "PASS: / /about/ /archive/ /posts/hometown/ /categories/Articles/ /atom.xml /sitemap-index.xml all 200; 9 HTML, 17 root-relative refs 0 missing; relative scan 0 refs. No 404.html emitted. Log: logs/moeyua_astro-theme-typography.smoke.json",
   "format_check": "PASS: eslint (antfu, formatters:true) on README.md README.zh-CN.md exit 0; commit made with repo simple-git-hooks pre-commit (pnpm lint-staged -> eslint --fix) installed and run, no modifications. Log: logs/moeyua_astro-theme-typography.format.log",
-  "compat_notes": "No custom 404 page. Default-branch HEAD commit is 2025-07-24 although repo pushed_at is 2026-02-17; several 2025 dependabot PRs still open (low maintainer activity — merge likelihood risk).",
+  "compat_notes": "No custom 404 page. Default-branch HEAD commit is 2025-07-24 although repo pushed_at is 2026-02-17; several 2025 dependabot PRs still open (low maintainer activity \u2014 merge likelihood risk).",
   "policy": "Read README/README.zh-CN Quick Start (Vercel/Netlify buttons + fork guidance), package.json (simple-git-hooks, lint-staged). No CONTRIBUTING/PR template/AGENTS. No Wasmer mention. PR search deploy/netlify/vercel/wasmer: no host-button PRs or refusals.",
   "why": "Static Astro blog theme whose Quick Start already offers Vercel/Netlify deploy buttons; Wasmer badge added beside them.",
   "patch": "patches/moeyua_astro-theme-typography.patch",
   "pr_body": "pr-bodies/moeyua_astro-theme-typography.md",
   "import_url": "https://wasmer.io/apps/create?github=moeyua%2Fastro-theme-typography",
   "detection_verified": "pending Codex browser check",
-  "reason": null
+  "reason": null,
+  "anybuild_replay": "PASS: 2026-10-22T04:50:40Z flat replay of anybuild 0.33.0 planned steps for moeyua_astro-theme-typography @ a110341ff02b4c6015ee750d976e9e46a04ae053 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=10.13.1 -> pnpm on PATH 10.13.1; npm_version=None bun_version=None | install='pnpm install' build='pnpm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/about/': 200, '/archive/': 200, '/posts/hometown/': 200, '/categories/Articles/': 200, '/atom.xml': 200, '/sitemap-index.xml': 200} | log logs/moeyua_astro-theme-typography.flat-replay.log"
 }

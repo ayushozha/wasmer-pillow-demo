@@ -1,0 +1,41 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp/dist",
+  "base": "/",
+  "html_files": 8,
+  "local_refs_checked": 30,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 70474,
+      "title": "Fuwari - Demo Site"
+    },
+    "/archive/": {
+      "status": 200,
+      "bytes": 43554,
+      "title": "Archive - Fuwari"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 43771,
+      "title": "About - Fuwari"
+    },
+    "/posts/expressive-code/": {
+      "status": 200,
+      "bytes": 144301,
+      "title": "Expressive Code Example - Fuwari"
+    },
+    "/pagefind/pagefind.js": {
+      "status": 200,
+      "bytes": 33851,
+      "title": null
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 22198,
+      "title": "Fuwari"
+    }
+  },
+  "ok": true
+}

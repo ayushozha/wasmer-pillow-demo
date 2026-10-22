@@ -1,0 +1,168 @@
+# 2026-10-22T04:49:02Z flat replay of anybuild 0.33.0 planned steps for RomanHauksson_academic-project-astro-template @ b9a754a94006cf39cb59d94ae566c29bad68fa15 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/src --out /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp && npm install)
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 727 packages, and audited 728 packages in 10s
+
+276 packages are looking for funding
+  run `npm fund` for details
+
+39 vulnerabilities (7 low, 7 moderate, 23 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.27.7 (postinstall: node install.js)
+npm warn install-scripts   sharp@0.34.5 (install: node install/check.js || npm run build)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp && npm run build)
+
+> project-page-template-astro@0.0.1 build
+> astro check && astro build
+
+(node:27904) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+04:49:15 [types] Generated 156ms
+04:49:15 [check] Getting diagnostics for Astro files in /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp...
+[96msrc/components/starwind/tabs/Tabs.astro[0m:[93m46[0m:[93m13[0m - [93mwarning[0m[90m ts(6133): [0m'parentHandler' is declared but its value is never read.
+
+[7m46[0m     private parentHandler: TabsHandler | null = null;
+[7m  [0m [93m            ~~~~~~~~~~~~~[0m
+
+Result (26 files): 
+- 0 errors
+- 0 warnings
+- 1 hint
+
+(node:27980) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+04:49:21 [types] Generated 26ms
+04:49:21 [build] output: "static"
+04:49:21 [build] mode: "static"
+04:49:21 [build] directory: /tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/dist/
+04:49:21 [build] Collecting build info...
+04:49:21 [build] ✓ Completed in 127ms.
+04:49:21 [build] Building static entrypoints...
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+04:49:25 [WARN] [assets] No data found for font family Noto Sans. Review your configuration
+04:49:26 [assets] Copying fonts (0 files)...
+04:49:26 [vite] ✓ built in 5.00s
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/RomanHauksson_academic-project-astro-template/opt/temp/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+04:49:30 [WARN] [assets] No data found for font family Noto Sans. Review your configuration
+04:49:33 [WARN] [vite] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+04:49:33 [vite] ✓ built in 6.08s
+04:49:33 [build] Rearranging server assets...
+
+ generating static routes 
+04:49:33   ├─ /index.html (+317ms) 
+04:49:33 ✓ Completed in 350ms.
+
+ generating optimized images 
+04:49:34   ▶ /_astro/dogs-msillm.B8KdcwCy_1Gscia.avif (before: 299kB, after: 7kB) (+1.11s) (1/30)
+04:49:35   ▶ /_astro/dogs-diffc.BV28LXzR_GLXIO.avif (before: 1792kB, after: 27kB) (+1.75s) (2/30)
+04:49:35   ▶ /_astro/dogs-true.DIxUn2oJ_2vJTWI.avif (before: 1862kB, after: 42kB) (+1.76s) (3/30)
+04:49:35   ▶ /_astro/dogs-msillm.B8KdcwCy_Z1vE6gh.avif (before: 299kB, after: 8kB) (+1.15s) (4/30)
+04:49:36   ▶ /_astro/dogs-diffc.BV28LXzR_ZjzELv.avif (before: 1792kB, after: 36kB) (+1.80s) (5/30)
+04:49:37   ▶ /_astro/dogs-msillm.B8KdcwCy_4tj5x.avif (before: 299kB, after: 10kB) (+1.62s) (6/30)
+04:49:37   ▶ /_astro/dogs-true.DIxUn2oJ_1eFELS.avif (before: 1862kB, after: 55kB) (+2.47s) (7/30)
+04:49:39   ▶ /_astro/dogs-diffc.BV28LXzR_196R2A.avif (before: 1792kB, after: 41kB) (+2.50s) (8/30)
+04:49:39   ▶ /_astro/dogs-msillm.B8KdcwCy_MTGwb.avif (before: 299kB, after: 14kB) (+2.19s) (9/30)
+04:49:40   ▶ /_astro/dogs-true.DIxUn2oJ_236YT4.avif (before: 1862kB, after: 62kB) (+3.25s) (10/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_Z1kW1Ja.avif (before: 299kB, after: 17kB) (+2.34s) (11/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_Of33V.jpg (before: 299kB, after: 30kB) (+20ms) (12/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_Z2nRfuv.jpg (before: 299kB, after: 39kB) (+22ms) (13/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_ZMIP8G.jpg (before: 299kB, after: 45kB) (+15ms) (14/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_ZNLgBg.jpg (before: 299kB, after: 72kB) (+20ms) (15/30)
+04:49:41   ▶ /_astro/dogs-msillm.B8KdcwCy_27y8Vk.jpg (before: 299kB, after: 88kB) (+13ms) (16/30)
+04:49:42   ▶ /_astro/dogs-diffc.BV28LXzR_RxDJb.avif (before: 1792kB, after: 62kB) (+2.99s) (17/30)
+04:49:44   ▶ /_astro/dogs-true.DIxUn2oJ_Z1V1Gbo.avif (before: 1862kB, after: 91kB) (+3.73s) (18/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_1sIoMl.avif (before: 1792kB, after: 75kB) (+3.60s) (19/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_Z1kirM9.png (before: 1792kB, after: 709kB) (+36ms) (20/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_Z2lF6it.png (before: 1792kB, after: 976kB) (+38ms) (21/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_ZRXytn.png (before: 1792kB, after: 1194kB) (+52ms) (22/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_Z19O5FA.png (before: 1792kB, after: 2041kB) (+92ms) (23/30)
+04:49:46   ▶ /_astro/dogs-diffc.BV28LXzR_ZyDkCq.png (before: 1792kB, after: 2551kB) (+101ms) (24/30)
+04:49:48   ▶ /_astro/dogs-true.DIxUn2oJ_Z24ucly.avif (before: 1862kB, after: 108kB) (+4.34s) (25/30)
+04:49:49   ▶ /_astro/dogs-true.DIxUn2oJ_DFqoe.png (before: 1862kB, after: 763kB) (+43ms) (26/30)
+04:49:49   ▶ /_astro/dogs-true.DIxUn2oJ_ZCnNLB.png (before: 1862kB, after: 1044kB) (+79ms) (27/30)
+04:49:49   ▶ /_astro/dogs-true.DIxUn2oJ_b2vkz.png (before: 1862kB, after: 1273kB) (+119ms) (28/30)
+04:49:49   ▶ /_astro/dogs-true.DIxUn2oJ_17516z.png (before: 1862kB, after: 2158kB) (+98ms) (29/30)
+04:49:49   ▶ /_astro/dogs-true.DIxUn2oJ_XBuVp.png (before: 1862kB, after: 2726kB) (+109ms) (30/30)
+04:49:49 ✓ Completed in 16.00s.
+
+04:49:49 [build] ✓ Completed in 27.50s.
+04:49:49 [build] 1 page(s) built in 27.63s
+04:49:49 [build] Complete!
+EXIT 0
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/favicon.svg": 200, "/BoxVertexColors.glb": 200, "/screenshot-light.png": 200}}

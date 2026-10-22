@@ -1,14 +1,16 @@
-From dbb21fecfd003e8166df7b9b63697bf0d742a8d1 Mon Sep 17 00:00:00 2001
+From be940b2f3dd42d9f6f7f0f617fceb344c2bafcaa Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:40:25 +0000
 Subject: [PATCH] Add Wasmer Edge deploy option to README
 
 ---
- README.md | 8 ++++++++
- 1 file changed, 8 insertions(+)
+ README.md  | 8 ++++++++
+ Staticfile | 1 +
+ 2 files changed, 9 insertions(+)
+ create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index bea434d..752b5d6 100644
+index bea434d..686652f 100644
 --- a/README.md
 +++ b/README.md
 @@ -63,6 +63,14 @@ Compile, optimize, minify and uglify all source files to dist/ folder:
@@ -17,7 +19,7 @@ index bea434d..752b5d6 100644
  
 +### Deploy
 +
-+The compiled demo pages live in the `static/` folder, which can be served by any static host.
++The compiled demo pages live in the `static/` folder, which can be served by any static host. The root `Staticfile` points Wasmer Edge at that folder.
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=adminkit%2Fadminkit)
 +
@@ -26,6 +28,13 @@ index bea434d..752b5d6 100644
  ## CDN support
  
  All files included in the `@adminkit/core` npm package are available over a CDN.
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..cc3cf04
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: static
 -- 
 2.43.0
 

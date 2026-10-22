@@ -1,0 +1,26 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/tailwindtoolbox_Landing-Page/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 75278,
+      "title": "Tailwind Starter Template - Landing Page Template: Tailwind Toolbox"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 75278,
+      "title": "Tailwind Starter Template - Landing Page Template: Tailwind Toolbox"
+    },
+    "/hero.png": {
+      "status": 200,
+      "bytes": 111758,
+      "title": null
+    }
+  },
+  "ok": true
+}

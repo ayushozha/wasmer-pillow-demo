@@ -1,24 +1,33 @@
-From b7a52c185fb4a6b191fc37e1baa9b013c0a5d2bd Mon Sep 17 00:00:00 2001
+From 8ec11bf26d71807d46fb8fbb34229dfde7da1c77 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:39:18 +0000
 Subject: [PATCH] docs(readme): add Wasmer Edge deploy option
 
 ---
- README.md | 1 +
- 1 file changed, 1 insertion(+)
+ README.md  | 1 +
+ Staticfile | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index 3e0316f..d2d2e01 100644
+index 3e0316f..0b4cd08 100644
 --- a/README.md
 +++ b/README.md
 @@ -345,6 +345,7 @@ See the [CHANGELOG](CHANGELOG.md#350---2026-08-03) for full detail, including kn
  - **[Component Documentation](./docs/components.md)** - Detailed component guides
  - **[Customization Guide](./docs/customization.md)** - Theme and styling customization
  - **[Deployment Guide](./docs/deployment.md)** - Production deployment instructions
-+- [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=puikinsh%2FBootstrap-Admin-Template) - Import the repository on Wasmer Edge (build with `npm run build`, static output in `dist-modern/`); import your own fork to customize it and redeploy on push
++- [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=puikinsh%2FBootstrap-Admin-Template) - Import the repository on Wasmer Edge (build with `npm run build`; the root `Staticfile` points Wasmer at the static output in `dist-modern/`); import your own fork to customize it and redeploy on push
  
  ## 🤝 Contributing
  
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..9da4598
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: dist-modern
 -- 
 2.43.0
 

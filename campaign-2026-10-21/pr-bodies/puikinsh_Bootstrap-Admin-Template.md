@@ -6,7 +6,9 @@ This adds one bullet to the "📚 Documentation & Resources" list in `README.md`
 
 ## Why this repository
 
-Metis is a static Vite multi-page admin template. `vite.config.js` builds `src-modern/` into `dist-modern/` with `base: './'`, and there is no server runtime. The README already links a Deployment Guide (`docs/deployment.md`) that covers static hosts (Netlify, Vercel, GitHub Pages, S3/CloudFront, Firebase). This adds a direct Wasmer Edge option next to that link.
+Metis is a static Vite multi-page admin template. `vite.config.js` builds `src-modern/` into `dist-modern/` with `base: './'`, and there is no server runtime. The README already links a Deployment Guide (`docs/deployment.md`) that covers static hosts (Netlify, Vercel, GitHub Pages, S3/CloudFront, Firebase). This adds a direct Wasmer Edge option next to that link, plus a one-line `Staticfile` at the repository root (`root: dist-modern`).
+
+**Why the `Staticfile` is needed:** Wasmer's project detector (Anybuild 0.33.0, run locally with `anybuild plan`) recognizes the Vite build but assumes Vite's default `dist/`. The `Staticfile` points it at `dist-modern/` and keeps the `npm run build` step. I replayed Anybuild's planned `npm install` and `npm run build` in a clean directory and served `dist-modern/`: `/`, `/analytics.html`, `/calendar.html`, `/login.html`, `/404.html` and `/settings.html` all returned 200.
 
 ## Testing
 

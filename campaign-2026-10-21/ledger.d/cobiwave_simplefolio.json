@@ -1,6 +1,6 @@
 {
   "repo": "cobiwave/simplefolio",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 14221,
   "stars_source": "GitHub MCP search_repositories (stargazers_count)",
   "stars_at": "2026-10-22T04:28:24Z",
@@ -31,5 +31,7 @@
   "import_url": "https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio",
   "detection_verified": "pending Codex browser check (Parcel default dist; no Staticfile needed)",
   "reason": null,
-  "detect_log": "logs/cobiwave_simplefolio.detect.json"
+  "detect_log": "logs/cobiwave_simplefolio.detect.json",
+  "anybuild_replay": "PASS: 2026-10-22T04:49:50Z flat replay of anybuild 0.33.0 planned steps for cobiwave_simplefolio @ c571fcdcc64f925fee57ea3146318d1be6182907 (v24.22.1; 11.19.1; 9.15.9; 1.4.2) | node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None | install='npm install' build='npm run build' static_dir='dist' exit=0 smoke_ok=True missing=0 routes={'/': 200, '/assets/resume.pdf': 200, '/index.f3360eb2.js': 200, '/index.dc60bf54.css': 200, '/profile.8f19b361.jpg': 200} | log logs/cobiwave_simplefolio.flat-replay.log",
+  "upstream_pr": "https://github.com/cobiwave/simplefolio/pull/377 (OPEN, head c10f0c8); reported by root/Codex, exact Claude patch, native finish-dev hooks"
 }

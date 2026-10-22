@@ -1,0 +1,36 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/cobiwave_simplefolio/opt/temp/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 6,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 6749,
+      "title": "[Your name here] | Developer"
+    },
+    "/assets/resume.pdf": {
+      "status": 200,
+      "bytes": 3028,
+      "title": null
+    },
+    "/index.f3360eb2.js": {
+      "status": 200,
+      "bytes": 10472,
+      "title": null
+    },
+    "/index.dc60bf54.css": {
+      "status": 200,
+      "bytes": 195578,
+      "title": null
+    },
+    "/profile.8f19b361.jpg": {
+      "status": 200,
+      "bytes": 828740,
+      "title": null
+    }
+  },
+  "ok": true
+}

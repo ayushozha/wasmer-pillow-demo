@@ -1,0 +1,146 @@
+# 2026-10-22T04:50:40Z flat replay of anybuild 0.33.0 planned steps for moeyua_astro-theme-typography @ a110341ff02b4c6015ee750d976e9e46a04ae053 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/moeyua_astro-theme-typography && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/src --out /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=10.13.1 -> pnpm on PATH 10.13.1; npm_version=None bun_version=None
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp && pnpm install)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1286
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1286, reused 1149, downloaded 0, added 0
+Progress: resolved 1286, reused 1285, downloaded 0, added 1286, done
+
+dependencies:
++ @astrojs/check 0.9.4
++ @astrojs/mdx 4.3.0
++ @astrojs/rss 4.0.12
++ @astrojs/sitemap 3.4.1
++ @github/clipboard-copy-element 1.3.0
++ @swup/astro 1.6.0
++ astro 5.11.1
++ astro-robots-txt 1.0.0
++ astro-seo 0.8.4
++ giscus 1.6.0
++ rehype-katex 7.0.1
++ remark-math 6.0.0
+
+devDependencies:
++ @antfu/eslint-config 4.17.0
++ @iconify-json/mdi 1.2.3
++ @types/markdown-it 14.1.2
++ @types/node 22.16.4
++ @types/sanitize-html 2.16.0
++ @unocss/eslint-plugin 66.3.3
++ @unocss/preset-attributify 66.3.3
++ @unocss/reset 66.3.3
++ @unocss/transformer-directives 66.3.3
++ astro-eslint-parser 1.2.2
++ bumpp 10.2.0
++ changelogen 0.6.2
++ consola 3.4.2
++ dayjs 1.11.13
++ eslint 9.31.0
++ eslint-plugin-astro 1.3.1
++ eslint-plugin-format 1.0.1
++ lint-staged 16.1.2
++ markdown-it 14.1.0
++ prettier-plugin-astro 0.14.1
++ sanitize-html 2.17.0
++ simple-git-hooks 2.13.0
++ tsx 4.20.3
++ typescript 5.8.3
++ unocss 66.3.3
++ unocss-preset-theme 0.14.1
++ vite-plugin-devtools-json 0.3.0
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild, sharp, simple-git-hooks, swup.             │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 2.7s using pnpm v10.13.1
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp && pnpm run build)
+
+> astro-theme-typography@0.1.0 build /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp
+> astro check && astro build
+
+04:50:47 [content] Syncing content
+04:50:47 [content] Synced content
+04:50:47 [types] Generated 1.36s
+04:50:47 [check] Getting diagnostics for Astro files in /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp...
+Result (41 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:50:54 [content] Syncing content
+04:50:54 [content] Synced content
+04:50:54 [types] Generated 428ms
+04:50:54 [build] output: "static"
+04:50:54 [build] mode: "static"
+04:50:54 [build] directory: /tmp/claude-0/flat-replay/moeyua_astro-theme-typography/opt/temp/dist/
+04:50:54 [build] Collecting build info...
+04:50:54 [build] ✓ Completed in 763ms.
+04:50:54 [build] Building static entrypoints...
+04:50:56 [vite] ✓ built in 1.81s
+04:50:56 [build] ✓ Completed in 1.83s.
+
+ building client (vite) 
+04:50:56 [vite] transforming...
+04:50:56 [vite] ✓ 57 modules transformed.
+04:50:56 [vite] rendering chunks...
+04:50:56 [vite] computing gzip size...
+04:50:56 [vite] dist/_astro/SwupBodyClassPlugin.Br5gdHO3.js                           0.87 kB │ gzip: 0.48 kB
+04:50:56 [vite] dist/_astro/SwupScriptsPlugin.CRD5-C2F.js                             1.10 kB │ gzip: 0.61 kB
+04:50:56 [vite] dist/_astro/index.modern.BC8Oj8jT.js                                  1.76 kB │ gzip: 0.91 kB
+04:50:56 [vite] dist/_astro/SwupHeadPlugin.CVcwo8ke.js                                2.28 kB │ gzip: 1.14 kB
+04:50:56 [vite] dist/_astro/SwupA11yPlugin.DjjJ7cVJ.js                                5.24 kB │ gzip: 2.12 kB
+04:50:56 [vite] dist/_astro/page.BKLBU-BX.js                                          5.75 kB │ gzip: 2.44 kB
+04:50:56 [vite] dist/_astro/SwupPreloadPlugin.-yXPOGdQ.js                             6.00 kB │ gzip: 2.35 kB
+04:50:56 [vite] dist/_astro/SwupScrollPlugin.avCL_JHr.js                              8.00 kB │ gzip: 2.40 kB
+04:50:56 [vite] dist/_astro/Swup.DQuXDfJX.js                                         21.35 kB │ gzip: 7.29 kB
+04:50:56 [vite] dist/_astro/Giscus.astro_astro_type_script_index_0_lang.KVBgTbQQ.js  24.88 kB │ gzip: 8.80 kB
+04:50:56 [vite] ✓ built in 384ms
+
+ generating static routes 
+04:50:56 ▶ src/pages/about.astro
+04:50:56   └─ /about/index.html (+15ms) 
+04:50:56 ▶ src/pages/archive.astro
+04:50:56   └─ /archive/index.html (+4ms) 
+04:50:56 λ src/pages/atom.xml.ts
+04:50:56   └─ /atom.xml (+27ms) 
+04:50:56 ▶ src/pages/categories/index.astro
+04:50:56   └─ /categories/index.html (+3ms) 
+04:50:56 ▶ src/pages/categories/[...category].astro
+04:50:56   └─ /categories/Articles/index.html (+3ms) 
+04:50:56 ▶ src/pages/posts/[...id].astro
+04:50:56   ├─ /posts/the-unbearable-lightness-of-being/index.html (+4ms) 
+04:50:56   ├─ /posts/rashomon/index.html (+2ms) 
+04:50:56   ├─ /posts/tolerance-and-freedom/index.html (+2ms) 
+04:50:56   └─ /posts/hometown/index.html (+2ms) 
+04:50:56 ▶ src/pages/[...page].astro
+04:50:56   └─ /index.html (+12ms) 
+04:50:56 ✓ Completed in 166ms.
+
+[32mastro-robots-txt:[0m `robots.txt` is created.
+
+04:50:56 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:50:56 [build] 9 page(s) built in 3.17s
+04:50:56 [build] Complete!
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/about/": 200, "/archive/": 200, "/posts/hometown/": 200, "/categories/Articles/": 200, "/atom.xml": 200, "/sitemap-index.xml": 200}}

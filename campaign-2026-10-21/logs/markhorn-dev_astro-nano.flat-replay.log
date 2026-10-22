@@ -1,4 +1,4 @@
-# 2026-10-22T04:48:18Z flat replay of anybuild 0.33.0 planned steps for markhorn-dev_astro-nano @ edc211d2281e3b127e55b521b970e11c9a12f949 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+# 2026-10-22T04:53:14Z flat replay of anybuild 0.33.0 planned steps for markhorn-dev_astro-nano @ edc211d2281e3b127e55b521b970e11c9a12f949 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
 $ (cd /tmp/claude-0/flat-replay/markhorn-dev_astro-nano && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/src --out /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/plan.json)
   Detected static Node.js provider
     Framework: Astro
@@ -9,22 +9,21 @@ $ (cd /tmp/claude-0/flat-replay/markhorn-dev_astro-nano && /tmp/claude-0/camp/wa
   Generated Anybuild at /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/src/Anybuild
 Plan saved to /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/plan.json
 EXIT 0
+# env per node.bzl for pnpm: CI=true, pnpm_config_dangerously_allow_all_builds=true, pnpm_config_minimum_release_age=0, pnpm_config_strict_dep_builds=false
 # pinned per plan: node_version=24 (default) pnpm_version=10 -> pnpm on PATH 10.34.7; npm_version=None bun_version=None
 # plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
 $ (cd /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp && pnpm install)
- WARN  Ignoring broken lockfile at /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp: Lockfile /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp/pnpm-lock.yaml not compatible with current pnpm
+ WARN  Ignoring not compatible lockfile at /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp/pnpm-lock.yaml
 Progress: resolved 1, reused 0, downloaded 0, added 0
  WARN  deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-Progress: resolved 32, reused 15, downloaded 13, added 0
-Progress: resolved 137, reused 87, downloaded 42, added 0
-Progress: resolved 307, reused 190, downloaded 84, added 0
-Progress: resolved 536, reused 329, downloaded 133, added 0
-Progress: resolved 807, reused 476, downloaded 208, added 0
+Progress: resolved 57, reused 56, downloaded 0, added 0
+Progress: resolved 250, reused 231, downloaded 0, added 0
+Progress: resolved 543, reused 478, downloaded 0, added 0
  WARN  6 deprecated subdependencies found: @humanwhocodes/config-array@0.13.0, @humanwhocodes/object-schema@2.0.3, glob@7.2.3, inflight@1.0.6, rimraf@3.0.2, tsconfck@3.1.6
+Progress: resolved 816, reused 702, downloaded 0, added 0
 Packages: +702
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Progress: resolved 816, reused 476, downloaded 226, added 523
-Progress: resolved 816, reused 476, downloaded 226, added 702, done
+Progress: resolved 816, reused 702, downloaded 0, added 702, done
 
 dependencies:
 + @astrojs/check 0.9.12
@@ -55,7 +54,7 @@ dependencies:
 │   to run scripts.                                                            │
 │                                                                              │
 ╰──────────────────────────────────────────────────────────────────────────────╯
-Done in 6.9s using pnpm v10.34.7
+Done in 5.3s using pnpm v10.34.7
 EXIT 0
 $ (cd /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp)
 EXIT 0
@@ -64,31 +63,68 @@ $ (cd /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp && pnpm run bui
 > astro-nano@1.0.0 build /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp
 > astro check && astro build
 
-04:48:29 [content] Syncing content
-04:48:29 [content] Synced content
-04:48:29 [types] Generated 954ms
-04:48:29 [check] Getting diagnostics for Astro files in /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp...
+[2m04:53:23[22m [34m[content][39m Syncing content
+[2m04:53:23[22m [34m[content][39m Synced content
+[2m04:53:23[22m [34m[types][39m Generated [2m1.12s[22m
+[2m04:53:23[22m [34m[check][39m Getting diagnostics for Astro files in /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp...
 Result (27 files): 
 - 0 errors
 - 0 warnings
 - 0 hints
 
-04:48:33 [content] Syncing content
-04:48:34 [content] Synced content
-04:48:34 [types] Generated 358ms
-04:48:34 [build] output: "static"
-04:48:34 [build] mode: "static"
-04:48:34 [build] directory: /tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp/dist/
-04:48:34 [build] Collecting build info...
-04:48:34 [build] ✓ Completed in 435ms.
-04:48:34 [build] Building static entrypoints...
-04:48:36 [vite] ✓ built in 2.35s
-04:48:36 [build] ✓ Completed in 2.39s.
+[2m04:53:27[22m [34m[content][39m Syncing content
+[2m04:53:28[22m [34m[content][39m Synced content
+[2m04:53:28[22m [34m[types][39m Generated [2m450ms[22m
+[2m04:53:28[22m [34m[build][39m output: [34m"static"[39m
+[2m04:53:28[22m [34m[build][39m mode: [34m"static"[39m
+[2m04:53:28[22m [34m[build][39m directory: [34m/tmp/claude-0/flat-replay/markhorn-dev_astro-nano/opt/temp/dist/[39m
+[2m04:53:28[22m [34m[build][39m Collecting build info...
+[2m04:53:28[22m [34m[build][39m [32m✓ Completed in 501ms.[39m
+[2m04:53:28[22m [34m[build][39m Building static entrypoints...
+[2m04:53:30[22m [34m[vite][39m [32m✓ built in 2.14s[39m
+[2m04:53:30[22m [34m[build][39m [32m✓ Completed in 2.18s.[39m
 
- building client (vite) 
-04:48:36 [vite] transforming...
-04:48:36 [vite] ✓ 14 modules transformed.
-04:48:36 [vite] rendering chunks...
-04:48:36 [vite] computing gzip size...
-04:48:36 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js  15.36 kB │ gzip: 5.28 kB
-04:48:36 [vite] ✓ built in 60ms
+[42m[30m building client (vite) [39m[49m
+[2m04:53:30[22m [34m[vite][39m transforming...
+[2m04:53:30[22m [34m[vite][39m [32m✓[39m 14 modules transformed.
+[2m04:53:30[22m [34m[vite][39m rendering chunks...
+[2m04:53:30[22m [34m[vite][39m computing gzip size...
+[2m04:53:30[22m [34m[vite][39m [2mdist/[22m[2m_astro/[22m[36mClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js  [39m[1m[2m15.36 kB[22m[1m[22m[2m │ gzip: 5.28 kB[22m
+[2m04:53:30[22m [34m[vite][39m [32m✓ built in 79ms[39m
+
+[42m[30m generating static routes [39m[49m
+[2m04:53:30[22m [32m▶[39m src/pages/blog/[...slug].astro
+[2m04:53:30[22m   [34m├─[39m [2m/blog/01-getting-started/index.html[22m [2m(+15ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/02-blog-collection/index.html[22m [2m(+3ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/03-projects-collection/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/04-work-collection/index.html[22m [2m(+3ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/05-markdown-syntax/index.html[22m [2m(+8ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/06-mdx-syntax/index.html[22m [2m(+7ms)[22m 
+[2m04:53:30[22m   [34m├─[39m [2m/blog/07-year-sorting-example/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m   [34m└─[39m [2m/blog/08-draft-example/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m [32m▶[39m src/pages/blog/index.astro
+[2m04:53:30[22m   [34m└─[39m [2m/blog/index.html[22m [2m(+3ms)[22m 
+[2m04:53:30[22m [32m▶[39m src/pages/index.astro
+[2m04:53:30[22m   [34m└─[39m [2m/index.html[22m [2m(+3ms)[22m 
+[2m04:53:30[22m [32m▶[39m src/pages/projects/[...slug].astro
+[2m04:53:30[22m   [34m├─[39m [2m/projects/project-2/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m   [34m└─[39m [2m/projects/project-1/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m [32m▶[39m src/pages/projects/index.astro
+[2m04:53:30[22m   [34m└─[39m [2m/projects/index.html[22m [2m(+1ms)[22m 
+[2m04:53:30[22m [35mλ[39m src/pages/robots.txt.ts
+[2m04:53:30[22m   [34m└─[39m [2m/robots.txt[22m [2m(+1ms)[22m 
+[2m04:53:30[22m [35mλ[39m src/pages/rss.xml.ts
+[2m04:53:30[22m   [34m└─[39m [2m/rss.xml[22m [2m(+5ms)[22m 
+[2m04:53:30[22m [32m▶[39m src/pages/work/index.astro
+[2m04:53:30[22m   [34m└─[39m [2m/work/index.html[22m [2m(+2ms)[22m 
+[2m04:53:30[22m [32m✓ Completed in 108ms.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m04:53:30[22m   [32m▶[39m /_astro/spongebob.DNKR31Tf_Z5hReW.webp [2m(before: 32kB, after: 20kB)[22m [2m(+82ms)[22m [2m(1/1)[22m
+[2m04:53:30[22m [32m✓ Completed in 83ms.
+[39m
+[2m04:53:30[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m04:53:30[22m [34m[build][39m 14 page(s) built in [1m2.98s[22m
+[2m04:53:30[22m [34m[build][39m [1mComplete![22m
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/blog/": 200, "/blog/01-getting-started/": 200, "/projects/": 200, "/work/": 200, "/rss.xml": 200, "/sitemap-index.xml": 200}}

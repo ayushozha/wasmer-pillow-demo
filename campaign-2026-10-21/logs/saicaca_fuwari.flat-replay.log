@@ -1,0 +1,193 @@
+# 2026-10-22T04:51:11Z flat replay of anybuild 0.33.0 planned steps for saicaca_fuwari @ e3eb80a4f67951fb0e3747ed434f1d1c3fc6705e (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/saicaca_fuwari && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/saicaca_fuwari/src --out /tmp/claude-0/flat-replay/saicaca_fuwari/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/saicaca_fuwari/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/saicaca_fuwari/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=9.14.4 -> pnpm on PATH 9.14.4; npm_version=None bun_version=None
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp && pnpm install)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1115
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1115, reused 1112, downloaded 0, added 546
+Progress: resolved 1115, reused 1112, downloaded 0, added 1115, done
+
+dependencies:
++ @astrojs/check 0.9.6
++ @astrojs/rss 4.0.14
++ @astrojs/sitemap 3.6.0
++ @astrojs/svelte 7.2.3
++ @astrojs/tailwind 6.0.2
++ @expressive-code/core 0.41.4
++ @expressive-code/plugin-collapsible-sections 0.41.4
++ @expressive-code/plugin-line-numbers 0.41.4
++ @fontsource-variable/jetbrains-mono 5.2.8
++ @fontsource/roboto 5.2.9
++ @iconify-json/fa6-brands 1.2.6
++ @iconify-json/fa6-regular 1.2.4
++ @iconify-json/fa6-solid 1.2.4
++ @iconify-json/material-symbols 1.2.50
++ @iconify/svelte 4.2.0
++ @swup/astro 1.7.0
++ @tailwindcss/typography 0.5.19
++ astro 5.13.10
++ astro-expressive-code 0.41.4
++ astro-icon 1.1.5
++ hastscript 9.0.1
++ katex 0.16.27
++ markdown-it 14.1.0
++ mdast-util-to-string 4.0.0
++ overlayscrollbars 2.12.0
++ pagefind 1.4.0
++ photoswipe 5.4.4
++ reading-time 1.5.0
++ rehype-autolink-headings 7.1.0
++ rehype-components 0.3.0
++ rehype-katex 7.0.1
++ rehype-slug 6.0.0
++ remark-directive 3.0.1
++ remark-directive-rehype 0.4.2
++ remark-github-admonitions-to-directives 1.0.5
++ remark-math 6.0.0
++ remark-sectionize 2.1.0
++ sanitize-html 2.17.0
++ sharp 0.34.5
++ stylus 0.64.0
++ svelte 5.39.8
++ tailwindcss 3.4.19
++ typescript 5.9.3
++ unist-util-visit 5.0.0
+
+devDependencies:
++ @astrojs/ts-plugin 1.10.6
++ @biomejs/biome 2.2.5
++ @rollup/plugin-yaml 4.1.2
++ @types/hast 3.0.4
++ @types/markdown-it 14.1.2
++ @types/mdast 4.0.4
++ @types/sanitize-html 2.16.0
++ postcss-import 16.1.1
++ postcss-nesting 13.0.2
+
+Done in 2.5s
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/saicaca_fuwari/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp && pnpm run build)
+
+> fuwari@0.0.1 build /tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp
+> astro build && pagefind --site dist
+
+04:51:17 [vite] Forced re-optimization of dependencies
+04:51:17 [content] Syncing content
+04:51:18 [content] Synced content
+04:51:18 [types] Generated 1.27s
+04:51:18 [build] output: "static"
+04:51:18 [build] mode: "static"
+04:51:18 [build] directory: /tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp/dist/
+04:51:18 [build] Collecting build info...
+04:51:18 [build] ✓ Completed in 1.41s.
+04:51:18 [build] Building static entrypoints...
+Browserslist: browsers data (caniuse-lite) is 20 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:51:22 [vite] ✓ built in 4.30s
+04:51:22 [build] ✓ Completed in 4.38s.
+
+ building client (vite) 
+04:51:22 [vite] transforming...
+04:51:23 [vite] ✓ 161 modules transformed.
+04:51:23 [vite] rendering chunks...
+04:51:23 [vite] computing gzip size...
+04:51:23 [vite] dist/_astro/ec.g1fg5.js                                               0.94 kB
+04:51:23 [vite] dist/_astro/Layout.DSulWsr7.css                                       4.42 kB │ gzip:  1.43 kB
+04:51:23 [vite] dist/_astro/Layout.y4KPJ9hc.css                                      14.04 kB │ gzip:  2.61 kB
+04:51:23 [vite] dist/_astro/ec.4fsv9.css                                             19.69 kB │ gzip:  4.40 kB
+04:51:23 [vite] dist/_astro/url-utils.CoPbr7Wx.js                                     0.30 kB │ gzip:  0.21 kB
+04:51:23 [vite] dist/_astro/input.cX-djaPf.js                                         0.75 kB │ gzip:  0.43 kB
+04:51:23 [vite] dist/_astro/setting-utils.Cjv9PNp5.js                                 1.01 kB │ gzip:  0.49 kB
+04:51:23 [vite] dist/_astro/SwupScriptsPlugin.DeeT9ppa.js                             1.10 kB │ gzip:  0.62 kB
+04:51:23 [vite] dist/_astro/preload-helper.BlTxHScW.js                                1.11 kB │ gzip:  0.65 kB
+04:51:23 [vite] dist/_astro/client.svelte.BtEbdPyR.js                                 1.13 kB │ gzip:  0.63 kB
+04:51:23 [vite] dist/_astro/index.modern.D46RI4Wq.js                                  1.77 kB │ gzip:  0.91 kB
+04:51:23 [vite] dist/_astro/page.Z8IJTFqj.js                                          2.15 kB │ gzip:  1.01 kB
+04:51:23 [vite] dist/_astro/DisplaySettings.DO1ultQm.js                               2.16 kB │ gzip:  1.17 kB
+04:51:23 [vite] dist/_astro/SwupHeadPlugin.DvOZNxAa.js                                2.58 kB │ gzip:  1.28 kB
+04:51:23 [vite] dist/_astro/LightDarkSwitch.C4ULN93C.js                               3.33 kB │ gzip:  1.38 kB
+04:51:23 [vite] dist/_astro/ArchivePanel.BCllb_ib.js                                  3.61 kB │ gzip:  1.59 kB
+04:51:23 [vite] dist/_astro/each.DDW9_lxA.js                                          3.75 kB │ gzip:  1.88 kB
+04:51:23 [vite] dist/_astro/Search.Cjw60ClJ.js                                        4.66 kB │ gzip:  2.05 kB
+04:51:23 [vite] dist/_astro/SwupA11yPlugin.BIyElFLX.js                                5.25 kB │ gzip:  2.12 kB
+04:51:23 [vite] dist/_astro/SwupPreloadPlugin.BFr0xV-N.js                             6.06 kB │ gzip:  2.35 kB
+04:51:23 [vite] dist/_astro/zh_TW.CDCuNPt_.js                                         7.49 kB │ gzip:  2.59 kB
+04:51:23 [vite] dist/_astro/SwupScrollPlugin.DTcbGiCQ.js                              8.00 kB │ gzip:  2.40 kB
+04:51:23 [vite] dist/_astro/translation.B7CU8jZf.js                                   9.60 kB │ gzip:  4.43 kB
+04:51:23 [vite] dist/_astro/Layout.astro_astro_type_script_index_0_lang.DAHrxWCB.js  16.69 kB │ gzip:  5.41 kB
+04:51:23 [vite] dist/_astro/Icon.D1kTP2rD.js                                         20.41 kB │ gzip:  8.23 kB
+04:51:23 [vite] dist/_astro/Swup.BWOMRtvc.js                                         21.62 kB │ gzip:  7.41 kB
+04:51:23 [vite] dist/_astro/render.BTYFdy85.js                                       27.51 kB │ gzip: 10.89 kB
+04:51:23 [vite] dist/_astro/Layout.astro_astro_type_script_index_1_lang.D3pHS_Lp.js  31.78 kB │ gzip: 15.33 kB
+04:51:23 [vite] dist/_astro/photoswipe.esm.CKV1Bsxh.js                               60.41 kB │ gzip: 17.48 kB
+04:51:23 [vite] ✓ built in 1.10s
+
+ generating static routes 
+04:51:24 ▶ src/pages/about.astro
+04:51:24   └─ /about/index.html (+28ms) 
+04:51:24 ▶ src/pages/archive.astro
+04:51:24   └─ /archive/index.html (+7ms) 
+04:51:24 ▶ src/pages/posts/[...slug].astro
+04:51:24   ├─ /posts/markdown-extended/index.html (+8ms) 
+04:51:24   ├─ /posts/expressive-code/index.html (+6ms) 
+04:51:24   ├─ /posts/guide/index.html (+5ms) 
+04:51:24   ├─ /posts/markdown/index.html (+5ms) 
+04:51:24   └─ /posts/video/index.html (+5ms) 
+04:51:24 λ src/pages/robots.txt.ts
+04:51:24   └─ /robots.txt (+1ms) 
+04:51:24 λ src/pages/rss.xml.ts
+04:51:24   └─ /rss.xml (+33ms) 
+04:51:24 ▶ src/pages/[...page].astro
+04:51:24   └─ /index.html (+11ms) 
+04:51:24 ✓ Completed in 264ms.
+
+ generating optimized images 
+04:51:24   ▶ /_astro/demo-avatar.CxcI0ivM_1nbuVe.webp (before: 406kB, after: 41kB) (+67ms) (1/2)
+04:51:24   ▶ /_astro/cover.CgGywNHJ_9MQNr.webp (before: 218kB, after: 144kB) (+224ms) (2/2)
+04:51:24 ✓ Completed in 226ms.
+
+04:51:24 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:51:24 [build] 8 page(s) built in 7.42s
+04:51:24 [build] Complete!
+
+Running Pagefind v1.4.0 (Extended)
+Running from: "/tmp/claude-0/flat-replay/saicaca_fuwari/opt/temp"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 8 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 6 pages
+  Indexed 678 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.052 seconds
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/archive/": 200, "/about/": 200, "/posts/expressive-code/": 200, "/pagefind/pagefind.js": 200, "/rss.xml": 200}}

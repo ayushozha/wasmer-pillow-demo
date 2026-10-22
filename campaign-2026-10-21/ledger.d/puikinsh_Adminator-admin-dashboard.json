@@ -1,6 +1,6 @@
 {
   "repo": "puikinsh/Adminator-admin-dashboard",
-  "status": "READY",
+  "status": "HELD_BUILD",
   "stars": 4674,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:35:23Z",
@@ -19,8 +19,8 @@
   "policy": "Read README (Build commands; Release and publication), AGENTS.md (imperative commit subjects; focused PRs; report validation), CLAUDE.md, ISSUE_TEMPLATE. No CONTRIBUTING/PR template. No Wasmer mention. PR search deploy/netlify/vercel/wasmer: #324 'add deployment.md to docs' merged 2025-10, #290 'Continuous deployment' closed; no refusals.",
   "why": "Popular static webpack admin template with an existing external deployment guide but no README hosting pointer; added Deploy subsection with Wasmer badge.",
   "patch": "patches/puikinsh_Adminator-admin-dashboard.patch",
-  "pr_body": "pr-bodies/puikinsh_Adminator-admin-dashboard.md",
+  "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=puikinsh%2FAdminator-admin-dashboard",
   "detection_verified": "pending Codex browser check",
-  "reason": null
+  "reason": "Wasmer detector mismatch: anybuild 0.33.0 plan -> provider node with start `webpack server` (dev server); build output dist/ is untracked, so a Staticfile would make the staticfile provider serve a missing dir with no build. No README-only or minimal-config fix."
 }
