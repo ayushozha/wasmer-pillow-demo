@@ -4,7 +4,7 @@ Note: npm targets 02/07/08/09/10/11 were re-run on the exact planned npm 11.21.1
 
 Qualified = exact Anybuild v0.33.0 flat replay passed (install/build/serve with static-web-server 2.38.0 + smoke) and no policy/security blocker found. Every one still needs root's live import-page and badge check (wasmer.io / img.shields.io blocked here). Button wording everywhere: "opens Wasmer's import page … you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account."
 
-## Qualified (12)
+## Qualified
 | Folder | Stars | Verdict | Builder path | Condition / note |
 |---|---|---|---|---|
 | 04 remvze/moodist | 3.9k | READY (root fork created) | node-static pnpm → dist | all 91 sounds + 121 precache URLs 200; Radio Browser/YouTube optional third parties; sound licences only partly stated (root decision) |
@@ -19,9 +19,16 @@ Qualified = exact Anybuild v0.33.0 flat replay passed (install/build/serve with 
 | 11 mhyfritz/astro-landing-page | 679 | CONDITIONAL | node-static npm → dist | inactive since 2024-11 |
 | 23 barryclark/jekyll-now | 8.4k | CONDITIONAL | jekyll, no Gemfile → `bundle add jekyll 4.3.0` | no PR merged since 2018; feed/sitemap plugins don't run (README says so) |
 | 30 yaoyao-liu/minimal-light | 1.0k | CONDITIONAL | jekyll | repo has never merged a PR |
+| 66 midudev/minimalist-portfolio-json | 948 | READY | node-static pnpm (Astro) → dist | MIT (unlike porfolio.dev); README section in Spanish |
+| 68 josh-collinsworth/sveltekit-blog-starter | 511 | READY | node-static npm 11.21.1, SvelteKit adapter-static → build | all routes prerendered; just over the star floor |
+| 69 themeselection/sneat-bootstrap-html-admin-template-free | 1.2k | CONDITIONAL | Staticfile `root: .` (else Node with no start) | 115/115 local refs 200; root index is a links page to `html/`; login pages mock-only; no outside PR ever merged |
+| 70 treefarmstudio/odyssey-theme | 785 | CONDITIONAL | node-static npm 11.21.1 (Astro) → dist | inactive since 2024-09; demo forms POST to static pages → 405 |
+| 62 yulimchen/vue3-h5-template | 1.5k | READY (hand off) | node-static pnpm → dist | hash-router app → belongs to the other Claude session's lane; mock API dev-only |
 
 ## Held (technically passing, held by decision)
-61 Adrinlol/landy-react-template — POLICY HOLD (owner closed provider-button PR #101). Also excluded by root: github-education-resources/codespaces-project-template-js, gabrielecirulli/2048, flatlogic/react-dashboard.
+61 Adrinlol/landy-react-template — POLICY HOLD (owner closed provider-button PR #101). Also excluded by root: github-education-resources/codespaces-project-template-js, gabrielecirulli/2048, flatlogic/react-dashboard, jgraph/drawio, drawdb-io/drawdb (owner declined deploy buttons, PR #57).
+67 leoMirandaa/shadcn-landing-page — duplicate: campaign PR #32 already open.
+63 vue3-vant-mobile, 64 v3-admin-vite, 65 shadcn-dashboard-landing-template — real blockers (history router + pnpm overrides; base path `/v3-admin-vite/`; no app at repo root).
 45 freelancer, 46 resume, 47 creative, 48 agency (StartBootstrap) — root allows one org probe (44) only.
 43 ColorlibHQ/AdminLTE — replay passes with `root: dist`, but SECURITY.md says not to deploy demo pages; ask maintainers first.
 
