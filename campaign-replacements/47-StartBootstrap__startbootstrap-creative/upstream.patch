@@ -1,0 +1,24 @@
+diff --git a/README.md b/README.md
+index 50bef28..6eb816f 100644
+--- a/README.md
++++ b/README.md
+@@ -45,6 +45,12 @@ Clone the source files of the theme and navigate into the theme's root directory
+ 
+ You must have npm installed in order to use this build environment.
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=StartBootstrap%2Fstartbootstrap-creative)
++
++Wasmer serves the prebuilt `dist` directory as a static site: the `Staticfile` in the repository root points it at `dist`, and no build step runs. The button deploys this repository as-is and does not fork it; to customize the theme, fork it (or use your own copy), update `dist` by editing it directly or running `npm run build`, then import your own repository on Wasmer.
++
+ ### Contact Form
+ 
+ The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..91377cd
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: dist

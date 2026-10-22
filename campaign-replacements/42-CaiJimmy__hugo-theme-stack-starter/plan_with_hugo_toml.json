@@ -1,0 +1,12 @@
+{
+    "provider": "hugo",
+    "config": {
+        "name": "stack",
+        "commands": {
+            "build": "hugo --gc --minify",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+        },
+        "hugo_version": "0.153.2"
+    },
+    "services": []
+}

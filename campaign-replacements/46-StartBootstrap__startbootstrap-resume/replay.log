@@ -1,0 +1,31 @@
+# replay of w8-sb-resume  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/StartBootstrap__startbootstrap-resume  upstream HEAD=c6fbe5ef431642984d0f17960194632f20cf67bc
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static site provider
+    Output directory: dist
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-resume/plan.json
+# provider=staticfile install='' build='' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=@ inputs='' all_files=False
+$ cp -R '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-resume/flat/dist/.' '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-resume/static_app/'
+exit=0
+
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-resume/static_app --log-level=info --port=3692 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	14598
+--	title	/	Resume - Start Bootstrap Theme	
+200	page	/index.html	text/html	14598
+--	title	/index.html	Resume - Start Bootstrap Theme	
+200	ref	/assets/img/favicon.ico	image/x-icon	23462
+200	ref	/css/styles.css	text/css	240055
+200	ref	/assets/img/profile.jpg	image/jpeg	216456
+200	ref	/js/scripts.js	text/javascript	1099
+SUMMARY pages=2 refs_checked=4 failures=0
+# static_app files: 5

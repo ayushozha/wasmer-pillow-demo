@@ -1,0 +1,6 @@
+  Detected Hugo provider
+    Hugo version: 0.153.2
+    Output directory: public
+
+  Generated Anybuild at /tmp/AnybuildVD1XqD
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-hextra-root/plan.json

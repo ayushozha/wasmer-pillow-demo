@@ -1,0 +1,49 @@
+# replay of w8-sb-agency  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/StartBootstrap__startbootstrap-agency  upstream HEAD=b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static site provider
+    Output directory: dist
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-agency/plan.json
+# provider=staticfile install='' build='' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=@ inputs='' all_files=False
+$ cp -R '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-agency/flat/dist/.' '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-agency/static_app/'
+exit=0
+
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-sb-agency/static_app --log-level=info --port=3694 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	39672
+--	title	/	Agency - Start Bootstrap Theme	
+200	page	/index.html	text/html	39672
+--	title	/index.html	Agency - Start Bootstrap Theme	
+200	ref	/assets/favicon.ico	image/x-icon	23462
+200	ref	/css/styles.css	text/css	250501
+200	ref	/assets/img/navbar-logo.svg	image/svg+xml	14220
+200	ref	/assets/img/portfolio/1.jpg	image/jpeg	18415
+200	ref	/assets/img/portfolio/2.jpg	image/jpeg	32450
+200	ref	/assets/img/portfolio/3.jpg	image/jpeg	17771
+200	ref	/assets/img/portfolio/4.jpg	image/jpeg	26923
+200	ref	/assets/img/portfolio/5.jpg	image/jpeg	17628
+200	ref	/assets/img/portfolio/6.jpg	image/jpeg	32511
+200	ref	/assets/img/about/1.jpg	image/jpeg	19668
+200	ref	/assets/img/about/2.jpg	image/jpeg	10187
+200	ref	/assets/img/about/3.jpg	image/jpeg	18029
+200	ref	/assets/img/about/4.jpg	image/jpeg	16175
+200	ref	/assets/img/team/1.jpg	image/jpeg	40338
+200	ref	/assets/img/team/2.jpg	image/jpeg	61067
+200	ref	/assets/img/team/3.jpg	image/jpeg	57725
+200	ref	/assets/img/logos/microsoft.svg	image/svg+xml	4137
+200	ref	/assets/img/logos/google.svg	image/svg+xml	3282
+200	ref	/assets/img/logos/facebook.svg	image/svg+xml	3223
+200	ref	/assets/img/logos/ibm.svg	image/svg+xml	2284
+200	ref	/assets/img/close-icon.svg	image/svg+xml	333
+200	ref	/js/scripts.js	text/javascript	1654
+SUMMARY pages=2 refs_checked=22 failures=0
+# static_app files: 25

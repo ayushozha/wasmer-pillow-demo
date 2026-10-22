@@ -1,0 +1,89 @@
+# replay of w8-adminlte  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/rup/ColorlibHQ__AdminLTE  upstream HEAD=e13df78a4d0c287e5fa57308e293f63e44e9dd0f
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static site provider
+    Output directory: dist
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-adminlte/plan.json
+# provider=staticfile install='' build='' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=@ inputs='' all_files=False
+$ cp -R '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-adminlte/flat/dist/.' '/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-adminlte/static_app/'
+exit=0
+
+$ static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/w8-adminlte/static_app --log-level=info --port=3696 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	81978
+--	title	/	AdminLTE v4 | Dashboard	
+200	page	/index.html	text/html	81978
+--	title	/index.html	AdminLTE v4 | Dashboard	
+200	page	/index2.html	text/html	112346
+--	title	/index2.html	AdminLTE | Dashboard v2	
+200	page	/docs/	text/html	481
+--	title	/docs/	AdminLTE 4 — Documentation	
+200	page	/layout/fixed-sidebar.html	text/html	51520
+--	title	/layout/fixed-sidebar.html	AdminLTE 4 | Fixed Sidebar	
+200	page	/UI/general.html	text/html	125696
+--	title	/UI/general.html	AdminLTE 4 | General UI Elements	
+404	page	/pages/	text/html	0
+--	title	/pages/	(none)	
+200	ref	/css/adminlte.css	text/css	378348
+200	ref	/docs/introduction.html	text/html	50306
+200	ref	/pages/search-results.html	text/html	67219
+200	ref	/assets/img/user1-128x128.jpg	image/jpeg	2750
+200	ref	/assets/img/user8-128x128.jpg	image/jpeg	4983
+200	ref	/assets/img/user3-128x128.jpg	image/jpeg	3398
+200	ref	/assets/img/user2-160x160.jpg	image/jpeg	6905
+200	ref	/assets/img/AdminLTELogo.png	image/png	2637
+200	ref	/index3.html	text/html	73937
+200	ref	/starter.html	text/html	51438
+200	ref	/generate/theme.html	text/html	179533
+200	ref	/widgets/small-box.html	text/html	55776
+200	ref	/widgets/info-box.html	text/html	62950
+200	ref	/widgets/cards.html	text/html	62493
+200	ref	/widgets/social.html	text/html	63425
+200	ref	/layout/unfixed-sidebar.html	text/html	51482
+200	ref	/layout/fixed-header.html	text/html	51485
+200	ref	/layout/fixed-footer.html	text/html	51485
+200	ref	/layout/fixed-complete.html	text/html	51552
+200	ref	/layout/layout-custom-area.html	text/html	52819
+200	ref	/layout/sidebar-mini.html	text/html	51530
+200	ref	/layout/collapsed-sidebar.html	text/html	51557
+200	ref	/layout/collapsed-sidebar-without-hover.html	text/html	51761
+200	ref	/layout/logo-switch.html	text/html	28483
+200	ref	/layout/top-nav.html	text/html	16615
+200	ref	/layout/layout-rtl.html	text/html	51527
+200	ref	/UI/icons.html	text/html	51087
+200	ref	/UI/timeline.html	text/html	55419
+200	ref	/UI/ribbons.html	text/html	58690
+200	ref	/UI/colors.html	text/html	331110
+200	ref	/mailbox/inbox.html	text/html	71775
+200	ref	/mailbox/read.html	text/html	55228
+200	ref	/mailbox/compose.html	text/html	52675
+200	ref	/forms/elements.html	text/html	64062
+200	ref	/forms/layout.html	text/html	57800
+200	ref	/forms/validation.html	text/html	58612
+200	ref	/forms/wizard.html	text/html	63409
+200	ref	/forms/advanced.html	text/html	70797
+200	ref	/forms/editors.html	text/html	56023
+200	ref	/tables/simple.html	text/html	64816
+200	ref	/tables/data.html	text/html	58705
+200	ref	/charts/chartjs.html	text/html	74459
+200	ref	/pages/profile.html	text/html	64148
+200	ref	/pages/settings.html	text/html	64113
+200	ref	/pages/invoice.html	text/html	54963
+200	ref	/pages/calendar.html	text/html	57245
+200	ref	/pages/kanban.html	text/html	65224
+200	ref	/pages/chat.html	text/html	64141
+200	ref	/pages/file-manager.html	text/html	87369
+200	ref	/pages/projects.html	text/html	77729
+200	ref	/pages/gallery.html	text/html	79875
+SUMMARY pages=7 refs_checked=51 failures=1
+FAIL	404	page	/pages/	text/html	0
+# static_app files: 185
