@@ -111,3 +111,22 @@ A table per repo (status, stars, license, provider/static_dir, normal build, rep
   - tbaltrushaitis/cv
   - Bitburner (Commons Clause)
 - Treat "issue/discussion required before PR" policies as HOLD. Don't open issues just to place a PR.
+
+## Addendum: Hugo and Jekyll (wave 2)
+
+- **Hugo (anybuild 0.33.0, hugo.bzl):**
+  - Build is `hugo --gc --minify` with Hugo EXTENDED pinned at 0.153.2. Docker resolves `gohugoio/hugo[matching=extended]`.
+  - There is NO npm install, NO Go toolchain and NO git submodule fetch.
+  - static_dir is `publishDir`, or `public` by default.
+  - HOLD a site if it needs any of the following and they aren't vendored/committed:
+    - PostCSS or npm packages;
+    - Hugo Modules (needs Go);
+    - a theme from an uninitialized git submodule.
+  - Use exactly that binary: `export PATH=/tmp/claude-0/tools/hugo-0.153.2:$PATH` (checksum-verified extended build). Newer Hugo breaks some themes, so never substitute another version.
+  - Check `baseURL`: a hardcoded sub-path breaks assets at the root.
+- **Jekyll (jekyll.bzl):**
+  - With a Gemfile it runs `bundle install`. Without one it runs `bundle init` and `bundle add jekyll -v 4.3.0`.
+  - Then it runs `jekyll build`. Ruby is pinned at 3.4.7; this sandbox has Ruby 3.3.6, so record that version mismatch.
+  - static_dir is `destination`, or `_site` by default.
+  - HOLD a site whose plugins aren't in the Gemfile, or that needs GitHub Pages-only behaviour (the `github-pages` gem, or `remote_theme` without the jekyll-remote-theme plugin).
+- **Replay:** tools/anybuild_flat_replay.py now supports providers hugo and jekyll. It copies the full source, runs the planned install and build, and uses the default static_dir. The SWS smoke dir is `/tmp/claude-0/flat-replay/<key>/opt/temp/<public|_site|publishDir>`.

@@ -1,0 +1,29 @@
+From a2028f22951d928ed8e725778afbefb52a428627 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:40:21 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index 6d4647a..bc12b13 100644
+--- a/README.md
++++ b/README.md
+@@ -67,6 +67,12 @@ Run `npm run build` to build the project. The build artifacts will be stored in
+ ##### Running unit tests
+ Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ 
++### Deploy to Wasmer Edge
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Yqnn%2Fsvg-path-editor)
++
++Fork this repository and import your fork if you want to customize it: the import builds from the repository you choose (`npm run build`, output in `dist/svg-path-editor/`) and does not copy it into your GitHub account. Before deploying your own copy, remove or replace the Google Analytics tag (`G-1BBJSPSKQ9`) in `src/index.html`.
++
+ ## Special Thanks
+ Many thanks to our sponsors 🙇 !
+ 
+-- 
+2.43.0
+

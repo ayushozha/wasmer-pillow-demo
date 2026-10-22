@@ -39,3 +39,28 @@ $ npm run build
 
 [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
 - Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.c2644f28e3f13a72.js      | main          | 834.80 kB |               167.99 kB
+styles.76a03d602b7f3c86.css   | styles        |  45.08 kB |                 5.10 kB
+polyfills.8b39c005062fd761.js | polyfills     |  34.00 kB |                11.06 kB
+runtime.6f6474d711a7c88e.js   | runtime       | 908 bytes |               518 bytes
+
+                              | Initial total | 914.77 kB |               184.66 kB
+
+Build at: 2026-10-22T05:39:54.101Z - Hash: 4625f7e785124750 - Time: 36955ms
+
+Warning: /tmp/claude-0/camp4/Yqnn_svg-path-editor/src/app/app.component.scss exceeded maximum budget. Budget 2.00 kB was not met by 911 bytes with a total of 2.89 kB.
+
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 414.77 kB with a total of 914.77 kB.
+
+
+EXIT 0

@@ -1,0 +1,32 @@
+{
+  "tool": "anybuild 0.33.0 plan on clean git worktrees (Anybuild file deleted after each run)",
+  "at": "2026-10-22T05:40:22Z",
+  "base": {
+    "sha": "937d75a83b6be2bdda11d02b9b3594841315223a",
+    "provider": "node-static",
+    "framework": "angular",
+    "static_dir": "dist/svg-path-editor",
+    "package_manager": "npm",
+    "pnpm_version": null,
+    "npm_version": "11",
+    "commands": {
+      "install": "npm install",
+      "build": "npm run build",
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  },
+  "patched": {
+    "sha": "a2028f22951d928ed8e725778afbefb52a428627",
+    "provider": "node-static",
+    "framework": "angular",
+    "static_dir": "dist/svg-path-editor",
+    "package_manager": "npm",
+    "pnpm_version": null,
+    "npm_version": "11",
+    "commands": {
+      "install": "npm install",
+      "build": "npm run build",
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  }
+}

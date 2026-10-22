@@ -1,0 +1,155 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/kuizuo_blog/opt/temp/build",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 46600
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 28000
+      }
+    ],
+    "/blog/2025-year-end-summary/": [
+      {
+        "path": "/blog/2025-year-end-summary/",
+        "status": 200,
+        "location": null,
+        "bytes": 34087
+      }
+    ],
+    "/docs/docusaurus-guides/": [
+      {
+        "path": "/docs/docusaurus-guides/",
+        "status": 200,
+        "location": null,
+        "bytes": 21976
+      }
+    ],
+    "/project/": [
+      {
+        "path": "/project/",
+        "status": 200,
+        "location": null,
+        "bytes": 27965
+      }
+    ],
+    "/about/": [
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 18545
+      }
+    ],
+    "/blog/archive/": [
+      {
+        "path": "/blog/archive/",
+        "status": 200,
+        "location": null,
+        "bytes": 34530
+      }
+    ],
+    "/blog/atom.xml": [
+      {
+        "path": "/blog/atom.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 1111476
+      }
+    ],
+    "/sitemap.xml": [
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 25554
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 12187
+      }
+    ],
+    "/assets/js/main.17a2b067.js": [
+      {
+        "path": "/assets/js/main.17a2b067.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1281271
+      }
+    ],
+    "/assets/css/styles.44ec81c4.css": [
+      {
+        "path": "/assets/css/styles.44ec81c4.css",
+        "status": 200,
+        "location": null,
+        "bytes": 282571
+      }
+    ],
+    "/manifest.json": [
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "location": null,
+        "bytes": 531
+      }
+    ],
+    "/sw.js": [
+      {
+        "path": "/sw.js",
+        "status": 200,
+        "location": null,
+        "bytes": 70824
+      }
+    ],
+    "/blog": [
+      {
+        "path": "/blog",
+        "status": 308,
+        "location": "/blog/",
+        "bytes": 0
+      },
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 28000
+      }
+    ],
+    "/about": [
+      {
+        "path": "/about",
+        "status": 308,
+        "location": "/about/",
+        "bytes": 0
+      },
+      {
+        "path": "/about/",
+        "status": 200,
+        "location": null,
+        "bytes": 18545
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 12187
+    }
+  ],
+  "ok": true
+}

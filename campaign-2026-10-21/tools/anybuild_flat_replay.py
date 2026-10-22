@@ -95,6 +95,21 @@ def main():
         code = sh(install, temp) if install else 0
         if code == 0:
             code = sh(build, temp)
+    elif provider in ("hugo", "jekyll"):
+        # The plan omits static_dir when it is the provider default (hugo.rs / jekyll.rs).
+        if not cfg.get("static_dir"):
+            static_dir = "public" if provider == "hugo" else "_site"
+        # hugo.bzl / jekyll.bzl copy the source, (jekyll) run the bundle install step,
+        # run the planned build, then copy static_dir into static_app. Tool versions
+        # come from PATH; record them against the planned versions.
+        sh(f"tar --exclude=./.git -cf - . | tar -xf - -C {temp}", src)
+        want = cfg.get("hugo_version") if provider == "hugo" else f"ruby {cfg.get('ruby_version')} jekyll {cfg.get('jekyll_version')}"
+        have = subprocess.run("hugo version" if provider == "hugo" else "ruby -v; bundle -v", shell=True, env=env,
+                              capture_output=True, text=True).stdout.strip().replace("\n", "; ")
+        log.write(f"# {provider} per {provider}.bzl: planned {want}; on PATH: {have}\n")
+        code = sh(install, temp) if install else 0
+        if code == 0:
+            code = sh(build, temp) if build else 0
     else:
         for name in ["package.json"] + LOCKS:
             if os.path.exists(f"{src}/{name}"):
