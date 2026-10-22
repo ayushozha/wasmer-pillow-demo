@@ -20,3 +20,794 @@ application for all non-root users on this machine.
 Bundler 4.0.18 is running, but your lockfile was generated with 2.5.9. Installing Bundler 2.5.9 and restarting using that version.
 Fetching gem metadata from https://rubygems.org/.
 Fetching bundler 2.5.9
+Installing bundler 2.5.9
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching gem metadata from https://rubygems.org/..........
+Fetching rake 13.2.1
+Installing rake 13.2.1
+Fetching public_suffix 6.0.1
+Fetching bigdecimal 3.1.9
+Fetching colorator 1.1.0
+Fetching concurrent-ruby 1.3.5
+Installing public_suffix 6.0.1
+Fetching csv 3.3.2
+Installing bigdecimal 3.1.9 with native extensions
+Installing colorator 1.1.0
+Fetching eventmachine 1.2.7
+Installing concurrent-ruby 1.3.5
+Installing csv 3.3.2
+Fetching http_parser.rb 0.8.0
+Installing eventmachine 1.2.7 with native extensions
+Installing http_parser.rb 0.8.0 with native extensions
+Fetching ffi 1.17.1 (x86_64-linux-gnu)
+Installing ffi 1.17.1 (x86_64-linux-gnu)
+Fetching forwardable-extended 2.6.0
+Installing forwardable-extended 2.6.0
+Fetching rb-fsevent 0.11.2
+Installing rb-fsevent 0.11.2
+Fetching json 2.9.1
+Installing json 2.9.1 with native extensions
+Fetching rexml 3.4.0
+Installing rexml 3.4.0
+Fetching liquid 4.0.4
+Installing liquid 4.0.4
+Fetching mercenary 0.4.0
+Installing mercenary 0.4.0
+Fetching rouge 4.5.1
+Installing rouge 4.5.1
+Fetching safe_yaml 1.0.5
+Installing safe_yaml 1.0.5
+Fetching unicode-display_width 2.6.0
+Installing unicode-display_width 2.6.0
+Fetching webrick 1.9.1
+Installing webrick 1.9.1
+Fetching addressable 2.8.7
+Installing addressable 2.8.7
+Fetching i18n 1.14.7
+Installing i18n 1.14.7
+Fetching rb-inotify 0.11.1
+Installing rb-inotify 0.11.1
+Fetching pathutil 0.16.2
+Installing pathutil 0.16.2
+Fetching kramdown 2.5.1
+Installing kramdown 2.5.1
+Fetching terminal-table 3.0.2
+Installing terminal-table 3.0.2
+Fetching listen 3.9.0
+Installing listen 3.9.0
+Fetching kramdown-parser-gfm 1.1.0
+Installing kramdown-parser-gfm 1.1.0
+Fetching jekyll-watch 2.2.1
+Installing jekyll-watch 2.2.1
+Fetching google-protobuf 4.29.3 (x86_64-linux)
+Installing google-protobuf 4.29.3 (x86_64-linux)
+Fetching sass-embedded 1.83.4 (x86_64-linux-gnu)
+Installing sass-embedded 1.83.4 (x86_64-linux-gnu)
+Fetching jekyll-sass-converter 3.0.0
+Installing jekyll-sass-converter 3.0.0
+Fetching em-websocket 0.5.3
+Installing em-websocket 0.5.3
+Fetching jekyll 4.4.1
+Installing jekyll 4.4.1
+Fetching jekyll-include-cache 0.2.1
+Fetching jekyll-seo-tag 2.8.0
+Installing jekyll-seo-tag 2.8.0
+Installing jekyll-include-cache 0.2.1
+Fetching just-the-docs 0.12.0
+Installing just-the-docs 0.12.0
+Bundle complete! 2 Gemfile dependencies, 38 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp && jekyll build)
+Configuration file: /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/_config.yml
+            Source: /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp
+       Destination: /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import "./support/support";
+  │         ^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "./custom/setup";
+  │         ^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 3:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import "./color_schemes/light";
+  │         ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 4:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │ @import "./color_schemes/dark";
+  │         ^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │ @import "./modules";
+  │         ^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8                                             @import
+    support/support.scss 1:9                                                                                        @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8                                             @import
+    support/support.scss 1:9                                                                                        @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8                                             @import
+    support/support.scss 1:9                                                                                        @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8                                             @import
+    support/support.scss 1:9                                                                                        @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8                                             @import
+    support/support.scss 1:9                                                                                        @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 2:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    color_schemes/light.scss 11:18                                                                                  @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 4:9  root stylesheet
+DEPRECATION WARNING [color-functions]: lighten() is deprecated. Suggestions:
+
+color.scale($color, $lightness: 23.6111111111%)
+color.adjust($color, $lightness: 10%)
+
+More info: https://sass-lang.com/d/color-functions
+
+  ╷
+5 │ $link-color: lighten($blue-000, 10%);
+  │              ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    color_schemes/dark.scss 5:14                                                                                    @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -18.8888888889%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+12 │ $feedback-color: darken($sidebar-color, 3%);
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    color_schemes/dark.scss 12:18                                                                                   @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 6:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -7.3913043478%)
+color.adjust($color, $lightness: -5%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+61 │         color: darken($link-color, 5%);
+   │                ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16                                                    @import
+    modules.scss 8:9                                                                                                @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -2.9565217391%)
+color.adjust($color, $lightness: -2%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+38 │     color: darken($link-color, 2%);
+   │            ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12                                                       @import
+    modules.scss 11:9                                                                                               @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-dark.scss 8:9  root stylesheet
+WARNING: 93 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "./support/support";
+  │         ^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import "./custom/setup";
+  │         ^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 4:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import "./color_schemes/light";
+  │         ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 5:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │ @import "./modules";
+  │         ^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │ @import "./custom/custom";
+   │         ^^^^^^^^^^^^^^^^^
+   ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 11:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8                                                @import
+    support/support.scss 1:9                                                                                           @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8                                                @import
+    support/support.scss 1:9                                                                                           @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8                                                @import
+    support/support.scss 1:9                                                                                           @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8                                                @import
+    support/support.scss 1:9                                                                                           @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8                                                @import
+    support/support.scss 1:9                                                                                           @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 3:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    color_schemes/light.scss 11:18                                                                                     @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 5:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+61 │         color: darken($link-color, 5%);
+   │                ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16                                                       @import
+    modules.scss 8:9                                                                                                   @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+38 │     color: darken($link-color, 2%);
+   │            ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12                                                          @import
+    modules.scss 11:9                                                                                                  @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+46 │     background-color: darken($base-button-color, 1%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23                                                          @import
+    modules.scss 11:9                                                                                                  @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+52 │     background-color: darken($base-button-color, 3%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23                                                          @import
+    modules.scss 11:9                                                                                                  @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-default.scss 7:9  root stylesheet
+WARNING: 87 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import "./support/support";
+  │         ^^^^^^^^^^^^^^^^^^^
+  ╵
+    - 2:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "./custom/setup";
+  │         ^^^^^^^^^^^^^^^^
+  ╵
+    - 3:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import "./color_schemes/light";
+  │         ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    - 4:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │ @import "./modules";
+  │         ^^^^^^^^^^^
+  ╵
+    - 6:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │ @import "./custom/custom";
+   │         ^^^^^^^^^^^^^^^^^
+   ╵
+    - 10:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8  @import
+    support/support.scss 1:9                                             @import
+    - 2:9                                                                root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    color_schemes/light.scss 11:18  @import
+    - 4:9                           root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+61 │         color: darken($link-color, 5%);
+   │                ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16  @import
+    modules.scss 8:9                                              @import
+    - 6:9                                                         root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+38 │     color: darken($link-color, 2%);
+   │            ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+46 │     background-color: darken($base-button-color, 1%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+52 │     background-color: darken($base-button-color, 3%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23  @import
+    modules.scss 11:9                                          @import
+    - 6:9                                                      root stylesheet
+WARNING: 87 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import "./support/support";
+  │         ^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "./custom/setup";
+  │         ^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 3:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import "./color_schemes/light";
+  │         ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 4:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │ @import "./modules";
+  │         ^^^^^^^^^^^
+  ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │ @import "./custom/custom";
+   │         ^^^^^^^^^^^^^^^^^
+   ╵
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 10:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+78 │ $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 78:8                                              @import
+    support/support.scss 1:9                                                                                         @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+79 │ $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 79:8                                              @import
+    support/support.scss 1:9                                                                                         @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+80 │ $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 80:8                                              @import
+    support/support.scss 1:9                                                                                         @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+81 │ $sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 81:8                                              @import
+    support/support.scss 1:9                                                                                         @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+82 │ $sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+   │        ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/support/_variables.scss 82:8                                              @import
+    support/support.scss 1:9                                                                                         @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 2:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0909090909%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+11 │ $feedback-color: darken($sidebar-color, 3%) !default;
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    color_schemes/light.scss 11:18                                                                                   @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 4:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -7.96875%)
+color.adjust($color, $lightness: -5%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+61 │         color: darken($link-color, 5%);
+   │                ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/navigation.scss 61:16                                                     @import
+    modules.scss 8:9                                                                                                 @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.1875%)
+color.adjust($color, $lightness: -2%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+38 │     color: darken($link-color, 2%);
+   │            ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 38:12                                                        @import
+    modules.scss 11:9                                                                                                @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -1.032388664%)
+color.adjust($color, $lightness: -1%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+46 │     background-color: darken($base-button-color, 1%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 46:23                                                        @import
+    modules.scss 11:9                                                                                                @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+DEPRECATION WARNING [color-functions]: darken() is deprecated. Suggestions:
+
+color.scale($color, $lightness: -3.0971659919%)
+color.adjust($color, $lightness: -3%)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+52 │     background-color: darken($base-button-color, 3%);
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ../../../../just-the-docs-0.12.0/_sass/buttons.scss 52:23                                                        @import
+    modules.scss 11:9                                                                                                @import
+    /tmp/claude-0/flat-replay/just-the-docs_just-the-docs-template/opt/temp/assets/css/just-the-docs-light.scss 6:9  root stylesheet
+WARNING: 87 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+                    done in 1.363 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+EXIT 0
+# result {"install": "bundle install", "build": "jekyll build", "static_dir": "_site", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/assets/js/search-data.json": 200, "/assets/css/just-the-docs-default.css": 200, "/assets/css/just-the-docs-dark.css": 200, "/assets/js/just-the-docs.js": 200, "/assets/js/vendor/lunr.min.js": 200}}

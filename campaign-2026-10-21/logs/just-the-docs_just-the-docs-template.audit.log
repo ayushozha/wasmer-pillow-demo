@@ -1,0 +1,55 @@
+Name: addressable
+Version: 2.8.7
+CVE: CVE-2026-35611
+GHSA: GHSA-h27x-rffw-24p4
+Criticality: High
+URL: https://github.com/sporkmonger/addressable/security/advisories/GHSA-h27x-rffw-24p4
+Title: Addressable has a Regular Expression Denial of Service in Addressable templates
+Solution: update to '>= 2.9.0'
+
+Name: concurrent-ruby
+Version: 1.3.5
+CVE: CVE-2026-54904
+GHSA: GHSA-h8w8-99g7-qmvj
+Criticality: High
+URL: https://nvd.nist.gov/vuln/detail/CVE-2026-54904
+Title: Concurrent Ruby - `AtomicReference#update` livelocks when the stored value is `Float::NAN`
+Solution: update to '>= 1.3.7'
+
+Name: concurrent-ruby
+Version: 1.3.5
+CVE: CVE-2026-54905
+GHSA: GHSA-wv3x-4vxv-whpp
+Criticality: Medium
+URL: https://nvd.nist.gov/vuln/detail/CVE-2026-54905
+Title: Concurrent Ruby - `ReentrantReadWriteLock` read-count overflow grants a write lock without exclusivity
+Solution: update to '>= 1.3.7'
+
+Name: concurrent-ruby
+Version: 1.3.5
+CVE: CVE-2026-54906
+GHSA: GHSA-6wx8-w4f5-wwcr
+Criticality: Unknown
+URL: https://www.cve.org/CVERecord/SearchResults?query=CVE-2026-54906
+Title: Concurrent Ruby - ReadWriteLock allows wrong-thread write release and stray read-release counter corruption
+Solution: update to '>= 1.3.7'
+
+Name: json
+Version: 2.9.1
+CVE: CVE-2026-54696
+GHSA: GHSA-x2f5-4prf-w687
+Criticality: Low
+URL: https://nvd.nist.gov/vuln/detail/CVE-2026-54696
+Title: JSON generator heap buffer overflow when streaming to an IO
+Solution: update to '>= 2.19.9'
+
+Name: rexml
+Version: 3.4.0
+CVE: CVE-2025-58767
+GHSA: GHSA-c2f4-jgmc-q2r5
+Criticality: Unknown
+URL: https://github.com/ruby/rexml/security/advisories/GHSA-c2f4-jgmc-q2r5
+Title: REXML has DoS condition when parsing malformed XML file
+Solution: update to '>= 3.4.2'
+
+Vulnerabilities found!

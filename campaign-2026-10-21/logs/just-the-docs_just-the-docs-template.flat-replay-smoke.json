@@ -11,6 +11,11 @@
       "bytes": 10834,
       "title": "Home | Just the Docs Template"
     },
+    "/index.html": {
+      "status": 200,
+      "bytes": 10834,
+      "title": "Home | Just the Docs Template"
+    },
     "/assets/js/search-data.json": {
       "status": 200,
       "bytes": 1590,
@@ -19,6 +24,11 @@
     "/assets/css/just-the-docs-default.css": {
       "status": 200,
       "bytes": 134758,
+      "title": null
+    },
+    "/assets/css/just-the-docs-dark.css": {
+      "status": 200,
+      "bytes": 141377,
       "title": null
     },
     "/assets/js/just-the-docs.js": {

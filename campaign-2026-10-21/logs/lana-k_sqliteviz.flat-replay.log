@@ -221,3 +221,30 @@ node_modules/react-chart-editor/lib/components/widgets/Logo.js (1:4876): Use of 
 node_modules/react-chart-editor/lib/DefaultEditor.js (1:9794): Use of eval in "node_modules/react-chart-editor/lib/DefaultEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
 node_modules/react-chart-editor/lib/EditorControls.js (1:13407): Use of eval in "node_modules/react-chart-editor/lib/EditorControls.js" is strongly discouraged as it poses security risks and may cause issues with minification.
 node_modules/react-chart-editor/lib/PlotlyEditor.js (1:6522): Use of eval in "node_modules/react-chart-editor/lib/PlotlyEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+[32m✓[39m 4663 modules transformed.
+rendering chunks...
+
+<--- Last few GCs --->
+
+[16560:0x3314d000]    91064 ms: Scavenge (interleaved) 2035.6 (2049.8) -> 2035.4 (2060.8) MB, pooled: 0 MB, 10.49 / 0.00 ms  (average mu = 0.396, current mu = 0.423) allocation failure; 
+[16560:0x3314d000]    94042 ms: Mark-Compact (reduce) 2042.4 (2060.8) -> 2041.1 (2053.1) MB, pooled: 0 MB, 1455.94 / 0.00 ms  (+ 1098.9 ms in 105 steps since start of marking, biggest step 19.3 ms, walltime since start of marking 2662 ms) (average mu = 0.
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x942e80  [node]
+ 2: 0x75f71e node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 3: 0xc9a1e0  [node]
+ 4: 0xc9a2cf  [node]
+ 5: 0xf3dba5  [node]
+ 6: 0xf4f50c  [node]
+ 7: 0xf249c3  [node]
+ 8: 0xef9b14  [node]
+ 9: 0xee4a08  [node]
+10: 0xef4677  [node]
+11: 0xcb571d v8::String::NewFromOneByte(v8::Isolate*, unsigned char const*, v8::NewStringType, int) [node]
+12: 0xb09053  [node]
+13: 0x85da70 node::encoding_binding::BindingData::DecodeUTF8(v8::FunctionCallbackInfo<v8::Value> const&) [node]
+14: 0x7f3d57dcf1be 
+Aborted
+EXIT 134
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 134}
