@@ -1,0 +1,30 @@
+From bfe977221459a89986bb7bebf5772aa9e2cad0fa Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 06:18:24 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/README.md b/README.md
+index d90746c..c52c1c0 100644
+--- a/README.md
++++ b/README.md
+@@ -71,6 +71,13 @@ Created for everyday people and designed to be shared with family and friends, i
+ 
+ <img src=".github/images/install-web-app/capture-install-pwa-button.png" alt="Install MAZANOKE progressive web app button" height="100">
+ 
++### Wasmer Edge
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=civilblur%2Fmazanoke)
++
++1. Fork this repository and import your fork: the import serves the repository you choose as static files (no build step) and does not copy it into your GitHub account.
++1. The Docker-only options ([Configuration](./docs/configuration.md), such as basic authentication) do not apply to this static deployment.
++
+ ## Screenshots
+ 
+ <center>
+-- 
+2.43.0
+

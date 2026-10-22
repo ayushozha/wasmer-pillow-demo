@@ -1,0 +1,31 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/civilblur_mazanoke/opt/temp",
+  "base": "/",
+  "html_files": 2,
+  "local_refs_checked": 1,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 48834,
+      "title": "MAZANOKE | Online Image Optimizer That Runs Privately in Your Browser"
+    },
+    "/manifest.json": {
+      "status": 200,
+      "bytes": 489,
+      "title": null
+    },
+    "/service-worker.js": {
+      "status": 200,
+      "bytes": 2644,
+      "title": null
+    },
+    "/assets/js/ui.js": {
+      "status": 200,
+      "bytes": 8578,
+      "title": null
+    }
+  },
+  "ok": true
+}

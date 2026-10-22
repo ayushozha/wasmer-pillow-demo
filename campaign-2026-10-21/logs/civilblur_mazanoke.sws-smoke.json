@@ -1,0 +1,215 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/civilblur_mazanoke/opt/temp",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 48842
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 48842
+      }
+    ],
+    "/assets/css/fonts.css": [
+      {
+        "path": "/assets/css/fonts.css",
+        "status": 200,
+        "location": null,
+        "bytes": 1842
+      }
+    ],
+    "/assets/css/variables.css": [
+      {
+        "path": "/assets/css/variables.css",
+        "status": 200,
+        "location": null,
+        "bytes": 6712
+      }
+    ],
+    "/assets/css/style.css": [
+      {
+        "path": "/assets/css/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 47456
+      }
+    ],
+    "/assets/vendor/browser-image-compression.js": [
+      {
+        "path": "/assets/vendor/browser-image-compression.js",
+        "status": 200,
+        "location": null,
+        "bytes": 57069
+      }
+    ],
+    "/assets/vendor/heic-to.js": [
+      {
+        "path": "/assets/vendor/heic-to.js",
+        "status": 200,
+        "location": null,
+        "bytes": 3272373
+      }
+    ],
+    "/assets/vendor/libheif.js": [
+      {
+        "path": "/assets/vendor/libheif.js",
+        "status": 200,
+        "location": null,
+        "bytes": 3071965
+      }
+    ],
+    "/assets/vendor/ico.js": [
+      {
+        "path": "/assets/vendor/ico.js",
+        "status": 200,
+        "location": null,
+        "bytes": 8652
+      }
+    ],
+    "/assets/vendor/jszip.js": [
+      {
+        "path": "/assets/vendor/jszip.js",
+        "status": 200,
+        "location": null,
+        "bytes": 97781
+      }
+    ],
+    "/assets/js/global.js": [
+      {
+        "path": "/assets/js/global.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4199
+      }
+    ],
+    "/assets/js/utilities.js": [
+      {
+        "path": "/assets/js/utilities.js",
+        "status": 200,
+        "location": null,
+        "bytes": 8442
+      }
+    ],
+    "/assets/js/helpers.js": [
+      {
+        "path": "/assets/js/helpers.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4573
+      }
+    ],
+    "/assets/js/ui.js": [
+      {
+        "path": "/assets/js/ui.js",
+        "status": 200,
+        "location": null,
+        "bytes": 8578
+      }
+    ],
+    "/assets/js/compression.js": [
+      {
+        "path": "/assets/js/compression.js",
+        "status": 200,
+        "location": null,
+        "bytes": 17243
+      }
+    ],
+    "/assets/js/download.js": [
+      {
+        "path": "/assets/js/download.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4031
+      }
+    ],
+    "/assets/js/events.js": [
+      {
+        "path": "/assets/js/events.js",
+        "status": 200,
+        "location": null,
+        "bytes": 3539
+      }
+    ],
+    "/assets/images/android-chrome-192x192.png": [
+      {
+        "path": "/assets/images/android-chrome-192x192.png",
+        "status": 200,
+        "location": null,
+        "bytes": 18470
+      }
+    ],
+    "/assets/images/android-chrome-512x512.png": [
+      {
+        "path": "/assets/images/android-chrome-512x512.png",
+        "status": 200,
+        "location": null,
+        "bytes": 70269
+      }
+    ],
+    "/assets/images/apple-touch-icon.png": [
+      {
+        "path": "/assets/images/apple-touch-icon.png",
+        "status": 200,
+        "location": null,
+        "bytes": 22137
+      }
+    ],
+    "/assets/images/symbol-192x192.png": [
+      {
+        "path": "/assets/images/symbol-192x192.png",
+        "status": 200,
+        "location": null,
+        "bytes": 5589
+      }
+    ],
+    "/manifest.json": [
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "location": null,
+        "bytes": 489
+      }
+    ],
+    "/service-worker.js": [
+      {
+        "path": "/service-worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 2644
+      }
+    ],
+    "/favicon.ico": [
+      {
+        "path": "/favicon.ico",
+        "status": 200,
+        "location": null,
+        "bytes": 15406
+      }
+    ],
+    "/assets/vendor/utif.js": [
+      {
+        "path": "/assets/vendor/utif.js",
+        "status": 200,
+        "location": null,
+        "bytes": 107308
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
