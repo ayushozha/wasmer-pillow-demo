@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index b150a68..70670ea 100644
+--- a/README.md
++++ b/README.md
+@@ -56,6 +56,12 @@ With the Docker image, pass the server URL when starting the container. No rebui
+ docker run -p 3000:80 -e VITE_BACKEND_URL=https://your-drawdb-server.example.com ghcr.io/drawdb-io/drawdb:latest
+ ```
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=drawdb-io%2Fdrawdb)
++
++Wasmer detects the Vite app, runs `npm install` and `npm run build`, and serves the generated `dist` folder as static files; the editor works without the sharing server. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account.
++
+ ## Contributing
+ 
+ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.

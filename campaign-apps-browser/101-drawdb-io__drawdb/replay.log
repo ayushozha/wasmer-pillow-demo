@@ -1,0 +1,126 @@
+# replay of A101-drawdb  source=$S/rup/drawdb-io__drawdb  upstream HEAD=7683bdf90a8db5d284dc6b2bc545831aa4b6dd76
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/A101-drawdb/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+10.9.4
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> drawdb@0.0.0 prepare
+> husky
+
+.git can't be found
+added 580 packages, and audited 581 packages in 21s
+
+4 vulnerabilities (1 moderate, 3 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build
+
+> drawdb@0.0.0 build
+> vite build
+
+[36mvite v8.1.0 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 2673 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                    2.29 kB │ gzip:     0.90 kB
+dist/assets/github-DJcr9nbH.png                    8.09 kB
+dist/assets/discord-Cp0MRC5A.png                   8.11 kB
+dist/assets/mysql-icon-q68t8NVw.png                9.27 kB
+dist/assets/mariadb-icon-CzAYJyNx.png             11.59 kB
+dist/assets/oraclesql-icon-DwbxUgLN.png           15.12 kB
+dist/assets/logo_dark_160-CyaPQObo.png            20.47 kB
+dist/assets/logo_light_160-DSfx-40U.png           23.20 kB
+dist/assets/sqlite-icon-DWH2jx5v.png              24.29 kB
+dist/assets/sqlite-DaWc1PIs.png                   27.36 kB
+dist/assets/oraclesql-Bq_2PDvJ.png                28.69 kB
+dist/assets/postgres-icon-CTyFlAlC.png            30.69 kB
+dist/assets/mssql-icon-lyPE9J7d.png               33.65 kB
+dist/assets/mysql-vtu38nyZ.png                    44.07 kB
+dist/assets/mariadb-CPoBjTF8.png                  50.52 kB
+dist/assets/template_screenshot-C5Swj5ZA.png      65.11 kB
+dist/assets/postgres-CCei98GK.png                 71.58 kB
+dist/assets/screenshot-CHDCMZdA.png              174.45 kB
+dist/assets/sql-server-YcybkUFo.png              211.80 kB
+dist/assets/index-CyUba-Ct.css                   416.53 kB │ gzip:    53.80 kB
+dist/assets/purify.es-B8BSsnM1.js                 28.07 kB │ gzip:    11.08 kB
+dist/assets/index.es-CS5ImVcO.js                 151.11 kB │ gzip:    48.72 kB
+dist/assets/html2canvas-DxBPGG_l.js              199.56 kB │ gzip:    46.78 kB
+dist/assets/index-CQwdX5nN.js                 17,170.44 kB │ gzip: 3,213.88 kB
+
+[33m[33m[EVAL] [0mUse of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+       [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/lottie-web/build/player/lottie.js:14422:33 [38;5;246m][0m
+       [38;5;246m│[0m
+ [38;5;246m14422 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m_[0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0meval[38;5;249m([0m[38;5;249m'[0m[38;5;249m[[0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m_[0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m([0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249m'[0m[38;5;249m [0m[38;5;249m+[0m[38;5;249m [0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m [0m[38;5;249m+[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249m;[0m[38;5;249ms[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m_[0m[38;5;249mb[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m=[0m[38;5;249m$[0m[38;5;249mb[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m}[0m[38;5;249m][0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m[[0m[38;5;249m0[0m[38;5;249m][0m[38;5;249m;[0m[38;5;249m [0m[38;5;249m/[0m[38;5;249m/[0m[38;5;249m [0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249ms[0m[38;5;249ma[0m[38;5;249mb[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m-[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249me[0m[38;5;249m [0m[38;5;249mn[0m[38;5;249mo[0m[38;5;249m-[0m[38;5;249me[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m
+ [38;5;240m      │[0m                                 ──┬─  
+ [38;5;240m      │[0m                                   ╰─── Use of direct `eval` here.
+ [38;5;240m      │[0m 
+ [38;5;240m      │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+[38;5;246m───────╯[0m
+[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 12.80s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/A101-drawdb/static_app --log-level=info --port=3851 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	2292
+--	title	/	drawDB | Online database diagram editor and SQL generator	
+404	page	/editor	text/html	0
+--	title	/editor	(none)	
+404	page	/templates	text/html	0
+--	title	/templates	(none)	
+404	page	/editor/templates/1	text/html	0
+--	title	/editor/templates/1	(none)	
+404	page	/bug-report	text/html	0
+--	title	/bug-report	(none)	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.ico	image/x-icon	3327
+200	ref	/assets/index-CQwdX5nN.js	text/javascript	17170447
+200	ref	/assets/index-CyUba-Ct.css	text/css	416531
+200	ref	/config.js	text/javascript	31
+SUMMARY pages=6 refs_checked=4 failures=5
+FAIL	404	page	/editor	text/html	0
+FAIL	404	page	/templates	text/html	0
+FAIL	404	page	/editor/templates/1	text/html	0
+FAIL	404	page	/bug-report	text/html	0
+FAIL	404	page	/nope	text/html	0
+# static_app files: 28
