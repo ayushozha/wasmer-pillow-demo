@@ -1,0 +1,146 @@
+# 2026-10-22T05:55:51Z strict-inputs replay of anybuild 0.33.0 jekyll.bzl for cotes2020_chirpy-starter @ beffc88713242da8bf49325674be38d171071213; ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux] (planned ruby 3.4.7); bundler 4.0.18
+# install step sees only: Gemfile
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching gem metadata from https://rubygems.org/...........
+Resolving dependencies...
+Fetching rake 13.4.2
+Installing rake 13.4.2
+Fetching Ascii85 2.0.1
+Fetching public_suffix 7.0.5
+Fetching addressable 2.9.0
+Fetching afm 1.0.1
+Fetching fiber-annotation 0.2.0
+Fetching fiber-storage 1.0.1
+Fetching fiber-local 1.1.0
+Fetching json 2.21.2
+Fetching console 1.38.0
+Fetching io-event 1.22.3
+Fetching async 2.46.0
+Fetching base64 0.3.0
+Installing json 2.21.2 with native extensions
+Fetching benchmark 0.5.0
+Installing io-event 1.22.3 with native extensions
+Fetching bigdecimal 3.3.1
+Fetching colorator 1.1.0
+Fetching concurrent-ruby 1.3.8
+Fetching csv 3.3.6
+Installing bigdecimal 3.3.1 with native extensions
+Fetching eventmachine 1.2.7
+Fetching http_parser.rb 0.8.1
+Installing eventmachine 1.2.7 with native extensions
+Installing http_parser.rb 0.8.1 with native extensions
+Fetching em-websocket 0.5.3
+Fetching ffi 1.17.4 (x86_64-linux-gnu)
+Fetching logger 1.7.0
+Fetching ethon 0.18.0
+Fetching forwardable-extended 2.6.0
+Fetching google-protobuf 4.36.2 (x86_64-linux-gnu)
+Fetching hashery 2.1.2
+Fetching racc 1.8.1
+Fetching nokogiri 1.19.4 (x86_64-linux-gnu)
+Installing racc 1.8.1 with native extensions
+Fetching ttfunk 1.8.0
+Fetching pdf-reader 2.16.0
+Fetching rainbow 3.1.1
+Fetching typhoeus 1.6.0
+Fetching yell 2.2.2
+Fetching zeitwerk 2.8.3
+Fetching html-proofer 5.2.3
+Fetching i18n 1.15.2
+Fetching sass-embedded 1.106.1 (x86_64-linux-gnu)
+Fetching jekyll-sass-converter 3.1.0
+Fetching rb-fsevent 0.11.2
+Fetching rb-inotify 0.11.1
+Fetching listen 3.10.1
+Fetching jekyll-watch 2.2.1
+Fetching rexml 3.4.4
+Fetching kramdown 2.5.2
+Fetching kramdown-parser-gfm 1.1.0
+Fetching liquid 4.0.4
+Fetching mercenary 0.4.0
+Fetching pathutil 0.16.2
+Fetching rouge 4.7.0
+Fetching safe_yaml 1.0.5
+Fetching unicode-display_width 2.6.0
+Fetching terminal-table 3.0.2
+Fetching webrick 1.9.2
+Fetching jekyll 4.4.1
+Fetching jekyll-archives 2.3.0
+Fetching jekyll-include-cache 0.3.1
+Fetching jekyll-paginate 1.1.0
+Fetching jekyll-seo-tag 2.9.1
+Fetching jekyll-sitemap 1.4.0
+Fetching jekyll-theme-chirpy 7.6.0
+Installing Ascii85 2.0.1
+Installing public_suffix 7.0.5
+Installing addressable 2.9.0
+Installing afm 1.0.1
+Installing fiber-annotation 0.2.0
+Installing fiber-storage 1.0.1
+Installing fiber-local 1.1.0
+Installing base64 0.3.0
+Installing console 1.38.0
+Installing async 2.46.0
+Installing benchmark 0.5.0
+Installing colorator 1.1.0
+Installing concurrent-ruby 1.3.8
+Installing csv 3.3.6
+Installing em-websocket 0.5.3
+Installing ffi 1.17.4 (x86_64-linux-gnu)
+Installing logger 1.7.0
+Installing ethon 0.18.0
+Installing forwardable-extended 2.6.0
+Installing google-protobuf 4.36.2 (x86_64-linux-gnu)
+Installing hashery 2.1.2
+Installing ttfunk 1.8.0
+Installing nokogiri 1.19.4 (x86_64-linux-gnu)
+Installing pdf-reader 2.16.0
+Installing rainbow 3.1.1
+Installing typhoeus 1.6.0
+Installing yell 2.2.2
+Installing zeitwerk 2.8.3
+Installing html-proofer 5.2.3
+Installing i18n 1.15.2
+Installing sass-embedded 1.106.1 (x86_64-linux-gnu)
+Installing jekyll-sass-converter 3.1.0
+Installing rb-fsevent 0.11.2
+Installing rb-inotify 0.11.1
+Installing listen 3.10.1
+Installing jekyll-watch 2.2.1
+Installing rexml 3.4.4
+Installing kramdown-parser-gfm 1.1.0
+Installing kramdown 2.5.2
+Installing liquid 4.0.4
+Installing mercenary 0.4.0
+Installing pathutil 0.16.2
+Installing rouge 4.7.0
+Installing safe_yaml 1.0.5
+Installing unicode-display_width 2.6.0
+Installing terminal-table 3.0.2
+Installing webrick 1.9.2
+Installing jekyll 4.4.1
+Installing jekyll-archives 2.3.0
+Installing jekyll-include-cache 0.3.1
+Installing jekyll-paginate 1.1.0
+Installing jekyll-seo-tag 2.9.1
+Installing jekyll-sitemap 1.4.0
+Installing jekyll-theme-chirpy 7.6.0
+Bundle complete! 5 Gemfile dependencies, 61 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+1 installed gem you directly depend on is looking for funding.
+  Run `bundle fund` for details
+EXIT 0
+# copy . (ignore .git)
+$ jekyll build
+Configuration file: /tmp/claude-0/flat-replay/cotes2020_chirpy-starter-strict/opt/temp/_config.yml
+            Source: /tmp/claude-0/flat-replay/cotes2020_chirpy-starter-strict/opt/temp
+       Destination: /tmp/claude-0/flat-replay/cotes2020_chirpy-starter-strict/opt/temp/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.926 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+EXIT 0
+# static_dir _site: 30 files
+# result exit=0

@@ -30,3 +30,5 @@ GraphvizOnline is entirely committed static files: `index.html`, `main.js`, the 
 - Because the whole repository root is served, `README.md`, `LICENSE` and `.github/` are publicly reachable too.
 - The runtime third-party requests (cdnjs, and allorigins/is.gd when Share is used) are the same on every host.
 - The badge image is served by shields.io.
+- The browser libraries are vendored, with no package manifest. I identified their versions from the file banners: ACE 1.4.1, hammer.js 2.0.8, svg-pan-zoom 3.6.1, Viz.js 3.17.0 (Graphviz 13.1.2), and lz-string 1.5.0 from cdnjs. `npm audit` against those exact published npm versions reports no advisories. This assumes the vendored files are unmodified builds of those versions.
+- I served the site with native static-web-server 2.38.0. Wasmer runs its own static-web-server build, and I did not test it.

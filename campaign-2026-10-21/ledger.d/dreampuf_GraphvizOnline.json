@@ -28,7 +28,7 @@
   "detect_log": "logs/dreampuf_GraphvizOnline.detect.json",
   "anybuild_replay": "PASS: flat replay @ 89805e9 (patched); provider staticfile, no install/build, static_dir '.', exit 0, smoke ok: /, /index.html, /main.js, /viz-global.js, /ace/ace.js, /style.css 200, 0 missing. logs/dreampuf_GraphvizOnline.flat-replay.log",
   "sws_smoke": "PASS: static-web-server 2.38.0 planned flags on clean worktree root: /, /index.html, /main.js, /viz-global.js, /ace/ace.js, /style.css, /hammer.min.js, /svg-pan-zoom.min.js 200; missing probe 404. No hashed assets or search index exist. logs/dreampuf_GraphvizOnline.sws-smoke.json",
-  "audit": "N/A: no package manager manifest; vendored libraries committed (viz.js, ACE, hammer, svg-pan-zoom) not audited",
+  "audit": "Vendored browser libraries identified from file banners: ace (ace-builds) 1.4.1, hammer.js 2.0.8, svg-pan-zoom 3.6.1, Viz.js 3.17.0 (@viz-js/viz; Graphviz 13.1.2), plus lz-string 1.5.0 from cdnjs. npm audit against a synthetic lockfile with those exact npm versions: 0 advisories (logs/dreampuf_GraphvizOnline.vendored-audit.json; manifest logs/dreampuf_GraphvizOnline.vendored-audit.package.json). Caveat: audits the published npm versions, assuming the vendored files are unmodified builds of them.",
   "caveats": "Runtime third-party: lz-string loaded from cdnjs.cloudflare.com on every page load; Share button calls api.allorigins.win proxying is.gd to shorten links; ?url= loads graphs from any public URL the user supplies. No analytics, no secrets, no forms.",
   "reason": null
 }

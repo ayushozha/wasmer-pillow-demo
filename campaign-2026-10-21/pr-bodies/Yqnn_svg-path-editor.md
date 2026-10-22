@@ -26,6 +26,7 @@ SVG Path Editor runs entirely in the browser, with no backend, and the default p
 
 ## Limitations
 
+- I served the build with native static-web-server 2.38.0. Wasmer runs its own static-web-server build, and I did not test it.
 - I did not deploy to Wasmer. Only the local builds and static serving above were tested.
 - Redeploy-on-push needs your own fork connected.
 - The Angular build inlines Google Fonts at build time, so the builder needs network access to fonts.googleapis.com. At runtime the page loads fonts from fonts.gstatic.com and, unless the tag is removed, Google Tag Manager.

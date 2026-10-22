@@ -68,3 +68,34 @@ Installing jekyll 3.10.0
 Installing jekyll-paginate 1.1.0
 Installing jekyll-paginate-content 1.1.0
 Installing kramdown-parser-gfm 1.1.0
+Bundle complete! 7 Gemfile dependencies, 32 gems now installed.
+Bundled gems are installed into `./vendor/bundle`
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+EXIT 0
+$ bundle exec jekyll build 
+/tmp/claude-0/camp5/thiagorossener_jekflix-template/vendor/bundle/ruby/3.3.0/gems/safe_yaml-1.0.5/lib/safe_yaml/load.rb:22: warning: base64 was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add base64 to your Gemfile or gemspec to silence this warning.
+/tmp/claude-0/camp5/thiagorossener_jekflix-template/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid.rb:72: warning: bigdecimal was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add bigdecimal to your Gemfile or gemspec to silence this warning.
+Configuration file: /tmp/claude-0/camp5/thiagorossener_jekflix-template/_config.yml
+            Source: /tmp/claude-0/camp5/thiagorossener_jekflix-template
+       Destination: /tmp/claude-0/camp5/thiagorossener_jekflix-template/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+   PaginateContent: [posts] Generated 2+1 pages
+   PaginateContent: 1 item could not be split (no separators?)
+                    done in 2.445 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+EXIT 0

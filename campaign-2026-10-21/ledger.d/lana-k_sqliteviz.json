@@ -21,5 +21,5 @@
   "detect_log": "base plan: node-static, vite, dist, npm 11, node_install_requires_all_files true",
   "policy": "not reviewed further (held on build)",
   "wasmer_pr_search": "not run (held on build)",
-  "reason": "Production build needs more V8 heap than Node 24's default (OOM); Anybuild runs Node 24 and sets no NODE_OPTIONS. Would need an upstream build-script change (e.g. --max-old-space-size), which is out of scope."
+  "reason": "Production build needs more V8 heap than Node 24's default (OOM); Anybuild runs Node 24 and sets no NODE_OPTIONS. Would need an upstream build-script change (e.g. --max-old-space-size), which is out of scope. | Re-check after the replay fix (node_install_requires_all_files) not needed: the blockers are a lockfile out of sync for npm ci and an OOM at Node 24's default heap, independent of staging."
 }
