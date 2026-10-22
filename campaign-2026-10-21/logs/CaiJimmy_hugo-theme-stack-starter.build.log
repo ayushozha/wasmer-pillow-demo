@@ -1,0 +1,13 @@
+# 2026-10-22T05:47:58Z CaiJimmy/hugo-theme-stack-starter @ 457a70dd24e2de8ab5ed88e414f5d3a87a7fa8a2 v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended extended, go1.24.7 (Hugo Modules; no node/pm)
+$ hugo --gc --minify
+hugo: collected modules in 1372 msWARN  Module "github.com/CaiJimmy/hugo-theme-stack/v4" is not compatible with this Hugo version: Min 0.157.0 extended; run "hugo mod graph" for more information.
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+Total in 1469 ms
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "/404" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/!cai!jimmy/hugo-theme-stack/v4@v4.0.3/layouts/baseof.html:2:20": execute of template failed: template: 404.html:2:20: executing "404.html" at <.Site.Language.Locale>: can't evaluate field Locale in type *langs.Language
+render of "/tmp/claude-0/camp2/CaiJimmy_hugo-theme-stack-starter/content/_index.md" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/!cai!jimmy/hugo-theme-stack/v4@v4.0.3/layouts/baseof.html:2:20": execute of template failed: template: home.html:2:20: executing "home.html" at <.Site.Language.Locale>: can't evaluate field Locale in type *langs.Language
+render of "/tmp/claude-0/camp2/CaiJimmy_hugo-theme-stack-starter/content/categories/example-category/_index.md" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/!cai!jimmy/hugo-theme-stack/v4@v4.0.3/layouts/baseof.html:2:20": execute of template failed: template: list.html:2:20: executing "list.html" at <.Site.Language.Locale>: can't evaluate field Locale in type *langs.Language
+render of "/tmp/claude-0/camp2/CaiJimmy_hugo-theme-stack-starter/content/page/archives/index.md" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/!cai!jimmy/hugo-theme-stack/v4@v4.0.3/layouts/baseof.html:2:20": execute of template failed: template: archives.html:2:20: executing "archives.html" at <.Site.Language.Locale>: can't evaluate field Locale in type *langs.Language
+render of "/tmp/claude-0/camp2/CaiJimmy_hugo-theme-stack-starter/content/page/links/index.md" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/!cai!jimmy/hugo-theme-stack/v4@v4.0.3/layouts/baseof.html:2:20": execute of template failed: template: single.html:2:20: executing "single.html" at <.Site.Language.Locale>: can't evaluate field Locale in type *langs.Language
+EXIT 1

@@ -1,0 +1,63 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/kuizuo_blog/opt/temp/build",
+  "base": "/",
+  "html_files": 216,
+  "local_refs_checked": 1,
+  "missing_local_refs": [
+    "/js/html2canvas.min.js"
+  ],
+  "missing_count": 1,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 44414,
+      "title": "\u6127\u600d"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 24580,
+      "title": "Blog | \u6127\u600d"
+    },
+    "/blog/2025-year-end-summary/": {
+      "status": 200,
+      "bytes": 25097,
+      "title": "2025 \u00b7 \u5728\u8ff7\u5931\u4e2d\u9047\u89c1 | \u6127\u600d"
+    },
+    "/docs/docusaurus-guides/": {
+      "status": 200,
+      "bytes": 20637,
+      "title": "Docusaurus \u4e3b\u9898\u9b54\u6539 | \u6127\u600d"
+    },
+    "/project/": {
+      "status": 200,
+      "bytes": 25505,
+      "title": "\u9879\u76ee | \u6127\u600d"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 15899,
+      "title": "\u81ea\u6211\u4ecb\u7ecd | \u6127\u600d"
+    },
+    "/blog/archive/": {
+      "status": 200,
+      "bytes": 32630,
+      "title": "\u5386\u53f2\u535a\u6587 | \u6127\u600d"
+    },
+    "/blog/atom.xml": {
+      "status": 200,
+      "bytes": 949928,
+      "title": "\u6127\u600d"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 25554,
+      "title": null
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 11713,
+      "title": "\u627e\u4e0d\u5230\u9875\u9762 | \u6127\u600d"
+    }
+  },
+  "ok": false
+}

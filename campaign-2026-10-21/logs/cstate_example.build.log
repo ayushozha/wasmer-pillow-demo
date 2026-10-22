@@ -1,0 +1,21 @@
+# 2026-10-22T05:48:20Z cstate/example @ 26dba2accde6b50ba9d9ac37d0eb2e537f902ebc hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended extended (submodule theme; no node/pm)
+$ git submodule update --init --depth 1 && hugo --gc --minify
+Submodule 'themes/cstate' (https://github.com/cstate/cstate) registered for path 'themes/cstate'
+Cloning into '/tmp/claude-0/camp2/cstate_example/themes/cstate'...
+Submodule path 'themes/cstate': checked out '1f53d60257d32f9ec981846eb55e55de3051de71'
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 40 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │  8 
+ Processed images │  0 
+ Aliases          │  4 
+ Cleaned          │  0 
+
+Total in 252 ms
+EXIT 0

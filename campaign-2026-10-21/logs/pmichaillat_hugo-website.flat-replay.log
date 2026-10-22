@@ -1,0 +1,33 @@
+# 2026-10-22T05:46:27Z flat replay of anybuild 0.33.0 planned steps for pmichaillat_hugo-website @ 96e8a60674cccb70556f164823397df4d14b8a4a (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/pmichaillat_hugo-website && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/pmichaillat_hugo-website/src --out /tmp/claude-0/flat-replay/pmichaillat_hugo-website/plan.json)
+  Detected Hugo provider
+    Hugo version: 0.153.2
+    Output directory: public
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/pmichaillat_hugo-website/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/pmichaillat_hugo-website/plan.json
+EXIT 0
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=hugo install=None build='hugo --gc --minify' static_dir='.'
+$ (cd /tmp/claude-0/flat-replay/pmichaillat_hugo-website/src && tar --exclude=./.git -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/pmichaillat_hugo-website/opt/temp)
+EXIT 0
+# hugo per hugo.bzl: planned 0.153.2; on PATH: hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+$ (cd /tmp/claude-0/flat-replay/pmichaillat_hugo-website/opt/temp && hugo --gc --minify)
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 81 
+ Paginator pages  │  0 
+ Non-page files   │ 21 
+ Static files     │  7 
+ Processed images │ 14 
+ Aliases          │ 45 
+ Cleaned          │  0 
+
+Total in 1332 ms
+EXIT 0
+# result {"install": null, "build": "hugo --gc --minify", "static_dir": "public", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/papers/": 200, "/books/": 200, "/courses/": 200, "/data/": 200, "/404.html": 200, "/index.xml": 200}}

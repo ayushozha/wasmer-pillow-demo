@@ -1,0 +1,17 @@
+# 2026-10-22T05:47:47Z imfing/hextra-starter-template @ 220a17913ed93444012a6b3437077d17421b0b9d v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended extended, go1.26.0 (Hugo Modules; no node/pm)
+$ hugo --gc --minify
+go: downloading go1.26.0 (linux/amd64)
+go: download go1.26.0: golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64: Get "https://go.dev/dl/mod/golang.org/toolchain/@v/v0.0.1-go1.26.0.linux-amd64.zip": Forbidden
+hugo: collected modules in 619 msTotal in 625 ms
+ERROR failed to load modules: failed to download modules: failed to execute 'go [mod download]': failed to execute binary "go" with args [mod download]: go: downloading go1.26.0 (linux/amd64)
+go: download go1.26.0: golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64: Get "https://go.dev/dl/mod/golang.org/toolchain/@v/v0.0.1-go1.26.0.linux-amd64.zip": Forbidden
+ *errors.errorString
+EXIT 1
+
+# retry 2026-10-22T05:48:13Z GOTOOLCHAIN=local go1.24.7 (first attempt blocked: go.dev toolchain download Forbidden)
+$ GOTOOLCHAIN=local hugo --gc --minify
+go: go.mod requires go >= 1.26 (running go 1.24.7; GOTOOLCHAIN=local)
+Total in 15 ms
+ERROR failed to load modules: failed to download modules: failed to execute 'go [mod download]': failed to execute binary "go" with args [mod download]: go: go.mod requires go >= 1.26 (running go 1.24.7; GOTOOLCHAIN=local)
+ *errors.errorString
+EXIT 1

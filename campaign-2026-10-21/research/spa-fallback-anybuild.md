@@ -7,7 +7,7 @@ Test subject: `TailAdmin/free-react-tailwind-admin-dashboard` @ `e888dd1716b9803
 (npm + `package-lock.json`, Vite 8, `react-router` `BrowserRouter` with `/profile`, `/calendar`, `/basic-tables`, `/signin`, and a `*` 404 route).
 I picked it over `satnaing/shadcn-admin` because shadcn-admin is pnpm-only (`pnpm-lock.yaml`), and pnpm hits the local builder's nested-temp problem.
 
-## Verdict: WORKS on the local runner. PARTIAL for Wasmer deploys (rendered correctly, not run there).
+## Verdict: WORKS on native SWS 2.38 (local runner only). NOT supported by the Wasmer runtime package as tested by root (wasmer/static-web-server@=1.1.0 = SWS 2.32.2 wasm, no --page-fallback). See the update at the end.
 
 - On the local builder and local runner, a 6-line edit to the generated `Anybuild` file makes Anybuild's own serve command start static-web-server with the fallback page turned on. `/profile`, `/calendar`, `/basic-tables`, `/signin` and unknown deep paths then return **200 with index.html**. Headless Chromium renders the right React Router page on each one.
 - Without the edit (negative control, same commit and build), the same deep routes return **404**.
@@ -159,3 +159,47 @@ This needs a `wasmer` binary only for `wasmer --version`. I passed a stub throug
 - **Do not open campaign PRs with it yet.** First do one Wasmer deploy of a held history-router SPA with this exact edit, and confirm a 200 deep route and the rendered page on the live app (caveat 4). If that passes, the held history-router SPAs (TailAdmin react dashboard, shadcn-admin once the pnpm issue is handled, and similar) can be unblocked with the 6-line edit above.
 - In each PR, keep the generated header, `schema` and `sws_version` exactly as generated. Add only the `extra_env` line with a one-line comment, and state the asset-404 masking trade-off in the PR description.
 - If the Wasmer deploy shows that the fallback is ignored, the verdict becomes "local only". In that case the next lead is native SPA support in the public stdlib (for example a `staticfile_config` option), raised upstream instead of applied per repo.
+
+## Update 2026-10-22: Wasmer runtime package does NOT support the fallback (root verification)
+
+Root ran the actual runtime package, which this sandbox could not reach. Results:
+
+- Runner: the official portable Wasmer 7.5.0, with its GitHub release digest verified.
+- Package: `wasmer/static-web-server@=1.1.0`, the package that `sws_version = "2.38.0"` maps to for Wasmer deploys.
+- `--version` reports **Static Web Server 2.32.2**, target `wasm32-wasmer-wasi`.
+- Its `--help` lists **no `--page-fallback` and no `SERVER_FALLBACK_PAGE`**. Passing `--page-fallback` is rejected.
+
+What this changes:
+
+- The local result above was produced with native static-web-server 2.38.0. It does **not** carry over to Wasmer.
+- On Wasmer, the rendered `SERVER_FALLBACK_PAGE` env var is not proven to do anything. Root is testing the env behaviour directly.
+- **Status: history-router SPA integrations remain HELD.**
+- Do not substitute another package or server, and do not guess.
+- The verdict at the top now reads: **works on native SWS 2.38 (local runner only); not supported by the Wasmer runtime package as tested (SWS 2.32.2 wasm).**
+
+The same distinction applies to every `sws_smoke` result in this campaign. Those smokes ran native SWS 2.38.0, while Wasmer serves with the 2.32.2 wasm build. Default static serving (routes, assets, 404) is expected to match, but it has not been verified on the wasm build here.
+
+## Update 2026-10-22 (2): env recipe DISPROVED on the Wasmer runtime package (root actual-Wasm probe)
+
+Root ran the exact runtime package under Wasmer and probed it over HTTP. Setup:
+
+- Runner: Wasmer 7.5.0.
+- Package: `wasmer/static-web-server@=1.1.0`, which is SWS 2.32.2 built for `wasm32-wasmer-wasi`.
+- Site: the unchanged public `codewithsadee/vcard-personal-portfolio` template, mounted at `/opt/static_app`.
+- Env: `SERVER_FALLBACK_PAGE=/opt/static_app/index.html`. No cloud deployment was involved.
+
+Results:
+
+| Request | Status |
+|---|---|
+| `/` | 200 |
+| `/index.html` | 200 |
+| `/__wasmer_spa_probe__/deep` | **404** |
+| missing asset | **404** |
+
+What this means:
+
+- The env fallback is **ignored**, and `--page-fallback` is **rejected** by that build.
+- **Final verdict:** the checked-in `Anybuild` `extra_env` recipe gives 200 deep routes on native SWS 2.38 only. It does **not** work on the Wasmer runtime package. Status: **HELD_RUNTIME**.
+- No hosted deployment is needed to repeat this. Do not substitute another server or package.
+- For apps with history routing, assess only a fallback the framework itself emits, such as a `404.html` redirect page like masterPortfolio's. Judge it on its actual behaviour, including the initial HTTP 404 status. Never promise 200 deep routes.

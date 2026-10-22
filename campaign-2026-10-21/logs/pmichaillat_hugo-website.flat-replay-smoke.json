@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/pmichaillat_hugo-website/opt/temp/public",
+  "base": "/",
+  "html_files": 90,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 12376,
+      "title": "Moritz-Maria von Igelfeld"
+    },
+    "/papers/": {
+      "status": 200,
+      "bytes": 9447,
+      "title": "Papers | Moritz-Maria von Igelfeld"
+    },
+    "/books/": {
+      "status": 200,
+      "bytes": 6744,
+      "title": "Books | Moritz-Maria von Igelfeld"
+    },
+    "/courses/": {
+      "status": 200,
+      "bytes": 8396,
+      "title": "Courses | Moritz-Maria von Igelfeld"
+    },
+    "/data/": {
+      "status": 200,
+      "bytes": 6565,
+      "title": "Data | Moritz-Maria von Igelfeld"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 5911,
+      "title": "404: Page not found | Moritz-Maria von Igelfeld"
+    },
+    "/index.xml": {
+      "status": 200,
+      "bytes": 3840,
+      "title": "Moritz-Maria von Igelfeld"
+    }
+  },
+  "ok": true
+}

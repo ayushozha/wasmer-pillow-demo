@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/pmichaillat_hugo-website/opt/temp/public",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 12377
+      }
+    ],
+    "/papers/": [
+      {
+        "path": "/papers/",
+        "status": 200,
+        "location": null,
+        "bytes": 9448
+      }
+    ],
+    "/books/": [
+      {
+        "path": "/books/",
+        "status": 200,
+        "location": null,
+        "bytes": 6745
+      }
+    ],
+    "/courses/": [
+      {
+        "path": "/courses/",
+        "status": 200,
+        "location": null,
+        "bytes": 8397
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 5912
+      }
+    ],
+    "/index.xml": [
+      {
+        "path": "/index.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 3840
+      }
+    ],
+    "/hugo-website/assets/css/stylesheet.ac30954b7ea20660ca1cb473400ecede9e601f17674446536180d3ca00f03328.css": [
+      {
+        "path": "/hugo-website/assets/css/stylesheet.ac30954b7ea20660ca1cb473400ecede9e601f17674446536180d3ca00f03328.css",
+        "status": 404,
+        "location": null,
+        "bytes": 5912
+      }
+    ],
+    "/assets/css/stylesheet.ac30954b7ea20660ca1cb473400ecede9e601f17674446536180d3ca00f03328.css": [
+      {
+        "path": "/assets/css/stylesheet.ac30954b7ea20660ca1cb473400ecede9e601f17674446536180d3ca00f03328.css",
+        "status": 200,
+        "location": null,
+        "bytes": 17875
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 5912
+    }
+  ],
+  "ok": false
+}

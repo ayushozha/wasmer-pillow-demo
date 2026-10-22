@@ -1,0 +1,477 @@
+# 2026-10-22T05:42:53Z lana-k/sqliteviz @ 2e3057908f2c15d684aa483a5adf38397cab2d17 node v24.22.1 npm 11.19.1
+$ npm ci
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-resizable-rotatable-draggable@0.2.0
+npm warn Found: styled-components@5.3.11
+npm warn node_modules/styled-components
+npm warn   peer styled-components@">= 2" from babel-plugin-styled-components@2.1.4
+npm warn   node_modules/babel-plugin-styled-components
+npm warn     babel-plugin-styled-components@">= 1.12.0" from styled-components@5.3.11
+npm warn   1 more (react-chart-editor)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn node_modules/react-resizable-rotatable-draggable
+npm warn   react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: styled-components@4.4.1
+npm warn node_modules/styled-components
+npm warn   peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn   node_modules/react-resizable-rotatable-draggable
+npm warn     react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-rangeslider@2.2.0
+npm warn Found: react@16.14.0
+npm warn node_modules/react
+npm warn   react@"^16.14.0" from the root project
+npm warn   22 more (@emotion/react, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn   react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: react@15.7.0
+npm warn node_modules/react
+npm warn   peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn   node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn     react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: fsevents@2.3.3 from lock file
+npm error Missing: @esbuild/aix-ppc64@0.21.5 from lock file
+npm error Missing: @esbuild/android-arm@0.21.5 from lock file
+npm error Missing: @esbuild/android-arm64@0.21.5 from lock file
+npm error Missing: @esbuild/android-x64@0.21.5 from lock file
+npm error Missing: @esbuild/darwin-arm64@0.21.5 from lock file
+npm error Missing: @esbuild/darwin-x64@0.21.5 from lock file
+npm error Missing: @esbuild/freebsd-arm64@0.21.5 from lock file
+npm error Missing: @esbuild/freebsd-x64@0.21.5 from lock file
+npm error Missing: @esbuild/linux-arm@0.21.5 from lock file
+npm error Missing: @esbuild/linux-arm64@0.21.5 from lock file
+npm error Missing: @esbuild/linux-ia32@0.21.5 from lock file
+npm error Missing: @esbuild/linux-loong64@0.21.5 from lock file
+npm error Missing: @esbuild/linux-mips64el@0.21.5 from lock file
+npm error Missing: @esbuild/linux-ppc64@0.21.5 from lock file
+npm error Missing: @esbuild/linux-riscv64@0.21.5 from lock file
+npm error Missing: @esbuild/linux-s390x@0.21.5 from lock file
+npm error Missing: @esbuild/netbsd-x64@0.21.5 from lock file
+npm error Missing: @esbuild/openbsd-x64@0.21.5 from lock file
+npm error Missing: @esbuild/sunos-x64@0.21.5 from lock file
+npm error Missing: @esbuild/win32-arm64@0.21.5 from lock file
+npm error Missing: @esbuild/win32-ia32@0.21.5 from lock file
+npm error Missing: @esbuild/win32-x64@0.21.5 from lock file
+npm error Missing: @rollup/rollup-android-arm-eabi@4.34.9 from lock file
+npm error Missing: @rollup/rollup-android-arm64@4.34.9 from lock file
+npm error Missing: @rollup/rollup-darwin-arm64@4.34.9 from lock file
+npm error Missing: @rollup/rollup-darwin-x64@4.34.9 from lock file
+npm error Missing: @rollup/rollup-freebsd-arm64@4.34.9 from lock file
+npm error Missing: @rollup/rollup-freebsd-x64@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-arm-gnueabihf@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-arm-musleabihf@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-arm64-gnu@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-arm64-musl@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-loongarch64-gnu@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-powerpc64le-gnu@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-riscv64-gnu@4.34.9 from lock file
+npm error Missing: @rollup/rollup-linux-s390x-gnu@4.34.9 from lock file
+npm error Missing: @rollup/rollup-win32-arm64-msvc@4.34.9 from lock file
+npm error Missing: @rollup/rollup-win32-ia32-msvc@4.34.9 from lock file
+npm error Missing: @rollup/rollup-win32-x64-msvc@4.34.9 from lock file
+npm error Missing: fsevents@1.2.13 from lock file
+npm error Missing: fsevents@1.2.13 from lock file
+npm error Missing: bindings@1.5.0 from lock file
+npm error Missing: nan@2.30.0 from lock file
+npm error Missing: file-uri-to-path@1.0.0 from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts]
+npm error [--allow-directory <all|none|root>] [--allow-file <all|none|root>]
+npm error [--allow-git <all|none|root>] [--allow-remote <all|none|root>]
+npm error [--allow-scripts <package-list> [--allow-scripts <package-list> ...]]
+npm error [--strict-allow-scripts] [--dangerously-allow-all-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error   --install-strategy
+npm error     Sets the strategy for installing packages in node_modules.
+npm error
+npm error   --legacy-bundling
+npm error     Instead of hoisting package installs in `node_modules`, install packages
+npm error
+npm error   --global-style
+npm error     Only install direct dependencies in the top level `node_modules`,
+npm error
+npm error   --omit
+npm error     Dependency types to omit from the installation tree on disk.
+npm error
+npm error   --include
+npm error     Option that allows for defining which types of dependencies to install.
+npm error
+npm error   --strict-peer-deps
+npm error     If set to `true`, and `--legacy-peer-deps` is not set, then _any_
+npm error
+npm error   --foreground-scripts
+npm error     Run all build scripts (ie, `preinstall`, `install`, and
+npm error
+npm error   --ignore-scripts
+npm error     If true, npm does not run scripts specified in package.json files.
+npm error
+npm error   --allow-directory
+npm error     Limits the ability for npm to install dependencies from directories.
+npm error
+npm error   --allow-file
+npm error     Limits the ability for npm to install dependencies from tarball files.
+npm error
+npm error   --allow-git
+npm error     Limits the ability for npm to fetch dependencies from git references.
+npm error
+npm error   --allow-remote
+npm error     Limits the ability for npm to fetch dependencies from urls.
+npm error
+npm error   --allow-scripts
+npm error     Comma-separated list of packages whose install-time lifecycle scripts
+npm error
+npm error   --strict-allow-scripts
+npm error     If `true`, turn the install-script policy from a warning into a hard
+npm error
+npm error   --dangerously-allow-all-scripts
+npm error     If `true`, bypass the `allowScripts` policy entirely and run every
+npm error
+npm error   --audit
+npm error     When "true" submit audit reports alongside the current npm command to the
+npm error
+npm error   --bin-links
+npm error     Tells npm to create symlinks (or `.cmd` shims on Windows) for package
+npm error
+npm error   --fund
+npm error     When "true" displays the message at the end of each `npm install`
+npm error
+npm error   --dry-run
+npm error     Indicates that you don't want npm to make any changes and that it should
+npm error
+npm error   -w|--workspace
+npm error     Enable running a command in the context of the configured workspaces of the
+npm error
+npm error   --workspaces
+npm error     Set to true to run the command in the context of **all** configured
+npm error
+npm error   --include-workspace-root
+npm error     Include the workspace root when workspaces are enabled for a command.
+npm error
+npm error   --install-links
+npm error     When set file: protocol dependencies will be packed and installed as
+npm error
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T05_42_53_577Z-debug-0.log
+EXIT 1
+$ npm run build
+
+> sqliteviz@0.32.1 build
+> vite build
+
+sh: 1: vite: not found
+EXIT 127
+# npm ci rejects the lockfile (out of sync for npm 11: optional esbuild/fsevents entries). Upstream CI (main.yml/test.yml) uses npm install; rerunning that:
+$ npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-resizable-rotatable-draggable@0.2.0
+npm warn Found: styled-components@5.3.11
+npm warn node_modules/styled-components
+npm warn   peer styled-components@">= 2" from babel-plugin-styled-components@2.1.4
+npm warn   node_modules/babel-plugin-styled-components
+npm warn     babel-plugin-styled-components@">= 1.12.0" from styled-components@5.3.11
+npm warn   1 more (react-chart-editor)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn node_modules/react-resizable-rotatable-draggable
+npm warn   react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: styled-components@4.4.1
+npm warn node_modules/styled-components
+npm warn   peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn   node_modules/react-resizable-rotatable-draggable
+npm warn     react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-rangeslider@2.2.0
+npm warn Found: react@16.14.0
+npm warn node_modules/react
+npm warn   react@"^16.14.0" from the root project
+npm warn   22 more (@emotion/react, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn   react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: react@15.7.0
+npm warn node_modules/react
+npm warn   peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn   node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn     react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor
+
+> sqliteviz@0.32.1 postinstall
+> patch-package
+
+patch-package 8.0.1
+Applying patches...
+plotly.js@2.35.3 ✔
+sigma@3.0.2 ✔
+
+added 1900 packages, and audited 1902 packages in 1m
+
+213 packages are looking for funding
+  run `npm fund` for details
+
+121 vulnerabilities (11 low, 34 moderate, 57 high, 19 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 10 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   vue-demi@0.14.10 (postinstall: node -e "try{require('./scripts/postinstall.js')}catch(e){}")
+npm warn install-scripts   vue-demi@0.14.10 (postinstall: node -e "try{require('./scripts/postinstall.js')}catch(e){}")
+npm warn install-scripts   vue-demi@0.14.10 (postinstall: node -e "try{require('./scripts/postinstall.js')}catch(e){}")
+npm warn install-scripts   core-js@2.6.12 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   core-js@3.41.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   es5-ext@0.10.64 (postinstall:  node -e "try{require('./_postinstall')}catch(e){}" || exit 0)
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts   postinstall-postinstall@2.1.0 (postinstall: node ./run.js)
+npm warn install-scripts   core-js@2.6.12 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   uglifyjs-webpack-plugin@0.4.6 (postinstall: node lib/post_install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> sqliteviz@0.32.1 build
+> vite build
+
+vite v5.4.14 building for production...
+transforming...
+node_modules/react-chart-editor/lib/lib/connectCartesianSubplotToLayout.js (1:6802): Use of eval in "node_modules/react-chart-editor/lib/lib/connectCartesianSubplotToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectNonCartesianSubplotToLayout.js (1:6633): Use of eval in "node_modules/react-chart-editor/lib/lib/connectNonCartesianSubplotToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectAnnotationToLayout.js (1:7044): Use of eval in "node_modules/react-chart-editor/lib/lib/connectAnnotationToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectShapeToLayout.js (1:6809): Use of eval in "node_modules/react-chart-editor/lib/lib/connectShapeToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectSliderToLayout.js (1:6092): Use of eval in "node_modules/react-chart-editor/lib/lib/connectSliderToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectImageToLayout.js (1:6809): Use of eval in "node_modules/react-chart-editor/lib/lib/connectImageToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectUpdateMenuToLayout.js (1:6204): Use of eval in "node_modules/react-chart-editor/lib/lib/connectUpdateMenuToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectRangeSelectorToAxis.js (1:6806): Use of eval in "node_modules/react-chart-editor/lib/lib/connectRangeSelectorToAxis.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectLayersToMapbox.js (1:7154): Use of eval in "node_modules/react-chart-editor/lib/lib/connectLayersToMapbox.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectTransformToTrace.js (1:6582): Use of eval in "node_modules/react-chart-editor/lib/lib/connectTransformToTrace.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectAggregationToTransform.js (1:6327): Use of eval in "node_modules/react-chart-editor/lib/lib/connectAggregationToTransform.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectAxesToLayout.js (1:8762): Use of eval in "node_modules/react-chart-editor/lib/lib/connectAxesToLayout.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectLayoutToPlot.js (1:5610): Use of eval in "node_modules/react-chart-editor/lib/lib/connectLayoutToPlot.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectToContainer.js (1:7904): Use of eval in "node_modules/react-chart-editor/lib/lib/connectToContainer.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/connectTraceToPlot.js (1:10324): Use of eval in "node_modules/react-chart-editor/lib/lib/connectTraceToPlot.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/lib/localize.js (1:5368): Use of eval in "node_modules/react-chart-editor/lib/lib/localize.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/Button.js (1:6456): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/Button.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/RadioBlocks.js (1:6152): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/RadioBlocks.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/EditableText.js (1:6449): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/EditableText.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/TextInput.js (1:5359): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/TextInput.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/Dropdown.js (1:6619): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/Dropdown.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/DateTimePicker.js (1:13686): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/DateTimePicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/Modal.js (1:6469): Use of eval in "node_modules/react-chart-editor/lib/components/containers/Modal.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/TraceTypeSelector.js (1:10898): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/TraceTypeSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/TraceTypeSelector.js (1:12524): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/TraceTypeSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/sidebar/SidebarItem.js (1:5126): Use of eval in "node_modules/react-chart-editor/lib/components/sidebar/SidebarItem.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/sidebar/SidebarGroup.js (1:6410): Use of eval in "node_modules/react-chart-editor/lib/components/sidebar/SidebarGroup.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/PanelMenuWrapper.js (1:6970): Use of eval in "node_modules/react-chart-editor/lib/components/PanelMenuWrapper.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/ModalBox.js (1:5233): Use of eval in "node_modules/react-chart-editor/lib/components/containers/ModalBox.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/MenuPanel.js (1:6357): Use of eval in "node_modules/react-chart-editor/lib/components/containers/MenuPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Field.js (1:5139): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Field.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Field.js (1:7718): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Field.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Dropdown.js (1:6175): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Dropdown.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/AxesSelector.js (1:6618): Use of eval in "node_modules/react-chart-editor/lib/components/fields/AxesSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/ColorPicker.js (1:6139): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/ColorPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/ColorPicker.js (1:8097): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/ColorPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/ColorPicker.js (1:6499): Use of eval in "node_modules/react-chart-editor/lib/components/fields/ColorPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Info.js (1:5653): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Info.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/ColorscalePicker.js (1:7107): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/ColorscalePicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/ColorscalePicker.js (1:7083): Use of eval in "node_modules/react-chart-editor/lib/components/fields/ColorscalePicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/PieColorscalePicker.js (1:6456): Use of eval in "node_modules/react-chart-editor/lib/components/fields/PieColorscalePicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/ColorwayPicker.js (1:6016): Use of eval in "node_modules/react-chart-editor/lib/components/fields/ColorwayPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/DataSelector.js (1:9088): Use of eval in "node_modules/react-chart-editor/lib/components/fields/DataSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/MultiColorPicker.js (1:9568): Use of eval in "node_modules/react-chart-editor/lib/components/fields/MultiColorPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/ColorArrayPicker.js (1:9523): Use of eval in "node_modules/react-chart-editor/lib/components/fields/ColorArrayPicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/Dropzone.js (1:8999): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/Dropzone.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Dropzone.js (1:5943): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Dropzone.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/CheckboxGroup.js (1:6438): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/CheckboxGroup.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/FlaglistCheckboxGroup.js (1:6542): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/FlaglistCheckboxGroup.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Flaglist.js (1:5987): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Flaglist.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Radio.js (1:5939): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Radio.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/TextArea.js (1:5371): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/TextArea.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/LaTeX.js (1:5248): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/LaTeX.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/LinkEditor.js (1:6869): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/LinkEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/StyleButton.js (1:5424): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/StyleButton.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/StyleButtonGroup.js (1:5486): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/StyleButtonGroup.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/index.js (1:12267): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/RichText/index.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/HTML.js (1:4238): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/HTML.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/text_editors/MultiFormat.js (1:11041): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/text_editors/MultiFormat.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/TextEditor.js (1:8559): Use of eval in "node_modules/react-chart-editor/lib/components/fields/TextEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/NumericInput.js (1:9311): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/NumericInput.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Numeric.js (1:6267): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Numeric.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/DateTimePicker.js (1:6015): Use of eval in "node_modules/react-chart-editor/lib/components/fields/DateTimePicker.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/NumericOrDate.js (1:6611): Use of eval in "node_modules/react-chart-editor/lib/components/fields/NumericOrDate.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/DualNumeric.js (1:7546): Use of eval in "node_modules/react-chart-editor/lib/components/fields/DualNumeric.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/AxisRangeValue.js (1:6283): Use of eval in "node_modules/react-chart-editor/lib/components/fields/AxisRangeValue.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/Text.js (1:6077): Use of eval in "node_modules/react-chart-editor/lib/components/fields/Text.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/SymbolSelector.js (1:7700): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/SymbolSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/SymbolSelector.js (1:13304): Use of eval in "node_modules/react-chart-editor/lib/components/fields/SymbolSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/TraceSelector.js (1:10102): Use of eval in "node_modules/react-chart-editor/lib/components/fields/TraceSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/ErrorBars.js (1:9513): Use of eval in "node_modules/react-chart-editor/lib/components/fields/ErrorBars.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/AxesCreator.js (1:7256): Use of eval in "node_modules/react-chart-editor/lib/components/fields/AxesCreator.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/AxesCreator.js (1:9420): Use of eval in "node_modules/react-chart-editor/lib/components/fields/AxesCreator.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/SubplotCreator.js (1:7164): Use of eval in "node_modules/react-chart-editor/lib/components/fields/SubplotCreator.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/SubplotCreator.js (1:9466): Use of eval in "node_modules/react-chart-editor/lib/components/fields/SubplotCreator.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/GroupCreator.js (1:8815): Use of eval in "node_modules/react-chart-editor/lib/components/fields/GroupCreator.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/UpdateMenuButtons.js (1:5575): Use of eval in "node_modules/react-chart-editor/lib/components/fields/UpdateMenuButtons.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/FilterOperation.js (1:8685): Use of eval in "node_modules/react-chart-editor/lib/components/fields/FilterOperation.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/FilterOperation.js (1:11306): Use of eval in "node_modules/react-chart-editor/lib/components/fields/FilterOperation.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/MarkerSize.js (1:8158): Use of eval in "node_modules/react-chart-editor/lib/components/fields/MarkerSize.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/VisibilitySelect.js (1:7131): Use of eval in "node_modules/react-chart-editor/lib/components/fields/VisibilitySelect.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/MarkerColor.js (1:12226): Use of eval in "node_modules/react-chart-editor/lib/components/fields/MarkerColor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/DropdownCustom.js (1:7629): Use of eval in "node_modules/react-chart-editor/lib/components/fields/DropdownCustom.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/RectanglePositioner.js (1:9964): Use of eval in "node_modules/react-chart-editor/lib/components/fields/RectanglePositioner.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/LocationSelector.js (1:6866): Use of eval in "node_modules/react-chart-editor/lib/components/fields/LocationSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/LocationSelector.js (1:9476): Use of eval in "node_modules/react-chart-editor/lib/components/fields/LocationSelector.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/AxisInterval.js (1:10478): Use of eval in "node_modules/react-chart-editor/lib/components/fields/AxisInterval.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/TextPosition.js (1:7403): Use of eval in "node_modules/react-chart-editor/lib/components/fields/TextPosition.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/HoverLabelNameLength.js (1:7281): Use of eval in "node_modules/react-chart-editor/lib/components/fields/HoverLabelNameLength.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/fields/LineSelectors.js (1:8244): Use of eval in "node_modules/react-chart-editor/lib/components/fields/LineSelectors.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/FoldEmpty.js (1:5323): Use of eval in "node_modules/react-chart-editor/lib/components/containers/FoldEmpty.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlyFold.js (1:8071): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlyFold.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlyFold.js (1:9926): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlyFold.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PanelHeader.js (1:6767): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PanelHeader.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PanelEmpty.js (1:5312): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PanelEmpty.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PanelEmpty.js (1:6115): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PanelEmpty.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlyPanel.js (1:5236): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlyPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlyPanel.js (1:8459): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlyPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlySection.js (1:5044): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlySection.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/PlotlySection.js (1:6754): Use of eval in "node_modules/react-chart-editor/lib/components/containers/PlotlySection.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/AnnotationAccordion.js (1:6469): Use of eval in "node_modules/react-chart-editor/lib/components/containers/AnnotationAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/ShapeAccordion.js (1:6326): Use of eval in "node_modules/react-chart-editor/lib/components/containers/ShapeAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/TraceRequiredPanel.js (1:6292): Use of eval in "node_modules/react-chart-editor/lib/components/containers/TraceRequiredPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/SliderAccordion.js (1:5402): Use of eval in "node_modules/react-chart-editor/lib/components/containers/SliderAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/ImageAccordion.js (1:6206): Use of eval in "node_modules/react-chart-editor/lib/components/containers/ImageAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/UpdateMenuAccordion.js (1:5705): Use of eval in "node_modules/react-chart-editor/lib/components/containers/UpdateMenuAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/RangeSelectorAccordion.js (1:6099): Use of eval in "node_modules/react-chart-editor/lib/components/containers/RangeSelectorAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/MapboxLayersAccordion.js (1:5927): Use of eval in "node_modules/react-chart-editor/lib/components/containers/MapboxLayersAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/AxesFold.js (1:5112): Use of eval in "node_modules/react-chart-editor/lib/components/containers/AxesFold.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/SubplotAccordion.js (1:7773): Use of eval in "node_modules/react-chart-editor/lib/components/containers/SubplotAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/TraceAccordion.js (1:9671): Use of eval in "node_modules/react-chart-editor/lib/components/containers/TraceAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/TransformAccordion.js (1:8305): Use of eval in "node_modules/react-chart-editor/lib/components/containers/TransformAccordion.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/TraceMarkerSection.js (1:5413): Use of eval in "node_modules/react-chart-editor/lib/components/containers/TraceMarkerSection.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/SingleSidebarItem.js (1:4846): Use of eval in "node_modules/react-chart-editor/lib/components/containers/SingleSidebarItem.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/containers/ModalProvider.js (1:5972): Use of eval in "node_modules/react-chart-editor/lib/components/containers/ModalProvider.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/default_panels/GraphTransformsPanel.js (1:6006): Use of eval in "node_modules/react-chart-editor/lib/default_panels/GraphTransformsPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/default_panels/StyleAxesPanel.js (1:19493): Use of eval in "node_modules/react-chart-editor/lib/default_panels/StyleAxesPanel.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/components/widgets/Logo.js (1:4876): Use of eval in "node_modules/react-chart-editor/lib/components/widgets/Logo.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/DefaultEditor.js (1:9794): Use of eval in "node_modules/react-chart-editor/lib/DefaultEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/EditorControls.js (1:13407): Use of eval in "node_modules/react-chart-editor/lib/EditorControls.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/react-chart-editor/lib/PlotlyEditor.js (1:6522): Use of eval in "node_modules/react-chart-editor/lib/PlotlyEditor.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+✓ 4653 modules transformed.
+rendering chunks...
+
+<--- Last few GCs --->
+
+[11984:0x283c4000]    76117 ms: Scavenge (interleaved) 2036.9 (2049.7) -> 2036.8 (2050.4) MB, pooled: 0 MB, 70.92 / 0.00 ms  (average mu = 0.320, current mu = 0.245) allocation failure; 
+[11984:0x283c4000]    78871 ms: Mark-Compact 2037.8 (2050.4) -> 2037.7 (2056.4) MB, pooled: 0 MB, 2730.05 / 0.00 ms  (average mu = 0.213, current mu = 0.098) allocation failure; scavenge might not succeed
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x942e80  [node]
+ 2: 0x75f71e node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 3: 0xc9a1e0  [node]
+ 4: 0xc9a2cf  [node]
+ 5: 0xf3dba5  [node]
+ 6: 0xf4f50c  [node]
+ 7: 0xf249c3  [node]
+ 8: 0xef9b14  [node]
+ 9: 0xee4a08  [node]
+10: 0xef4677  [node]
+11: 0xcb571d v8::String::NewFromOneByte(v8::Isolate*, unsigned char const*, v8::NewStringType, int) [node]
+12: 0xb09053  [node]
+13: 0x85da70 node::encoding_binding::BindingData::DecodeUTF8(v8::FunctionCallbackInfo<v8::Value> const&) [node]
+14: 0x7f2de7dcf1be 
+Aborted
+EXIT 134
+# diagnostic: same install, build with node v18.20.8 (upstream CI uses 18.x)
+$ npm run build
+
+> sqliteviz@0.32.1 build
+> vite build
+
+vite v5.4.14 building for production...
+transforming...
+✓ 4662 modules transformed.
+rendering chunks...
+computing gzip size...
+[vite-plugin-static-copy] Copied 1 items.
+dist/index.html                                         2.94 kB │ gzip:     1.00 kB
+dist/assets/file-B83D6tR8.png                          10.14 kB
+dist/assets/OpenSans-BoldItalic-CUpvxC0U.woff2         42.33 kB
+dist/assets/OpenSans-Italic-B0MtchHF.woff2             42.58 kB
+dist/assets/OpenSans-SemiBoldItalic-BvMOBaGc.woff2     43.65 kB
+dist/assets/OpenSans-Regular-BBWNoYg0.woff2            44.67 kB
+dist/assets/OpenSans-Bold-BEtNEFSk.woff2               46.55 kB
+dist/assets/OpenSans-SemiBold-YVw03XgQ.woff2           46.61 kB
+dist/assets/_worker-DUIM5V5S.js                        78.93 kB
+dist/assets/sql-wasm-D7lh5Y9y.wasm                    964.33 kB
+dist/assets/maps-CuCRB34y.css                          65.48 kB │ gzip:     9.22 kB
+dist/assets/vendor-B78enaR7.css                       104.46 kB │ gzip:    17.61 kB
+dist/assets/index-d4fwTA7O.css                        128.93 kB │ gzip:    24.16 kB
+dist/assets/registerServiceWorker-BgQN6xiS.js           0.79 kB │ gzip:     0.44 kB │ map:      2.51 kB
+dist/assets/index-BqhIsrhi.js                         198.63 kB │ gzip:    55.66 kB │ map:    492.18 kB
+dist/assets/maps-yMw3Pr4N.js                        1,600.27 kB │ gzip:   425.74 kB │ map:  5,825.68 kB
+dist/assets/vendor-BEJB-zXa.js                      7,765.03 kB │ gzip: 2,086.67 kB │ map: 25,275.25 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1m 39s
+Browserslist: browsers data (caniuse-lite) is 20 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+PWA v0.21.1
+mode      generateSW
+precache  21 entries (11010.83 KiB)
+files generated
+  dist/service-worker.js.map
+  dist/service-worker.js
+  dist/workbox-a0adc145.js.map
+  dist/workbox-a0adc145.js
+EXIT 0

@@ -1,0 +1,69 @@
+{
+  "anybuild": "0.33.0",
+  "base": {
+    "sha": "c913b4787022b6d666bf116b3fc1a33f3d512e17",
+    "provider": "node-static",
+    "framework": "docusaurus",
+    "static_dir": "build",
+    "pm": "bun",
+    "pm_version": "1",
+    "install": "bun install --no-save",
+    "build": "bun run build",
+    "all_files": false
+  },
+  "patched": {
+    "sha": "6bd335efa47cbd8d986afadd48d7ae33da895b4e",
+    "provider": "node-static",
+    "framework": "docusaurus",
+    "static_dir": "build",
+    "pm": "bun",
+    "pm_version": "1",
+    "install": "bun install --no-save",
+    "build": "bun run build",
+    "all_files": false
+  },
+  "raw_base": {
+    "provider": "node-static",
+    "config": {
+      "name": "wt_namnguyenthanhwork_docusaurus-tailwind-shadcn-template_base",
+      "commands": {
+        "install": "bun install --no-save",
+        "build": "bun run build",
+        "start": "static-web-server --root=/tmp/claude-0/camp2/wt_namnguyenthanhwork_docusaurus-tailwind-shadcn-template_base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+      },
+      "static_dir": "build",
+      "node_package_manager": "bun",
+      "node_framework": "docusaurus",
+      "node_server": "node",
+      "node_build_command": "bun run build",
+      "bun_version": "1",
+      "node_install_inputs": [
+        "package.json"
+      ],
+      "node_package_name": "docusaurus-tailwind-shadcn-template"
+    },
+    "services": []
+  },
+  "raw_patched": {
+    "provider": "node-static",
+    "config": {
+      "name": "wt_namnguyenthanhwork_docusaurus-tailwind-shadcn-template_p",
+      "commands": {
+        "install": "bun install --no-save",
+        "build": "bun run build",
+        "start": "static-web-server --root=/tmp/claude-0/camp2/wt_namnguyenthanhwork_docusaurus-tailwind-shadcn-template_p/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+      },
+      "static_dir": "build",
+      "node_package_manager": "bun",
+      "node_framework": "docusaurus",
+      "node_server": "node",
+      "node_build_command": "bun run build",
+      "bun_version": "1",
+      "node_install_inputs": [
+        "package.json"
+      ],
+      "node_package_name": "docusaurus-tailwind-shadcn-template"
+    },
+    "services": []
+  }
+}

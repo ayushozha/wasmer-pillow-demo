@@ -1,0 +1,18 @@
+# 2026-10-22T05:46:05Z pmichaillat/hugo-website @ 96e8a60674cccb70556f164823397df4d14b8a4a hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio (no node/pm: plain Hugo)
+$ hugo --gc --minify
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 81 
+ Paginator pages  │  0 
+ Non-page files   │ 21 
+ Static files     │  7 
+ Processed images │ 14 
+ Aliases          │ 45 
+ Cleaned          │  0 
+
+Total in 646 ms
+EXIT 0

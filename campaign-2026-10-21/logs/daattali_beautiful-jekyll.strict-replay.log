@@ -1,0 +1,17 @@
+# 2026-10-22T05:45:47Z strict-inputs replay of anybuild 0.33.0 jekyll.bzl for daattali_beautiful-jekyll @ 7286eb8478fbd4265a6d2497c2e0f84d9a9326ba; ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux] (planned ruby 3.4.7); bundler 4.0.18
+# install step sees only: Gemfile
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+[DEPRECATED] Platform :mingw, :x64_mingw, :mswin will be removed in the future. Please use platform :windows instead.
+
+[!] There was an error parsing `Gemfile`: There are no gemspecs at /tmp/claude-0/flat-replay/daattali_beautiful-jekyll-strict/opt/temp. Bundler cannot continue.
+
+ #  from /tmp/claude-0/flat-replay/daattali_beautiful-jekyll-strict/opt/temp/Gemfile:15
+ #  -------------------------------------------
+ #    
+ >  gemspec
+ #  
+ #  -------------------------------------------
+EXIT 15
+# result exit=15

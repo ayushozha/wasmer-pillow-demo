@@ -111,12 +111,21 @@ def main():
         if code == 0:
             code = sh(build, temp) if build else 0
     else:
-        for name in ["package.json"] + LOCKS:
-            if os.path.exists(f"{src}/{name}"):
-                shutil.copy2(f"{src}/{name}", temp)
+        # node.bzl node_install_steps: with node_install_requires_all_files the whole
+        # source (minus node_modules/.git) is copied before install, and no copy step
+        # follows; otherwise only package.json + the lockfile are staged first.
+        all_files = bool(cfg.get("node_install_requires_all_files"))
+        log.write(f"# node_install_requires_all_files={all_files}\n")
+        if all_files:
+            sh(f"tar --exclude=./node_modules --exclude=./.git -cf - . | tar -xf - -C {temp}", src)
+        else:
+            for name in ["package.json"] + LOCKS:
+                if os.path.exists(f"{src}/{name}"):
+                    shutil.copy2(f"{src}/{name}", temp)
         code = sh(install, temp) if install else 0
         if code == 0:
-            sh(f"tar --exclude=./node_modules --exclude=./.git {' '.join('--exclude=./' + l for l in LOCKS)} -cf - . | tar -xf - -C {temp}", src)
+            if not all_files:
+                sh(f"tar --exclude=./node_modules --exclude=./.git {' '.join('--exclude=./' + l for l in LOCKS)} -cf - . | tar -xf - -C {temp}", src)
             code = sh(build, temp) if build else 0
     result = {"install": install, "build": build, "static_dir": static_dir, "exit": code}
     out = os.path.join(temp, static_dir)

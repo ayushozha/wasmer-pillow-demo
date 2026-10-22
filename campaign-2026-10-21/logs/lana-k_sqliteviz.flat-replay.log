@@ -1,0 +1,58 @@
+# 2026-10-22T05:48:08Z flat replay of anybuild 0.33.0 planned steps for lana-k_sqliteviz @ 2e3057908f2c15d684aa483a5adf38397cab2d17 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/lana-k_sqliteviz && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/lana-k_sqliteviz/src --out /tmp/claude-0/flat-replay/lana-k_sqliteviz/plan.json)
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/lana-k_sqliteviz/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/lana-k_sqliteviz/plan.json
+EXIT 0
+# env per node.bzl for npm: CI=true, NPM_CONFIG_FUND=false
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+# node_install_requires_all_files=True
+$ (cd /tmp/claude-0/flat-replay/lana-k_sqliteviz/src && tar --exclude=./node_modules --exclude=./.git -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/lana-k_sqliteviz/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/lana-k_sqliteviz/opt/temp && npm install)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-resizable-rotatable-draggable@0.2.0
+npm warn Found: styled-components@5.3.11
+npm warn node_modules/styled-components
+npm warn   peer styled-components@">= 2" from babel-plugin-styled-components@2.1.4
+npm warn   node_modules/babel-plugin-styled-components
+npm warn     babel-plugin-styled-components@">= 1.12.0" from styled-components@5.3.11
+npm warn   1 more (react-chart-editor)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn node_modules/react-resizable-rotatable-draggable
+npm warn   react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: styled-components@4.4.1
+npm warn node_modules/styled-components
+npm warn   peer styled-components@"^4" from react-resizable-rotatable-draggable@0.2.0
+npm warn   node_modules/react-resizable-rotatable-draggable
+npm warn     react-resizable-rotatable-draggable@"^0.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: react-rangeslider@2.2.0
+npm warn Found: react@16.14.0
+npm warn node_modules/react
+npm warn   react@"^16.14.0" from the root project
+npm warn   22 more (@emotion/react, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn   react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn   node_modules/react-chart-editor
+npm warn
+npm warn Conflicting peer dependency: react@15.7.0
+npm warn node_modules/react
+npm warn   peer react@"^0.14.0 || ^15.0.0" from react-rangeslider@2.2.0
+npm warn   node_modules/react-chart-editor/node_modules/react-rangeslider
+npm warn     react-rangeslider@"^2.2.0" from react-chart-editor@0.46.1
+npm warn     node_modules/react-chart-editor

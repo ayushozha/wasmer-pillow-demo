@@ -1,0 +1,24 @@
+# 2026-10-22T05:47:39Z flat replay of anybuild 0.33.0 planned steps for cstate_example @ 26dba2accde6b50ba9d9ac37d0eb2e537f902ebc (v24.22.1; 11.19.1; 9.15.9; bun: n/a)
+$ (cd /tmp/claude-0/flat-replay/cstate_example && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/cstate_example/src --out /tmp/claude-0/flat-replay/cstate_example/plan.json)
+  Detected Hugo provider
+    Hugo version: 0.153.2
+    Output directory: public
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/cstate_example/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/cstate_example/plan.json
+EXIT 0
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=hugo install=None build='hugo --gc --minify' static_dir='.'
+$ (cd /tmp/claude-0/flat-replay/cstate_example/src && tar --exclude=./.git -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/cstate_example/opt/temp)
+EXIT 0
+# hugo per hugo.bzl: planned 0.153.2; on PATH: hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+$ (cd /tmp/claude-0/flat-replay/cstate_example/opt/temp && hugo --gc --minify)
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+ERROR Failed to read Git log: fatal: not a git repository (or any of the parent directories): .git
+Total in 42 ms
+ERROR error building site: assemble: failed to create page from pageMetaSource /issues/2018-04-13-unavailable-guilds-connection-issues: "/tmp/claude-0/flat-replay/cstate_example/opt/temp/content/issues/2018-04-13-unavailable-guilds-connection-issues.md:21:106": failed to extract shortcode: template for shortcode "track" not found
+EXIT 1
+# result {"install": null, "build": "hugo --gc --minify", "static_dir": "public", "exit": 1}

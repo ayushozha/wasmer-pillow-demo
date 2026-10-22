@@ -1,0 +1,10 @@
+# 2026-10-22T05:47:59Z hugo-fixit/hugo-fixit-starter @ 86ea1cfe34c9092803ad7c939ca2c788f6e14962 v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended extended, go1.24.7 (Hugo Modules; no node/pm)
+$ hugo --gc --minify
+hugo: downloading modules …
+hugo: collected modules in 5207 msWARN  Module "github.com/hugo-fixit/FixIt" is not compatible with this Hugo version: Min 0.156.0 extended; run "hugo mod graph" for more information.
+Start building sites … 
+hugo v0.153.2-798533a2013eab97198b0a155a8f4afab7e79865+extended linux/amd64 BuildDate=2025-12-22T16:53:01Z VendorInfo=gohugoio
+
+Total in 5418 ms
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "/" failed: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/!fix!it@v0.4.5/layouts/baseof.html:1:4": execute of template failed: template: home.html:1:4: executing "home.html" at <partial "init/index.html" .>: error calling partial: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/!fix!it@v0.4.5/layouts/_partials/init/index.html:5:4": execute of template failed: template: _partials/init/index.html:5:4: executing "_partials/init/index.html" at <partial "init/detection-version.html" .>: error calling partial: "/tmp/claude-0/camp2/_hugocache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/!fix!it@v0.4.5/layouts/_partials/init/detection-version.html:13:16": execute of template failed: template: _partials/init/detection-version.html:13:16: executing "_partials/init/detection-version.html" at <hugo>: can't evaluate field Sites in type interface {}
+EXIT 1

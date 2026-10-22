@@ -1,0 +1,61 @@
+{
+  "dir": "/tmp/claude-0/camp2/namnguyenthanhwork_docusaurus-tailwind-shadcn-template/build",
+  "base": "/",
+  "html_files": 88,
+  "local_refs_checked": 1,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 89621,
+      "title": "Docusaurus Tailwind Shadcn/ui"
+    },
+    "/docs/intro/": {
+      "status": 200,
+      "bytes": 21815,
+      "title": "Tutorial Intro | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/docs/tutorial-basics/create-a-page/": {
+      "status": 200,
+      "bytes": 27020,
+      "title": "Create a Page | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 33171,
+      "title": "Blog | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/blog/first-blog-post/": {
+      "status": 200,
+      "bytes": 17249,
+      "title": "First Blog Post | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/about-me/": {
+      "status": 200,
+      "bytes": 20707,
+      "title": "About Me | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/blog/rss.xml": {
+      "status": 200,
+      "bytes": 14422,
+      "title": "Docusaurus Tailwind Shadcn/ui Blog"
+    },
+    "/search-index.json": {
+      "status": 200,
+      "bytes": 257017,
+      "title": null
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 12610,
+      "title": "Page Not Found | Docusaurus Tailwind Shadcn/ui"
+    },
+    "/admin/": {
+      "status": 200,
+      "bytes": 1471,
+      "title": "Content Manager"
+    }
+  },
+  "ok": true
+}

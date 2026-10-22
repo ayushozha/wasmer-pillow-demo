@@ -1,0 +1,141 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/namnguyenthanhwork_docusaurus-tailwind-shadcn-template/opt/temp/build",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 89673
+      }
+    ],
+    "/docs/intro/": [
+      {
+        "path": "/docs/intro/",
+        "status": 200,
+        "location": null,
+        "bytes": 21827
+      }
+    ],
+    "/docs/tutorial-basics/create-a-page/": [
+      {
+        "path": "/docs/tutorial-basics/create-a-page/",
+        "status": 200,
+        "location": null,
+        "bytes": 27034
+      }
+    ],
+    "/docs/petstore_versioned/add-pet/": [
+      {
+        "path": "/docs/petstore_versioned/add-pet/",
+        "status": 200,
+        "location": null,
+        "bytes": 23260
+      }
+    ],
+    "/blog/": [
+      {
+        "path": "/blog/",
+        "status": 200,
+        "location": null,
+        "bytes": 33232
+      }
+    ],
+    "/blog/first-blog-post/": [
+      {
+        "path": "/blog/first-blog-post/",
+        "status": 200,
+        "location": null,
+        "bytes": 17254
+      }
+    ],
+    "/about-me/": [
+      {
+        "path": "/about-me/",
+        "status": 200,
+        "location": null,
+        "bytes": 20714
+      }
+    ],
+    "/blog/rss.xml": [
+      {
+        "path": "/blog/rss.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 14434
+      }
+    ],
+    "/search-index.json": [
+      {
+        "path": "/search-index.json",
+        "status": 200,
+        "location": null,
+        "bytes": 257495
+      }
+    ],
+    "/sitemap.xml": [
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "location": null,
+        "bytes": 13332
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 12614
+      }
+    ],
+    "/admin/": [
+      {
+        "path": "/admin/",
+        "status": 200,
+        "location": null,
+        "bytes": 1471
+      }
+    ],
+    "/assets/js/main.b41e7162.js": [
+      {
+        "path": "/assets/js/main.b41e7162.js",
+        "status": 200,
+        "location": null,
+        "bytes": 559000
+      }
+    ],
+    "/assets/css/styles.8bba371f.css": [
+      {
+        "path": "/assets/css/styles.8bba371f.css",
+        "status": 200,
+        "location": null,
+        "bytes": 268573
+      }
+    ],
+    "/docs/intro": [
+      {
+        "path": "/docs/intro",
+        "status": 308,
+        "location": "/docs/intro/",
+        "bytes": 0
+      },
+      {
+        "path": "/docs/intro/",
+        "status": 200,
+        "location": null,
+        "bytes": 21827
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 12614
+    }
+  ],
+  "ok": true
+}

@@ -1,6 +1,6 @@
 {
   "repo": "satnaing/shadcn-admin",
-  "status": "HELD_BUILD",
+  "status": "HELD_RUNTIME",
   "stars": 15845,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:45:00Z",
@@ -22,5 +22,5 @@
   "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=satnaing%2Fshadcn-admin",
   "detection_verified": "needs Codex check of SPA fallback (deep link e.g. /settings)",
-  "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer static fallback behavior unverified. Promote after Codex confirms fallback."
+  "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer static fallback behavior unverified. Promote after Codex confirms fallback. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22)."
 }

@@ -14,7 +14,7 @@
   "anybuild_replay": "not run",
   "sws_smoke": "not run",
   "repo": "antfu-collective/vitesse",
-  "status": "HELD_BUILD",
+  "status": "HELD_RUNTIME",
   "stars": 9440,
   "default_branch": "main",
   "base_sha": "a8785264f83c2ebe1b3cf689296775a4949957c8",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "compat_notes": "Pre-patch anybuild plan: node-static, vite, dist, pnpm 10.30.2. Also has a Dockerfile (nginx).",
   "policy": "An open, unanswered Hostinger deploy-button PR (#562) exists. #561 was closed by its author in a mass close and re-opened as #562, so it is not a maintainer refusal. No CONTRIBUTING.",
-  "reason": "SPA deep route not prerendered: src/pages/hi/[name].vue (/hi/:name) and the [...all] 404 catch-all depend on netlify.toml's '/* /index.html 200' fallback. vite-ssg skips dynamic routes, and Anybuild 0.33's SWS has no index fallback, so a direct load of /hi/<name> would 404. The template's own demo flow (type a name on / and land on /hi/<name>) breaks on reload or a shared link. Not built.",
+  "reason": "SPA deep route not prerendered: src/pages/hi/[name].vue (/hi/:name) and the [...all] 404 catch-all depend on netlify.toml's '/* /index.html 200' fallback. vite-ssg skips dynamic routes, and Anybuild 0.33's SWS has no index fallback, so a direct load of /hi/<name> would 404. The template's own demo flow (type a name on / and land on /hi/<name>) breaks on reload or a shared link. Not built. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22).",
   "pushed_at": null,
   "import_url": "https://wasmer.io/apps/create?github=antfu-collective%2Fvitesse"
 }

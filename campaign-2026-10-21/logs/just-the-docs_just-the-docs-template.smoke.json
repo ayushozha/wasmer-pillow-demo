@@ -1,0 +1,31 @@
+{
+  "dir": "/tmp/claude-0/camp5/just-the-docs_just-the-docs-template/_site",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 5,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 10834,
+      "title": "Home | Just the Docs Template"
+    },
+    "/assets/js/search-data.json": {
+      "status": 200,
+      "bytes": 1590,
+      "title": null
+    },
+    "/assets/css/just-the-docs-default.css": {
+      "status": 200,
+      "bytes": 134758,
+      "title": null
+    },
+    "/assets/js/just-the-docs.js": {
+      "status": 200,
+      "bytes": 20172,
+      "title": null
+    }
+  },
+  "ok": true
+}

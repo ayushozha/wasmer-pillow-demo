@@ -1,0 +1,30 @@
+{
+  "generated_file": ".docusaurus/routes.js from the Anybuild-flow replay build of kuizuo/blog patched commit (pnpm 9.15.4, Node 24.22.1, node_install_requires_all_files=true)",
+  "advisory": "GHSA-9wv6-86v2-598j / CVE-2024-45296, path-to-regexp >=0.2.0 <1.9.0 (fixed 1.9.0): backtracking regex generated when two parameters appear in a single path segment separated by a character other than a period (example /:a-:b). Source: github.com/advisories/GHSA-9wv6-86v2-598j (fetched 2026-10-22).",
+  "browser_dependency": "path-to-regexp 1.8.0 via react-router ^1.7.0 range (react-router 5, Docusaurus client router)",
+  "route_paths_total": 219,
+  "route_paths_unique": 217,
+  "paths_with_parameters": [],
+  "segments_with_two_or_more_parameters": [],
+  "non_literal_paths": [
+    "*"
+  ],
+  "conclusion": "No generated route contains any ':' parameter, so the vulnerable two-parameters-in-one-segment shape is absent; the only non-literal route is the '*' catch-all. The regexes react-router compiles in the browser come from these generated patterns (not from the URL); visitor-controlled URLs are only matched against them, so the advisory's backtracking regex is not produced for this build. Becomes relevant if a fork adds routes with multiple parameters in one segment.",
+  "sample_paths": [
+    "*",
+    "/",
+    "/about/",
+    "/blog",
+    "/blog/2020-year-end-summary",
+    "/blog/2021-year-end-summary",
+    "/blog/2022-year-end-summary",
+    "/blog/2023-year-end-summary",
+    "/blog/2024-year-end-summary",
+    "/blog/2025-year-end-summary",
+    "/blog/archive",
+    "/blog/authors",
+    "/blog/autohotkey",
+    "/blog/axios-http-class-library",
+    "/blog/brief-talk-encryption-algorithm"
+  ]
+}
