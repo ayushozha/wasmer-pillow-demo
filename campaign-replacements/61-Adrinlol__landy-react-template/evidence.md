@@ -1,3 +1,5 @@
+> **POLICY HOLD (root, 2026-10-22): DO NOT PUBLISH.** The owner closed a provider-button PR (#101) and acknowledged in #100 that the placement wasn't a fit. This holds regardless of technical build success.
+
 # Adrinlol/landy-react-template: evidence
 
 **Verdict: HOLD (maintainer signal).** Technically it passes: the replay builds and serves correctly with a README-only patch. The blocker is a prior vendor deploy-button PR outcome (below).
