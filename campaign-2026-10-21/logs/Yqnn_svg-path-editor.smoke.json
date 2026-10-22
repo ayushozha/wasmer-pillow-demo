@@ -1,0 +1,36 @@
+{
+  "dir": "dist/svg-path-editor",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 40747,
+      "title": "SvgPathEditor"
+    },
+    "/manifest.webmanifest": {
+      "status": 200,
+      "bytes": 1350,
+      "title": null
+    },
+    "/ngsw.json": {
+      "status": 200,
+      "bytes": 3636,
+      "title": null
+    },
+    "/assets/logo.svg": {
+      "status": 200,
+      "bytes": 343,
+      "title": null
+    },
+    "/favicon.ico": {
+      "status": 200,
+      "bytes": 16958,
+      "title": null
+    }
+  },
+  "ok": true
+}

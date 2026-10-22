@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/Yqnn_svg-path-editor/opt/temp/dist/svg-path-editor",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 40747
+      }
+    ],
+    "/main.c2644f28e3f13a72.js": [
+      {
+        "path": "/main.c2644f28e3f13a72.js",
+        "status": 200,
+        "location": null,
+        "bytes": 854840
+      }
+    ],
+    "/manifest.webmanifest": [
+      {
+        "path": "/manifest.webmanifest",
+        "status": 200,
+        "location": null,
+        "bytes": 1350
+      }
+    ],
+    "/ngsw.json": [
+      {
+        "path": "/ngsw.json",
+        "status": 200,
+        "location": null,
+        "bytes": 3636
+      }
+    ],
+    "/ngsw-worker.js": [
+      {
+        "path": "/ngsw-worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 67992
+      }
+    ],
+    "/3rdpartylicenses.txt": [
+      {
+        "path": "/3rdpartylicenses.txt",
+        "status": 200,
+        "location": null,
+        "bytes": 14562
+      }
+    ],
+    "/favicon.ico": [
+      {
+        "path": "/favicon.ico",
+        "status": 200,
+        "location": null,
+        "bytes": 16958
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
