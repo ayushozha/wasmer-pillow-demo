@@ -1,0 +1,18 @@
+# 2026-10-22T05:59:24Z plan on edited Anybuild; ANYBUILD_/SHIPIT_ env vars set: 0
+$ anybuild plan . -o /tmp/claude-0/rw/plan.json
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+Plan saved to /tmp/claude-0/rw/plan.json
+EXIT 0
+--- plan.json keys / static_redirects_config search ---
+['provider', 'config', 'services']
+static_redirects_config in plan JSON: True
+sws.toml in plan JSON: True
+config-file in plan JSON: True
+?? Anybuild
+.config.commands.start = static-web-server --root=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --log-level=info --config-file=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml --port=8080
+.config.static_redirects_config = # SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.\n[advanced]\n\n[[advanced.rewrites]]\nsource = "/profile"\ndestination = "/index.html"\n\n[[advanced.rewrites]]\nsource = "/calendar"\ndestination = "/index.html"\n\n[[advanced.rewrites]]\nsource = "/blank"\ndestinatio
+plan static_redirects_config == authored TOML: True sha256 fa3f8ea5e7adca8e47618b81a7368d8f32e563bdd3b0a7953cdee6fb2ac7cee0

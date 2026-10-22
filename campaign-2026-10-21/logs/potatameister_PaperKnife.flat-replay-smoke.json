@@ -1,0 +1,31 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 2930,
+      "title": "PaperKnife \u2014 Private & Offline PDF Tools"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 2930,
+      "title": "PaperKnife \u2014 Private & Offline PDF Tools"
+    },
+    "/icons/logo.svg": {
+      "status": 200,
+      "bytes": 178,
+      "title": null
+    },
+    "/fonts/PlusJakartaSans-Regular.ttf": {
+      "status": 200,
+      "bytes": 94708,
+      "title": null
+    }
+  },
+  "ok": true
+}

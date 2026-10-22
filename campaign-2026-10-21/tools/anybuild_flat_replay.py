@@ -55,6 +55,11 @@ def main():
     plan_path = f"{base}/plan.json"
     sh(f"{anybuild} plan {src} --out {plan_path}", base)
     cfg = json.load(open(plan_path))["config"]
+    # `anybuild plan` writes an Anybuild file into the tree it plans; drop it unless tracked.
+    tracked = subprocess.run(["git", "-C", src, "ls-files", "--error-unmatch", "Anybuild"], capture_output=True).returncode == 0
+    if not tracked and os.path.exists(f"{src}/Anybuild"):
+        os.remove(f"{src}/Anybuild")
+        log.write("# removed untracked Anybuild file written by `anybuild plan`\n")
     install, build = cfg["commands"].get("install"), cfg["commands"].get("build")
     pnpm_version = cfg.get("pnpm_version")
     if cfg.get("node_package_manager") == "pnpm" and pnpm_version:
@@ -102,13 +107,28 @@ def main():
         # hugo.bzl / jekyll.bzl copy the source, (jekyll) run the bundle install step,
         # run the planned build, then copy static_dir into static_app. Tool versions
         # come from PATH; record them against the planned versions.
-        sh(f"tar --exclude=./.git -cf - . | tar -xf - -C {temp}", src)
-        want = cfg.get("hugo_version") if provider == "hugo" else f"ruby {cfg.get('ruby_version')} jekyll {cfg.get('jekyll_version')}"
+        if provider == "hugo":
+            sh(f"tar --exclude=./.git -cf - . | tar -xf - -C {temp}", src)
+        else:
+            # jekyll.bzl: copy Gemfile.lock, run `bundle install` with only the Gemfile as
+            # input, and copy the rest of the source after install (gemspec/path: Gemfiles fail).
+            # Sandbox: rbenv shims ruby/bundle, but the gem bin dir (where `jekyll` lands) is
+            # not on PATH; Anybuild gets it from its ruby toolchain dep. Logged as such.
+            bindir = subprocess.run(["ruby", "-e", "print Gem.bindir"], capture_output=True, text=True, env=env).stdout.strip()
+            if bindir:
+                env["PATH"] = f"{bindir}:" + env["PATH"]
+                log.write(f"# sandbox PATH: prepended gem bindir {bindir}\n")
+            for name in ("Gemfile", "Gemfile.lock"):
+                if os.path.exists(f"{src}/{name}"):
+                    shutil.copy2(f"{src}/{name}", temp)
+        want = cfg.get("hugo_version") if provider == "hugo" else f"ruby {cfg.get('ruby_version') or '3.4.7 (default)'} jekyll {cfg.get('jekyll_version') or '4.3.0 (default, used only without a Gemfile)'}"
         have = subprocess.run("hugo version" if provider == "hugo" else "ruby -v; bundle -v", shell=True, env=env,
                               capture_output=True, text=True).stdout.strip().replace("\n", "; ")
         log.write(f"# {provider} per {provider}.bzl: planned {want}; on PATH: {have}\n")
         code = sh(install, temp) if install else 0
         if code == 0:
+            if provider == "jekyll":
+                sh(f"tar --exclude=./.git -cf - . | tar -xf - -C {temp}", src)
             code = sh(build, temp) if build else 0
     else:
         # node.bzl node_install_steps: with node_install_requires_all_files the whole

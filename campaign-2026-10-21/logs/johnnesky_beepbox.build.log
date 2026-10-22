@@ -1,0 +1,54 @@
+# 2026-10-22T05:58:22Z johnnesky/beepbox @ 355e510099d230d066d95074c16d748d59fe054c node v24.22.1 npm 11.19.1
+$ npm ci
+npm warn deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+
+added 237 packages, and audited 238 packages in 9s
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+26 vulnerabilities (4 low, 7 moderate, 13 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.23.0 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> build
+> npm run clean && npm run build-synth && npm run build-player && npm run build-editor
+
+
+> clean
+> bash ./scripts/clean.sh
+
+
+> build-synth
+> bash ./scripts/compile_synth.sh
+
+[36m
+[1mbuild/synth/index.js[22m → [1mbundle/beepbox_synth.js[22m...[39m
+[32mcreated [1mbundle/beepbox_synth.js[22m in [1m905ms[22m[39m
+
+> build-player
+> bash ./scripts/compile_player.sh
+
+[36m
+[1mbuild/player/index.js[22m → [1mbundle/player/beepbox_player.js[22m...[39m
+[32mcreated [1mbundle/player/beepbox_player.js[22m in [1m1s[22m[39m
+
+> build-editor
+> bash ./scripts/compile_editor.sh
+
+[36m
+[1mbuild/editor/index.js[22m → [1mbundle/beepbox_editor.js[22m...[39m
+[32mcreated [1mbundle/beepbox_editor.js[22m in [1m2.7s[22m[39m
+EXIT 0

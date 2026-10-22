@@ -1,0 +1,23 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "free-react-tailwind-admin-dashboard",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build",
+            "start": "static-web-server --root=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --log-level=info --config-file=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml --port=8080"
+        },
+        "static_dir": "dist",
+        "static_redirects_config": "# SPA routes from src/App.tsx: exact paths only, so unknown paths and missing assets stay 404.\n[advanced]\n\n[[advanced.rewrites]]\nsource = \"/profile\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/calendar\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/blank\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/form-elements\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/basic-tables\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/alerts\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/avatars\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/badge\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/buttons\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/images\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/videos\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/line-chart\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/bar-chart\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/signin\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/signup\"\ndestination = \"/index.html\"\n",
+        "node_package_manager": "npm",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "npm run build",
+        "npm_version": "11",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "tailadmin-react"
+    },
+    "services": []
+}

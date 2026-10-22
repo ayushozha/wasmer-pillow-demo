@@ -1,0 +1,103 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/dist",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 2936
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2936
+      }
+    ],
+    "/assets/index-CKGU0-WY.js": [
+      {
+        "path": "/assets/index-CKGU0-WY.js",
+        "status": 200,
+        "location": null,
+        "bytes": 14762
+      }
+    ],
+    "/assets/index-BdbTJCoR.css": [
+      {
+        "path": "/assets/index-BdbTJCoR.css",
+        "status": 200,
+        "location": null,
+        "bytes": 63835
+      }
+    ],
+    "/icons/logo.svg": [
+      {
+        "path": "/icons/logo.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 178
+      }
+    ],
+    "/fonts/PlusJakartaSans-Bold.ttf": [
+      {
+        "path": "/fonts/PlusJakartaSans-Bold.ttf",
+        "status": 200,
+        "location": null,
+        "bytes": 94772
+      }
+    ],
+    "/cmaps/78-EUC-H.bcmap": [
+      {
+        "path": "/cmaps/78-EUC-H.bcmap",
+        "status": 200,
+        "location": null,
+        "bytes": 2404
+      }
+    ],
+    "/qpdf/worker.js": [
+      {
+        "path": "/qpdf/worker.js",
+        "status": 404,
+        "location": null,
+        "bytes": 106
+      }
+    ],
+    "/qpdf/qpdf.wasm": [
+      {
+        "path": "/qpdf/qpdf.wasm",
+        "status": 404,
+        "location": null,
+        "bytes": 106
+      }
+    ],
+    "/tesseract/worker.min.js": [
+      {
+        "path": "/tesseract/worker.min.js",
+        "status": 404,
+        "location": null,
+        "bytes": 106
+      }
+    ],
+    "/tesseract/eng.traineddata": [
+      {
+        "path": "/tesseract/eng.traineddata",
+        "status": 404,
+        "location": null,
+        "bytes": 106
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": false
+}

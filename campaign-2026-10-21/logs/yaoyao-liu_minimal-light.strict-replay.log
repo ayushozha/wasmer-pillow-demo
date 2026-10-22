@@ -1,0 +1,89 @@
+# 2026-10-22T05:59:01Z strict-inputs replay of anybuild 0.33.0 jekyll.bzl for yaoyao-liu_minimal-light @ dd114c3fef2d97adc1c6b6d46901e0d96ab83a7c; ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux] (planned ruby 3.4.7); bundler 4.0.18
+# install step sees only: Gemfile
+$ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this
+application for all non-root users on this machine.
+Fetching gem metadata from https://rubygems.org/...........
+Resolving dependencies...
+Fetching public_suffix 7.0.5
+Fetching colorator 1.1.0
+Fetching addressable 2.9.0
+Fetching concurrent-ruby 1.3.8
+Fetching eventmachine 1.2.7
+Fetching http_parser.rb 0.8.1
+Fetching em-websocket 0.5.3
+Fetching ffi 1.17.4 (x86_64-linux-gnu)
+Fetching forwardable-extended 2.6.0
+Installing eventmachine 1.2.7 with native extensions
+Installing http_parser.rb 0.8.1 with native extensions
+Fetching i18n 0.9.5
+Fetching rb-fsevent 0.11.2
+Fetching rb-inotify 0.11.1
+Fetching sass-listen 4.0.0
+Fetching sass 3.7.4
+Fetching jekyll-sass-converter 1.5.2
+Fetching logger 1.7.0
+Fetching listen 3.10.1
+Fetching jekyll-watch 2.2.1
+Fetching kramdown 1.17.0
+Fetching liquid 4.0.4
+Fetching mercenary 0.3.6
+Fetching pathutil 0.16.2
+Fetching rouge 3.30.0
+Fetching safe_yaml 1.0.5
+Fetching jekyll 3.8.7
+Fetching webrick 1.9.2
+Installing colorator 1.1.0
+Installing public_suffix 7.0.5
+Installing addressable 2.9.0
+Installing concurrent-ruby 1.3.8
+Installing em-websocket 0.5.3
+Installing forwardable-extended 2.6.0
+Installing i18n 0.9.5
+Installing ffi 1.17.4 (x86_64-linux-gnu)
+Installing rb-fsevent 0.11.2
+Installing rb-inotify 0.11.1
+Installing sass-listen 4.0.0
+Installing sass 3.7.4
+Installing jekyll-sass-converter 1.5.2
+Installing logger 1.7.0
+Installing listen 3.10.1
+Installing jekyll-watch 2.2.1
+Installing kramdown 1.17.0
+Installing liquid 4.0.4
+Installing mercenary 0.3.6
+Installing pathutil 0.16.2
+Installing rouge 3.30.0
+Installing safe_yaml 1.0.5
+Installing jekyll 3.8.7
+Installing webrick 1.9.2
+Bundle complete! 2 Gemfile dependencies, 26 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+EXIT 0
+# copy . (ignore .git)
+$ jekyll build
+/tmp/claude-0/flat-replay/yaoyao-liu_minimal-light-strict/gems/gems/jekyll-3.8.7/lib/jekyll/log_adapter.rb:43: warning: Logger not initialized properly
+/tmp/claude-0/flat-replay/yaoyao-liu_minimal-light-strict/gems/gems/jekyll-3.8.7/lib/jekyll/stevenson.rb:5: info: Jekyll::Stevenson#initialize: does not call super probably
+Configuration file: /tmp/claude-0/flat-replay/yaoyao-liu_minimal-light-strict/opt/temp/_config.yml
+            Source: /tmp/claude-0/flat-replay/yaoyao-liu_minimal-light-strict/opt/temp
+       Destination: /tmp/claude-0/flat-replay/yaoyao-liu_minimal-light-strict/opt/temp/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.316 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+EXIT 0
+# static_dir _site: 16 files
+# result exit=0

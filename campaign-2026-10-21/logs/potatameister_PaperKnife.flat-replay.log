@@ -1,0 +1,80 @@
+# 2026-10-22T06:02:05Z flat replay of anybuild 0.33.0 planned steps for potatameister_PaperKnife @ 596f55d28acfd62d11dad85c090d3971f5f687ee (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/potatameister_PaperKnife && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/potatameister_PaperKnife/src --out /tmp/claude-0/flat-replay/potatameister_PaperKnife/plan.json)
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/potatameister_PaperKnife/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/potatameister_PaperKnife/plan.json
+EXIT 0
+# env per node.bzl for npm: CI=true, NPM_CONFIG_FUND=false
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+# node_install_requires_all_files=False
+$ (cd /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp && npm install)
+npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm warn deprecated source-map@0.8.0-beta.0: The work that was done in this beta branch won't be included in future versions
+
+added 656 packages, and audited 657 packages in 14s
+
+34 vulnerabilities (1 low, 7 moderate, 24 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts   tesseract.js@7.0.0 (postinstall: opencollective-postinstall || true)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/potatameister_PaperKnife/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp && npm run build)
+
+> paperknife@1.1.0 build
+> tsc && vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[32m✓[39m 1906 modules transformed.
+rendering chunks...
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/utils/pdfHelpers.ts is dynamically imported by /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/Layout.tsx but also statically imported by /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/AndroidHistoryView.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/PdfPreview.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/CompressTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/ExtractImagesTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/GrayscaleTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/MergeTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/MetadataTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/PageNumberTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/PdfToImageTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/PdfToTextTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/ProtectTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/RearrangeTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/RepairTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/RotateTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/SignatureTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/SplitTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/UnlockTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/WatermarkTool.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/shared/SuccessState.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/utils/compressEngines.ts, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/utils/unlockEngines.ts, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/utils/workspacePersistence.ts is dynamically imported by /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/App.tsx, /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/Settings.tsx but also statically imported by /tmp/claude-0/flat-replay/potatameister_PaperKnife/opt/temp/src/components/tools/MergeTool.tsx, dynamic import will not move module into another chunk.
+[39m
+computing gzip size...
+[2mdist/[22m[32mindex.html                                    [39m[1m[2m    2.93 kB[22m[1m[22m[2m │ gzip:   1.11 kB[22m
+[2mdist/[22m[2massets/[22m[32mworker-DvPKoZue.js                     [39m[1m[2m    6.16 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mqpdf-Cz4tslog.js                       [39m[1m[2m   68.04 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mpdfWorker-iwPyuxU7.js                  [39m[1m[2m  430.82 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mpdf.worker.min-LyOxJPrg.mjs            [39m[1m[2m1,072.84 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mqpdf-qSG3fHUk.wasm                     [39m[1m[2m1,807.28 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[35mindex-BdbTJCoR.css                     [39m[1m[2m   63.84 kB[22m[1m[22m[2m │ gzip:  10.32 kB[22m
+[2mdist/[22m[2massets/[22m[36m_commonjs-dynamic-modules-TDtrdbi3.js  [39m[1m[2m    0.24 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m
+[2mdist/[22m[2massets/[22m[36mweb-D-dllHFs.js                        [39m[1m[2m    0.50 kB[22m[1m[22m[2m │ gzip:   0.32 kB[22m
+[2mdist/[22m[2massets/[22m[36mweb-C9hODQK4.js                        [39m[1m[2m    0.90 kB[22m[1m[22m[2m │ gzip:   0.43 kB[22m
+[2mdist/[22m[2massets/[22m[36mweb-B1tAPmxB.js                        [39m[1m[2m    1.03 kB[22m[1m[22m[2m │ gzip:   0.53 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-nVwufhMX.js                      [39m[1m[2m    3.61 kB[22m[1m[22m[2m │ gzip:   1.53 kB[22m
+[2mdist/[22m[2massets/[22m[36mweb-Daros2eo.js                        [39m[1m[2m    8.82 kB[22m[1m[22m[2m │ gzip:   3.04 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-CKGU0-WY.js                      [39m[1m[2m   14.76 kB[22m[1m[22m[2m │ gzip:   6.42 kB[22m
+[2mdist/[22m[2massets/[22m[36mvendor-utils-C9nNFMz8.js               [39m[1m[2m   45.41 kB[22m[1m[22m[2m │ gzip:  15.20 kB[22m
+[2mdist/[22m[2massets/[22m[36mjszip.min-BDItEVhL.js                  [39m[1m[2m   97.26 kB[22m[1m[22m[2m │ gzip:  30.18 kB[22m
+[2mdist/[22m[2massets/[22m[36mvendor-ui-BF-5tx1C.js                  [39m[1m[2m  243.90 kB[22m[1m[22m[2m │ gzip:  74.30 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-CZ9m4a__.js                      [39m[1m[2m  303.44 kB[22m[1m[22m[2m │ gzip:  70.01 kB[22m
+[2mdist/[22m[2massets/[22m[36mpdfjs-viewer-BENO9Ct1.js               [39m[1m[2m  405.42 kB[22m[1m[22m[2m │ gzip: 118.60 kB[22m
+[2mdist/[22m[2massets/[22m[36mpdf-lib-core-Dr03k_Kd.js               [39m[1m[2m  436.31 kB[22m[1m[22m[2m │ gzip: 181.24 kB[22m
+[32m✓ built in 14.07s[39m
+EXIT 0
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/icons/logo.svg": 200, "/fonts/PlusJakartaSans-Regular.ttf": 200}}

@@ -1,0 +1,92 @@
+# 2026-10-22T06:04:31Z direct debug run of the built artifact to show compiled rewrite regexes (same --root/--config-file as Anybuild's start script, plus --host 127.0.0.1 --log-level debug)
+$ /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server --root=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --config-file=/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml --host 127.0.0.1 --port=8082 --log-level=debug
+[2m2026-10-22T06:04:31.555717Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m config file read successfully
+[2m2026-10-22T06:04:31.555761Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m config file path provided: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+[2m2026-10-22T06:04:31.555771Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m config file path resolved: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+[2m2026-10-22T06:04:31.555776Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m config file empty or no `general` settings found, using default values
+[2m2026-10-22T06:04:31.555877Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /profile
+[2m2026-10-22T06:04:31.555886Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/profile$
+[2m2026-10-22T06:04:31.555920Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /calendar
+[2m2026-10-22T06:04:31.555923Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/calendar$
+[2m2026-10-22T06:04:31.555956Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /blank
+[2m2026-10-22T06:04:31.555959Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/blank$
+[2m2026-10-22T06:04:31.555997Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /form-elements
+[2m2026-10-22T06:04:31.556000Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/form\-elements$
+[2m2026-10-22T06:04:31.556038Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /basic-tables
+[2m2026-10-22T06:04:31.556042Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/basic\-tables$
+[2m2026-10-22T06:04:31.556074Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /alerts
+[2m2026-10-22T06:04:31.556077Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/alerts$
+[2m2026-10-22T06:04:31.556109Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /avatars
+[2m2026-10-22T06:04:31.556112Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/avatars$
+[2m2026-10-22T06:04:31.556149Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /badge
+[2m2026-10-22T06:04:31.556153Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/badge$
+[2m2026-10-22T06:04:31.556181Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /buttons
+[2m2026-10-22T06:04:31.556184Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/buttons$
+[2m2026-10-22T06:04:31.556215Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /images
+[2m2026-10-22T06:04:31.556219Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/images$
+[2m2026-10-22T06:04:31.556248Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /videos
+[2m2026-10-22T06:04:31.556252Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/videos$
+[2m2026-10-22T06:04:31.556296Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /line-chart
+[2m2026-10-22T06:04:31.556299Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/line\-chart$
+[2m2026-10-22T06:04:31.556340Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /bar-chart
+[2m2026-10-22T06:04:31.556344Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/bar\-chart$
+[2m2026-10-22T06:04:31.556378Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /signin
+[2m2026-10-22T06:04:31.556381Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/signin$
+[2m2026-10-22T06:04:31.556407Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites glob pattern: /signup
+[2m2026-10-22T06:04:31.556411Z[0m [34mDEBUG[0m [2mstatic_web_server::settings[0m[2m:[0m url rewrites regex equivalent: ^/signup$
+[2m2026-10-22T06:04:31.556597Z[0m [34mDEBUG[0m [2mstatic_web_server::server[0m[2m:[0m initializing tokio runtime with multi-threaded scheduler [3mself.worker_threads[0m[2m=[0m4
+[2m2026-10-22T06:04:31.556969Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m static-web-server 2.32.2
+[2m2026-10-22T06:04:31.557059Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log level: debug
+[2m2026-10-22T06:04:31.557092Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m config file used: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_config/sws.toml
+[2m2026-10-22T06:04:31.557144Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m server bound to tcp socket 127.0.0.1:8082
+[2m2026-10-22T06:04:31.557156Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime worker threads: 4
+[2m2026-10-22T06:04:31.557166Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m runtime max blocking threads: 512
+[2m2026-10-22T06:04:31.557187Z[0m [34mDEBUG[0m [2mstatic_web_server::server[0m[2m:[0m 404 file path not found or not a regular file: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app/./404.html
+[2m2026-10-22T06:04:31.557201Z[0m [34mDEBUG[0m [2mstatic_web_server::server[0m[2m:[0m 50x file path not found or not a regular file: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app/./50x.html
+[2m2026-10-22T06:04:31.557211Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m redirect trailing slash: enabled=true
+[2m2026-10-22T06:04:31.557220Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m ignore hidden files: enabled=false
+[2m2026-10-22T06:04:31.557229Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m disable symlinks: enabled=false
+[2m2026-10-22T06:04:31.557238Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m grace period before graceful shutdown: 0s
+[2m2026-10-22T06:04:31.557248Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m index files: index.html
+[2m2026-10-22T06:04:31.557259Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing: enabled=false
+[2m2026-10-22T06:04:31.557269Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing order code: 6
+[2m2026-10-22T06:04:31.557279Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m directory listing format: Html
+[2m2026-10-22T06:04:31.557290Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m fallback page: enabled=false, value=""
+[2m2026-10-22T06:04:31.557301Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m health endpoint: enabled=false
+[2m2026-10-22T06:04:31.557310Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m log requests with remote and real IP addresses: enabled=false
+[2m2026-10-22T06:04:31.557339Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m basic authentication: enabled=false
+[2m2026-10-22T06:04:31.557348Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode: enabled=false
+[2m2026-10-22T06:04:31.557357Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode status: 503
+[2m2026-10-22T06:04:31.557366Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m maintenance mode file: ""
+[2m2026-10-22T06:04:31.557375Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m compression static: enabled=false
+[2m2026-10-22T06:04:31.557385Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+[2m2026-10-22T06:04:31.557396Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m cache control headers: enabled=true
+[2m2026-10-22T06:04:31.557404Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m security headers: enabled=false
+[2m2026-10-22T06:04:31.557539Z[0m [32m INFO[0m [1mServer::start_server[0m[1m{[0m[3maddr_str[0m[2m=[0m"127.0.0.1:8082" [3mthreads[0m[2m=[0m4[1m}[0m[2m:[0m [2mstatic_web_server::server[0m[2m:[0m close [3mtime.busy[0m[2m=[0m0.00ns [3mtime.idle[0m[2m=[0m1.34µs
+[2m2026-10-22T06:04:31.557574Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m http1 server is listening on http://127.0.0.1:8082
+[2m2026-10-22T06:04:31.557584Z[0m [32m INFO[0m [2mstatic_web_server::info[0m[2m:[0m press ctrl+c to shut down the server
+[2m2026-10-22T06:04:31.561133Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 3 headers
+[2m2026-10-22T06:04:31.561180Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is empty
+[2m2026-10-22T06:04:31.561200Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/profile
+[2m2026-10-22T06:04:31.561239Z[0m [34mDEBUG[0m [2mstatic_web_server::redirects[0m[2m:[0m url redirects/rewrites glob pattern: ["$0"]
+[2m2026-10-22T06:04:31.561247Z[0m [34mDEBUG[0m [2mstatic_web_server::redirects[0m[2m:[0m url redirects/rewrites regex equivalent: ^/profile$
+[2m2026-10-22T06:04:31.561250Z[0m [34mDEBUG[0m [2mstatic_web_server::redirects[0m[2m:[0m url redirects/rewrites glob pattern captures: ["/profile"]
+[2m2026-10-22T06:04:31.561252Z[0m [34mDEBUG[0m [2mstatic_web_server::redirects[0m[2m:[0m url redirects/rewrites glob pattern destination: "/index.html"
+[2m2026-10-22T06:04:31.561294Z[0m [34mDEBUG[0m [2mstatic_web_server::redirects[0m[2m:[0m url redirects/rewrites glob pattern destination replaced: "/index.html"
+[2m2026-10-22T06:04:31.561522Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 686 bytes
+[2m2026-10-22T06:04:31.561769Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m read eof
+[2m2026-10-22T06:04:31.571579Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 3 headers
+[2m2026-10-22T06:04:31.571728Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is empty
+[2m2026-10-22T06:04:31.571755Z[0m [32m INFO[0m [2mstatic_web_server::log_addr[0m[2m:[0m incoming request: method=GET uri=/nope
+[2m2026-10-22T06:04:31.571797Z[0m [34mDEBUG[0m [2mstatic_web_server::fs::meta[0m[2m:[0m file not found: "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app/nope" Os { code: 2, kind: NotFound, message: "No such file or directory" }
+[2m2026-10-22T06:04:31.571813Z[0m [34mDEBUG[0m [2mstatic_web_server::fs::meta[0m[2m:[0m file: appending .html suffix to the path
+[2m2026-10-22T06:04:31.571823Z[0m [34mDEBUG[0m [2mstatic_web_server::fs::meta[0m[2m:[0m file not found: "/tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app/nope.html" Os { code: 2, kind: NotFound, message: "No such file or directory" }
+[2m2026-10-22T06:04:31.571831Z[0m [34mDEBUG[0m [2mstatic_web_server::fs::meta[0m[2m:[0m file: the .html suffixed path doesn't exist, falling back to the original
+[2m2026-10-22T06:04:31.571849Z[0m [33m WARN[0m [2mstatic_web_server::error_page[0m[2m:[0m [3mmethod[0m[2m=[0mGET [3muri[0m[2m=[0m/nope [3mstatus[0m[2m=[0m404 [3merror[0m[2m=[0m"Not Found"
+[2m2026-10-22T06:04:31.571862Z[0m [34mDEBUG[0m [2mstatic_web_server::error_page[0m[2m:[0m page404 file path not found or not a regular file: /tmp/claude-0/rw/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app/./404.html
+[2m2026-10-22T06:04:31.571926Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 313 bytes
+[2m2026-10-22T06:04:31.572151Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m read eof
+[2m2026-10-22T06:04:42.675477Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m SIGTERM, SIGINT or SIGQUIT signal caught
+[2m2026-10-22T06:04:42.675626Z[0m [32m INFO[0m [2mstatic_web_server::signals[0m[2m:[0m delegating server's graceful shutdown
+[2m2026-10-22T06:04:42.675652Z[0m [34mDEBUG[0m [2mhyper::server::shutdown[0m[2m:[0m signal received, starting graceful shutdown
+[2m2026-10-22T06:04:42.675745Z[0m [33m WARN[0m [2mstatic_web_server::warn[0m[2m:[0m termination signal caught, shutting down the server execution

@@ -28,7 +28,7 @@
   "import_url": "https://wasmer.io/apps/create?github=daattali%2Fbeautiful-jekyll",
   "detect_log": "logs/daattali_beautiful-jekyll.detect.log",
   "detection_verified": "anybuild 0.33.0 plan on clean BASE worktree 7286eb8: provider jekyll, install 'bundle install', build 'jekyll build', static_dir _site (default). Anybuild file deleted. No patched commit (held).",
-  "anybuild_replay": "FAIL (strict-inputs replay, docker builder semantics): bundle install EXIT 15 'There are no gemspecs' -> logs/daattali_beautiful-jekyll.strict-replay.log. tools/anybuild_flat_replay.py (full source copy before install, not builder-faithful for this Gemfile): install EXIT 0, build EXIT 0, smoke / /aboutme/ /tags/ /404.html /feed.xml /sitemap.xml 200, 0 missing -> logs/daattali_beautiful-jekyll.flat-replay.log",
+  "anybuild_replay": "FAIL (faithful to jekyll.bzl after tool fix): Gemfile is `gemspec`; only Gemfile/lock present at install -> 'There are no gemspecs' EXIT 15. Earlier tool PASS was a false pass (tool copied all files before install).",
   "sws_smoke": "not run (held)",
   "reason": "HELD_BUILD: Gemfile uses `gemspec`; Anybuild's jekyll install step only has Gemfile(+Gemfile.lock) mounted, so `bundle install` fails with 'There are no gemspecs' (reproduced). Fixing would need a Gemfile change upstream, not a README badge. Secondary risk: bigdecimal (liquid 4.0.4) missing from the bundle under Ruby 3.4.7."
 }

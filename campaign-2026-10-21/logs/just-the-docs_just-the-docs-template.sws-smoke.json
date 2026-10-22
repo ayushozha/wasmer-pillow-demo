@@ -34,28 +34,12 @@
         "bytes": 134760
       }
     ],
-    "/assets/css/just-the-docs-dark.css": [
-      {
-        "path": "/assets/css/just-the-docs-dark.css",
-        "status": 200,
-        "location": null,
-        "bytes": 141379
-      }
-    ],
     "/assets/js/just-the-docs.js": [
       {
         "path": "/assets/js/just-the-docs.js",
         "status": 200,
         "location": null,
         "bytes": 20172
-      }
-    ],
-    "/assets/js/vendor/lunr.min.js": [
-      {
-        "path": "/assets/js/vendor/lunr.min.js",
-        "status": 200,
-        "location": null,
-        "bytes": 31211
       }
     ]
   },

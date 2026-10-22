@@ -1,6 +1,6 @@
 {
   "repo": "namnguyenthanhwork/docusaurus-tailwind-shadcn-template",
-  "status": "READY",
+  "status": "PUBLISHED",
   "stars": 142,
   "forks": 22,
   "stars_source": "GitHub MCP search_repositories",
@@ -34,5 +34,6 @@
   "pr_body": "pr-bodies/namnguyenthanhwork_docusaurus-tailwind-shadcn-template.md",
   "import_url": "https://wasmer.io/apps/create?github=namnguyenthanhwork%2Fdocusaurus-tailwind-shadcn-template",
   "reason": null,
-  "license_root_verified": "Root verified 2026-10-22: actual LICENSE is MIT despite GitHub NOASSERTION."
+  "license_root_verified": "Root verified 2026-10-22: actual LICENSE is MIT despite GitHub NOASSERTION.",
+  "upstream_pr": "https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/pull/13 (reported by root)"
 }

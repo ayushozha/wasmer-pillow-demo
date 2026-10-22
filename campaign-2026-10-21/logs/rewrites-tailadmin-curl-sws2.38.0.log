@@ -1,0 +1,38 @@
+# 2026-10-22T06:01:04Z curl matrix, server pid 30234 exe /tmp/claude-0/tools/sws/bin/static-web-server
+index.html sha256=dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5 size=455
+REQUEST                            STATUS CONTENT-TYPE               BYTES     SHA256[:10] NOTE
+/                                  200    text/html                  455       dc1a7e1e1b body==index.html
+/index.html                        200    text/html                  455       dc1a7e1e1b body==index.html
+/profile                           200    text/html                  455       dc1a7e1e1b body==index.html
+/calendar                          200    text/html                  455       dc1a7e1e1b body==index.html
+/blank                             200    text/html                  455       dc1a7e1e1b body==index.html
+/form-elements                     200    text/html                  455       dc1a7e1e1b body==index.html
+/basic-tables                      200    text/html                  455       dc1a7e1e1b body==index.html
+/alerts                            200    text/html                  455       dc1a7e1e1b body==index.html
+/avatars                           200    text/html                  455       dc1a7e1e1b body==index.html
+/badge                             200    text/html                  455       dc1a7e1e1b body==index.html
+/buttons                           200    text/html                  455       dc1a7e1e1b body==index.html
+/images                            200    text/html                  455       dc1a7e1e1b body==index.html
+/videos                            200    text/html                  455       dc1a7e1e1b body==index.html
+/line-chart                        200    text/html                  455       dc1a7e1e1b body==index.html
+/bar-chart                         200    text/html                  455       dc1a7e1e1b body==index.html
+/signin                            200    text/html                  455       dc1a7e1e1b body==index.html
+/signup                            200    text/html                  455       dc1a7e1e1b body==index.html
+/profile?x=1                       200    text/html                  455       dc1a7e1e1b body==index.html
+/calendar?view=month&d=1           200    text/html                  455       dc1a7e1e1b body==index.html
+/profile/                          404    text/html; charset=utf-8   106       10c24a13a7 
+/images/                           404    text/html; charset=utf-8   106       10c24a13a7 
+/profile/extra                     404    text/html; charset=utf-8   106       10c24a13a7 
+/Profile                           404    text/html; charset=utf-8   106       10c24a13a7 
+/nope                              404    text/html; charset=utf-8   106       10c24a13a7 
+/does/not/exist                    404    text/html; charset=utf-8   106       10c24a13a7 
+/404.html                          404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.js                    404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.css                   404    text/html; charset=utf-8   106       10c24a13a7 
+/images/nope.png                   404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/index-BCqG7Liu.js          200    text/javascript            2009250   2d73e4317f 
+/assets/index-lqHzMpjd.css         200    text/css                   179599    688da9f146 
+/favicon.png                       200    image/png                  2367      e8171c5230 
+/images/favicon.ico                200    image/x-icon               15406     3a63e12d5d 
+/images/logo/logo.svg              200    image/svg+xml              6391      8fb3c41267 
+HEAD /profile -> 200

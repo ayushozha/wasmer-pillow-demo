@@ -1,0 +1,26 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/johnnesky_beepbox/opt/temp/.",
+  "base": "/",
+  "html_files": 20,
+  "local_refs_checked": 9,
+  "missing_local_refs": [
+    "/",
+    "/apple-touch-icon.png",
+    "/fiveserver.js",
+    "/fiveserver/scripts/directory.css",
+    "/fiveserver/scripts/query.js",
+    "/fiveserver/serve-preview/highlight.min.js",
+    "/fiveserver/serve-preview/vs.min.css",
+    "/icon_32.png",
+    "/manifest.webmanifest"
+  ],
+  "missing_count": 9,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 828,
+      "title": "Directory listing for /"
+    }
+  },
+  "ok": false
+}

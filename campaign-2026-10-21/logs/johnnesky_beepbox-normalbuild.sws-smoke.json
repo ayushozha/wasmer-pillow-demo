@@ -1,0 +1,95 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/camp2/johnnesky_beepbox/website",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 12033
+      }
+    ],
+    "/beepbox_editor.min.js": [
+      {
+        "path": "/beepbox_editor.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 662702
+      }
+    ],
+    "/player/": [
+      {
+        "path": "/player/",
+        "status": 200,
+        "location": null,
+        "bytes": 2172
+      }
+    ],
+    "/player/beepbox_player.min.js": [
+      {
+        "path": "/player/beepbox_player.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 221636
+      }
+    ],
+    "/synth_example.html": [
+      {
+        "path": "/synth_example.html",
+        "status": 200,
+        "location": null,
+        "bytes": 1012
+      }
+    ],
+    "/2_3/": [
+      {
+        "path": "/2_3/",
+        "status": 200,
+        "location": null,
+        "bytes": 8996
+      }
+    ],
+    "/3_0/": [
+      {
+        "path": "/3_0/",
+        "status": 200,
+        "location": null,
+        "bytes": 12518
+      }
+    ],
+    "/manifest.webmanifest": [
+      {
+        "path": "/manifest.webmanifest",
+        "status": 200,
+        "location": null,
+        "bytes": 523
+      }
+    ],
+    "/service_worker.js": [
+      {
+        "path": "/service_worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1377
+      }
+    ],
+    "/beepbox_offline.html": [
+      {
+        "path": "/beepbox_offline.html",
+        "status": 200,
+        "location": null,
+        "bytes": 671265
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
