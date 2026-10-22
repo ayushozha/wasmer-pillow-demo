@@ -1,0 +1,18 @@
+{
+    "provider": "node",
+    "config": {
+        "name": "1j01_jspaint",
+        "commands": {
+            "install": "npm install",
+            "start": "node src/electron-main.js"
+        },
+        "node_package_manager": "npm",
+        "node_server": "node",
+        "npm_version": "11",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "jspaint"
+    },
+    "services": []
+}
