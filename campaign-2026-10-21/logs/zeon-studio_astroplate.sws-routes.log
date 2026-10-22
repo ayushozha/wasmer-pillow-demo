@@ -1,0 +1,8 @@
+# 2026-10-22T05:03Z static-web-server 2.38.0 (anybuild 0.33.0 pinned version) serving flat-replay dist/ of zeon-studio/astroplate patched commit; --host=127.0.0.1 sandbox-only
+/              200
+/about         308 -> /about/   (then 200)
+/blog          308 -> /blog/
+/blog/post-1   308 -> /blog/post-1/
+/contact       308 -> /contact/
+/nope          404
+Conclusion: trailingSlash "never" links resolve via one 308 redirect to the directory URL; pages load. Canonical URL in HTML (no slash) differs from served URL (slash).
