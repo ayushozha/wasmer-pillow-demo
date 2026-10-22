@@ -1,0 +1,44 @@
+{
+  "dir": "/tmp/claude-0/camp2/BulmaTemplates_bulma-templates",
+  "base": "/",
+  "html_files": 36,
+  "local_refs_checked": 3,
+  "missing_local_refs": [
+    "/documentation/overview/start/",
+    "/register"
+  ],
+  "missing_count": 2,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 42477,
+      "title": "Free Bulma templates"
+    },
+    "/templates/landing.html": {
+      "status": 200,
+      "bytes": 4767,
+      "title": "Landing - Free Bulma template"
+    },
+    "/templates/admin.html": {
+      "status": 200,
+      "bytes": 13624,
+      "title": "Admin - Free Bulma template"
+    },
+    "/css/admin.css": {
+      "status": 200,
+      "bytes": 1782,
+      "title": null
+    },
+    "/index.css": {
+      "status": 200,
+      "bytes": 705,
+      "title": null
+    },
+    "/templates/login.html": {
+      "status": 200,
+      "bytes": 2801,
+      "title": "Login - Free Bulma template"
+    }
+  },
+  "ok": false
+}

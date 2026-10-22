@@ -1,0 +1,152 @@
+# 2026-10-22T05:01:59Z leoMirandaa/shadcn-landing-page @ ae3716dbce5c8a26815222bb743994b5717938f1 node v24.22.1 npm 11.19.1
+$ npm ci
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Invalid: lock file's @radix-ui/react-accordion@1.1.2 does not satisfy @radix-ui/react-accordion@1.3.1
+npm error Invalid: lock file's @radix-ui/react-avatar@1.0.4 does not satisfy @radix-ui/react-avatar@1.3.1
+npm error Invalid: lock file's @radix-ui/react-dialog@1.0.5 does not satisfy @radix-ui/react-dialog@1.3.1
+npm error Invalid: lock file's @radix-ui/react-dropdown-menu@2.0.6 does not satisfy @radix-ui/react-dropdown-menu@2.2.1
+npm error Invalid: lock file's @radix-ui/react-navigation-menu@1.1.4 does not satisfy @radix-ui/react-navigation-menu@1.4.1
+npm error Invalid: lock file's @radix-ui/react-slot@1.0.2 does not satisfy @radix-ui/react-slot@1.5.0
+npm error Invalid: lock file's lucide-react@0.390.0 does not satisfy lucide-react@0.424.0
+npm error Invalid: lock file's tailwind-merge@2.3.0 does not satisfy tailwind-merge@2.6.1
+npm error Invalid: lock file's @radix-ui/primitive@1.0.1 does not satisfy @radix-ui/primitive@1.2.0
+npm error Invalid: lock file's @radix-ui/react-collapsible@1.0.3 does not satisfy @radix-ui/react-collapsible@1.2.1
+npm error Invalid: lock file's @radix-ui/react-collection@1.0.3 does not satisfy @radix-ui/react-collection@1.2.0
+npm error Invalid: lock file's @radix-ui/react-compose-refs@1.0.1 does not satisfy @radix-ui/react-compose-refs@1.1.5
+npm error Invalid: lock file's @radix-ui/react-context@1.0.1 does not satisfy @radix-ui/react-context@1.3.0
+npm error Invalid: lock file's @radix-ui/react-direction@1.0.1 does not satisfy @radix-ui/react-direction@1.2.0
+npm error Invalid: lock file's @radix-ui/react-id@1.0.1 does not satisfy @radix-ui/react-id@1.1.4
+npm error Invalid: lock file's @radix-ui/react-primitive@1.0.3 does not satisfy @radix-ui/react-primitive@2.2.0
+npm error Invalid: lock file's @radix-ui/react-use-controllable-state@1.0.1 does not satisfy @radix-ui/react-use-controllable-state@1.3.0
+npm error Invalid: lock file's @radix-ui/react-use-callback-ref@1.0.1 does not satisfy @radix-ui/react-use-callback-ref@1.1.5
+npm error Missing: @radix-ui/react-use-is-hydrated@0.1.3 from lock file
+npm error Invalid: lock file's @radix-ui/react-use-layout-effect@1.0.1 does not satisfy @radix-ui/react-use-layout-effect@1.1.4
+npm error Invalid: lock file's @radix-ui/react-presence@1.0.1 does not satisfy @radix-ui/react-presence@1.1.11
+npm error Invalid: lock file's @radix-ui/react-dismissable-layer@1.0.5 does not satisfy @radix-ui/react-dismissable-layer@1.2.1
+npm error Invalid: lock file's @radix-ui/react-focus-guards@1.0.1 does not satisfy @radix-ui/react-focus-guards@1.2.0
+npm error Invalid: lock file's @radix-ui/react-focus-scope@1.0.4 does not satisfy @radix-ui/react-focus-scope@1.3.1
+npm error Invalid: lock file's @radix-ui/react-portal@1.0.4 does not satisfy @radix-ui/react-portal@1.2.0
+npm error Invalid: lock file's react-remove-scroll@2.5.5 does not satisfy react-remove-scroll@2.7.2
+npm error Missing: @radix-ui/react-use-effect-event@0.0.5 from lock file
+npm error Invalid: lock file's @radix-ui/react-menu@2.0.6 does not satisfy @radix-ui/react-menu@2.2.1
+npm error Invalid: lock file's @radix-ui/react-popper@1.1.3 does not satisfy @radix-ui/react-popper@1.4.0
+npm error Invalid: lock file's @radix-ui/react-roving-focus@1.0.4 does not satisfy @radix-ui/react-roving-focus@1.2.1
+npm error Invalid: lock file's @radix-ui/react-use-previous@1.0.1 does not satisfy @radix-ui/react-use-previous@1.1.4
+npm error Invalid: lock file's @radix-ui/react-visually-hidden@1.0.3 does not satisfy @radix-ui/react-visually-hidden@1.2.13
+npm error Invalid: lock file's @floating-ui/react-dom@2.1.0 does not satisfy @floating-ui/react-dom@2.1.9
+npm error Invalid: lock file's @radix-ui/react-arrow@1.0.3 does not satisfy @radix-ui/react-arrow@1.1.17
+npm error Invalid: lock file's @radix-ui/react-use-rect@1.0.1 does not satisfy @radix-ui/react-use-rect@1.1.4
+npm error Invalid: lock file's @radix-ui/react-use-size@1.0.1 does not satisfy @radix-ui/react-use-size@1.1.5
+npm error Invalid: lock file's @radix-ui/rect@1.0.1 does not satisfy @radix-ui/rect@1.1.3
+npm error Invalid: lock file's @floating-ui/dom@1.6.5 does not satisfy @floating-ui/dom@1.8.0
+npm error Invalid: lock file's @floating-ui/core@1.6.2 does not satisfy @floating-ui/core@1.8.0
+npm error Invalid: lock file's @floating-ui/utils@0.2.2 does not satisfy @floating-ui/utils@0.2.12
+npm error Invalid: lock file's react-remove-scroll-bar@2.3.6 does not satisfy react-remove-scroll-bar@2.3.8
+npm error Invalid: lock file's react-style-singleton@2.2.1 does not satisfy react-style-singleton@2.2.3
+npm error Invalid: lock file's use-callback-ref@1.3.2 does not satisfy use-callback-ref@1.3.3
+npm error Invalid: lock file's use-sidecar@1.1.2 does not satisfy use-sidecar@1.1.3
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts]
+npm error [--allow-directory <all|none|root>] [--allow-file <all|none|root>]
+npm error [--allow-git <all|none|root>] [--allow-remote <all|none|root>]
+npm error [--allow-scripts <package-list> [--allow-scripts <package-list> ...]]
+npm error [--strict-allow-scripts] [--dangerously-allow-all-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error   --install-strategy
+npm error     Sets the strategy for installing packages in node_modules.
+npm error
+npm error   --legacy-bundling
+npm error     Instead of hoisting package installs in `node_modules`, install packages
+npm error
+npm error   --global-style
+npm error     Only install direct dependencies in the top level `node_modules`,
+npm error
+npm error   --omit
+npm error     Dependency types to omit from the installation tree on disk.
+npm error
+npm error   --include
+npm error     Option that allows for defining which types of dependencies to install.
+npm error
+npm error   --strict-peer-deps
+npm error     If set to `true`, and `--legacy-peer-deps` is not set, then _any_
+npm error
+npm error   --foreground-scripts
+npm error     Run all build scripts (ie, `preinstall`, `install`, and
+npm error
+npm error   --ignore-scripts
+npm error     If true, npm does not run scripts specified in package.json files.
+npm error
+npm error   --allow-directory
+npm error     Limits the ability for npm to install dependencies from directories.
+npm error
+npm error   --allow-file
+npm error     Limits the ability for npm to install dependencies from tarball files.
+npm error
+npm error   --allow-git
+npm error     Limits the ability for npm to fetch dependencies from git references.
+npm error
+npm error   --allow-remote
+npm error     Limits the ability for npm to fetch dependencies from urls.
+npm error
+npm error   --allow-scripts
+npm error     Comma-separated list of packages whose install-time lifecycle scripts
+npm error
+npm error   --strict-allow-scripts
+npm error     If `true`, turn the install-script policy from a warning into a hard
+npm error
+npm error   --dangerously-allow-all-scripts
+npm error     If `true`, bypass the `allowScripts` policy entirely and run every
+npm error
+npm error   --audit
+npm error     When "true" submit audit reports alongside the current npm command to the
+npm error
+npm error   --bin-links
+npm error     Tells npm to create symlinks (or `.cmd` shims on Windows) for package
+npm error
+npm error   --fund
+npm error     When "true" displays the message at the end of each `npm install`
+npm error
+npm error   --dry-run
+npm error     Indicates that you don't want npm to make any changes and that it should
+npm error
+npm error   -w|--workspace
+npm error     Enable running a command in the context of the configured workspaces of the
+npm error
+npm error   --workspaces
+npm error     Set to true to run the command in the context of **all** configured
+npm error
+npm error   --include-workspace-root
+npm error     Include the workspace root when workspaces are enabled for a command.
+npm error
+npm error   --install-links
+npm error     When set file: protocol dependencies will be packed and installed as
+npm error
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T05_01_59_443Z-debug-0.log
+EXIT 1
+$ npm run build
+
+> shadcn-landing-page-template@1.1.0 build
+> tsc && vite build
+
+tsconfig.json(23,5): error TS5101: Option 'baseUrl' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
+  Visit https://aka.ms/ts6 for migration information.
+EXIT 2
