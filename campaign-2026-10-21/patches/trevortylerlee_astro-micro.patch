@@ -1,4 +1,4 @@
-From 3b8f0dc44c117cc597e84e250c076a330c6d221a Mon Sep 17 00:00:00 2001
+From 4404c3bc967f8da28da1c4b79daf901d064038f3 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:34:49 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -8,14 +8,14 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  1 file changed, 2 insertions(+)
 
 diff --git a/README.md b/README.md
-index 75a1d47..40c4ddf 100644
+index 75a1d47..bb6c5b0 100644
 --- a/README.md
 +++ b/README.md
 @@ -6,6 +6,8 @@ Micro adds features like [Pagefind](https://pagefind.app) for search, [Giscus](h
  
  Micro still comes with everything great about Nano — full type safety, a sitemap, an RSS feed, and Markdown + MDX support. Styled with TailwindCSS and preconfigured with system, light, and dark themes.
  
-+To host Micro on Wasmer Edge, [import it on Wasmer](https://wasmer.io/apps/create?github=trevortylerlee%2Fastro-micro). The link imports this public repository for a build and does not copy it into your GitHub account, so import your own fork or copy instead if you want to customize your site and redeploy on push.
++To host Micro on Wasmer Edge, import it on Wasmer: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=trevortylerlee%2Fastro-micro) The link imports this public repository for a build and does not copy it into your GitHub account, so import your own fork or copy instead if you want to customize your site and redeploy on push.
 +
  ---
  

@@ -1,0 +1,29 @@
+From af024ec5621efdccbb3accdeb4468247121a1324 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:37:42 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index beba6cc..bc4968d 100644
+--- a/README.md
++++ b/README.md
+@@ -19,6 +19,12 @@ The template is just a HTML file using a full CDN hosted Tailwind CSS file.
+ To get the best out of Tailwind CSS, you need to really start customising it.
+ Take a look at our [setup guide](https://www.tailwindtoolbox.com/setup) to start tweaking!
+ 
++## Deploy
++
++To host your own copy on Wasmer Edge, fork this repository and import your fork; the button below opens the Wasmer import page for this repository and does not copy it into your GitHub account.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=tailwindtoolbox%2FLanding-Page)
++
+ ## Sites created using this template
+ 
+ * [AnonAddy.com](https://anonaddy.com)
+-- 
+2.43.0
+

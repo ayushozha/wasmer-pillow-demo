@@ -1,0 +1,24 @@
+From 9b5d71ae62c0c54ddfeefdb114d0104aaaabe4cf Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:37:37 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/README.md b/README.md
+index 3e0316f..d2d2e01 100644
+--- a/README.md
++++ b/README.md
+@@ -345,6 +345,7 @@ See the [CHANGELOG](CHANGELOG.md#350---2026-08-03) for full detail, including kn
+ - **[Component Documentation](./docs/components.md)** - Detailed component guides
+ - **[Customization Guide](./docs/customization.md)** - Theme and styling customization
+ - **[Deployment Guide](./docs/deployment.md)** - Production deployment instructions
++- [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=puikinsh%2FBootstrap-Admin-Template) - Import the repository on Wasmer Edge (build with `npm run build`, static output in `dist-modern/`); import your own fork to customize it and redeploy on push
+ 
+ ## 🤝 Contributing
+ 
+-- 
+2.43.0
+

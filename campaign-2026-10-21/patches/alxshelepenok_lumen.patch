@@ -1,4 +1,4 @@
-From 4037f6e4c942a30cca5194dedcecc93400a1dfa2 Mon Sep 17 00:00:00 2001
+From 5b62c08a7f1aa1c9b195d9bd1df03009311095a3 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:34:49 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -11,7 +11,7 @@ Add a README deploy note and a root Staticfile (root: target) so Wasmer's static
  create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index 4ac4b08..3182fee 100644
+index 4ac4b08..98cb253 100644
 --- a/README.md
 +++ b/README.md
 @@ -56,6 +56,10 @@ $ bun install
@@ -20,7 +20,7 @@ index 4ac4b08..3182fee 100644
  
 +## Deploy
 +
-+`bun run build` writes the static site to `target/`, and the root `Staticfile` points Wasmer at that directory. To host it on Wasmer Edge, [import the repository on Wasmer](https://wasmer.io/apps/create?github=alxshelepenok%2Flumen). The link imports this public repository for a build and does not copy it into your GitHub account, so import your own fork or copy instead if you want to customize the blog and redeploy on push.
++`bun run build` writes the static site to `target/`, and the root `Staticfile` points Wasmer at that directory. To host it on Wasmer Edge, import the repository on Wasmer: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=alxshelepenok%2Flumen) The link imports this public repository for a build and does not copy it into your GitHub account, so import your own fork or copy instead if you want to customize the blog and redeploy on push.
 +
  ## Sponsors
  

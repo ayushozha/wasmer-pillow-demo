@@ -1,0 +1,46 @@
+# 2026-10-22T04:37:06Z anybuild 0.33.0 (wasmerio/shipit@587be231, local release build) plan on clean clone of TailGrids_play-tailwind @ 05f872b026622e026c75f656d7fa537494e6f379
+$ anybuild plan TailGrids_play-tailwind --out TailGrids_play-tailwind.plan.json
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/TailGrids_play-tailwind/Anybuild
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/TailGrids_play-tailwind.plan.json
+EXIT 0
+{
+    "provider": "node",
+    "config": {
+        "name": "TailGrids_play-tailwind",
+        "commands": {
+            "install": "npm install",
+            "start": "node tailwind.config.js"
+        },
+        "node_package_manager": "npm",
+        "node_server": "node",
+        "npm_version": "11",
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "play-tailwind"
+    },
+    "services": []
+}
+# DIAGNOSTIC 2026-10-22T04:37:48Z: same clone plus an empty root 'Staticfile' (NOT proposed upstream)
+$ anybuild plan pt_staticfile --out pt_staticfile.plan.json
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/pt_staticfile/Anybuild
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/pt_staticfile.plan.json
+EXIT 0
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "pt_staticfile",
+        "commands": {
+            "start": "static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/pt_staticfile/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        }
+    },
+    "services": []
+}

@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds a short "Deploy" section after Quick Start with a link that imports this repository on Wasmer Edge (`https://wasmer.io/apps/create?github=alxshelepenok%2Flumen`). It also adds a one-line `Staticfile` at the repository root:
+Adds a short "Deploy" section after Quick Start with a Deploy to Wasmer badge that imports this repository on Wasmer Edge (`https://wasmer.io/apps/create?github=alxshelepenok%2Flumen`). It also adds a one-line `Staticfile` at the repository root:
 
 ```
 root: target

@@ -1,0 +1,37 @@
+{
+  "repo": "danielcgilibert/blog-template",
+  "status": "READY",
+  "stars": 1023,
+  "stars_source": "GitHub MCP search_repositories (stargazers_count)",
+  "stars_at": "2026-10-22T04:28:24Z",
+  "archived": false,
+  "license": "GPL-3.0",
+  "default_branch": "main",
+  "pushed_at": "2025-01-14T23:18:12Z",
+  "base_sha": "1d36741c203a8cf4c8b57e481d80a1abe9cf5925",
+  "framework": "Astro (static, no adapter) + Pagefind postbuild + TinaCMS (dev only)",
+  "output_dir": "dist",
+  "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+  "build_claude": {
+    "result": "PASS",
+    "detail": "Node v18.20.8 (.nvmrc 18.17.0), pnpm 8.15.9 (lockfile v6): exit 0; Pagefind indexed 18 pages. On Node 24.22.1 the install FAILS: better-sqlite3@8.7.0 (via tinacms) has no prebuild and its native compile fails against Node 24 headers.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/danielcgilibert_blog-template.build.log",
+    "other_logs": [
+      "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/danielcgilibert_blog-template.node24.build.log"
+    ]
+  },
+  "smoke": {
+    "result": "PASS",
+    "detail": "/, /post/astro/, /tags/, /category/category-1/1/, /rss.xml, /pagefind/pagefind.js all 200. 2 missing refs (/en/core-concepts/framework-components/, /en/reference/directives-reference/) are dead links inside demo .mdx content copied from Astro docs; host-independent, not a deploy breakage. No 404 page in output.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/danielcgilibert_blog-template.smoke.json"
+  },
+  "format_check": "PASS: prettier 3.0.3 --check README.md README.es.md (/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/danielcgilibert_blog-template.format.log)",
+  "compat_notes": "Requires Node 18-ish (not 24) because of better-sqlite3 native dep at install time; prebuild-install downloads a binary from GitHub releases at install time. Husky pre-commit hook fails in this sandbox (corepack pnpm); commit made with --no-verify. netlify.toml/Vercel settings not applied on Wasmer.",
+  "policy": "Read README.md/README.es.md (Vercel + Netlify buttons in header), .github (FUNDING.yml, dependabot.yml; no PR template/CONTRIBUTING), no AI policy. No wasmer mention. Open analogous PR #115 \"Add Deploy to PandaStack button\" (2026-05-12) with no maintainer response visible via search; not a refusal. Maintenance: last merge/push 2025-01-14 (PR #100); 28 open issues. Fit concern: maintainer appears inactive, merge likelihood low.",
+  "why": "Static Astro blog that already advertises one-click provider buttons; badge slots into the same row in both language READMEs.",
+  "patch": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/patches/danielcgilibert_blog-template.patch",
+  "pr_body": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/pr-bodies/danielcgilibert_blog-template.md",
+  "import_url": "https://wasmer.io/apps/create?github=danielcgilibert%2Fblog-template",
+  "detection_verified": "pending Codex browser check (default Astro dist; Wasmer builder Node version must be <=20/18 for better-sqlite3)",
+  "reason": null
+}

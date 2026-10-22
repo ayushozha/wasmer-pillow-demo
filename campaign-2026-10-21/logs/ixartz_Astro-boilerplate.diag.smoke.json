@@ -1,0 +1,44 @@
+{
+  "dir": "dist",
+  "base": "/",
+  "html_files": 10,
+  "local_refs_checked": 35,
+  "missing_local_refs": [
+    "/rss.xml",
+    "/src/images/random.jpeg"
+  ],
+  "missing_count": 2,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 11544,
+      "title": "Astro boilerplate"
+    },
+    "/posts/": {
+      "status": 200,
+      "bytes": 6949,
+      "title": "Blog page 1 - Astro boilerplate"
+    },
+    "/posts/first-post/": {
+      "status": 200,
+      "bytes": 3590,
+      "title": "1st Lorem ipsum dolor sit - Astro boilerplate"
+    },
+    "/posts/2/": {
+      "status": 200,
+      "bytes": 4009,
+      "title": "Blog page 2 - Astro boilerplate"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 663,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 70,
+      "title": null
+    }
+  },
+  "ok": false
+}

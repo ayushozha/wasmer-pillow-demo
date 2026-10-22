@@ -1,0 +1,34 @@
+{
+  "repo": "manuelernestog/astrofy",
+  "status": "HELD_BUILD",
+  "stars": 1437,
+  "stars_source": "GitHub MCP search_repositories (stargazers_count)",
+  "stars_at": "2026-10-22T04:28:24Z",
+  "archived": false,
+  "license": "MIT",
+  "default_branch": "main",
+  "pushed_at": "2024-07-04T19:41:11Z",
+  "base_sha": "9398dea0f2c048efe2ba4680b12308d5ff01e427",
+  "framework": "Astro 4.0.2 (static, no adapter; mdx, sitemap, tailwind/daisyUI)",
+  "output_dir": "dist",
+  "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+  "build_claude": {
+    "result": "PASS",
+    "detail": "Node v24.22.1, pnpm 8.15.9 (lockfile v6): exit 0.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/manuelernestog_astrofy.build.log"
+  },
+  "smoke": {
+    "result": "FAIL",
+    "detail": "/, /blog/, /blog/demo-post-1/, /blog/tag/rust/, /cv/, /store/item1/, /404.html all 200, but /rss.xml (linked in SideBarFooter.astro) is 404: src/pages/rss.xml.js exports lowercase `get`, which Astro 4.0.2 ignores, so the feed is not emitted (build log still lists the route). Real upstream bug, host-independent.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/manuelernestog_astrofy.smoke.json"
+  },
+  "format_check": "not run (no patch; repo has no formatter config)",
+  "compat_notes": "HEAD commit dated 2024-01-08; repo pushed_at 2024-07-04. Unmaintained ~2+ years. PRs #91 (Node 24/CI updates) and #92 closed Jan 2026 without being pushed to main.",
+  "policy": "Read README (no deploy section besides demo on Netlify), .github (FUNDING.yml only), no CONTRIBUTING/PR template. No wasmer mention or provider-button PRs found. Maintenance concern: no pushes since 2024-07-04; community PRs (#91, #92) closed unmerged in Jan 2026.",
+  "why": "Static Astro portfolio template, but advertised RSS feed is broken at the pinned sha and the repo is unmaintained since Jul 2024.",
+  "patch": null,
+  "pr_body": null,
+  "import_url": "https://wasmer.io/apps/create?github=manuelernestog%2Fastrofy",
+  "detection_verified": "pending Codex browser check (default Astro dist)",
+  "reason": "Smoke FAIL: /rss.xml not generated (Astro 4 lowercase `get` endpoint). Unmaintained since 2024-07."
+}

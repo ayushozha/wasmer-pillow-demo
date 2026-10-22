@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds a sixth step to "Getting started" with a link that imports a repository on Wasmer Edge (`https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite`). The step tells readers to import the repository they created from the template. README only.
+Adds a sixth step to "Getting started" with a Deploy to Wasmer badge that imports a repository on Wasmer Edge (`https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite`). The step tells readers to import the repository they created from the template. README only.
 
 ## Why this repository
 

@@ -2,7 +2,7 @@ Title: docs: add Wasmer Edge deploy option
 
 ## Summary
 
-Adds one paragraph after the feature summary in the README with a link that imports Micro on Wasmer Edge (`https://wasmer.io/apps/create?github=trevortylerlee%2Fastro-micro`). README only.
+Adds one paragraph after the feature summary in the README with a Deploy to Wasmer badge that imports Micro on Wasmer Edge (`https://wasmer.io/apps/create?github=trevortylerlee%2Fastro-micro`). README only.
 
 ## Why this repository
 

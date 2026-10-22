@@ -1,0 +1,37 @@
+From d2c4e192111316b2b7d74306e345ace689536e9c Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:37:36 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md       | 1 +
+ README.zh-CN.md | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/README.md b/README.md
+index 13601b9..4787d13 100644
+--- a/README.md
++++ b/README.md
+@@ -418,6 +418,7 @@ Static template — deploy `dist/` anywhere that serves files.
+ | Host | Notes |
+ | --- | --- |
+ | **Netlify / Vercel / Cloudflare Pages** | Drop in, no config needed. Set `BASE_PATH=/` (default). |
++| **Wasmer Edge** | [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ColorlibHQ%2Fgentelella) Imports this repository; use the default `BASE_PATH=/`. To customize the template and redeploy on push, import your own fork. |
+ | **GitHub Pages** | `BASE_PATH=/your-repo/ npm run build`, push `dist/` to `gh-pages`. |
+ | **S3 / CloudFront** | Upload `dist/`. Set the bucket as a static site, point CloudFront at it. |
+ | **Any nginx / Apache** | `cp -r dist/* /var/www/html/`. |
+diff --git a/README.zh-CN.md b/README.zh-CN.md
+index 72021e5..39318a1 100644
+--- a/README.zh-CN.md
++++ b/README.zh-CN.md
+@@ -358,6 +358,7 @@ npm run new -- reports --title "Reports" --pretitle "Admin" \
+ | 托管平台 | 说明 |
+ | --- | --- |
+ | **Netlify / Vercel / Cloudflare Pages** | 直接拖入即可，无需配置。使用默认的 `BASE_PATH=/`。 |
++| **Wasmer Edge** | [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ColorlibHQ%2Fgentelella) 导入本仓库，使用默认的 `BASE_PATH=/`。如需自定义模板并在推送后自动重新部署，请导入你自己的 fork。 |
+ | **GitHub Pages** | 执行 `BASE_PATH=/your-repo/ npm run build`，再把 `dist/` 推送到 `gh-pages`。 |
+ | **S3 / CloudFront** | 上传 `dist/`，将存储桶设为静态站点，并让 CloudFront 指向它。 |
+ | **任意 nginx / Apache** | `cp -r dist/* /var/www/html/`。 |
+-- 
+2.43.0
+

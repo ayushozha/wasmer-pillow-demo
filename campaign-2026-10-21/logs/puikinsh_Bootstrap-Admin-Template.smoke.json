@@ -1,0 +1,41 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 30,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 51700,
+      "title": "Dashboard - Modern Bootstrap Admin"
+    },
+    "/analytics.html": {
+      "status": 200,
+      "bytes": 60050,
+      "title": "Analytics Dashboard - Modern Bootstrap Admin"
+    },
+    "/calendar.html": {
+      "status": 200,
+      "bytes": 61638,
+      "title": "Calendar & Events - Modern Bootstrap Admin"
+    },
+    "/login.html": {
+      "status": 200,
+      "bytes": 7752,
+      "title": "Sign in &middot; Metis"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 4020,
+      "title": "Page not found &middot; Metis"
+    },
+    "/settings.html": {
+      "status": 200,
+      "bytes": 47228,
+      "title": "Settings & Preferences - Modern Bootstrap Admin"
+    }
+  },
+  "ok": true
+}

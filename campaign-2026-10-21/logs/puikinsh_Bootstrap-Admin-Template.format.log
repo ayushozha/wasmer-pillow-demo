@@ -1,0 +1,7 @@
+# 2026-10-22T04:37:15Z puikinsh/Bootstrap-Admin-Template prettier 3.9.6 (repo format:check = prettier --check .)
+$ npx prettier --check README.md
+Checking formatting...
+[warn] README.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+Note: unpatched base README.md also fails prettier --check (pre-existing); prettier's diff contains no change to the added Wasmer line.

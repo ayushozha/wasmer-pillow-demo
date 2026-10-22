@@ -1,21 +1,23 @@
-From 7bf9b51279c396ced334c9d4fa97c3b6800b9b3c Mon Sep 17 00:00:00 2001
+From c571fcdcc64f925fee57ea3146318d1be6182907 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:35:41 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
- README.md | 2 ++
- 1 file changed, 2 insertions(+)
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
 
 diff --git a/README.md b/README.md
-index 2028d85..6f23c12 100644
+index 2028d85..5d35f14 100644
 --- a/README.md
 +++ b/README.md
-@@ -330,6 +330,8 @@ Once you finish your setup. You need to put your website online!
+@@ -330,6 +330,10 @@ Once you finish your setup. You need to put your website online!
  
  I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
  
-+You can also deploy it on [Wasmer Edge](https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio): `npm run build` outputs the static site to `dist/`. Import your own fork or copy of this repository to publish your customized portfolio.
++You can also deploy it on Wasmer Edge: `npm run build` outputs the static site to `dist/`. Import your own fork or copy of this repository to publish your customized portfolio.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=cobiwave%2Fsimplefolio)
 +
  ## Others versions 👥
  

@@ -1,23 +1,25 @@
-From 0ff7a58b81f1b088d64a533b1583582c7aef6caf Mon Sep 17 00:00:00 2001
+From 36ad3627e94443a72dad668c1f4cb94e7d3d46fb Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:36:08 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
- README.md | 4 ++++
- 1 file changed, 4 insertions(+)
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
 
 diff --git a/README.md b/README.md
-index 93cd2d3..5536b02 100644
+index 93cd2d3..b5ffaf7 100644
 --- a/README.md
 +++ b/README.md
-@@ -230,6 +230,10 @@ If you are stuck somewhere and want to observe the deployment process in depth,
+@@ -230,6 +230,12 @@ If you are stuck somewhere and want to observe the deployment process in depth,
    </a>
  </p>
  
 +**Deploy on Wasmer Edge:**
 +
-+- `npm run build` outputs the static site to the `build` folder. To host it on Wasmer Edge instead, import your own copy of this repository from the [Wasmer import page](https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio) so the deployed site includes your customizations.
++- `npm run build` outputs the static site to the `build` folder. To host it on Wasmer Edge instead, import your own copy of this repository so the deployed site includes your customizations.
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio)
 +
  # Technologies used 🛠️
  

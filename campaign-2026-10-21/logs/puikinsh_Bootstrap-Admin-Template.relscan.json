@@ -1,0 +1,27 @@
+{
+ "dir": "/tmp/claude-0/camp2/puikinsh_Bootstrap-Admin-Template/dist-modern",
+ "relative_refs_checked": 879,
+ "missing_count": 28,
+ "missing": [
+  "analytics.html -> result.url",
+  "calendar.html -> result.url",
+  "elements-cards.html -> ...",
+  "elements.html -> result.url",
+  "files.html -> result.url",
+  "forms.html -> result.url",
+  "help.html -> result.url",
+  "index.html -> result.url",
+  "messages.html -> conversation.avatar",
+  "messages.html -> result.url",
+  "messages.html -> selectedConversation",
+  "orders.html -> order.customer.avatar",
+  "orders.html -> result.url",
+  "products.html -> product.image",
+  "products.html -> result.url",
+  "reports.html -> result.url",
+  "security.html -> result.url",
+  "settings.html -> result.url",
+  "users.html -> result.url",
+  "users.html -> user.avatar"
+ ]
+}

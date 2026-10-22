@@ -1,4 +1,4 @@
-From bf2787fbb86e607ac400d2df217e80615e62dde4 Mon Sep 17 00:00:00 2001
+From 81c356ed0cdba183819c95a80146acba759fd89b Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Thu, 22 Oct 2026 04:34:49 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
@@ -8,14 +8,14 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  1 file changed, 2 insertions(+)
 
 diff --git a/README.md b/README.md
-index afdc862..d795951 100644
+index afdc862..f3899a7 100644
 --- a/README.md
 +++ b/README.md
 @@ -100,6 +100,8 @@ Below are some fantastic examples of websites based on this template. If you wis
     | `bun run format`       | Format all files using [Biome](https://biomejs.dev/) |
     | `bun run format:check` | Check formatting without writing                  |
  
-+6. To deploy on Wasmer Edge, [import a repository on Wasmer](https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite). The link imports this public template for a build and does not copy it into your GitHub account, so import the repository you created from this template instead to customize your site and redeploy on push.
++6. To deploy on Wasmer Edge, import a repository on Wasmer: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite) The link imports this public template for a build and does not copy it into your GitHub account, so import the repository you created from this template instead to customize your site and redeploy on push.
 +
  ### Site configuration
  

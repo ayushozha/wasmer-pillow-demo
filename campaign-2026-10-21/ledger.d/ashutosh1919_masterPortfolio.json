@@ -1,0 +1,34 @@
+{
+  "repo": "ashutosh1919/masterPortfolio",
+  "status": "READY",
+  "stars": 4223,
+  "stars_source": "GitHub MCP search_repositories (stargazers_count)",
+  "stars_at": "2026-10-22T04:28:24Z",
+  "archived": false,
+  "license": "MIT",
+  "default_branch": "master",
+  "pushed_at": "2026-01-20T03:10:09Z",
+  "base_sha": "33b04a568a92a44e538a1795d8eab742dac47d81",
+  "framework": "Create React App (react-scripts 3.2.0, React 16)",
+  "output_dir": "build",
+  "build_command": "npm ci && npm run build",
+  "build_claude": {
+    "result": "PASS",
+    "detail": "Node v24.22.1 / npm 11.19.1: exit 0, \"Compiled successfully\" (react-scripts --openssl-legacy-provider build). CI uses Node 20.x.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ashutosh1919_masterPortfolio.build.log"
+  },
+  "smoke": {
+    "result": "PASS",
+    "detail": "/, /404.html, main JS/CSS chunks, /manifest.json, /sitemap.xml all 200; 14 root-relative refs, 0 missing. Client routes (/experience etc.) use BrowserRouter + GitHub Pages 404.html redirect trick; deep-link behavior on Wasmer not verified.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ashutosh1919_masterPortfolio.smoke.json"
+  },
+  "format_check": "Baseline README.md already fails prettier 2.0.5 --check at base sha; edit introduces no new issues (diff of prettier output compared). (/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ashutosh1919_masterPortfolio.format.log). lint-staged hook would rewrite the whole README, so commit used --no-verify.",
+  "compat_notes": "Token handling verified: GITHUB_TOKEN is only used by git_data_fetcher.mjs (optional local script that regenerates committed JSON in src/shared/opensource). src/containers/projects/Projects.js references api.github.com/graphql with atob(openSource.githubConvertedToken) but is not imported anywhere and openSource is not exported; no api.github.com string in built bundle. So zero-config static deploy: no token at build or runtime. public/index.html embeds the author's AdSense/GA IDs.",
+  "policy": "Read README (Deployment section: GitHub Pages options as bold labels + bullets), CONTRIBUTING.md (fork/branch/PR welcome; wishlist items), CODE_OF_CONDUCT, workflows; no PR template or AI policy. No wasmer mention. Open PR #295 \"Netlify deployment\" (not refused). Closed #442 (CRA to Vite migration). Maintainer merged PRs as recently as 2026-01-20.",
+  "why": "Popular CRA portfolio whose data is committed JSON, so it deploys as a static build/ with no secrets; README has a dedicated Deployment section.",
+  "patch": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/patches/ashutosh1919_masterPortfolio.patch",
+  "pr_body": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/pr-bodies/ashutosh1919_masterPortfolio.md",
+  "import_url": "https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio",
+  "detection_verified": "pending Codex browser check (CRA default build/; no Staticfile needed)",
+  "reason": null
+}

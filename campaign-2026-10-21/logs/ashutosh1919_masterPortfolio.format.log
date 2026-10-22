@@ -1,8 +1,8 @@
-# 2026-10-22T04:35:31Z prettier 2.0.5
+# 2026-10-22T04:37:58Z prettier 2.0.5
 $ npx prettier --check README.md
 Checking formatting...
 README.md
 Code style issues found in the above file(s). Forgot to run Prettier?
 EXIT 1
-# Baseline README.md at base sha also fails --check (pre-existing). Prettier diff on edited README vs prettier diff on base README:
-(empty above = no new formatting issues introduced by the edit, aside from line-number shifts)
+# Baseline README.md at base sha also fails --check (pre-existing). Diff between prettier's changes on the edited README and on the base README:
+(empty above = edit introduces no new formatting issues, apart from line-number shifts)

@@ -1,0 +1,18 @@
+# 2026-10-22T04:37:05Z anybuild 0.33.0 (wasmerio/shipit@587be231, local release build) plan on clean clone of codewithsadee_vcard-personal-portfolio @ 927f09a6ef894a24cc8aef7a2e51f8e93ac306f7
+$ anybuild plan codewithsadee_vcard-personal-portfolio --out codewithsadee_vcard-personal-portfolio.plan.json
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/codewithsadee_vcard-personal-portfolio/Anybuild
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/codewithsadee_vcard-personal-portfolio.plan.json
+EXIT 0
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "codewithsadee_vcard-personal-portfolio",
+        "commands": {
+            "start": "static-web-server --root=/tmp/claude-0/-home-user-wasmer-pillow-demo/2c9610ed-7a21-56b4-8682-461ec2d91054/scratchpad/plan/codewithsadee_vcard-personal-portfolio/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        }
+    },
+    "services": []
+}

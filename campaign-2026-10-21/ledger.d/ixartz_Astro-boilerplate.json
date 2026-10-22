@@ -1,0 +1,38 @@
+{
+  "repo": "ixartz/Astro-boilerplate",
+  "status": "HELD_BUILD",
+  "stars": 915,
+  "stars_source": "GitHub MCP search_repositories (stargazers_count)",
+  "stars_at": "2026-10-22T04:28:24Z",
+  "archived": false,
+  "license": "none detected (no LICENSE file, no package.json license field; GitHub API reports no license)",
+  "default_branch": "main",
+  "pushed_at": "2025-08-31T15:10:55Z",
+  "base_sha": "59205bc6cf56fd984c7ad1cb9f3e8ed86e0b3884",
+  "framework": "Astro 4.0.2 (static, no adapter; React + Tailwind integrations)",
+  "output_dir": "dist",
+  "build_command": "npm ci && npm run build",
+  "build_claude": {
+    "result": "FAIL",
+    "detail": "npm ci fails EUSAGE on Node 24.22.1/npm 11.19.1 and on Node 20.19.5/npm 10.8.2 (.nvmrc lts/iron): package-lock.json out of sync with package.json (\"Missing: @types/react-dom@18.3.7 from lock file\"). Diagnostic only: non-frozen `npm install && npm run build` on Node 20 exits 0 (10 pages); lockfile restored afterwards.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ixartz_Astro-boilerplate.build.log",
+    "other_logs": [
+      "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ixartz_Astro-boilerplate.node24.build.log",
+      "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ixartz_Astro-boilerplate.diag-npm-install.build.log"
+    ]
+  },
+  "smoke": {
+    "result": "FAIL (diagnostic build only)",
+    "detail": "Routes /, /posts/, /posts/first-post/, /posts/2/, /sitemap.xml, /robots.txt return 200, but /rss.xml (linked from every page via Base.astro) is not emitted: src/pages/rss.xml.ts exports lowercase `get`, which Astro 4 no longer recognizes. Also /src/images/random.jpeg referenced in sixth-post.md does not exist in output. Both are real upstream bugs, host-independent.",
+    "log": "/home/user/wasmer-pillow-demo/campaign-2026-10-21/logs/ixartz_Astro-boilerplate.diag.smoke.json"
+  },
+  "format_check": "not run (no patch prepared)",
+  "compat_notes": "No CI workflow in repo; netlify.toml uses `npm run build` publish dist. .npmrc contains pnpm-only shamefully-hoist (npm warns). Lockfile drift means a frozen install fails on any host that uses npm ci.",
+  "policy": "Read README (has \"Deploy to Netlify\" button section, \"Contributions\" section: open to contributions), .github (FUNDING.yml only, no PR template/CONTRIBUTING), commitlint conventional commits. No wasmer mention; no wasmer PRs found. PR #27 \"Add GitHub Actions workflow for Astro deployment\" closed 2026-08-07 (outcome not inspected; MCP pull_request_read is not permitted for this repo in this session). Last push 2025-08-31 (README docs commit); the repo is largely sponsor/marketing-maintained.",
+  "why": "Would fit next to the existing \"Deploy to Netlify\" button, but frozen install fails at the pinned sha.",
+  "patch": null,
+  "pr_body": null,
+  "import_url": "https://wasmer.io/apps/create?github=ixartz%2FAstro-boilerplate",
+  "detection_verified": "pending Codex browser check (default Astro dist)",
+  "reason": "npm ci fails: package-lock.json out of sync (missing @types/react-dom@18.3.7). Also RSS endpoint broken (lowercase `get` under Astro 4). Revisit if upstream refreshes the lockfile."
+}
