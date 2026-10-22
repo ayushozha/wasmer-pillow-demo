@@ -1262,7 +1262,8 @@
       "pr_body": null,
       "import_url": "https://wasmer.io/apps/create?github=TailAdmin%2Ffree-react-tailwind-admin-dashboard",
       "detection_verified": "needs Codex check of SPA fallback",
-      "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer behavior unverified. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22)."
+      "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer behavior unverified. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22).",
+      "root_wasi_replay": "Root actual-WASI 2026-10-22 (Wasmer 7.5.0, wasmer/static-web-server@=1.1.0 = SWS 2.32.2; sws.toml at /opt/static_config/sws.toml, files at /opt/static_app; base npm ci/build Node 24.22.1/npm 11.19.1 exit 0): all 15 known routes + encoded-query variants 200 exact root index; JS/CSS 200; unknown route / missing asset / nested unknown 404; HEAD /profile 200. FAIL only: all 15 trailing-slash variants 404 (matches native matrix); 51-request receipt all_pass=false for those 15. Correction in progress: per-route globset alternation {/route,/route/}."
     },
     {
       "repo": "arifszn/gitprofile",
@@ -3123,5 +3124,6 @@
   "sws_rewrite_probe": "Root actual-WASI PASS 2026-10-22: Wasmer 7.5.0 + wasmer/static-web-server@=1.1.0 (SWS 2.32.2) with research/sws-2.32.2-spa-rewrite-probe-deep-only.toml (sha256 7649abfa08af23c6e10f39f829fd67ec66c0220f8ca603ca36a5a44cda395bb7): /index.html and /__wasmer_spa_probe__/deep 200 byte-identical (sha256 230e6756\u20262e54d); unrelated route 404; existing CSS 200; missing asset 404. Receipt held by root (validation/sws2322-rewrite-config/receipt.json). Next: Anybuild static_redirects_config wiring on one representative SPA (TailAdmin React) before any other HELD_RUNTIME candidate.",
   "root_research_notes": [
     "2026-10-22: PaperKnife hosting PR #17 was closed by its own author with no maintainer objection; not a provider ban."
-  ]
+  ],
+  "publication_pause": "2026-10-22: GitHub returned 403 'submitted too quickly' on the next fork; all public mutations paused at 41. Root handles official backoff/serial queue; no account workaround. This session continues local validation/prep only."
 }

@@ -1,0 +1,7 @@
+# 2026-10-22T06:08:19Z caveat check: env override of static_redirects_config
+$ ANYBUILD_STATIC_REDIRECTS_CONFIG='# overridden' anybuild plan . -o /tmp/claude-0/rw/plan-env.json
+EXIT 0
+static_redirects_config = '# overridden'
+$ SHIPIT_STATIC_REDIRECTS_CONFIG='# overridden' anybuild plan . -o /tmp/claude-0/rw/plan-env.json
+EXIT 0
+static_redirects_config = '# overridden'

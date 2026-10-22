@@ -1,0 +1,36 @@
+{
+ "anybuild": "0.33.0",
+ "base_sha": "3436358dcd03d9f9e071d51ea071e0a78c0322e4",
+ "patched_sha": "54ea8748d8f889b0ac560eb2d19b093968609afa",
+ "base": {
+  "provider": "node",
+  "config": {
+   "name": "pmotschmann_Evolve-base",
+   "commands": {
+    "install": "npm install",
+    "build": "npm run build",
+    "start": "node src/index.js"
+   },
+   "node_package_manager": "npm",
+   "node_server": "node",
+   "node_build_command": "npm run build",
+   "npm_version": "11",
+   "node_install_inputs": [
+    "package.json"
+   ],
+   "node_package_name": "evolveidle"
+  },
+  "services": []
+ },
+ "patched": {
+  "provider": "staticfile",
+  "config": {
+   "name": "pmotschmann_Evolve-patched",
+   "commands": {
+    "start": "static-web-server --root=/tmp/claude-0/camp2/wt/pmotschmann_Evolve-patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+   },
+   "static_dir": "."
+  },
+  "services": []
+ }
+}

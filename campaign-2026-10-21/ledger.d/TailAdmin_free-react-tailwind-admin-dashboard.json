@@ -22,5 +22,6 @@
   "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=TailAdmin%2Ffree-react-tailwind-admin-dashboard",
   "detection_verified": "needs Codex check of SPA fallback",
-  "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer behavior unverified. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22)."
+  "reason": "Browser-history SPA: deep links 404 without index.html fallback; Wasmer behavior unverified. | HELD_RUNTIME: needs index.html fallback for history routes; Wasmer runtime SWS 2.32.2 wasm has no fallback (root probe 2026-10-22).",
+  "root_wasi_replay": "Root actual-WASI 2026-10-22 (Wasmer 7.5.0, wasmer/static-web-server@=1.1.0 = SWS 2.32.2; sws.toml at /opt/static_config/sws.toml, files at /opt/static_app; base npm ci/build Node 24.22.1/npm 11.19.1 exit 0): all 15 known routes + encoded-query variants 200 exact root index; JS/CSS 200; unknown route / missing asset / nested unknown 404; HEAD /profile 200. FAIL only: all 15 trailing-slash variants 404 (matches native matrix); 51-request receipt all_pass=false for those 15. Correction in progress: per-route globset alternation {/route,/route/}."
 }

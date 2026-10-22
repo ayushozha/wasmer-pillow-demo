@@ -1,0 +1,135 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/pmotschmann_Evolve/opt/temp",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 3230
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 3230
+      }
+    ],
+    "/wiki.html": [
+      {
+        "path": "/wiki.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2570
+      }
+    ],
+    "/save.html": [
+      {
+        "path": "/save.html",
+        "status": 200,
+        "location": null,
+        "bytes": 1321
+      }
+    ],
+    "/evolve/main.js": [
+      {
+        "path": "/evolve/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 2303101
+      }
+    ],
+    "/evolve/evolve.css": [
+      {
+        "path": "/evolve/evolve.css",
+        "status": 200,
+        "location": null,
+        "bytes": 194688
+      }
+    ],
+    "/wiki/wiki.js": [
+      {
+        "path": "/wiki/wiki.js",
+        "status": 200,
+        "location": null,
+        "bytes": 2432597
+      }
+    ],
+    "/wiki/wiki.css": [
+      {
+        "path": "/wiki/wiki.css",
+        "status": 200,
+        "location": null,
+        "bytes": 5965
+      }
+    ],
+    "/strings/strings.json": [
+      {
+        "path": "/strings/strings.json",
+        "status": 200,
+        "location": null,
+        "bytes": 849541
+      }
+    ],
+    "/strings/strings.cs-CZ.json": [
+      {
+        "path": "/strings/strings.cs-CZ.json",
+        "status": 200,
+        "location": null,
+        "bytes": 355751
+      }
+    ],
+    "/strings/strings.ja-JP.json": [
+      {
+        "path": "/strings/strings.ja-JP.json",
+        "status": 200,
+        "location": null,
+        "bytes": 971284
+      }
+    ],
+    "/lib/lz-string.min.js": [
+      {
+        "path": "/lib/lz-string.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4718
+      }
+    ],
+    "/lib/buefy.min.0.9.22.css": [
+      {
+        "path": "/lib/buefy.min.0.9.22.css",
+        "status": 200,
+        "location": null,
+        "bytes": 360857
+      }
+    ],
+    "/font/weathericons-regular-webfont.eot": [
+      {
+        "path": "/font/weathericons-regular-webfont.eot",
+        "status": 200,
+        "location": null,
+        "bytes": 99774
+      }
+    ],
+    "/evolved.ico": [
+      {
+        "path": "/evolved.ico",
+        "status": 200,
+        "location": null,
+        "bytes": 107706
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

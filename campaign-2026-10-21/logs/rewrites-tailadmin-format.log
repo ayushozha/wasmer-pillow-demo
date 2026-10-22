@@ -1,0 +1,12 @@
+# 2026-10-22T06:07:22Z prettier 3.9.6 (repo devDependency, from the Anybuild build's npm ci) with repo .prettierrc
+$ prettier --check README.md (patched)
+Checking formatting...
+[warn] README.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+$ prettier --check README.md (base, via git show)
+Checking formatting...
+[warn] README.base-check.md
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+EXIT 1
+Deploy section unchanged by prettier (base README already fails --check outside this section)

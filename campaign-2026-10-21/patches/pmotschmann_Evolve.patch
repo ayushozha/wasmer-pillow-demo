@@ -1,0 +1,34 @@
+From 54ea8748d8f889b0ac560eb2d19b093968609afa Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 06:07:45 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md  | 5 +++++
+ Staticfile | 1 +
+ 2 files changed, 6 insertions(+)
+ create mode 100644 Staticfile
+
+diff --git a/README.md b/README.md
+index 0c5f6e0..72eab23 100644
+--- a/README.md
++++ b/README.md
+@@ -80,3 +80,8 @@ docker build . -t evolve
+ # Run evolve server. Default address: http://localhost:8080/
+ docker run --name evolve -p 8080:80 -d evolve
+ ```
++
++## Wasmer Edge
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=pmotschmann%2FEvolve)
++
++To host your own copy, fork this repository first and import your fork. The import serves the repository you choose and does not copy it into your GitHub account. The root `Staticfile` makes Wasmer serve the committed game files (`index.html`, `wiki.html`, `evolve/`, `wiki/`, `lib/`, `strings/`, `font/`) as they are, without running `npm run build`. If you change the source, rebuild and commit `evolve/` and `wiki/` in your fork before deploying. Saves are stored in each player's browser for that site, so use Export/Import to move a save between hosts. The pages include this project's Google Analytics tag (`G-CPC46V71CB`); change or remove it in your fork.
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..fdbb02c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: .
+-- 
+2.43.0
+

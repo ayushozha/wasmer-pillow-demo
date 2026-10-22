@@ -1,2 +1,91 @@
 # 2026-10-22T06:05:40Z NEGATIVE CONTROL: same SHA, unedited generated Anybuild (sha256 c0df3e4d0df91b9b43fe9a432b279a29eeb27ddeb891cb786ebd87e10c394346)
 $ anybuild build . --builder=local
+  static-web-server  │  2.38.0  │  only deploy
+    $ static-web-server --root=/tmp/claude-0/rw/neg/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+  │ Build complete in 21.92s │
+│   2 static-web-server --root=/tmp/claude-0/rw/neg/free-react-tailwind-admin- │
+static_config dir exists: no
+--- start script ---
+#!/bin/bash
+static-web-server --root=/tmp/claude-0/rw/neg/free-react-tailwind-admin-dashboard/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+dist tree identical to rewrite build
+# 2026-10-22T06:06:11Z negative-control serve via anybuild run --start with /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+server pid 661 exe /tmp/claude-0/tools/sws-2.32.2/bin/static-web-server
+2026-10-22T06:06:11.154616Z  INFO static_web_server::info: fallback page: enabled=false, value=""
+index.html sha256=dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5 size=455
+REQUEST                            STATUS CONTENT-TYPE               BYTES     SHA256[:10] NOTE
+/                                  200    text/html                  455       dc1a7e1e1b body==index.html
+/index.html                        200    text/html                  455       dc1a7e1e1b body==index.html
+/profile                           404    text/html; charset=utf-8   106       10c24a13a7 
+/calendar                          404    text/html; charset=utf-8   106       10c24a13a7 
+/blank                             404    text/html; charset=utf-8   106       10c24a13a7 
+/form-elements                     404    text/html; charset=utf-8   106       10c24a13a7 
+/basic-tables                      404    text/html; charset=utf-8   106       10c24a13a7 
+/alerts                            404    text/html; charset=utf-8   106       10c24a13a7 
+/avatars                           404    text/html; charset=utf-8   106       10c24a13a7 
+/badge                             404    text/html; charset=utf-8   106       10c24a13a7 
+/buttons                           404    text/html; charset=utf-8   106       10c24a13a7 
+/images                            308                               0         e3b0c44298  location=http://127.0.0.1:8080/images/
+/videos                            404    text/html; charset=utf-8   106       10c24a13a7 
+/line-chart                        404    text/html; charset=utf-8   106       10c24a13a7 
+/bar-chart                         404    text/html; charset=utf-8   106       10c24a13a7 
+/signin                            404    text/html; charset=utf-8   106       10c24a13a7 
+/signup                            404    text/html; charset=utf-8   106       10c24a13a7 
+/profile?x=1                       404    text/html; charset=utf-8   106       10c24a13a7 
+/calendar?view=month&d=1           404    text/html; charset=utf-8   106       10c24a13a7 
+/profile/                          404    text/html; charset=utf-8   106       10c24a13a7 
+/images/                           404    text/html; charset=utf-8   106       10c24a13a7 
+/profile/extra                     404    text/html; charset=utf-8   106       10c24a13a7 
+/Profile                           404    text/html; charset=utf-8   106       10c24a13a7 
+/nope                              404    text/html; charset=utf-8   106       10c24a13a7 
+/does/not/exist                    404    text/html; charset=utf-8   106       10c24a13a7 
+/404.html                          404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.js                    404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.css                   404    text/html; charset=utf-8   106       10c24a13a7 
+/images/nope.png                   404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/index-BCqG7Liu.js          200    text/javascript            2009250   2d73e4317f 
+/assets/index-lqHzMpjd.css         200    text/css                   179599    688da9f146 
+/favicon.png                       200    image/png                  2367      e8171c5230 
+/images/favicon.ico                200    image/x-icon               15406     3a63e12d5d 
+/images/logo/logo.svg              200    image/svg+xml              6391      8fb3c41267 
+HEAD /profile -> 404
+# 2026-10-22T06:06:12Z negative-control serve via anybuild run --start with /tmp/claude-0/tools/sws/bin/static-web-server
+server pid 823 exe /tmp/claude-0/tools/sws/bin/static-web-server
+2026-10-22T06:06:12.851455Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+index.html sha256=dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5 size=455
+REQUEST                            STATUS CONTENT-TYPE               BYTES     SHA256[:10] NOTE
+/                                  200    text/html                  455       dc1a7e1e1b body==index.html
+/index.html                        200    text/html                  455       dc1a7e1e1b body==index.html
+/profile                           404    text/html; charset=utf-8   106       10c24a13a7 
+/calendar                          404    text/html; charset=utf-8   106       10c24a13a7 
+/blank                             404    text/html; charset=utf-8   106       10c24a13a7 
+/form-elements                     404    text/html; charset=utf-8   106       10c24a13a7 
+/basic-tables                      404    text/html; charset=utf-8   106       10c24a13a7 
+/alerts                            404    text/html; charset=utf-8   106       10c24a13a7 
+/avatars                           404    text/html; charset=utf-8   106       10c24a13a7 
+/badge                             404    text/html; charset=utf-8   106       10c24a13a7 
+/buttons                           404    text/html; charset=utf-8   106       10c24a13a7 
+/images                            308                               0         e3b0c44298  location=http://127.0.0.1:8080/images/
+/videos                            404    text/html; charset=utf-8   106       10c24a13a7 
+/line-chart                        404    text/html; charset=utf-8   106       10c24a13a7 
+/bar-chart                         404    text/html; charset=utf-8   106       10c24a13a7 
+/signin                            404    text/html; charset=utf-8   106       10c24a13a7 
+/signup                            404    text/html; charset=utf-8   106       10c24a13a7 
+/profile?x=1                       404    text/html; charset=utf-8   106       10c24a13a7 
+/calendar?view=month&d=1           404    text/html; charset=utf-8   106       10c24a13a7 
+/profile/                          404    text/html; charset=utf-8   106       10c24a13a7 
+/images/                           404    text/html; charset=utf-8   106       10c24a13a7 
+/profile/extra                     404    text/html; charset=utf-8   106       10c24a13a7 
+/Profile                           404    text/html; charset=utf-8   106       10c24a13a7 
+/nope                              404    text/html; charset=utf-8   106       10c24a13a7 
+/does/not/exist                    404    text/html; charset=utf-8   106       10c24a13a7 
+/404.html                          404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.js                    404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/nope.css                   404    text/html; charset=utf-8   106       10c24a13a7 
+/images/nope.png                   404    text/html; charset=utf-8   106       10c24a13a7 
+/assets/index-BCqG7Liu.js          200    text/javascript            2009250   2d73e4317f 
+/assets/index-lqHzMpjd.css         200    text/css                   179599    688da9f146 
+/favicon.png                       200    image/png                  2367      e8171c5230 
+/images/favicon.ico                200    image/x-icon               15406     3a63e12d5d 
+/images/logo/logo.svg              200    image/svg+xml              6391      8fb3c41267 
+HEAD /profile -> 404

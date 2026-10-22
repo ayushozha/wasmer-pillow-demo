@@ -1,0 +1,17 @@
+# 2026-10-22T06:08:12Z caveat check: regenerate on patched tree
+$ anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/rw/check-patched/free-react-tailwind-admin-dashboard/Anybuild
+EXIT 0
+0
+ .../Anybuild => Anybuild                           | 64 ----------------------
+ 1 file changed, 64 deletions(-)

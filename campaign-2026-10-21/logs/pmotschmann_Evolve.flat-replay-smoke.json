@@ -1,0 +1,56 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/pmotschmann_Evolve/opt/temp/.",
+  "base": "/",
+  "html_files": 3,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 3230,
+      "title": "Evolve"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 3230,
+      "title": "Evolve"
+    },
+    "/wiki.html": {
+      "status": 200,
+      "bytes": 2570,
+      "title": "Evolve Wiki"
+    },
+    "/save.html": {
+      "status": 200,
+      "bytes": 1321,
+      "title": "Evolve Save String"
+    },
+    "/evolve/main.js": {
+      "status": 200,
+      "bytes": 2303101,
+      "title": null
+    },
+    "/evolve/evolve.css": {
+      "status": 200,
+      "bytes": 194688,
+      "title": null
+    },
+    "/wiki/wiki.js": {
+      "status": 200,
+      "bytes": 2432597,
+      "title": null
+    },
+    "/strings/strings.json": {
+      "status": 200,
+      "bytes": 849446,
+      "title": null
+    },
+    "/lib/lz-string.min.js": {
+      "status": 200,
+      "bytes": 4718,
+      "title": null
+    }
+  },
+  "ok": true
+}
