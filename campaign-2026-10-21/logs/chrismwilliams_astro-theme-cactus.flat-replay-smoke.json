@@ -1,0 +1,51 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp/dist",
+  "base": "/",
+  "html_files": 22,
+  "local_refs_checked": 41,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 14994,
+      "title": "Home \u2022 Astro Cactus"
+    },
+    "/posts/": {
+      "status": 200,
+      "bytes": 16081,
+      "title": "Posts \u2022 Astro Cactus"
+    },
+    "/notes/": {
+      "status": 200,
+      "bytes": 11494,
+      "title": "Notes \u2022 Astro Cactus"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 10982,
+      "title": "About \u2022 Astro Cactus"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 10457,
+      "title": "Oops! You found a missing page! \u2022 Astro Cactus"
+    },
+    "/pagefind/pagefind.js": {
+      "status": 200,
+      "bytes": 45555,
+      "title": null
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 2531,
+      "title": "Astro Cactus"
+    },
+    "/manifest.webmanifest": {
+      "status": 200,
+      "bytes": 539,
+      "title": null
+    }
+  },
+  "ok": true
+}

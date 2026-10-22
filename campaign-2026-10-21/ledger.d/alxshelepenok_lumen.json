@@ -1,6 +1,6 @@
 {
   "repo": "alxshelepenok/lumen",
-  "status": "READY",
+  "status": "HELD_POLICY",
   "stars": 2018,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:14Z",
@@ -20,8 +20,8 @@
   "policy": "No CONTRIBUTING/PR template/AGENTS.md. README had no deployment section (Quick Start only); badge row under h1 is owner-curated via .grove W-148 acceptance criteria, so a plain Deploy section was added instead of a badge. Owner directive D-46: no wrangler config checked in (Cloudflare only). External PRs are merged occasionally (e.g. #2096, 2026-09-18). No Wasmer mention in repo/PRs; no provider-button refusals found.",
   "why": "2k-star long-lived static blog architecture; output: static Astro, zero client JS; only blocker for Wasmer is the custom outDir, handled by a 1-line Staticfile.",
   "patch": "patches/alxshelepenok_lumen.patch (README.md + Staticfile)",
-  "pr_body": "pr-bodies/alxshelepenok_lumen.md",
+  "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=alxshelepenok%2Flumen",
-  "reason": null,
+  "reason": "Repo decision record .grove/state.lock (line ~4262) and D-46: 'Deploy configuration stays out of repository'. The patch needs a Staticfile (root: target) to deploy correctly, which conflicts with that rule; a README-only patch would deploy the wrong dir. Reported by root independent review. Do not publish.",
   "detect_log": "logs/alxshelepenok_lumen.detect.json"
 }

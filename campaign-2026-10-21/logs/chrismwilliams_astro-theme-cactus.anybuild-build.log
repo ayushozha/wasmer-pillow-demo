@@ -1,4 +1,4 @@
-# 2026-10-22T04:41:12Z chrismwilliams/astro-theme-cactus patched commit 5dfcd98afb77a70e03543a21caeb7b06959893af (base 728f1f4eeb80208398649261d7635f311cafa011) anybuild 0.33.0 local builder, host node v24.22.1
+# 2026-10-22T04:45:22Z chrismwilliams/astro-theme-cactus patched commit 5dfcd98afb77a70e03543a21caeb7b06959893af (base 728f1f4eeb80208398649261d7635f311cafa011) anybuild 0.33.0 local builder, host node v24.22.1
 $ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
 ╭─────────────────╮
 │ Anybuild 0.33.0 │
@@ -56,7 +56,29 @@ $ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=l
   Copying package.json to /opt/temp/package.json
 
   $ pnpm install # using package.json
- ERROR  packages field missing or empty
-For help, run: pnpm help install
-Error: build failed for .: Command failed with exit code 1: pnpm install: Command failed with exit code 1: pnpm install
+../../../../..                           | Progress: resolved 1, reused 0, downloaded 0, added 0
+../../../../..                           | +457 ++++++++++++++++++++++++++++++++
+../../../../..                           | Progress: resolved 457, reused 457, downloaded 0, added 457, done
+../../../../.. postinstall$ npm rebuild sharp --force
+../../../../.. postinstall: npm warn using --force Recommended protections disabled.
+../../../../.. postinstall: npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+../../../../.. postinstall: npm warn Unknown env config "npm-globalconfig". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+../../../../.. postinstall: npm warn Unknown env config "overrides". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+../../../../.. postinstall: npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+../../../../.. postinstall: npm warn rebuild 33 packages have install scripts not yet covered by allowScripts. Run `npm install-scripts ls` to review.
+../../../../.. postinstall: rebuilt dependencies successfully
+../../../../.. postinstall: Done
+Done in 3.4s using pnpm v10.34.7
+
+  Copy to . from . # ignoring node_modules, .git, pnpm-lock.yaml
+
+  $ pnpm run build
+
+> astro-cactus@8.3.0 build /tmp/claude-0/e2e/chrismwilliams_astro-theme-cactus/.anybuild/local/build/opt/temp
+> astro build
+
+sh: 1: astro: not found
+ ELIFECYCLE  Command failed.
+ WARN   Local package.json exists, but node_modules missing, did you mean to install?
+Error: build failed for .: Command failed with exit code 1: pnpm run build: Command failed with exit code 1: pnpm run build
 EXIT 1

@@ -1,0 +1,36 @@
+{
+  "dir": "build",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 2,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 1464,
+      "title": "A React Landing Page Template"
+    },
+    "/static/js/main.601d032c.js": {
+      "status": 200,
+      "bytes": 159621,
+      "title": null
+    },
+    "/img/intro-bg.jpg": {
+      "status": 200,
+      "bytes": 82496,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 67,
+      "title": null
+    },
+    "/asset-manifest.json": {
+      "status": 200,
+      "bytes": 369,
+      "title": null
+    }
+  },
+  "ok": true
+}

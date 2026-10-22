@@ -1,0 +1,156 @@
+# 2026-10-22T04:46:04Z surjithctly/astroship patched commit 80f3672fbf5bcab7a4b8bcd7e3dcb1c4bad4e384 (base da1272bb141abf42a3435d81774df92f0427ad57) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/surjithctly_astroship/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  pnpm               │  10      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ pnpm install
+
+  ▸ build
+    $ pnpm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/surjithctly_astroship/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, pnpm@10
+
+  Working in /opt/temp
+
+  Copy to pnpm-lock.yaml from pnpm-lock.yaml
+
+  Setting environment variables: pnpm_config_minimum_release_age="0" CI="true" pnpm_config_dangerously_allow_all_builds="true" pnpm_config_strict_dep_builds="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ pnpm install # using package.json
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +239
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 239, reused 187, downloaded 25, added 198
+Progress: resolved 239, reused 187, downloaded 52, added 239, done
+
+dependencies:
++ @astrojs/mdx 8.0.2
++ @astrojs/sitemap 3.7.4
++ @fontsource-variable/bricolage-grotesque 5.3.0
++ @fontsource-variable/inter 5.3.0
++ @iconify-json/bx 1.2.3
++ @iconify-json/simple-icons 1.2.98
++ @iconify-json/uil 1.2.3
++ @tailwindcss/typography 0.5.20
++ @tailwindcss/vite 4.3.3
++ astro 7.3.5
++ astro-icon 1.2.0
++ astro-navbar 2.4.0
++ astro-seo 1.2.0
++ sharp 0.35.5
++ tailwindcss 4.3.3
+
+Done in 2.4s using pnpm v9.15.9
+
+  Copy to . from . # ignoring node_modules, .git, pnpm-lock.yaml
+
+  $ pnpm run build
+
+> astroship@4.0.0 build /tmp/claude-0/e2e/surjithctly_astroship/.anybuild/local/build/opt/temp
+> astro build
+
+[2m04:46:09[22m [34m[content][39m Syncing content
+[2m04:46:09[22m [34m[content][39m Synced content
+[2m04:46:09[22m [34m[types][39m Generated [2m1.23s[22m
+[2m04:46:09[22m [34m[build][39m output: [34m"static"[39m
+[2m04:46:09[22m [34m[build][39m mode: [34m"static"[39m
+[2m04:46:09[22m [34m[build][39m directory: [34m/tmp/claude-0/e2e/surjithctly_astroship/.anybuild/local/build/opt/temp/dist/[39m
+[2m04:46:09[22m [34m[build][39m Collecting build info...
+[2m04:46:09[22m [34m[build][39m [32m✓ Completed in 1.31s.[39m
+[2m04:46:09[22m [34m[build][39m Building static entrypoints...
+[33m[1m04:46:10[22m [WARN] [astro-icon][39m Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+[33m[1m04:46:11[22m [WARN] [vite][39m [33m[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/blog/kitchensink.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/blog/kitchensink.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+[39m
+[2m04:46:11[22m [34m[vite][39m [32m✓ built in 1.30s[39m
+[2m04:46:11[22m [34m[vite][39m [32m✓ built in 30ms[39m
+[2m04:46:11[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m04:46:11[22m   [34m├─[39m [2m/404.html[22m [2m(+21ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/about/index.html[22m [2m(+16ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/blog/complete-guide-fullstack-development/index.html[22m [2m(+6ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/blog/essential-data-structures-algorithms/index.html[22m [2m(+4ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/blog/how-to-become-frontend-master/index.html[22m [2m(+3ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/blog/kitchensink/index.html[22m [2m(+17ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+6ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+59ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/pricing/index.html[22m [2m(+4ms)[22m 
+[2m04:46:11[22m   [34m├─[39m [2m/index.html[22m [2m(+7ms)[22m 
+[2m04:46:11[22m [32m✓ Completed in 195ms.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_Z27n3GP.webp [2m(before: 39kB, after: 10kB)[22m [2m(+87ms)[22m [2m(1/6)[22m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_Z2mLMoC.webp [2m(before: 39kB, after: 22kB)[22m [2m(+27ms)[22m [2m(2/6)[22m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_YIzTD.webp [2m(before: 39kB, after: 24kB)[22m [2m(+33ms)[22m [2m(3/6)[22m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_16vE1O.png [2m(before: 39kB, after: 24kB)[22m [2m(+10ms)[22m [2m(4/6)[22m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_Q6Uk2.png [2m(before: 39kB, after: 61kB)[22m [2m(+12ms)[22m [2m(5/6)[22m
+[2m04:46:11[22m   [32m▶[39m /_astro/hero.DlKDY3ml_ZQyPaD.png [2m(before: 39kB, after: 28kB)[22m [2m(+8ms)[22m [2m(6/6)[22m
+[2m04:46:11[22m [32m✓ Completed in 179ms.
+[39m
+[2m04:46:11[22m [34m[build][39m [32m✓ Completed in 1.76s.[39m
+[2m04:46:11[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m04:46:11[22m [34m[build][39m 10 page(s) built in [1m3.08s[22m
+[2m04:46:11[22m [34m[build][39m [1mComplete![22m
+
+  $ cp -R dist/. /opt/static_app/
+
+  ╭─────────────────────────╮
+  │ Build complete in 7.08s │
+  ╰─────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/surjithctly_astroship/.anybui │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

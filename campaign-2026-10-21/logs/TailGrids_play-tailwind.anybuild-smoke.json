@@ -1,5 +1,5 @@
 {
-  "dir": "/tmp/claude-0/plan/pt/.anybuild/local/build/opt/static_app",
+  "dir": "/tmp/claude-0/e2e/TailGrids_play-tailwind/.anybuild/local/build/opt/static_app",
   "base": "/",
   "html_files": 9,
   "local_refs_checked": 1,
@@ -16,10 +16,20 @@
       "bytes": 123635,
       "title": "About | Play Tailwind"
     },
+    "/pricing.html": {
+      "status": 200,
+      "bytes": 56658,
+      "title": "Pricing | Play Tailwind"
+    },
     "/blog-grids.html": {
       "status": 200,
       "bytes": 68003,
       "title": "Blog Grids | Play Tailwind"
+    },
+    "/signin.html": {
+      "status": 200,
+      "bytes": 64754,
+      "title": "Sign In | Play Tailwind"
     },
     "/404.html": {
       "status": 200,
@@ -29,6 +39,11 @@
     "/src/css/tailwind.css": {
       "status": 200,
       "bytes": 61017,
+      "title": null
+    },
+    "/assets/js/main.js": {
+      "status": 200,
+      "bytes": 4405,
       "title": null
     }
   },

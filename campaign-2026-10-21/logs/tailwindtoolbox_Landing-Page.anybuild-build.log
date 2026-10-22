@@ -1,0 +1,47 @@
+# 2026-10-22T04:46:13Z tailwindtoolbox/Landing-Page patched commit af024ec5621efdccbb3accdeb4468247121a1324 (base 545f89eb26e0997d7cdd15fe77dda35df73e575a) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/e2e/tailwindtoolbox_Landing-Page/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static site provider declared in Anybuild
+    SWS version: 2.38.0
+
+  Packages
+  ──────────
+  static-web-server  │  2.38.0  │  only deploy
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/tailwindtoolbox_Landing-Page/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Working in /opt/static_app
+
+  Copy to . from . # ignoring .git
+
+  ╭─────────────────────────╮
+  │ Build complete in 0.00s │
+  ╰─────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/tailwindtoolbox_Landing-Page/ │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

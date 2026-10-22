@@ -1,0 +1,110 @@
+# 2026-10-22T04:46:33Z flat replay of anybuild 0.33.0 planned steps for alxshelepenok_lumen @ 5b62c08a7f1aa1c9b195d9bd1df03009311095a3 (v24.22.1; 11.19.1; 10.34.7; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/alxshelepenok_lumen && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/alxshelepenok_lumen/src --out /tmp/claude-0/flat-replay/alxshelepenok_lumen/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: bun
+    Output directory: target
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/alxshelepenok_lumen/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/alxshelepenok_lumen/plan.json
+EXIT 0
+# plan: provider=node-static install='bun install --no-save' build='bun run build' static_dir='target'
+$ (cd /tmp/claude-0/flat-replay/alxshelepenok_lumen/opt/temp && bun install --no-save)
+bun install v1.4.2 (744846f84)
+
++ @astrojs/check@0.9.10
++ @semantic-release/exec@7.1.0
++ @semantic-release/git@11.0.1
++ @types/bun@1.4.2
++ @types/sass@1.45.0
++ autoprefixer@10.6.1
++ conventional-changelog-conventionalcommits@9.1.0
++ linkedom@0.18.13
++ postcss@8.5.28
++ sass@1.75.0
++ satori@0.33.4
++ semantic-release@25.0.9
++ typescript@5.9.3
++ @astrojs/markdown-remark@7.3.1
++ @astrojs/sitemap@3.7.4
++ @sentry/astro@10.75.0
++ astro@7.3.3
+
+798 packages installed [560.00ms]
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/alxshelepenok_lumen/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/alxshelepenok_lumen/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/alxshelepenok_lumen/opt/temp && bun run build)
+$ astro build
+04:46:37 [content] Syncing content
+04:46:56 [content] Synced content
+04:46:56 [types] Generated 20.45s
+04:46:56 [build] output: "static"
+04:46:56 [build] mode: "static"
+04:46:56 [build] directory: /tmp/claude-0/flat-replay/alxshelepenok_lumen/opt/temp/target/
+04:46:56 [build] Collecting build info...
+04:46:56 [build] ✓ Completed in 20.51s.
+04:46:56 [build] Building static entrypoints...
+04:46:58 [vite] ✓ built in 1.66s
+04:46:58 [vite] ✓ built in 104ms
+04:46:58 [build] Rearranging server assets...
+
+ generating static routes 
+04:46:58   ├─ /404.html (+24ms) 
+04:46:58   ├─ /atom.xml (+10ms) 
+04:46:58   ├─ /categories/index.html (+7ms) 
+04:46:58   ├─ /category/creative-process/index.html (+7ms) 
+04:46:58   ├─ /category/design-culture/index.html (+4ms) 
+04:46:58   ├─ /category/design-inspiration/index.html (+10ms) 
+04:46:58   ├─ /category/technology-trends/index.html (+3ms) 
+04:46:58   ├─ /llms-full.txt (+3ms) 
+04:46:58   ├─ /llms.txt (+4ms) 
+04:46:58   ├─ /page/1/index.html (+5ms) 
+04:46:58   ├─ /pages/about/index.html (+5ms) 
+04:46:58   ├─ /pages/contacts/index.html (+3ms) 
+04:46:58   ├─ /posts/a-brief-history-of-typography.md (+3ms) 
+04:46:58   ├─ /posts/exploring-depths-of-innovation.md (+2ms) 
+04:46:58   ├─ /posts/perfecting-the-art-of-perfection.md (+1ms) 
+04:46:58   ├─ /posts/quantum-leap-digital-architecture.md (+1ms) 
+04:46:58   ├─ /posts/the-origins-of-social-stationery-lettering.md (+1ms) 
+04:46:58   ├─ /posts/a-brief-history-of-typography/index.html (+5ms) 
+04:46:58   ├─ /posts/exploring-depths-of-innovation/index.html (+5ms) 
+04:46:58   ├─ /posts/perfecting-the-art-of-perfection/index.html (+6ms) 
+04:46:58   ├─ /posts/quantum-leap-digital-architecture/index.html (+3ms) 
+04:46:58   ├─ /posts/the-origins-of-social-stationery-lettering/index.html (+3ms) 
+04:46:58   ├─ /robots.txt (+3ms) 
+04:46:58   ├─ /tag/architecture/index.html (+5ms) 
+04:46:58   ├─ /tag/creative-thinking/index.html (+8ms) 
+04:46:58   ├─ /tag/digital-evolution/index.html (+8ms) 
+04:46:58   ├─ /tag/future-tech/index.html (+5ms) 
+04:46:58   ├─ /tag/handwriting/index.html (+3ms) 
+04:46:58   ├─ /tag/helvetica/index.html (+4ms) 
+04:46:58   ├─ /tag/history-of-typography/index.html (+3ms) 
+04:46:58   ├─ /tag/ideation/index.html (+4ms) 
+04:46:58   ├─ /tag/innovation/index.html (+3ms) 
+04:46:58   ├─ /tag/innovation-methods/index.html (+7ms) 
+04:46:58   ├─ /tag/learning-to-write/index.html (+5ms) 
+04:46:58   ├─ /tag/linotype/index.html (+5ms) 
+04:46:58   ├─ /tags/index.html (+7ms) 
+04:46:58   ├─ /year/2016/index.html (+6ms) 
+04:46:58   ├─ /year/2016/page/1/index.html (+6ms) 
+04:46:58   ├─ /years/index.html (+9ms) 
+04:46:58   ├─ /index.html (+8ms) 
+04:46:58 ✓ Completed in 314ms.
+
+ generating optimized images 
+04:46:58   ▶ /_astro/logo.DC_h19sp_TR8pJ.png (before: 4kB, after: 0kB) (+55ms) (1/6)
+04:46:58   ▶ /_astro/logo.DC_h19sp_2IsH8.webp (before: 4kB, after: 0kB) (+13ms) (2/6)
+04:46:58   ▶ /_astro/logo.DC_h19sp_27SQDs.png (before: 4kB, after: 1kB) (+20ms) (3/6)
+04:46:58   ▶ /_astro/logo.DC_h19sp_1fKbUQ.webp (before: 4kB, after: 0kB) (+16ms) (4/6)
+04:46:58   ▶ /_astro/logo.DC_h19sp_Z1wJD6b.png (before: 4kB, after: 3kB) (+8ms) (5/6)
+04:46:58   ▶ /_astro/logo.DC_h19sp_jxLY6.webp (before: 4kB, after: 0kB) (+11ms) (6/6)
+04:46:58 ✓ Completed in 125ms.
+
+04:46:58 [build] ✓ Completed in 2.26s.
+04:46:58 [@astrojs/sitemap] `sitemap-index.xml` created at `target`
+04:46:58 [build] 31 page(s) built in 22.79s
+04:46:58 [build] Complete!
+EXIT 0
+# result {"install": "bun install --no-save", "build": "bun run build", "static_dir": "target", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/posts/a-brief-history-of-typography/": 200, "/posts/a-brief-history-of-typography.md": 200, "/404.html": 200, "/atom.xml": 200, "/llms.txt": 200, "/tags/": 200, "/sitemap-index.xml": 200}}

@@ -1,0 +1,36 @@
+# 2026-10-22T04:44:11Z TailAdmin/free-react-tailwind-admin-dashboard @ e888dd1716b9803b535c7c2fa4f2c6b7d39b3da9 node v24.22.1 npm 11.19.1
+$ npm ci
+
+added 330 packages, and audited 331 packages in 9s
+
+74 packages are looking for funding
+  run `npm fund` for details
+
+3 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+EXIT 0
+$ npm run build
+
+> tailadmin-react@2.4.0 build
+> tsc -b && vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 407 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.45 kB │ gzip:   0.31 kB
+dist/assets/index-lqHzMpjd.css    179.59 kB │ gzip:  27.34 kB
+dist/assets/index-BCqG7Liu.js   2,009.25 kB │ gzip: 582.38 kB
+
+✓ built in 2.85s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+EXIT 0

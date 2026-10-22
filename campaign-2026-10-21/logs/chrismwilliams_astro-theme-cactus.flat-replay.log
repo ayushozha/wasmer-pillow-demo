@@ -1,0 +1,197 @@
+# 2026-10-22T04:46:16Z flat replay of anybuild 0.33.0 planned steps for chrismwilliams_astro-theme-cactus @ 5dfcd98afb77a70e03543a21caeb7b06959893af (v24.22.1; 11.19.1; 10.34.7; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/src --out /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/plan.json
+EXIT 0
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp && pnpm install)
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 435, reused 391, downloaded 1, added 0
+Progress: resolved 557, reused 456, downloaded 9, added 0
+ WARN  1 deprecated subdependencies found: prebuild-install@7.1.3
+Progress: resolved 640, reused 467, downloaded 50, added 0
+Packages: +509
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 640, reused 467, downloaded 50, added 367
+Progress: resolved 640, reused 467, downloaded 50, added 509, done
+
+> astro-cactus@8.3.0 postinstall /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp
+> npm rebuild sharp --force
+
+npm warn using --force Recommended protections disabled.
+npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "npm-globalconfig". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn rebuild 34 packages have install scripts not yet covered by allowScripts. Run `npm install-scripts ls` to review.
+rebuilt dependencies successfully
+
+dependencies:
++ @astrojs/markdown-satteri 0.4.1
++ @astrojs/mdx 8.0.1
++ @astrojs/rss 4.0.19
++ @astrojs/sitemap 3.7.4
++ @pagefind/component-ui 1.5.2
++ @tailwindcss/vite 4.3.3
++ astro 7.3.2
++ astro-expressive-code 0.44.2
++ astro-icon 1.2.0
++ astro-robots-txt 1.0.0
++ astro-webmanifest 1.0.0
++ cssnano 9.0.4
++ hastscript 9.0.1
++ mdast-util-directive 3.1.0
++ mdast-util-to-hast 13.2.1
++ mdast-util-to-markdown 2.1.2
++ mdast-util-to-string 4.0.0
++ satori 0.33.4
++ satori-html 0.3.2
++ satteri 0.10.5
++ sharp 0.35.4
++ tailwindcss 4.3.3
+
+devDependencies:
++ @astrojs/check 0.9.10
++ @biomejs/biome 2.5.13
++ @iconify-json/mdi 1.2.3
++ @pagefind/default-ui 1.5.2
++ @tailwindcss/typography 0.5.20
++ @types/hast 3.0.5
++ @types/mdast 4.0.4
++ @types/node 26.5.1
++ autoprefixer 10.6.0
++ pagefind 1.5.2
++ prettier 3.9.6
++ prettier-plugin-astro 1.0.0
++ prettier-plugin-tailwindcss 0.8.1
++ reading-time 1.5.0
++ typescript 6.0.3
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.28.2, sharp@0.32.6.                       │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 8.3s using pnpm v10.34.7
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp && pnpm run build)
+
+> astro-cactus@8.3.0 build /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp
+> astro build
+
+04:46:28 [content] Syncing content
+04:46:29 [content] Synced content
+04:46:29 [types] Generated 1.85s
+04:46:29 [build] output: "static"
+04:46:29 [build] mode: "static"
+04:46:29 [build] directory: /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp/dist/
+04:46:29 [build] Collecting build info...
+04:46:29 [build] ✓ Completed in 2.03s.
+04:46:29 [build] Building static entrypoints...
+04:46:30 [WARN] [astro-icon] Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+04:46:30 [vite] ✓ built in 1.54s
+04:46:30 [vite] ✓ built in 134ms
+04:46:30 [build] Rearranging server assets...
+
+ generating static routes 
+04:46:31   ├─ /404.html (+27ms) 
+04:46:31   ├─ /about/index.html (+7ms) 
+04:46:31   ├─ /notes/rss.xml (+61ms) 
+04:46:31   ├─ /notes/index.html (+9ms) 
+04:46:31   ├─ /notes/welcome/index.html (+6ms) 
+04:46:31   ├─ /og-image/markdown-elements.pngGenerating new OG image for: A post of Markdown elements
+ (+96ms) 
+04:46:31   ├─ /og-image/markdown-elements/admonitions.pngGenerating new OG image for: Markdown Admonitions
+ (+28ms) 
+04:46:31   ├─ /og-image/testing/cover-image.pngGenerating new OG image for: Example Cover Image
+ (+36ms) 
+04:46:31   ├─ /og-image/testing/long-title.pngGenerating new OG image for: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+ (+27ms) 
+04:46:31   ├─ /og-image/webmentions.pngGenerating new OG image for: Adding Webmentions to Astro Cactus
+ (+32ms) 
+04:46:31   ├─ /posts/index.html (+7ms) 
+04:46:31   ├─ /posts/markdown-elements/index.htmlNo Webmentions cache found
+No webmention api token specified in .env
+ (+14ms) 
+04:46:31   ├─ /posts/markdown-elements/admonitions/index.html (+4ms) 
+04:46:31   ├─ /posts/testing/cover-image/index.html (+7ms) 
+04:46:31   ├─ /posts/testing/long-title/index.html (+4ms) 
+04:46:31   ├─ /posts/testing/social-image/index.html (+7ms) 
+04:46:31   ├─ /posts/webmentions/index.html (+3ms) 
+04:46:31   ├─ /rss.xml (+4ms) 
+04:46:31   ├─ /tags/markdown/index.html (+5ms) 
+04:46:31   ├─ /tags/admonitions/index.html (+3ms) 
+04:46:31   ├─ /tags/webmentions/index.html (+3ms) 
+04:46:31   ├─ /tags/astro/index.html (+3ms) 
+04:46:31   ├─ /tags/social/index.html (+3ms) 
+04:46:31   ├─ /tags/test/index.html (+3ms) 
+04:46:31   ├─ /tags/image/index.html (+3ms) 
+04:46:31   ├─ /tags/example/index.html (+3ms) 
+04:46:31   ├─ /tags/blog/index.html (+3ms) 
+04:46:31   ├─ /tags/index.html (+4ms) 
+04:46:31   ├─ /index.html (+6ms) 
+04:46:31 ✓ Completed in 647ms.
+
+ generating optimized images 
+04:46:31   ▶ /_astro/logo.Njau-rsP_Zoplig.webp (before: 3kB, after: 4kB) (+38ms) (1/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__Z18iidP.webp (before: 591kB, after: 2kB) (+46ms) (2/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__Z1utHA.webp (before: 591kB, after: 3kB) (+47ms) (3/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__ZyYoSR.webp (before: 591kB, after: 3kB) (+47ms) (4/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__Z1TUnmk.webp (before: 591kB, after: 4kB) (+45ms) (5/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__XvLuS.webp (before: 591kB, after: 9kB) (+66ms) (6/7)
+04:46:31   ▶ /_astro/cover.CXyjlGn__ZxhNtG.webp (before: 591kB, after: 14kB) (+76ms) (7/7)
+04:46:31 ✓ Completed in 329ms.
+
+04:46:31 [build] ✓ Completed in 2.70s.
+04:46:31 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+[32mastro-robots-txt:[0m `robots.txt` is created.
+
+astro-webmanifest: 
+        The icon(public/icon.svg) provided is not square.
+        The generated icons will be square and for the best results it's recommend to provide a square icon.
+        
+
+[32mastro-webmanifest:[0m `manifest.webmanifest` is created.
+
+04:46:31 [build] 22 page(s) built in 4.79s
+04:46:31 [build] Complete!
+
+> astro-cactus@8.3.0 postbuild /tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp
+> pagefind --site dist
+
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/flat-replay/chrismwilliams_astro-theme-cactus/opt/temp"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 22 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en-gb
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 9 pages
+  Indexed 636 words
+  Indexed 1 filter
+  Indexed 0 sorts
+
+Finished in 0.033 seconds
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/posts/": 200, "/notes/": 200, "/about/": 200, "/404.html": 200, "/pagefind/pagefind.js": 200, "/rss.xml": 200, "/manifest.webmanifest": 200}}

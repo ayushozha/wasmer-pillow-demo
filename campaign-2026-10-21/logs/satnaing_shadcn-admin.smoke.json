@@ -1,0 +1,24 @@
+{
+  "dir": "satnaing_shadcn-admin/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 40,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 5184,
+      "title": "Shadcn Admin"
+    },
+    "/assets/401-BRKPC8Er.js": {
+      "status": 200,
+      "bytes": 84,
+      "title": null
+    },
+    "/settings": {
+      "error": "HTTP Error 404: File not found"
+    }
+  },
+  "ok": false
+}

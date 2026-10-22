@@ -1,0 +1,110 @@
+# 2026-10-22T04:44:20Z jktrn/astro-erudite patched commit 81c356ed0cdba183819c95a80146acba759fd89b (base 1926b88c549e8505bbe03b9e8585b0e247aaa0c1) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: bun
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/jktrn_astro-erudite/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: bun
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  bun                │  1       │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ bun install --no-save
+
+  ▸ build
+    $ bun run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, bun@1
+
+  Working in /opt/temp
+
+  Copy to bun.lock from bun.lock
+
+  Copying package.json to /opt/temp/package.json
+
+  $ bun install --no-save # using package.json
+bun install v1.4.2 (744846f84)
+
++ @astrojs/check@0.9.10
++ @biomejs/biome@2.5.1
++ typescript@6.0.3
++ @astrojs/markdown-satteri@0.3.2
++ @astrojs/rss@4.0.18
++ @astrojs/sitemap@3.7.3
++ @expressive-code/plugin-collapsible-sections@0.42.0
++ @expressive-code/plugin-line-numbers@0.42.0
++ astro@7.0.2
++ github-slugger@2.0.0
++ hast-util-select@6.0.4
++ hast-util-to-html@9.0.5
++ hastscript@9.0.1
++ satteri-expressive-code@0.1.15
++ temml@0.13.3
+
+325 packages installed [560.00ms]
+
+  Copy to . from . # ignoring node_modules, .git, bun.lock
+
+  $ bun run build
+$ astro check && astro build
+04:44:24 [content] Syncing content
+04:44:27 [content] Synced content
+04:44:27 [types] Generated 4.47s
+04:44:27 [check] Getting diagnostics for Astro files in /tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp...
+Result (41 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:44:34 [content] Syncing content
+04:44:34 [content] Synced content
+04:44:34 [types] Generated 867ms
+04:44:34 [build] output: "static"
+04:44:34 [build] mode: "static"
+04:44:34 [build] directory: /tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/dist/
+04:44:34 [build] Collecting build info...
+04:44:34 [build] ✓ Completed in 888ms.
+04:44:34 [build] Building static entrypoints...
+04:44:35 [ERROR] [vite] ✗ Build failed in 401ms
+[TSCONFIG_ERROR] Failed to load tsconfig for 'src/pages/404.astro', 'src/pages/authors/[...id].astro', 'src/pages/authors/index.astro', 'src/pages/blog/[...id].astro', 'src/pages/blog/index.astro', 'src/pages/index.astro', 'src/pages/projects/index.astro', 'src/pages/tags/[...id].astro', 'src/pages/tags/index.astro': Tsconfig not found
+
+  Stack trace:
+    at aggregateBindingErrorsIntoJsError (file:///tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/node_modules/rolldown/dist/shared/error-T-E9reEy.mjs:48:18)
+    at #build (file:///tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/node_modules/rolldown/dist/shared/rolldown-build-DDMH4mGm.mjs:3256:34)
+    at async Object.build (file:///tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/node_modules/vite/dist/node/chunks/node.js:32997:19)
+    at async Object.buildApp (file:///tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/node_modules/vite/dist/node/chunks/node.js:32989:6)
+    at async viteBuild (file:///tmp/claude-0/e2e/jktrn_astro-erudite/.anybuild/local/build/opt/temp/node_modules/astro/dist/core/build/static-build.js:68:3)
+error: script "build" exited with code 1
+Error: build failed for .: Command failed with exit code 1: bun run build: Command failed with exit code 1: bun run build
+EXIT 1

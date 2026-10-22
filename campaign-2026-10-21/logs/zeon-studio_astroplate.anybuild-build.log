@@ -1,0 +1,86 @@
+# 2026-10-22T04:46:39Z zeon-studio/astroplate patched commit b192691196c91902c7d7d9a59a740fe20901353c (base 501646d0fede2471105ef0cf3c2a154cbb814c4a) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/zeon-studio_astroplate/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24       │  only build
+  pnpm               │  11.17.0  │  only build
+  static-web-server  │  2.38.0   │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ pnpm install
+
+  ▸ build
+    $ pnpm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/zeon-studio_astroplate/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, pnpm@11.17.0
+
+  Working in /opt/temp
+
+  Copy to pnpm-lock.yaml from pnpm-lock.yaml
+
+  Setting environment variables: pnpm_config_minimum_release_age="0" CI="true" pnpm_config_dangerously_allow_all_builds="true" pnpm_config_strict_dep_builds="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ pnpm install # using package.json
+../../../../..                           | Progress: resolved 1, reused 0, downloaded 0, added 0
+../../../../..                           | +596 ++++++++++++++++++++++++++++++++
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 16, added 0
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 38, added 425
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 100, added 484
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 156, added 541
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 192, added 574
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 201, added 595
+../../../../..                           | Progress: resolved 596, reused 394, downloaded 202, added 596, done
+.../esbuild@0.28.1/node_modules/esbuild postinstall$ node install.js
+.../node_modules/workerd postinstall$ node install.js
+.../esbuild@0.28.1/node_modules/esbuild postinstall: Done
+.../node_modules/workerd postinstall: Done
+Done in 7.8s using pnpm v9.15.9
+
+  Copy to . from . # ignoring node_modules, .git, pnpm-lock.yaml
+
+  $ pnpm run build
+
+> astroplate@6.2.1 build /tmp/claude-0/e2e/zeon-studio_astroplate/.anybuild/local/build/opt/temp
+> node scripts/themeGenerator.js && node scripts/jsonGenerator.js && astro build && node scripts/llmsGenerator.js
+
+✅ Theme CSS generated successfully at: /tmp/claude-0/e2e/zeon-studio_astroplate/.anybuild/local/build/opt/temp/src/styles/generated-theme.css
+sh: 1: astro: not found
+ ELIFECYCLE  Command failed.
+ WARN   Local package.json exists, but node_modules missing, did you mean to install?
+Error: build failed for .: Command failed with exit code 1: pnpm run build: Command failed with exit code 1: pnpm run build
+EXIT 1

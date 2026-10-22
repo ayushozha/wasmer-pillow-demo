@@ -1,0 +1,184 @@
+# 2026-10-22T04:44:43Z markhorn-dev/astro-nano patched commit edc211d2281e3b127e55b521b970e11c9a12f949 (base 66aa017d614828ba5dba02a9e51a1a714850ad31) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/markhorn-dev_astro-nano/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  pnpm               │  10      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ pnpm install
+
+  ▸ build
+    $ pnpm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/markhorn-dev_astro-nano/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, pnpm@10
+
+  Working in /opt/temp
+
+  Copy to pnpm-lock.yaml from pnpm-lock.yaml
+
+  Setting environment variables: pnpm_config_minimum_release_age="0" CI="true" pnpm_config_dangerously_allow_all_builds="true" pnpm_config_strict_dep_builds="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ pnpm install # using package.json
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +698
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 698, reused 696, downloaded 0, added 87
+Progress: resolved 698, reused 696, downloaded 0, added 698, done
+.../sharp@0.33.3/node_modules/sharp install$ node install/check
+.../esbuild@0.21.5/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.24.0/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.21.5/node_modules/esbuild postinstall: Done
+.../sharp@0.33.3/node_modules/sharp install: Done
+.../esbuild@0.24.0/node_modules/esbuild postinstall: Done
+
+dependencies:
++ @astrojs/check 0.9.4
++ @astrojs/mdx 4.0.2
++ @astrojs/rss 4.0.10
++ @astrojs/sitemap 3.2.1
++ @astrojs/tailwind 5.1.3
++ @fontsource/inter 5.0.17
++ @fontsource/lora 5.0.16
++ @tailwindcss/typography 0.5.10
++ @typescript-eslint/eslint-plugin 7.3.1
++ @typescript-eslint/parser 7.3.1
++ astro 5.0.5
++ clsx 2.1.0
++ eslint 8.57.0
++ eslint-plugin-astro 0.32.0
++ eslint-plugin-jsx-a11y 6.8.0
++ sharp 0.33.3
++ tailwind-merge 2.2.2
++ tailwindcss 3.4.1
++ typescript 5.4.2
+
+Done in 2.7s using pnpm v9.15.9
+
+  Copy to . from . # ignoring node_modules, .git, pnpm-lock.yaml
+
+  $ pnpm run build
+
+> astro-nano@1.0.0 build /tmp/claude-0/e2e/markhorn-dev_astro-nano/.anybuild/local/build/opt/temp
+> astro check && astro build
+
+04:44:49 [content] Syncing content
+04:44:49 [content] Content config changed
+04:44:49 [content] Astro version changed
+04:44:49 [content] Clearing content store
+04:44:49 [content] Synced content
+04:44:49 [types] Generated 952ms
+04:44:49 [check] Getting diagnostics for Astro files in /tmp/claude-0/e2e/markhorn-dev_astro-nano/.anybuild/local/build/opt/temp...
+Result (0 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:44:53 [content] Syncing content
+04:44:53 [content] Synced content
+04:44:53 [types] Generated 439ms
+04:44:53 [build] output: "static"
+04:44:53 [build] directory: /tmp/claude-0/e2e/markhorn-dev_astro-nano/.anybuild/local/build/opt/temp/dist/
+04:44:53 [build] Collecting build info...
+04:44:53 [build] ✓ Completed in 507ms.
+04:44:53 [build] Building static entrypoints...
+Browserslist: browsers data (caniuse-lite) is 22 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+04:44:56 [vite] [32m✓ built in 2.61s[39m
+04:44:56 [build] ✓ Completed in 2.65s.
+
+ building client (vite) 
+04:44:56 [vite] transforming...
+04:44:56 [vite] [32m✓[39m 13 modules transformed.
+04:44:56 [vite] rendering chunks...
+04:44:56 [vite] computing gzip size...
+04:44:56 [vite] [2mdist/[22m[2m_astro/[22m[36mClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js  [39m[1m[2m14.30 kB[22m[1m[22m[2m │ gzip: 4.88 kB[22m
+04:44:56 [vite] [32m✓ built in 109ms[39m
+
+ generating static routes 
+04:44:56 ▶ src/pages/blog/index.astro
+04:44:56   └─ /blog/index.html (+22ms)
+04:44:56 ▶ src/pages/blog/[...slug].astro
+04:44:56   ├─ /blog/01-getting-started/index.html (+5ms)
+04:44:56   ├─ /blog/02-blog-collection/index.html (+3ms)
+04:44:56   ├─ /blog/03-projects-collection/index.html (+3ms)
+04:44:56   ├─ /blog/04-work-collection/index.html (+3ms)
+04:44:56   ├─ /blog/05-markdown-syntax/index.html (+10ms)
+04:44:56   ├─ /blog/06-mdx-syntax/index.html (+11ms)
+04:44:56   ├─ /blog/07-year-sorting-example/index.html (+3ms)
+04:44:56   └─ /blog/08-draft-example/index.html (+3ms)
+04:44:56 ▶ src/pages/projects/index.astro
+04:44:56   └─ /projects/index.html (+2ms)
+04:44:56 ▶ src/pages/projects/[...slug].astro
+04:44:56   ├─ /projects/project-2/index.html (+3ms)
+04:44:56   └─ /projects/project-1/index.html (+2ms)
+04:44:56 λ src/pages/robots.txt.ts
+04:44:56   └─ /robots.txt (+1ms)
+04:44:56 λ src/pages/rss.xml.ts
+04:44:56   └─ /rss.xml (+4ms)
+04:44:56 ▶ src/pages/work/index.astro
+04:44:56   └─ /work/index.html (+2ms)
+04:44:56 ▶ src/pages/index.astro
+04:44:56   └─ /index.html (+3ms)
+04:44:56 ✓ Completed in 115ms.
+
+ generating optimized images 
+04:44:56   ▶ /_astro/spongebob.DNKR31Tf_Z1KJld.webp (before: 32kB, after: 20kB) (+92ms) (1/1)
+04:44:56 ✓ Completed in 93ms.
+
+04:44:56 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:44:56 [build] 14 page(s) built in 3.51s
+04:44:56 [build] Complete!
+
+  $ cp -R dist/. /opt/static_app/
+
+  ╭──────────────────────────╮
+  │ Build complete in 12.79s │
+  ╰──────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=/tmp/claude-0/e2e/markhorn-dev_astro-nano/.anyb │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

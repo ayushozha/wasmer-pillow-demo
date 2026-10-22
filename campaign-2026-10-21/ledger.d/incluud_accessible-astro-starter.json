@@ -1,6 +1,6 @@
 {
   "repo": "incluud/accessible-astro-starter",
-  "status": "HELD_BUILD",
+  "status": "READY",
   "stars": 1190,
   "stars_source": "GitHub search API via GitHub MCP (as ayushozha)",
   "stars_at": "2026-10-22T04:28Z",
@@ -12,16 +12,17 @@
   "framework": "Astro 7 (static, no adapter; AGENTS.md says 'Output Mode: Static (SSG)'), npm workspaces (packages/create-accessible-astro-starter CLI)",
   "output_dir": "dist",
   "build_command": "npm ci && npm run build",
-  "build_claude": "FAIL_ENV: Node 24.22.1 / npm 11.19.1 (engines: node >=24.19.0, npm >=11.17.0; .nvmrc v24.19.0). npm ci succeeded. astro build rendered every route up to /index.html, then failed: 'TypeError: fetch failed ... getaddrinfo ENOTFOUND jsonplaceholder.typicode.com'. The proxy returns 403 for that host. src/components/FeaturedPosts.astro fetches https://jsonplaceholder.typicode.com/posts unconditionally at build time, and the blog pages and launcher fetch BLOG_API_URL (default is the same host). Log: logs/incluud_accessible-astro-starter.build.log",
-  "smoke": "not run (build did not complete)",
+  "build_claude": "FAIL_ENV in this sandbox: jsonplaceholder.typicode.com denied (403).",
+  "smoke": "External (root): 8 routes 200; no asset-coverage claim (unquoted attrs).",
   "format_check": "prettier --check README.md (repo devDependency and .prettierrc): pass. logs/incluud_accessible-astro-starter.format.log",
   "compat_notes": "Root 'npm run build' is 'astro build' of the site into root dist/. The CLI workspace (packages/create-accessible-astro-starter) builds only through 'build:cli' into its own packages/.../dist, so the deployed output is the site, not the CLI. The build needs outbound HTTPS to jsonplaceholder.typicode.com (a third-party placeholder API). The contact form posts to /thank-you (method=post); a static host will not accept a POST to a static page, so this needs checking or a form service. strict-allow-scripts=true in .npmrc with an allowScripts allowlist. No Staticfile needed: astro.config sets no outDir, so the build writes to Astro's default dist (verified in the build), which is the folder node_static serves.",
   "policy": "No CONTRIBUTING or PR template; the README Contributing section welcomes PRs. incluud/.github has only CODE_OF_CONDUCT, FUNDING and a profile. AGENTS.md is a project overview for agents with no contribution restrictions. Commits follow conventional style (git-cliff). No existing Wasmer or host-button PR.",
   "why": "Popular static SSG starter (per AGENTS.md) that has no deploy section; the README 'Getting started' table says npm run build outputs to ./dist/.",
   "patch": "patches/incluud_accessible-astro-starter.patch (staged; adds a '## Deploy' section after Getting started; applies to base; no PR body until the build is verified)",
-  "pr_body": null,
+  "pr_body": "pr-bodies/incluud_accessible-astro-starter.md",
   "import_url": "https://wasmer.io/apps/create?github=incluud%2Faccessible-astro-starter",
-  "detection_verified": "pending Codex browser check; also needs an external build with network access to jsonplaceholder.typicode.com",
-  "reason": "The build is blocked here by sandbox egress (jsonplaceholder.typicode.com is fetched at build time), so I could not run the smoke test. It needs a build with network access (e.g. Codex) before READY.",
-  "detect_log": "logs/incluud_accessible-astro-starter.detect.json"
+  "detection_verified": "local anybuild plan: node-static, astro, dist; pending Codex browser check",
+  "reason": null,
+  "detect_log": "logs/incluud_accessible-astro-starter.detect.json",
+  "build_external": "PASS (root, local, network): Node 24.22.1 / npm 11.19.1 official runtime; npm ci; npm run build built 135 pages in 18.21s, the jsonplaceholder build-time fetch succeeded; npx eslint . EXIT 0 (no `lint` script); 8 routes 200; root-relative ref check found 0 refs because the minifier emits unquoted attrs, so no asset-coverage claim. npm audit: 25 (3 moderate, 21 high, 1 critical AVIF-only)."
 }

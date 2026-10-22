@@ -1,0 +1,106 @@
+# 2026-10-22T04:44:35Z JustGoodUI/dante-astro-theme patched commit 2b898095b9390338e7064b1239a79ad30ade45de (base 83ff8f4502e41fae5bcc7c204eaf26d3c77479d0) anybuild 0.33.0 local builder, host node v24.22.1
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild generate .
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/e2e/JustGoodUI_dante-astro-theme/Anybuild
+EXIT 0
+$ /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild build . --builder=local
+╭─────────────────╮
+│ Anybuild 0.33.0 │
+╰─────────────────╯
+
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Packages
+  ──────────
+  node               │  24      │  only build
+  npm                │  11      │  only build
+  static-web-server  │  2.38.0  │  only deploy
+
+  Build Steps
+  ───────────
+  ▸ install
+    $ npm install
+
+  ▸ build
+    $ npm run build
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=/tmp/claude-0/e2e/JustGoodUI_dante-astro-theme/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Using dependencies: node@24, npm@11
+
+  Working in /opt/temp
+
+  Copy to package-lock.json from package-lock.json
+
+  Setting environment variables: CI="true" NPM_CONFIG_FUND="false"
+
+  Copying package.json to /opt/temp/package.json
+
+  $ npm install # using package.json
+
+added 318 packages, and audited 319 packages in 6s
+
+5 vulnerabilities (2 moderate, 3 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+  Copy to . from . # ignoring node_modules, .git, package-lock.json
+
+  $ npm run build
+
+> dante-astro-theme@2.1.0 build
+> astro build
+
+[1m[31m[astro][39m[22m Unable to load your Astro config
+
+Tsconfig not found astro/tsconfigs/strict
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: start_thread
+             at ./nptl/pthread_create.c:447:8
+  11: clone3
+             at ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:78:0
+  [1mStack trace:[22m
+[2m             at ./nptl/pthread_create.c:447:8
+             at ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:78:0[22m
+Error: build failed for .: Command failed with exit code 1: npm run build: Command failed with exit code 1: npm run build
+EXIT 1

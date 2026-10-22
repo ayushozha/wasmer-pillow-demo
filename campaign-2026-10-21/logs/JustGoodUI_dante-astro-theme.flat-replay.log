@@ -1,0 +1,154 @@
+# 2026-10-22T04:48:06Z flat replay of anybuild 0.33.0 planned steps for JustGoodUI_dante-astro-theme @ 2b898095b9390338e7064b1239a79ad30ade45de (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/src --out /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/plan.json
+EXIT 0
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/opt/temp && npm install)
+
+added 318 packages, and audited 319 packages in 6s
+
+99 packages are looking for funding
+  run `npm fund` for details
+
+5 vulnerabilities (2 moderate, 3 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/opt/temp && npm run build)
+
+> dante-astro-theme@2.1.0 build
+> astro build
+
+04:48:14 [content] Syncing content
+04:48:14 [content] Synced content
+04:48:14 [types] Generated 1.29s
+04:48:14 [build] output: "static"
+04:48:14 [build] mode: "static"
+04:48:14 [build] directory: /tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/opt/temp/dist/
+04:48:14 [build] Collecting build info...
+04:48:14 [build] ✓ Completed in 1.36s.
+04:48:14 [build] Building static entrypoints...
+04:48:15 [vite] ✓ built in 694ms
+04:48:15 [vite] ✓ built in 35ms
+04:48:15 [build] Rearranging server assets...
+
+ generating static routes 
+04:48:15   ├─ /blog/post-14/index.html (+41ms) 
+04:48:15   ├─ /blog/post-13/index.html (+6ms) 
+04:48:15   ├─ /blog/post-12/index.html (+6ms) 
+04:48:15   ├─ /blog/post-11/index.html (+4ms) 
+04:48:15   ├─ /blog/post-10/index.html (+22ms) 
+04:48:15   ├─ /blog/post-9/index.html (+3ms) 
+04:48:15   ├─ /blog/post-8/index.html (+3ms) 
+04:48:15   ├─ /blog/post-7/index.html (+3ms) 
+04:48:15   ├─ /blog/post-6/index.html (+3ms) 
+04:48:15   ├─ /blog/post-5/index.html (+3ms) 
+04:48:15   ├─ /blog/post-4/index.html (+2ms) 
+04:48:15   ├─ /blog/post-3/index.html (+2ms) 
+04:48:15   ├─ /blog/post-2/index.html (+2ms) 
+04:48:15   ├─ /blog/post-1/index.html (+2ms) 
+04:48:15   ├─ /blog/index.html (+2ms) 
+04:48:15   ├─ /blog/2/index.html (+2ms) 
+04:48:15   ├─ /projects/project-7/index.html (+2ms) 
+04:48:15   ├─ /projects/project-1/index.html (+1ms) 
+04:48:15   ├─ /projects/project-6/index.html (+2ms) 
+04:48:15   ├─ /projects/project-5/index.html (+2ms) 
+04:48:15   ├─ /projects/project-4/index.html (+1ms) 
+04:48:15   ├─ /projects/project-3/index.html (+1ms) 
+04:48:15   ├─ /projects/project-2/index.html (+2ms) 
+04:48:15   ├─ /projects/index.html (+2ms) 
+04:48:15   ├─ /rss.xml (+32ms) 
+04:48:15   ├─ /tags/web/index.html (+4ms) 
+04:48:15   ├─ /tags/web/2/index.html (+2ms) 
+04:48:15   ├─ /tags/guide/index.html (+3ms) 
+04:48:15   ├─ /tags/css/index.html (+3ms) 
+04:48:15   ├─ /tags/security/index.html (+2ms) 
+04:48:15   ├─ /tags/ux/index.html (+2ms) 
+04:48:15   ├─ /tags/web-development/index.html (+2ms) 
+04:48:15   ├─ /tags/index.html (+4ms) 
+04:48:15   ├─ /index.html (+30ms) 
+04:48:15   ├─ /about/index.html (+6ms) 
+04:48:15   ├─ /contact/index.html (+2ms) 
+04:48:15   ├─ /terms/index.html (+1ms) 
+04:48:15 ✓ Completed in 249ms.
+
+ generating optimized images 
+04:48:15   ▶ /_astro/post-12.DzDsuWyg_Z1eLbrA.webp (before: 33kB, after: 6kB) (+118ms) (1/51)
+04:48:15   ▶ /_astro/post-12.DzDsuWyg_Z2pXlT4.jpeg (before: 33kB, after: 19kB) (+15ms) (2/51)
+04:48:15   ▶ /_astro/post-11.DbsgQmw5_Zx0ce1.webp (before: 196kB, after: 122kB) (+149ms) (3/51)
+04:48:15   ▶ /_astro/post-13.DXXxCuq5_X9XVg.webp (before: 180kB, after: 100kB) (+158ms) (4/51)
+04:48:15   ▶ /_astro/post-11.DbsgQmw5_Z1IcmFu.jpeg (before: 196kB, after: 124kB) (+29ms) (5/51)
+04:48:15   ▶ /_astro/post-13.DXXxCuq5_Zd2bvd.jpeg (before: 180kB, after: 116kB) (+28ms) (6/51)
+04:48:15   ▶ /_astro/post-14.Cxw8rrWJ_ZGCLnA.webp (before: 298kB, after: 204kB) (+190ms) (7/51)
+04:48:15   ▶ /_astro/post-14.Cxw8rrWJ_Z1ROVP4.jpeg (before: 298kB, after: 193kB) (+40ms) (8/51)
+04:48:16   ▶ /_astro/post-10.ZYRKmmn__Z16HpH8.webp (before: 246kB, after: 125kB) (+118ms) (9/51)
+04:48:16   ▶ /_astro/post-10.ZYRKmmn__Z2hTA9B.jpeg (before: 246kB, after: 162kB) (+21ms) (10/51)
+04:48:16   ▶ /_astro/post-8.UXbKb6mx_1ur9jJ.webp (before: 131kB, after: 45kB) (+100ms) (11/51)
+04:48:16   ▶ /_astro/post-9.D6gkKNQF_1FhS1T.webp (before: 147kB, after: 71kB) (+123ms) (12/51)
+04:48:16   ▶ /_astro/post-8.UXbKb6mx_ZEX0Bv.jpeg (before: 131kB, after: 85kB) (+25ms) (13/51)
+04:48:16   ▶ /_astro/post-9.D6gkKNQF_Zu7gTl.jpeg (before: 147kB, after: 98kB) (+27ms) (14/51)
+04:48:16   ▶ /_astro/post-6.BtFXZzhE_1Hq0X6.webp (before: 38kB, after: 8kB) (+78ms) (15/51)
+04:48:16   ▶ /_astro/post-7.CnmS1vq7_1MnzYK.webp (before: 137kB, after: 61kB) (+134ms) (16/51)
+04:48:16   ▶ /_astro/post-6.BtFXZzhE_ZrY8X9.jpeg (before: 38kB, after: 29kB) (+14ms) (17/51)
+04:48:16   ▶ /_astro/post-7.CnmS1vq7_Zn1yVu.jpeg (before: 137kB, after: 89kB) (+25ms) (18/51)
+04:48:16   ▶ /_astro/post-5.lB3mCVAy_ZMHNii.webp (before: 115kB, after: 47kB) (+102ms) (19/51)
+04:48:16   ▶ /_astro/post-4.110jYDJQ_cb67K.webp (before: 62kB, after: 19kB) (+105ms) (20/51)
+04:48:16   ▶ /_astro/post-5.lB3mCVAy_274azo.jpeg (before: 115kB, after: 81kB) (+21ms) (21/51)
+04:48:16   ▶ /_astro/post-4.110jYDJQ_Z1Xe3Nu.jpeg (before: 62kB, after: 38kB) (+24ms) (22/51)
+04:48:16   ▶ /_astro/post-2.CWEIBPr-_Zd38B0.webp (before: 45kB, after: 11kB) (+101ms) (23/51)
+04:48:16   ▶ /_astro/post-1.DdH4C4wx_2vOucg.webp (before: 27kB, after: 8kB) (+58ms) (24/51)
+04:48:16   ▶ /_astro/post-3.Bu94jTWY_1uiQ0a.webp (before: 224kB, after: 125kB) (+127ms) (25/51)
+04:48:16   ▶ /_astro/post-1.DdH4C4wx_lpkg1.jpeg (before: 27kB, after: 24kB) (+13ms) (26/51)
+04:48:16   ▶ /_astro/post-2.CWEIBPr-_Z2nsixf.jpeg (before: 45kB, after: 31kB) (+17ms) (27/51)
+04:48:16   ▶ /_astro/post-3.Bu94jTWY_ZF6iV5.jpeg (before: 224kB, after: 131kB) (+25ms) (28/51)
+04:48:16   ▶ /_astro/project-7.1O6tjrZa_ZTja8l.webp (before: 88kB, after: 16kB) (+91ms) (29/51)
+04:48:16   ▶ /_astro/project-7.1O6tjrZa_Jwzn6.jpeg (before: 88kB, after: 51kB) (+16ms) (30/51)
+04:48:16   ▶ /_astro/project-6.itTgYPkF_1jL6PB.webp (before: 66kB, after: 22kB) (+84ms) (31/51)
+04:48:16   ▶ /_astro/project-5.yF8y4TUS_KkEb7.webp (before: 63kB, after: 19kB) (+75ms) (32/51)
+04:48:16   ▶ /_astro/project-6.itTgYPkF_Z26zhrS.jpeg (before: 66kB, after: 40kB) (+15ms) (33/51)
+04:48:16   ▶ /_astro/project-5.yF8y4TUS_2pboGy.jpeg (before: 63kB, after: 38kB) (+21ms) (34/51)
+04:48:16   ▶ /_astro/project-1.DtSLviy8_ZGypn3.webp (before: 202kB, after: 107kB) (+140ms) (35/51)
+04:48:16   ▶ /_astro/project-3.Dz8jCSuR_2tYaNX.webp (before: 40kB, after: 8kB) (+74ms) (36/51)
+04:48:16   ▶ /_astro/project-1.DtSLviy8_Whk8o.jpeg (before: 202kB, after: 117kB) (+35ms) (37/51)
+04:48:16   ▶ /_astro/avatar.Bxb7IJGT_16W41D.webp (before: 97kB, after: 1kB) (+13ms) (38/51)
+04:48:16   ▶ /_astro/project-3.Dz8jCSuR_ZVmdtw.jpeg (before: 40kB, after: 21kB) (+17ms) (39/51)
+04:48:16   ▶ /_astro/avatar.Bxb7IJGT_1flCNf.webp (before: 97kB, after: 3kB) (+14ms) (40/51)
+04:48:16   ▶ /_astro/project-4.DFieQyzM_ZtDKzF.webp (before: 390kB, after: 270kB) (+160ms) (41/51)
+04:48:16   ▶ /_astro/hero.oAaufW9l_1jOs9w.webp (before: 150kB, after: 8kB) (+43ms) (42/51)
+04:48:16   ▶ /_astro/project-2.CPWaOZjW_Z1CgUxK.webp (before: 216kB, after: 129kB) (+142ms) (43/51)
+04:48:16   ▶ /_astro/project-4.DFieQyzM_1abXUL.jpeg (before: 390kB, after: 228kB) (+40ms) (44/51)
+04:48:16   ▶ /_astro/project-2.CPWaOZjW_1yNWG.jpeg (before: 216kB, after: 149kB) (+25ms) (45/51)
+04:48:16   ▶ /_astro/hero.oAaufW9l_1LCiNg.webp (before: 150kB, after: 11kB) (+58ms) (46/51)
+04:48:16   ▶ /_astro/about.BBg773xb_Z2bE2mh.webp (before: 148kB, after: 30kB) (+116ms) (47/51)
+04:48:16   ▶ /_astro/about.BBg773xb_Z1KTpra.jpeg (before: 148kB, after: 52kB) (+18ms) (48/51)
+04:48:16   ▶ /_astro/hero.oAaufW9l_EkhQa.webp (before: 150kB, after: 15kB) (+67ms) (49/51)
+04:48:16   ▶ /_astro/hero.oAaufW9l_Z2cofcv.webp (before: 150kB, after: 23kB) (+84ms) (50/51)
+04:48:16   ▶ /_astro/hero.oAaufW9l_xNbRt.webp (before: 150kB, after: 30kB) (+75ms) (51/51)
+04:48:16 ✓ Completed in 1.03s.
+
+04:48:16 [build] ✓ Completed in 2.05s.
+04:48:16 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+04:48:16 [build] 36 page(s) built in 3.42s
+04:48:16 [build] Complete!
+EXIT 0
+# result {"install": "npm install", "build": "npm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/blog/": 200, "/blog/post-1/": 200, "/projects/": 200, "/about/": 200, "/rss.xml": 200, "/sitemap-index.xml": 200}}

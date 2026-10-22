@@ -1,0 +1,11 @@
+{
+ "dir": "/tmp/claude-0/camp2/issaafalkattan_React-Landing-Page-Template/build",
+ "relative_refs_checked": 9,
+ "missing_count": 4,
+ "missing": [
+  "index.html -> img/apple-touch-icon-114x114.png",
+  "index.html -> img/apple-touch-icon-72x72.png",
+  "index.html -> img/apple-touch-icon.png",
+  "index.html -> img/favicon.ico"
+ ]
+}

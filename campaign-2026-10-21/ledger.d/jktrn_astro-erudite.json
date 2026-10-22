@@ -1,6 +1,6 @@
 {
   "repo": "jktrn/astro-erudite",
-  "status": "READY",
+  "status": "HELD_POLICY",
   "stars": 865,
   "stars_source": "GitHub MCP search_repositories",
   "stars_at": "2026-10-22T04:28:14Z",
@@ -20,8 +20,8 @@
   "policy": "No CONTRIBUTING/PR template/AGENTS.md. README has no deploy section or deploy buttons; Getting started is a numbered list, so a step 6 plain line was added. Many community README PRs merged. PR #53 'Create deploy.yml' closed (workflow, not a provider button). No Wasmer mentions.",
   "why": "Popular Astro template repo (is_template) with pure static output to default dist; template users import their own generated repo.",
   "patch": "patches/jktrn_astro-erudite.patch",
-  "pr_body": "pr-bodies/jktrn_astro-erudite.md",
+  "pr_body": null,
   "import_url": "https://wasmer.io/apps/create?github=jktrn%2Fastro-erudite",
-  "reason": null,
+  "reason": "Owner explicitly prefers deployment kept separate from the blog template (PR #53 issuecomments 3366973115 and 3378781918; broader than workflows). Reported by root independent review. Do not publish.",
   "detect_log": "logs/jktrn_astro-erudite.detect.json"
 }

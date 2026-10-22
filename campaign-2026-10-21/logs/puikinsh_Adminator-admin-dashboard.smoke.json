@@ -1,0 +1,41 @@
+{
+  "dir": ".",
+  "base": "/",
+  "html_files": 18,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 22719,
+      "title": "Dashboard \u00b7 2026 Redesign Preview"
+    },
+    "/calendar.html": {
+      "status": 200,
+      "bytes": 13329,
+      "title": "Calendar \u00b7 2026 Redesign Preview"
+    },
+    "/email.html": {
+      "status": 200,
+      "bytes": 26296,
+      "title": "Email \u00b7 2026 Redesign Preview"
+    },
+    "/signin.html": {
+      "status": 200,
+      "bytes": 7006,
+      "title": "Sign in \u00b7 2026 Redesign Preview"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 2186,
+      "title": "404 \u00b7 2026 Redesign Preview"
+    },
+    "/charts.html": {
+      "status": 200,
+      "bytes": 6608,
+      "title": "Charts \u00b7 2026 Redesign Preview"
+    }
+  },
+  "ok": true
+}

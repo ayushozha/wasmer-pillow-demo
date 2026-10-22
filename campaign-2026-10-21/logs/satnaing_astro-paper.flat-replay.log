@@ -1,0 +1,157 @@
+# 2026-10-22T04:47:00Z flat replay of anybuild 0.33.0 planned steps for satnaing_astro-paper @ 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 (v24.22.1; 11.19.1; 10.34.7; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/satnaing_astro-paper && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/satnaing_astro-paper/src --out /tmp/claude-0/flat-replay/satnaing_astro-paper/plan.json)
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/satnaing_astro-paper/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/satnaing_astro-paper/plan.json
+EXIT 0
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+$ (cd /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp && pnpm install)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +554
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 554, reused 554, downloaded 0, added 469
+Progress: resolved 554, reused 554, downloaded 0, added 554, done
+
+dependencies:
++ @astrojs/markdown-remark 7.2.0
++ @astrojs/mdx 7.0.0
++ @astrojs/rss 4.0.19
++ @astrojs/sitemap 3.7.3
++ @tailwindcss/vite 4.3.2
++ astro 7.0.3
++ dayjs 1.11.21
++ lodash.kebabcase 4.1.1
++ rehype-callouts 2.2.0
++ remark-collapse 0.1.2
++ remark-toc 9.0.0
++ satori 0.26.0
++ sharp 0.35.2
++ slugify 1.6.9
++ tailwindcss 4.3.2
+
+devDependencies:
++ @astrojs/check 0.9.9
++ @pagefind/default-ui 1.5.2
++ @shikijs/transformers 4.3.0
++ @tailwindcss/typography 0.5.20
++ @types/lodash.kebabcase 4.1.9
++ @typescript-eslint/parser 8.62.0
++ eslint 10.6.0
++ eslint-plugin-astro 2.1.1
++ pagefind 1.5.2
++ prettier 3.9.3
++ prettier-plugin-astro 0.14.1
++ prettier-plugin-tailwindcss 0.8.0
++ typescript 6.0.3
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.28.1, sharp@0.34.5.                       │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 1.8s using pnpm v10.34.7
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/satnaing_astro-paper/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp)
+EXIT 0
+$ (cd /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp && pnpm run build)
+
+> astro-paper-v6@6.1.0 build /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp
+> astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/
+
+04:47:05 [content] Syncing content
+04:47:06 [content] Synced content
+04:47:06 [types] Generated 2.65s
+04:47:06 [check] Getting diagnostics for Astro files in /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp...
+Result (55 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+04:47:13 [content] Syncing content
+04:47:13 [content] Synced content
+04:47:13 [types] Generated 711ms
+04:47:13 [build] output: "static"
+04:47:13 [build] mode: "static"
+04:47:13 [build] directory: /tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/
+04:47:13 [build] Collecting build info...
+04:47:13 [build] ✓ Completed in 738ms.
+04:47:13 [build] Building static entrypoints...
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+04:47:17 [WARN] [assets] No data found for font family Google Sans Code. Review your configuration
+04:47:18 [assets] Copying fonts (0 files)...
+04:47:19 [vite] ✓ built in 5.11s
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. FetchError: [GET] "https://fonts.google.com/metadata/fonts": <no response> fetch failed
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async $fetch2 (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch/dist/shared/ofetch.CWycOUEr.mjs:332:15)
+    at async Object.getItem (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:813:17)
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:488:22
+    at async Object.init (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/providers/index.js:79:29)
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:21:7
+    at async file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:863:32
+    at async Promise.all (index 0)
+    at async createUnifont (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/unifont@0.7.4/node_modules/unifont/dist/index.mjs:860:2)
+    at async UnifontFontResolver.create (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/node_modules/.pnpm/astro@7.0.3_@astrojs+markdown-remark@7.2.0_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_6f42ffbc3514288a0480093356bfc136/node_modules/astro/dist/assets/fonts/infra/unifont-font-resolver.js:55:16) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: Error: getaddrinfo ENOTFOUND fonts.google.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'fonts.google.com'
+    }
+  }
+}
+04:47:22 [WARN] [assets] No data found for font family Google Sans Code. Review your configuration
+04:47:22 [vite] ✓ built in 3.13s
+04:47:22 [build] Rearranging server assets...
+
+ generating static routes 
+04:47:22   ├─ /404.html (+59ms) 
+04:47:22   ├─ /about/index.html (+12ms) 
+04:47:22   ├─ /archives/index.html (+49ms) 
+04:47:22   ├─ /og.png04:47:22 [ERROR] Error: Cannot find the font path.
+    at Module.GET (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/.prerender/chunks/og_BZEWEwVl.mjs:13:67)
+    at renderEndpoint (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/.prerender/chunks/server_vUZI8pGp.mjs:234:31)
+    at PagesHandler.handle (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/.prerender/chunks/entrypoints_DjEZ_Ipc.mjs:3522:22)
+04:47:22 [ERROR] [build] Caught error rendering /og.png: Error: Cannot find the font path.
+Cannot find the font path.
+  Stack trace:
+    at Module.GET (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/.prerender/chunks/og_BZEWEwVl.mjs:13:67)
+    at PagesHandler.handle (file:///tmp/claude-0/flat-replay/satnaing_astro-paper/opt/temp/dist/.prerender/chunks/entrypoints_DjEZ_Ipc.mjs:3522:22)
+ ELIFECYCLE  Command failed with exit code 1.
+EXIT 1
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 1}

@@ -1,0 +1,31 @@
+From 7dbd0ba4cbc2bd11123c420cda67735c039e5897 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:43:33 +0000
+Subject: [PATCH] Add Wasmer Edge deploy option to README
+
+---
+ README.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/README.md b/README.md
+index ba30649..115eb8d 100755
+--- a/README.md
++++ b/README.md
+@@ -210,6 +210,14 @@ The development server binds to `127.0.0.1` by default. For deliberate LAN testi
+ 
+ PR checks test Node 22/24, enforce production bundle budgets, and exercise Chromium on Node 24. Routine PRs do not require a version bump. Bump `package.json` for a release; pushes to `master` validate every change and create archives only for an unreleased version. Dependabot checks npm and GitHub Actions weekly.
+ 
++### Deploy
++
++`npm run build` (or `npm run release:minified`) writes a static site to `dist/` that any static host can serve; see the [deployment guide](https://adminator.colorlib.com/docs/deployment/).
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=puikinsh%2FAdminator-admin-dashboard)
++
++The Wasmer button imports this repository; to customize the dashboard and redeploy on push, import your own fork instead.
++
+ ### Release and publication
+ 
+ The canonical release history is [CHANGELOG.md](CHANGELOG.md), also published at [adminator.colorlib.com/docs/changelog/](https://adminator.colorlib.com/docs/changelog/). The release workflow extracts the current version's notes with `node scripts/release-notes.mjs` and includes them in the GitHub release alongside both ZIP variants.
+-- 
+2.43.0
+

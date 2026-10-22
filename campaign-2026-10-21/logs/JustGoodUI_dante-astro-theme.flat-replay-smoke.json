@@ -1,0 +1,46 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/JustGoodUI_dante-astro-theme/opt/temp/dist",
+  "base": "/",
+  "html_files": 36,
+  "local_refs_checked": 73,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 18204,
+      "title": "Dante"
+    },
+    "/blog/": {
+      "status": 200,
+      "bytes": 19304,
+      "title": "Blog | Dante"
+    },
+    "/blog/post-1/": {
+      "status": 200,
+      "bytes": 15528,
+      "title": "The Advantages &amp; Disadvantages of Working from Home | Dante"
+    },
+    "/projects/": {
+      "status": 200,
+      "bytes": 15147,
+      "title": "Portfolio | Dante"
+    },
+    "/about/": {
+      "status": 200,
+      "bytes": 9867,
+      "title": "About Me | Dante"
+    },
+    "/rss.xml": {
+      "status": 200,
+      "bytes": 6675,
+      "title": "Dante"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 182,
+      "title": null
+    }
+  },
+  "ok": true
+}

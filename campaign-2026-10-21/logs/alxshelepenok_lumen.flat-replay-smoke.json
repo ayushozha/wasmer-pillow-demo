@@ -1,0 +1,51 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/alxshelepenok_lumen/opt/temp/target",
+  "base": "/",
+  "html_files": 31,
+  "local_refs_checked": 148,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 39037,
+      "title": "John Doe"
+    },
+    "/posts/a-brief-history-of-typography/": {
+      "status": 200,
+      "bytes": 33815,
+      "title": "A Brief History of Typography - John Doe"
+    },
+    "/posts/a-brief-history-of-typography.md": {
+      "status": 200,
+      "bytes": 2310,
+      "title": null
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 26338,
+      "title": "NOT FOUND - John Doe"
+    },
+    "/atom.xml": {
+      "status": 200,
+      "bytes": 33375,
+      "title": "John Doe"
+    },
+    "/llms.txt": {
+      "status": 200,
+      "bytes": 3729,
+      "title": null
+    },
+    "/tags/": {
+      "status": 200,
+      "bytes": 36689,
+      "title": "Tags - John Doe"
+    },
+    "/sitemap-index.xml": {
+      "status": 200,
+      "bytes": 194,
+      "title": null
+    }
+  },
+  "ok": true
+}

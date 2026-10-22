@@ -1,0 +1,231 @@
+# 2026-10-22T04:44:11Z satnaing/shadcn-admin @ e16c87f213a5ba5e45964e9b67c792105ec74d26 node v24.22.1 pnpm 10.34.7 (CI installs latest pnpm via npm -g)
+$ npx -y pnpm@10.34.7 install --frozen-lockfile
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +467
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 467, reused 191, downloaded 8, added 3
+Progress: resolved 467, reused 191, downloaded 95, added 82
+Progress: resolved 467, reused 191, downloaded 130, added 100
+Progress: resolved 467, reused 191, downloaded 208, added 129
+Progress: resolved 467, reused 191, downloaded 276, added 374
+Progress: resolved 467, reused 191, downloaded 276, added 467, done
+
+dependencies:
++ @clerk/react 6.4.3
++ @hookform/resolvers 5.2.2
++ @radix-ui/react-alert-dialog 1.1.15
++ @radix-ui/react-avatar 1.1.11
++ @radix-ui/react-checkbox 1.3.3
++ @radix-ui/react-collapsible 1.1.12
++ @radix-ui/react-dialog 1.1.15
++ @radix-ui/react-direction 1.1.1
++ @radix-ui/react-dropdown-menu 2.1.16
++ @radix-ui/react-icons 1.3.2
++ @radix-ui/react-label 2.1.8
++ @radix-ui/react-popover 1.1.15
++ @radix-ui/react-radio-group 1.3.8
++ @radix-ui/react-scroll-area 1.2.10
++ @radix-ui/react-select 2.2.6
++ @radix-ui/react-separator 1.1.8
++ @radix-ui/react-slot 1.2.4
++ @radix-ui/react-switch 1.2.6
++ @radix-ui/react-tabs 1.1.13
++ @radix-ui/react-tooltip 1.2.8
++ @tailwindcss/vite 4.2.2
++ @tanstack/react-query 5.99.0
++ @tanstack/react-router 1.168.22
++ @tanstack/react-table 8.21.3
++ axios 1.15.0
++ class-variance-authority 0.7.1
++ clsx 2.1.1
++ cmdk 1.1.1
++ date-fns 4.1.0
++ input-otp 1.4.2
++ lucide-react 1.8.0
++ react 19.2.5
++ react-day-picker 9.14.0
++ react-dom 19.2.5
++ react-hook-form 7.72.1
++ react-top-loading-bar 3.0.2
++ recharts 3.8.1
++ sonner 2.0.7
++ tailwind-merge 3.5.0
++ tailwindcss 4.2.2
++ tw-animate-css 1.4.0
++ zod 4.3.6
++ zustand 5.0.12
+
+devDependencies:
++ @eslint/js 10.0.1
++ @faker-js/faker 10.4.0
++ @tanstack/eslint-plugin-query 5.99.0
++ @tanstack/react-query-devtools 5.99.0
++ @tanstack/react-router-devtools 1.166.13
++ @tanstack/router-plugin 1.167.22
++ @trivago/prettier-plugin-sort-imports 6.0.2
++ @types/node 25.6.0
++ @types/react 19.2.14
++ @types/react-dom 19.2.3
++ @vitejs/plugin-react 6.0.1
++ @vitest/browser-playwright 4.1.4
++ @vitest/coverage-v8 4.1.4
++ @vitest/ui 4.1.4
++ eslint 10.2.1
++ eslint-plugin-react-hooks 7.1.1
++ eslint-plugin-react-refresh 0.5.2
++ globals 17.5.0
++ knip 6.4.1
++ playwright 1.59.1
++ prettier 3.8.3
++ prettier-plugin-tailwindcss 0.7.2
++ typescript 6.0.3
++ typescript-eslint 8.58.2
++ vite 8.0.8
++ vitest 4.1.4
++ vitest-browser-react 2.2.0
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @clerk/shared@4.8.6, esbuild@0.25.11,               │
+│   esbuild@0.27.1.                                                            │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 6.4s using pnpm v10.34.7
+EXIT 0
+$ npx -y pnpm@10.34.7 run build
+
+> shadcn-admin@2.2.1 build /tmp/claude-0/camp2/satnaing_shadcn-admin
+> tsc -b && vite build
+
+vite v8.0.8 building client environment for production...
+[2Ktransforming...✓ 3974 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 5.18 kB │ gzip:   1.27 kB
+dist/assets/dashboard-light-P68E3aSp.png      450.98 kB
+dist/assets/dashboard-dark-XXx_X8s4.png       461.76 kB
+dist/assets/index-ChZ-TBIh.css                111.51 kB │ gzip:  17.95 kB
+dist/assets/403-CuyrghDh.js                     0.07 kB │ gzip:   0.08 kB
+dist/assets/500-vJxELYuF.js                     0.07 kB │ gzip:   0.09 kB
+dist/assets/404-CGo54oA1.js                     0.08 kB │ gzip:   0.09 kB
+dist/assets/503-CFHz_GbB.js                     0.08 kB │ gzip:   0.09 kB
+dist/assets/401-BRKPC8Er.js                     0.08 kB │ gzip:   0.09 kB
+dist/assets/route-B3DY5_zW.js                   0.08 kB │ gzip:   0.09 kB
+dist/assets/route-WWyTwM_6.js                   0.08 kB │ gzip:   0.09 kB
+dist/assets/check-DTzBXzJD.js                   0.12 kB │ gzip:   0.14 kB
+dist/assets/chevron-down-DuDidGZc.js            0.12 kB │ gzip:   0.14 kB
+dist/assets/circle-7KwZ8vjb.js                  0.13 kB │ gzip:   0.13 kB
+dist/assets/matchContext-DF0Q_0QB.js            0.14 kB │ gzip:   0.12 kB
+dist/assets/loader-circle-CUGkSJHF.js           0.14 kB │ gzip:   0.15 kB
+dist/assets/plus-Dgy-KNAv.js                    0.15 kB │ gzip:   0.15 kB
+dist/assets/arrow-right-wYC8MO6z.js             0.16 kB │ gzip:   0.16 kB
+dist/assets/credit-card-BYzcYTKr.js             0.20 kB │ gzip:   0.19 kB
+dist/assets/useNavigate-CPyUFPpq.js             0.22 kB │ gzip:   0.19 kB
+dist/assets/sign-up-CDoEj-Bp.js                 0.23 kB │ gzip:   0.19 kB
+dist/assets/circle-question-mark-DdeVbrJC.js    0.24 kB │ gzip:   0.20 kB
+dist/assets/external-link-C9yaoJqa.js           0.25 kB │ gzip:   0.20 kB
+dist/assets/skeleton-08AKy2dO.js                0.25 kB │ gzip:   0.21 kB
+dist/assets/dist--HnZw3E7.js                    0.25 kB │ gzip:   0.18 kB
+dist/assets/dist-DSNWGA-g.js                    0.26 kB │ gzip:   0.21 kB
+dist/assets/send-CNGcZy5R.js                    0.29 kB │ gzip:   0.23 kB
+dist/assets/sign-in-CQk4uKKf.js                 0.29 kB │ gzip:   0.24 kB
+dist/assets/users-Bkzkyznz.js                   0.30 kB │ gzip:   0.22 kB
+dist/assets/user-plus-IvbavISq.js               0.31 kB │ gzip:   0.23 kB
+dist/assets/cookies-BZCkeM56.js                 0.35 kB │ gzip:   0.21 kB
+dist/assets/main-DD_GIz45.js                    0.36 kB │ gzip:   0.27 kB
+dist/assets/show-submitted-data-ncDYKJ_9.js     0.36 kB │ gzip:   0.28 kB
+dist/assets/dist-BPMoYuC6.js                    0.38 kB │ gzip:   0.27 kB
+dist/assets/dist-gvObL_6w.js                    0.49 kB │ gzip:   0.36 kB
+dist/assets/dist-DJw2umtz.js                    0.54 kB │ gzip:   0.38 kB
+dist/assets/auth-layout-C86qnvPp.js             0.54 kB │ gzip:   0.31 kB
+dist/assets/logo-yviHajhk.js                    0.55 kB │ gzip:   0.37 kB
+dist/assets/redirect-XnQ01Aui.js                0.56 kB │ gzip:   0.33 kB
+dist/assets/content-section-Bla5zaMv.js         0.63 kB │ gzip:   0.34 kB
+dist/assets/direction-provider-BFe7yLWv.js      0.65 kB │ gzip:   0.42 kB
+dist/assets/useRouter-ByXt84OF.js               0.69 kB │ gzip:   0.39 kB
+dist/assets/textarea-cdm1cVc0.js                0.69 kB │ gzip:   0.42 kB
+dist/assets/font-provider-DJsR9Gvv.js           0.73 kB │ gzip:   0.46 kB
+dist/assets/learn-more-BPp3M9vc.js              0.74 kB │ gzip:   0.43 kB
+dist/assets/maintenance-error-Dz7NyK4Z.js       0.74 kB │ gzip:   0.42 kB
+dist/assets/separator-BE5GtMBs.js               0.80 kB │ gzip:   0.44 kB
+dist/assets/useSearch-Sk1xR4a4.js               0.83 kB │ gzip:   0.46 kB
+dist/assets/input-Dcz1euMu.js                   0.88 kB │ gzip:   0.48 kB
+dist/assets/forbidden-D7ukappt.js               0.91 kB │ gzip:   0.50 kB
+dist/assets/_error-CkZPjdqH.js                  0.92 kB │ gzip:   0.48 kB
+dist/assets/unauthorized-error-L1phQ66i.js      0.93 kB │ gzip:   0.51 kB
+dist/assets/not-found-error-Di3cbPVR.js         0.94 kB │ gzip:   0.52 kB
+dist/assets/general-error-hoaVY5xX.js           1.02 kB │ gzip:   0.56 kB
+dist/assets/data-BI9lMC8j.js                    1.05 kB │ gzip:   0.56 kB
+dist/assets/radio-group-CZhMJZ2I.js             1.05 kB │ gzip:   0.54 kB
+dist/assets/users-Dwia11Gk.js                   1.07 kB │ gzip:   0.55 kB
+dist/assets/auth-store-Buah2dDo.js              1.08 kB │ gzip:   0.56 kB
+dist/assets/theme-provider-APQrVGpE.js          1.09 kB │ gzip:   0.59 kB
+dist/assets/card-CVx_I5Og.js                    1.13 kB │ gzip:   0.46 kB
+dist/assets/alert-eqnE85SZ.js                   1.13 kB │ gzip:   0.57 kB
+dist/assets/help-center-DTSehWeu.js             1.13 kB │ gzip:   0.66 kB
+dist/assets/badge-DmyatUBw.js                   1.23 kB │ gzip:   0.60 kB
+dist/assets/dist-DIJbfAO0.js                    1.25 kB │ gzip:   0.63 kB
+dist/assets/sign-in-Leyasppu.js                 1.33 kB │ gzip:   0.62 kB
+dist/assets/createLucideIcon-DP0fS7Ra.js        1.38 kB │ gzip:   0.78 kB
+dist/assets/data-CJUQhMMr.js                    1.56 kB │ gzip:   0.71 kB
+dist/assets/password-input-BRt9o20f.js          1.67 kB │ gzip:   0.86 kB
+dist/assets/profile-dropdown-DejtUORs.js        1.68 kB │ gzip:   0.71 kB
+dist/assets/_error-xyV4smNi.js                  1.74 kB │ gzip:   0.90 kB
+dist/assets/display-C0nbOTri.js                 1.77 kB │ gzip:   0.86 kB
+dist/assets/search-Co7JV0QP.js                  1.93 kB │ gzip:   1.01 kB
+dist/assets/preload-helper-CUalF7GM.js          2.01 kB │ gzip:   1.08 kB
+dist/assets/dist-De7wONjv.js                    2.09 kB │ gzip:   0.93 kB
+dist/assets/forgot-password-ffXvWSOL.js         2.18 kB │ gzip:   1.08 kB
+dist/assets/user-management-DtrODUlu.js         2.28 kB │ gzip:   1.15 kB
+dist/assets/sign-in-2-D5T5SI3R.js               2.30 kB │ gzip:   0.91 kB
+dist/assets/user-auth-form-BruTwSak.js          3.05 kB │ gzip:   1.40 kB
+dist/assets/route-B78tde15.js                   3.06 kB │ gzip:   1.25 kB
+dist/assets/settings-BuHfCAiV.js                3.43 kB │ gzip:   1.39 kB
+dist/assets/dist-9iT844qi.js                    3.53 kB │ gzip:   1.59 kB
+dist/assets/react-dom-C5ON0re5.js               3.54 kB │ gzip:   1.34 kB
+dist/assets/dist-C-5PSjE0.js                    3.62 kB │ gzip:   1.59 kB
+dist/assets/route-CpryBCgz.js                   3.77 kB │ gzip:   1.81 kB
+dist/assets/sign-up-03L55Eot.js                 3.89 kB │ gzip:   1.48 kB
+dist/assets/route-B0n4nFuO.js                   3.89 kB │ gzip:   1.58 kB
+dist/assets/user-management-9yt7dSKa.js         3.93 kB │ gzip:   1.52 kB
+dist/assets/route-D7GyuJmx.js                   4.19 kB │ gzip:   1.21 kB
+dist/assets/button-C7waEkvl.js                  4.21 kB │ gzip:   1.81 kB
+dist/assets/checkbox-COtkUiSu.js                4.27 kB │ gzip:   1.82 kB
+dist/assets/appearance-fif5MrSY.js              4.47 kB │ gzip:   1.34 kB
+dist/assets/sign-out-dialog-91cNyHy2.js         4.83 kB │ gzip:   2.13 kB
+dist/assets/dist-gMugKDgm.js                    4.90 kB │ gzip:   2.12 kB
+dist/assets/popover-sZwyBW3p.js                 5.60 kB │ gzip:   2.00 kB
+dist/assets/apps-Dy7BCJ80.js                    6.25 kB │ gzip:   2.25 kB
+dist/assets/notifications-DhgGzMlT.js           7.42 kB │ gzip:   2.44 kB
+dist/assets/jsx-runtime-DWSWI4JT.js             8.52 kB │ gzip:   3.25 kB
+dist/assets/brand-icons-DpQiwVdG.js            11.04 kB │ gzip:   2.12 kB
+dist/assets/authenticated-layout-DSVEEfKD.js   11.48 kB │ gzip:   3.57 kB
+dist/assets/react-icons.esm-DQwjGsYP.js        12.79 kB │ gzip:   3.46 kB
+dist/assets/otp-CuJlMH11.js                    12.88 kB │ gzip:   5.02 kB
+dist/assets/chats-rbV_QR9d.js                  17.26 kB │ gzip:   5.37 kB
+dist/assets/tasks-Wa4lfvJr.js                  18.95 kB │ gzip:   5.59 kB
+dist/assets/format-DUns16Wb.js                 19.35 kB │ gzip:   5.57 kB
+dist/assets/select-DGGa7NJ6.js                 21.63 kB │ gzip:   7.36 kB
+dist/assets/command-Dncz9tLs.js                21.80 kB │ gzip:   7.65 kB
+dist/assets/users-DuKNAfpe.js                  22.32 kB │ gzip:   6.09 kB
+dist/assets/link-DsAK09oV.js                   23.18 kB │ gzip:   8.57 kB
+dist/assets/theme-switch-Bxmep6eS.js           23.67 kB │ gzip:   5.00 kB
+dist/assets/utils-DuRajX9-.js                  26.95 kB │ gzip:   8.67 kB
+dist/assets/dist-BmZA3joG.js                   32.57 kB │ gzip:   9.13 kB
+dist/assets/form-D0VNR_Pi.js                   37.12 kB │ gzip:  13.07 kB
+dist/assets/Combination-qNgNljWM.js            45.75 kB │ gzip:  16.63 kB
+dist/assets/Match-BY_W-RfE.js                  48.80 kB │ gzip:  15.71 kB
+dist/assets/account-CzmAEJmy.js                56.09 kB │ gzip:  17.28 kB
+dist/assets/search-provider-Bga__1C8.js        74.25 kB │ gzip:  21.03 kB
+dist/assets/index-Bdhl58nc.js                  88.06 kB │ gzip:  30.35 kB
+dist/assets/dist-Br0ELVcl.js                  102.15 kB │ gzip:  26.99 kB
+dist/assets/client-Bafb3goG.js                178.91 kB │ gzip:  56.49 kB
+dist/assets/zod-OGs4Av0y.js                   260.90 kB │ gzip:  59.68 kB
+dist/assets/_authenticated-DTl1GpS7.js        335.87 kB │ gzip:  97.24 kB
+dist/assets/chunk-NAVWDHVN-BKrcKFsd.js        476.80 kB │ gzip: 172.06 kB
+
+✓ built in 1.36s
+EXIT 0
