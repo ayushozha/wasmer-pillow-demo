@@ -23,3 +23,7 @@
 ## Remaining check for the reviewer
 - Verify badge and import page in a browser (img.shields.io / wasmer.io blocked here).
 - README is in Spanish; the added section is in Spanish to match.
+
+## README wording correction (root, 2026-10-22)
+- The README now tells forkers to personalise both `cv.json` and `cv_english.json` (the site has Spanish and English versions).
+- README blob: base `63581bf10a2dbde0a21fcba3b52d047dd66f8b70` → patched `35813ac7672acb4c5fda10bdbcb488227c345184`; `upstream.patch` regenerated, `git apply --check -R` ok.

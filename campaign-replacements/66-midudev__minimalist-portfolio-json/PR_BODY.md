@@ -4,7 +4,7 @@ Adds a short "Desplegar en Wasmer" section to the README, before "Comandos", wit
 
 ## Why this repo
 
-This repo is meant to be used as a template: you edit `cv.json` and get a printable CV/portfolio. Many of the people who use it are learners who want their CV online quickly. The README explains how to create the project and run it locally, but not how to publish it. The build is a fully static Astro site (two prerendered pages, `/` and `/en/`), so Wasmer can serve it directly after `pnpm run build`.
+This repo is meant to be used as a template: you edit `cv.json` and `cv_english.json` and get a printable CV/portfolio. Many of the people who use it are learners who want their CV online quickly. The README explains how to create the project and run it locally, but not how to publish it. The build is a fully static Astro site (two prerendered pages, `/` and `/en/`), so Wasmer can serve it directly after `pnpm run build`.
 
 ## Testing
 

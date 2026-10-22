@@ -19,8 +19,12 @@
 - `npm install` exit 0; `npm run build` exit 0 ("Using @sveltejs/adapter-static, Wrote site to build").
 - Smoke: `/`, `/about`, `/blog`, `/blog/heading-links-example`, `/contact`, `/api/rss.xml`, `/blog/category/svelte` all 200 with correct titles. 26 referenced `_app/immutable` assets 200.
 - `/blog/page/2` 404 (observed). The demo has 3 posts with `postsPerPage = 10` (`src/lib/config.js`), so no page 2 is generated.
-- Observed: the wildcard prerender entries also emit literal files such as `blog/page/*.html`. This is upstream behaviour and harmless.
-- SvelteKit is build-time only here (static output); no server runtime is deployed, so no advisory gate applies.
+- Observed: the wildcard prerender entries also emit literal files such as `blog/page/*.html`. On Linux (this replay, and Wasmer's Linux builder) this is harmless. Root found that on Windows the upstream build fails because `*` is an invalid filename character — an environmental limitation of the upstream project on Windows, not of this patch or the Linux build path.
+- Dependency audit: the lockfile audit reports **11 findings (8 high, 2 moderate, 1 low)**. The deployed site is static prerendered output (no SvelteKit/Node server runs on Wasmer), and root's specific input-path review found no concrete reachable vulnerable path in what ships. This is not a clean audit; the findings remain in the upstream lockfile.
 
 ## Remaining check for the reviewer
 - Verify badge and import page in a browser (img.shields.io / wasmer.io blocked here).
+
+## README wording correction (root, 2026-10-22)
+- Changed "Wasmer detects the SvelteKit static adapter" → "Wasmer detects this SvelteKit project": Anybuild detects the `@sveltejs/kit` dependency, not the adapter identity.
+- README blob: base `98e8c8afa702de478d372ee5029377b94eba531f` → patched `e57c966ae29fb016509b1689c94d1c554ce5ec2f`; `upstream.patch` regenerated, `git apply --check -R` ok.
