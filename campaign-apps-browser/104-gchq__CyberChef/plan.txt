@@ -1,0 +1,19 @@
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/gchq__CyberChef.json
+{
+ "commands": {
+  "install": "npm install",
+  "build": "npm run build",
+  "start": "npx grunt dev"
+ },
+ "node_package_manager": "npm",
+ "node_install_inputs": [
+  "package.json"
+ ],
+ "node_server": "node"
+}

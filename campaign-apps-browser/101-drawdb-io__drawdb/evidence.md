@@ -2,7 +2,7 @@
 
 # drawdb-io/drawdb: evidence
 
-**Verdict: HOLD.** The build and the root page pass, but drawDB uses `BrowserRouter` and the editor lives on history-router URLs (`/editor`, `/editor/diagrams/:id`, `/editor/templates/:id`). static-web-server as Anybuild v0.33.0 starts it has no SPA fallback, so reloading or opening any of those URLs directly returns a bare 404. That breaks the main workflow (opening a saved diagram navigates to `/editor/diagrams/<id>`, so a refresh there shows a 404), not an edge case.
+**Verdict: HELD_POLICY (owner declined deploy buttons, PR #57).** There is also a technical HOLD: the build and the root page pass, but drawDB uses `BrowserRouter` and the editor lives on history-router URLs (`/editor`, `/editor/diagrams/:id`, `/editor/templates/:id`). static-web-server as Anybuild v0.33.0 starts it has no SPA fallback, so reloading or opening any of those URLs directly returns a bare 404. That breaks the main workflow (opening a saved diagram navigates to `/editor/diagrams/<id>`, so a refresh there shows a 404), not an edge case.
 
 ## Repository
 - Pinned SHA: `7683bdf90a8db5d284dc6b2bc545831aa4b6dd76` on `main` (shallow clone; HEAD checked).
@@ -12,7 +12,7 @@
 - Workflows: `build.yml` (npm install, lint, build on Node 20/22) and `docker.yml`. There is no bot that auto-closes PRs.
 - Merged PRs since 2025-10-01: 216 (GitHub search, 2026-10-22). The repo is very active.
 - Duplicate check: the search `wasmer repo:drawdb-io/drawdb` returns 0 PRs.
-- Earlier deploy-button PR: #57 "Adding one-click deploy template to README.md" (cosark, 2024). Its body: "Adding section enabling community access to one-click deployment templates at cloud hosting services". It was closed unmerged on 2024-05-02 with 2 comments. This session has no API access to the repo, so I could not read those comments. Treat this as a negative precedent. Other "deploy" PRs (#305/#310 Electron, #667/#668 base path) are unrelated.
+- Earlier deploy-button PR: #57 "Adding one-click deploy template to README.md" (cosark, 2024). Its body: "Adding section enabling community access to one-click deployment templates at cloud hosting services". It was closed unmerged on 2024-05-02 with 2 comments. This session has no API access to the repo, so I could not read those comments. The root reviewer confirmed that the owner (1ilit) declined deploy buttons to keep the README clean (https://github.com/drawdb-io/drawdb/pull/57#issuecomment-2090613834), which makes this HELD_POLICY. Other "deploy" PRs (#305/#310 Electron, #667/#668 base path) are unrelated.
 - Existing deploy docs: the README has "Build" and "Docker Build" sections, plus optional sharing via [drawdb-server] and `VITE_BACKEND_URL`. The repo's own hosting configures an SPA fallback in both places: `vercel.json` rewrites `/(.*)` to `/`, and the Dockerfile's nginx uses `try_files $uri /index.html`.
 
 ## Anybuild detection (v0.33.0)
@@ -42,5 +42,4 @@
 - Runtime versions shipped: react 18.3.1, react-router 7.18.2, axios 1.20.0, jspdf 4.2.1, dexie 3.2.7, lodash 4.18.1. There are no other prod advisories.
 
 ## Remaining check for the reviewer
-- Decide whether to drop this target, or to propose a separate build change upstream that emits `dist/404.html` (or wait for Anybuild to set `--page-fallback` for Vite SPAs). Given the closed PR #57, I would not open a README PR while reloads in the editor 404.
-- If it ever proceeds: verify the badge and import page in a browser (`img.shields.io` and `wasmer.io` are blocked here).
+- None. The target is dropped: the owner declined deploy buttons in PR #57. The upstream.patch and PR text are kept only as a record of the technical replay and must not be submitted.

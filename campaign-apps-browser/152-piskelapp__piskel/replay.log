@@ -1,0 +1,203 @@
+# replay of B-piskelapp__piskel  source=$S/rup/piskelapp__piskel  upstream HEAD=d828941fa9fe76464d69d91d5fd862067c98c02c
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dest/prod
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-piskelapp__piskel/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dest/prod' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+> piskel@0.15.2-SNAPSHOT prepare
+> husky
+
+.git can't be found
+added 499 packages, and audited 500 packages in 9s
+
+41 vulnerabilities (2 low, 11 moderate, 21 high, 7 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   nw-builder@4.17.5 (postinstall: node ./src/postinstall.js)
+npm warn install-scripts   puppeteer@24.40.0 (postinstall: node install.mjs)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> piskel@0.15.2-SNAPSHOT build
+> npm run build:sprites && vite build && node scripts/partials.js
+
+
+> piskel@0.15.2-SNAPSHOT build:sprites
+> node scripts/sprite.js
+
+Generating sprites...
+  Created src/img/icons.png (37 icons)
+  Created src/img/icons@2x.png (37 icons)
+  Created src/css/icons.css
+Sprites generated successfully.
+[36mvite v8.0.7 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 2 modules transformed.
+rendering chunks...
+computing gzip size...
+dest/prod/img/icons/minimap/minimap-grid-gold.png                         0.13 kB
+dest/prod/img/icons/minimap/minimap-grid-white.png                        0.13 kB
+dest/prod/img/icons/minimap/minimap-grid-white@2x.png                     0.18 kB
+dest/prod/img/icons/minimap/minimap-grid-gold@2x.png                      0.19 kB
+dest/prod/img/cursors/color-palette.png                                   0.20 kB
+dest/prod/img/icons/frame/frame-plus-white.png                            0.21 kB
+dest/prod/img/icons/tools/tool-dithering.png                              0.24 kB
+dest/prod/img/icons/tools/tool-rectangle.png                              0.24 kB
+dest/prod/img/icons/minimap/minimap-popup-preview-arrow-white.png         0.24 kB
+dest/prod/img/icons/frame/frame-plus-white@2x.png                         0.26 kB
+dest/prod/img/icons/tools/tool-rectangle-select.png                       0.27 kB
+dest/prod/img/icons/transform/tool-center.png                             0.29 kB
+dest/prod/img/icons/minimap/minimap-popup-preview-arrow-gold.png          0.30 kB
+dest/prod/img/icons/frame/frame-recyclebin-white.png                      0.31 kB
+dest/prod/img/icons/frame/frame-dragndrop-white.png                       0.32 kB
+dest/prod/img/icons/common/common-keyboard-gold.png                       0.34 kB
+dest/prod/img/icons/minimap/minimap-popup-preview-arrow-white@2x.png      0.35 kB
+dest/prod/img/icons/minimap/minimap-popup-preview-arrow-gold@2x.png       0.36 kB
+dest/prod/img/icons/settings/settings-save-white.png                      0.38 kB
+dest/prod/img/icons/frame/frame-duplicate-white.png                       0.38 kB
+dest/prod/img/icons/settings/settings-resize-white.png                    0.39 kB
+dest/prod/img/icons/tools/tool-dithering@2x.png                           0.39 kB
+dest/prod/img/icons/transform/tool-crop.png                               0.39 kB
+dest/prod/img/icons/tools/tool-rectangle@2x.png                           0.39 kB
+dest/prod/logo.png                                                        0.41 kB
+dest/prod/img/icons/tools/tool-rectangle-select@2x.png                    0.42 kB
+dest/prod/img/icons/common/common-warning-red.png                         0.44 kB
+dest/prod/img/cursors/pen.png                                             0.45 kB
+dest/prod/img/icons/transform/tool-center@2x.png                          0.45 kB
+dest/prod/img/icons/tools/tool-circle.png                                 0.49 kB
+dest/prod/img/icons/tools/tool-eraser.png                                 0.52 kB
+dest/prod/img/icons/frame/frame-dragndrop-white@2x.png                    0.53 kB
+dest/prod/img/icons/frame/frame-recyclebin-white@2x.png                   0.53 kB
+dest/prod/img/cursors/dropper.png                                         0.54 kB
+dest/prod/img/icons/tools/tool-move.png                                   0.54 kB
+dest/prod/img/cursors/mirror-pen.png                                      0.55 kB
+dest/prod/img/icons/tools/tool-colorpicker.png                            0.56 kB
+dest/prod/img/icons/common/common-swapcolors-arrow-grey.png               0.56 kB
+dest/prod/img/cursors/wand.png                                            0.57 kB
+dest/prod/img/icons/common/common-keyboard-gold@2x.png                    0.57 kB
+dest/prod/img/icons/tools/tool-shape-select.png                           0.58 kB
+dest/prod/img/icons/settings/settings-open-folder-white.png               0.58 kB
+dest/prod/img/icons/settings/settings-export-white.png                    0.58 kB
+dest/prod/img/cursors/vertical-mirror-pen.png                             0.60 kB
+dest/prod/img/cursors/lighten.png                                         0.60 kB
+dest/prod/img/cursors/stroke.png                                          0.61 kB
+dest/prod/img/icons/transform/tool-clone.png                              0.62 kB
+dest/prod/img/icons/settings/settings-save-white@2x.png                   0.65 kB
+dest/prod/img/cursors/eraser.png                                          0.65 kB
+dest/prod/img/icons/settings/settings-resize-white@2x.png                 0.65 kB
+dest/prod/img/cursors/rectangle.png                                       0.66 kB
+dest/prod/img/icons/frame/frame-duplicate-white@2x.png                    0.66 kB
+dest/prod/img/icons/settings/settings-gear-white.png                      0.66 kB
+dest/prod/img/icons/tools/tool-pen.png                                    0.67 kB
+dest/prod/img/cursors/hand.png                                            0.67 kB
+dest/prod/img/icons/tools/tool-lighten.png                                0.69 kB
+dest/prod/img/icons/transform/tool-crop@2x.png                            0.69 kB
+dest/prod/img/cursors/dither.png                                          0.70 kB
+dest/prod/img/cursors/paint-bucket.png                                    0.70 kB
+dest/prod/img/icons/transform/tool-flip.png                               0.70 kB
+dest/prod/img/icons/tools/tool-paint-bucket.png                           0.74 kB
+dest/prod/img/icons/tools/tool-vertical-mirror-pen.png                    0.74 kB
+dest/prod/img/cursors/circle.png                                          0.76 kB
+dest/prod/img/icons/tools/tool-stroke.png                                 0.80 kB
+dest/prod/img/icons/transform/tool-rotate.png                             0.81 kB
+dest/prod/img/icons/tools/tool-lasso-select.png                           0.82 kB
+dest/prod/img/icons/common/common-warning-red@2x.png                      0.85 kB
+dest/prod/img/icons/common/common-swapcolors-arrow-grey@2x.png            0.96 kB
+dest/prod/img/icons/tools/tool-eraser@2x.png                              0.96 kB
+dest/prod/img/icons/settings/settings-open-folder-white@2x.png            1.00 kB
+dest/prod/img/icons/tools/tool-move@2x.png                                1.01 kB
+dest/prod/img/icons/settings/settings-export-white@2x.png                 1.01 kB
+dest/prod/img/icons/tools/tool-circle@2x.png                              1.07 kB
+dest/prod/img/cursors/select.png                                          1.14 kB
+dest/prod/img/icons/tools/tool-colorpicker@2x.png                         1.15 kB
+dest/prod/img/icons/transform/tool-clone@2x.png                           1.20 kB
+dest/prod/img/icons/transform/tool-flip@2x.png                            1.23 kB
+dest/prod/img/icons/tools/tool-shape-select@2x.png                        1.28 kB
+dest/prod/img/icons/settings/settings-gear-white@2x.png                   1.32 kB
+dest/prod/img/icons/tools/tool-colorswap.png                              1.32 kB
+dest/prod/img/icons/tools/tool-lighten@2x.png                             1.48 kB
+dest/prod/img/icons/tools/tool-pen@2x.png                                 1.48 kB
+dest/prod/img/icons/tools/tool-vertical-mirror-pen@2x.png                 1.57 kB
+dest/prod/img/icons/tools/tool-paint-bucket@2x.png                        1.58 kB
+dest/prod/img/icons/tools/tool-stroke@2x.png                              1.68 kB
+dest/prod/img/icons/transform/tool-rotate@2x.png                          1.70 kB
+dest/prod/img/icons/tools/tool-lasso-select@2x.png                        1.71 kB
+dest/prod/css/fonts/piskel.woff                                           1.84 kB
+dest/prod/img/icons/common/common-backup-white.png                        1.95 kB
+dest/prod/css/fonts/piskel.ttf                                            2.42 kB
+dest/prod/css/fonts/piskel.eot                                            2.58 kB
+dest/prod/img/icons/tools/tool-colorswap@2x.png                           2.84 kB
+dest/prod/img/icons/common/common-backup-white@2x.png                     4.19 kB
+dest/prod/css/fonts/icomoon.ttf                                           4.25 kB
+dest/prod/css/fonts/icomoon.woff                                          4.32 kB
+dest/prod/css/fonts/icomoon.eot                                           4.41 kB
+dest/prod/css/fonts/piskel.svg                                            4.79 kB │ gzip:  2.27 kB
+dest/prod/css/fonts/icomoon.svg                                           8.83 kB │ gzip:  3.75 kB
+dest/prod/img/icons.png                                                  14.26 kB
+dest/prod/img/icons@2x.png                                               30.45 kB
+dest/prod/index.html                                                     59.65 kB │ gzip: 11.39 kB
+dest/prod/js/piskel-packaged-min-2026-10-22-05-44.js                    577.83 kB
+dest/prod/js/piskel-packaged-2026-10-22-05-44.js                      1,117.17 kB
+dest/prod/css/piskel-style-packaged-2026-10-22-05-44.css                 85.82 kB │ gzip: 17.22 kB
+
+[33m[33m[PLUGIN_TIMINGS] Warning:[0m Your build spent significant time in plugin `piskel-concat-scripts`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[32m✓ built in 3.96s[39m
+Generating Website partials...
+  Created main-partial.html
+  Created piskel-web-partial.html
+  Created piskel-web-partial-kids.html
+Partials generated successfully.
+exit=0
+
+$ static-web-server --root=$S/replay/B-piskelapp__piskel/static_app --log-level=info --port=3908 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	59653
+--	title	/	Piskel	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/index.html	text/html	59653
+404	ref	/{{src}}	text/html	0
+SUMMARY pages=2 refs_checked=2 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	ref	/{{src}}	text/html	0
+# static_app files: 109

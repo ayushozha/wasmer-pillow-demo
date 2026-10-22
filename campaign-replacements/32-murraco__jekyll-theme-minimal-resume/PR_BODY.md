@@ -12,7 +12,7 @@ Replayed the build that Wasmer's builder (Anybuild v0.33.0) generates for this r
 
 - Detection: Jekyll provider (`_config.yml` + `Gemfile`), output `_site`. Anybuild picks Jekyll over the Node/Gulp setup, so `npm run build` is not run.
 - Ruby 3.4.7 (Anybuild's default): `bundle install` (Gemfile.lock: github-pages, jekyll 3.10.0), then `jekyll build`. Both exit 0.
-- Served `_site` with static-web-server 2.38.0: `/` 200 (title "Mauricio Urraco"), `/assets/css/main.css` 200, plus favicon, `particles.min.js`, `sweet-scroll.min.js` and `main.js` 200. Unknown paths return 404.
+- Served `_site` with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here): `/` 200 (title "Mauricio Urraco"), `/assets/css/main.css` 200, plus favicon, `particles.min.js`, `sweet-scroll.min.js` and `main.js` 200. Unknown paths return 404.
 
 ## Limitations
 

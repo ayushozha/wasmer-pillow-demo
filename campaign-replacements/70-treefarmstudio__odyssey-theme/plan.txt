@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at /tmp/AnybuildKlWABf
+Plan saved to $S/replay/70-ody/plan.json

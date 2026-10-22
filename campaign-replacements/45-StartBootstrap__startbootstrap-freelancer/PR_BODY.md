@@ -14,7 +14,7 @@ This theme is a popular starting point for single-page portfolio sites, and its 
 
 Replayed locally exactly what Wasmer's builder (Anybuild v0.33.0) generates for this branch, at upstream `5bc65b4bd01e`:
 - `anybuild plan` → static provider, output directory `dist`, no install/build commands.
-- Copied `dist` into the app directory and served it with static-web-server 2.38.0 (`--root=<app> --port=<port>`).
+- Copied `dist` into the app directory and served it with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 - Smoke test: `/` and `/index.html` 200; 10 same-origin refs checked, all 200. External CDN refs (Bootstrap, Font Awesome, Google Fonts, SB Forms) are not fetched by the smoke test.
 
 ## Limitations

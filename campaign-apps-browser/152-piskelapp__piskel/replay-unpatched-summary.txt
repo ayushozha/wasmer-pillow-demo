@@ -1,0 +1,8 @@
+# replay of B-piskelapp__piskel  source=$S/rup/piskelapp__piskel  upstream HEAD=d828941fa9fe76464d69d91d5fd862067c98c02c
+# local diff vs HEAD: 
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+STATIC_DIR 'dist' MISSING
+# static_app files: 0
+--	title	/	(none)	
+SUMMARY pages=1 refs_checked=0 failures=1
+FAIL	404	page	/	text/html	0

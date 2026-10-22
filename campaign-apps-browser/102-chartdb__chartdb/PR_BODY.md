@@ -21,7 +21,7 @@ Detection:
 Commands and results:
 - `npm install` on Node 24.22.1 with npm 11.21.1 exited 0.
 - `npm run build` ran out of memory at Node's default heap (about 2.2 GB on the test machine).
-- With `NODE_OPTIONS=--max-old-space-size=4096` the build completed. `/` and all referenced assets returned 200 from static-web-server 2.38.0.
+- With `NODE_OPTIONS=--max-old-space-size=4096` the build completed. `/` and all referenced assets returned 200 from a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 
 ## Limitations
 

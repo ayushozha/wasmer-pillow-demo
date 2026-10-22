@@ -14,7 +14,7 @@ SB Admin 2 is one of the most-used free Bootstrap admin dashboards; people often
 
 Replayed locally exactly what Wasmer's builder (Anybuild v0.33.0) generates for this branch, at upstream `f0309881ef82`:
 - `anybuild plan` → static provider, output directory `.`, no install/build commands.
-- Copied `.` into the app directory and served it with static-web-server 2.38.0 (`--root=<app> --port=<port>`).
+- Copied `.` into the app directory and served it with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 - Smoke test: Pages `/`, `/index.html`, `/charts.html`, `/tables.html`, `/login.html`, `/404.html` = 200; all 24 same-origin refs 200. `/does-not-exist` = 404 with an empty body in this local replay, while `/404.html` itself = 200. The cause was not established (it may depend on the local harness's working directory or static-web-server settings), so the 404 page shown on Wasmer is unverified. Offline link check of every `.html` in static_app: 331 local refs, 0 unresolved.
 
 ## Limitations

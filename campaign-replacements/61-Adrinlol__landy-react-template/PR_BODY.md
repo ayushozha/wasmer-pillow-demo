@@ -12,7 +12,7 @@ Local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `8c3aa8bf
 - Detection: static Node.js provider, framework Create React App, npm, output `build`.
 - `npm install` (Node 24.22.1, npm 11.21.1): exit 0.
 - `npm run build`: exit 0, "Compiled successfully".
-- `build/` served with static-web-server 2.38.0: `/` returned 200, and the JS/CSS bundles and `manifest.json` returned 200.
+- `build/` served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here): `/` returned 200, and the JS/CSS bundles and `manifest.json` returned 200.
 
 ## Limitations
 

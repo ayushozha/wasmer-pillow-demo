@@ -1,0 +1,22 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/CorentinTh__it-tools.json
+{
+ "commands": {
+  "install": "pnpm install",
+  "build": "pnpm run build",
+  "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+ },
+ "static_dir": "dist",
+ "node_package_manager": "pnpm",
+ "node_install_inputs": [
+  "package.json"
+ ],
+ "node_framework": "vite",
+ "node_server": "node"
+}

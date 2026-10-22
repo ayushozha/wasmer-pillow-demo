@@ -1,0 +1,23 @@
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: pnpm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/AykutSarac__jsoncrack.com.json
+{
+ "commands": {
+  "install": "pnpm install",
+  "build": "pnpm run build",
+  "start": "turbo run start"
+ },
+ "node_package_manager": "pnpm",
+ "node_install_inputs": [
+  "package.json",
+  "apps/chrome-extension/package.json",
+  "packages/jsoncrack-react/package.json",
+  "apps/vscode/package.json",
+  "apps/www/package.json"
+ ],
+ "node_server": "node"
+}

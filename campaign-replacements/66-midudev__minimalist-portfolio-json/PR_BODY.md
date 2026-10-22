@@ -12,7 +12,7 @@ Local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `02749efb
 - Detection: static Node.js provider, framework Astro, pnpm, output `dist`.
 - `pnpm install` (pnpm 10.34.7, Node 24.22.1): exit 0.
 - `pnpm run build` (`astro check && astro build`): exit 0, 0 check errors, 2 pages.
-- `dist/` served with static-web-server 2.38.0: `/` and `/en/` returned 200, and the favicon, fonts, photo and script returned 200.
+- `dist/` served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here): `/` and `/en/` returned 200, and the favicon, fonts, photo and script returned 200.
 
 ## Limitations
 

@@ -1,0 +1,22 @@
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+Plan saved to $S/plantmp/laneA/GoogleChromeLabs__squoosh.json
+{
+ "commands": {
+  "install": "npm install",
+  "build": "npm run build"
+ },
+ "node_package_manager": "npm",
+ "node_install_inputs": [
+  "package.json"
+ ],
+ "node_server": "node"
+}

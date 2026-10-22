@@ -13,7 +13,7 @@ The `Staticfile` is needed for correct detection. Without it, Wasmer's builder (
 I replayed what Wasmer's builder generates for `a79733eb803fc97084ef0ee4faa96b031e69e1c0` with this change:
 
 - Provider: static site (`Staticfile`), output directory `.`. No install or build step.
-- The root was served with static-web-server 2.38.0 (the version the builder uses).
+- The root was served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 - `/` returned 200 ("miniPaint - image editor"), and `/dist/bundle.js` returned 200 (1.36 MB).
 - Runtime assets the bundle loads all returned 200: `images/test-collection.json`, `images/logo-colors.png`, `images/logo.svg`, `src/js/libs/gifjs/gif.worker.js` and sample icons. All 30 `images/icons/*` files referenced in the bundle are present in the served root.
 - The commented-out `dist/manifest.json` link in `index.html` 404s, as it does today; browsers ignore it because it is inside an HTML comment.

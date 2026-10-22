@@ -14,7 +14,7 @@ The button opens Wasmer's import page for this public repository, where the user
 
 Replayed Anybuild v0.33.0 (the version Wasmer pins) locally on this branch at base `e05267588134ca2f4129087cc65a59c38a9c36b5`:
 - `anybuild plan`: "Detected static site provider", output directory `public`.
-- Copied `public/` as generated and served it with static-web-server 2.38.0 (the version it pins).
+- Copied `public/` as generated and served it with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 - `/`, `/index.html`, `/forms.html`, `/cards.html`, `/charts.html`, `/buttons.html`, `/modals.html`, `/tables.html`, `/pages/login.html`, `/pages/create-account.html`, `/pages/forgot-password.html`, `/pages/blank.html`, `/pages/404.html` → 200; local assets (`tailwind.output.css`, `init-alpine.js`, chart scripts) → 200. `/does-not-exist` → 404.
 
 No Wasmer deployment was made.

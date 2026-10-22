@@ -14,7 +14,7 @@ AdminLTE's live demo is the main way people evaluate it, and the repository alre
 
 Replayed what Anybuild v0.33.0 generates for this branch at `e13df78a4d0c`:
 - `anybuild plan` → static provider, output `dist`, no install/build commands.
-- Served `dist/` with static-web-server 2.38.0: `/`, `/index.html`, `/index2.html`, `/docs/`, `/layout/fixed-sidebar.html`, `/UI/general.html` all 200; 51 referenced same-origin assets all 200.
+- Served `dist/` with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here): `/`, `/index.html`, `/index2.html`, `/docs/`, `/layout/fixed-sidebar.html`, `/UI/general.html` all 200; 51 referenced same-origin assets all 200.
 - Offline check of all 91 HTML files in `dist/`: 5,148 local links, one unresolved (`css/adminlte-colors.css` from `docs/faq.html`, an existing stale page).
 
 Validation commands: `anybuild plan`, then `static-web-server --root=dist --port=<port>` and an HTTP smoke test.

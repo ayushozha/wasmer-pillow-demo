@@ -12,7 +12,7 @@ Replayed the build that Wasmer's builder (Anybuild v0.33.0) generates, at commit
 
 - Detection: Jekyll provider (`_config.yml`, no Gemfile), output `_site`.
 - Ruby 3.4.7: `bundle init && bundle add jekyll -v 4.3.0`, then `jekyll build`. Both exit 0.
-- Served with static-web-server 2.38.0: `/`, `/about`, `/Hello-World/` and `/404.html` all return 200. `/style.css` and the images return 200.
+- Served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here): `/`, `/about`, `/Hello-World/` and `/404.html` all return 200. `/style.css` and the images return 200.
 
 ## Limitations
 

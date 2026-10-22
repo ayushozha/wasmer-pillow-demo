@@ -19,7 +19,7 @@ Detection:
 Commands and results:
 - `npm install` on Node 24.22.1 with npm 11.21.1 exited 0. Only `package.json` and `package-lock.json` were staged, as the builder does.
 - `npm run build` exited 0.
-- `dist/` was served with static-web-server 2.38.0.
+- `dist/` was served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 
 Smoke test:
 - `/` returned 200 ("CoreUI Vue.js Admin Template"), and all 16 assets it references returned 200.

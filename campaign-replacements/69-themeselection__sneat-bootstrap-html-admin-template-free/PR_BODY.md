@@ -11,7 +11,7 @@ Why the `Staticfile` is needed: without it, Wasmer's builder sees `package.json`
 ## Testing
 
 Local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `de094c2bf89e602054b7c14f46c9a3a5b9f6cac9` with this change:
-- Detection: StaticFile provider, output directory `.`, served by static-web-server 2.38.0.
+- Detection: StaticFile provider, output directory `.`, served by a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here).
 - `/`, `/html/index.html`, `/html/auth-login-basic.html`, `/html/cards-basic.html`, `/html/form-layouts-vertical.html` and `/html/tables-basic.html` returned 200.
 - Every local `href`/`src` referenced from every HTML page (115 unique URLs: CSS, JS, fonts, images) returned 200.
 

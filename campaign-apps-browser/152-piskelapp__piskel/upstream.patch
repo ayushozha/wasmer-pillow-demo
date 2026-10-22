@@ -1,0 +1,24 @@
+diff --git a/README.md b/README.md
+index b622948..c328daf 100644
+--- a/README.md
++++ b/README.md
+@@ -47,6 +47,12 @@ There is no support for mobile.
+ 
+ Offline builds are available. More details in the [dedicated wiki page](https://github.com/piskelapp/piskel/wiki/Desktop-applications).
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=piskelapp%2Fpiskel)
++
++Wasmer runs `npm install` and `npm run build`, then serves the generated `dest/prod` folder (set in the `Staticfile`) as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the editor and redeploy on every push, fork this repository and import your own repository on Wasmer.
++
+ ## Contributing ?
+ 
+ ### Reporting an issue
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..e00fd6d
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: dest/prod
