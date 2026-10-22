@@ -17,17 +17,17 @@
 - Provider: static Node.js; framework Vite; package manager npm (`package-lock.json`). Output dir: `dist`.
 - Install inputs staged: `package-lock.json` and `package.json` (`node_install_inputs: ["package.json"]`). Env: `CI=true NPM_CONFIG_FUND=false`.
 - Generated commands: install `npm install`, build `npm run build` (`vite build`), start `static-web-server --root=/opt/static_app --log-level=info --port=8080`. There is no `_redirects` file, so there is no redirects config.
-- The plan's npm version is 11. The replay used the npm bundled with Node 24.22.1 (10.9.4). The install was lockfile-driven and exited 0.
+- The plan pins npm 11. The replay ran npm 11.21.1 (the `npm --version` line in replay.log).
 
-## Replay (patched clone, Node 24.22.1)
+## Replay (patched clone, Node 24.22.1, npm 11.21.1)
 - `npm install` exited 0. `prepare` ran husky, which printed ".git can't be found" and did not fail. `npm run build` exited 0 (Vite 8.1.0). `static_app` holds 28 files.
 - Smoke:
   - `/` returned 200 ("drawDB | Online database diagram editor and SQL generator").
   - `/assets/index-CQwdX5nN.js` (17.2 MB) returned 200.
   - `/assets/index-CyUba-Ct.css` returned 200.
-  - `/config.js` and `/favicon.ico` returned 200.
+  - `/config.js`, `/robots.txt` and `/favicon.ico` returned 200.
 - Routes:
-  - `/editor`, `/templates`, `/editor/templates/1` and `/bug-report` returned **404**, with an empty body (no 404.html).
+  - `/editor`, `/templates`, `/editor/templates/1`, `/editor/diagrams/1` and `/bug-report` returned **404**, with an empty body (no 404.html).
   - `/nope` returned 404.
   - Client-side navigation from `/` to the editor works in principle (React Router), but I did not test it in a browser.
 - Extra check: I placed a copy of `index.html` at `404.html` in a scratch copy of the output. static-web-server 2.38.0 then returned that page with status 404 for `/editor` (2,291 bytes), so the SPA would boot. That would need a repo build change (for example, copying `dist/index.html` to `dist/404.html` after the build), which is outside a README-only PR. static-web-server 2.38.0 also has `--page-fallback`, which serves a page with 200 for missing paths, but Anybuild v0.33.0 does not emit it.

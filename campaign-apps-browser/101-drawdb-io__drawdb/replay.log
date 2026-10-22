@@ -14,7 +14,7 @@ v24.22.1
 exit=0
 
 $ npm --version
-10.9.4
+11.21.1
 exit=0
 
 # staged before install: package-lock.json package.json 
@@ -30,7 +30,7 @@ npm warn deprecated eslint@8.57.1: This version is no longer supported. Please s
 > husky
 
 .git can't be found
-added 580 packages, and audited 581 packages in 21s
+added 580 packages, and audited 581 packages in 15s
 
 4 vulnerabilities (1 moderate, 3 high)
 
@@ -38,6 +38,11 @@ To address all issues, run:
   npm audit fix
 
 Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @tailwindcss/oxide@4.1.12 (postinstall: node ./scripts/install.js)
+npm warn install-scripts   core-js@3.45.1 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
 exit=0
 
 $ npm run build
@@ -89,7 +94,13 @@ dist/assets/index-CQwdX5nN.js                 17,170.44 kB │ gzip: 3,213.88 kB
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 12.80s[39m
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite:css (60%)
+  - vite:css-post (21%)
+  - vite:asset (13%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+[32m✓ built in 9.55s[39m
 exit=0
 
 $ static-web-server --root=$S/replay/A101-drawdb/static_app --log-level=info --port=3851 --host=127.0.0.1
@@ -109,18 +120,22 @@ Author:       Jose Quintana <https://joseluisq.net>
 --	title	/templates	(none)	
 404	page	/editor/templates/1	text/html	0
 --	title	/editor/templates/1	(none)	
+404	page	/editor/diagrams/1	text/html	0
+--	title	/editor/diagrams/1	(none)	
 404	page	/bug-report	text/html	0
 --	title	/bug-report	(none)	
+200	page	/config.js	text/javascript	31
+200	page	/robots.txt	text/plain	121
 404	page	/nope	text/html	0
 --	title	/nope	(none)	
 200	ref	/favicon.ico	image/x-icon	3327
 200	ref	/assets/index-CQwdX5nN.js	text/javascript	17170447
 200	ref	/assets/index-CyUba-Ct.css	text/css	416531
-200	ref	/config.js	text/javascript	31
-SUMMARY pages=6 refs_checked=4 failures=5
+SUMMARY pages=9 refs_checked=3 failures=6
 FAIL	404	page	/editor	text/html	0
 FAIL	404	page	/templates	text/html	0
 FAIL	404	page	/editor/templates/1	text/html	0
+FAIL	404	page	/editor/diagrams/1	text/html	0
 FAIL	404	page	/bug-report	text/html	0
 FAIL	404	page	/nope	text/html	0
 # static_app files: 28
