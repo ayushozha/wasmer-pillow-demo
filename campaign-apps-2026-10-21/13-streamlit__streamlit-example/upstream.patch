@@ -1,0 +1,14 @@
+diff --git a/README.md b/README.md
+index 10dbded..9db7e29 100644
+--- a/README.md
++++ b/README.md
+@@ -4,3 +4,9 @@ Edit `/streamlit_app.py` to customize this app to your heart's desire. :heart:
+ 
+ If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
+ forums](https://discuss.streamlit.io).
++
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-6B4EFF)](https://wasmer.io/apps/create?github=streamlit%2Fstreamlit-example)
++
++[Wasmer Edge](https://wasmer.io) detects Streamlit from `requirements.txt`, installs it and runs `streamlit run streamlit_app.py`; no extra config is needed. The button deploys this repository as-is and does not fork it. To deploy your edited copy, fork this repo and connect your fork from the Wasmer dashboard (or change `streamlit%2Fstreamlit-example` in the link above to your `user%2Frepo`).

@@ -1,0 +1,43 @@
+$ git -C /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/up/13-streamlit__streamlit-example rev-parse HEAD
+8bd2197e4ba68dd68127a264dc6708f0a96f23c8
+exit=0
+
+$ python3.13 -m venv .venv
+exit=0
+
+$ python -V
+Python 3.13.16
+exit=0
+
+$ pip install -r requirements.txt  (tail)
+exit=0
+
+$ pip freeze | grep -iE 'streamlit|numpy|pandas|pyarrow|altair|langchain|openai|anthropic|duckduckgo|trubrics'
+altair==6.3.0
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==26.0.0
+streamlit==1.66.1
+
+$ streamlit run streamlit_app.py --server.address=127.0.0.1 --server.port=3431 --server.headless=true  (background)
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3431/_stcore/health
+200
+$ curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:3431/
+200
+health body: ok
+--- server log ---
+2026-10-22 04:30:39.514 Uvicorn server started on 127.0.0.1:3431
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:3431
+
+
+$ python -I /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/scripts/apptest13.py streamlit_app.py   # executes the script headlessly via streamlit.testing AppTest (numpy/pandas/altair code paths)
+2026-10-22 04:31:29.205 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+exceptions: []
+sliders: [('Number of points in spiral', 1100), ('Number of turns in spiral', 31)]
+after set_value(5000): exceptions: [] slider0 = 5000
+charts rendered: 0
+OK
+exit=0
