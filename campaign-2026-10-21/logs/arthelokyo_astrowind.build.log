@@ -1,0 +1,75 @@
+# 2026-10-22T04:19:54Z arthelokyo_astrowind @ 14e1a691f80548dcc36370847b1a02c0d0b12821 node v24.22.1
+$ npm ci --no-audit --no-fund && npm run build
+
+added 599 packages in 23s
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.1 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+> @arthelokyo/astrowind@1.0.0-beta.66 build
+> astro build
+
+04:20:19 [astrowind] Astrowind `./src/config.yaml` has been loaded.
+04:20:20 [content] Syncing content
+04:20:22 [content] Synced content
+04:20:22 [types] Generated 2.67s
+04:20:22 [build] output: "static"
+04:20:22 [build] mode: "static"
+04:20:22 [build] directory: /tmp/claude-0/camp/arthelokyo_astrowind/dist/
+04:20:22 [build] Collecting build info...
+04:20:22 [build] ✓ Completed in 2.78s.
+04:20:22 [build] Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+04:20:25 [WARN] [assets] No data found for font family Inter. Review your configuration
+04:20:28 [astro-icon] Loaded icons from src/assets/icons, flat-color-icons, tabler
+04:20:28 [assets] Copying fonts (0 files)...
+04:20:29 [vite] ✓ built in 6.70s
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+04:20:32 [WARN] [assets] No data found for font family Inter. Review your configuration
+04:20:32 [vite] ✓ built in 3.07s
+04:20:32 [build] Rearranging server assets...
+
+ generating static routes 
+04:20:32   ├─ /404.html (+15ms) 
+04:20:32   ├─ /about/index.html (+38ms) 
+04:20:32   ├─ /contact/index.html (+9ms) 
+04:20:32   ├─ /homes/mobile-app/index.html04:20:32 [ERROR] FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+    at inferRemoteSize (file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async getImage (file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async getImage (file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/Layout_BAB150Ki.mjs:220:35)
+    at async file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/Layout_BAB150Ki.mjs:29:16
+04:20:32 [ERROR] [build] Caught error rendering /homes/mobile-app: FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+[FailedToFetchRemoteImageDimensions] Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+  Hint:
+    Verify your remote image URL is accurate, and that you are not using `inferSize` with a file located in your `public/` folder.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/failed-to-fetch-remote-image-dimensions/
+  Stack trace:
+    at inferRemoteSize (file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at async getImage (file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async file:///tmp/claude-0/camp/arthelokyo_astrowind/dist/.prerender/chunks/Layout_BAB150Ki.mjs:29:16
+EXIT 1

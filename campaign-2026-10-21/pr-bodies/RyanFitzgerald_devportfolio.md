@@ -1,0 +1,19 @@
+Title: docs: add Wasmer Edge to deployment options
+
+## Summary
+
+Adds Wasmer Edge to the README's Deployment list, in the same one-line format as the other hosts. The link opens `https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio`, the Wasmer Edge import page for this repository. README only.
+
+## Why this repository
+
+The Deployment section is already a list of static hosts, and the template builds to a static `dist/` with no adapter or base path, so it can be served as-is. The line also tells readers to import their own copy to deploy their customized portfolio. The import page builds the repository you link to and does not create a copy for you.
+
+## Testing
+
+- At `852d650` on Node 24.22.1, `npm ci && npm run build` passed.
+- I served `dist/` locally. `/` returned 200 with the expected page title, `/favicon.svg` returned 200, and every root-relative asset reference in the built HTML resolved.
+
+## Limitations
+
+- I did not run a full deployment from the import link.
+- Redeploy-on-push works only for a repository you connect to your own Wasmer app.

@@ -1,0 +1,174 @@
+# 2026-10-22T04:22:54Z @ 728f1f4eeb80208398649261d7635f311cafa011 node v24.22.1
+$ npx pnpm@10 install --frozen-lockfile && npx pnpm@10 run build
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +457
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 457, reused 0, downloaded 152, added 107
+Progress: resolved 457, reused 0, downloaded 383, added 382
+Progress: resolved 457, reused 0, downloaded 455, added 455
+Progress: resolved 457, reused 0, downloaded 457, added 457, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+dependencies:
++ @astrojs/markdown-satteri 0.4.1
++ @astrojs/mdx 8.0.1
++ @astrojs/rss 4.0.19
++ @astrojs/sitemap 3.7.4
++ @pagefind/component-ui 1.5.2
++ @tailwindcss/vite 4.3.3
++ astro 7.3.2
++ astro-expressive-code 0.44.2
++ astro-icon 1.2.0
++ astro-robots-txt 1.0.0
++ astro-webmanifest 1.0.0
++ cssnano 9.0.4
++ hastscript 9.0.1
++ mdast-util-directive 3.1.0
++ mdast-util-to-hast 13.2.1
++ mdast-util-to-markdown 2.1.2
++ mdast-util-to-string 4.0.0
++ satori 0.33.4
++ satori-html 0.3.2
++ satteri 0.10.5
++ sharp 0.35.4
++ tailwindcss 4.3.3
+
+devDependencies:
++ @astrojs/check 0.9.10
++ @biomejs/biome 2.5.13
++ @iconify-json/mdi 1.2.3
++ @pagefind/default-ui 1.5.2
++ @tailwindcss/typography 0.5.20
++ @types/hast 3.0.5
++ @types/mdast 4.0.4
++ @types/node 26.5.1
++ autoprefixer 10.6.0
++ pagefind 1.5.2
++ prettier 3.9.6
++ prettier-plugin-astro 1.0.0
++ prettier-plugin-tailwindcss 0.8.1
++ reading-time 1.5.0
++ typescript 6.0.3
+
+. postinstall$ npm rebuild sharp --force
+. postinstall: npm warn using --force Recommended protections disabled.
+. postinstall: npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+. postinstall: npm warn Unknown env config "npm-globalconfig". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+. postinstall: npm warn Unknown env config "overrides". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+. postinstall: npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+. postinstall: npm warn rebuild 33 packages have install scripts not yet covered by allowScripts. Run `npm install-scripts ls` to review.
+. postinstall: rebuilt dependencies successfully
+. postinstall: Done
+Done in 5.3s using pnpm v10.34.7
+
+> astro-cactus@8.3.0 build /tmp/claude-0/camp/chrismwilliams_astro-theme-cactus
+> astro build
+
+04:23:05 [content] Syncing content
+04:23:06 [content] Synced content
+04:23:06 [types] Generated 1.47s
+04:23:06 [build] output: "static"
+04:23:06 [build] mode: "static"
+04:23:06 [build] directory: /tmp/claude-0/camp/chrismwilliams_astro-theme-cactus/dist/
+04:23:06 [build] Collecting build info...
+04:23:06 [build] ✓ Completed in 1.60s.
+04:23:06 [build] Building static entrypoints...
+04:23:07 [WARN] [astro-icon] Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+04:23:07 [vite] ✓ built in 1.14s
+04:23:07 [vite] ✓ built in 97ms
+04:23:07 [build] Rearranging server assets...
+
+ generating static routes 
+04:23:07   ├─ /404.html (+17ms) 
+04:23:07   ├─ /about/index.html (+3ms) 
+04:23:07   ├─ /notes/rss.xml (+30ms) 
+04:23:07   ├─ /notes/index.html (+6ms) 
+04:23:07   ├─ /notes/welcome/index.html (+3ms) 
+04:23:07   ├─ /og-image/markdown-elements.pngGenerating new OG image for: A post of Markdown elements
+ (+62ms) 
+04:23:08   ├─ /og-image/markdown-elements/admonitions.pngGenerating new OG image for: Markdown Admonitions
+ (+22ms) 
+04:23:08   ├─ /og-image/testing/cover-image.pngGenerating new OG image for: Example Cover Image
+ (+21ms) 
+04:23:08   ├─ /og-image/testing/long-title.pngGenerating new OG image for: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+ (+26ms) 
+04:23:08   ├─ /og-image/webmentions.pngGenerating new OG image for: Adding Webmentions to Astro Cactus
+ (+20ms) 
+04:23:08   ├─ /posts/index.html (+5ms) 
+04:23:08   ├─ /posts/markdown-elements/index.htmlNo Webmentions cache found
+No webmention api token specified in .env
+ (+8ms) 
+04:23:08   ├─ /posts/markdown-elements/admonitions/index.html (+3ms) 
+04:23:08   ├─ /posts/testing/cover-image/index.html (+5ms) 
+04:23:08   ├─ /posts/testing/long-title/index.html (+3ms) 
+04:23:08   ├─ /posts/testing/social-image/index.html (+2ms) 
+04:23:08   ├─ /posts/webmentions/index.html (+2ms) 
+04:23:08   ├─ /rss.xml (+3ms) 
+04:23:08   ├─ /tags/markdown/index.html (+3ms) 
+04:23:08   ├─ /tags/admonitions/index.html (+2ms) 
+04:23:08   ├─ /tags/webmentions/index.html (+2ms) 
+04:23:08   ├─ /tags/astro/index.html (+2ms) 
+04:23:08   ├─ /tags/social/index.html (+2ms) 
+04:23:08   ├─ /tags/test/index.html (+2ms) 
+04:23:08   ├─ /tags/image/index.html (+3ms) 
+04:23:08   ├─ /tags/example/index.html (+2ms) 
+04:23:08   ├─ /tags/blog/index.html (+2ms) 
+04:23:08   ├─ /tags/index.html (+3ms) 
+04:23:08   ├─ /index.html (+4ms) 
+04:23:08 ✓ Completed in 434ms.
+
+ generating optimized images 
+04:23:08   ▶ /_astro/logo.Njau-rsP_Zoplig.webp (before: 3kB, after: 4kB) (+41ms) (1/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__Z18iidP.webp (before: 591kB, after: 2kB) (+41ms) (2/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__Z1utHA.webp (before: 591kB, after: 3kB) (+42ms) (3/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__ZyYoSR.webp (before: 591kB, after: 3kB) (+46ms) (4/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__Z1TUnmk.webp (before: 591kB, after: 4kB) (+44ms) (5/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__XvLuS.webp (before: 591kB, after: 9kB) (+72ms) (6/7)
+04:23:08   ▶ /_astro/cover.CXyjlGn__ZxhNtG.webp (before: 591kB, after: 14kB) (+87ms) (7/7)
+04:23:08 ✓ Completed in 334ms.
+
+04:23:08 [build] ✓ Completed in 2.05s.
+04:23:08 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+[32mastro-robots-txt:[0m `robots.txt` is created.
+
+astro-webmanifest: 
+        The icon(public/icon.svg) provided is not square.
+        The generated icons will be square and for the best results it's recommend to provide a square icon.
+        
+
+[32mastro-webmanifest:[0m `manifest.webmanifest` is created.
+
+04:23:08 [build] 22 page(s) built in 3.69s
+04:23:08 [build] Complete!
+
+> astro-cactus@8.3.0 postbuild /tmp/claude-0/camp/chrismwilliams_astro-theme-cactus
+> pagefind --site dist
+
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/tmp/claude-0/camp/chrismwilliams_astro-theme-cactus"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 22 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en-gb
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 9 pages
+  Indexed 636 words
+  Indexed 1 filter
+  Indexed 0 sorts
+
+Finished in 0.025 seconds
+EXIT 0

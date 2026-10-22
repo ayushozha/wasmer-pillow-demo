@@ -1,0 +1,21 @@
+{
+  "dir": "RyanFitzgerald_devportfolio/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 2,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 28976,
+      "title": "Ryan Fitzgerald - Senior Software Engineer"
+    },
+    "/favicon.svg": {
+      "status": 200,
+      "bytes": 855,
+      "title": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,29 @@
+From 4b207d7d938e4ed2c9f98ccc8cea606a3ee54c27 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:23:49 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index 05851c3..8c8bb01 100644
+--- a/README.md
++++ b/README.md
+@@ -140,6 +140,12 @@ export default defineAstroPaperConfig({
+ 
+ > See [this discussion](https://github.com/satnaing/astro-paper/discussions/334#discussioncomment-10139247) for adding AstroPaper to the Google Search Console.
+ 
++## 🚀 Deploy
++
++`pnpm build` outputs a static site to `dist/`. To deploy it on Wasmer Edge, import this repository, or your own copy of it to publish your customized blog:
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=satnaing%2Fastro-paper)
++
+ ## 🧞 Commands
+ 
+ All commands are run from the root of the project, from a terminal:
+-- 
+2.43.0
+

@@ -1,0 +1,24 @@
+From d82eb4ed2627d929b5111bece1719be75af1560c Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:23:49 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/README.md b/README.md
+index 4c549e1..25b88c1 100644
+--- a/README.md
++++ b/README.md
+@@ -171,6 +171,7 @@ The template can be deployed to any static hosting service easily (and in most c
+ - To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
+ - To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
+ - To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
++- To deploy with Wasmer Edge, [click here](https://wasmer.io/apps/create?github=RyanFitzgerald%2Fdevportfolio) (imports this repository; import your own copy to deploy your customized portfolio).
+ 
+ Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
+ 
+-- 
+2.43.0
+

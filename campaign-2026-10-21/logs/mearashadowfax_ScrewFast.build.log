@@ -1,0 +1,158 @@
+# 2026-10-22T04:19:54Z mearashadowfax_ScrewFast @ 123ab79d4009179476fadd61538a4895bb03c283 node v24.22.1
+$ pnpm install --frozen-lockfile && pnpm run build
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +436
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 9.15.9 → 12.14.0.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.14.0   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 436, reused 0, downloaded 5, added 0
+Progress: resolved 436, reused 0, downloaded 51, added 41
+Progress: resolved 436, reused 0, downloaded 145, added 138
+Progress: resolved 436, reused 0, downloaded 210, added 201
+Progress: resolved 436, reused 0, downloaded 248, added 240
+Progress: resolved 436, reused 0, downloaded 273, added 262
+Progress: resolved 436, reused 0, downloaded 369, added 357
+Progress: resolved 436, reused 0, downloaded 416, added 403
+Progress: resolved 436, reused 0, downloaded 435, added 435
+Progress: resolved 436, reused 0, downloaded 436, added 435
+Progress: resolved 436, reused 0, downloaded 436, added 436, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+dependencies:
++ @astrojs/check 0.9.10
++ @astrojs/mdx 8.1.0
++ @astrojs/sitemap 3.7.4
++ @astrojs/starlight 0.42.6
++ @tailwindcss/vite 4.3.3
++ astro 7.4.0
++ clipboard 2.0.11
++ gsap 3.15.0
++ html-minifier-terser 7.2.0
++ lenis 1.3.27
++ preline 5.0.0
++ sharp 0.35.5
++ sharp-ico 0.1.5
++ tailwindcss 4.3.3
+
+devDependencies:
++ @tailwindcss/forms 0.5.11
++ @tailwindcss/typography 0.5.20
++ astro-vtbot 3.1.0
++ prettier 3.9.10
++ prettier-plugin-astro 1.1.1
++ prettier-plugin-tailwindcss 0.8.1
++ typescript 6.0.3
+
+Done in 13.5s using pnpm v9.15.9
+
+> screwfast-template@0.0.1 build /tmp/claude-0/camp/mearashadowfax_ScrewFast
+> astro check && astro build && node process-html.mjs
+
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run "astro telemetry disable" to opt-out.
+  https://astro.build/telemetry
+
+04:20:14 [content] Syncing content
+04:20:14 [content] Synced content
+04:20:14 [types] Generated 2.92s
+04:20:14 [check] Getting diagnostics for Astro files in /tmp/claude-0/camp/mearashadowfax_ScrewFast...
+[96msrc/components/sections/insights/InsightDetail.astro[0m:[93m150[0m:[93m49[0m - [93mwarning[0m[90m ts(6133): [0m'event' is declared but its value is never read.
+
+[7m150[0m   document.addEventListener('DOMContentLoaded', event => {
+[7m   [0m [93m                                                ~~~~~[0m
+
+[96msrc/components/sections/pricing/PricingSection.astro[0m:[93m21[0m:[93m11[0m - [93mwarning[0m[90m ts(6196): [0m'PricingSectionProps' is declared but never used.
+
+[7m21[0m interface PricingSectionProps {
+[7m  [0m [93m          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/ui/buttons/Bookmark.astro[0m:[93m18[0m:[93m25[0m - [93mwarning[0m[90m ts(6138): [0mProperty 'dataAttrValue' is declared but its value is never read.
+
+[7m18[0m     constructor(private dataAttrValue: string) {
+[7m  [0m [93m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/components/ui/starlight/Head.astro[0m:[93m2[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m2[0m import type { Props } from '@astrojs/starlight/props';
+[7m [0m [93m              ~~~~~[0m
+
+[96msrc/components/ui/starlight/MobileMenuFooter.astro[0m:[93m5[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m5[0m import type { Props } from '@astrojs/starlight/props';
+[7m [0m [93m              ~~~~~[0m
+
+[96msrc/components/ui/starlight/SiteTitle.astro[0m:[93m4[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m4[0m import type { Props } from '@astrojs/starlight/props';
+[7m [0m [93m              ~~~~~[0m
+
+Result (129 files): 
+- 0 errors
+- 0 warnings
+- 6 hints
+
+04:20:25 [content] Syncing content
+04:20:25 [content] Synced content
+04:20:25 [types] Generated 1.03s
+04:20:25 [build] output: "static"
+04:20:25 [build] mode: "static"
+04:20:25 [build] directory: /tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/
+04:20:25 [build] Collecting build info...
+04:20:25 [build] ✓ Completed in 1.38s.
+04:20:25 [build] Building static entrypoints...
+04:20:29 [vite] ✓ built in 4.32s
+04:20:30 [vite] ✓ built in 425ms
+04:20:30 [build] Rearranging server assets...
+
+ generating static routes 
+04:20:30 [WARN] [content] The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+04:20:30   ├─ /404.html (+52ms) 
+04:20:30   ├─ /blog/post-3/index.html (+15ms) 
+04:20:30   ├─ /blog/post-2/index.html (+7ms) 
+04:20:30   ├─ /blog/post-1/index.html (+9ms) 
+04:20:30   ├─ /blog/index.html (+16ms) 
+04:20:30   ├─ /contact/index.html (+16ms) 
+04:20:30   ├─ /favicon.ico (+57ms) 
+04:20:30   ├─ /fr/404/index.html (+7ms) 
+04:20:30   ├─ /fr/blog/post-3/index.html (+9ms) 
+04:20:30   ├─ /fr/blog/post-2/index.html (+5ms) 
+04:20:30   ├─ /fr/blog/post-1/index.html (+4ms) 
+04:20:30   ├─ /fr/blog/index.html (+6ms) 
+04:20:30   ├─ /fr/contact/index.html (+4ms) 
+04:20:30   ├─ /fr/insights/insight-1/index.html (+8ms) 
+04:20:30   ├─ /fr/insights/insight-2/index.html (+3ms) 
+04:20:30   ├─ /fr/insights/insight-3/index.html (+3ms) 
+04:20:30   ├─ /fr/products/item-t845/index.html (+4ms) 
+04:20:30   ├─ /fr/products/item-a765/index.html (+3ms) 
+04:20:30   ├─ /fr/products/item-b203/index.html (+6ms) 
+04:20:30   ├─ /fr/products/item-f303/index.html (+3ms) 
+04:20:30   ├─ /fr/products/index.html (+9ms) 
+04:20:30   ├─ /fr/services/index.html (+6ms) 
+04:20:30   ├─ /fr/index.html04:20:31 [ERROR] FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80.
+    at inferRemoteSize (file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/service_Cd4ClbZm.mjs:1133:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async getImage (file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/assets_BMW1KjRn.mjs:295:19)
+    at async getImage (file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/_astro_assets_eskyp6dt.mjs:660:35)
+    at async file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/_astro_assets_eskyp6dt.mjs:26:16
+04:20:31 [ERROR] [build] Caught error rendering /fr: FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80.
+[FailedToFetchRemoteImageDimensions] Failed to get the dimensions for https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80.
+  Hint:
+    Verify your remote image URL is accurate, and that you are not using `inferSize` with a file located in your `public/` folder.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/failed-to-fetch-remote-image-dimensions/
+  Stack trace:
+    at inferRemoteSize (file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/service_Cd4ClbZm.mjs:1133:9)
+    at async getImage (file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/assets_BMW1KjRn.mjs:295:19)
+    at async file:///tmp/claude-0/camp/mearashadowfax_ScrewFast/dist/.prerender/chunks/_astro_assets_eskyp6dt.mjs:26:16
+ ELIFECYCLE  Command failed with exit code 1.
+EXIT 1

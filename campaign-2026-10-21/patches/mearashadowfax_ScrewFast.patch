@@ -1,0 +1,24 @@
+From 0e805fd3af6abd4996bbaa63b854bdcf1e6f69e6 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:23:49 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/README.md b/README.md
+index 7d7dfcc..e0da0cc 100644
+--- a/README.md
++++ b/README.md
+@@ -207,6 +207,7 @@ Entries hold geometry only; size and colour come from the `class` you pass (ever
+ 
+ - **Vercel:** [Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmearashadowfax%2FScrewFast). The included [`vercel.json`](vercel.json) adds security headers and caching rules.
+ - **Netlify:** [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/mearashadowfax/ScrewFast).
++- **Wasmer Edge:** [Deploy to Wasmer](https://wasmer.io/apps/create?github=mearashadowfax%2FScrewFast). The `vercel.json` headers and the French 404 rewrite are Vercel-specific and are not applied there.
+ 
+ ---
+ 
+-- 
+2.43.0
+

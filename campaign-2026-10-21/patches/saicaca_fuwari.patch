@@ -1,0 +1,24 @@
+From e3eb80a4f67951fb0e3747ed434f1d1c3fc6705e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:23:49 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/README.md b/README.md
+index e7f36fa..928463e 100644
+--- a/README.md
++++ b/README.md
+@@ -48,6 +48,7 @@ A static blog template built with [Astro](https://astro.build).
+ 3. Edit the config file `src/config.ts` to customize your blog.
+ 4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
+ 5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
++    - To deploy on Wasmer Edge, import your repository at `https://wasmer.io/apps/create?github=<owner>%2F<repo>`, or try this template first: [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=saicaca%2Ffuwari)
+ 
+ ## 📝 Frontmatter of Posts
+ 
+-- 
+2.43.0
+

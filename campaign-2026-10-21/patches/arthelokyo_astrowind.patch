@@ -1,0 +1,29 @@
+From 0b3cc6fdc083db6291bf264ae5bdbb00baae1aa0 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 04:23:49 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/README.md b/README.md
+index d0ef70c..8b9cf9a 100644
+--- a/README.md
++++ b/README.md
+@@ -279,6 +279,12 @@ Clone this repository on your own GitHub account and deploy it to Cloudflare Wor
+ 
+ [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/arthelokyo/astrowind)
+ 
++#### Deploy to Wasmer
++
++Import this repository into Wasmer Edge to build it and serve the static `dist/` output. To customize the site and redeploy on push, import your own copy of the repository instead:
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=arthelokyo%2Fastrowind)
++
+ <br>
+ 
+ ## FAQ
+-- 
+2.43.0
+
