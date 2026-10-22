@@ -33,7 +33,7 @@ PUBLISHED: 29 · READY: 1 · HOOK_BLOCKED: 0 · HELD_BUILD: 15 · HELD_POLICY: 1
 | 27 | trevortylerlee/astro-micro | PUBLISHED | 537 | PASS | PASS | pending Codex browser ch | https://github.com/trevortylerlee/astro-micro/pull/157 |
 | 28 | zeon-studio/astroplate | PUBLISHED | 1215 | PASS | PASS | pending Codex browser ch | https://github.com/zeon-studio/astroplate/pull/97 |
 | 29 | zuramai/mazer | PUBLISHED | 3106 | PASS | PASS | pending Codex browser ch | Created |
-| 30 | Charca/astro-blog-template | READY | 533 | PASS | PASS | pending Codex browser ch |  |
+| 30 | Charca/astro-blog-template | READY | 533 | PASS | PASS | Root Computer Use 2026-1 |  |
 | 31 | antfu-collective/vitesse | HELD_BUILD | 9440 | not | not run | pre-patch anybuild plan  |  |
 | 32 | arifszn/gitprofile | HELD_BUILD | 2324 | PASS |  | n/a |  |
 | 33 | cssninjaStudio/fresh | HELD_BUILD | 671 | PASS |  | pending Codex browser ch |  |
