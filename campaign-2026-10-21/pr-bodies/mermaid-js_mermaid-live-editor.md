@@ -24,7 +24,7 @@ Testing:
 - Normal build at `eb4141dd`: Node v24.22.1, pnpm 10.34.7. `pnpm install --frozen-lockfile` and `pnpm build` both exited 0 ("Wrote site to docs").
 - I served `docs/` with a local static checker. `/`, `/edit.html`, `/view.html`, `/404.html`, `/manifest.json` and `/sitemap.xml` all returned 200. All root-relative references resolved, and all 190 relative references resolved.
 - I replayed the planned Anybuild steps (`pnpm install`, `pnpm run build`, Node 24, pnpm 10.34.7, `CI=true`) in a separate clean directory on this branch. Exit code was 0.
-- I served that output with static-web-server 2.38.0 using Anybuild's flags. `/`, `/edit`, `/view`, `/embed`, `/404.html`, a hashed `/_app/immutable/entry/app.*.js`, `/service-worker.js` and `/manifest.json` all returned 200. An unknown path returned 404 with the app's `404.html`.
+- I served that output with native static-web-server 2.38.0 using Anybuild's flags. Wasmer runs its own static-web-server build, and I did not test it. `/`, `/edit`, `/view`, `/embed`, `/404.html`, a hashed `/_app/immutable/entry/app.*.js`, `/service-worker.js` and `/manifest.json` all returned 200. An unknown path returned 404 with the app's `404.html`. App state is kept in the URL hash, so no server-side fallback is needed.
 - The husky pre-commit hook (lint-staged: prettier and eslint) ran and passed. `prettier --check README.md` passed.
 
 ### :clipboard: Tasks
