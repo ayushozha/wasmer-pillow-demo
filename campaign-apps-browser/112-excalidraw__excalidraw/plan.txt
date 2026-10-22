@@ -1,0 +1,28 @@
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: yarn
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/excalidraw__excalidraw.json
+{
+ "commands": {
+  "install": "yarn install",
+  "build": "yarn run build",
+  "start": "yarn --cwd ./excalidraw-app start"
+ },
+ "node_package_manager": "yarn",
+ "node_install_inputs": [
+  "package.json",
+  "examples/with-nextjs/package.json",
+  "examples/with-script-in-browser/package.json",
+  "excalidraw-app/package.json",
+  "packages/common/package.json",
+  "packages/element/package.json",
+  "packages/excalidraw/package.json",
+  "packages/fractional-indexing/package.json",
+  "packages/laser-pointer/package.json",
+  "packages/math/package.json",
+  "packages/utils/package.json"
+ ]
+}

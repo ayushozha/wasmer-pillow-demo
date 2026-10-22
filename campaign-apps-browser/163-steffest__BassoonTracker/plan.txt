@@ -1,0 +1,7 @@
+  Detected static Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneB/plans/steffest__BassoonTracker.json

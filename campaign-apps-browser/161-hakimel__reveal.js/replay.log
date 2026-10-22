@@ -1,0 +1,247 @@
+# replay of B-hakimel__reveal.js  source=$S/rup/hakimel__reveal.js  upstream HEAD=e240e175232fa2de660a02bc0d7bf5f655b159bb
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/B-hakimel__reveal.js/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+added 187 packages, and audited 188 packages in 15s
+
+12 vulnerabilities (5 moderate, 7 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.5.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   puppeteer@25.8.0 (postinstall: node install.mjs)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> reveal.js@6.0.2 build
+> tsc && vite build && vite build -c vite.config.styles.ts && vite build -c plugin/highlight/vite.config.ts && vite build -c plugin/markdown/vite.config.ts && vite build -c plugin/math/vite.config.ts && vite build -c plugin/notes/vite.config.ts && vite build -c plugin/search/vite.config.ts && vite build -c plugin/zoom/vite.config.ts && node scripts/add-banner.js dist/reveal.js
+
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 1078ms.
+
+computing gzip size...
+dist/reveal.mjs  141.31 kB │ gzip: 34.22 kB
+
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/reveal.js  118.95 kB │ gzip: 31.14 kB
+
+[32m✓ built in 1.71s[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.styles.ts:7:23). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/reset.css                   0.59 kB │ gzip:   0.35 kB
+dist/theme/serif.css             5.07 kB │ gzip:   1.36 kB
+dist/theme/simple.css            5.12 kB │ gzip:   1.39 kB
+dist/theme/night.css             5.13 kB │ gzip:   1.40 kB
+dist/theme/sky.css               5.20 kB │ gzip:   1.43 kB
+dist/theme/dracula.css           5.67 kB │ gzip:   1.55 kB
+dist/theme/blood.css             5.68 kB │ gzip:   1.51 kB
+dist/theme/solarized.css        46.20 kB │ gzip:  32.59 kB
+dist/theme/moon.css             46.21 kB │ gzip:  32.60 kB
+dist/theme/beige.css            46.43 kB │ gzip:  32.69 kB
+dist/theme/league.css           46.43 kB │ gzip:  32.71 kB
+dist/reveal.css                 53.96 kB │ gzip:  11.48 kB
+dist/theme/white.css           575.26 kB │ gzip: 430.67 kB
+dist/theme/white-contrast.css  575.27 kB │ gzip: 430.68 kB
+dist/theme/black-contrast.css  575.27 kB │ gzip: 430.68 kB
+dist/theme/black.css           575.28 kB │ gzip: 430.69 kB
+
+[32m✓ built in 1.42s[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/highlight/vite.config.ts:16:37). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 198 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 787ms.
+
+computing gzip size...
+dist/plugin/highlight.mjs  1,041.15 kB │ gzip: 323.25 kB
+
+transforming...
+✓ 198 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/highlight.js  920.64 kB │ gzip: 307.80 kB
+
+[32m✓ built in 1.79s[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/markdown/vite.config.ts:16:36). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 5 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 650ms.
+
+computing gzip size...
+dist/plugin/markdown.mjs  61.47 kB │ gzip: 16.89 kB
+
+transforming...
+✓ 5 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/markdown.js  49.49 kB │ gzip: 15.33 kB
+
+[32m✓ built in 771ms[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/math/vite.config.ts:16:32). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 7 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 632ms.
+
+computing gzip size...
+dist/plugin/math.mjs  5.26 kB │ gzip: 1.50 kB
+
+transforming...
+✓ 7 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/math.js  4.01 kB │ gzip: 1.29 kB
+
+[32m✓ built in 824ms[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/notes/vite.config.ts:16:33). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 5 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 507ms.
+
+computing gzip size...
+dist/plugin/notes.mjs  79.20 kB │ gzip: 20.86 kB
+
+transforming...
+✓ 5 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/notes.js  67.78 kB │ gzip: 19.60 kB
+
+[32m✓ built in 735ms[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/search/vite.config.ts:16:34). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 3 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 601ms.
+
+computing gzip size...
+dist/plugin/search.mjs  3.39 kB │ gzip: 1.57 kB
+
+transforming...
+✓ 3 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/search.js  2.87 kB │ gzip: 1.48 kB
+
+[32m✓ built in 759ms[39m
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (plugin/zoom/vite.config.ts:16:32). Use `import.meta.dirname` instead
+  - `__dirname` (vite.config.ts:24:19). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 3 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[vite:dts] Declaration files built in 550ms.
+
+computing gzip size...
+dist/plugin/zoom.mjs  3.44 kB │ gzip: 1.27 kB
+
+transforming...
+✓ 3 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/plugin/zoom.js  2.87 kB │ gzip: 1.17 kB
+
+[32m✓ built in 614ms[39m
+exit=0
+
+$ static-web-server --root=$S/replay/B-hakimel__reveal.js/static_app --log-level=info --port=3910 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/dist/reveal.js	text/html	0
+--	title	/dist/reveal.js	(none)	
+404	page	/demo.html	text/html	0
+--	title	/demo.html	(none)	
+SUMMARY pages=3 refs_checked=0 failures=3
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/dist/reveal.js	text/html	0
+FAIL	404	page	/demo.html	text/html	0
+# static_app files: 45

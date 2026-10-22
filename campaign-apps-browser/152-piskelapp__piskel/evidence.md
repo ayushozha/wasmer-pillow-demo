@@ -27,7 +27,7 @@
   - `/` returned 200 (title "Piskel").
   - `/nope` returned 404 (expected; single page).
   - `{{src}}` is a template placeholder inside an inline template, so its 404 is a smoke-tool false positive.
-- Full asset check (`asset-check-list.txt`, 40 URLs, all 200 from sws 2.38.0):
+- Full asset check (`asset-check-list.txt`, 40 URLs; receipt: `asset-check-receipt.txt`, re-run 2026-10-22 because the original run's HTTP results weren't saved — all 37 fixed-name assets 200; the 3 bundles have build-timestamped names, and the current build's versioned bundles referenced by its own index.html all return 200; served by a local native static-web-server 2.38.0):
   - JS and CSS: `js/piskel-packaged(-min)-<date>.js` and `css/piskel-style-packaged-<date>.css`.
   - Fonts: `css/fonts/icomoon.{eot,svg,ttf,woff}`.
   - Icons and sprites: every `img/cursors/*`, `img/icons/tools/*` and minimap image referenced by the CSS, plus `img/icons.png` and `img/icons@2x.png`.

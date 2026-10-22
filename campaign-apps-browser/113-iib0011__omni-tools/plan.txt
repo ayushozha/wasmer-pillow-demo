@@ -1,0 +1,21 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/plantmp/laneA/iib0011__omni-tools.json
+{
+ "commands": {
+  "install": "npm install",
+  "build": "npm run build",
+  "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+ },
+ "static_dir": "dist",
+ "node_package_manager": "npm",
+ "node_install_inputs": [
+  "package.json"
+ ],
+ "node_framework": "vite"
+}

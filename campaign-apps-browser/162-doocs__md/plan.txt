@@ -1,0 +1,7 @@
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: pnpm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/laneB/plans/doocs__md.json

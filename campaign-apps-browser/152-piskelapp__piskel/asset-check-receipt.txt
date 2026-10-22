@@ -1,0 +1,62 @@
+# Independent re-verification (root-side orchestrator, 2026-10-22): exact replay re-run on the patched clone (Node 24.22.1, npm 11.21.1), smoke with all 40 paths from asset-check-list.txt
+200	page	/	text/html	59653
+--	title	/	Piskel	
+200	page	/css/fonts/icomoon.eot	application/vnd.ms-fontobject	4416
+200	page	/css/fonts/icomoon.svg	image/svg+xml	8839
+200	page	/css/fonts/icomoon.ttf	font/ttf	4252
+200	page	/css/fonts/icomoon.woff	application/font-woff	4328
+404	page	/css/piskel-style-packaged-2026-10-22-05-44.css	text/html	0
+--	title	/css/piskel-style-packaged-2026-10-22-05-44.css	(none)	
+200	page	/img/cursors/circle.png	image/png	766
+200	page	/img/cursors/dither.png	image/png	702
+200	page	/img/cursors/dropper.png	image/png	543
+200	page	/img/cursors/eraser.png	image/png	656
+200	page	/img/cursors/hand.png	image/png	672
+200	page	/img/cursors/lighten.png	image/png	606
+200	page	/img/cursors/paint-bucket.png	image/png	707
+200	page	/img/cursors/pen.png	image/png	450
+200	page	/img/cursors/rectangle.png	image/png	660
+200	page	/img/cursors/stroke.png	image/png	617
+200	page	/img/cursors/vertical-mirror-pen.png	image/png	603
+200	page	/img/cursors/wand.png	image/png	570
+200	page	/img/icons.png	image/png	14264
+200	page	/img/icons/minimap/minimap-popup-preview-arrow-gold.png	image/png	301
+200	page	/img/icons/minimap/minimap-popup-preview-arrow-gold@2x.png	image/png	367
+200	page	/img/icons/tools/tool-circle.png	image/png	495
+200	page	/img/icons/tools/tool-colorpicker.png	image/png	563
+200	page	/img/icons/tools/tool-colorswap.png	image/png	1329
+200	page	/img/icons/tools/tool-dithering.png	image/png	245
+200	page	/img/icons/tools/tool-eraser.png	image/png	524
+200	page	/img/icons/tools/tool-lasso-select.png	image/png	827
+200	page	/img/icons/tools/tool-lighten.png	image/png	690
+200	page	/img/icons/tools/tool-move.png	image/png	547
+200	page	/img/icons/tools/tool-paint-bucket.png	image/png	741
+200	page	/img/icons/tools/tool-pen.png	image/png	670
+200	page	/img/icons/tools/tool-rectangle-select.png	image/png	276
+200	page	/img/icons/tools/tool-rectangle.png	image/png	245
+200	page	/img/icons/tools/tool-shape-select.png	image/png	580
+200	page	/img/icons/tools/tool-stroke.png	image/png	802
+200	page	/img/icons/tools/tool-vertical-mirror-pen.png	image/png	744
+200	page	/img/icons@2x.png	image/png	30453
+404	page	/js/piskel-packaged-2026-10-22-05-44.js	text/html	0
+--	title	/js/piskel-packaged-2026-10-22-05-44.js	(none)	
+404	page	/js/piskel-packaged-min-2026-10-22-05-44.js	text/html	0
+--	title	/js/piskel-packaged-min-2026-10-22-05-44.js	(none)	
+200	page	/logo.png	image/png	414
+200	page	/piskelapp-partials/main-partial.html	text/html	55227
+--	title	/piskelapp-partials/main-partial.html	(none)	
+200	ref	/index.html	text/html	59653
+404	ref	/{{src}}	text/html	0
+404	ref	/piskelapp-partials/{{src}}	text/html	0
+SUMMARY pages=41 refs_checked=3 failures=5
+FAIL	404	page	/css/piskel-style-packaged-2026-10-22-05-44.css	text/html	0
+FAIL	404	page	/js/piskel-packaged-2026-10-22-05-44.js	text/html	0
+FAIL	404	page	/js/piskel-packaged-min-2026-10-22-05-44.js	text/html	0
+FAIL	404	ref	/{{src}}	text/html	0
+FAIL	404	ref	/piskelapp-partials/{{src}}	text/html	0
+
+# The 3 'packaged' 404s are the previous build's timestamped names (…-05-44). This build's index.html sets version = "-2026-10-22-05-55" and loads js/piskel-packaged-min${version}.js via piskel-boot.js loadScript; fetched from the same static_app:
+200 /css/piskel-style-packaged-2026-10-22-05-55.css
+200 /js/piskel-packaged-2026-10-22-05-55.js
+200 /js/piskel-packaged-min-2026-10-22-05-55.js
+# Result: all 37 non-timestamped listed assets 200 + the current build's 3 versioned bundles 200. /{{src}} and /piskelapp-partials/{{src}} are template placeholders (smoke false positives).
