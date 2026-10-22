@@ -1,0 +1,13 @@
+# 2026-10-22T04:36:37Z ColorlibHQ/gentelella prettier 3.9.7 (repo devDependency; repo 'format' script covers src/ only, README is outside it — informational)
+$ npx prettier --check README.md README.zh-CN.md (patched)
+Checking formatting...
+[warn] README.md
+[warn] README.zh-CN.md
+[warn] Code style issues found in 2 files. Run Prettier with --write to fix.
+EXIT 1
+$ same on unpatched base
+Checking formatting...
+[warn] README.md
+[warn] README.zh-CN.md
+[warn] Code style issues found in 2 files. Run Prettier with --write to fix.
+EXIT 1
