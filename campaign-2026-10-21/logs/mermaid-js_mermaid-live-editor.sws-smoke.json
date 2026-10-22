@@ -1,0 +1,95 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/mermaid-js_mermaid-live-editor/opt/temp/docs",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 4285
+      }
+    ],
+    "/edit": [
+      {
+        "path": "/edit",
+        "status": 200,
+        "location": null,
+        "bytes": 4886
+      }
+    ],
+    "/view": [
+      {
+        "path": "/view",
+        "status": 200,
+        "location": null,
+        "bytes": 4519
+      }
+    ],
+    "/edit.html": [
+      {
+        "path": "/edit.html",
+        "status": 200,
+        "location": null,
+        "bytes": 4886
+      }
+    ],
+    "/view.html": [
+      {
+        "path": "/view.html",
+        "status": 200,
+        "location": null,
+        "bytes": 4519
+      }
+    ],
+    "/embed": [
+      {
+        "path": "/embed",
+        "status": 200,
+        "location": null,
+        "bytes": 4226
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 1905
+      }
+    ],
+    "/_app/immutable/entry/app.Dis-6Q89.js": [
+      {
+        "path": "/_app/immutable/entry/app.Dis-6Q89.js",
+        "status": 200,
+        "location": null,
+        "bytes": 5452
+      }
+    ],
+    "/service-worker.js": [
+      {
+        "path": "/service-worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 107
+      }
+    ],
+    "/manifest.json": [
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "location": null,
+        "bytes": 359
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 1904
+    }
+  ],
+  "ok": true
+}

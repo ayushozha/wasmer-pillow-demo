@@ -1,0 +1,10 @@
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "wt-varadbhogayata_varadbhogayata.github.io",
+        "commands": {
+            "start": "static-web-server --root=/tmp/claude-0/camp2/wt-varadbhogayata_varadbhogayata.github.io/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        }
+    },
+    "services": []
+}

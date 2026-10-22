@@ -1,0 +1,31 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/wt-devsyedmohsin_portfolio-template/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 29078,
+      "title": "Syed Mohsin's Portfolio"
+    },
+    "/style.css": {
+      "status": 200,
+      "bytes": 22084,
+      "title": null
+    },
+    "/script.js": {
+      "status": 200,
+      "bytes": 3247,
+      "title": null
+    },
+    "/assets/images/lighthouse.png": {
+      "status": 200,
+      "bytes": 301921,
+      "title": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,32 @@
+From 3ea049a1fd00f21c55a37e779148f1d8356bb621 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 22 Oct 2026 05:35:47 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/README.md b/README.md
+index 32b3e60..71c4985 100644
+--- a/README.md
++++ b/README.md
+@@ -225,6 +225,15 @@ Vercel 速度比 GitHub Pages 快，但 `*.vercel.app` 域名已受 DNS 污染
+ 
+ 如部署遇错，请检查 Vercel 项目的 `Node.js Version` 是否设置为 `20.x`。
+ 
++### 部署到 Wasmer Edge
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=rockbenben%2FLearnData)
++
++1. 按钮导入的是本仓库，只适合试用：它不会把仓库复制到你的 GitHub 账户，也不会随你的修改更新。请先用「Use this template」创建自己的仓库，再在 Wasmer 中导入你自己的仓库。
++2. 构建命令为 `pnpm run docs:build`，输出目录为 `src/.vuepress/dist`，`base` 保持默认的 `/`。
++3. 部署前修改 `src/.vuepress/theme.ts` 中的 `hostname`、作者信息和 Giscus 评论配置（`repo`、`repoId`、`categoryId`），否则 sitemap、RSS 和 `llms.txt` 仍指向 newzone.top，评论也会写入模板作者的仓库。
++4. 读书笔记由 GitHub Actions 中的 `pnpm cpx "src/reading/**" src/.vuepress/public/reading` 步骤复制，`docs:build` 不包含这一步，因此 Wasmer 构建出的站点没有 `/reading/`。
++
+ ---
+ 
+ ## 🤔 常见问题
+-- 
+2.43.0
+

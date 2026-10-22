@@ -1,0 +1,32 @@
+{
+  "tool": "anybuild 0.33.0 plan on clean git worktrees (Anybuild file deleted after each run)",
+  "at": "2026-10-22T05:35:44Z",
+  "base": {
+    "sha": "eb4141dd51247259e95ecd890c1bf3dabf314913",
+    "provider": "node-static",
+    "framework": "sveltekit",
+    "static_dir": "build",
+    "package_manager": "pnpm",
+    "pnpm_version": "10.34.7",
+    "npm_version": null,
+    "commands": {
+      "install": "pnpm install",
+      "build": "pnpm run build",
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_base/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  },
+  "patched": {
+    "sha": "61781f3887539613ebe2b1e9912afd524f65b510",
+    "provider": "node-static",
+    "framework": "sveltekit",
+    "static_dir": "docs",
+    "package_manager": "pnpm",
+    "pnpm_version": "10.34.7",
+    "npm_version": null,
+    "commands": {
+      "install": "pnpm install",
+      "build": "pnpm run build",
+      "start": "static-web-server --root=/tmp/claude-0/camp4/wt_detect_patched/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+    }
+  }
+}

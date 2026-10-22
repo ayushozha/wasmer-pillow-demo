@@ -1,0 +1,23 @@
+{
+ "base": {
+  "sha": "b3df7d6e60a47e272a54ab3f0cef1be4521cac47",
+  "provider": "node-static",
+  "framework": "vuepress",
+  "static_dir": "src/.vuepress/dist",
+  "package_manager": "pnpm",
+  "pnpm_version": "12.11.2",
+  "install": "pnpm install",
+  "build": "pnpm run docs:build"
+ },
+ "patched": {
+  "sha": "3ea049a1fd00f21c55a37e779148f1d8356bb621",
+  "provider": "node-static",
+  "framework": "vuepress",
+  "static_dir": "src/.vuepress/dist",
+  "package_manager": "pnpm",
+  "pnpm_version": "12.11.2",
+  "install": "pnpm install",
+  "build": "pnpm run docs:build"
+ },
+ "anybuild": "0.33.0 (/tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan <clean worktree>); Anybuild file written by plan deleted"
+}

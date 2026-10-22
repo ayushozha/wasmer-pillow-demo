@@ -1,5 +1,7 @@
 Title: docs: add Wasmer Edge deploy option
 
+I work at Wasmer. Wasmer Edge is a cloud hosting platform powered by WebAssembly; it can host this repository’s generated static site. References: [Wasmer Edge docs](https://docs.wasmer.io/edge/), [Git deployments](https://docs.wasmer.io/edge/git/).
+
 ## Summary
 
 Adds a short "Deploy to Wasmer Edge" subsection with a "Deploy to Wasmer" badge under "Getting Started", right after the "Open in StackBlitz" button, plus one sentence explaining what the link does. README-only; no config or code changes.

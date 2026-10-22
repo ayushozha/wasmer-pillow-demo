@@ -1,0 +1,41 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/mermaid-js_mermaid-live-editor/opt/temp/docs",
+  "base": "/",
+  "html_files": 5,
+  "local_refs_checked": 12,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 4285,
+      "title": "Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor"
+    },
+    "/edit.html": {
+      "status": 200,
+      "bytes": 4886,
+      "title": "Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor"
+    },
+    "/view.html": {
+      "status": 200,
+      "bytes": 4519,
+      "title": "Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor"
+    },
+    "/404.html": {
+      "status": 200,
+      "bytes": 1905,
+      "title": "Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor"
+    },
+    "/manifest.json": {
+      "status": 200,
+      "bytes": 359,
+      "title": null
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "bytes": 404,
+      "title": null
+    }
+  },
+  "ok": true
+}

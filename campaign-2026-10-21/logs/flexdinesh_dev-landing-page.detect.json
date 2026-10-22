@@ -1,0 +1,10 @@
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "wt-flexdinesh_dev-landing-page",
+        "commands": {
+            "start": "static-web-server --root=/tmp/claude-0/camp2/wt-flexdinesh_dev-landing-page/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+        }
+    },
+    "services": []
+}

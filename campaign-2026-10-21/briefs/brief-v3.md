@@ -95,3 +95,19 @@ Free space is about 11 GB. After finishing each repo, delete its `node_modules`,
 ## Final reply
 
 A table per repo (status, stars, license, provider/static_dir, normal build, replay, SWS, audit applicability, one-line reason), plus rejected candidates with reasons.
+
+## Addendum 2026-10-22 (overrides earlier text where they differ)
+
+- Count only real upstream creations toward 200. Never pad with duplicates, repeat declined proposals, or evade a restriction.
+- PR bodies: after the `Title:` line, run `python3 -I /home/user/wasmer-pillow-demo/campaign-2026-10-21/tools/add_affiliation.py pr-bodies/OWNER_REPO.md`. It inserts the fixed affiliation paragraph ("I work at Wasmer. Wasmer Edge is a cloud hosting platform powered by WebAssembly; it can host this repository's [generated] static site." plus links to https://docs.wasmer.io/edge/ and https://docs.wasmer.io/edge/git/). Then explain the repo-specific benefit. No price or performance claims and no sales pitch.
+- Author every staging commit and patch as `Claude <noreply@anthropic.com>`. Never use the user's or anyone else's identity.
+- Hold any repo that ships an OAuth clientSecret or other secret in client code (e.g. Gitalk configs).
+- Confirmed policy exclusions (never prepare these):
+  - gabrielecirulli/2048
+  - Adrinlol/landy-react-template
+  - github-education-resources/codespaces-project-template-js
+  - CommunityPro/portfolio-html
+  - binyamin/eleventy-garden
+  - tbaltrushaitis/cv
+  - Bitburner (Commons Clause)
+- Treat "issue/discussion required before PR" policies as HOLD. Don't open issues just to place a PR.

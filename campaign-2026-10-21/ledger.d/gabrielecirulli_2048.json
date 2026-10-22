@@ -1,0 +1,6 @@
+{
+  "repo": "gabrielecirulli/2048",
+  "status": "HELD_POLICY",
+  "reason": "Provider-button PR #326 explicitly rejected as advertisement / no player need. Do not prepare or publish. Source: Independently confirmed by root/Codex 2026-10-22.",
+  "pr_body": null
+}

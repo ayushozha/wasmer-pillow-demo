@@ -1,0 +1,6 @@
+{
+  "repo": "github-education-resources/codespaces-project-template-js",
+  "status": "HELD_POLICY",
+  "reason": "Repo policy closes PRs unless an admin pre-approved. Do not prepare or bypass. Source: Independently confirmed by root/Codex 2026-10-22.",
+  "pr_body": null
+}

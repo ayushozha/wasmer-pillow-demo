@@ -1,5 +1,7 @@
 Title: docs: add Wasmer Edge deploy option
 
+I work at Wasmer. Wasmer Edge is a cloud hosting platform powered by WebAssembly; it can host this repository’s generated static site. References: [Wasmer Edge docs](https://docs.wasmer.io/edge/), [Git deployments](https://docs.wasmer.io/edge/git/).
+
 ## Summary
 
 This adds a short `## 部署` section to the README, written in Chinese like the rest of the file. It holds a visible **Deploy to Wasmer** badge that links to `https://wasmer.io/apps/create?github=airene%2Fvitepress-blog-pure`, plus a few lines of import guidance:

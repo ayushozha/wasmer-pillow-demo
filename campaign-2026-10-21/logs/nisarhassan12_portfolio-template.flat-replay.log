@@ -1,0 +1,14 @@
+# 2026-10-22T05:36:30Z flat replay of anybuild 0.33.0 planned steps for wt-nisarhassan12_portfolio-template @ f3ed88590be4f2b68ef952430d42cb3b0476b745 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/src --out /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/plan.json)
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/src/Anybuild
+Plan saved to /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/plan.json
+EXIT 0
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='.'
+$ (cd /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/wt-nisarhassan12_portfolio-template/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.css": 200, "/index.js": 200, "/images/portfolio.gif": 200}}

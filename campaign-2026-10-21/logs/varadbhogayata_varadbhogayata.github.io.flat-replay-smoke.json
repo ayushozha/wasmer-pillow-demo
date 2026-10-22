@@ -1,0 +1,36 @@
+{
+  "dir": "/tmp/claude-0/flat-replay/wt-varadbhogayata_varadbhogayata.github.io/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 50,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 49619,
+      "title": "Varad Bhogayata | Software Developer"
+    },
+    "/assets/css/style.css": {
+      "status": 200,
+      "bytes": 10592,
+      "title": null
+    },
+    "/assets/vendor/typed.js/typed.min.js": {
+      "status": 200,
+      "bytes": 11749,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 89,
+      "title": null
+    },
+    "/assets/img/favicon/manifest.json": {
+      "status": 200,
+      "bytes": 720,
+      "title": null
+    }
+  },
+  "ok": true
+}

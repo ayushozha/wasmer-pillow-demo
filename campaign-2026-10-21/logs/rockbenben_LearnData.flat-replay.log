@@ -1,4 +1,4 @@
-# 2026-10-22T05:33:13Z flat replay of anybuild 0.33.0 planned steps for rockbenben_LearnData @ b3df7d6e60a47e272a54ab3f0cef1be4521cac47 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+# 2026-10-22T05:36:18Z flat replay of anybuild 0.33.0 planned steps for rockbenben_LearnData @ 3ea049a1fd00f21c55a37e779148f1d8356bb621 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
 $ (cd /tmp/claude-0/flat-replay/rockbenben_LearnData && /tmp/claude-0/camp/wasmerio_shipit/target/release/anybuild plan /tmp/claude-0/flat-replay/rockbenben_LearnData/src --out /tmp/claude-0/flat-replay/rockbenben_LearnData/plan.json)
   Detected static Node.js provider
     Framework: VuePress
@@ -13,13 +13,11 @@ EXIT 0
 # pinned per plan: node_version=24 (default) pnpm_version=12.11.2 -> pnpm on PATH 12.11.2; npm_version=None bun_version=None
 # plan: provider=node-static install='pnpm install' build='pnpm run docs:build' static_dir='src/.vuepress/dist'
 $ (cd /tmp/claude-0/flat-replay/rockbenben_LearnData/opt/temp && pnpm install)
-✓ Lockfile passes supply-chain policies (verified 1m ago)
+✓ Lockfile passes supply-chain policies (verified 4m ago)
 Lockfile is up to date, resolution step is skipped
 Packages are hard linked from the content-addressable store to the virtual store.
   Content-addressable store is at: /root/.local/share/pnpm/store/v11
   Virtual store is at:             node_modules/.pnpm
-Progress: resolved 191, reused 191, downloaded 0, added 184
-Progress: resolved 388, reused 388, downloaded 0, added 381
 Packages: +518
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Progress: resolved 518, reused 518, downloaded 0, added 518, done
@@ -46,50 +44,43 @@ devDependencies:
 + vuepress 2.0.0-rc.31
 + vuepress-theme-hope 2.0.0-rc.110
 
-Done in 3.2s using pnpm v12.11.2
+Done in 903ms using pnpm v12.11.2
 EXIT 0
 $ (cd /tmp/claude-0/flat-replay/rockbenben_LearnData/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C /tmp/claude-0/flat-replay/rockbenben_LearnData/opt/temp)
 EXIT 0
 $ (cd /tmp/claude-0/flat-replay/rockbenben_LearnData/opt/temp && pnpm run docs:build)
-✓ Lockfile passes supply-chain policies (verified 1m ago)
+✓ Lockfile passes supply-chain policies (verified 4m ago)
 Lockfile is up to date, resolution step is skipped
 Already up to date
 .../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
 .../node_modules/@parcel/watcher install: Done
-Done in 328ms using pnpm v12.11.2
+Done in 331ms using pnpm v12.11.2
 $ vuepress build src && node scripts/llms-txt.js
 [34m@vuepress/plugin-icon: [39m ‼ [33mThe `scan` option is ignored, as the offline mode is not enabled.[39m
 - Initializing and preparing data
-√ Initializing and preparing data - done in 3.81s
+√ Initializing and preparing data - done in 2.69s
 - Compiling with vite
 
 new URL(`worker/dev.js`,import.meta.url) doesn't exist at build time, it will remain unchanged to be resolved at runtime. If this is intended, you can use the /* @vite-ignore */ comment to suppress this warning.
-[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 8.4s of this 9.8s build (86%).
-The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
-  - plugin vite:prepare-out-dir renderStart (29%, 2.9s, 1 call)
-  - plugin vite:css buildEnd (22%, 2.1s, 1 call)
-Additional callback time came from the callbacks below and from callbacks under 1s.
+[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 2.9s of this 3.8s build (77%).
 1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
   - plugin vite:css transform (103 calls)
 See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
 [39m
-[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 5.6s of this 9.8s build (57%).
-The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
-  - plugin vite:prepare-out-dir renderStart (22%, 2.1s, 1 call)
-Additional callback time came from the callbacks below and from callbacks under 1s.
+[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 2.5s of this 3.9s build (64%).
 1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
   - plugin vite:css transform (103 calls)
 See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
 [39m
-√ Compiling with vite - done in 10.01s
+√ Compiling with vite - done in 4.05s
 - Rendering 55 pages
-√ Rendering 55 pages - done in 1.55s
+√ Rendering 55 pages - done in 986ms
 [34m@vuepress/plugin-seo: [39m √ Generating robots.txt
 [34m@vuepress/plugin-feed: [39m √ [32madded [36m2 pages[32m as feed items in locale [36m/[32m[39m
 [34m@vuepress/plugin-sitemap: [39m √ [32mGenerating sitemap to [36msitemap.xml[32m[39m
 [34m@vuepress/plugin-sitemap: [39m √ Appending sitemap path to [36mrobots.txt[39m
 [34m@vuepress/plugin-redirect: [39m √ Generating redirect files
-[32msuccess[39m VuePress build completed in 17.68s!
+[32msuccess[39m VuePress build completed in 9.80s!
 🔍 Scanning for Markdown files...
 🌐 Base URL: https://newzone.top
 📄 Found 72 files.

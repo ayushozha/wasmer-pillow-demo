@@ -32,6 +32,6 @@
   "anybuild_replay": "PASS: 2026-10-22T05:32:12Z flat replay @ 755064e (node v24.22.1, bun 1.4.2; plan pins node_version=24 default, bun_version=1, no extra env for bun); install='bun install --no-save' EXIT 0, build='bun run build' EXIT 0, static_dir .vitepress/dist; smoke ok, 0 missing; output file-identical to normal build. logs/airene_vitepress-blog-pure.flat-replay.log, .flat-replay-smoke.json",
   "sws_smoke": "PASS: static-web-server 2.38.0 with planned flags: /, /pages/archives.html, /pages/tags.html, /pages/category.html, /pages/about.html, /posts/vitepress-first.html, /posts/2025/vitepress-second.html, /404.html, /hashmap.json, /assets/app.C71ov7gz.js (hashed), /assets/chunks/@localSearchIndexroot.Bq9MgPzV.js (search index) all 200; missing path -> 404 with 404.html body. logs/airene_vitepress-blog-pure.sws-smoke.json",
   "reason": null,
-  "publication_note": "Below the 500-star preference (288): needs root sign-off. Justification (worker): top-ranked non-monorepo, non-archived topic:vitepress-blog repo with recent outside merges (Apr-May 2025), 40 forks, push 2026-10-14; README tells users to copy .vitepress/pages/posts as their blog start.",
+  "publication_note": "Approved by user/root 2026-10-22 for further independent review despite 288 stars: a leading active application starter in a narrower category (not to inflate count).",
   "patch_author": "Claude <noreply@anthropic.com> (worker had set the user's name/email; reset by coordinator to the campaign convention, commit 691ffa5)"
 }

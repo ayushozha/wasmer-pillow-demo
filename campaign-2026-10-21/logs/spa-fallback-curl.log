@@ -1,0 +1,46 @@
+index sha256: dc1a7e1e1be6b9e4fd0b395ecc4517699858795b19334feba91a68c4e6ca6da5  -
+GET / -> 200 text/html 455 BODY==index.html
+GET /profile -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /calendar -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /basic-tables -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /signin -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /does/not/exist/deep -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /assets/index-BCqG7Liu.js -> 200 text/javascript 2009250 body!=index.html
+GET /assets/index-lqHzMpjd.css -> 200 text/css 179599 body!=index.html
+GET /favicon.png -> 200 image/png 2367 body!=index.html
+GET /assets/nope.js -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /assets/nope.css -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /images/nope.png -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /404.html -> 200 text/html; charset=utf-8 454 body!=index.html
+GET /index.html -> 200 text/html 455 BODY==index.html
+GET /profile?tab=1 -> 200 text/html; charset=utf-8 454 body!=index.html
+
+HEAD /profile:
+HTTP/1.1 404 Not Found
+content-type: text/html; charset=utf-8
+content-length: 106
+accept-ranges: bytes
+vary: accept-encoding
+POST /profile:
+405
+
+GET /profile headers:
+HTTP/1.1 200 OK
+content-length: 454
+content-type: text/html; charset=utf-8
+accept-ranges: bytes
+vary: accept-encoding
+cache-control: public, max-age=86400
+date: Thu, 22 Oct 2026 05:36:23 GMT
+
+GET / headers:
+HTTP/1.1 200 OK
+content-length: 455
+content-type: text/html
+accept-ranges: bytes
+last-modified: Thu, 22 Oct 2026 05:35:34 GMT
+vary: accept-encoding
+cache-control: public, max-age=86400
+date: Thu, 22 Oct 2026 05:36:23 GMT
+
+fallback body == index.html modulo the file's trailing newline (diff confirmed)

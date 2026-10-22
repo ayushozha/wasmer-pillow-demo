@@ -1,0 +1,95 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "/tmp/claude-0/flat-replay/wt-uideck_play-bootstrap/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 48593
+      }
+    ],
+    "/about.html": [
+      {
+        "path": "/about.html",
+        "status": 200,
+        "location": null,
+        "bytes": 21330
+      }
+    ],
+    "/pricing.html": [
+      {
+        "path": "/pricing.html",
+        "status": 200,
+        "location": null,
+        "bytes": 24352
+      }
+    ],
+    "/blog.html": [
+      {
+        "path": "/blog.html",
+        "status": 200,
+        "location": null,
+        "bytes": 21142
+      }
+    ],
+    "/blog-details.html": [
+      {
+        "path": "/blog-details.html",
+        "status": 200,
+        "location": null,
+        "bytes": 26645
+      }
+    ],
+    "/contact.html": [
+      {
+        "path": "/contact.html",
+        "status": 200,
+        "location": null,
+        "bytes": 16684
+      }
+    ],
+    "/login.html": [
+      {
+        "path": "/login.html",
+        "status": 200,
+        "location": null,
+        "bytes": 15633
+      }
+    ],
+    "/404.html": [
+      {
+        "path": "/404.html",
+        "status": 200,
+        "location": null,
+        "bytes": 14496
+      }
+    ],
+    "/assets/css/ud-styles.css": [
+      {
+        "path": "/assets/css/ud-styles.css",
+        "status": 200,
+        "location": null,
+        "bytes": 49342
+      }
+    ],
+    "/assets/js/main.js": [
+      {
+        "path": "/assets/js/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 2626
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 14495
+    }
+  ],
+  "ok": true
+}
