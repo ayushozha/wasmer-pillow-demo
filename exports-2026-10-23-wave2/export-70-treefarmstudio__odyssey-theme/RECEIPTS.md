@@ -56,3 +56,8 @@ Verdict: **READY to open** (with disclosed acceptance uncertainty: low maintaine
 | No third-party scripts; GA placeholder only; local fonts | external-refs.txt; http-receipts.txt font lines |
 | Deploy workflow runs on PRs to Deno Deploy | policy-files.txt |
 | Last commit on main 2024-09-24 | policy-files.txt (`git log -5`) |
+
+## Update 2 (README paragraph added at root's request)
+- `upstream.patch` now adds the badge plus one paragraph. The paragraph says what Wasmer builds and serves (`npm install`, `npm run build`, `dist/`, all from `plan.json`). It also says the button opens the import page, where you review and, if needed, correct the preset or build settings before clicking Deploy, with no instant-deploy claim. Finally it covers the no-copy and own-fork semantics.
+- The old patch sha256 `fb7b517ce8c54229707a980d0fbef4625397e1e8fab3b5c5ed12c81d7a9a16c1` is superseded by `b2cf778c280dd697bb209dc49f9caefb2285e666e6bc183f5f22518c337a017f`. The summary and claims-table rows that describe the line count refer to the old patch; `PR_BODY.md` Summary is updated.
+- The change touches only README.md, which the build does not read, so the replay above still applies. Apply and whitespace checks on a fresh clean HEAD are in `patch-check-update2.txt`.

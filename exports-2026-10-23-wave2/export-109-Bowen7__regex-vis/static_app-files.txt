@@ -1,0 +1,12 @@
+./assets/index-BChK14_K.css
+./assets/index-DYMSwI23.js
+./favicon.png
+./index.html
+./locales/cn/translation.json
+./locales/fr/translation.json
+./locales/jp/translation.json
+./locales/ru/translation.json
+./locales/tr/translation.json
+./logo.svg
+./manifest.json
+./robots.txt

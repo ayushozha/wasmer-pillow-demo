@@ -1,4 +1,4 @@
-<a href="https://wasmer.io/apps/create?github=coreui%2Fcoreui-free-react-admin-template"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" height="48"></a>
+<a href="https://wasmer.io/apps/create?github=coreui%2Fcoreui-free-react-admin-template"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" width="328" height="48"></a>
 
 Disclosure: I work at Wasmer. I prepared this change with help from Claude, an AI assistant, and reviewed and tested it before opening this PR.
 

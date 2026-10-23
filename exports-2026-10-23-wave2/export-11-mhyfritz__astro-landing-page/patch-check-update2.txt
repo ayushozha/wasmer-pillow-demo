@@ -1,0 +1,9 @@
+$ git rev-parse HEAD
+987617a50863d31bb865ee531391a191d74a878a
+$ git apply --check upstream.patch
+exit=0
+$ git diff --cached --check
+exit=0
+$ git diff --cached --stat
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)

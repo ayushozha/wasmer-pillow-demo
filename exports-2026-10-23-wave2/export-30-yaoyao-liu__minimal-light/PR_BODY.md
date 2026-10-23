@@ -1,4 +1,4 @@
-<a href="https://wasmer.io/apps/create?github=yaoyao-liu%2Fminimal-light"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" height="48"></a>
+<a href="https://wasmer.io/apps/create?github=yaoyao-liu%2Fminimal-light"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" width="328" height="48"></a>
 
 ## Summary
 
@@ -25,6 +25,6 @@ Tested on commit `dd114c3fef2d97adc1c6b6d46901e0d96ab83a7c` (main) with the READ
 - No deployment was made, and the import page and badge were not opened from the test environment.
 - The repository has no `Gemfile.lock`, so gem versions are resolved at build time (jekyll stays on 3.8.x because of `~> 3.8.5`).
 - The default `_config.yml` sets `google_analytics: UA-111540567-4`, so a deployment of the unmodified example loads Google Analytics with that ID until a user removes it (the config comment already says to). Font Awesome loads from cdnjs. These external services were not tested.
-- The site has no `404.html`, so missing paths get the server's generic 404 page.
+- Routes: the site is a single page at `/` plus its assets; there are no other pages or client-side routes. The site has no `404.html`, so missing paths (including `/feed.xml` and `/sitemap.xml`, which this theme does not generate) get the server's generic 404 page.
 - `remote_theme:` only applies on GitHub Pages; plain `jekyll build` ignores it and uses the local `_layouts`, which is what was tested.
 - I could not find merged pull requests in the history (the maintainer commits directly), so I understand this may not be merged; happy to close it if it does not fit.

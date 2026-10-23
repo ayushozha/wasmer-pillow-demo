@@ -1,12 +1,14 @@
 diff --git a/README.md b/README.md
-index 05747cb..f43f6a8 100644
+index 05747cb..ae65f8e 100644
 --- a/README.md
 +++ b/README.md
-@@ -60,6 +60,8 @@ Feel free to deploy and host your site on your favorite static hosting service s
+@@ -60,6 +60,10 @@ Feel free to deploy and host your site on your favorite static hosting service s
  
  Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
  
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=treefarmstudio%2Fodyssey-theme)
++
++Wasmer detects this as a static Astro site: it runs `npm install` and `npm run build` and serves the generated `dist/` folder. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct the preset or build settings if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account; to customize the site, fork the repository and import your fork instead.
 +
  ## Sponsor
  

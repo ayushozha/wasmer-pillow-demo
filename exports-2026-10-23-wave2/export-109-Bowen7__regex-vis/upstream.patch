@@ -1,5 +1,38 @@
+diff --git a/Anybuild b/Anybuild
+new file mode 100644
+index 0000000..9a8fef2
+--- /dev/null
++++ b/Anybuild
+@@ -0,0 +1,27 @@
++# Build the Vite app and serve only its static output on Wasmer.
++# /samples is a client-side route, so serve the app shell for it; other unknown paths stay 404.
++load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
++
++config = nodestatic_config(
++    schema = 1,
++    static_redirects_config = """
++[[advanced.rewrites]]
++source = "/samples"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/samples/"
++destination = "/index.html"
++""",
++    sws_version = "2.38.0",
++    static_dir = "dist",
++    node_package_manager = "pnpm",
++    node_framework = "vite",
++    node_server = "node",
++    node_version = "24",
++    pnpm_version = "10",
++)
++
++build = nodestatic_build(config)
++
++nodestatic_serve(config, build, name = "regex-vis")
 diff --git a/README.md b/README.md
-index 1436806..f6f000b 100644
+index 1436806..8414d00 100644
 --- a/README.md
 +++ b/README.md
 @@ -14,6 +14,12 @@
@@ -10,7 +43,7 @@ index 1436806..f6f000b 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Bowen7%2Fregex-vis)
 +
-+Wasmer detects the Vite app, runs `pnpm install` and `pnpm run build`, and serves the generated `dist` folder as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account.
++The included `Anybuild` file tells Wasmer to run `pnpm install` and `pnpm run build` and serve the generated `dist` folder as static files, including the app page for `/samples` so that link also works when opened directly. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct them if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account; to customize the app, fork the repository and import your fork instead.
 +
  ## Contribution Guide
  

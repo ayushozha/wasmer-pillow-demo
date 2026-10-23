@@ -1,1 +1,1 @@
-docs: add Deploy to Wasmer section to README
+build: add Wasmer deployment option

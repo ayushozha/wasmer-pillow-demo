@@ -1,0 +1,25 @@
+$ git grep -nE "Router|<Route|path=" HEAD -- src
+HEAD:src/App.tsx:1:import { BrowserRouter as Router } from 'react-router-dom'
+HEAD:src/App.tsx:10:      <Router>
+HEAD:src/App.tsx:16:      </Router>
+HEAD:src/logo.svg:2:  <g clip-path="url(#clip0)">
+HEAD:src/routes.tsx:1:import { Routes as ReactRouters, Route } from 'react-router-dom'
+HEAD:src/routes.tsx:10:    <ReactRouters>
+HEAD:src/routes.tsx:11:      <Route path="/" element={<Home />} />
+HEAD:src/routes.tsx:12:      <Route path="/samples" element={<Samples />} />
+HEAD:src/routes.tsx:13:      {isDev && <Route path="/playground" element={<Playground />} />}
+HEAD:src/routes.tsx:14:    </ReactRouters>
+$ git grep -nE "to=\"/|linkTo =|setSearchParams|navigate" HEAD -- src
+HEAD:src/components/header/index.tsx:19:        <Link to="/" className="ml-9 pr-2">
+HEAD:src/components/header/index.tsx:26:          to="/"
+HEAD:src/components/header/index.tsx:32:          to="/samples"
+HEAD:src/modules/home/index.tsx:77:    setSearchParams(nextSearchParams)
+HEAD:src/modules/home/index.tsx:102:    setSearchParams(nextParams)
+HEAD:src/modules/samples/index.tsx:43:            const linkTo = `/?r=${encodeURIComponent(`/${regex}/`)}`
+$ git show HEAD:vercel.json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+$ git ls-tree --name-only HEAD | grep -E "Dockerfile|vercel"
+Dockerfile
+vercel.json

@@ -1,14 +1,16 @@
 diff --git a/README.md b/README.md
-index e41d398..2f66eac 100644
+index e41d398..aed659d 100644
 --- a/README.md
 +++ b/README.md
-@@ -35,6 +35,10 @@
+@@ -35,6 +35,12 @@
  | `npm run format`       | Format code with [Prettier](https://prettier.io/) |
  | `npm run clean`        | Remove `node_modules` and build output            |
  
 +## Deploy
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=mhyfritz%2Fastro-landing-page)
++
++Wasmer detects this as a static Astro site: it runs `npm install` and `npm run build` and serves the generated `dist/` folder. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct the preset or build settings if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account; to customize the site, fork the repository and import your fork instead.
 +
  ## Credits
  

@@ -5,9 +5,10 @@
         "commands": {
             "install": "pnpm install",
             "build": "pnpm run build",
-            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+            "start": "static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080"
         },
         "static_dir": "dist",
+        "static_redirects_config": "\n[[advanced.rewrites]]\nsource = \"/samples\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/samples/\"\ndestination = \"/index.html\"\n",
         "edgejs_enable": true,
         "edgejs_precompile": true,
         "node_package_manager": "pnpm",

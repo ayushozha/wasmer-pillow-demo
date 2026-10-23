@@ -1,8 +1,8 @@
-<a href="https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-sphere"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" height="48"></a>
+<a href="https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-sphere"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" width="328" height="48"></a>
 
 ## Summary
 
-Adds a Deploy to Wasmer badge to the README, on its own line below the existing Vercel and Netlify buttons in "Deploy your own". This is a two-line README change with no code or config changes.
+Adds a Deploy to Wasmer badge to the README, on its own line below the existing Vercel and Netlify buttons in "Deploy your own", followed by one short paragraph saying what Wasmer builds and serves and what the button does. This is a four-line README change with no code or config changes.
 
 Disclosure: I work at Wasmer. I prepared this change with help from Claude, an AI assistant, and reviewed and tested it before opening this PR.
 

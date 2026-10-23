@@ -1,8 +1,6 @@
-  Detected static Node.js provider
+  Using static Node.js provider declared in Anybuild
     Framework: Vite
     Server: Node.js
     Package manager: pnpm
     Output directory: dist
-
-  Generated Anybuild at <tmp>
-Plan saved to $S/replay/val2-regexvis/plan.json
+Plan saved to $S/replay/val2-regexvis-fix/plan.json

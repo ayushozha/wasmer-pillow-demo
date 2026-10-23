@@ -1,0 +1,8 @@
+
+[[advanced.rewrites]]
+source = "/samples"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/samples/"
+destination = "/index.html"

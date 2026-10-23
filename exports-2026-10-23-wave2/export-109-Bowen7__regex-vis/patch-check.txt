@@ -1,0 +1,17 @@
+$ git rev-parse HEAD
+a6d920601ca44ab2d4e9cd02306510ab6d5e4b38
+$ sha256sum upstream.patch
+b088cf04a8eaf60a2a10f580494d3dff1e62fb521baca29dfe1b731eb0a60b41  upstream.patch
+$ git apply --check upstream.patch
+exit=0
+$ git diff --cached --check
+exit=0
+$ git diff --cached --stat
+ Anybuild  | 27 +++++++++++++++++++++++++++
+ README.md |  6 ++++++
+ 2 files changed, 33 insertions(+)
+$ git ls-tree HEAD -- pnpm-lock.yaml package.json .github
+040000 tree a771f2933b6cd1353998c9b4036b1c2d65f23e87	.github
+100644 blob ea994fe45b104fceaccdaf9c34e789745ac62f40	package.json
+100644 blob 147c31cca1bc38b8834efe3e046398e22570d168	pnpm-lock.yaml
+ls: cannot access '.husky': No such file or directory

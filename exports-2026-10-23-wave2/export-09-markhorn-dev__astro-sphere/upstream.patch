@@ -1,12 +1,14 @@
 diff --git a/README.md b/README.md
-index 3404f1c..c081960 100644
+index 3404f1c..3870d9e 100644
 --- a/README.md
 +++ b/README.md
-@@ -8,6 +8,8 @@ It is primarily Astro, Tailwind and Typescript, with a very small amount of Soli
+@@ -8,6 +8,10 @@ It is primarily Astro, Tailwind and Typescript, with a very small amount of Soli
  
  [![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
  
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-sphere)
++
++Wasmer detects this as a static Astro site: it runs `npm install` and `npm run build` and serves the generated `dist/` folder. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct the preset or build settings if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account; to customize the site, fork the repository and import your fork instead.
 +
  ## 📋 Features
  

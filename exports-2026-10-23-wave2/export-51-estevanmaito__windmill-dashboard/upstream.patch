@@ -1,5 +1,5 @@
 diff --git a/README.md b/README.md
-index f8400a8..66044f5 100644
+index f8400a8..dd2030e 100644
 --- a/README.md
 +++ b/README.md
 @@ -14,6 +14,12 @@ A multi theme, completely accessible, with components and pages examples, ready
@@ -10,7 +10,7 @@ index f8400a8..66044f5 100644
 +
 +[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=estevanmaito%2Fwindmill-dashboard)
 +
-+Wasmer serves the `public` folder as a static site: the `Staticfile` selects static hosting and no build step runs, so the committed `tailwind.output.css` is used. The button opens Wasmer's import page for this public repository, where you review the detected build settings and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the dashboard, fork the repository, rebuild the CSS with `npm run build` if you change the Tailwind sources, and import your fork.
++Wasmer serves the `public` folder as a static site: the `Staticfile` selects static hosting and no build step runs, so the committed `tailwind.output.css` is used. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct them if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account. To customize the dashboard, fork the repository, rebuild the CSS with `npm run build` if you change the Tailwind sources, and import your fork.
 +
  ## 🦮 Accessibility
  

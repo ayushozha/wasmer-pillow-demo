@@ -46,3 +46,9 @@ The build and serve pass with no controlling policy. Acceptance uncertainty is d
 | remote_theme ignored by plain build | compat.txt, replay.log (build used local layouts) |
 | No merged PRs visible; maintainer commits directly | policy-excerpt.txt |
 | Button/disclosure/no-deployment sentences | statements of intent, no receipt needed |
+
+## Update 2 (root review: concise README, route limitations)
+- The README paragraph now says you review, and correct if needed, the detected settings before clicking Deploy, and that nothing is deployed until you do. It also keeps the no-copy and own-fork semantics. Only the paragraph wording changed; the line count is the same.
+- New `upstream.patch` sha256: `08dff7ab375d11949580d81ac379eb16e1cffa5ec7f0e03b2c142dac0ae69ab8`. Apply and whitespace checks on a fresh clean HEAD are in `patch-check-update2.txt`. Earlier sha256 values in this file are superseded.
+- `PR_BODY.md` Limitations now state the route behaviour. It is backed by `http-receipts.txt`: every served page, plus the unknown paths and repository files that return 404.
+- The PR-body button now has `width="328" height="48"`.

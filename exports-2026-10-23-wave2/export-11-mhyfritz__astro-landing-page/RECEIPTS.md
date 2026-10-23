@@ -50,3 +50,8 @@ Verdict: **READY to open** (with disclosed acceptance uncertainty: low maintaine
 | `site` -> Netlify demo for og:url/og:image | external-refs.txt; astro.config.mjs |
 | No third-party scripts/analytics; fonts bundled | external-refs.txt; http-receipts.txt woff2 lines; replay.log |
 | Last commit on main 2024-11-24 | policy-files.txt (`git log -5`) |
+
+## Update 2 (README paragraph added at root's request)
+- `upstream.patch` now adds the badge plus one paragraph. The paragraph says what Wasmer builds and serves (`npm install`, `npm run build`, `dist/`, all from `plan.json`). It also says the button opens the import page, where you review and, if needed, correct the preset or build settings before clicking Deploy, with no instant-deploy claim. Finally it covers the no-copy and own-fork semantics.
+- The old patch sha256 `fcac9d9243aa2f5591211a447d10994f2105371586869c9426c52e78d8cf9c28` is superseded by `b17f57db6a179c523d7892dd88102afef0e64c2765a55d75d496f08826d2aaa6`. The summary and claims-table rows that describe the line count refer to the old patch; `PR_BODY.md` Summary is updated.
+- The change touches only README.md, which the build does not read, so the replay above still applies. Apply and whitespace checks on a fresh clean HEAD are in `patch-check-update2.txt`.

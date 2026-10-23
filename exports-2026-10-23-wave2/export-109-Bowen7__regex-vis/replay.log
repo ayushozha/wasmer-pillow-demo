@@ -1,14 +1,12 @@
-# replay of val2-regexvis  source=$S/val2-src/regexvis  upstream HEAD=a6d920601ca44ab2d4e9cd02306510ab6d5e4b38
-# local diff vs HEAD:  M README.md;
-  Detected static Node.js provider
+# replay of val2-regexvis-fix  source=$S/val2-src/regexvis  upstream HEAD=a6d920601ca44ab2d4e9cd02306510ab6d5e4b38
+# local diff vs HEAD:  A Anybuild; M README.md;
+  Using static Node.js provider declared in Anybuild
     Framework: Vite
     Server: Node.js
     Package manager: pnpm
     Output directory: dist
-
-  Generated Anybuild at <tmp>
-Plan saved to $S/replay/val2-regexvis/plan.json
-# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=False
+Plan saved to $S/replay/val2-regexvis-fix/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080' static_dir='dist' pm=pnpm@10 inputs='package.json' all_files=False
 $ node -v
 v24.22.1
 exit=0
@@ -23,11 +21,63 @@ Lockfile is up to date, resolution step is skipped
 Progress: resolved 1, reused 0, downloaded 0, added 0
 Packages: +675
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Progress: resolved 675, reused 153, downloaded 75, added 219
-Progress: resolved 675, reused 153, downloaded 192, added 313
-Progress: resolved 675, reused 153, downloaded 417, added 556
-Progress: resolved 675, reused 153, downloaded 520, added 673
-Progress: resolved 675, reused 153, downloaded 522, added 675, done
+Progress: resolved 675, reused 0, downloaded 0, added 0
+Progress: resolved 675, reused 1, downloaded 0, added 0
+Progress: resolved 675, reused 2, downloaded 0, added 0
+Progress: resolved 675, reused 3, downloaded 0, added 0
+Progress: resolved 675, reused 4, downloaded 0, added 0
+Progress: resolved 675, reused 6, downloaded 0, added 0
+Progress: resolved 675, reused 7, downloaded 0, added 0
+Progress: resolved 675, reused 8, downloaded 0, added 0
+Progress: resolved 675, reused 10, downloaded 0, added 0
+Progress: resolved 675, reused 14, downloaded 0, added 0
+Progress: resolved 675, reused 19, downloaded 0, added 0
+Progress: resolved 675, reused 24, downloaded 0, added 0
+Progress: resolved 675, reused 28, downloaded 0, added 0
+Progress: resolved 675, reused 32, downloaded 0, added 0
+Progress: resolved 675, reused 38, downloaded 0, added 0
+Progress: resolved 675, reused 43, downloaded 0, added 0
+Progress: resolved 675, reused 48, downloaded 0, added 0
+Progress: resolved 675, reused 52, downloaded 0, added 0
+Progress: resolved 675, reused 59, downloaded 0, added 0
+Progress: resolved 675, reused 62, downloaded 0, added 0
+Progress: resolved 675, reused 65, downloaded 0, added 0
+Progress: resolved 675, reused 74, downloaded 0, added 0
+Progress: resolved 675, reused 82, downloaded 0, added 0
+Progress: resolved 675, reused 88, downloaded 0, added 0
+Progress: resolved 675, reused 96, downloaded 0, added 0
+Progress: resolved 675, reused 103, downloaded 0, added 0
+Progress: resolved 675, reused 113, downloaded 0, added 0
+Progress: resolved 675, reused 140, downloaded 0, added 0
+Progress: resolved 675, reused 162, downloaded 0, added 0
+Progress: resolved 675, reused 181, downloaded 0, added 0
+Progress: resolved 675, reused 187, downloaded 0, added 0
+Progress: resolved 675, reused 202, downloaded 0, added 0
+Progress: resolved 675, reused 217, downloaded 0, added 0
+Progress: resolved 675, reused 229, downloaded 0, added 0
+Progress: resolved 675, reused 230, downloaded 0, added 0
+Progress: resolved 675, reused 240, downloaded 0, added 0
+Progress: resolved 675, reused 264, downloaded 0, added 0
+Progress: resolved 675, reused 266, downloaded 0, added 0
+Progress: resolved 675, reused 289, downloaded 0, added 0
+Progress: resolved 675, reused 311, downloaded 0, added 0
+Progress: resolved 675, reused 317, downloaded 0, added 0
+Progress: resolved 675, reused 346, downloaded 0, added 0
+Progress: resolved 675, reused 358, downloaded 0, added 0
+Progress: resolved 675, reused 389, downloaded 0, added 0
+Progress: resolved 675, reused 413, downloaded 0, added 0
+Progress: resolved 675, reused 424, downloaded 0, added 0
+Progress: resolved 675, reused 450, downloaded 0, added 0
+Progress: resolved 675, reused 481, downloaded 0, added 0
+Progress: resolved 675, reused 508, downloaded 0, added 0
+Progress: resolved 675, reused 532, downloaded 0, added 0
+Progress: resolved 675, reused 550, downloaded 0, added 0
+Progress: resolved 675, reused 565, downloaded 0, added 0
+Progress: resolved 675, reused 581, downloaded 0, added 0
+Progress: resolved 675, reused 610, downloaded 0, added 0
+Progress: resolved 675, reused 660, downloaded 0, added 0
+Progress: resolved 675, reused 675, downloaded 0, added 455
+Progress: resolved 675, reused 675, downloaded 0, added 675, done
 
 dependencies:
 + @phosphor-icons/react 2.1.7
@@ -96,34 +146,34 @@ devDependencies:
 │   to run scripts.                                                            │
 │                                                                              │
 ╰──────────────────────────────────────────────────────────────────────────────╯
-Done in 5.3s using pnpm v10.34.7
+Done in 1m 2.4s using pnpm v10.34.7
 exit=0
 
 $ pnpm run build
 
-> regex-vis@0.1.0 build $S/replay/val2-regexvis/work
+> regex-vis@0.1.0 build $S/replay/val2-regexvis-fix/work
 > tsc && vite build
 
-vite v5.3.3 building for production...
+[36mvite v5.3.3 [32mbuilding for production...[36m[39m
 transforming...
 Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-✓ 5281 modules transformed.
+[32m✓[39m 5281 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   1.02 kB │ gzip:   0.56 kB
-dist/assets/index-BChK14_K.css   30.78 kB │ gzip:   6.30 kB
-dist/assets/index-DYMSwI23.js   739.66 kB │ gzip: 230.28 kB
-
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  1.02 kB[22m[1m[22m[2m │ gzip:   0.56 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-BChK14_K.css  [39m[1m[2m 30.78 kB[22m[1m[22m[2m │ gzip:   6.30 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-DYMSwI23.js   [39m[1m[33m739.66 kB[39m[22m[2m │ gzip: 230.28 kB[22m
+[33m
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
-- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 8.75s
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 14.43s[39m
 exit=0
 
-$ static-web-server --root=$S/replay/val2-regexvis/static_app --log-level=info --port=3932 --host=127.0.0.1
+$ static-web-server --root=$S/replay/val2-regexvis-fix/static_app --log-level=info --port=3933 --host=127.0.0.1
 Version:      2.38.0
 Built:        
 Git commit:   
@@ -134,27 +184,17 @@ Homepage:     https://static-web-server.net
 Author:       Jose Quintana <https://joseluisq.net>
 200	page	/	text/html	1024
 --	title	/	Regex Vis	
-200	page	/?r=%2F%5Ba-z%5D%2B%2F	text/html	1024
---	title	/?r=%2F%5Ba-z%5D%2B%2F	Regex Vis	
-200	page	/index.html	text/html	1024
---	title	/index.html	Regex Vis	
-404	page	/samples	text/html	0
---	title	/samples	(none)	
-404	page	/samples/	text/html	0
---	title	/samples/	(none)	
-404	page	/playground	text/html	0
---	title	/playground	(none)	
-200	page	/manifest.json	application/json	163
-200	page	/robots.txt	text/plain	67
-200	page	/locales/fr/translation.json	application/json	5297
-404	page	/nope	text/html	0
---	title	/nope	(none)	
+200	page	/samples	text/html	1024
+--	title	/samples	Regex Vis	
+200	page	/samples/	text/html	1024
+--	title	/samples/	Regex Vis	
+200	page	/?r=%2Fa%2B%2F	text/html	1024
+--	title	/?r=%2Fa%2B%2F	Regex Vis	
+404	page	/definitely-missing-x9	text/html	0
+--	title	/definitely-missing-x9	(none)	
 200	ref	/favicon.png	image/png	2832
 200	ref	/assets/index-DYMSwI23.js	text/javascript	739691
 200	ref	/assets/index-BChK14_K.css	text/css	30782
-SUMMARY pages=10 refs_checked=3 failures=4
-FAIL	404	page	/samples	text/html	0
-FAIL	404	page	/samples/	text/html	0
-FAIL	404	page	/playground	text/html	0
-FAIL	404	page	/nope	text/html	0
+SUMMARY pages=5 refs_checked=3 failures=1
+FAIL	404	page	/definitely-missing-x9	text/html	0
 # static_app files: 12

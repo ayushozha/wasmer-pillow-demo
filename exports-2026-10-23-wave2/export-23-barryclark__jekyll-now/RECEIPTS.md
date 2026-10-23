@@ -44,3 +44,7 @@ Build, serve and 404 handling pass. Open item: the README asks contributors to "
 | GA/Disqus empty by default; html5shiv IE<=8 only | compat.txt |
 | Last commit April 2018; README asks to start with an issue / stay minimal | policy-excerpt.txt |
 | Button/disclosure/no-deployment sentences | statements of intent, no receipt needed |
+
+## Update 2 (root review)
+- Issue-first: `policy-context-readme.txt` shows the full README "Contributing" context at HEAD. It says "Issues and Pull Requests are greatly appreciated" and then "You can start by opening an issue…". Opening an issue is optional; there is no issue-first rule. The repo has no `.github/`, CONTRIBUTING, AGENTS, CLAUDE or `.cursorrules` file. The remaining open item is the feed/sitemap behaviour under Jekyll 4.3, which is disclosed.
+- The PR-body button now has `width="328" height="48"`.

@@ -1,0 +1,177 @@
+2026-10-23T02:33:00.749231Z  WARN static_web_server::settings: config file empty or no `general` settings found, using default values
+2026-10-23T02:33:00.749829Z  INFO static_web_server::server: static-web-server 2.38.0
+2026-10-23T02:33:00.749837Z  INFO static_web_server::server: log level: info
+2026-10-23T02:33:00.749845Z  INFO static_web_server::server: config file used: $S/replay/val2-regexvis-fix/sws.toml
+2026-10-23T02:33:00.749906Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:3934
+2026-10-23T02:33:00.749913Z  INFO static_web_server::server: runtime worker threads: 4
+2026-10-23T02:33:00.749915Z  INFO static_web_server::server: runtime max blocking threads: 512
+2026-10-23T02:33:00.749927Z  INFO static_web_server::server: redirect trailing slash: enabled=true
+2026-10-23T02:33:00.749929Z  INFO static_web_server::server: ignore hidden files: enabled=false
+2026-10-23T02:33:00.749931Z  INFO static_web_server::server: disable symlinks: enabled=false
+2026-10-23T02:33:00.749932Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
+2026-10-23T02:33:00.749935Z  INFO static_web_server::server: index files: index.html
+2026-10-23T02:33:00.749938Z  INFO static_web_server::directory_listing: directory listing: enabled=false
+2026-10-23T02:33:00.749940Z  INFO static_web_server::directory_listing: directory listing order code: 6
+2026-10-23T02:33:00.749941Z  INFO static_web_server::directory_listing: directory listing format: Html
+2026-10-23T02:33:00.749943Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
+2026-10-23T02:33:00.749945Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+2026-10-23T02:33:00.749946Z  INFO static_web_server::health: health endpoint: enabled=false
+2026-10-23T02:33:00.749948Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
+2026-10-23T02:33:00.749949Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
+2026-10-23T02:33:00.749951Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
+2026-10-23T02:33:00.749952Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
+2026-10-23T02:33:00.749962Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
+2026-10-23T02:33:00.749963Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
+2026-10-23T02:33:00.749965Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
+2026-10-23T02:33:00.749971Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
+2026-10-23T02:33:00.749973Z  INFO static_web_server::compression_static: compression static: enabled=false
+2026-10-23T02:33:00.749975Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+2026-10-23T02:33:00.749981Z  INFO static_web_server::control_headers: cache control headers: enabled=true
+2026-10-23T02:33:00.749982Z  INFO static_web_server::security_headers: security headers: enabled=false
+2026-10-23T02:33:00.750062Z  INFO Server::start_server{addr_str="127.0.0.1:3934" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.36µs
+2026-10-23T02:33:00.750078Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:3934
+2026-10-23T02:33:00.750080Z  INFO static_web_server::server: press ctrl+c to shut down the server
+2026-10-23T02:33:02.327514Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:02.329047Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples
+2026-10-23T02:33:02.330123Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/
+2026-10-23T02:33:02.330985Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/?r=%2Fa%2B%2F
+2026-10-23T02:33:02.332122Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples?x=1
+2026-10-23T02:33:02.333061Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/?x=1
+2026-10-23T02:33:02.334134Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/samples
+2026-10-23T02:33:02.334828Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/samples/
+2026-10-23T02:33:02.335831Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely-missing-x9
+2026-10-23T02:33:02.335855Z  WARN static_web_server::error_page: method=GET uri=/definitely-missing-x9 status=404 error="Not Found"
+2026-10-23T02:33:02.336832Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely/missing/deep
+2026-10-23T02:33:02.336871Z  WARN static_web_server::error_page: method=GET uri=/definitely/missing/deep status=404 error="Not Found"
+2026-10-23T02:33:02.337862Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/extra
+2026-10-23T02:33:02.337933Z  WARN static_web_server::error_page: method=GET uri=/samples/extra status=404 error="Not Found"
+2026-10-23T02:33:02.338960Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samplesx
+2026-10-23T02:33:02.338996Z  WARN static_web_server::error_page: method=GET uri=/samplesx status=404 error="Not Found"
+2026-10-23T02:33:02.339958Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/playground
+2026-10-23T02:33:02.339988Z  WARN static_web_server::error_page: method=GET uri=/playground status=404 error="Not Found"
+2026-10-23T02:33:02.340924Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index
+2026-10-23T02:33:02.341935Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/missing.js
+2026-10-23T02:33:02.341973Z  WARN static_web_server::error_page: method=GET uri=/assets/missing.js status=404 error="Not Found"
+2026-10-23T02:33:02.342899Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/missing.css
+2026-10-23T02:33:02.342929Z  WARN static_web_server::error_page: method=GET uri=/missing.css status=404 error="Not Found"
+2026-10-23T02:33:02.343830Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/missing.wasm
+2026-10-23T02:33:02.343859Z  WARN static_web_server::error_page: method=GET uri=/missing.wasm status=404 error="Not Found"
+2026-10-23T02:33:02.344757Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/assets/x.js
+2026-10-23T02:33:02.344778Z  WARN static_web_server::error_page: method=GET uri=/samples/assets/x.js status=404 error="Not Found"
+2026-10-23T02:33:02.345580Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/definitely-missing-x9
+2026-10-23T02:33:02.345603Z  WARN static_web_server::error_page: method=HEAD uri=/definitely-missing-x9 status=404 error="Not Found"
+2026-10-23T02:33:02.347039Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:02.347993Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:02.349725Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:20.123413Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:20.124732Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples
+2026-10-23T02:33:20.125743Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/
+2026-10-23T02:33:20.126613Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/?r=%2Fa%2B%2F
+2026-10-23T02:33:20.127082Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples?x=1
+2026-10-23T02:33:20.127758Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/?x=1
+2026-10-23T02:33:20.128326Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/samples
+2026-10-23T02:33:20.129029Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/samples/
+2026-10-23T02:33:20.129509Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely-missing-x9
+2026-10-23T02:33:20.129536Z  WARN static_web_server::error_page: method=GET uri=/definitely-missing-x9 status=404 error="Not Found"
+2026-10-23T02:33:20.130077Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely/missing/deep
+2026-10-23T02:33:20.130103Z  WARN static_web_server::error_page: method=GET uri=/definitely/missing/deep status=404 error="Not Found"
+2026-10-23T02:33:20.131278Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/extra
+2026-10-23T02:33:20.131296Z  WARN static_web_server::error_page: method=GET uri=/samples/extra status=404 error="Not Found"
+2026-10-23T02:33:20.131872Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samplesx
+2026-10-23T02:33:20.131888Z  WARN static_web_server::error_page: method=GET uri=/samplesx status=404 error="Not Found"
+2026-10-23T02:33:20.132341Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/playground
+2026-10-23T02:33:20.132353Z  WARN static_web_server::error_page: method=GET uri=/playground status=404 error="Not Found"
+2026-10-23T02:33:20.132708Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/missing.js
+2026-10-23T02:33:20.132719Z  WARN static_web_server::error_page: method=GET uri=/assets/missing.js status=404 error="Not Found"
+2026-10-23T02:33:20.133330Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/missing.css
+2026-10-23T02:33:20.133345Z  WARN static_web_server::error_page: method=GET uri=/missing.css status=404 error="Not Found"
+2026-10-23T02:33:20.133751Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/missing.wasm
+2026-10-23T02:33:20.133766Z  WARN static_web_server::error_page: method=GET uri=/missing.wasm status=404 error="Not Found"
+2026-10-23T02:33:20.135165Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/assets/x.js
+2026-10-23T02:33:20.135185Z  WARN static_web_server::error_page: method=GET uri=/samples/assets/x.js status=404 error="Not Found"
+2026-10-23T02:33:20.135588Z  INFO static_web_server::log_addr: incoming request: method=HEAD uri=/definitely-missing-x9
+2026-10-23T02:33:20.135600Z  WARN static_web_server::error_page: method=HEAD uri=/definitely-missing-x9 status=404 error="Not Found"
+2026-10-23T02:33:20.136440Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:20.137431Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:20.143622Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:20.160292Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index
+2026-10-23T02:33:20.168442Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples
+2026-10-23T02:33:26.613333Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:26.636986Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:26.655810Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:26.664563Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index.html
+2026-10-23T02:33:26.672096Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/cn/translation.json
+2026-10-23T02:33:26.681135Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/fr/translation.json
+2026-10-23T02:33:26.688513Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/jp/translation.json
+2026-10-23T02:33:26.704559Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/ru/translation.json
+2026-10-23T02:33:26.717407Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/tr/translation.json
+2026-10-23T02:33:26.725520Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/logo.svg
+2026-10-23T02:33:26.742619Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/manifest.json
+2026-10-23T02:33:26.753045Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/robots.txt
+2026-10-23T02:33:47.599940Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:47.678132Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:47.713235Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:48.159722Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:48.159770Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:48.201733Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:50.181020Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/?r=%2F%5Ba-z%5D%2B%5Cd%7B2%2C%7D%2F
+2026-10-23T02:33:50.210004Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:50.262000Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:50.397938Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:50.397979Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:50.398231Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:51.434805Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:51.454246Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:51.454809Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:51.603186Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:51.603247Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:51.620400Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:52.820394Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:52.898127Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/?r=a%7Cb%2B
+2026-10-23T02:33:52.926495Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:52.958030Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:53.074435Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:53.074493Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:53.077440Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:54.086255Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:54.121742Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:54.152018Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:54.236180Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:54.236229Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:54.238681Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:54.954581Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:55.926961Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:56.576160Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:33:56.603457Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:56.631819Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:56.721904Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:56.721943Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:56.721984Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:57.417043Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:57.954207Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples
+2026-10-23T02:33:58.046619Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:58.085727Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:58.147416Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:58.147471Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:58.154130Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:33:58.763870Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples
+2026-10-23T02:33:58.799384Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:33:58.822389Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:33:58.881908Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:33:58.881953Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:33:58.891101Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:34:00.127823Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:34:00.787257Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/samples/
+2026-10-23T02:34:00.817571Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-DYMSwI23.js
+2026-10-23T02:34:00.835831Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-BChK14_K.css
+2026-10-23T02:34:00.910538Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/locales/en/translation.json
+2026-10-23T02:34:00.910585Z  WARN static_web_server::error_page: method=GET uri=/locales/en/translation.json status=404 error="Not Found"
+2026-10-23T02:34:00.926894Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:34:02.093539Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon.png
+2026-10-23T02:34:02.730795Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/playground
+2026-10-23T02:34:02.730847Z  WARN static_web_server::error_page: method=GET uri=/playground status=404 error="Not Found"
+2026-10-23T02:34:03.677498Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/nope
+2026-10-23T02:34:03.677571Z  WARN static_web_server::error_page: method=GET uri=/nope status=404 error="Not Found"
+2026-10-23T02:34:04.799676Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
+2026-10-23T02:34:04.799774Z  INFO static_web_server::signals: delegating server's graceful shutdown
+2026-10-23T02:34:04.799840Z  WARN static_web_server::server: termination signal caught, shutting down the server execution

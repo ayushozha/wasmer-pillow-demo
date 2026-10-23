@@ -50,3 +50,9 @@
 | Charts use only hard-coded data; no URL/form/storage/fetch input | libs-advisories.txt |
 | 404.html Blank link -> /pages/pages/blank.html 404 | http-receipts.txt, refs.txt |
 | Low maintainer activity | policy-files.txt (last commit 2020-08-05) |
+
+## Update 2 (root review: concise README, route limitations)
+- The README paragraph now says you review, and correct if needed, the detected settings before clicking Deploy, and that nothing is deployed until you do. It also keeps the no-copy and own-fork semantics. Only the paragraph wording changed; the line count is the same.
+- New `upstream.patch` sha256: `999ca7fd04b2d1cf251e8e6f8934b6d66a508014a86699954bdf76e553780191`. Apply and whitespace checks on a fresh clean HEAD are in `patch-check-update2.txt`. Earlier sha256 values in this file are superseded.
+- `PR_BODY.md` Limitations now state the route behaviour. It is backed by `http-receipts.txt`: every served page, plus the unknown paths and repository files that return 404.
+- The PR-body button now has `width="328" height="48"`.

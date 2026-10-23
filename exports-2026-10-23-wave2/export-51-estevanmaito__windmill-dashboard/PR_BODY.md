@@ -1,4 +1,4 @@
-<a href="https://wasmer.io/apps/create?github=estevanmaito%2Fwindmill-dashboard"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" height="48"></a>
+<a href="https://wasmer.io/apps/create?github=estevanmaito%2Fwindmill-dashboard"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" width="328" height="48"></a>
 
 ## Summary
 
@@ -29,6 +29,7 @@ No Wasmer deployment was made.
 ## Limitations
 
 - Not deployed. The import page and badge image were not opened from the test environment.
+- Routes: every page is a plain `.html` file (for example `/index.html`, `/forms.html`, `/pages/login.html`), and the demo links to those `.html` URLs; there is no client-side router. Unknown paths and repository files outside `public/` return 404.
 - The served site is the committed `public/` folder; no build runs on Wasmer. If you change the Tailwind sources you still need `npm run build` and to commit the output, as today.
 - The pages load Alpine.js (`alpine@v2.x.x`, a floating tag), Chart.js 2.9.3, Google Fonts and Unsplash demo images from external CDNs without SRI, as the current demo does. The site needs those services at runtime.
 - Chart.js 2.9.3 has a high-severity prototype-pollution advisory (GHSA-h68q-55jf-x68w, fixed in 2.9.4). In this demo the charts (`charts-lines.js`, `charts-bars.js`, `charts-pie.js`) use only hard-coded data and options, with no URL, form, storage or fetched input, so the demo does not feed user input to it. Projects that pass user data into chart options should upgrade. The npm advisory database lists none for alpinejs 2.8.2, the latest 2.x. This PR does not change any library.

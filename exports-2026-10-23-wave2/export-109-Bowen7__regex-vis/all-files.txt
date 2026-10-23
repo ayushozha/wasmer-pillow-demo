@@ -1,0 +1,14 @@
+
+## every file in static_app (curl -w '%{http_code} %{content_type} %{size_download}')
+200 text/css 30782 /assets/index-BChK14_K.css
+200 text/javascript 739691 /assets/index-DYMSwI23.js
+200 image/png 2832 /favicon.png
+200 text/html 1024 /index.html
+200 application/json 4725 /locales/cn/translation.json
+200 application/json 5297 /locales/fr/translation.json
+200 application/json 5801 /locales/jp/translation.json
+200 application/json 7449 /locales/ru/translation.json
+200 application/json 5831 /locales/tr/translation.json
+200 image/svg+xml 820 /logo.svg
+200 application/json 163 /manifest.json
+200 text/plain 67 /robots.txt

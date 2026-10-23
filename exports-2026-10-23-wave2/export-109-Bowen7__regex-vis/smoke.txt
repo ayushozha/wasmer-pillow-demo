@@ -1,25 +1,15 @@
 200	page	/	text/html	1024
 --	title	/	Regex Vis	
-200	page	/?r=%2F%5Ba-z%5D%2B%2F	text/html	1024
---	title	/?r=%2F%5Ba-z%5D%2B%2F	Regex Vis	
-200	page	/index.html	text/html	1024
---	title	/index.html	Regex Vis	
-404	page	/samples	text/html	0
---	title	/samples	(none)	
-404	page	/samples/	text/html	0
---	title	/samples/	(none)	
-404	page	/playground	text/html	0
---	title	/playground	(none)	
-200	page	/manifest.json	application/json	163
-200	page	/robots.txt	text/plain	67
-200	page	/locales/fr/translation.json	application/json	5297
-404	page	/nope	text/html	0
---	title	/nope	(none)	
+200	page	/samples	text/html	1024
+--	title	/samples	Regex Vis	
+200	page	/samples/	text/html	1024
+--	title	/samples/	Regex Vis	
+200	page	/?r=%2Fa%2B%2F	text/html	1024
+--	title	/?r=%2Fa%2B%2F	Regex Vis	
+404	page	/definitely-missing-x9	text/html	0
+--	title	/definitely-missing-x9	(none)	
 200	ref	/favicon.png	image/png	2832
 200	ref	/assets/index-DYMSwI23.js	text/javascript	739691
 200	ref	/assets/index-BChK14_K.css	text/css	30782
-SUMMARY pages=10 refs_checked=3 failures=4
-FAIL	404	page	/samples	text/html	0
-FAIL	404	page	/samples/	text/html	0
-FAIL	404	page	/playground	text/html	0
-FAIL	404	page	/nope	text/html	0
+SUMMARY pages=5 refs_checked=3 failures=1
+FAIL	404	page	/definitely-missing-x9	text/html	0

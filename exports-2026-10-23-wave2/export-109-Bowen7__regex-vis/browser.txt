@@ -1,0 +1,17 @@
+[direct load] / -> HTTP 200 title="Regex Vis" {"path":"/","input":"","svgs":21,"graphNodes":55,"text":"Regex Vis Home Samples English Legends Edit Test C"}
+[direct load] /?r=/[a-z]+\d{2,}/ -> HTTP 200 title="Regex Vis" {"path":"/?r=%2F%5Ba-z%5D%2B%5Cd%7B2%2C%7D%2F","input":"/[a-z]+\\d{2,}/","svgs":27,"graphNodes":69,"text":"Regex Vis Home Samples English You can select node"}
+[typed "a|b+" on /] -> {"path":"/?r=a%7Cb%2B","input":"a|b+","svgs":25,"graphNodes":71,"text":"Regex Vis Home Samples English You can select node"}
+[reload of /?r=a%7Cb%2B] -> {"path":"/?r=a%7Cb%2B","input":"a|b+","svgs":25,"graphNodes":71,"text":"Regex Vis Home Samples English You can select node"}
+[click header Samples link] -> {"path":"/samples","input":null,"svgs":34,"graphNodes":189,"text":"Regex Vis Home Samples English 1. Whole Numbers:/^","sampleLinks":12}
+[click first sample] -> {"path":"/?r=%2F%5E%5Cd%2B%24%2F","input":"/^\\d+$/","svgs":25,"graphNodes":67,"text":"Regex Vis Home Samples English You can select node"}
+[reload while on /samples] -> HTTP 200 {"path":"/samples","input":null,"svgs":34,"graphNodes":189,"text":"Regex Vis Home Samples English 1. Whole Numbers:/^"}
+[direct load /samples] -> HTTP 200 sampleLinks=12 {"path":"/samples","input":null,"svgs":34,"graphNodes":189,"text":"Regex Vis Home Samples English 1. Whole Numbers:/^"}
+[click first sample from direct /samples] -> {"path":"/?r=%2F%5E%5Cd%2B%24%2F","input":"/^\\d+$/","svgs":25,"graphNodes":67,"text":"Regex Vis Home Samples English You can select node"}
+[direct load /samples/] -> HTTP 200 sampleLinks=12 {"path":"/samples/","input":null,"svgs":34,"graphNodes":189,"text":"Regex Vis Home Samples English 1. Whole Numbers:/^"}
+[click first sample from direct /samples/] -> {"path":"/?r=%2F%5E%5Cd%2B%24%2F","input":"/^\\d+$/","svgs":25,"graphNodes":67,"text":"Regex Vis Home Samples English You can select node"}
+[direct load] /playground -> HTTP 404 title="404 Not Found" {"path":"/playground","input":null,"svgs":0,"graphNodes":0,"text":"404 Not Found"}
+[direct load] /nope -> HTTP 404 title="404 Not Found" {"path":"/nope","input":null,"svgs":0,"graphNodes":0,"text":"404 Not Found"}
+blocked non-127.0.0.1 origins: [["https://static.cloudflareinsights.com",9]]
+page/console errors (20):
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Failed to load resource: the server responded with a status of 404 (Not Found)
