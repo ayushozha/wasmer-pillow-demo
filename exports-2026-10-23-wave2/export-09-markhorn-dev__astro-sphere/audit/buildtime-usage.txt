@@ -1,0 +1,33 @@
+# build-time usage of critical packages (repo HEAD f7e3a40f20e1267d7fbbb7b6dd868df1845e1d82)
+## seroval: importers outside seroval/ and seroval-plugins/
+  node_modules/solid-js/web/dist/server.cjs
+  node_modules/solid-js/web/dist/server.js
+## callers of fromJSON / fromCrossJSON outside seroval:
+  node_modules/@babel/core/lib/transformation/normalize-file.js
+  node_modules/vscode-jsonrpc/lib/common/linkedMap.js
+  node_modules/yaml-language-server/node_modules/vscode-jsonrpc/lib/common/linkedMap.js
+  node_modules/postcss/lib/fromJSON.js
+  node_modules/jiti/dist/babel.js
+  node_modules/tailwindcss/peers/index.js
+  (end)
+## solid-js/web server.js seroval import:
+  18:import { Feature, Serializer, getCrossReferenceHeader } from "seroval";
+  30:} from "seroval-plugins/web";
+## fast-xml-parser importers outside itself:
+  node_modules/@astrojs/rss/dist/index.js
+## @astrojs/rss XMLParser.parse call sites (only for customData/source/enclosure):
+  129:  if (typeof rssOptions.customData === "string")
+  132:      parser.parse(`<channel>${rssOptions.customData}</channel>`).channel
+  153:    if (typeof result.customData === "string") {
+  154:      Object.assign(item, parser.parse(`<item>${result.customData}</item>`).item);
+  166:      item.source = parser.parse(
+  172:      item.enclosure = parser.parse(
+## repo rss endpoints and use of customData/source/enclosure:
+  src/pages/rss.xml.ts
+  (end)
+## astro image service in use (config) and sharp present:
+  (end)
+  @img/sharp-libvips-linux-x64
+  @img/sharp-linux-x64
+## images processed by astro build (build log):
+  02:51:16   ▶ /_astro/spongebob.dGmXfKPV_1bUarc.webp (before: 89kB, after: 11kB) (+48ms) (1/1)

@@ -1,0 +1,34 @@
+1:npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+4:> astro build
+7:(Use `node --trace-deprecation ...` to show where the warning was created)
+12:02:56:35 [build] ✓ Completed in 109ms.
+14:02:56:38 [astro-icon] Loaded icons from src/icons, ic, mdi
+15:02:56:39 [vite] [32m✓ built in 3.90s[39m
+16:02:56:39 [build] ✓ Completed in 3.94s.
+18: building client (vite) 
+19:02:56:39 [vite] transforming...
+20:02:56:40 [vite] [32m✓[39m 30 modules transformed.
+22:02:56:40 [vite] rendering chunks...
+23:02:56:40 [vite] computing gzip size...
+24:02:56:40 [vite] [2mdist/[22m[2m_astro/[22m[36mclient.DEGHhFmz.js                             [39m[1m[2m 0.62 kB[22m[1m[22m[2m │ gzip: 0.38 kB[22m
+25:02:56:40 [vite] [2mdist/[22m[2m_astro/[22m[36mastro_scripts/before-hydration.js.Cdv5htNp.js  [39m[1m[2m 6.13 kB[22m[1m[22m[2m │ gzip: 2.55 kB[22m
+26:02:56:40 [vite] [2mdist/[22m[2m_astro/[22m[36mlit-html.x5FnikOf.js                           [39m[1m[2m 7.17 kB[22m[1m[22m[2m │ gzip: 3.18 kB[22m
+27:02:56:40 [vite] [2mdist/[22m[2m_astro/[22m[36mtheme-switcher.CXXJDOSD.js                     [39m[1m[2m16.55 kB[22m[1m[22m[2m │ gzip: 4.85 kB[22m
+28:02:56:40 [vite] [32m✓ built in 124ms[39m
+30: generating static routes 
+31:02:56:40 ▶ src/pages/404.astro
+39:02:56:40 ▶ src/pages/blog/tags/[slug].astro
+42:02:56:40 ▶ src/pages/blog/tags/index.astro
+44:02:56:40 ▶ src/pages/blog/index.astro
+46:02:56:40 ▶ src/pages/company/about.astro
+48:02:56:40 ▶ src/pages/company/contact.astro
+50:02:56:40 ▶ src/pages/company/legal.astro
+52:02:56:40 ▶ src/pages/landing-pages/landing-1.astro
+54:02:56:40 ▶ src/pages/landing-pages/landing-2.astro
+58:02:56:40 ▶ src/pages/theme/get-started.astro
+60:02:56:40 ▶ src/pages/theme/style-guide.astro
+64:02:56:40 ▶ src/pages/index.astro
+65:02:56:40   └─ /index.htmlThe client:only directive for ThemeSwitcher is not recognized. The renderer @astrojs/lit will be used. If you intended to use a different renderer, please provide a valid client:only directive.
+67:02:56:40 ✓ Completed in 510ms.
+69:02:56:40 [build] 18 page(s) built in 4.71s
+70:02:56:40 [build] Complete!

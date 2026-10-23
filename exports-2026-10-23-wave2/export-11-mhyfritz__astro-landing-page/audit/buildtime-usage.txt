@@ -1,0 +1,72 @@
+# build-time usage of critical packages (repo HEAD 987617a50863d31bb865ee531391a191d74a878a)
+## astro-icon -> @iconify/tools functions actually imported:
+  node_modules/astro-icon/dist/loaders/loadLocalCollection.js:1:import { cleanupSVG, importDirectory, isEmptyColor, parseColors, runSVGO, } from "@iconify/tools";
+## @iconify/tools ESM entry re-exports download helpers (module load only):
+  17:export { downloadGitRepo } from './download/git/index.mjs';
+  18:export { getGitRepoHash } from './download/git/hash.mjs';
+  19:export { getGitRepoBranch } from './download/git/branch.mjs';
+  20:export { resetGitRepoContents } from './download/git/reset.mjs';
+  21:export { downloadGitHubRepo } from './download/github/index.mjs';
+  22:export { getGitHubRepoHash } from './download/github/hash.mjs';
+  23:export { downloadGitLabRepo } from './download/gitlab/index.mjs';
+  24:export { getGitLabRepoHash } from './download/gitlab/hash.mjs';
+  25:export { downloadNPMPackage } from './download/npm/index.mjs';
+  26:export { getNPMVersion, getPackageVersion } from './download/npm/version.mjs';
+  27:export { downloadPackage } from './download/index.mjs';
+  28:export { downloadFile } from './download/api/download.mjs';
+  46:export { unzip } from './download/helpers/unzip.mjs';
+  47:export { untar } from './download/helpers/untar.mjs';
+  51:export { axiosConfig, fetchCallbacks } from './download/api/config.mjs';
+  52:export { sendAPIQuery } from './download/api/index.mjs';
+  53:export { defaultQueueParams, runConcurrentQueries } from './download/api/queue.mjs';
+  76:import './download/api/cache.mjs';
+  87:import './download/gitlab/types.mjs';
+## tar importers outside tar/ (all inside @iconify/tools download helpers):
+  node_modules/@iconify/tools/lib/index.cjs
+  node_modules/@iconify/tools/lib/download/helpers/untar.mjs
+  node_modules/@iconify/tools/lib/download/helpers/untar.cjs
+  node_modules/@iconify/tools/lib/download/git/reset.cjs
+  node_modules/@iconify/tools/lib/download/git/index.cjs
+  node_modules/@iconify/tools/lib/download/npm/index.cjs
+  node_modules/@iconify/tools/lib/download/index.cjs
+## axios (form-data consumer) importers outside axios/ (all inside @iconify/tools download/figma):
+  node_modules/@iconify/tools/lib/index.cjs
+  node_modules/@iconify/tools/lib/import/figma/index.cjs
+  node_modules/@iconify/tools/lib/import/figma/query.cjs
+  node_modules/@iconify/tools/lib/download/api/download.mjs
+  node_modules/@iconify/tools/lib/download/api/download.cjs
+  node_modules/@iconify/tools/lib/download/api/index.cjs
+  node_modules/@iconify/tools/lib/download/api/index.mjs
+  node_modules/@iconify/tools/lib/download/git/reset.cjs
+  node_modules/@iconify/tools/lib/download/git/index.cjs
+  node_modules/@iconify/tools/lib/download/gitlab/index.cjs
+  node_modules/@iconify/tools/lib/download/gitlab/hash.cjs
+  node_modules/@iconify/tools/lib/download/npm/index.cjs
+  node_modules/@iconify/tools/lib/download/index.cjs
+  node_modules/@iconify/tools/lib/download/github/index.cjs
+  node_modules/@iconify/tools/lib/download/github/hash.cjs
+## icon sources: local repo dir src/icons + installed @iconify-json packages (no download):
+  src/icons/wordmark.svg
+  src/icons/logomark.svg
+  src/icons/platforms/render.svg
+  src/icons/platforms/vercel.svg
+  src/icons/platforms/netlify.svg
+  src/icons/frameworks/react.svg
+  src/icons/frameworks/lit.svg
+  src/icons/frameworks/preact.svg
+  src/icons/frameworks/vue.svg
+  src/icons/frameworks/solid.svg
+  src/icons/frameworks/svelte.svg
+  @iconify-json/fa-brands
+  @iconify-json/mdi
+## AVIF/HEIF tracked in repo:
+  (end)
+## image sources optimized by build (originals):
+  src/assets/astronaut.png
+  src/assets/moon.jpg
+  src/content/showcase/_images/astro-docs.png
+  src/content/showcase/_images/corset.png
+  src/content/showcase/_images/designcember.png
+  src/content/showcase/_images/divriots.png
+  src/content/showcase/_images/firebase-blog.png
+  src/content/showcase/_images/polinations.png

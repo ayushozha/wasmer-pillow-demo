@@ -1,0 +1,41 @@
+# build-time usage of critical packages (repo HEAD d191e5715a2519e25be4629b933189c421b30a1a)
+## astro-icon@1.1.0 -> @iconify/tools@3.0.7 functions actually imported:
+  node_modules/astro-icon/dist/loaders/loadLocalCollection.js:1:import { cleanupSVG, importDirectory, isEmptyColor, parseColors, runSVGO, } from "@iconify/tools";
+## @iconify/tools ESM entry re-exports download helpers (module load only):
+  17:export { downloadGitRepo } from './download/git/index.mjs';
+  18:export { getGitRepoHash } from './download/git/hash.mjs';
+  19:export { getGitRepoBranch } from './download/git/branch.mjs';
+  20:export { resetGitRepoContents } from './download/git/reset.mjs';
+  21:export { downloadGitHubRepo } from './download/github/index.mjs';
+  22:export { getGitHubRepoHash } from './download/github/hash.mjs';
+  23:export { downloadGitLabRepo } from './download/gitlab/index.mjs';
+  24:export { getGitLabRepoHash } from './download/gitlab/hash.mjs';
+  25:export { downloadNPMPackage } from './download/npm/index.mjs';
+  26:export { getNPMVersion, getPackageVersion } from './download/npm/version.mjs';
+  27:export { downloadPackage } from './download/index.mjs';
+  28:export { downloadFile } from './download/api/download.mjs';
+  46:export { unzip } from './download/helpers/unzip.mjs';
+  47:export { untar } from './download/helpers/untar.mjs';
+  51:export { sendAPIQuery } from './download/api/index.mjs';
+  78:import './download/api/cache.mjs';
+  88:import './download/gitlab/types.mjs';
+## tar importers outside tar/ (all inside @iconify/tools download helpers):
+  node_modules/@iconify/tools/lib/index.cjs
+  node_modules/@iconify/tools/lib/download/helpers/untar.mjs
+  node_modules/@iconify/tools/lib/download/helpers/untar.cjs
+  node_modules/@iconify/tools/lib/download/git/reset.cjs
+  node_modules/@iconify/tools/lib/download/git/index.cjs
+  node_modules/@iconify/tools/lib/download/npm/index.cjs
+  node_modules/@iconify/tools/lib/download/index.cjs
+## icon sources: local repo dir src/icons + installed @iconify-json packages (no download):
+  src/icons/icons.js
+  (end src/icons)
+  @iconify-json/ic
+  @iconify-json/mdi
+## AVIF/HEIF tracked in repo:
+  (end)
+## images optimized by build (build log):
+  (end)
+## .npmrc (npm warns shamefully-hoist unknown):
+  # Expose Astro dependencies for `pnpm` users
+  shamefully-hoist=true

@@ -1,0 +1,467 @@
+######## npm explain astro
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+astro@4.15.9 dev
+node_modules/astro
+  dev astro@"^4.15.9" from the root project
+  peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+  node_modules/@astrojs/mdx
+    dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain tar
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+tar@6.2.0 dev
+node_modules/tar
+  tar@"^6.2.0" from @iconify/tools@3.0.7
+  node_modules/@iconify/tools
+    @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+    node_modules/astro-icon
+      dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain @iconify/tools
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+@iconify/tools@3.0.7 dev
+node_modules/@iconify/tools
+  @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+  node_modules/astro-icon
+    dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain astro-icon
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+astro-icon@1.1.0 dev
+node_modules/astro-icon
+  dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain braces
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+braces@3.0.3 dev
+node_modules/braces
+  braces@"^3.0.3" from micromatch@4.0.8
+  node_modules/micromatch
+    micromatch@"^4.0.8" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+    micromatch@"^4.0.4" from fast-glob@3.3.2
+    node_modules/fast-glob
+      fast-glob@"^3.3.2" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+    micromatch@"^4.0.2" from find-yarn-workspace-root2@1.2.16
+    node_modules/find-yarn-workspace-root2
+      find-yarn-workspace-root2@"1.2.16" from preferred-pm@4.0.0
+      node_modules/preferred-pm
+        preferred-pm@"^4.0.0" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain browserslist
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+browserslist@4.23.3 dev
+node_modules/browserslist
+  peer browserslist@">= 4.21.0" from update-browserslist-db@1.1.0
+  node_modules/update-browserslist-db
+    update-browserslist-db@"^1.1.0" from browserslist@4.23.3
+  browserslist@"^4.23.1" from @babel/helper-compilation-targets@7.25.2
+  node_modules/@babel/helper-compilation-targets
+    @babel/helper-compilation-targets@"^7.25.2" from @babel/core@7.25.2
+    node_modules/@babel/core
+      @babel/core@"^7.25.2" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+      peer @babel/core@"^7.0.0" from @babel/helper-module-transforms@7.25.2
+      node_modules/@babel/helper-module-transforms
+        @babel/helper-module-transforms@"^7.25.2" from @babel/core@7.25.2
+      peer @babel/core@"^7.0.0-0" from @babel/plugin-transform-react-jsx@7.25.2
+      node_modules/@babel/plugin-transform-react-jsx
+        @babel/plugin-transform-react-jsx@"^7.25.2" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+      peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-jsx@7.24.7
+      node_modules/@babel/plugin-syntax-jsx
+        @babel/plugin-syntax-jsx@"^7.24.7" from @babel/plugin-transform-react-jsx@7.25.2
+        node_modules/@babel/plugin-transform-react-jsx
+          @babel/plugin-transform-react-jsx@"^7.25.2" from astro@4.15.9
+          node_modules/astro
+            dev astro@"^4.15.9" from the root project
+            peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+            node_modules/@astrojs/mdx
+              dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain cross-spawn
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+cross-spawn@7.0.3 dev
+node_modules/cross-spawn
+  cross-spawn@"^7.0.3" from execa@5.1.1
+  node_modules/@antfu/install-pkg/node_modules/execa
+    execa@"^5.1.1" from @antfu/install-pkg@0.1.1
+    node_modules/@antfu/install-pkg
+      @antfu/install-pkg@"^0.1.1" from @iconify/utils@2.1.22
+      node_modules/@iconify/utils
+        @iconify/utils@"^2.1.5" from astro-icon@1.1.0
+        node_modules/astro-icon
+          dev astro-icon@"^1.1.0" from the root project
+        @iconify/utils@"^2.1.10" from @iconify/tools@3.0.7
+        node_modules/@iconify/tools
+          @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+          node_modules/astro-icon
+            dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain devalue
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+devalue@5.0.0 dev
+node_modules/devalue
+  devalue@"^5.0.0" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain extract-zip
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+extract-zip@2.0.1 dev
+node_modules/extract-zip
+  extract-zip@"^2.0.1" from @iconify/tools@3.0.7
+  node_modules/@iconify/tools
+    @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+    node_modules/astro-icon
+      dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain fast-glob
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+fast-glob@3.3.2 dev
+node_modules/fast-glob
+  fast-glob@"^3.3.2" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain find-yarn-workspace-root2
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+find-yarn-workspace-root2@1.2.16 dev
+node_modules/find-yarn-workspace-root2
+  find-yarn-workspace-root2@"1.2.16" from preferred-pm@4.0.0
+  node_modules/preferred-pm
+    preferred-pm@"^4.0.0" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain http-cache-semantics
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+http-cache-semantics@4.1.1 dev
+node_modules/http-cache-semantics
+  http-cache-semantics@"^4.1.1" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain js-yaml
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+js-yaml@4.1.0 dev
+node_modules/js-yaml
+  js-yaml@"^4.1.0" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+js-yaml@3.14.1 dev
+node_modules/gray-matter/node_modules/js-yaml
+  js-yaml@"^3.13.1" from gray-matter@4.0.3
+  node_modules/gray-matter
+    gray-matter@"^4.0.3" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+    gray-matter@"^4.0.3" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+js-yaml@3.14.1 dev
+node_modules/load-yaml-file/node_modules/js-yaml
+  js-yaml@"^3.13.0" from load-yaml-file@0.2.0
+  node_modules/load-yaml-file
+    load-yaml-file@"^0.2.0" from which-pm@3.0.0
+    node_modules/which-pm
+      which-pm@"^3.0.0" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+      which-pm@"^3.0.0" from preferred-pm@4.0.0
+      node_modules/preferred-pm
+        preferred-pm@"^4.0.0" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain micromatch
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+micromatch@4.0.8 dev
+node_modules/micromatch
+  micromatch@"^4.0.8" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+  micromatch@"^4.0.4" from fast-glob@3.3.2
+  node_modules/fast-glob
+    fast-glob@"^3.3.2" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+  micromatch@"^4.0.2" from find-yarn-workspace-root2@1.2.16
+  node_modules/find-yarn-workspace-root2
+    find-yarn-workspace-root2@"1.2.16" from preferred-pm@4.0.0
+    node_modules/preferred-pm
+      preferred-pm@"^4.0.0" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain nanoid
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+nanoid@3.3.7 dev
+node_modules/nanoid
+  nanoid@"^3.3.7" from postcss@8.4.47
+  node_modules/postcss
+    postcss@"^8.4.43" from vite@5.4.7
+    node_modules/astro/node_modules/vite
+      vite@"^5.4.3" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+      peerOptional vite@"^3.0.0 || ^4.0.0 || ^5.0.0" from vitefu@1.0.2
+      node_modules/astro/node_modules/vitefu
+        vitefu@"^1.0.2" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain picomatch
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+picomatch@2.3.1 dev
+node_modules/picomatch
+  picomatch@"^2.3.1" from micromatch@4.0.8
+  node_modules/micromatch
+    micromatch@"^4.0.8" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+    micromatch@"^4.0.4" from fast-glob@3.3.2
+    node_modules/fast-glob
+      fast-glob@"^3.3.2" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+    micromatch@"^4.0.2" from find-yarn-workspace-root2@1.2.16
+    node_modules/find-yarn-workspace-root2
+      find-yarn-workspace-root2@"1.2.16" from preferred-pm@4.0.0
+      node_modules/preferred-pm
+        preferred-pm@"^4.0.0" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+  picomatch@"^2.3.1" from @rollup/pluginutils@5.1.2
+  node_modules/@rollup/pluginutils
+    @rollup/pluginutils@"^5.1.0" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain postcss
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+postcss@8.4.47 dev
+node_modules/postcss
+  postcss@"^8.4.43" from vite@5.4.7
+  node_modules/astro/node_modules/vite
+    vite@"^5.4.3" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+    peerOptional vite@"^3.0.0 || ^4.0.0 || ^5.0.0" from vitefu@1.0.2
+    node_modules/astro/node_modules/vitefu
+      vitefu@"^1.0.2" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain preferred-pm
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+preferred-pm@4.0.0 dev
+node_modules/preferred-pm
+  preferred-pm@"^4.0.0" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain rollup
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+rollup@4.22.4 dev
+node_modules/rollup
+  peerOptional rollup@"^1.20.0||^2.0.0||^3.0.0||^4.0.0" from @rollup/pluginutils@5.1.2
+  node_modules/@rollup/pluginutils
+    @rollup/pluginutils@"^5.1.0" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+  rollup@"^4.20.0" from vite@5.4.7
+  node_modules/astro/node_modules/vite
+    vite@"^5.4.3" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+    peerOptional vite@"^3.0.0 || ^4.0.0 || ^5.0.0" from vitefu@1.0.2
+    node_modules/astro/node_modules/vitefu
+      vitefu@"^1.0.2" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain sharp
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+sharp@0.33.5 dev optional
+node_modules/sharp
+  optional sharp@"^0.33.3" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+
+######## npm explain source-map-js
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+source-map-js@1.2.1 dev
+node_modules/source-map-js
+  source-map-js@"^1.0.1" from css-tree@2.3.1
+  node_modules/css-tree
+    css-tree@"^2.2.1" from svgo@3.0.3
+    node_modules/svgo
+      svgo@"3.0.3" from @iconify/tools@3.0.7
+      node_modules/@iconify/tools
+        @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+        node_modules/astro-icon
+          dev astro-icon@"^1.1.0" from the root project
+  source-map-js@"^1.2.0" from magicast@0.3.5
+  node_modules/magicast
+    magicast@"^0.3.5" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+  source-map-js@"^1.2.1" from postcss@8.4.47
+  node_modules/postcss
+    postcss@"^8.4.43" from vite@5.4.7
+    node_modules/astro/node_modules/vite
+      vite@"^5.4.3" from astro@4.15.9
+      node_modules/astro
+        dev astro@"^4.15.9" from the root project
+        peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+        node_modules/@astrojs/mdx
+          dev @astrojs/mdx@"^2.1.1" from the root project
+      peerOptional vite@"^3.0.0 || ^4.0.0 || ^5.0.0" from vitefu@1.0.2
+      node_modules/astro/node_modules/vitefu
+        vitefu@"^1.0.2" from astro@4.15.9
+        node_modules/astro
+          dev astro@"^4.15.9" from the root project
+          peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+          node_modules/@astrojs/mdx
+            dev @astrojs/mdx@"^2.1.1" from the root project
+  source-map-js@"^1.0.1" from css-tree@2.2.1
+  node_modules/csso/node_modules/css-tree
+    css-tree@"~2.2.0" from csso@5.0.5
+    node_modules/csso
+      csso@"5.0.5" from svgo@3.0.3
+      node_modules/svgo
+        svgo@"3.0.3" from @iconify/tools@3.0.7
+        node_modules/@iconify/tools
+          @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+          node_modules/astro-icon
+            dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain svgo
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+svgo@3.0.3 dev
+node_modules/svgo
+  svgo@"3.0.3" from @iconify/tools@3.0.7
+  node_modules/@iconify/tools
+    @iconify/tools@"^3.0.1" from astro-icon@1.1.0
+    node_modules/astro-icon
+      dev astro-icon@"^1.1.0" from the root project
+
+######## npm explain vite
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+vite@5.4.7 dev
+node_modules/astro/node_modules/vite
+  vite@"^5.4.3" from astro@4.15.9
+  node_modules/astro
+    dev astro@"^4.15.9" from the root project
+    peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+    node_modules/@astrojs/mdx
+      dev @astrojs/mdx@"^2.1.1" from the root project
+  peerOptional vite@"^3.0.0 || ^4.0.0 || ^5.0.0" from vitefu@1.0.2
+  node_modules/astro/node_modules/vitefu
+    vitefu@"^1.0.2" from astro@4.15.9
+    node_modules/astro
+      dev astro@"^4.15.9" from the root project
+      peer astro@"^4.0.0" from @astrojs/mdx@2.1.1
+      node_modules/@astrojs/mdx
+        dev @astrojs/mdx@"^2.1.1" from the root project
+

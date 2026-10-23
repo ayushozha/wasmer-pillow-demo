@@ -1,0 +1,99 @@
+# dist inventory (repo HEAD f7e3a40f20e1267d7fbbb7b6dd868df1845e1d82)
+      1 css
+     17 html
+      1 jpg
+     13 js
+      6 svg
+      1 txt
+      1 webp
+      2 woff
+      3 xml
+
+# dist JS/MJS files (bytes path)
+611 dist/_astro/Counter.D_I0Sjxz.js
+1219 dist/_astro/Search.B25GqVtB.js
+41973 dist/_astro/SearchBar.BQ-34gA6.js
+4157 dist/_astro/SearchCollection.By_wYPBH.js
+5594 dist/_astro/client.YvfsKV_b.js
+134 dist/_astro/hoisted.BGfjo5mV.js
+409 dist/_astro/hoisted.fOzBosgT.js
+13651 dist/_astro/web.hLbWCOGn.js
+331 dist/js/animate.js
+2435 dist/js/bg.js
+1418 dist/js/copy.js
+242 dist/js/scroll.js
+1744 dist/js/theme.js
+
+# server-side artifacts in dist (entry.mjs / server dir / node_modules):
+  (none listed = static only)
+
+# files matching distinctive strings (dist/**/*.js|*.html|*.xml)
+seroval                0
+fromJSON               0
+fast-xml-parser        0
+XMLParser              0
+XMLBuilder             0
+sharp                  0
+libvips                0
+libheif                0
+\.avif                 0
+image/avif             0
+astro/dist             0
+devalue                0
+lodash                 0
+fast-uri               0
+js-yaml                0
+postcss                0
+rollup                 0
+nanoid                 0
+vite                   0
+esbuild                0
+picomatch              0
+micromatch             0
+minimatch              0
+braces                 0
+brace-expansion        0
+browserslist           0
+http-cache-semantics   0
+source-map-js          0
+globSync|GlobSync      0
+YAMLException          0
+undici                 0
+cross-spawn            0
+require\("fs"\)|from"node: 0
+process\.env           0
+
+# first 160 bytes of every JS chunk (import headers)
+-- dist/_astro/Counter.D_I0Sjxz.js
+import{d as x,c as m,g as k,t as v,b as r,i as a,r as p}from"./web.hLbWCOGn.js";var S=v('<div class="flex gap-4 items-center"><button class="px-3 py-1 border bo
+-- dist/_astro/Search.B25GqVtB.js
+import{c as h,a as I,g as i,b as r,i as t,e as f,f as L,t as c}from"./web.hLbWCOGn.js";import{F as Q,S as R,A as T}from"./SearchBar.BQ-34gA6.js";var W=c('<div c
+-- dist/_astro/SearchBar.BQ-34gA6.js
+import{g as Q,t as X,b as ke,i as L,h as Me,s as Be,d as We,q as Ke,f as Ve,r as me,u as Ue}from"./web.hLbWCOGn.js";function $(t){return Array.isArray?Array.isA
+-- dist/_astro/SearchCollection.By_wYPBH.js
+import{d as _e,c as h,a as ke,o as me,g,b as u,i,e as m,f as Se,r as S,h as B,t as $,s as f,j as pe,F as we}from"./web.hLbWCOGn.js";import{F as Ce,S as ye,c as 
+-- dist/_astro/client.YvfsKV_b.js
+import{$ as w,k as q,l as K,m as I,c as J,n as V,p as X,e as C,S as Y}from"./web.hLbWCOGn.js";const L=Symbol("store-raw"),$=Symbol("store-node"),b=Symbol("store
+-- dist/_astro/hoisted.BGfjo5mV.js
+document.addEventListener("astro:before-swap",e=>[...e.newDocument.head.querySelectorAll('link[as="font"]')].forEach(o=>o.remove())); 
+-- dist/_astro/hoisted.fOzBosgT.js
+import"./hoisted.BGfjo5mV.js";function n(){let e=document.createElement("div");e.setAttribute("class","meteor"),e.style.left=Math.round(Math.random()*window.inn
+-- dist/_astro/web.hLbWCOGn.js
+const u={context:void 0,registry:void 0,effects:void 0,done:!1,getContextId(){return Q(this.context.count)},getNextContextId(){return Q(this.context.count++)}};
+-- dist/js/animate.js
+function animate() {   const animateElements = document.querySelectorAll('.animate')    animateElements.forEach((element, index) => {     setTimeout(() => {    
+-- dist/js/bg.js
+   function generateParticles(n) {     let value = `${getRandom(2560)}px ${getRandom(2560)}px #000`;     for (let i = 2; i <= n; i++) {       value += `, ${getR
+-- dist/js/copy.js
+const codeBlocks = document.querySelectorAll('pre:has(code)');  //add copy btn to every code block on the dom codeBlocks.forEach((code) => {   //button icon   c
+-- dist/js/scroll.js
+function onScroll() {   const header = document.getElementById("header")   if (window.scrollY > 0) {     header.classList.add("scrolled")   } else {     header.
+-- dist/js/theme.js
+function changeTheme() {   const element = document.documentElement   const theme = element.classList.contains("dark") ? "light" : "dark"    const css = documen
+
+# AVIF/HEIF sources tracked in repo:
+  (end)
+# 'avif' mentioned in src/ or astro config:
+  (end)
+# remote image config (image.domains/remotePatterns) in astro config:
+  (end)

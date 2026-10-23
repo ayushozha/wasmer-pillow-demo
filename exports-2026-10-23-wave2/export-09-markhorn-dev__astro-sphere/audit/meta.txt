@@ -1,0 +1,8 @@
+HEAD=f7e3a40f20e1267d7fbbb7b6dd868df1845e1d82
+node v24.22.1 npm 11.21.1
+-rw-r--r-- 1 root root 204113 Oct 23 02:50 package-lock.json
+install exit=0
+ package-lock.json | 1053 +++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 1025 insertions(+), 28 deletions(-)
+lock diff above (empty=unmodified)
+build exit=0

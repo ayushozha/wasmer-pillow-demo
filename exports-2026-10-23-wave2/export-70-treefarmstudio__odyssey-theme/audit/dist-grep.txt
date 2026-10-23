@@ -1,0 +1,81 @@
+# dist inventory (repo HEAD d191e5715a2519e25be4629b933189c421b30a1a)
+      2 css
+     18 html
+     11 jpg
+      4 js
+     16 png
+      2 svg
+     10 webp
+      6 woff
+      6 woff2
+      1 xml
+
+# dist JS/MJS files (bytes path)
+6128 dist/_astro/astro_scripts/before-hydration.js.Cdv5htNp.js
+621 dist/_astro/client.DEGHhFmz.js
+7165 dist/_astro/lit-html.x5FnikOf.js
+16547 dist/_astro/theme-switcher.CXXJDOSD.js
+
+# server-side artifacts in dist (entry.mjs / server dir / node_modules):
+  (none listed = static only)
+
+# files matching distinctive strings (dist/**/*.js|*.html|*.xml)
+seroval                0
+fromJSON               0
+fast-xml-parser        0
+XMLParser              0
+XMLBuilder             0
+sharp                  0
+libvips                0
+libheif                0
+\.avif                 0
+image/avif             0
+astro/dist             0
+devalue                0
+lodash                 0
+fast-uri               0
+js-yaml                0
+postcss                0
+rollup                 0
+nanoid                 0
+vite                   0
+esbuild                0
+picomatch              0
+micromatch             0
+minimatch              0
+braces                 0
+brace-expansion        0
+browserslist           0
+http-cache-semantics   0
+source-map-js          0
+globSync|GlobSync      0
+YAMLException          0
+undici                 0
+cross-spawn            0
+require\("fs"\)|from"node: 0
+process\.env           0
+form-data              0
+FormData               0
+axios                  0
+node-tar|Unpack        0
+extract-zip            0
+svgo                   0
+micromodal             0
+invariant              0
+
+# first 160 bytes of every JS chunk (import headers)
+-- dist/_astro/astro_scripts/before-hydration.js.Cdv5htNp.js
+import{z as d,w as m,j as v}from"../lit-html.x5FnikOf.js";/**  * @license  * Copyright 2019 Google LLC  * SPDX-License-Identifier: BSD-3-Clause  */let f=null;co
+-- dist/_astro/client.DEGHhFmz.js
+const f=(n,i)=>{const e=document.createElement("template");return e.innerHTML=i,Array.from(e.content.children).forEach(l=>{l.setAttribute("slot",n)}),e.innerHTM
+-- dist/_astro/lit-html.x5FnikOf.js
+/**  * @license  * Copyright 2017 Google LLC  * SPDX-License-Identifier: BSD-3-Clause  */const w=globalThis,S=w.trustedTypes,B=S?S.createPolicy("lit-html",{crea
+-- dist/_astro/theme-switcher.CXXJDOSD.js
+import{j as P,w as U,x as h}from"./lit-html.x5FnikOf.js";/**  * @license  * Copyright 2019 Google LLC  * SPDX-License-Identifier: BSD-3-Clause  */const p=global
+
+# AVIF/HEIF sources tracked in repo:
+  (end)
+# 'avif' mentioned in src/ or astro config:
+  (end)
+# remote image config (image.domains/remotePatterns) in astro config:
+  (end)

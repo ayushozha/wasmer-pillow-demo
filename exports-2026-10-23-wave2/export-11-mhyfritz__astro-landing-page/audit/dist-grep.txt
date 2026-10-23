@@ -1,0 +1,69 @@
+# dist inventory (repo HEAD 987617a50863d31bb865ee531391a191d74a878a)
+      1 css
+      1 html
+      1 jpg
+      1 js
+      1 svg
+     25 webp
+      7 woff2
+
+# dist JS/MJS files (bytes path)
+9204 dist/_astro/hoisted.rtTM1Q1N.js
+
+# server-side artifacts in dist (entry.mjs / server dir / node_modules):
+  (none listed = static only)
+
+# files matching distinctive strings (dist/**/*.js|*.html|*.xml)
+seroval                0
+fromJSON               0
+fast-xml-parser        0
+XMLParser              0
+XMLBuilder             0
+sharp                  0
+libvips                0
+libheif                0
+\.avif                 0
+image/avif             0
+astro/dist             0
+devalue                0
+lodash                 0
+fast-uri               0
+js-yaml                0
+postcss                0
+rollup                 0
+nanoid                 0
+vite                   0
+esbuild                0
+picomatch              0
+micromatch             0
+minimatch              0
+braces                 0
+brace-expansion        0
+browserslist           0
+http-cache-semantics   0
+source-map-js          0
+globSync|GlobSync      0
+YAMLException          0
+undici                 0
+cross-spawn            0
+require\("fs"\)|from"node: 0
+process\.env           0
+form-data              0
+FormData               0
+axios                  0
+node-tar|Unpack        0
+extract-zip            0
+svgo                   0
+micromodal             1
+invariant              0
+
+# first 160 bytes of every JS chunk (import headers)
+-- dist/_astro/hoisted.rtTM1Q1N.js
+function ne(n,t){for(var o=0;o<t.length;o++){var e=t[o];e.enumerable=e.enumerable||!1,e.configurable=!0,"value"in e&&(e.writable=!0),Object.defineProperty(n,e.k
+
+# AVIF/HEIF sources tracked in repo:
+  (end)
+# 'avif' mentioned in src/ or astro config:
+  (end)
+# remote image config (image.domains/remotePatterns) in astro config:
+  (end)
