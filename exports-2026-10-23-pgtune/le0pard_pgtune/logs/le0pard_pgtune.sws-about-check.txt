@@ -1,0 +1,4 @@
+# 2026-10-23 coordinator check: patched replay output (3289c49, anybuild 0.33.1 flat replay), native static-web-server, --host 127.0.0.1
+# dist contains about.html and index.html (no about/ directory)
+static-web-server 2.32.2: / 200 15680; /about 200 8701; /about/ 200 8701; /about.html 200 8701; /nope 404 106
+static-web-server 2.38.0: / 200 15680; /about 200 8701; /about/ 200 8701; /about.html 200 8701; /nope 404 106

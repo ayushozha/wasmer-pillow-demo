@@ -1,0 +1,41 @@
+# 2026-10-23T02:00:29Z flat replay of anybuild 0.33.1 planned steps for le0pard_pgtune @ 0208aa249d49f896e6167dad503a9594bcb0f771 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <replay>/src/Anybuild
+Plan saved to <replay>/plan.json
+EXIT 0
+# removed untracked Anybuild file written by `anybuild plan`
+# env per node.bzl for yarn: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=node-static install='yarn install' build='yarn run build' static_dir='dist'
+# node_install_requires_all_files=False
+$ (cd <replay>/opt/temp && yarn install)
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ pgtune@workspace:. doesn't provide react (p9f768e), requested by formik.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 661 packages were added to the project (+ 214.91 MiB).
+➤ YN0000: └ Completed in 9s 785ms
+➤ YN0000: ┌ Link step
+➤ YN0092: │ ESM support for PnP uses the experimental loader API and is therefore experimental
+➤ YN0000: └ Completed in 0s 776ms
+➤ YN0000: · Done with warnings in 10s 803ms
+EXIT 0
+$ (cd <replay>/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C <replay>/opt/temp)
+EXIT 0
+$ (cd <replay>/opt/temp && yarn run build)
+[31m[1mUsage Error[22m[39m: Couldn't find the node_modules state file - running an install might help (findPackageLocation)
+
+[1m$ [22myarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] [--require #0] <scriptName> ...
+EXIT 1
+# result {"install": "yarn install", "build": "yarn run build", "static_dir": "dist", "exit": 1}

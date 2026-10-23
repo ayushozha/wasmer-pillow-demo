@@ -1,0 +1,18 @@
+[
+  {
+    "repo": "le0pard/pgtune",
+    "status": "READY",
+    "base_sha": "0208aa249d49f896e6167dad503a9594bcb0f771",
+    "base_branch": "master",
+    "patched_staging_sha": "3289c492310ead5857137d0e5139b17ebf2e016f",
+    "import_url": "https://wasmer.io/apps/create?github=le0pard%2Fpgtune",
+    "patch": "le0pard_pgtune/le0pard_pgtune.patch",
+    "patch_sha256": "ec7a77f90c8b376b09d63e284c6008f8fec8086a6f5ac4a8f35fef7195ec54ee",
+    "pr_body": "le0pard_pgtune/pr-body.md",
+    "pr_body_sha256": "d1e9cc526ab2358edefb83c52db6e7cc84da9ce7acd981a8b1aba219361e709f",
+    "files_changed": [
+      "Anybuild",
+      "README.md"
+    ]
+  }
+]

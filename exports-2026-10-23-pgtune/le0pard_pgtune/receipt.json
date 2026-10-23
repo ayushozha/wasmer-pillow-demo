@@ -1,0 +1,116 @@
+{
+  "repo": "le0pard/pgtune",
+  "status": "READY",
+  "stars": "2.8k",
+  "stars_source": "WebFetch https://github.com/le0pard/pgtune (rounded display value; MCP not used per v4/v5)",
+  "stars_at": "2026-10-23T01:57:23Z",
+  "archived": false,
+  "license": "MIT (LICENSE; keep copyright notice); illustration credited to Kate in README",
+  "default_branch": "master",
+  "pushed_at": "not fetched (no API); head commit date 2026-10-22T16:20:20+03:00",
+  "base_sha": "0208aa249d49f896e6167dad503a9594bcb0f771",
+  "head_commit_date": "2026-10-22T16:20:20+03:00",
+  "framework": "Vite 8 + Preact (preact-iso router), vituum/liquid templates, custom build-time prerender of / and /about, vite-plugin-pwa injectManifest service worker",
+  "output_dir": "dist",
+  "build_command": "yarn install --immutable && yarn run build (yarn 4.18.1 via committed yarnPath)",
+  "build_claude": {
+    "result": "PASS",
+    "detail": "node v24.22.1 (.tool-versions pins 24.11.0), committed .yarn/releases/yarn-4.18.1.cjs run directly; install --immutable EXIT 0, build EXIT 0. First attempt via PATH yarn (corepack shim) failed only because the corepack download from repo.yarnpkg.com is denied by the sandbox proxy (403) - environment-only, recorded in the log.",
+    "log": "<campaign>"
+  },
+  "smoke": {
+    "result": "PASS",
+    "detail": "flat-replay smoke_static: 7 routes 200, 0 missing root-relative refs",
+    "log": "<campaign>"
+  },
+  "format_check": "not applicable: repo formatter (oxfmt) is scoped to src, e2e and config files, not README.md",
+  "hook_check": "no git hooks installed (no .husky, .git/hooks has only samples); normal git commit ran, nothing bypassed",
+  "detection_verified": "plan BASE vs PATCHED verified locally; live import page preset pending Codex browser check (README/PR tell users to select node-static if a different preset is shown)",
+  "anybuild_replay": {
+    "base": {
+      "result": "FAIL",
+      "detail": "install EXIT 0 (PnP, no .yarnrc.yml), build EXIT 1: Usage Error: Couldn't find the node_modules state file",
+      "log": "<campaign>"
+    },
+    "patched": {
+      "result": "PASS",
+      "detail": "full source copied before install; yarn install EXIT 0 (Yarn 4.18.1), yarn run build EXIT 0; yarn.lock byte-identical after install (cmp); smoke 7/7 routes 200, 0 missing",
+      "log": "<campaign>",
+      "smoke": "<campaign>"
+    },
+    "pinned_env": "node v24.22.1 (Anybuild default 24); yarn: Anybuild leaves yarn_version floating (mise; source comment says Berry); replay put @yarnpkg/cli-dist latest (4.18.1, == packageManager) first on PATH; with .yarnrc.yml present yarnPath dispatches to committed 4.18.1 anyway. No yarn-specific env in node.bzl."
+  },
+  "sws_smoke": {
+    "result": "PASS",
+    "tool": "native static-web-server 2.38.0 (not Wasmer's wasm SWS 2.32.2)",
+    "routes_200": [
+      "/",
+      "/about",
+      "/about.html",
+      "/sw.js",
+      "/manifest.webmanifest",
+      "/assets/main-<hash>.js",
+      "/assets/style-<hash>.css",
+      "/assets/pgtune-<hash>.svg",
+      "/llms.txt",
+      "/robots.txt",
+      "/?<full configuration query>"
+    ],
+    "missing_path": "404",
+    "note": "/about (no .html) served 200 with about.html bytes on native SWS 2.38.0; unverified on wasm SWS 2.32.2",
+    "log": "<campaign>"
+  },
+  "caveats": [
+    "No analytics, tag-manager or third-party IDs found in src/public (grep for gtag/GTM/analytics/plausible/umami/metrika/sentry; external hosts in source are only postgresql.org, w3.org, github.com, twitter.com, wikipedia links and the site's own domain).",
+    "SITE_URL in src/app/pageMeta.js (canonical/og URLs) and public/CNAME point to pgtune.leopard.in.ua; README tells forks to change them for another domain.",
+    "Service worker (vite-plugin-pwa injectManifest, Workbox precache of css/js/html/png/svg/ico, registerType prompt, scope '/'): works at domain root; requires root serving, not a sub-path. Precache includes about.html; Workbox cleanURLs serves /about offline.",
+    "Routing: preact-iso history router but only / and /about exist, both prerendered to html files; no SPA fallback needed.",
+    "Production sourcemaps are published (build.sourcemap true), same as upstream GitHub Pages.",
+    "No forms posting anywhere, no auth, no secrets; calculation is client-side.",
+    "Existing Dockerfile runs the Vite dev server (yarn dev); unchanged.",
+    ".nojekyll/CNAME/GitHub Pages workflow untouched."
+  ],
+  "policy": {
+    "read": [
+      "README.md Contributing section (generic fork / feature branch / PR steps - invites PRs)",
+      "no CONTRIBUTING, AGENTS.md, AI policy, CLA or PR template in repo",
+      "CODE_OF_CONDUCT.md present",
+      "issue templates only (.github/ISSUE_TEMPLATE bug_report/feature_request), no issue-first rule"
+    ],
+    "deploy_provider_stance": "README has only a GitHub Actions Pages build badge; no provider buttons. The hosting-keyword search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed '5 results' (Open 0, Closed 5), one page: #160, #158, #147 (dependabot, merged), #100 'Created Dockerfile' (poiou123, merged 2024-11-10), #61 'Docker' (ismvru, merged 2022-08-31). It showed no closed-unmerged hosting PRs.",
+    "outside_merges": "The search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed+-author%3Ale0pard+-author%3Aapp%2Fdependabot showed 9 closed PRs: 7 merged (latest outside merge #102 jmealo 2024-11-29), 2 closed unmerged (#98, #23; not hosting-related). The closed-PR listing https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed showed 'Closed 100', 4 pages; page 1 all merged (maintainer + dependabot through 2026-10-21).",
+    "evidence_urls": [
+      "https://github.com/le0pard/pgtune",
+      "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+wasmer",
+      "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker",
+      "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed+-author%3Ale0pard+-author%3Aapp%2Fdependabot",
+      "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed",
+      "https://github.com/le0pard/pgtune/issues?q=self-host+OR+offline+OR+docker+OR+internal+OR+deploy"
+    ]
+  },
+  "acceptance_risk": "Moderate: maintainer very active (own PRs and dependabot merges through 2026-10-21), but last outside-contributor merge seen was 2024-11-29 (#102). Outside container/self-hosting PRs (#61, #100) were merged. No refusal of provider buttons seen.",
+  "wasmer_pr_search": {
+    "query": "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+wasmer (WebFetch, all states)",
+    "result": "the search showed 0 results ('No pull requests matched your search'; Open 0, Closed 0) at ~2026-10-23T01:57Z"
+  },
+  "coordinator_review": "2026-10-23: ls-remote HEAD = 0208aa2 (base current); patch == format-patch of 3289c49; Anybuild diff vs generator = node_install_requires_all_files=True (+comment) and app name only; field verified supported in shipit v0.33.1 (node.rs:613, node.bzl:107/144: all-files copy before install); .yarnrc.yml has nodeLinker node-modules + yarnPath; coordinator re-replay of 3289c49 passed (install+build exit 0); /about served about.html on native SWS 2.32.2 and 2.38.0 (logs/le0pard_pgtune.sws-about-check.txt). Root's independent screen: Wasmer search 0, no explicit AI/CLA/issue-first/provider ban. Live import preset not checked (README/body say select node-static).",
+  "patch_commit": "3289c492310ead5857137d0e5139b17ebf2e016f (branch deploy-to-wasmer in <tmp> author Claude <noreply@anthropic.com>)",
+  "config": {
+    "file": "Anybuild (root)",
+    "generated": "<campaign>",
+    "committed": "<campaign>",
+    "diff": "<campaign>",
+    "edits": "added node_install_requires_all_files = True (+2 comment lines); serve name pgtune_base -> pgtune. All other lines are generator output.",
+    "why_needed": "Base replay FAILS: node.bzl stages only package.json + yarn.lock before 'yarn install', so .yarnrc.yml (nodeLinker: node-modules, yarnPath) is absent; Yarn Berry installs with PnP, then after source copy 'yarn run build' errors 'Couldn't find the node_modules state file'. Field is supported (node.rs env_bool node_install_requires_all_files; node.bzl node_install_steps copies full source before install)."
+  },
+  "browser_smoke": {
+    "result": "PASS",
+    "tool": "playwright-core 1.64.1 (repo devDependency) + Chromium /opt/pw-browsers/chromium-1194, served by native SWS 2.38.0",
+    "checks": "form fill -> 'shared_buffers = 4GB' rendered and URL updated; service worker active at /sw.js; direct /about load 200 with correct title; shared config link renders; 0 console errors, 0 failed requests, 0 external hosts",
+    "log": "<campaign>"
+  },
+  "why": "PgTune is a browser-only PostgreSQL config calculator (llms.txt: nothing is sent to a server; config fully described by URL). Users self-host it - two outside Docker PRs (#61, #100) were merged - but the Dockerfile runs the Vite dev server. A Wasmer import of a fork serves the production static build (prerendered pages, hashed assets, service worker) for a private/internal copy. The Anybuild file is required to make that build succeed (yarn 4 .yarnrc.yml at install).",
+  "import_url": "https://wasmer.io/apps/create?github=le0pard%2Fpgtune",
+  "patch": "le0pard_pgtune.patch",
+  "pr_body": "pr-body.md"
+}

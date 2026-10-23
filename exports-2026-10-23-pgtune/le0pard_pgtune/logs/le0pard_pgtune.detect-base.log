@@ -1,0 +1,11 @@
+# 2026-10-23T01:57:39Z le0pard/pgtune @ 0208aa249d49f896e6167dad503a9594bcb0f771 anybuild 0.33.1 BASE
+$ anybuild plan . --out plan-base.json
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to <tmp>
+EXIT 0

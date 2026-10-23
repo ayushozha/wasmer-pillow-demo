@@ -1,0 +1,153 @@
+# 2026-10-23T01:59:18Z le0pard/pgtune @ 0208aa249d49f896e6167dad503a9594bcb0f771 node v24.22.1 yarn 4.18.1 (committed .yarn/releases/yarn-4.18.1.cjs run directly; .tool-versions pins nodejs 24.11.0)
+# attempt 1 via PATH yarn (corepack shim) failed: corepack download of yarn 4.18.1 from repo.yarnpkg.com denied by sandbox proxy (403) -> environment-only; full output in attempt-1 section at end
+$ node .yarn/releases/yarn-4.18.1.cjs install --immutable
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 0s 313ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ pgtune@workspace:. doesn't provide react (p9f768e), requested by formik.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 661 packages were added to the project (+ 66.45 MiB).
+➤ YN0000: └ Completed in 23s 944ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 7s 714ms
+➤ YN0000: · Done with warnings in 32s 155ms
+EXIT 0
+$ node .yarn/releases/yarn-4.18.1.cjs run build
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 195 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest          0.48 kB
+dist/about.html                    2.04 kB │ gzip:  0.97 kB
+dist/index.html                    2.04 kB │ gzip:  0.97 kB
+dist/assets/pgtune-CO5GAuwJ.svg    4.35 kB │ gzip:  1.92 kB
+dist/assets/logo-ZRNsVFaj.svg     47.02 kB │ gzip:  7.66 kB
+dist/assets/style-Cnkw2jkA.css    15.77 kB │ gzip:  3.78 kB
+dist/assets/main-Er0aaGsj.js     110.35 kB │ gzip: 38.84 kB │ map: 734.83 kB
+
+✓ built in 2.57s
+
+PWA v2.0.0
+Building src/sw.js service worker ("es" format)...
+vite v8.3.5 building client environment for production...
+
+ WARN  inlineDynamicImports option is deprecated, please use codeSplitting: false instead.
+
+transforming...
+✓ 60 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/sw.mjs  15.91 kB │ gzip: 5.32 kB │ map: 139.68 kB
+
+✓ built in 503ms
+
+PWA v2.0.0
+mode      injectManifest
+format:   es
+precache  20 entries (332.34 KiB)
+files generated
+  dist/sw.js
+  dist/sw.js.map
+EXIT 0
+
+# ---- attempt-1 (corepack) output ----
+/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22051
+    throw new Error(
+          ^
+
+Error: Error when performing the request to https://repo.yarnpkg.com/4.18.1/packages/yarnpkg-cli/bin/yarn.js; for troubleshooting help, see https://github.com/nodejs/corepack#troubleshooting
+    at fetch (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22051:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async fetchUrlStream (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22081:20)
+    at async download (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22208:18)
+    at async installVersion (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22300:55)
+    at async Engine.ensurePackageManager (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22851:32)
+    at async Engine.executePackageManagerRequest (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22962:25)
+    at async Object.runMain (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:23660:7) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: DOMException [Error]: Request was cancelled.
+        at new DOMException (node:internal/per_context/domexception:76:18)
+        at makeAppropriateNetworkError (node:internal/deps/undici/undici:11962:182)
+        at httpNetworkFetch (node:internal/deps/undici/undici:13856:18)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:13715:33)
+        at async httpFetch (node:internal/deps/undici/undici:13537:37)
+        at async mainFetch (node:internal/deps/undici/undici:13298:24) {
+      cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling
+          at Client.connect (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:12214:26)
+          at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+        code: 'UND_ERR_ABORTED'
+      }
+    }
+  }
+}
+
+Node.js v24.22.1
+# 2026-10-23T01:59:06Z le0pard/pgtune @ 0208aa249d49f896e6167dad503a9594bcb0f771 node v24.22.1 yarn  (committed yarnPath .yarn/releases/yarn-4.18.1.cjs; .tool-versions pins nodejs 24.11.0, sandbox has 24.22.1)
+$ yarn install --immutable
+    at async fetchUrlStream (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22081:20)
+    at async download (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22208:18)
+    at async installVersion (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22300:55)
+    at async Engine.ensurePackageManager (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22851:32)
+    at async Engine.executePackageManagerRequest (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22962:25)
+    at async Object.runMain (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:23660:7) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: DOMException [Error]: Request was cancelled.
+        at new DOMException (node:internal/per_context/domexception:76:18)
+        at makeAppropriateNetworkError (node:internal/deps/undici/undici:11962:182)
+        at httpNetworkFetch (node:internal/deps/undici/undici:13856:18)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:13715:33)
+        at async httpFetch (node:internal/deps/undici/undici:13537:37)
+        at async mainFetch (node:internal/deps/undici/undici:13298:24) {
+      cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling
+          at Client.connect (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:12214:26)
+          at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+        code: 'UND_ERR_ABORTED'
+      }
+    }
+  }
+}
+
+Node.js v24.22.1
+EXIT 1
+$ yarn run build
+! Corepack is about to download https://repo.yarnpkg.com/4.18.1/packages/yarnpkg-cli/bin/yarn.js
+/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22051
+    throw new Error(
+          ^
+
+Error: Error when performing the request to https://repo.yarnpkg.com/4.18.1/packages/yarnpkg-cli/bin/yarn.js; for troubleshooting help, see https://github.com/nodejs/corepack#troubleshooting
+    at fetch (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22051:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async fetchUrlStream (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22081:20)
+    at async download (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22208:18)
+    at async installVersion (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22300:55)
+    at async Engine.ensurePackageManager (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22851:32)
+    at async Engine.executePackageManagerRequest (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:22962:25)
+    at async Object.runMain (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:23660:7) {
+  [cause]: [TypeError: fetch failed] {
+    [cause]: DOMException [Error]: Request was cancelled.
+        at new DOMException (node:internal/per_context/domexception:76:18)
+        at makeAppropriateNetworkError (node:internal/deps/undici/undici:11962:182)
+        at httpNetworkFetch (node:internal/deps/undici/undici:13856:18)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:13715:33)
+        at async httpFetch (node:internal/deps/undici/undici:13537:37)
+        at async mainFetch (node:internal/deps/undici/undici:13298:24) {
+      cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling
+          at Client.connect (/opt/node22/lib/node_modules/corepack/dist/lib/corepack.cjs:12214:26)
+          at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+        code: 'UND_ERR_ABORTED'
+      }
+    }
+  }
+}
+
+Node.js v24.22.1
+EXIT 1

@@ -1,0 +1,46 @@
+{
+  "dir": "<replay>/opt/temp/dist",
+  "base": "/",
+  "html_files": 2,
+  "local_refs_checked": 8,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 15680,
+      "title": "PGTune - calculate configuration for PostgreSQL based on the maximum performance"
+    },
+    "/about.html": {
+      "status": 200,
+      "bytes": 8701,
+      "title": "How it works - PGTune"
+    },
+    "/sw.js": {
+      "status": 200,
+      "bytes": 17239,
+      "title": null
+    },
+    "/manifest.webmanifest": {
+      "status": 200,
+      "bytes": 484,
+      "title": null
+    },
+    "/assets/main-Er0aaGsj.js": {
+      "status": 200,
+      "bytes": 110359,
+      "title": null
+    },
+    "/assets/style-Cnkw2jkA.css": {
+      "status": 200,
+      "bytes": 15771,
+      "title": null
+    },
+    "/llms.txt": {
+      "status": 200,
+      "bytes": 4495,
+      "title": null
+    }
+  },
+  "ok": true
+}
