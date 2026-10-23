@@ -1,0 +1,129 @@
+# 2026-10-23T01:36:40Z flat replay of anybuild 0.33.1 planned steps for cssninjaStudio_fresh @ 89948cf7bc3278dfe54dceefe852a13731c1da73 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Using static Node.js provider declared in Anybuild
+    Framework: Astro
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: dist
+Plan saved to <replay>/plan.json
+EXIT 0
+# env per node.bzl for pnpm: CI=true, pnpm_config_dangerously_allow_all_builds=true, pnpm_config_minimum_release_age=0, pnpm_config_strict_dep_builds=false
+# pinned per plan: node_version=24 (default) pnpm_version=8.15.9 -> pnpm on PATH 8.15.9; npm_version=None bun_version=None
+# plan: provider=node-static install='pnpm install' build='pnpm run build' static_dir='dist'
+# node_install_requires_all_files=False
+$ (cd <replay>/opt/temp && pnpm install)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +510
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 510, reused 0, downloaded 0, added 0
+Progress: resolved 510, reused 1, downloaded 0, added 0
+Progress: resolved 510, reused 3, downloaded 0, added 0
+Progress: resolved 510, reused 4, downloaded 0, added 0
+Progress: resolved 510, reused 5, downloaded 0, added 0
+Progress: resolved 510, reused 6, downloaded 0, added 0
+Progress: resolved 510, reused 7, downloaded 0, added 0
+Progress: resolved 510, reused 8, downloaded 0, added 0
+Progress: resolved 510, reused 9, downloaded 0, added 0
+Progress: resolved 510, reused 10, downloaded 0, added 0
+Progress: resolved 510, reused 11, downloaded 0, added 0
+Progress: resolved 510, reused 12, downloaded 0, added 0
+Progress: resolved 510, reused 15, downloaded 0, added 0
+Progress: resolved 510, reused 18, downloaded 0, added 0
+Progress: resolved 510, reused 20, downloaded 0, added 0
+Progress: resolved 510, reused 21, downloaded 0, added 0
+Progress: resolved 510, reused 23, downloaded 0, added 0
+Progress: resolved 510, reused 25, downloaded 0, added 0
+Progress: resolved 510, reused 27, downloaded 0, added 0
+Progress: resolved 510, reused 31, downloaded 0, added 0
+Progress: resolved 510, reused 38, downloaded 0, added 0
+Progress: resolved 510, reused 61, downloaded 0, added 0
+Progress: resolved 510, reused 93, downloaded 0, added 0
+Progress: resolved 510, reused 130, downloaded 0, added 0
+Progress: resolved 510, reused 162, downloaded 0, added 0
+Progress: resolved 510, reused 180, downloaded 0, added 0
+Progress: resolved 510, reused 184, downloaded 0, added 0
+Progress: resolved 510, reused 194, downloaded 0, added 0
+Progress: resolved 510, reused 222, downloaded 0, added 0
+Progress: resolved 510, reused 236, downloaded 0, added 0
+Progress: resolved 510, reused 263, downloaded 0, added 0
+Progress: resolved 510, reused 327, downloaded 0, added 0
+Progress: resolved 510, reused 353, downloaded 0, added 0
+Progress: resolved 510, reused 389, downloaded 0, added 0
+Progress: resolved 510, reused 397, downloaded 0, added 0
+Progress: resolved 510, reused 405, downloaded 0, added 0
+Progress: resolved 510, reused 406, downloaded 0, added 0
+Progress: resolved 510, reused 409, downloaded 0, added 0
+Progress: resolved 510, reused 423, downloaded 0, added 0
+Progress: resolved 510, reused 462, downloaded 0, added 0
+Progress: resolved 510, reused 510, downloaded 0, added 14
+Progress: resolved 510, reused 510, downloaded 0, added 510, done
+
+dependencies:
++ @alpinejs/collapse 3.13.10
++ @alpinejs/intersect 3.13.10
++ @alpinejs/persist 3.13.10
++ alpinejs 3.13.10
++ astro 4.7.0
++ bulma 0.9.4
++ bulma-css-vars 0.8.0
++ fuse.js 7.0.0
++ iconify-icon 2.1.0
++ js-datepicker 5.18.2
++ lozad 1.16.0
++ moment 2.30.1
++ notyf 3.10.0
++ plyr 3.7.8
++ sass 1.75.0
++ simplebar 6.2.5
+
+devDependencies:
++ @fontsource-variable/nunito 5.0.19
++ @fontsource-variable/roboto-flex 5.0.15
++ @fontsource/material-icons 5.0.18
++ autoprefixer 10.4.19
++ npm-run-all 4.1.5
+
+Done in 1m 0.9s
+EXIT 0
+$ (cd <replay>/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C <replay>/opt/temp)
+EXIT 0
+$ (cd <replay>/opt/temp && pnpm run build)
+
+> fresh@5.4.0 build <replay>/opt/temp
+> run-s build:*
+
+
+> fresh@5.4.0 build:astro <replay>/opt/temp
+> astro build
+
+01:37:51 [build] output: "static"
+01:37:51 [build] directory: <replay>/opt/temp/dist/
+01:37:51 [build] Collecting build info...
+01:37:51 [build] ✓ Completed in 93ms.
+01:37:51 [build] Building static entrypoints...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+01:37:54 [WARN] [vite] 
+../img/loaders/rings.svg referenced in <replay>/opt/temp/src/styles/main.scss didn't resolve at build time, it will remain unchanged to be resolved at runtime
+01:37:55 [vite] [32m✓ built in 4.48s[39m
+01:37:55 [build] ✓ Completed in 4.65s.
+
+ building client (vite) 
+01:37:55 [vite] transforming...
+01:37:56 [vite] [32m✓[39m 24 modules transformed.
+01:37:56 [vite] rendering chunks...
+01:37:57 [vite] computing gzip size...
+01:37:57 [vite] [2mdist/[22m[2m_astro/[22m[36mhoisted.B8Dnk1i7.js  [39m[1m[2m86.24 kB[22m[1m[22m[2m │ gzip: 30.52 kB[22m
+01:37:57 [vite] [32m✓ built in 1.38s[39m
+
+ generating static routes 
+01:37:57 ▶ src/pages/index.astro
+01:37:57   └─ /index.html (+11ms)
+01:37:57 ✓ Completed in 16ms.
+
+01:37:57 [build] 1 page(s) built in 6.79s
+01:37:57 [build] Complete!
+EXIT 0
+# result {"install": "pnpm install", "build": "pnpm run build", "static_dir": "dist", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/api/search.json": 200, "/img/illustrations/worker.png": 200}}

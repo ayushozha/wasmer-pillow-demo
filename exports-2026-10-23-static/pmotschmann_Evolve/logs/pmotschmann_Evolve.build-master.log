@@ -1,0 +1,230 @@
+# 2026-10-22T06:05:32Z pmotschmann/Evolve @ 3436358dcd03d9f9e071d51ea071e0a78c0322e4 node v24.22.1 npm 11.19.1
+$ npm ci
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: fsevents@2.3.3 from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts]
+npm error [--allow-directory <all|none|root>] [--allow-file <all|none|root>]
+npm error [--allow-git <all|none|root>] [--allow-remote <all|none|root>]
+npm error [--allow-scripts <package-list> [--allow-scripts <package-list> ...]]
+npm error [--strict-allow-scripts] [--dangerously-allow-all-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error   --install-strategy
+npm error     Sets the strategy for installing packages in node_modules.
+npm error
+npm error   --legacy-bundling
+npm error     Instead of hoisting package installs in `node_modules`, install packages
+npm error
+npm error   --global-style
+npm error     Only install direct dependencies in the top level `node_modules`,
+npm error
+npm error   --omit
+npm error     Dependency types to omit from the installation tree on disk.
+npm error
+npm error   --include
+npm error     Option that allows for defining which types of dependencies to install.
+npm error
+npm error   --strict-peer-deps
+npm error     If set to `true`, and `--legacy-peer-deps` is not set, then _any_
+npm error
+npm error   --foreground-scripts
+npm error     Run all build scripts (ie, `preinstall`, `install`, and
+npm error
+npm error   --ignore-scripts
+npm error     If true, npm does not run scripts specified in package.json files.
+npm error
+npm error   --allow-directory
+npm error     Limits the ability for npm to install dependencies from directories.
+npm error
+npm error   --allow-file
+npm error     Limits the ability for npm to install dependencies from tarball files.
+npm error
+npm error   --allow-git
+npm error     Limits the ability for npm to fetch dependencies from git references.
+npm error
+npm error   --allow-remote
+npm error     Limits the ability for npm to fetch dependencies from urls.
+npm error
+npm error   --allow-scripts
+npm error     Comma-separated list of packages whose install-time lifecycle scripts
+npm error
+npm error   --strict-allow-scripts
+npm error     If `true`, turn the install-script policy from a warning into a hard
+npm error
+npm error   --dangerously-allow-all-scripts
+npm error     If `true`, bypass the `allowScripts` policy entirely and run every
+npm error
+npm error   --audit
+npm error     When "true" submit audit reports alongside the current npm command to the
+npm error
+npm error   --bin-links
+npm error     Tells npm to create symlinks (or `.cmd` shims on Windows) for package
+npm error
+npm error   --fund
+npm error     When "true" displays the message at the end of each `npm install`
+npm error
+npm error   --dry-run
+npm error     Indicates that you don't want npm to make any changes and that it should
+npm error
+npm error   -w|--workspace
+npm error     Enable running a command in the context of the configured workspaces of the
+npm error
+npm error   --workspaces
+npm error     Set to true to run the command in the context of **all** configured
+npm error
+npm error   --include-workspace-root
+npm error     Include the workspace root when workspaces are enabled for a command.
+npm error
+npm error   --install-links
+npm error     When set file: protocol dependencies will be packed and installed as
+npm error
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: <npm-log>
+EXIT 1
+$ npm run build
+
+> evolveidle@1.4.10 build
+> npm run evolve && npm run evolve-less && npm run wiki && npm run wiki-less
+
+
+> evolveidle@1.4.10 evolve
+> node buildEvolve.js
+
+node:internal/modules/cjs/loader:1568
+  throw err;
+  ^
+
+Error: Cannot find module 'esbuild'
+Require stack:
+- <clone>/pmotschmann_Evolve-base/buildEvolve.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at Module._load (node:internal/modules/cjs/loader:1341:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1674:12)
+    at require (node:internal/modules/helpers:157:16)
+    at Object.<anonymous> (<clone>/pmotschmann_Evolve-base/buildEvolve.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '<clone>/pmotschmann_Evolve-base/buildEvolve.js' ]
+}
+
+Node.js v24.22.1
+EXIT 1
+# retry with upstream Dockerfile's install command (npm ci rejected the lockfile)
+$ npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 208 packages, and audited 209 packages in 9s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (1 low, 2 moderate, 11 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.25.0 (postinstall: node install.js)
+npm warn install-scripts   node@16.6.1 (preinstall: node installArchSpecificPackage)
+npm warn install-scripts   spawn-sync@1.0.15 (postinstall: node postinstall)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ npm run build
+
+> evolveidle@1.4.10 build
+> npm run evolve && npm run evolve-less && npm run wiki && npm run wiki-less
+
+npm warn cli npm v11.19.1 does not support Node.js v16.6.1. This version of npm supports the following node versions: `^20.17.0 || >=22.9.0`. You can find the latest version at https://nodejs.org/.
+
+> evolveidle@1.4.10 evolve
+> node buildEvolve.js
+
+
+  evolve/main.js  2.2mb ⚠️
+
+⚡ Done in 544ms
+npm error A complete log of this run can be found in: <npm-log>
+EXIT 1
+# 2026-10-22T06:06:16Z retry on upstream Dockerfile toolchain: node v16.20.2 npm 8.19.4
+$ npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'esbuild@0.25.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 207 packages, and audited 208 packages in 8s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (1 low, 2 moderate, 11 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+EXIT 0
+$ npm run build
+
+> evolveidle@1.4.10 build
+> npm run evolve && npm run evolve-less && npm run wiki && npm run wiki-less
+
+
+> evolveidle@1.4.10 evolve
+> node buildEvolve.js
+
+
+  evolve/main.js  2.2mb ⚠️
+
+⚡ Done in 311ms
+
+> evolveidle@1.4.10 evolve-less
+> lessc src/evolve.less evolve/evolve-unminified.css && csso -i evolve/evolve-unminified.css -o evolve/evolve.css && rm evolve/evolve-unminified.css
+
+
+> evolveidle@1.4.10 wiki
+> node buildWiki.js
+
+
+  wiki/wiki.js  2.3mb ⚠️
+
+⚡ Done in 255ms
+
+> evolveidle@1.4.10 wiki-less
+> lessc src/wiki/wiki.less wiki/wiki-unminified.css && csso -i wiki/wiki-unminified.css -o wiki/wiki.css && rm wiki/wiki-unminified.css
+
+EXIT 0

@@ -1,0 +1,4 @@
+{
+"base": {"anybuild": "0.33.1", "commit": "420e73e597569ecf5d812017aeab3e696aef981d", "exit": 0, "provider": "node", "framework": null, "static_dir": null, "install": "pnpm install", "build": "pnpm run build", "start": "astro dev", "pm": "pnpm", "pnpm_version": "10", "node_version": null},
+"patched": {"anybuild": "0.33.1", "commit": "89948cf7bc3278dfe54dceefe852a13731c1da73", "exit": 0, "provider": "node-static", "framework": null, "static_dir": "dist", "install": "pnpm install", "build": "pnpm run build", "start": "static-web-server --root=<worktree>/.anybuild/local/build/opt/static_app --log-level=info --port=8080", "pm": "pnpm", "pnpm_version": "8.15.9", "node_version": null}
+}

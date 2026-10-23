@@ -1,0 +1,71 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 25118
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 25118
+      }
+    ],
+    "/ascii_paint.html": [
+      {
+        "path": "/ascii_paint.html",
+        "status": 200,
+        "location": null,
+        "bytes": 77587
+      }
+    ],
+    "/ascii_paint_minified.html": [
+      {
+        "path": "/ascii_paint_minified.html",
+        "status": 200,
+        "location": null,
+        "bytes": 68177
+      }
+    ],
+    "/examples/logo.txt": [
+      {
+        "path": "/examples/logo.txt",
+        "status": 200,
+        "location": null,
+        "bytes": 2319
+      }
+    ],
+    "/examples/example_map.png": [
+      {
+        "path": "/examples/example_map.png",
+        "status": 200,
+        "location": null,
+        "bytes": 175996
+      }
+    ],
+    "/screenshots/palette.png": [
+      {
+        "path": "/screenshots/palette.png",
+        "status": 200,
+        "location": null,
+        "bytes": 324854
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

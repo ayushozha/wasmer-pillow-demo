@@ -1,0 +1,17 @@
+# 2026-10-23T01:41:42Z flat replay of anybuild 0.33.1 planned steps for pmotschmann_Evolve @ 84fe73b9ee301167e9f6dd17e314d3f78afe3138 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at <replay>/src/Anybuild
+Plan saved to <replay>/plan.json
+EXIT 0
+# removed untracked Anybuild file written by `anybuild plan`
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None
+# plan: provider=staticfile install=None build=None static_dir='.'
+# node_install_requires_all_files=False
+$ (cd <replay>/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C <replay>/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/wiki.html": 200, "/save.html": 200, "/evolve/main.js": 200, "/evolve/evolve.css": 200, "/evolve/save-codec.js": 200, "/wiki/wiki.js": 200, "/strings/strings.json": 200, "/lib/fflate.min.js": 200}}

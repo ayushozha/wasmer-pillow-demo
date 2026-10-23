@@ -1,0 +1,26 @@
+{
+  "dir": "<replay>/opt/temp/dist",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 24,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 23670,
+      "title": "Fresh - Home"
+    },
+    "/api/search.json": {
+      "status": 200,
+      "bytes": 2490,
+      "title": null
+    },
+    "/img/illustrations/worker.png": {
+      "status": 200,
+      "bytes": 18912,
+      "title": null
+    }
+  },
+  "ok": true
+}

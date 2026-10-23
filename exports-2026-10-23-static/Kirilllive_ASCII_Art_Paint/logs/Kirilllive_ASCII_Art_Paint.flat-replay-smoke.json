@@ -1,0 +1,36 @@
+{
+  "dir": "<replay>/opt/temp/.",
+  "base": "/",
+  "html_files": 3,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 19044,
+      "title": "ASCII Art Paint"
+    },
+    "/ascii_paint.html": {
+      "status": 200,
+      "bytes": 76839,
+      "title": "ASCII Art Paint"
+    },
+    "/ascii_paint_minified.html": {
+      "status": 200,
+      "bytes": 67429,
+      "title": "ASCII Art Paint"
+    },
+    "/examples/logo.txt": {
+      "status": 200,
+      "bytes": 2319,
+      "title": null
+    },
+    "/screenshots/palette.png": {
+      "status": 200,
+      "bytes": 304957,
+      "title": null
+    }
+  },
+  "ok": true
+}

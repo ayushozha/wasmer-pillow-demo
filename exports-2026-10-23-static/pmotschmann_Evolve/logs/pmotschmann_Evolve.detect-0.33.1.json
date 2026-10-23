@@ -1,0 +1,4 @@
+{
+"base": {"anybuild": "0.33.1", "commit": "88aecff2c5ff7b1136e3c3e1db5c786ca79b250c", "exit": 0, "provider": "node", "framework": null, "static_dir": null, "install": "npm install", "build": "npm run build", "start": "node src/index.js", "pm": "npm", "pnpm_version": null, "node_version": null},
+"patched": {"anybuild": "0.33.1", "commit": "84fe73b9ee301167e9f6dd17e314d3f78afe3138", "exit": 0, "provider": "staticfile", "framework": null, "static_dir": ".", "install": null, "build": null, "start": "static-web-server --root=<worktree>/.anybuild/local/build/opt/static_app --log-level=info --port=8080", "pm": null, "pnpm_version": null, "node_version": null}
+}

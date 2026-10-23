@@ -1,0 +1,151 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 3100
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 3100
+      }
+    ],
+    "/wiki.html": [
+      {
+        "path": "/wiki.html",
+        "status": 200,
+        "location": null,
+        "bytes": 2438
+      }
+    ],
+    "/save.html": [
+      {
+        "path": "/save.html",
+        "status": 200,
+        "location": null,
+        "bytes": 1484
+      }
+    ],
+    "/evolve/main.js": [
+      {
+        "path": "/evolve/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 3287172
+      }
+    ],
+    "/evolve/evolve.css": [
+      {
+        "path": "/evolve/evolve.css",
+        "status": 200,
+        "location": null,
+        "bytes": 260018
+      }
+    ],
+    "/evolve/save-codec.js": [
+      {
+        "path": "/evolve/save-codec.js",
+        "status": 200,
+        "location": null,
+        "bytes": 7635
+      }
+    ],
+    "/wiki/wiki.js": [
+      {
+        "path": "/wiki/wiki.js",
+        "status": 200,
+        "location": null,
+        "bytes": 3374391
+      }
+    ],
+    "/wiki/wiki.css": [
+      {
+        "path": "/wiki/wiki.css",
+        "status": 200,
+        "location": null,
+        "bytes": 6026
+      }
+    ],
+    "/strings/strings.json": [
+      {
+        "path": "/strings/strings.json",
+        "status": 200,
+        "location": null,
+        "bytes": 1116331
+      }
+    ],
+    "/strings/strings.ja-JP.json": [
+      {
+        "path": "/strings/strings.ja-JP.json",
+        "status": 200,
+        "location": null,
+        "bytes": 1000627
+      }
+    ],
+    "/strings/strings.zh-CN.json": [
+      {
+        "path": "/strings/strings.zh-CN.json",
+        "status": 200,
+        "location": null,
+        "bytes": 850904
+      }
+    ],
+    "/lib/lz-string.min.js": [
+      {
+        "path": "/lib/lz-string.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4718
+      }
+    ],
+    "/lib/fflate.min.js": [
+      {
+        "path": "/lib/fflate.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 32665
+      }
+    ],
+    "/lib/buefy.min.0.9.22.css": [
+      {
+        "path": "/lib/buefy.min.0.9.22.css",
+        "status": 200,
+        "location": null,
+        "bytes": 360857
+      }
+    ],
+    "/font/weathericons-regular-webfont.eot": [
+      {
+        "path": "/font/weathericons-regular-webfont.eot",
+        "status": 200,
+        "location": null,
+        "bytes": 99774
+      }
+    ],
+    "/evolved.ico": [
+      {
+        "path": "/evolved.ico",
+        "status": 200,
+        "location": null,
+        "bytes": 107706
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
