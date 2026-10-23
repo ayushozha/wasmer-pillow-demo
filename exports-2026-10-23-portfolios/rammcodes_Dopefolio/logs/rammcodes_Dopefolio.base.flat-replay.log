@@ -1,0 +1,80 @@
+# 2026-10-23T02:44:32Z flat replay of anybuild 0.33.1 planned steps for rammcodes_Dopefolio_wtbase @ 4734cb2c742ee9d849fdc5c1f05e1cbe13359a73 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <replay>/src/Anybuild
+Plan saved to <replay>/plan.json
+EXIT 0
+# removed untracked Anybuild file written by `anybuild plan`
+# env per node.bzl for npm: CI=true, NPM_CONFIG_FUND=false
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None yarn_version=None -> yarn on PATH 1.22.22 (<tool>
+# plan: provider=node install='npm install' build='npm run build' static_dir='.'
+# node_install_requires_all_files=False
+$ (cd <replay>/opt/temp && npm install)
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm error code 1
+npm error path <replay>/opt/temp/node_modules/node-sass
+npm error command failed
+npm error command sh -c node scripts/build.js
+npm error Building: <tool> <replay>/opt/temp/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+npm error gyp info it worked if it ends with ok
+npm error gyp verb cli [
+npm error gyp verb cli   '<tool>
+npm error gyp verb cli   '<replay>/opt/temp/node_modules/node-gyp/bin/node-gyp.js',
+npm error gyp verb cli   'rebuild',
+npm error gyp verb cli   '--verbose',
+npm error gyp verb cli   '--libsass_ext=',
+npm error gyp verb cli   '--libsass_cflags=',
+npm error gyp verb cli   '--libsass_ldflags=',
+npm error gyp verb cli   '--libsass_library='
+npm error gyp verb cli ]
+npm error gyp info using node-gyp@7.1.2
+npm error gyp info using node@24.22.1 | linux | x64
+npm error gyp verb command rebuild []
+npm error gyp verb command clean []
+npm error gyp verb clean removing "build" directory
+npm error gyp verb command configure []
+npm error gyp verb find Python Python is not set from command line or npm configuration
+npm error gyp verb find Python Python is not set from environment variable PYTHON
+npm error gyp verb find Python checking if "python3" can be used
+npm error gyp verb find Python - executing "python3" to get executable path
+npm error (node:4316) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+npm error (Use `node --trace-deprecation ...` to show where the warning was created)
+npm error gyp verb find Python - executable path is "/usr/bin/python3"
+npm error gyp verb find Python - executing "/usr/bin/python3" to get version
+npm error gyp verb find Python - version is "3.13.16"
+npm error gyp info find Python using Python version 3.13.16 found at "/usr/bin/python3"
+npm error gyp verb get node dir no --target version specified, falling back to host node version: 24.22.1
+npm error gyp verb command install [ '24.22.1' ]
+npm error gyp verb install input version string "24.22.1"
+npm error gyp verb install installing version: 24.22.1
+npm error gyp verb install --ensure was passed, so won't reinstall if already installed
+npm error gyp verb install version is already installed, need to check "installVersion"
+npm error gyp verb got "installVersion" 11
+npm error gyp verb needs "installVersion" 9
+npm error gyp verb install version is good
+npm error gyp verb get node dir target node version installed: 24.22.1
+npm error gyp verb build dir attempting to create "build" dir: <replay>/opt/temp/node_modules/node-sass/build
+npm error gyp verb build dir "build" dir needed to be created? <replay>/opt/temp/node_modules/node-sass/build
+npm error gyp verb build/config.gypi creating config file
+npm error gyp ERR! Completion callback never invoked! 
+npm error gyp ERR! System Linux 6.18.44-fc-v140
+npm error gyp ERR! command "<tool>" "<replay>/opt/temp/node_modules/node-gyp/bin/node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+npm error gyp ERR! cwd <replay>/opt/temp/node_modules/node-sass
+npm error gyp ERR! node -v v24.22.1
+npm error gyp ERR! node-gyp -v v7.1.2
+npm error gyp ERR! Node-gyp failed to build your package.
+npm error gyp ERR! Try to update npm and/or node-gyp and if it does not help file an issue with the package author.
+npm error Build failed with error code: 6
+npm error A complete log of this run can be found in: <npm-log>
+EXIT 1
+# result {"install": "npm install", "build": "npm run build", "static_dir": ".", "exit": 1}
+# 2026-10-23T02:44:43Z BASE planned start command check (node v24.22.1) at 4734cb2c742ee9d849fdc5c1f05e1cbe13359a73
+$ node index.js
+ReferenceError: document is not defined
+EXIT 1

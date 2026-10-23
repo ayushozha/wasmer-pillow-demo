@@ -1,0 +1,66 @@
+{
+  "dir": "<replay>/opt/temp/.",
+  "base": "/",
+  "html_files": 4,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 15163,
+      "title": "Dopefolio"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 15163,
+      "title": "Dopefolio"
+    },
+    "/project-1.html": {
+      "status": 200,
+      "bytes": 8793,
+      "title": "Case Study of Project 1"
+    },
+    "/project-2.html": {
+      "status": 200,
+      "bytes": 8793,
+      "title": "Case Study of Project 2"
+    },
+    "/project-3.html": {
+      "status": 200,
+      "bytes": 8793,
+      "title": "Case Study of Project 3"
+    },
+    "/css/style.css": {
+      "status": 200,
+      "bytes": 17803,
+      "title": null
+    },
+    "/index.js": {
+      "status": 200,
+      "bytes": 1347,
+      "title": null
+    },
+    "/assets/svg/common-bg.svg": {
+      "status": 200,
+      "bytes": 4171,
+      "title": null
+    },
+    "/assets/svg/ham-menu.svg": {
+      "status": 200,
+      "bytes": 338,
+      "title": null
+    },
+    "/assets/png/john-doe.png": {
+      "status": 200,
+      "bytes": 45239,
+      "title": null
+    },
+    "/assets/jpeg/project-mockup-example.jpeg": {
+      "status": 200,
+      "bytes": 29873,
+      "title": null
+    }
+  },
+  "ok": true
+}

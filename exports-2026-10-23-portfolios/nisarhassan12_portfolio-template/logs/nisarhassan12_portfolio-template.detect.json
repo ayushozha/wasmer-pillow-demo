@@ -1,0 +1,33 @@
+{
+ "anybuild_version": "0.33.1",
+ "repo": "nisarhassan12/portfolio-template",
+ "base": {
+  "sha": "f3ed88590be4f2b68ef952430d42cb3b0476b745",
+  "plan": {
+   "provider": "staticfile",
+   "config": {
+    "name": "nisarhassan12_portfolio-template_wtbase",
+    "commands": {
+     "start": "static-web-server --root=<tmp> --log-level=info --port=8080"
+    }
+   },
+   "services": []
+  },
+  "stdout": "  Detected static site provider\n    SWS version: 2.38.0\n\n  Generated Anybuild at <tmp> saved to <tmp>"
+ },
+ "patched": {
+  "sha": "307c563668bf22cf29ef5b40616068cfffca885b",
+  "plan": {
+   "provider": "staticfile",
+   "config": {
+    "name": "nisarhassan12_portfolio-template_wtpatch",
+    "commands": {
+     "start": "static-web-server --root=<tmp> --log-level=info --port=8080"
+    }
+   },
+   "services": []
+  },
+  "stdout": "  Detected static site provider\n    SWS version: 2.38.0\n\n  Generated Anybuild at <tmp> saved to <tmp>"
+ },
+ "note": "Plans run on clean detached worktrees; 'name' is the worktree dir name (Anybuild default). The Anybuild file plan writes was deleted from both worktrees. This replaces the earlier anybuild 0.33.0 detect log."
+}

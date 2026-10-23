@@ -1,0 +1,45 @@
+From 6de9a199f91f58102d744d1ff9d427f7044175a5 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Fri, 23 Oct 2026 02:42:50 +0000
+Subject: [PATCH] docs: add Wasmer Edge deploy option
+
+---
+ README.md  | 13 +++++++++++++
+ Staticfile |  1 +
+ 2 files changed, 14 insertions(+)
+ create mode 100644 Staticfile
+
+diff --git a/README.md b/README.md
+index 9e774b5..0cc5f25 100644
+--- a/README.md
++++ b/README.md
+@@ -746,6 +746,19 @@ Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
+ 
+ <br>
+ 
++### Deploy to Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=rammcodes%2FDopefolio)
++
++You can also host your portfolio on [Wasmer Edge](https://docs.wasmer.io/edge/):
++
++1. Fork Dopefolio (or push your clone) to your own GitHub account and make your changes there. The button above imports this original repository; it does not create a copy in your account. To deploy your own portfolio, import your own repository on the Wasmer import page.
++2. Commit the compiled `css/style.css` whenever you change the SASS files (`npm run compile:scss`). The `Staticfile` in the repository root (`root: .`) tells Wasmer to serve the committed files as they are, without running `npm install` or a build (Wasmer's builder reads this file; it does not change how you work on the site locally). If the import page shows a different preset, select the static site (staticfile) preset.
++
++**Note:** the contact form's `action="#"` is not configured, so form submissions go nowhere until you set it up (for example with **formspree.io**, as described in the Contact Section above). The Google Fonts stylesheet loads from fonts.googleapis.com.
++
++<br>
++
+ ---
+ 
+ <br>
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..fdbb02c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: .
+-- 
+2.43.0
+

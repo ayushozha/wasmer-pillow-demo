@@ -1,0 +1,66 @@
+{
+ "chromium": "141.0.7390.37",
+ "server": "static-web-server 2.32.2 (native)",
+ "root": "<replay>/opt/temp",
+ "at": "2026-10-23T02:46:57.998Z",
+ "pages": {
+  "/": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [
+    "https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "local_ok": 21,
+   "status": 200,
+   "title": "Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:35121/index.css",
+      "rules": 84
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 18,
+    "body_font": "\"Hk Grotesk\", sans-serif",
+    "body_text_len": 1182,
+    "h1": "Syed Ali Hussnain",
+    "fonts_loaded": [
+     "Hk Grotesk",
+     "Jost"
+    ]
+   }
+  },
+  "/index.html": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [
+    "https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "local_ok": 21,
+   "status": 200,
+   "title": "Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:35121/index.css",
+      "rules": 84
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 18,
+    "body_font": "\"Hk Grotesk\", sans-serif",
+    "body_text_len": 1182,
+    "h1": "Syed Ali Hussnain",
+    "fonts_loaded": [
+     "Hk Grotesk",
+     "Jost"
+    ]
+   }
+  }
+ }
+}

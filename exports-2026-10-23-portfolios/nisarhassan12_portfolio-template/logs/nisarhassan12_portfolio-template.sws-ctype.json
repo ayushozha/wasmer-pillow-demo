@@ -1,0 +1,130 @@
+{
+ "root": "<replay>/opt/temp/.",
+ "at": "2026-10-23T02:46:56Z",
+ "results": {
+  "2.32.2": {
+   "/": {
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 9814
+   },
+   "/index.html": {
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 9814
+   },
+   "/index.css": {
+    "status": 200,
+    "content_type": "text/css",
+    "bytes": 10914
+   },
+   "/index.js": {
+    "status": 200,
+    "content_type": "text/javascript",
+    "bytes": 1247
+   },
+   "/fonts/HKGrotesk-Regular.woff": {
+    "status": 200,
+    "content_type": "application/font-woff",
+    "bytes": 36932
+   },
+   "/fonts/Jost-Regular.ttf": {
+    "status": 200,
+    "content_type": "font/ttf",
+    "bytes": 69624
+   },
+   "/images/header.jpg": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 51609
+   },
+   "/images/project-1.png": {
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 191518
+   },
+   "/images/favicon.png": {
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 4943
+   },
+   "/images/github.svg": {
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "bytes": 1027
+   },
+   "/images/portfolio.gif": {
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 5977385
+   },
+   "/__wasmer_campaign_missing__.html": {
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 106
+   }
+  },
+  "2.38.0": {
+   "/": {
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 9814
+   },
+   "/index.html": {
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 9814
+   },
+   "/index.css": {
+    "status": 200,
+    "content_type": "text/css",
+    "bytes": 10914
+   },
+   "/index.js": {
+    "status": 200,
+    "content_type": "text/javascript",
+    "bytes": 1247
+   },
+   "/fonts/HKGrotesk-Regular.woff": {
+    "status": 200,
+    "content_type": "application/font-woff",
+    "bytes": 36932
+   },
+   "/fonts/Jost-Regular.ttf": {
+    "status": 200,
+    "content_type": "font/ttf",
+    "bytes": 69624
+   },
+   "/images/header.jpg": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 51609
+   },
+   "/images/project-1.png": {
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 191518
+   },
+   "/images/favicon.png": {
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 4943
+   },
+   "/images/github.svg": {
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "bytes": 1027
+   },
+   "/images/portfolio.gif": {
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 5977385
+   },
+   "/__wasmer_campaign_missing__.html": {
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 106
+   }
+  }
+ }
+}

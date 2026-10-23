@@ -1,0 +1,17 @@
+# 2026-10-23T02:45:12Z flat replay of anybuild 0.33.1 planned steps for rammcodes_Dopefolio @ 6de9a199f91f58102d744d1ff9d427f7044175a5 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at <replay>/src/Anybuild
+Plan saved to <replay>/plan.json
+EXIT 0
+# removed untracked Anybuild file written by `anybuild plan`
+# env per node.bzl for None: 
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=None bun_version=None yarn_version=None -> yarn on PATH 1.22.22 (<tool>
+# plan: provider=staticfile install=None build=None static_dir='.'
+# node_install_requires_all_files=False
+$ (cd <replay>/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C <replay>/opt/temp)
+EXIT 0
+# result {"install": null, "build": null, "static_dir": ".", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/index.html": 200, "/project-1.html": 200, "/project-2.html": 200, "/project-3.html": 200, "/css/style.css": 200, "/index.js": 200, "/assets/svg/common-bg.svg": 200, "/assets/svg/ham-menu.svg": 200, "/assets/png/john-doe.png": 200, "/assets/jpeg/project-mockup-example.jpeg": 200}}

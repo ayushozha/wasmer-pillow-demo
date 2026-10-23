@@ -1,0 +1,44 @@
+{
+ "anybuild_version": "0.33.1",
+ "repo": "rammcodes/Dopefolio",
+ "base": {
+  "sha": "4734cb2c742ee9d849fdc5c1f05e1cbe13359a73",
+  "plan": {
+   "provider": "node",
+   "config": {
+    "name": "rammcodes_Dopefolio_wtbase",
+    "commands": {
+     "install": "npm install",
+     "build": "npm run build",
+     "start": "node index.js"
+    },
+    "node_package_manager": "npm",
+    "node_server": "node",
+    "node_build_command": "npm run build",
+    "npm_version": "11",
+    "node_install_inputs": [
+     "package.json"
+    ],
+    "node_package_name": "dopefolio"
+   },
+   "services": []
+  },
+  "stdout": "  Detected Node.js provider\n    Server: Node.js\n    Package manager: npm\n    Node version: 24\n\n  Generated Anybuild at <tmp> saved to <tmp>"
+ },
+ "patched": {
+  "sha": "6de9a199f91f58102d744d1ff9d427f7044175a5",
+  "plan": {
+   "provider": "staticfile",
+   "config": {
+    "name": "rammcodes_Dopefolio_wtpatch",
+    "commands": {
+     "start": "static-web-server --root=<tmp> --log-level=info --port=8080"
+    },
+    "static_dir": "."
+   },
+   "services": []
+  },
+  "stdout": "  Detected static site provider\n    Output directory: .\n    SWS version: 2.38.0\n\n  Generated Anybuild at <tmp> saved to <tmp>"
+ },
+ "note": "Plans run on clean detached worktrees; the 'name' field is the worktree dir name (Anybuild default), not an app name we set. The Anybuild file plan writes was deleted from both worktrees."
+}

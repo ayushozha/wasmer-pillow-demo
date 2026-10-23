@@ -1,0 +1,8 @@
+# 2026-10-23T02:42:30Z rammcodes/Dopefolio @ 4734cb2c742ee9d849fdc5c1f05e1cbe13359a73: is committed css/style.css complete without the sass build?
+node v16.20.2, node-sass node-sass	6.0.1	(Wrapper)	[JavaScript]
+$ node-sass sass/main.scss fromsass.css --output-style compressed  -> 13039 bytes
+$ node-sass css/style.css (committed, 17803 bytes) committed.css --output-style compressed  -> 13040 bytes
+byte diff: one token only: fromsass "background:#fff" vs committed "background:white" (same colour)
+rule selectors: 121 vs 121; only-in-sass: []; only-in-committed: []
+RESULT: committed CSS is equivalent to a fresh compile of sass/main.scss; no npm install is needed to serve the committed pages.
+Note: upstream "npm run build" (postcss autoprefixer + node-sass compress) only adds vendor prefixes and minifies css/style.css in place; it does not compile SASS.

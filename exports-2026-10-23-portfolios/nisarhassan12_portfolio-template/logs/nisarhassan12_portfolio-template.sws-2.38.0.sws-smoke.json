@@ -1,0 +1,103 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with Anybuild planned flags (0.33.x) + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 9814
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 9814
+      }
+    ],
+    "/index.css": [
+      {
+        "path": "/index.css",
+        "status": 200,
+        "location": null,
+        "bytes": 10914
+      }
+    ],
+    "/index.js": [
+      {
+        "path": "/index.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1247
+      }
+    ],
+    "/fonts/HKGrotesk-Regular.woff": [
+      {
+        "path": "/fonts/HKGrotesk-Regular.woff",
+        "status": 200,
+        "location": null,
+        "bytes": 36932
+      }
+    ],
+    "/fonts/Jost-Regular.ttf": [
+      {
+        "path": "/fonts/Jost-Regular.ttf",
+        "status": 200,
+        "location": null,
+        "bytes": 69624
+      }
+    ],
+    "/images/header.jpg": [
+      {
+        "path": "/images/header.jpg",
+        "status": 200,
+        "location": null,
+        "bytes": 51609
+      }
+    ],
+    "/images/project-1.png": [
+      {
+        "path": "/images/project-1.png",
+        "status": 200,
+        "location": null,
+        "bytes": 191518
+      }
+    ],
+    "/images/favicon.png": [
+      {
+        "path": "/images/favicon.png",
+        "status": 200,
+        "location": null,
+        "bytes": 4943
+      }
+    ],
+    "/images/github.svg": [
+      {
+        "path": "/images/github.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 1027
+      }
+    ],
+    "/images/portfolio.gif": [
+      {
+        "path": "/images/portfolio.gif",
+        "status": 200,
+        "location": null,
+        "bytes": 5977385
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

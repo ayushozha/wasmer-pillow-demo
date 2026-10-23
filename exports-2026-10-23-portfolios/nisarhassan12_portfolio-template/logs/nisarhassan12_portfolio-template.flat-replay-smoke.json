@@ -1,0 +1,66 @@
+{
+  "dir": "<replay>/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 9802,
+      "title": "Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan."
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 9802,
+      "title": "Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan."
+    },
+    "/index.css": {
+      "status": 200,
+      "bytes": 10914,
+      "title": null
+    },
+    "/index.js": {
+      "status": 200,
+      "bytes": 1247,
+      "title": null
+    },
+    "/fonts/HKGrotesk-Regular.woff": {
+      "status": 200,
+      "bytes": 35020,
+      "title": null
+    },
+    "/fonts/Jost-Regular.ttf": {
+      "status": 200,
+      "bytes": 69535,
+      "title": null
+    },
+    "/images/header.jpg": {
+      "status": 200,
+      "bytes": 49072,
+      "title": null
+    },
+    "/images/project-1.png": {
+      "status": 200,
+      "bytes": 182035,
+      "title": null
+    },
+    "/images/favicon.png": {
+      "status": 200,
+      "bytes": 4769,
+      "title": null
+    },
+    "/images/github.svg": {
+      "status": 200,
+      "bytes": 1027,
+      "title": "ionicons-v5_logos"
+    },
+    "/images/portfolio.gif": {
+      "status": 200,
+      "bytes": 5671873,
+      "title": null
+    }
+  },
+  "ok": true
+}

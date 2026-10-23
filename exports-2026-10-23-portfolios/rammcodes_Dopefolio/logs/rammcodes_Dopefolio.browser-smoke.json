@@ -1,0 +1,136 @@
+{
+ "chromium": "141.0.7390.37",
+ "server": "static-web-server 2.32.2 (native)",
+ "root": "<replay>/opt/temp",
+ "at": "2026-10-23T02:45:15.454Z",
+ "pages": {
+  "/": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [],
+   "local_ok": 13,
+   "status": 200,
+   "title": "Dopefolio",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:34451/css/style.css",
+      "rules": 152
+     },
+     {
+      "href": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap",
+      "rules": "cross-origin"
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 16,
+    "body_font": "\"Source Sans Pro\", sans-serif",
+    "body_text_len": 1803,
+    "h1": "HEY, MY NAME IS JOHN DOE",
+    "fonts_loaded": [
+     "Source Sans Pro",
+     "Source Sans Pro",
+     "Source Sans Pro"
+    ]
+   }
+  },
+  "/project-1.html": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [],
+   "local_ok": 13,
+   "status": 200,
+   "title": "Case Study of Project 1",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:34451/css/style.css",
+      "rules": 152
+     },
+     {
+      "href": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap",
+      "rules": "cross-origin"
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 9,
+    "body_font": "\"Source Sans Pro\", sans-serif",
+    "body_text_len": 1202,
+    "h1": "PROJECT 1",
+    "fonts_loaded": [
+     "Source Sans Pro",
+     "Source Sans Pro",
+     "Source Sans Pro"
+    ]
+   }
+  },
+  "/project-2.html": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [],
+   "local_ok": 13,
+   "status": 200,
+   "title": "Case Study of Project 2",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:34451/css/style.css",
+      "rules": 152
+     },
+     {
+      "href": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap",
+      "rules": "cross-origin"
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 9,
+    "body_font": "\"Source Sans Pro\", sans-serif",
+    "body_text_len": 1202,
+    "h1": "PROJECT 2",
+    "fonts_loaded": [
+     "Source Sans Pro",
+     "Source Sans Pro",
+     "Source Sans Pro"
+    ]
+   }
+  },
+  "/project-3.html": {
+   "console_errors": [],
+   "page_errors": [],
+   "local_failed": [],
+   "local_non200": [],
+   "external_failed": [],
+   "local_ok": 13,
+   "status": 200,
+   "title": "Case Study of Project 3",
+   "checks": {
+    "stylesheets": [
+     {
+      "href": "http://127.0.0.1:34451/css/style.css",
+      "rules": 152
+     },
+     {
+      "href": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap",
+      "rules": "cross-origin"
+     }
+    ],
+    "broken_imgs": [],
+    "imgs": 9,
+    "body_font": "\"Source Sans Pro\", sans-serif",
+    "body_text_len": 1202,
+    "h1": "PROJECT 3",
+    "fonts_loaded": [
+     "Source Sans Pro",
+     "Source Sans Pro",
+     "Source Sans Pro"
+    ]
+   }
+  }
+ }
+}

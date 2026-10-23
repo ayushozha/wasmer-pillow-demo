@@ -1,0 +1,103 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with Anybuild planned flags (0.33.x) + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 15163
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 15163
+      }
+    ],
+    "/project-1.html": [
+      {
+        "path": "/project-1.html",
+        "status": 200,
+        "location": null,
+        "bytes": 8793
+      }
+    ],
+    "/project-2.html": [
+      {
+        "path": "/project-2.html",
+        "status": 200,
+        "location": null,
+        "bytes": 8793
+      }
+    ],
+    "/project-3.html": [
+      {
+        "path": "/project-3.html",
+        "status": 200,
+        "location": null,
+        "bytes": 8793
+      }
+    ],
+    "/css/style.css": [
+      {
+        "path": "/css/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 17803
+      }
+    ],
+    "/index.js": [
+      {
+        "path": "/index.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1347
+      }
+    ],
+    "/assets/svg/common-bg.svg": [
+      {
+        "path": "/assets/svg/common-bg.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 4173
+      }
+    ],
+    "/assets/svg/ham-menu.svg": [
+      {
+        "path": "/assets/svg/ham-menu.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 338
+      }
+    ],
+    "/assets/png/john-doe.png": [
+      {
+        "path": "/assets/png/john-doe.png",
+        "status": 200,
+        "location": null,
+        "bytes": 47464
+      }
+    ],
+    "/assets/jpeg/project-mockup-example.jpeg": [
+      {
+        "path": "/assets/jpeg/project-mockup-example.jpeg",
+        "status": 200,
+        "location": null,
+        "bytes": 31085
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
