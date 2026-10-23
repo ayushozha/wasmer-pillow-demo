@@ -1,0 +1,7 @@
+# analytics / third-party origins: source at HEAD and the built index.html
+$ git show HEAD:index.html | grep -nE 'gtag|googletagmanager|cloudflareinsights|beacon|fonts\.g'
+21:        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f684c9449da14b2396a0a944c9acb39f"}'></script>
+$ grep -noE 'https://[a-z0-9.-]+' <built index.html> | sort -u
+      1 https://static.cloudflareinsights.com
+$ grep -noE "G-1BBJSPSKQ9|data-cf-beacon='[^']*'" <built index.html>
+23:data-cf-beacon='{"token": "f684c9449da14b2396a0a944c9acb39f"}'

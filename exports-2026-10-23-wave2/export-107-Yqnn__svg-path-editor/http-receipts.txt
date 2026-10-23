@@ -1,0 +1,48 @@
+$ http.sh $S/replay/val2-svgpath/static_app 3931 / /index.html '/#P=M_0_0_L_10_10' /nope /svg-path-editor/   (curl drops the #fragment; it never reaches the server)
+# 2026-10-23T02:20:44Z Version:      2.38.0 on 127.0.0.1:3931
+## routes / probes
+/                                                200 text/html 40747
+/index.html                                      200 text/html 40747
+/#P=M_0_0_L_10_10                                200 text/html 40747
+/nope                                            404 text/html; charset=utf-8 106
+/svg-path-editor/                                404 text/html; charset=utf-8 106
+## assets referenced by built index.html (src/href, same-origin)
+/.                                               200 text/html 40747
+/assets/icons/icon-152x152-cropped.png           200 image/png 21635
+/favicon.ico                                     200 image/x-icon 16958
+/main.c2644f28e3f13a72.js                        200 text/javascript 854840
+/manifest.webmanifest                            200 application/manifest+json 1350
+/polyfills.8b39c005062fd761.js                   200 text/javascript 34816
+/runtime.6f6474d711a7c88e.js                     200 text/javascript 908
+/styles.76a03d602b7f3c86.css                     200 text/css 46164
+## every file in the build output
+/3rdpartylicenses.txt                            200 text/plain 14562
+/assets/delete.svg                               200 image/svg+xml 166
+/assets/github.svg                               200 image/svg+xml 646
+/assets/icons/icon-128x128.png                   200 image/png 15747
+/assets/icons/icon-144x144.png                   200 image/png 18578
+/assets/icons/icon-152x152-cropped.png           200 image/png 21635
+/assets/icons/icon-152x152.png                   200 image/png 19601
+/assets/icons/icon-192x192.png                   200 image/png 24535
+/assets/icons/icon-384x384.png                   200 image/png 47170
+/assets/icons/icon-512x512.png                   200 image/png 44297
+/assets/icons/icon-72x72.png                     200 image/png 7038
+/assets/icons/icon-96x96.png                     200 image/png 10831
+/assets/logo.svg                                 200 image/svg+xml 343
+/assets/more.svg                                 200 image/svg+xml 131
+/assets/sponsor.svg                              200 image/svg+xml 294
+/assets/zoom_fit.svg                             200 image/svg+xml 230
+/assets/zoom_in.svg                              200 image/svg+xml 239
+/assets/zoom_out.svg                             200 image/svg+xml 204
+/favicon.ico                                     200 image/x-icon 16958
+/index.html                                      200 text/html 40747
+/main.c2644f28e3f13a72.js                        200 text/javascript 854840
+/manifest.webmanifest                            200 application/manifest+json 1350
+/ngsw-worker.js                                  200 text/javascript 67992
+/ngsw.json                                       200 application/json 3636
+/polyfills.8b39c005062fd761.js                   200 text/javascript 34816
+/runtime.6f6474d711a7c88e.js                     200 text/javascript 908
+/safety-worker.js                                200 text/javascript 784
+/styles.76a03d602b7f3c86.css                     200 text/css 46164
+/worker-basic.min.js                             200 text/javascript 784
+## build files: 29, 200: 29

@@ -1,0 +1,9 @@
+$ git -C <clean worktree at a6d920601ca44ab2d4e9cd02306510ab6d5e4b38> apply --check upstream.patch
+exit=0
+$ git add -N . && git diff --check HEAD   (patched clone)
+exit=0
+$ sha256sum upstream.patch
+5a4923f6aa8ac0c3b254d1734adec0603dee4f3b96a61ce109f17e361dac7133  upstream.patch
+$ grep -cE '^\+.*[[:space:]]$' upstream.patch   (added lines with trailing whitespace)
+0
+# (lines ending in a space are only the diff's blank-context markers)

@@ -1,0 +1,29 @@
+$ http.sh $S/replay/val2-regexvis/static_app 3932 / '/?r=%2F%5Ba-z%5D%2B%2F' /index.html /samples /samples/ '/samples?x=1' /playground /nope
+# 2026-10-23T02:19:35Z Version:      2.38.0 on 127.0.0.1:3932
+## routes / probes
+/                                                200 text/html 1024
+/?r=%2F%5Ba-z%5D%2B%2F                           200 text/html 1024
+/index.html                                      200 text/html 1024
+/samples                                         404 text/html; charset=utf-8 106
+/samples/                                        404 text/html; charset=utf-8 106
+/samples?x=1                                     404 text/html; charset=utf-8 106
+/playground                                      404 text/html; charset=utf-8 106
+/nope                                            404 text/html; charset=utf-8 106
+## assets referenced by built index.html (src/href, same-origin)
+/assets/index-BChK14_K.css                       200 text/css 30782
+/assets/index-DYMSwI23.js                        200 text/javascript 739691
+/favicon.png                                     200 image/png 2832
+## every file in the build output
+/assets/index-BChK14_K.css                       200 text/css 30782
+/assets/index-DYMSwI23.js                        200 text/javascript 739691
+/favicon.png                                     200 image/png 2832
+/index.html                                      200 text/html 1024
+/locales/cn/translation.json                     200 application/json 4725
+/locales/fr/translation.json                     200 application/json 5297
+/locales/jp/translation.json                     200 application/json 5801
+/locales/ru/translation.json                     200 application/json 7449
+/locales/tr/translation.json                     200 application/json 5831
+/logo.svg                                        200 image/svg+xml 820
+/manifest.json                                   200 application/json 163
+/robots.txt                                      200 text/plain 67
+## build files: 12, 200: 12

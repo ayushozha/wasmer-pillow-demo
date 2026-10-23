@@ -1,0 +1,18 @@
+200	page	/	text/html	40747
+--	title	/	SvgPathEditor	
+200	page	/index.html	text/html	40747
+--	title	/index.html	SvgPathEditor	
+200	page	/ngsw.json	application/json	3636
+200	page	/ngsw-worker.js	text/javascript	67992
+200	page	/manifest.webmanifest	application/manifest+json	1350
+200	page	/3rdpartylicenses.txt	text/plain	14562
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.ico	image/x-icon	16958
+200	ref	/assets/icons/icon-152x152-cropped.png	image/png	21635
+200	ref	/styles.76a03d602b7f3c86.css	text/css	46164
+200	ref	/runtime.6f6474d711a7c88e.js	text/javascript	908
+200	ref	/polyfills.8b39c005062fd761.js	text/javascript	34816
+200	ref	/main.c2644f28e3f13a72.js	text/javascript	854840
+SUMMARY pages=7 refs_checked=6 failures=1
+FAIL	404	page	/nope	text/html	0

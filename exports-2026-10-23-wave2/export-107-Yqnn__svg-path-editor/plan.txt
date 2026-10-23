@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Angular
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist/svg-path-editor
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val2-svgpath/plan.json

@@ -1,0 +1,23 @@
+# policy files at HEAD 937d75a83b6be2bdda11d02b9b3594841315223a (Yqnn/svg-path-editor), checked 2026-10-23T02:19:48Z
+$ git ls-tree -r --name-only HEAD | grep -iE "contributing|agents|claude|cursorrules|copilot|pull_request_template|cla|^\.github/|^\.cursor/"
+.github/FUNDING.yml
+(end)
+
+$ git log --since=2025-10-01 --format="%cs %an | %s" (default branch)
+2026-06-18 Yann Armelin | Bump lib version
+2026-06-18 Yann Armelin | Merge pull request #182 from Yqnn/fixes
+2026-06-18 Yann Armelin | Update sponsors
+2026-06-18 Yann Armelin | Fix orphan element still being selected after an operation
+2026-06-18 Yann Armelin | Submit operations on enter
+2026-06-18 Yann Armelin | Fix rotation of V and H following a relative item
+2026-06-04 Yann Armelin | Updated sponsors
+2026-06-04 Yann Armelin | Merge pull request #179 from Yqnn/improve-dyna-grid
+2026-06-04 Yann Armelin | Improve dynamic grid
+2026-04-18 Yann Armelin | Merge pull request #175 from Yqnn/GregOriol
+2026-04-18 Yann Armelin | Finalize automated grid
+2026-04-18 Yann Armelin | Merge pull request #172 from GregOriol/master
+2026-04-18 Yann Armelin | Merge pull request #174 from Yqnn/fix-173
+2026-04-18 Yann Armelin | Fix issue #173
+2026-03-04 Greg ORIOL | Automated grid
+2025-11-02 Jae Lee | Add type safety with union types for SVG commands (#166)
+(end)

@@ -10,6 +10,8 @@ These targets were prepared earlier. Each one has now had a fresh exact-source c
 | `export-09-markhorn-dev__astro-sphere/` | `f7e3a40f20e1267d7fbbb7b6dd868df1845e1d82` | READY. Badge sits next to the existing Vercel/Netlify buttons. `site` points at the Vercel demo (disclosed). | `287158c467fd5bd54966bda38b958a05c9ea7be0084baa6202d77770f894f9d6` |
 | `export-11-mhyfritz__astro-landing-page/` | `987617a50863d31bb865ee531391a191d74a878a` | READY. Single page; `og:` URLs point at the Netlify demo (disclosed). | `fcac9d9243aa2f5591211a447d10994f2105371586869c9426c52e78d8cf9c28` |
 | `export-70-treefarmstudio__odyssey-theme/` | `d191e5715a2519e25be4629b933189c421b30a1a` | READY. Contact and newsletter forms POST to paths a static host answers with 405, and the repo's Deno Deploy workflow may fail on fork PRs (both disclosed). | `fb7b517ce8c54229707a980d0fbef4625397e1e8fab3b5c5ed12c81d7a9a16c1` |
+| `export-107-Yqnn__svg-path-editor/` | `937d75a83b6be2bdda11d02b9b3594841315223a` | READY. Built HTML keeps the maintainer's Google Analytics tag `G-1BBJSPSKQ9`, so self-hosted copies report to it (disclosed; whether to keep it is the maintainer's call). Icon font comes from fonts.gstatic.com. | `611f7f466dfc495655cfdad0ec43301e4a9ce53289bef2e18628a7852b0254c8` |
+| `export-109-Bowen7__regex-vis/` | `a6d920601ca44ab2d4e9cd02306510ab6d5e4b38` | READY. `pnpm test` (CONTRIBUTING) exits 0, 53 tests. `/` and `/?r=…` work on direct load. `/samples` 404s on direct load or reload; it works only through in-app navigation, and is a secondary page linked from the header. Cloudflare beacon disclosed. | `5a4923f6aa8ac0c3b254d1734adec0603dee4f3b96a61ce109f17e361dac7133` |
 
 `tools/` holds the duplicate-check and HTTP scripts used for 23 and 30.
 

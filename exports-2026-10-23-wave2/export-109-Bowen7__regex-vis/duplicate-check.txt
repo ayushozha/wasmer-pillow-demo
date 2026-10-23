@@ -1,0 +1,14 @@
+# all-state duplicate check for Bowen7/regex-vis, 2026-10-23T02:13:21Z
+# HEAD a6d920601ca44ab2d4e9cd02306510ab6d5e4b38
+$ git fetch origin '+refs/pull/*/head:refs/remotes/pr/*'
+PR refs (open+closed+merged): 130
+highest PR number: 171
+
+$ git log --remotes=pr -i --grep=wasmer --format='%H %an <%ae> %s'
+(end; lines=0)
+
+$ git log --remotes=pr -i --author=wasmer --author=ayush --format='%H %an <%ae> %s'
+(end; lines=0)
+
+# per-ref: git show <ref>:README.md | grep -il wasmer  (README blobs only)
+refs scanned=130 readme_hits=0 refs_without_README.md=0

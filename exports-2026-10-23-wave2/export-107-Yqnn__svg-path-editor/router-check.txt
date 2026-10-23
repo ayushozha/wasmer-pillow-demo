@@ -1,0 +1,2 @@
+$ git grep -nE "RouterModule|provideRouter|Routes" HEAD -- src
+(exit=1; no matches = no Angular router)

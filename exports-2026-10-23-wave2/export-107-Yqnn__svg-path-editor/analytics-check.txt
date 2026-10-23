@@ -1,0 +1,16 @@
+# analytics / third-party origins: source at HEAD and the built index.html
+$ git show HEAD:src/index.html | grep -nE 'gtag|googletagmanager|cloudflareinsights|beacon|fonts\.g'
+15:  <link rel="preconnect" href="https://fonts.gstatic.com">
+16:  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+17:  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+18:  <!-- Global site tag (gtag.js) - Google Analytics -->
+19:  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1BBJSPSKQ9"></script>
+22:    function gtag() { dataLayer.push(arguments); }
+23:    gtag('js', new Date());
+24:    gtag('config', 'G-1BBJSPSKQ9');
+$ grep -noE 'https://[a-z0-9.-]+' <built index.html> | sort -u
+     29 https://fonts.gstatic.com
+      1 https://www.googletagmanager.com
+$ grep -noE "G-1BBJSPSKQ9|data-cf-beacon='[^']*'" <built index.html>
+19:G-1BBJSPSKQ9
+24:G-1BBJSPSKQ9

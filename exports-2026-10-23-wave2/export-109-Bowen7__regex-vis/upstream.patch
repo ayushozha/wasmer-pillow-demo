@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 1436806..f6f000b 100644
+--- a/README.md
++++ b/README.md
+@@ -14,6 +14,12 @@
+ - [English](https://www.bowencodes.com/post/regex-vis_en)
+ - [Chinese](https://www.bowencodes.com/post/regex-vis)
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Bowen7%2Fregex-vis)
++
++Wasmer detects the Vite app, runs `pnpm install` and `pnpm run build`, and serves the generated `dist` folder as static files. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account.
++
+ ## Contribution Guide
+ 
+ [Contribution Guide](https://github.com/Bowen7/regex-vis/blob/master/.github/CONTRIBUTING.md)

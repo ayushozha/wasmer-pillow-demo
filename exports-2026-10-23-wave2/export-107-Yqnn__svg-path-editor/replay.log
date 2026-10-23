@@ -1,0 +1,111 @@
+# replay of val2-svgpath  source=$S/val2-src/svgpath  upstream HEAD=937d75a83b6be2bdda11d02b9b3594841315223a
+# local diff vs HEAD:  M README.md;
+  Detected static Node.js provider
+    Framework: Angular
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist/svg-path-editor
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val2-svgpath/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist/svg-path-editor' pm=npm@11 inputs='package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+$ npm install
+npm warn deprecated read-package-json@7.0.1: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 1127 packages, and audited 1128 packages in 2m
+
+109 vulnerabilities (5 low, 26 moderate, 73 high, 5 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 4 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.20.1 (postinstall: node install.js)
+npm warn install-scripts   nice-napi@1.0.2 (install: node-gyp-build)
+npm warn install-scripts   nx@18.3.5 (postinstall: node ./bin/post-install)
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> svg-path-editor@0.0.0 build
+> ng build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.c2644f28e3f13a72.js      | main          | 834.80 kB |               167.99 kB
+styles.76a03d602b7f3c86.css   | styles        |  45.08 kB |                 5.10 kB
+polyfills.8b39c005062fd761.js | polyfills     |  34.00 kB |                11.06 kB
+runtime.6f6474d711a7c88e.js   | runtime       | 908 bytes |               518 bytes
+
+                              | Initial total | 914.77 kB |               184.66 kB
+
+Build at: 2026-10-23T02:16:21.432Z - Hash: 94fd259b25024d70 - Time: 24568ms
+
+Warning: $S/replay/val2-svgpath/work/src/app/app.component.scss exceeded maximum budget. Budget 2.00 kB was not met by 911 bytes with a total of 2.89 kB.
+
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 414.77 kB with a total of 914.77 kB.
+
+
+exit=0
+
+$ static-web-server --root=$S/replay/val2-svgpath/static_app --log-level=info --port=3931 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	40747
+--	title	/	SvgPathEditor	
+200	page	/index.html	text/html	40747
+--	title	/index.html	SvgPathEditor	
+200	page	/ngsw.json	application/json	3636
+200	page	/ngsw-worker.js	text/javascript	67992
+200	page	/manifest.webmanifest	application/manifest+json	1350
+200	page	/3rdpartylicenses.txt	text/plain	14562
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/favicon.ico	image/x-icon	16958
+200	ref	/assets/icons/icon-152x152-cropped.png	image/png	21635
+200	ref	/styles.76a03d602b7f3c86.css	text/css	46164
+200	ref	/runtime.6f6474d711a7c88e.js	text/javascript	908
+200	ref	/polyfills.8b39c005062fd761.js	text/javascript	34816
+200	ref	/main.c2644f28e3f13a72.js	text/javascript	854840
+SUMMARY pages=7 refs_checked=6 failures=1
+FAIL	404	page	/nope	text/html	0
+# static_app files: 29
