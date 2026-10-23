@@ -64,8 +64,8 @@
       "CODE_OF_CONDUCT.md present",
       "issue templates only (.github/ISSUE_TEMPLATE bug_report/feature_request), no issue-first rule"
     ],
-    "deploy_provider_stance": "README has only a GitHub Actions Pages build badge; no provider buttons. The hosting-keyword search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed '5 results' (Open 0, Closed 5), one page: #160, #158, #147 (dependabot, merged), #100 'Created Dockerfile' (poiou123, merged 2024-11-10), #61 'Docker' (ismvru, merged 2022-08-31). It showed no closed-unmerged hosting PRs.",
-    "outside_merges": "The search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed+-author%3Ale0pard+-author%3Aapp%2Fdependabot showed 9 closed PRs: 7 merged (latest outside merge #102 jmealo 2024-11-29), 2 closed unmerged (#98, #23; not hosting-related). The closed-PR listing https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed showed 'Closed 100', 4 pages; page 1 all merged (maintainer + dependabot through 2026-10-21).",
+    "deploy_provider_stance": "README has only a GitHub Actions Pages build badge; no provider buttons. The hosting-keyword search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed '5 results' (Open 0, Closed 5), one page: https://github.com/le0pard/pgtune/pull/160, https://github.com/le0pard/pgtune/pull/158, https://github.com/le0pard/pgtune/pull/147 (dependabot, merged), https://github.com/le0pard/pgtune/pull/100 'Created Dockerfile' (poiou123, merged 2024-11-10), https://github.com/le0pard/pgtune/pull/61 'Docker' (ismvru, merged 2022-08-31). It showed no closed-unmerged hosting PRs.",
+    "outside_merges": "The search https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed+-author%3Ale0pard+-author%3Aapp%2Fdependabot showed 9 closed PRs: 7 merged (latest outside merge https://github.com/le0pard/pgtune/pull/102 jmealo 2024-11-29), 2 closed unmerged (https://github.com/le0pard/pgtune/pull/98, https://github.com/le0pard/pgtune/pull/23; not hosting-related). The closed-PR listing https://github.com/le0pard/pgtune/pulls?q=is%3Apr+is%3Aclosed showed 'Closed 100', 4 pages; page 1 all merged (maintainer + dependabot through 2026-10-21).",
     "evidence_urls": [
       "https://github.com/le0pard/pgtune",
       "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+wasmer",
@@ -75,7 +75,7 @@
       "https://github.com/le0pard/pgtune/issues?q=self-host+OR+offline+OR+docker+OR+internal+OR+deploy"
     ]
   },
-  "acceptance_risk": "Moderate: maintainer very active (own PRs and dependabot merges through 2026-10-21), but last outside-contributor merge seen was 2024-11-29 (#102). Outside container/self-hosting PRs (#61, #100) were merged. No refusal of provider buttons seen.",
+  "acceptance_risk": "Moderate: maintainer very active (own PRs and dependabot merges through 2026-10-21), but last outside-contributor merge seen was 2024-11-29 (https://github.com/le0pard/pgtune/pull/102). Outside container/self-hosting PRs (https://github.com/le0pard/pgtune/pull/61, https://github.com/le0pard/pgtune/pull/100) were merged. No refusal of provider buttons seen.",
   "wasmer_pr_search": {
     "query": "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+wasmer (WebFetch, all states)",
     "result": "the search showed 0 results ('No pull requests matched your search'; Open 0, Closed 0) at ~2026-10-23T01:57Z"
@@ -98,7 +98,7 @@
     "checks": "form fill -> 'shared_buffers = 4GB' rendered and URL updated; service worker active at /sw.js; direct /about load 200 with correct title; shared config link renders; 0 console errors, 0 failed requests, 0 external hosts",
     "log": "<campaign>"
   },
-  "why": "PgTune is a browser-only PostgreSQL config calculator (llms.txt: nothing is sent to a server; config fully described by URL). Users self-host it - two outside Docker PRs (#61, #100) were merged - but the Dockerfile runs the Vite dev server. A Wasmer import of a fork serves the production static build (prerendered pages, hashed assets, service worker) for a private/internal copy. The Anybuild file is required to make that build succeed (yarn 4 .yarnrc.yml at install).",
+  "why": "PgTune is a browser-only PostgreSQL config calculator (llms.txt: nothing is sent to a server; config fully described by URL). Users self-host it - two outside Docker PRs (https://github.com/le0pard/pgtune/pull/61, https://github.com/le0pard/pgtune/pull/100) were merged - but the Dockerfile runs the Vite dev server. A Wasmer import of a fork serves the production static build (prerendered pages, hashed assets, service worker) for a private/internal copy. The Anybuild file is required to make that build succeed (yarn 4 .yarnrc.yml at install).",
   "import_url": "https://wasmer.io/apps/create?github=le0pard%2Fpgtune",
   "patch": "le0pard_pgtune.patch",
   "pr_body": "pr-body.md"
