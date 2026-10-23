@@ -4,12 +4,12 @@
     "status": "READY",
     "base_sha": "4734cb2c742ee9d849fdc5c1f05e1cbe13359a73",
     "base_branch": "main",
-    "patched_staging_sha": "6de9a199f91f58102d744d1ff9d427f7044175a5",
+    "patched_staging_sha": "1e5c736aa26d2d9cffcbfa7098f6473698398a45",
     "import_url": "https://wasmer.io/apps/create?github=rammcodes%2FDopefolio",
     "patch": "rammcodes_Dopefolio/rammcodes_Dopefolio.patch",
-    "patch_sha256": "d49f61e3c016890e3677e201ffc5feeed2279ac721cf74bcc5af7e9b7ac34f23",
+    "patch_sha256": "98ee7147d746936e7900a630e377c75f01650a4c64c0fdc969243d62cf203825",
     "pr_body": "rammcodes_Dopefolio/pr-body.md",
-    "pr_body_sha256": "f47ffc5b94a93d8376e2c597bb980186da6d97d7d9f930ac5b152a32f761b51d",
+    "pr_body_sha256": "0a4209a024d8d696d21d802e851fbcc039955dfcbf0c258700d38948ed0c3cab",
     "files_changed": [
       "README.md",
       "Staticfile"

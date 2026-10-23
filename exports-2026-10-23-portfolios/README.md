@@ -16,7 +16,8 @@ Per target folder:
 Notes:
 - Dopefolio:
   - The committed `css/style.css` has the same 121 rule selectors as a fresh SASS compile (`css-check.log`).
-  - The README and body state that the contact form's `action="#"` is unconfigured and that Google Fonts load externally.
+  - The README and body state that the contact form (`action="#"`, no `method`) delivers no messages until a form service is connected, and advise against real messages until then, because the browser's default GET submission puts the fields in the page URL. They also say Google Fonts load externally.
+  - Second commit on this branch: the patch was re-authored as `1e5c736` from the same base. Only that README note changed; the `Staticfile` and the served site are unchanged, so the build, static-server and browser evidence still applies.
 - portfolio-template:
   - Its README has no hosting guide, and the body says only what the README says.
 - Acceptance risk is high for both because outside merges are rare. It is recorded as a caveat, not a policy restriction.

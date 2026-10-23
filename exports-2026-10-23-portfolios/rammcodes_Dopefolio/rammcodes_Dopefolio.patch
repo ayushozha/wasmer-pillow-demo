@@ -1,6 +1,6 @@
-From 6de9a199f91f58102d744d1ff9d427f7044175a5 Mon Sep 17 00:00:00 2001
+From 1e5c736aa26d2d9cffcbfa7098f6473698398a45 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
-Date: Fri, 23 Oct 2026 02:42:50 +0000
+Date: Fri, 23 Oct 2026 02:54:38 +0000
 Subject: [PATCH] docs: add Wasmer Edge deploy option
 
 ---
@@ -10,7 +10,7 @@ Subject: [PATCH] docs: add Wasmer Edge deploy option
  create mode 100644 Staticfile
 
 diff --git a/README.md b/README.md
-index 9e774b5..0cc5f25 100644
+index 9e774b5..bfe5195 100644
 --- a/README.md
 +++ b/README.md
 @@ -746,6 +746,19 @@ Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
@@ -26,7 +26,7 @@ index 9e774b5..0cc5f25 100644
 +1. Fork Dopefolio (or push your clone) to your own GitHub account and make your changes there. The button above imports this original repository; it does not create a copy in your account. To deploy your own portfolio, import your own repository on the Wasmer import page.
 +2. Commit the compiled `css/style.css` whenever you change the SASS files (`npm run compile:scss`). The `Staticfile` in the repository root (`root: .`) tells Wasmer to serve the committed files as they are, without running `npm install` or a build (Wasmer's builder reads this file; it does not change how you work on the site locally). If the import page shows a different preset, select the static site (staticfile) preset.
 +
-+**Note:** the contact form's `action="#"` is not configured, so form submissions go nowhere until you set it up (for example with **formspree.io**, as described in the Contact Section above). The Google Fonts stylesheet loads from fonts.googleapis.com.
++**Note:** the contact form (`action="#"`, no `method`) does not deliver messages until you connect a form service (for example **formspree.io**, as described in the Contact Section above). Until then, avoid real messages: the browser's default GET submission puts the name, email and message fields in the page URL, where they can end up in browser history and server request logs. The Google Fonts stylesheet loads from fonts.googleapis.com.
 +
 +<br>
 +

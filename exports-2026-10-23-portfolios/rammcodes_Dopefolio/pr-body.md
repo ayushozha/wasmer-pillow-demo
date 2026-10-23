@@ -11,7 +11,7 @@ This change was prepared with AI assistance (Anthropic's Claude); the testing de
 - Adds a short "Deploy to Wasmer" subsection, with a Deploy to Wasmer badge, to the README's existing **Deployment** section, right after the Netlify steps. The Netlify instructions are unchanged.
 - Adds a one-line root `Staticfile` (`root: .`) so that Wasmer's builder serves the committed files (`index.html`, `project-*.html`, `css/style.css`, `index.js`, `assets/`) as they are, without running `npm install` or a build.
 - The new text tells people to fork (or push their clone) first and import **their own** repository; the badge imports this original repository and does not create a copy in their account.
-- The README note also says plainly that the contact form's `action="#"` is not configured, so submissions go nowhere until the user sets it up (for example with formspree.io, which the README already suggests), and that the Google Fonts stylesheet loads externally from fonts.googleapis.com.
+- The README note also says plainly that the contact form (`action="#"`, no `method`) does not deliver messages until the user connects a form service (for example formspree.io, which the README already suggests). Until then it advises against real messages, because the browser's default GET submission puts the name, email and message fields in the page URL (browser history, server request logs), and that the Google Fonts stylesheet loads externally from fonts.googleapis.com.
 
 No app code, styles, dependencies, licence or credits are changed.
 
@@ -50,7 +50,7 @@ All at base `4734cb2c742ee9d849fdc5c1f05e1cbe13359a73` (BASE) and the patched co
 - I did not deploy this to Wasmer. The serving tests used native static-web-server builds, not Wasmer's WebAssembly build of static-web-server (2.32.2).
 - The import page may show a different preset; in that case, choose the static site (staticfile) preset.
 - Wasmer does not run `npm run build` (autoprefixer + minify). The committed, unminified `css/style.css` is served as is. Users who change the SASS need to run `npm run compile:scss` locally and commit `css/style.css`, as the README's styling steps already describe.
-- The contact form is front-end only (`action="#"`). It sends nothing until the user connects a form service. Netlify Forms do not apply on other hosts.
+- The contact form is front-end only (`action="#"`, no `method`, and `index.js` does not intercept submit). It delivers no messages until the user connects a form service, and the browser's default GET submission puts the field values in the page URL. Netlify Forms do not apply on other hosts.
 - Google Fonts are loaded from fonts.googleapis.com / fonts.gstatic.com.
 - The static root is the repository root, so repository files such as `README.md`, `package.json` and `sass/` are also served. They are already public in the repo.
 - The stylesheet's `url(../../assets/...)` path assumes the site is served at the domain root, which is how it is served here and in the README's Netlify setup.
