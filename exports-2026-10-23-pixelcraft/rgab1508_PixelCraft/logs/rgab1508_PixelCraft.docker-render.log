@@ -1,0 +1,38 @@
+# 2026-10-23T02:32:25Z anybuild 0.33.1: '$A build . --builder docker --docker-client <tmp> on generated staticfile Anybuild (same provider as the detected plan) over PATCHED 3fead1a
+# Result: no Dockerfile is rendered; anybuild builds staticfile locally ('every build step is safe'). No mise/node/npm/yarn lines - no toolchain involved.
+╭─────────────────╮
+│ Anybuild 0.33.1 │
+╰─────────────────╯
+
+  Using static site provider declared in Anybuild
+    SWS version: 2.38.0
+Building locally because every build step is safe
+
+  Packages
+  ──────────
+  static-web-server  │  2.38.0  │  only deploy
+
+  Deploy scripts
+  ──────────────
+  ▸ start
+    $ static-web-server --root=<worktree>/.anybuild/local/build/opt/static_app --log-level=info --port=8080
+
+  Starting Build...
+  ─────────────────
+
+  Working in /opt/static_app
+
+  Copy to . from . # ignoring .git
+
+  ╭─────────────────────────╮
+  │ Build complete in 0.00s │
+  ╰─────────────────────────╯
+
+Building serve
+Serve Commands:
+* start
+┌──────────────────────────────────────────────────────────────────────────────┐
+│   1 #!/bin/bash                                                              │
+│   2 static-web-server --root=<worktree>/.anyb │
+└──────────────────────────────────────────────────────────────────────────────┘
+EXIT 0

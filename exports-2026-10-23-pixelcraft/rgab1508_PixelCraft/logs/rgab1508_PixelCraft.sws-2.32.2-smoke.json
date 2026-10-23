@@ -1,0 +1,127 @@
+{
+  "tool": "static-web-server Version:      2.32.2 with Anybuild planned flags (0.33.x) + --host=127.0.0.1",
+  "root": "<replay>/opt/temp",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 14488
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 14488
+      }
+    ],
+    "/global.css": [
+      {
+        "path": "/global.css",
+        "status": 200,
+        "location": null,
+        "bytes": 5460
+      }
+    ],
+    "/Canvas.js": [
+      {
+        "path": "/Canvas.js",
+        "status": 200,
+        "location": null,
+        "bytes": 9028
+      }
+    ],
+    "/lib/gif.js": [
+      {
+        "path": "/lib/gif.js",
+        "status": 200,
+        "location": null,
+        "bytes": 13452
+      }
+    ],
+    "/lib/Matrix.js": [
+      {
+        "path": "/lib/Matrix.js",
+        "status": 200,
+        "location": null,
+        "bytes": 641
+      }
+    ],
+    "/lib/Shapes.js": [
+      {
+        "path": "/lib/Shapes.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4334
+      }
+    ],
+    "/lib/Transformation.js": [
+      {
+        "path": "/lib/Transformation.js",
+        "status": 200,
+        "location": null,
+        "bytes": 2531
+      }
+    ],
+    "/gif.worker.js": [
+      {
+        "path": "/gif.worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 16637
+      }
+    ],
+    "/sw.js": [
+      {
+        "path": "/sw.js",
+        "status": 200,
+        "location": null,
+        "bytes": 867
+      }
+    ],
+    "/manifest.json": [
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "location": null,
+        "bytes": 417
+      }
+    ],
+    "/icons/logo.png": [
+      {
+        "path": "/icons/logo.png",
+        "status": 200,
+        "location": null,
+        "bytes": 1422
+      }
+    ],
+    "/images/overview.png": [
+      {
+        "path": "/images/overview.png",
+        "status": 200,
+        "location": null,
+        "bytes": 22910
+      }
+    ],
+    "/images/toolbar.png": [
+      {
+        "path": "/images/toolbar.png",
+        "status": 200,
+        "location": null,
+        "bytes": 7868
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

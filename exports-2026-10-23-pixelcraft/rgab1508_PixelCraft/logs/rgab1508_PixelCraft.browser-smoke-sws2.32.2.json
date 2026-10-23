@@ -1,0 +1,49 @@
+{
+ "url": "http://127.0.0.1:18741/",
+ "status": 200,
+ "title": "PixelCraft: A Pixel Art Editor",
+ "toolbar_items": 12,
+ "palette_colors": 20,
+ "canvas_px": [
+  550,
+  550
+ ],
+ "cell_before": "[255,255,255,255]",
+ "cell_after": "[0,0,0,255]",
+ "canvas_pixel_rgba_at_3_3": [
+  0,
+  0,
+  0,
+  255
+ ],
+ "gif": {
+  "finished": true,
+  "type": "image/gif",
+  "bytes": 5205,
+  "workerScript": "gif.worker.js"
+ },
+ "service_worker": {
+  "scope": "http://127.0.0.1:18741/",
+  "active": true
+ },
+ "local_ok": {
+  "/": 200,
+  "/global.css": 200,
+  "/Canvas.js": 200,
+  "/lib/gif.js": 200,
+  "/lib/Matrix.js": 200,
+  "/lib/Shapes.js": 200,
+  "/lib/Transformation.js": 200,
+  "/sw.js": 200,
+  "/icons/logo.png": 200,
+  "/gif.worker.js": 200
+ },
+ "local_failures": [],
+ "console_errors": [
+  "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+ ],
+ "external_hosts": [
+  "kit.fontawesome.com (failed)",
+  "fonts.gstatic.com"
+ ]
+}

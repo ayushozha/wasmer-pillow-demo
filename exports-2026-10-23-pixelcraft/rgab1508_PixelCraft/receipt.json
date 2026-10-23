@@ -1,0 +1,84 @@
+{
+  "repo": "rgab1508/PixelCraft",
+  "status": "READY",
+  "stars": "1.5k",
+  "stars_source": "WebFetch https://github.com/rgab1508/PixelCraft (rounded display value; MCP not used)",
+  "stars_at": "2026-10-23T02:31Z",
+  "archived": false,
+  "license": "MIT (LICENSE; keep copyright notice). Vendored gif.js 0.2.0 / gif.worker.js (jnordberg/gif.js, MIT per upstream; header comment in file).",
+  "default_branch": "master",
+  "pushed_at": "not fetched (no API); head commit date 2025-03-17T01:09:36+05:30",
+  "base_sha": "45a5d4821caeebaea4ee507bdabf8e2645631418",
+  "head_commit_date": "2025-03-17T01:09:36+05:30",
+  "patched_sha": "3fead1ad8b2da93c8df65b6df0c1e37e33f154b4",
+  "framework": "plain HTML5 canvas app (index.html + Canvas.js + lib/*.js, vendored gif.js web worker, sw.js service worker, manifest.json PWA). new/pixelcraft is an unbuilt Create React App rewrite that is not used by the root app.",
+  "output_dir": ". (committed files, no build step)",
+  "build_command": "none (no root package manifest; README documents no build)",
+  "build_claude": {
+    "result": "N/A (no build step)",
+    "detail": "Upstream has no build. The root files are served as committed (GitHub Pages / Firebase per README)."
+  },
+  "format_check": "not applicable: no formatter config at the repo root (PR #61 ran Prettier once, but no config is committed)",
+  "hook_check": "no git hooks installed (.git/hooks has only samples; no .husky or pre-commit config); normal git commit ran, nothing bypassed",
+  "detection_verified": "plan BASE vs PATCHED verified locally (staticfile at root, correct because the app files are committed at root). No config added. Live import page preset pending Codex browser check.",
+  "anybuild_replay": "PASS (anybuild 0.33.1, 2026-10-23) on BASE 45a5d48 and PATCHED 3fead1a: provider staticfile, install none, build none, static_dir '.', 13 routes 200, 0 missing root-relative refs. No package-manager pins apply (no node steps). logs/rgab1508_PixelCraft.flat-replay.log (patched), logs/rgab1508_PixelCraft.base.flat-replay.log (base)",
+  "sws_smoke": {
+    "result": "PASS",
+    "tool": "native static-web-server 2.32.2 and 2.38.0 (not Wasmer's wasm SWS 2.32.2)",
+    "routes_200": [
+      "/",
+      "/index.html",
+      "/global.css",
+      "/Canvas.js",
+      "/lib/gif.js",
+      "/lib/Matrix.js",
+      "/lib/Shapes.js",
+      "/lib/Transformation.js",
+      "/gif.worker.js",
+      "/sw.js",
+      "/manifest.json",
+      "/icons/logo.png",
+      "/images/overview.png",
+      "/images/toolbar.png"
+    ],
+    "missing_path": "404 on both versions",
+    "mime": "SWS 2.32.2: sw.js and gif.worker.js text/javascript, manifest.json application/json, global.css text/css",
+    "hashed_assets": "none (no bundler; plain file names)",
+    "logs": [
+      "<campaign>",
+      "<campaign>"
+    ]
+  },
+  "caveats": "Toolbar icons load from an external Font Awesome kit script (a third-party kit tied to the author's account; whether it serves other domains is unverified). og:url and og:image in index.html point to rgab1508.github.io. The new/ React source folder is published as static files (harmless, not loaded). sw.js caches every GET response (upstream behavior). No secrets or analytics found in served files (grep for firebase/apiKey/gtag/analytics: none in the root app).",
+  "policy": {
+    "files": "The tree at 45a5d48 has no CONTRIBUTING*, AGENTS.md, AI policy, CLA, PR template or .github/ directory. The GitHub top-level listing (https://github.com/rgab1508/PixelCraft) showed none either.",
+    "readme": "No contribution or hosting stance. README credits outside PRs #41 and #44.",
+    "deploy_provider_stance": "README lists two existing hosts (GitHub Pages and Firebase pixelcraft.web.app). No provider buttons. Commits 7b7e2b6..45a5d48 (2025-03-15/17) created and deleted a CNAME several times.",
+    "hosting_prs": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed 'Open 0 (0)', 'Closed 1 (1)': #59 'fix: use relative paths in manifest.json' by kt3k, merged 2022-04-03 (not a provider PR).",
+    "outside_merges": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+is%3Amerged showed 'Closed 40 (40)' (page 1 of 2 read). The newest merged PR is #63 by ArunBohra12 (2023-02-27). Other outside merges: #61, #59, #58, #56, #44, #42, #41."
+  },
+  "acceptance_risk": "No merged PR shown since 2023-02-27. The owner's last commits were CNAME add/delete on 2025-03-15/17. The repo page shows 'Pull requests 3 (3)' open. Inactivity is recorded as acceptance risk, not a hold.",
+  "wasmer_pr_search": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+wasmer showed 'Open 0 (0)', 'Closed 0 (0)', 'No pull requests matched your search' (worker WebFetch 2026-10-23T02:30Z, right before preparing; the coordinator's earlier check also showed 0)",
+  "coordinator_review": "2026-10-23: ls-remote HEAD = 45a5d48 (base current); patch == format-patch of 3fead1a (Claude author/committer), README-only, no config; benefit cited from README (already served from GitHub Pages and Firebase; static PWA with no build step); no kit/analytics ID values in outputs; live dedupe 0 results (worker, just before prep). acceptance_risk (last merge 2023-02) recorded, not held.",
+  "docker_render": "<campaign> with --builder docker and a stub client, anybuild 0.33.1 does not render a Dockerfile for staticfile ('Building locally because every build step is safe'; 'Copy to . from . # ignoring .git'). There are no mise/toolchain lines. The local anybuild output was byte-identical (diff -rq) to the flat-replay output.",
+  "patch_commit": "3fead1ad8b2da93c8df65b6df0c1e37e33f154b4 (branch deploy-to-wasmer in <tmp> author and committer Claude <noreply@anthropic.com>)",
+  "config": "none added (not needed: staticfile detection already serves the correct root)",
+  "browser_smoke": {
+    "result": "PASS",
+    "tool": "playwright-core (<tmp> + Chromium /opt/pw-browsers/chromium-1194, against native SWS 2.32.2 and 2.38.0",
+    "checks": "title 'PixelCraft: A Pixel Art Editor'; dimension popup OK (16x16); 12 toolbar items, 20 palette colors; a mouse draw at cell (3,3) changed board.data from white to [0,0,0,255] and the canvas pixel to black; 2 frames added, then board.renderGIF() spawned the gif.worker.js worker and emitted 'finished' with an image/gif blob of 5205 bytes; service worker registered and active at scope '/'; 0 local failed requests on both versions. Only console error: the external Font Awesome kit request (sandbox proxy ERR_TUNNEL_CONNECTION_FAILED), so toolbar icon glyphs are blank in the screenshot.",
+    "logs": [
+      "<campaign>",
+      "<campaign>"
+    ],
+    "screenshots": [
+      "<campaign>",
+      "<campaign>"
+    ],
+    "script": "<tmp>"
+  },
+  "why": "README lines: 'This App is Available at both these locations' followed by 'https://rgab1508.github.io/PixelCraft' and 'https://pixelcraft.web.app' (the app is already hosted on two static hosts). README: 'A pixel Art & Animation Creation Tool Built using HTML5 Canvas.' and 'It is a Progressive Web App (PWA) with offline compatibility.' The app is a plain static browser app with committed files and no build step, so another static host serves it unchanged. Verified locally: drawing, GIF export via the gif.js worker and service-worker registration all work from a plain static server.",
+  "import_url": "https://wasmer.io/apps/create?github=rgab1508%2FPixelCraft",
+  "patch": "rgab1508_PixelCraft.patch",
+  "pr_body": "pr-body.md"
+}

@@ -1,0 +1,17 @@
+# 2026-10-23T02:32:07Z anybuild 0.33.1 plan PATCHED 3fead1a
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to <tmp>
+EXIT 0
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "wt_pixelcraft_patched",
+        "commands": {
+            "start": "static-web-server --root=<tmp> --log-level=info --port=8080"
+        }
+    },
+    "services": []
+}
