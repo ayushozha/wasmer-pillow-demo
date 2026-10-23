@@ -1,0 +1,79 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "<replay>/opt/temp",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 112983
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 112983
+      }
+    ],
+    "/game.js": [
+      {
+        "path": "/game.js",
+        "status": 200,
+        "location": null,
+        "bytes": 74029
+      }
+    ],
+    "/style.css": [
+      {
+        "path": "/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 9693
+      }
+    ],
+    "/src/main.js": [
+      {
+        "path": "/src/main.js",
+        "status": 200,
+        "location": null,
+        "bytes": 158
+      }
+    ],
+    "/src/state.js": [
+      {
+        "path": "/src/state.js",
+        "status": 200,
+        "location": null,
+        "bytes": 4833
+      }
+    ],
+    "/assets/sounds/click-10.mp3": [
+      {
+        "path": "/assets/sounds/click-10.mp3",
+        "status": 200,
+        "location": null,
+        "bytes": 4910
+      }
+    ],
+    "/assets/gameplay.gif": [
+      {
+        "path": "/assets/gameplay.gif",
+        "status": 200,
+        "location": null,
+        "bytes": 1069610
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

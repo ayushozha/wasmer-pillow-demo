@@ -1,0 +1,56 @@
+{
+  "dir": "<replay>/opt/temp/.",
+  "base": "/",
+  "html_files": 1,
+  "local_refs_checked": 0,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 112674,
+      "title": "Server Survival \u2014 learn cloud architecture by playing"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 112674,
+      "title": "Server Survival \u2014 learn cloud architecture by playing"
+    },
+    "/game.js": {
+      "status": 200,
+      "bytes": 73911,
+      "title": null
+    },
+    "/style.css": {
+      "status": 200,
+      "bytes": 9689,
+      "title": null
+    },
+    "/src/main.js": {
+      "status": 200,
+      "bytes": 158,
+      "title": null
+    },
+    "/src/config.js": {
+      "status": 200,
+      "bytes": 42544,
+      "title": null
+    },
+    "/assets/sounds/click-10.mp3": {
+      "status": 200,
+      "bytes": 4725,
+      "title": null
+    },
+    "/assets/gameplay.gif": {
+      "status": 200,
+      "bytes": 1017824,
+      "title": null
+    },
+    "/?arch=x": {
+      "status": 200,
+      "bytes": 112674,
+      "title": "Server Survival \u2014 learn cloud architecture by playing"
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "repo": "pshenok/server-survival",
+    "status": "READY",
+    "base_sha": "52fc46f0602acf11b8e2a9cf2627e706ccff8f6f",
+    "base_branch": "main",
+    "patched_staging_sha": "227baca97f09501323c1ad418d121f58c27574f9",
+    "import_url": "https://wasmer.io/apps/create?github=pshenok%2Fserver-survival",
+    "patch": "pshenok_server-survival/pshenok_server-survival.patch",
+    "patch_sha256": "5c5166e99f8201e6d5fe5045f52a6f86d05974de8aeb54637d283c132569e1db",
+    "pr_body": "pshenok_server-survival/pr-body.md",
+    "pr_body_sha256": "3a0f8b23905f5d75b6cdbe5e095c21afcc0061362e8ee16a4b992028141fb2c5",
+    "files_changed": [
+      "README.md"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+# 2026-10-23T01:36:34Z pshenok_server-survival BASE 52fc46f0602acf11b8e2a9cf2627e706ccff8f6f anybuild 0.33.1
+$ anybuild plan wt --out pshenok_server-survival.plan.base.json
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to <tmp>
+EXIT 0
+
+# 2026-10-23T01:39:27Z pshenok_server-survival PATCHED 227baca97f09501323c1ad418d121f58c27574f9 anybuild 0.33.1
+$ anybuild plan wtp --out pshenok_server-survival.plan.patched.json
+  Detected static site provider
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to <tmp>
+EXIT 0
