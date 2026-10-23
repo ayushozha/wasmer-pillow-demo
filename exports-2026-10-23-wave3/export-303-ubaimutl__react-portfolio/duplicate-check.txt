@@ -1,0 +1,11 @@
+# all-state duplicate check (no API), 2026-10-23T02:38:20Z
+# repo HEAD: ceb60ff0b3786a4be66841978906648d21808830
+$ git fetch origin "+refs/pull/*/head:refs/remotes/pr/*"
+exit=0
+# PR refs fetched: 71
+$ git log --remotes=pr -i --grep=wasmer --format="%H %an <%ae> %s"
+exit=0 (no lines above = no match)
+$ git log --remotes=pr -i --author=wasmer --author=ayush --format="%H %an <%ae> %s"
+exit=0 (no lines above = no match)
+# per-ref: git show <ref>:README.md | grep -il wasmer
+# README.md checked at 71 of 71 refs; wasmer hits: 0

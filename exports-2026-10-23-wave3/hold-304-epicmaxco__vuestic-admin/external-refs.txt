@@ -1,0 +1,3 @@
+# external hosts referenced in built HTML (host, tag-kind: n pages)
+fonts.googleapis.com	other	1 pages
+# <script src=...> to external hosts: none

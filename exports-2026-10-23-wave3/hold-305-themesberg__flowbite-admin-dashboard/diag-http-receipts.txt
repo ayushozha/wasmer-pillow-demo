@@ -1,0 +1,115 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 314
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 250882
+/authentication/forgot-password/ -> 200 text/html 5590
+/authentication/profile-lock/ -> 200 text/html 6042
+/authentication/reset-password/ -> 200 text/html 6418
+/authentication/sign-in/ -> 200 text/html 6048
+/authentication/sign-up/ -> 200 text/html 6638
+/crud/products/ -> 200 text/html 178659
+/crud/users/ -> 200 text/html 165631
+/layouts/sidebar/ -> 200 text/html 250979
+/layouts/stacked/ -> 200 text/html 220667
+/pages/404/ -> 200 text/html 4226
+/pages/500/ -> 200 text/html 4248
+/pages/maintenance/ -> 200 text/html 4402
+/pages/pricing/ -> 200 text/html 56470
+/playground/sidebar/ -> 200 text/html 71783
+/playground/stacked/ -> 200 text/html 41489
+/settings/ -> 200 text/html 117737
+/sitemap.xml -> 200 text/xml 1255
+/robots.txt -> 200 text/plain 14
+/does-not-exist -> 404 text/html; charset=utf-8 106
+/crud/nope/ -> 404 text/html; charset=utf-8 106
+/package.json -> 404 text/html; charset=utf-8 106
+/config.yml -> 404 text/html; charset=utf-8 106
+/_gh_pages/ -> 404 text/html; charset=utf-8 106
+## trailing-slash / .html variants of pages
+/authentication/forgot-password -> 308  0 redirect=http://127.0.0.1:3986/authentication/forgot-password/
+/authentication/forgot-password/index.html -> 200 text/html 5590 redirect=
+/authentication/profile-lock -> 308  0 redirect=http://127.0.0.1:3986/authentication/profile-lock/
+/authentication/profile-lock/index.html -> 200 text/html 6042 redirect=
+/authentication/reset-password -> 308  0 redirect=http://127.0.0.1:3986/authentication/reset-password/
+/authentication/reset-password/index.html -> 200 text/html 6418 redirect=
+/authentication/sign-in -> 308  0 redirect=http://127.0.0.1:3986/authentication/sign-in/
+/authentication/sign-in/index.html -> 200 text/html 6048 redirect=
+/authentication/sign-up -> 308  0 redirect=http://127.0.0.1:3986/authentication/sign-up/
+/authentication/sign-up/index.html -> 200 text/html 6638 redirect=
+/crud/products -> 308  0 redirect=http://127.0.0.1:3986/crud/products/
+/crud/products/index.html -> 200 text/html 178659 redirect=
+/crud/users -> 308  0 redirect=http://127.0.0.1:3986/crud/users/
+/crud/users/index.html -> 200 text/html 165631 redirect=
+/layouts/sidebar -> 308  0 redirect=http://127.0.0.1:3986/layouts/sidebar/
+/layouts/sidebar/index.html -> 200 text/html 250979 redirect=
+/layouts/stacked -> 308  0 redirect=http://127.0.0.1:3986/layouts/stacked/
+/layouts/stacked/index.html -> 200 text/html 220667 redirect=
+/pages/404 -> 308  0 redirect=http://127.0.0.1:3986/pages/404/
+/pages/404/index.html -> 200 text/html 4226 redirect=
+/pages/500 -> 308  0 redirect=http://127.0.0.1:3986/pages/500/
+/pages/500/index.html -> 200 text/html 4248 redirect=
+/pages/maintenance -> 308  0 redirect=http://127.0.0.1:3986/pages/maintenance/
+/pages/maintenance/index.html -> 200 text/html 4402 redirect=
+/pages/pricing -> 308  0 redirect=http://127.0.0.1:3986/pages/pricing/
+/pages/pricing/index.html -> 200 text/html 56470 redirect=
+/playground/sidebar -> 308  0 redirect=http://127.0.0.1:3986/playground/sidebar/
+/playground/sidebar/index.html -> 200 text/html 71783 redirect=
+/playground/stacked -> 308  0 redirect=http://127.0.0.1:3986/playground/stacked/
+/playground/stacked/index.html -> 200 text/html 41489 redirect=
+/settings -> 308  0 redirect=http://127.0.0.1:3986/settings/
+/settings/index.html -> 200 text/html 117737 redirect=
+/crud/nope -> 404 text/html; charset=utf-8 106 redirect=
+/crud/nope/index.html -> 404 text/html; charset=utf-8 106 redirect=
+/_gh_pages -> 404 text/html; charset=utf-8 106 redirect=
+/_gh_pages/index.html -> 404 text/html; charset=utf-8 106 redirect=
+## assets referenced from all 17 built HTML files and url() in 1 built CSS files (46 unique same-origin refs)
+/ -> 200 text/html 250882
+/app.bundle.js -> 200 text/javascript 878173
+/app.css -> 200 text/css 170055
+/apple-touch-icon.png -> 200 image/png 15165
+/authentication/forgot-password/ -> 200 text/html 5590
+/authentication/profile-lock/ -> 200 text/html 6042
+/authentication/reset-password/ -> 200 text/html 6418
+/authentication/sign-in/ -> 200 text/html 6048
+/authentication/sign-up/ -> 200 text/html 6638
+/crud/products/ -> 200 text/html 178659
+/crud/users/ -> 200 text/html 165631
+/favicon-16x16.png -> 200 image/png 1735
+/favicon-32x32.png -> 200 image/png 2528
+/favicon.ico -> 200 image/x-icon 1150
+/images/illustrations/404.svg -> 200 image/svg+xml 637523
+/images/illustrations/500.svg -> 200 image/svg+xml 598465
+/images/illustrations/maintenance.svg -> 200 image/svg+xml 887964
+/images/logo.svg -> 200 image/svg+xml 6169
+/images/og-image.png -> 200 image/png 275572
+/images/products/imac.png -> 200 image/png 9121
+/images/products/ipad.png -> 200 image/png 5772
+/images/products/iphone.png -> 200 image/png 7696
+/images/products/watch.png -> 200 image/png 8402
+/images/users/bonnie-green-2x.png -> 200 image/png 155694
+/images/users/bonnie-green.png -> 200 image/png 58076
+/images/users/helene-engels.png -> 200 image/png 37094
+/images/users/jese-leos.png -> 200 image/png 41382
+/images/users/joseph-mcfall.png -> 200 image/png 46469
+/images/users/lana-byrd.png -> 200 image/png 44175
+/images/users/leslie-livingston.png -> 200 image/png 41327
+/images/users/michael-gough.png -> 200 image/png 42559
+/images/users/neil-sims.png -> 200 image/png 53971
+/images/users/robert-brown.png -> 200 image/png 39502
+/images/users/roberta-casas.png -> 200 image/png 42346
+/images/users/thomas-lean.png -> 200 image/png 44641
+/layouts/sidebar/ -> 200 text/html 250979
+/layouts/stacked/ -> 200 text/html 220667
+/pages/404/ -> 200 text/html 4226
+/pages/500/ -> 200 text/html 4248
+/pages/maintenance/ -> 200 text/html 4402
+/pages/pricing/ -> 200 text/html 56470
+/playground/sidebar/ -> 200 text/html 71783
+/playground/stacked/ -> 200 text/html 41489
+/safari-pinned-tab.svg -> 200 image/svg+xml 3002
+/settings/ -> 200 text/html 117737
+/site.webmanifest -> 200 application/manifest+json 442
+## summary
+# status count:      81 200
+# status count:      16 308
+# status count:       9 404

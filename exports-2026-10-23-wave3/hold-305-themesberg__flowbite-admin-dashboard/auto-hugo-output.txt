@@ -1,0 +1,16 @@
+# auto plan's build command on clean HEAD: hugo --gc --minify (hugo v0.153.2); where it writes and what URLs it emits
+$ hugo --gc --minify
+exit=0
+$ ls -d public _gh_pages
+ls: cannot access 'public': No such file or directory
+_gh_pages
+$ grep -oE "(src|href)=[^ >]+" _gh_pages/index.html | grep -E "app\.|vercel" | sort | uniq -c | head
+      3 href=https://flowbite-admin-dashboard.vercel.app/
+      2 src=https://flowbite-admin-dashboard.vercel.app/images/users/bonnie-green.png
+      2 src=https://flowbite-admin-dashboard.vercel.app/images/products/imac.png
+      2 href=https://flowbite-admin-dashboard.vercel.app/settings/
+      1 src=https://flowbite-admin-dashboard.vercel.app/images/users/thomas-lean.png
+      1 src=https://flowbite-admin-dashboard.vercel.app/images/users/robert-brown.png
+      1 src=https://flowbite-admin-dashboard.vercel.app/images/users/neil-sims.png
+      1 src=https://flowbite-admin-dashboard.vercel.app/images/users/michael-gough.png
+# total vercel.app refs in _gh_pages/index.html: 47

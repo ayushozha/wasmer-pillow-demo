@@ -1,0 +1,13 @@
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/authentication/sign-in/	text/html	0
+--	title	/authentication/sign-in/	(none)	
+404	page	/crud/users/	text/html	0
+--	title	/crud/users/	(none)	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+SUMMARY pages=4 refs_checked=0 failures=4
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/authentication/sign-in/	text/html	0
+FAIL	404	page	/crud/users/	text/html	0
+FAIL	404	page	/does-not-exist	text/html	0

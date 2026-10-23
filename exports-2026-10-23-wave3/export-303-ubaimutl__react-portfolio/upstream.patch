@@ -1,0 +1,57 @@
+diff --git a/Anybuild b/Anybuild
+new file mode 100644
+index 0000000..cd0a84c
+--- /dev/null
++++ b/Anybuild
+@@ -0,0 +1,34 @@
++# Wasmer serves the site from the domain root, so build with Vite's --base=/ instead of
++# the GitHub Pages base in vite.config.js (npm run deploy is unchanged).
++# /about, /portfolio and /contact are client-side routes: serve the app shell for exactly
++# those paths so they also work when opened directly. Other unknown paths stay 404.
++load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
++
++config = nodestatic_config(
++    schema = 1,
++    static_redirects_config = """
++[[advanced.rewrites]]
++source = "/about"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/portfolio"
++destination = "/index.html"
++
++[[advanced.rewrites]]
++source = "/contact"
++destination = "/index.html"
++""",
++    sws_version = "2.38.0",
++    static_dir = "dist",
++    node_package_manager = "npm",
++    node_framework = "vite",
++    node_server = "node",
++    node_build_command = "npm run build -- --base=/",
++    node_version = "24",
++    npm_version = "11",
++)
++
++build = nodestatic_build(config)
++
++nodestatic_serve(config, build, name = "react-portfolio")
+diff --git a/README.md b/README.md
+index 69e7bd6..15da9c9 100644
+--- a/README.md
++++ b/README.md
+@@ -40,6 +40,12 @@ Check the code
+     
+     npm run lint
+ 
++### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ubaimutl%2Freact-portfolio)
++
++The included `Anybuild` file tells Wasmer to run `npm install` and `npm run build -- --base=/`, so the site is served from the domain root, and to serve the `dist` folder as static files, including the app page for `/about`, `/portfolio` and `/contact` so those links also work when opened directly. `vite.config.js` and `npm run deploy` (GitHub Pages) are unchanged. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct them if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account. To customize the portfolio, fork the repository, edit `src/content_option.js` (including your EmailJS IDs for the contact form) and import your fork instead.
++
+ ### More
+ 
+ Modify pages content in `src/content_option.js`.

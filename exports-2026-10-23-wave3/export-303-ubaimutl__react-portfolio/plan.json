@@ -1,0 +1,26 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build -- --base=/",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080"
+        },
+        "static_dir": "dist",
+        "static_redirects_config": "\n[[advanced.rewrites]]\nsource = \"/about\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/portfolio\"\ndestination = \"/index.html\"\n\n[[advanced.rewrites]]\nsource = \"/contact\"\ndestination = \"/index.html\"\n",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "npm",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "npm run build -- --base=/",
+        "npm_version": "11",
+        "node_remove_native_binaries": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "react-portfolio"
+    },
+    "services": []
+}

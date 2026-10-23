@@ -1,0 +1,35 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 81
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 936
+/dashboard -> 404 text/html; charset=utf-8 106
+/users -> 404 text/html; charset=utf-8 106
+/projects -> 404 text/html; charset=utf-8 106
+/payments/payment-methods -> 404 text/html; charset=utf-8 106
+/payments/billing -> 404 text/html; charset=utf-8 106
+/payments/pricing-plans -> 404 text/html; charset=utf-8 106
+/faq -> 404 text/html; charset=utf-8 106
+/settings -> 404 text/html; charset=utf-8 106
+/preferences -> 404 text/html; charset=utf-8 106
+/auth/login -> 404 text/html; charset=utf-8 106
+/auth/signup -> 404 text/html; charset=utf-8 106
+/auth/recover-password -> 404 text/html; charset=utf-8 106
+/404 -> 404 text/html; charset=utf-8 106
+/index.html -> 200 text/html 936
+/does-not-exist -> 404 text/html; charset=utf-8 106
+/_redirects -> 404 text/html; charset=utf-8 106
+/package.json -> 404 text/html; charset=utf-8 106
+/users/?page=1&pageSize=10 -> 404 text/html; charset=utf-8 106
+/undefined/users -> 404 text/html; charset=utf-8 106
+## trailing-slash / .html variants of pages
+## assets referenced from all 1 built HTML files and url() in 5 built CSS files (7 unique same-origin refs)
+/assets/index-BHSJyp5p.js -> 200 text/javascript 627613
+/assets/index-DQBQ0Uvm.css -> 200 text/css 205321
+/assets/vuestic-icons-CQHfKOUV.ttf -> 200 font/ttf 5520
+/assets/vuestic-icons-W_0rSzTi.eot -> 200 application/vnd.ms-fontobject 5688
+/assets/vuestic-icons-nyRUkKny.svg -> 200 image/svg+xml 32308
+/assets/vuestic-icons.eot -> 404 text/html; charset=utf-8 106
+/favicon.ico -> 200 image/x-icon 15406
+## summary
+# status count:       8 200
+# status count:      19 404

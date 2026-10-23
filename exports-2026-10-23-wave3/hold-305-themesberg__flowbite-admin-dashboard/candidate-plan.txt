@@ -1,0 +1,5 @@
+  Using static Node.js provider declared in Anybuild
+    Server: Node.js
+    Package manager: npm
+    Output directory: public
+Plan saved to $S/replay/v305/plan.json

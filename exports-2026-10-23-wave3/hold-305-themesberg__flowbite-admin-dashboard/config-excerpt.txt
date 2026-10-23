@@ -1,0 +1,28 @@
+# excerpts at HEAD 229df7ff25808ab2bbda65f03f2397a05f7b4288
+$ git show HEAD:config.yml | grep -n "baseURL\|canonify\|publishDir"
+3:# baseURL:                "http://localhost:1313"
+4:baseURL:                "https://flowbite-admin-dashboard.vercel.app/"
+6:canonifyURLs: true
+31:publishDir:             "_gh_pages"
+$ git show HEAD:package.json | grep -n "build\|hugo"
+29:    "start:dev:hugo": "hugo server -D --watch",
+31:    "build": "NODE_ENV=production && run-s build:webpack build:hugo",
+32:    "build:hugo": "hugo --destination=./public",
+33:    "build:webpack": "webpack --mode=production",
+34:    "build:styles": "npx tailwindcss -i ./src/style.css -o ./dist/css/flowbite.css"
+$ git grep -n "hugo" HEAD -- package-lock.json | wc -l
+0
+$ git grep -n "Site.BaseURL" HEAD -- layouts
+HEAD:layouts/partials/scripts.html:3:<script src="{{ .Site.BaseURL }}/app.bundle.js"></script>
+HEAD:layouts/partials/stylesheet.html:4:<link rel="stylesheet" href="{{ .Site.BaseURL }}/app.css">
+$ git show HEAD:.gitignore | grep -n "static\|public\|_gh_pages"
+4:_gh_pages/
+5:static/images/.DS_Store
+6:static/*.js
+7:static/*.css
+8:static/*.map
+16:public/
+$ git ls-files content | wc -l
+17
+$ git log --format="%cI %s" | grep -ci "merge pull request"
+2025-03-20T12:24:07+02:00 Merge pull request #20 from themesberg/v4-update

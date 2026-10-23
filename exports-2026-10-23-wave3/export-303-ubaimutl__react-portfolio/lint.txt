@@ -1,0 +1,6 @@
+$ npm run lint   # README "Check the code"; run in the replay work tree (patched source + installed deps)
+
+> react-portfolio@0.1.0 lint
+> eslint .
+
+exit=0

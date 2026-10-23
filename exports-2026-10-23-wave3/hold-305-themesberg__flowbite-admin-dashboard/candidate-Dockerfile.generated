@@ -1,0 +1,43 @@
+# syntax=docker/dockerfile:1.7-labs
+FROM debian:trixie-slim AS build
+
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
+    rm -f /etc/apt/apt.conf.d/docker-clean \
+    && apt-get update \
+    && apt-get -y --no-install-recommends install \
+        build-essential gcc make autoconf libtool bison \
+        dpkg-dev pkg-config re2c locate \
+        libmariadb-dev libmariadb-dev-compat libpq-dev libsqlite3-dev \
+        libvips-dev default-libmysqlclient-dev libmagickwand-dev \
+        libicu-dev libxml2-dev libxslt-dev libyaml-dev \
+        sudo curl ca-certificates unzip git
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ENV MISE_DATA_DIR="/mise"
+ENV MISE_CONFIG_DIR="/mise"
+ENV MISE_CACHE_DIR="/mise/cache"
+ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
+ENV PATH="/mise/shims:$PATH"
+
+RUN curl https://mise.run | sh
+RUN mkdir -p /opt/static_app
+RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "ubi:gohugoio/hugo[matching=extended]@0.153.2"
+RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "node@24"
+RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "npm@11"
+WORKDIR /opt/temp
+COPY package-lock.json package-lock.json
+ENV CI=true NPM_CONFIG_FUND=false
+RUN \
+  --mount=type=bind,source=package.json,target=package.json \
+  npm install
+COPY \
+  --exclude=node_modules \
+  --exclude=.git \
+  --exclude=package-lock.json \
+  . .
+RUN npm run build:webpack && hugo --destination=./public --baseURL=/
+RUN cp -R public/. /opt/static_app/
+
+FROM scratch
+COPY --from=build /opt/static_app /opt/static_app

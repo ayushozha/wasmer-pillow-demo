@@ -1,0 +1,20 @@
+# DIAGNOSTIC ONLY (not proposed): webpack in development mode (no CSS minimizer) + the planned Hugo step, in the replay work tree
+$ npx webpack --mode=development
+exit=0
+webpack 5.65.0 compiled successfully in 1569 ms
+$ hugo --destination=./public --baseURL=/   (hugo v0.153.2)
+
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  19 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 295 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 131 ms
+exit=0

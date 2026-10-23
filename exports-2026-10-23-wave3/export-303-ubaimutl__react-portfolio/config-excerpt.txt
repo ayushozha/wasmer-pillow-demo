@@ -1,0 +1,39 @@
+# excerpts at HEAD ceb60ff0b3786a4be66841978906648d21808830
+$ git show HEAD:vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  base: "/react-portfolio/",
+  plugins: [react()],
+});
+$ git grep -n "homepage\|basename\|BASE_URL\|import.meta.env\|process.env" HEAD -- src package.json vite.config.js
+HEAD:src/app/App.jsx:18:  const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+HEAD:src/app/App.jsx:21:    <Router basename={basename}>
+$ git grep -n "YOUR_\|emailjs" HEAD -- src
+HEAD:src/content_option.js:139:    YOUR_EMAIL: "name@domain.com",
+HEAD:src/content_option.js:140:    YOUR_FONE: "(555)123-4567",
+HEAD:src/content_option.js:142:    // creat an emailjs.com account 
+HEAD:src/content_option.js:143:    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+HEAD:src/content_option.js:144:    YOUR_SERVICE_ID: "service_id",
+HEAD:src/content_option.js:145:    YOUR_TEMPLATE_ID: "template_id",
+HEAD:src/content_option.js:146:    YOUR_USER_ID: "user_id",
+HEAD:src/pages/contact/index.jsx:2:import emailjs from "@emailjs/browser";
+HEAD:src/pages/contact/index.jsx:27:      to_name: contactConfig.YOUR_EMAIL,
+HEAD:src/pages/contact/index.jsx:31:    emailjs
+HEAD:src/pages/contact/index.jsx:33:        contactConfig.YOUR_SERVICE_ID,
+HEAD:src/pages/contact/index.jsx:34:        contactConfig.YOUR_TEMPLATE_ID,
+HEAD:src/pages/contact/index.jsx:36:        contactConfig.YOUR_USER_ID
+HEAD:src/pages/contact/index.jsx:99:              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+HEAD:src/pages/contact/index.jsx:100:                {contactConfig.YOUR_EMAIL}
+HEAD:src/pages/contact/index.jsx:104:              {Object.hasOwn(contactConfig, "YOUR_FONE") ? (
+HEAD:src/pages/contact/index.jsx:106:                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+$ git grep -n "path=" HEAD -- src/app/routes.jsx
+HEAD:src/app/routes.jsx:14:      <Route path="/" element={<Home />} />
+HEAD:src/app/routes.jsx:15:      <Route path="/about" element={<About />} />
+HEAD:src/app/routes.jsx:16:      <Route path="/portfolio" element={<Portfolio />} />
+HEAD:src/app/routes.jsx:17:      <Route path="/contact" element={<ContactUs />} />
+HEAD:src/app/routes.jsx:18:      <Route path="*" element={<Home />} />
+$ git show HEAD:package.json | grep -n deploy
+31:        "predeploy": "npm run build && cp dist/index.html dist/404.html",
+32:        "deploy": "gh-pages -d dist"

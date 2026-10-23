@@ -1,0 +1,101 @@
+# policy files at HEAD ba93fc3f1c8531102bce7492314eb77653b32691 (2026-10-23)
+$ git ls-files | grep -iE "contrib|agents.md|claude.md|cursorrules|copilot-instructions|pull_request_template|PULL_REQUEST|code_of_conduct|cla|security.md|anybuild|wasmer"
+.github/CONTRIBUTING.md
+.github/PULL_REQUEST_TEMPLATE.md
+CODE_OF_CONDUCT.md
+(end of list)
+$ git ls-files .github
+.github/COMMIT_CONVENTION.md
+.github/CONTRIBUTING.md
+.github/ISSUE_TEMPLATE.md
+.github/PULL_REQUEST_TEMPLATE.md
+.github/assets/sponsors.png
+.github/assets/vuestic-admin-logo.png
+.github/dependabot.yml
+.github/workflows/playwright.yml
+(end of list)
+$ git grep -niE "\bAI\b|LLM|chatgpt|copilot|contributor license|\bCLA\b|issue first|open an issue (first|before)|no (pull requests|PRs)" -- README* CONTRIBUTING* .github docs/CONTRIBUTING*
+Binary file .github/assets/sponsors.png matches
+(end of matches)
+--- .github/workflows/playwright.yml (on:/jobs names)
+1:name: Playwright Tests
+3:on:
+4:  workflow_dispatch:
+22:  test:
+31:        uses: actions/checkout@v4
+37:        uses: actions/setup-node@v4
+48:        uses: actions/cache@v4
+59:        uses: actions/cache@v4
+81:      - uses: actions/upload-artifact@v4
+89:        uses: nwtgck/actions-netlify@v3.0
+$ git log -5 --format="%cI %h %s"
+2025-09-01T13:13:33+03:00 ba93fc3 ci: preparing e2e and CI (#1081)
+2025-08-22T14:49:51+03:00 eea575f chore: update compiler (#1082)
+2025-01-05T06:28:28+02:00 fa573e2 feat: implement files uploading integration (#1065)
+2025-01-05T06:28:28+02:00 15ab235 chore(deps): bump express from 4.19.2 to 4.21.1 (#1057)
+2025-01-05T06:28:28+02:00 093d6df chore(deps): bump express from 4.18.2 to 4.19.2 (#1031)
+
+## excerpts at HEAD
+$ git show HEAD:.github/CONTRIBUTING.md | grep -n "develop\|master\|yarn\|screenshot"
+9:- The `master` branch is just a snapshot of the latest stable release. **Do not submit PRs against the `master` branch.**
+11:  - Checkout from upstream `develop`.
+13:  - When you're ready to show results - create PR against upstream `develop` and add a developer for review. You can ping said developer to speed things up ;).
+17:  - If your PR fully resolves existing issue, add `(fix #xxxx[,#xxx])` (#xxxx is the issue id) so that github will close the issue once it's up on `master`. You have to add that to the body of PR, won't work in header :).
+19:  - If you're working on visual changes - provide before/after screenshot. That speeds up review immensely.
+24:  - `master` - stable snapshot from `develop`. Releases and hotfixes only. Do not submit PR's to `master`!.
+25:  - `develop` - main development branch.
+34:- For small issues you may push to `develop` branch directly while adding (`fix #123`) to commit message.
+38:- We use [yarn](https://yarnpkg.com/lang/en/) for package management.
+44:- Update package versions to newest ones. Update lock files (for both `npm` and `yarn`)
+54:$ yarn dev
+57:$ yarn build
+$ git show HEAD:.github/COMMIT_CONVENTION.md | grep -n "regex" -A3
+10:;/^(revert: )?(feat|fix|docs|style|refactor|test|ci|chore)(\(.+\))?: .{1,70}/
+$ git show HEAD:netlify.toml
+[build]
+publish = "dist"
+
+# Default build command.
+command = "yarn build:ci"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+$ git show HEAD:.yarnrc.yml
+nodeLinker: node-modules
+$ git show HEAD:package.json | grep -n "\"build\|packageManager\|workspaces" -A0
+6:  "workspaces": [
+12:    "build": "npm run lint && vue-tsc --noEmit && vite build",
+13:    "build:ci": "vite build",
+20:    "build-storybook": "storybook build",
+83:  "packageManager": "yarn@4.9.2"
+$ git show HEAD:src/router/index.ts | grep -n "path:\|createWebHistory"
+1:import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+10:    path: '/:pathMatch(.*)*',
+15:    path: '/',
+21:        path: 'dashboard',
+26:        path: 'settings',
+31:        path: 'preferences',
+36:        path: 'users',
+41:        path: 'projects',
+46:        path: '/payments',
+51:            path: 'payment-methods',
+56:            path: 'billing',
+61:            path: 'pricing-plans',
+68:        path: '/faq',
+74:    path: '/auth',
+79:        path: 'login',
+84:        path: 'signup',
+89:        path: 'recover-password',
+94:        path: 'recover-password-email',
+98:        path: '',
+105:    path: '/404',
+111:  history: createWebHistory(import.meta.env.BASE_URL),
+$ git show HEAD:src/services/api.ts | head -3
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
+
+export default {
+$ git ls-remote origin refs/heads/develop refs/heads/master
+ba93fc3f1c8531102bce7492314eb77653b32691	refs/heads/develop
+9c5b44f3674d4c3e7ad01cc043d5331cee953c49	refs/heads/master

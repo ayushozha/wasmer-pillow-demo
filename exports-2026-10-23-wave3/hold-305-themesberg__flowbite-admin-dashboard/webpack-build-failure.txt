@@ -1,0 +1,23 @@
+# upstream production webpack build at HEAD 229df7ff25808ab2bbda65f03f2397a05f7b4288, deps from the committed package-lock.json (npm install)
+$ npm run build:webpack   # node v24.22.1
+exit=1
+DataCloneError: function destructLexErrorInfo() {
+$ npm run build:webpack   # node v22.22.0
+exit=1
+DataCloneError: function destructLexErrorInfo() {
+$ npm run build:webpack   # node v20.20.0
+exit=1
+Error [ERR_UNHANDLED_ERROR]: Unhandled error. ({})
+  code: 'ERR_UNHANDLED_ERROR',
+
+# same build with the CSS minimizer run in-process (scripts/wp-diag.cjs, parallel:false) to surface the error
+ERROR in app.css
+app.css from Css Minimizer plugin
+JisonLexerError: Lexical error on line 1: Unrecognized text.
+
+  Erroneous area:
+1: infinity * 1px
+^..^
+$ versions
+  "version": "4.0.0",	  "version": "3.4.1",	    "version": "5.0.12",	  "version": "8.0.0",
+  (tailwindcss, css-minimizer-webpack-plugin, cssnano, postcss-calc); yarn.lock pins the same versions

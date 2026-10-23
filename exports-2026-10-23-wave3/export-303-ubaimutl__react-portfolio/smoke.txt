@@ -1,0 +1,17 @@
+200	page	/	text/html	895
+--	title	/	React Portfolio	
+200	page	/about	text/html	895
+--	title	/about	React Portfolio	
+200	page	/portfolio	text/html	895
+--	title	/portfolio	React Portfolio	
+200	page	/contact	text/html	895
+--	title	/contact	React Portfolio	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+404	page	/react-portfolio/	text/html	0
+--	title	/react-portfolio/	(none)	
+200	ref	/assets/index-Dox3xuXz.js	text/javascript	296346
+200	ref	/assets/index-h9hvG1Vc.css	text/css	241429
+SUMMARY pages=6 refs_checked=2 failures=2
+FAIL	404	page	/does-not-exist	text/html	0
+FAIL	404	page	/react-portfolio/	text/html	0

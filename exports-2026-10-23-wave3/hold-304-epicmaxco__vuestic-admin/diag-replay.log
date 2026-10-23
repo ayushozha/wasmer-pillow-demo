@@ -1,0 +1,492 @@
+# replay of v304y4  source=$S/val2-src/va304-diag  upstream HEAD=ba93fc3f1c8531102bce7492314eb77653b32691
+# local diff vs HEAD: D  _redirects;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/v304y4/plan.json
+# provider=node-static install='yarn install' build='yarn run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=yarn@ inputs='package.json e2e/package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ yarn --version
+4.9.2
+exit=0
+
+$ yarn install
+➤ YN0000: · Yarn 4.9.2
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 0s 276ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ vue is listed by your project with version 3.5.8 (pdd18a), which doesn't satisfy what pinia and other dependencies request (^3.5.11).
+➤ YN0002: │ vuestic-admin@workspace:. doesn't provide @vue/compiler-core (p71257), requested by @vuestic/compiler.
+➤ YN0002: │ vuestic-admin@workspace:. doesn't provide @vue/compiler-sfc (p2db76), requested by @vuestic/compiler.
+➤ YN0002: │ vuestic-admin@workspace:. doesn't provide react (pee198), requested by @storybook/addon-essentials and other dependencies.
+➤ YN0002: │ vuestic-admin@workspace:. doesn't provide react-dom (pa986d), requested by @storybook/addon-essentials and other dependencies.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 1097 packages were added to the project (+ 344.24 MiB).
+➤ YN0000: └ Completed in 39s 894ms
+➤ YN0000: ┌ Link step
+➤ YN0007: │ esbuild@npm:0.21.5 must be built because it never has been before or the last one failed
+➤ YN0007: │ @parcel/watcher@npm:2.5.1 must be built because it never has been before or the last one failed
+➤ YN0007: │ vue-demi@npm:0.14.10 [a9942] must be built because it never has been before or the last one failed
+➤ YN0007: │ esbuild@npm:0.18.20 must be built because it never has been before or the last one failed
+➤ YN0000: └ Completed in 11s 875ms
+➤ YN0000: · Done with warnings in 52s 254ms
+exit=0
+
+$ yarn run build
+
+> vuestic-admin@3.1.0 prelint
+> npm run format
+
+
+> vuestic-admin@3.1.0 format
+> prettier --write .
+
+.github/COMMIT_CONVENTION.md 124ms (unchanged)
+.github/CONTRIBUTING.md 18ms (unchanged)
+.github/ISSUE_TEMPLATE.md 8ms (unchanged)
+.github/PULL_REQUEST_TEMPLATE.md 18ms (unchanged)
+.storybook/main.ts 71ms (unchanged)
+.storybook/preview.ts 22ms (unchanged)
+.storybook/storybook-main.scss 28ms (unchanged)
+.vscode/extensions.json 3ms (unchanged)
+CODE_OF_CONDUCT.md 30ms (unchanged)
+docs/pre-production.md 9ms (unchanged)
+e2e/package.json 2ms (unchanged)
+e2e/playwright.config.ts 20ms (unchanged)
+e2e/README.MD 12ms (unchanged)
+e2e/stubs/index.ts 4ms (unchanged)
+e2e/stubs/projects.ts 7ms (unchanged)
+e2e/stubs/users.ts 97ms (unchanged)
+e2e/tests/vuestic-admin.spec.ts 29ms (unchanged)
+e2e/utils/index.ts 23ms (unchanged)
+index.html 25ms (unchanged)
+package.json 3ms (unchanged)
+postcss.config.js 4ms (unchanged)
+README.ja-JP.md 26ms (unchanged)
+README.md 16ms (unchanged)
+README.zh-CN.md 15ms (unchanged)
+src/App.vue 8ms (unchanged)
+src/components/app-layout-navigation/AppLayoutNavigation.vue 34ms (unchanged)
+src/components/icons/VaIconCleanCode.vue 6ms (unchanged)
+src/components/icons/VaIconColor.vue 10ms (unchanged)
+src/components/icons/VaIconDiscord.vue 5ms (unchanged)
+src/components/icons/VaIconFaster.vue 5ms (unchanged)
+src/components/icons/VaIconFree.vue 5ms (unchanged)
+src/components/icons/VaIconFresh.vue 6ms (unchanged)
+src/components/icons/VaIconGitHub.vue 2ms (unchanged)
+src/components/icons/VaIconHideSidebar.vue 2ms (unchanged)
+src/components/icons/VaIconMenu.vue 12ms (unchanged)
+src/components/icons/VaIconMenuCollapsed.vue 7ms (unchanged)
+src/components/icons/VaIconMessage.vue 6ms (unchanged)
+src/components/icons/VaIconNotification.vue 4ms (unchanged)
+src/components/icons/VaIconResponsive.vue 5ms (unchanged)
+src/components/icons/VaIconRich.vue 6ms (unchanged)
+src/components/icons/VaIconSlower.vue 10ms (unchanged)
+src/components/icons/VaIconVue.vue 5ms (unchanged)
+src/components/icons/VaIconVuestic.vue 20ms (unchanged)
+src/components/navbar/AppNavbar.vue 19ms (unchanged)
+src/components/navbar/components/AppNavbarActions.vue 21ms (unchanged)
+src/components/navbar/components/dropdowns/NotificationDropdown.vue 52ms (unchanged)
+src/components/navbar/components/dropdowns/ProfileDropdown.vue 37ms (unchanged)
+src/components/navbar/components/GitHubButton.vue 6ms (unchanged)
+src/components/NotFoundImage.vue 6ms (unchanged)
+src/components/sidebar/AppSidebar.vue 60ms (unchanged)
+src/components/sidebar/NavigationRoutes.ts 9ms (unchanged)
+src/components/typography/Typography.stories.ts 5ms (unchanged)
+src/components/typography/Typography.vue 41ms (unchanged)
+src/components/va-charts/chart-types/BarChart.vue 9ms (unchanged)
+src/components/va-charts/chart-types/BubbleChart.vue 10ms (unchanged)
+src/components/va-charts/chart-types/DoughnutChart.vue 10ms (unchanged)
+src/components/va-charts/chart-types/HorizontalBarChart.vue 12ms (unchanged)
+src/components/va-charts/chart-types/LineChart.vue 21ms (unchanged)
+src/components/va-charts/chart-types/Map.vue 21ms (unchanged)
+src/components/va-charts/chart-types/PieChart.vue 6ms (unchanged)
+src/components/va-charts/external-tooltip.ts 22ms (unchanged)
+src/components/va-charts/VaChart.vue 13ms (unchanged)
+src/components/va-charts/vaChartConfigs.js 10ms (unchanged)
+src/components/va-medium-editor/_variables.scss 2ms (unchanged)
+src/components/va-medium-editor/VaMediumEditor.vue 38ms (unchanged)
+src/components/va-timeline-item.vue 20ms (unchanged)
+src/components/VuesticLogo.stories.ts 7ms (unchanged)
+src/components/VuesticLogo.vue 14ms (unchanged)
+src/data/charts/barChartData.ts 2ms (unchanged)
+src/data/charts/bubbleChartData.ts 9ms (unchanged)
+src/data/charts/composables/useChartColors.ts 6ms (unchanged)
+src/data/charts/composables/useChartData.ts 5ms (unchanged)
+src/data/charts/doughnutChartData.ts 2ms (unchanged)
+src/data/charts/horizontalBarChartData.ts 4ms (unchanged)
+src/data/charts/index.ts 3ms (unchanged)
+src/data/charts/lineChartData.ts 2ms (unchanged)
+src/data/charts/pieChartData.ts 3ms (unchanged)
+src/data/charts/revenueChartData.ts 5ms (unchanged)
+src/data/CountriesList.ts 7ms (unchanged)
+src/data/geo.json 1607ms (unchanged)
+src/data/pages/projects-db.json 7ms (unchanged)
+src/data/pages/projects.ts 12ms (unchanged)
+src/data/pages/users-db.json 7ms (unchanged)
+src/data/pages/users.ts 12ms (unchanged)
+src/data/types.ts 2ms (unchanged)
+src/data/users.json 8ms (unchanged)
+src/env.d.ts 3ms (unchanged)
+src/i18n/index.ts 5ms (unchanged)
+src/i18n/locales/br.json 5ms (unchanged)
+src/i18n/locales/cn.json 5ms (unchanged)
+src/i18n/locales/es.json 4ms (unchanged)
+src/i18n/locales/gb.json 5ms (unchanged)
+src/i18n/locales/ir.json 5ms (unchanged)
+src/layouts/AppLayout.vue 16ms (unchanged)
+src/layouts/AuthLayout.vue 6ms (unchanged)
+src/layouts/RouterBypass.vue 1ms (unchanged)
+src/main.ts 3ms (unchanged)
+src/pages/404.vue 4ms (unchanged)
+src/pages/admin/dashboard/cards/MonthlyEarnings.vue 6ms (unchanged)
+src/pages/admin/dashboard/cards/ProjectTable.vue 16ms (unchanged)
+src/pages/admin/dashboard/cards/RegionRevenue.vue 11ms (unchanged)
+src/pages/admin/dashboard/cards/RevenueByLocationMap.vue 9ms (unchanged)
+src/pages/admin/dashboard/cards/RevenueReport.vue 12ms (unchanged)
+src/pages/admin/dashboard/cards/RevenueReportChart.vue 11ms (unchanged)
+src/pages/admin/dashboard/cards/Timeline.vue 5ms (unchanged)
+src/pages/admin/dashboard/cards/YearlyBreakup.vue 8ms (unchanged)
+src/pages/admin/dashboard/Dashboard.vue 4ms (unchanged)
+src/pages/admin/dashboard/DataSection.vue 10ms (unchanged)
+src/pages/admin/dashboard/DataSectionItem.vue 8ms (unchanged)
+src/pages/admin/pages/404PagesPage.vue 8ms (unchanged)
+src/pages/auth/CheckTheEmail.vue 3ms (unchanged)
+src/pages/auth/Login.vue 16ms (unchanged)
+src/pages/auth/RecoverPassword.vue 7ms (unchanged)
+src/pages/auth/Signup.vue 17ms (unchanged)
+src/pages/billing/BillingPage.vue 5ms (unchanged)
+src/pages/billing/Invoices.vue 18ms (unchanged)
+src/pages/billing/MembeshipTier.vue 18ms (unchanged)
+src/pages/billing/modals/ChangeYourPaymentPlan.vue 11ms (unchanged)
+src/pages/billing/PaymentInfo.vue 14ms (unchanged)
+src/pages/billing/types.ts 0ms (unchanged)
+src/pages/faq/data/navigationLinks.json 2ms (unchanged)
+src/pages/faq/data/popularCategories.json 2ms (unchanged)
+src/pages/faq/FaqPage.vue 2ms (unchanged)
+src/pages/faq/widgets/Categories.vue 10ms (unchanged)
+src/pages/faq/widgets/Navigation.vue 8ms (unchanged)
+src/pages/faq/widgets/Questions.vue 10ms (unchanged)
+src/pages/faq/widgets/RequestDemo.vue 9ms (unchanged)
+src/pages/payments/payment-system/PaymentSystem.stories.ts 2ms (unchanged)
+src/pages/payments/payment-system/PaymentSystem.vue 4ms (unchanged)
+src/pages/payments/PaymentsPage.vue 4ms (unchanged)
+src/pages/payments/types.ts 3ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressCreateModal.stories.ts 3ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressCreateModal.vue 7ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressEdit.stories.ts 3ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressEdit.vue 15ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressList.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressList.vue 14ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressListItem.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressListItem.vue 8ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.vue 6ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardCreateModal.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardCreateModal.vue 7ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardEdit.stories.ts 3ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardEdit.vue 14ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardList.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardList.vue 14ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardListItem.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardListItem.vue 9ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.stories.ts 2ms (unchanged)
+src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.vue 7ms (unchanged)
+src/pages/preferences/modals/EditNameModal.vue 10ms (unchanged)
+src/pages/preferences/modals/ResetPasswordModal.vue 16ms (unchanged)
+src/pages/preferences/preferences-header/PreferencesHeader.vue 5ms (unchanged)
+src/pages/preferences/Preferences.vue 7ms (unchanged)
+src/pages/preferences/settings/Settings.vue 15ms (unchanged)
+src/pages/preferences/styles.ts 1ms (unchanged)
+src/pages/pricing-plans/options.ts 4ms (unchanged)
+src/pages/pricing-plans/PricingPlans.vue 24ms (unchanged)
+src/pages/pricing-plans/styles.ts 1ms (unchanged)
+src/pages/projects/components/ProjectStatusBadge.vue 5ms (unchanged)
+src/pages/projects/composables/useProjects.ts 9ms (unchanged)
+src/pages/projects/composables/useProjectStatusColor.ts 1ms (unchanged)
+src/pages/projects/composables/useProjectUsers.ts 7ms (unchanged)
+src/pages/projects/ProjectsPage.vue 35ms (unchanged)
+src/pages/projects/types.ts 4ms (unchanged)
+src/pages/projects/widgets/EditProjectForm.vue 50ms (unchanged)
+src/pages/projects/widgets/ProjectCards.vue 21ms (unchanged)
+src/pages/projects/widgets/ProjectsTable.vue 35ms (unchanged)
+src/pages/settings/language-switcher/LanguageSwitcher.vue 8ms (unchanged)
+src/pages/settings/notifications/Notifications.vue 6ms (unchanged)
+src/pages/settings/Settings.vue 4ms (unchanged)
+src/pages/settings/theme-switcher/ThemeSwitcher.vue 5ms (unchanged)
+src/pages/users/composables/useUsers.ts 12ms (unchanged)
+src/pages/users/types.ts 3ms (unchanged)
+src/pages/users/UsersPage.vue 20ms (unchanged)
+src/pages/users/widgets/EditUserForm.vue 23ms (unchanged)
+src/pages/users/widgets/UserAvatar.vue 7ms (unchanged)
+src/pages/users/widgets/UsersTable.vue 30ms (unchanged)
+src/router/index.ts 7ms (unchanged)
+src/scss/icon-fonts/index.scss 3ms (unchanged)
+src/scss/icon-fonts/vuestic-icons/vuestic-icons.scss 5ms (unchanged)
+src/scss/main.scss 3ms (unchanged)
+src/scss/tailwind.scss 1ms (unchanged)
+src/scss/vuestic.scss 4ms (unchanged)
+src/services/api.ts 3ms (unchanged)
+src/services/toCSV.ts 4ms (unchanged)
+src/services/utils.ts 2ms (unchanged)
+src/services/vuestic-ui/global-config.ts 3ms (unchanged)
+src/services/vuestic-ui/icons-config/aliases.ts 4ms (unchanged)
+src/services/vuestic-ui/icons-config/icons-config.ts 3ms (unchanged)
+src/services/vuestic-ui/themes.ts 1ms (unchanged)
+src/stores/billing-addresses.ts 6ms (unchanged)
+src/stores/global-store.ts 2ms (unchanged)
+src/stores/index.ts 1ms (unchanged)
+src/stores/notifications.ts 3ms (unchanged)
+src/stores/payment-cards.ts 5ms (unchanged)
+src/stores/projects.ts 5ms (unchanged)
+src/stores/user-store.ts 2ms (unchanged)
+src/stores/users.ts 5ms (unchanged)
+tailwind.config.js 2ms (unchanged)
+tsconfig.json 1ms (unchanged)
+vite.config.ts 2ms (unchanged)
+
+> vuestic-admin@3.1.0 lint
+> eslint "./src/**/*.{ts,js,vue}" --fix
+
+
+  Warning:
+  You're using @vuestic/compiler. It is in active development stage.
+
+  Make sure to report any issues you encounter.
+
+  - Dev Docs: https://develop.ui.vuestic.dev/
+  - Discord:  https://discord.gg/u7fQdqQt8c
+  - Github:   https://github.com/epicmaxco/vuestic-ui
+
+2:46:43 AM [vuestic:compiler] Using vuestic:css-layers plugin, because Tailwind CSS is detected.
+2:46:43 AM [vuestic:compiler] Using vuestic:auto-import plugin.
+2:46:43 AM [vuestic:compiler] Using vuestic:config plugin.
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import 'tailwind';
+  │         ^^^^^^^^^^
+  ╵
+    src/scss/main.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import 'vuestic';
+  │         ^^^^^^^^^
+  ╵
+    src/scss/main.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import 'icon-fonts/index';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src/scss/main.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │   @import 'tailwindcss/base';
+  │           ^^^^^^^^^^^^^^^^^^
+  ╵
+    src/scss/tailwind.scss 2:11  @import
+    src/scss/main.scss 1:9       root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import 'vuestic-icons/vuestic-icons';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src/scss/icon-fonts/index.scss 3:9  @import
+    src/scss/main.scss 3:9              root stylesheet
+
+
+vuestic-icons.eot referenced in vuestic-icons.eot didn't resolve at build time, it will remain unchanged to be resolved at runtime
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+✓ 1098 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                                   0.94 kB │ gzip:   0.50 kB
+dist/assets/vuestic-icons-CQHfKOUV.ttf                                            5.52 kB
+dist/assets/vuestic-icons-W_0rSzTi.eot                                            5.69 kB
+dist/assets/request-demo-CqxYNEoR.svg                                            21.69 kB │ gzip:   7.61 kB
+dist/assets/vuestic-icons-nyRUkKny.svg                                           32.31 kB │ gzip:   8.43 kB
+dist/assets/Preferences-BeXbJK52.css                                              0.03 kB │ gzip:   0.05 kB
+dist/assets/UsersPage-CkPwzDlF.css                                                0.11 kB │ gzip:   0.11 kB
+dist/assets/ProjectsPage-D47N1_7Z.css                                             0.22 kB │ gzip:   0.17 kB
+dist/assets/Dashboard-BrzfvfOo.css                                                1.23 kB │ gzip:   0.48 kB
+dist/assets/index-DQBQ0Uvm.css                                                  205.32 kB │ gzip:  34.28 kB
+dist/assets/utils-Blx_SZM_.js                                                     0.24 kB │ gzip:   0.21 kB │ map:     0.70 kB
+dist/assets/useToast-B1ZyuOry.js                                                  0.47 kB │ gzip:   0.33 kB │ map:     2.49 kB
+dist/assets/ProjectStatusBadge.vue_vue_type_script_setup_true_lang-DIpKFHwM.js    0.49 kB │ gzip:   0.36 kB │ map:     0.80 kB
+dist/assets/PieChart-CqK8Ek_y.js                                                  0.54 kB │ gzip:   0.38 kB │ map:     0.82 kB
+dist/assets/BarChart-DO_hm30F.js                                                  0.54 kB │ gzip:   0.37 kB │ map:     0.75 kB
+dist/assets/BubbleChart-6yj97QFp.js                                               0.55 kB │ gzip:   0.38 kB │ map:     0.84 kB
+dist/assets/DoughnutChart-BKBST1fj.js                                             0.55 kB │ gzip:   0.38 kB │ map:     0.86 kB
+dist/assets/useModal-nX3-BbPk.js                                                  0.61 kB │ gzip:   0.39 kB │ map:     2.40 kB
+dist/assets/HorizontalBarChart-pINY1wvC.js                                        0.62 kB │ gzip:   0.43 kB │ map:     1.14 kB
+dist/assets/CheckTheEmail-CvzGomL2.js                                             0.73 kB │ gzip:   0.50 kB │ map:     1.23 kB
+dist/assets/payment-cards-ReSvXYAU.js                                             1.06 kB │ gzip:   0.56 kB │ map:     3.73 kB
+dist/assets/LineChart-UJn4ntdz.js                                                 1.11 kB │ gzip:   0.68 kB │ map:     3.00 kB
+dist/assets/RecoverPassword-BxtwW0Gi.js                                           1.27 kB │ gzip:   0.75 kB │ map:     1.52 kB
+dist/assets/useForm-C4b-rpHR.js                                                   1.45 kB │ gzip:   0.42 kB │ map:     4.46 kB
+dist/assets/Login-BcHw_aBo.js                                                     2.20 kB │ gzip:   1.13 kB │ map:     2.76 kB
+dist/assets/index-DK5gLmGL.js                                                     2.35 kB │ gzip:   1.19 kB │ map:    13.35 kB
+dist/assets/Signup-X_PtbxNJ.js                                                    2.71 kB │ gzip:   1.23 kB │ map:     3.93 kB
+dist/assets/Settings-Kdd35tcY.js                                                  3.53 kB │ gzip:   1.55 kB │ map:     5.63 kB
+dist/assets/PricingPlans-C-DAznfv.js                                              4.08 kB │ gzip:   1.83 kB │ map:     6.96 kB
+dist/assets/index-BKAgsVzu.js                                                     4.70 kB │ gzip:   2.17 kB │ map:   279.67 kB
+dist/assets/useProjects-BGaAoY2X.js                                               6.98 kB │ gzip:   2.49 kB │ map:    29.20 kB
+dist/assets/404-DZXhyEgI.js                                                       7.06 kB │ gzip:   3.49 kB │ map:     6.60 kB
+dist/assets/BillingPage-BC41qf5s.js                                               7.71 kB │ gzip:   2.88 kB │ map:    14.18 kB
+dist/assets/Preferences-DWeSAwhY.js                                               8.45 kB │ gzip:   2.90 kB │ map:    12.83 kB
+dist/assets/UsersPage-t9DT-0Ms.js                                                10.60 kB │ gzip:   3.91 kB │ map:    19.39 kB
+dist/assets/ProjectsPage-BHIwMvo5.js                                             10.90 kB │ gzip:   3.91 kB │ map:    18.93 kB
+dist/assets/FaqPage-D9H2kVAS.js                                                  11.36 kB │ gzip:   4.79 kB │ map:    11.84 kB
+dist/assets/PaymentsPage-1eb8sZGw.js                                             17.81 kB │ gzip:   6.24 kB │ map:    28.59 kB
+dist/assets/Dashboard-B1cnKnoT.js                                               307.23 kB │ gzip: 106.98 kB │ map: 1,211.80 kB
+dist/assets/index-BHSJyp5p.js                                                   623.06 kB │ gzip: 200.37 kB │ map: 3,086.77 kB
+dist/assets/geo-C-C7pKt0.js                                                     902.96 kB │ gzip: 275.61 kB │ map:     0.10 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 12.78s
+exit=0
+
+$ static-web-server --root=$S/replay/v304y4/static_app --log-level=info --port=3984 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	936
+--	title	/	Vuestic Admin	
+404	page	/dashboard	text/html	0
+--	title	/dashboard	(none)	
+404	page	/auth/login	text/html	0
+--	title	/auth/login	(none)	
+404	page	/users	text/html	0
+--	title	/users	(none)	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+200	ref	/favicon.ico	image/x-icon	15406
+200	ref	/assets/index-BHSJyp5p.js	text/javascript	627613
+200	ref	/assets/index-DQBQ0Uvm.css	text/css	205321
+SUMMARY pages=5 refs_checked=3 failures=4
+FAIL	404	page	/dashboard	text/html	0
+FAIL	404	page	/auth/login	text/html	0
+FAIL	404	page	/users	text/html	0
+FAIL	404	page	/does-not-exist	text/html	0
+# static_app files: 81

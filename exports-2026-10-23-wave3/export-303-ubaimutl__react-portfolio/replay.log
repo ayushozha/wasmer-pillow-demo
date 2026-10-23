@@ -1,0 +1,76 @@
+# replay of v303  source=$S/val2-src/rp303  upstream HEAD=ceb60ff0b3786a4be66841978906648d21808830
+# local diff vs HEAD:  M README.md;?? Anybuild;
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+Plan saved to $S/replay/v303/plan.json
+# provider=node-static install='npm install' build='npm run build -- --base=/' start='static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+added 229 packages, and audited 230 packages in 15s
+
+9 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run build -- --base=/
+
+> react-portfolio@0.1.0 build
+> vite build --base=/
+
+[36mvite v8.2.0 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 380 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.89 kB │ gzip:  0.44 kB
+dist/assets/index-h9hvG1Vc.css  241.42 kB │ gzip: 33.76 kB
+dist/assets/index-Dox3xuXz.js   296.34 kB │ gzip: 95.64 kB
+
+[32m✓ built in 1.19s[39m
+exit=0
+
+$ static-web-server --root=$S/replay/v303/static_app --log-level=info --port=3981 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	895
+--	title	/	React Portfolio	
+200	page	/about	text/html	895
+--	title	/about	React Portfolio	
+200	page	/portfolio	text/html	895
+--	title	/portfolio	React Portfolio	
+200	page	/contact	text/html	895
+--	title	/contact	React Portfolio	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+404	page	/react-portfolio/	text/html	0
+--	title	/react-portfolio/	(none)	
+200	ref	/assets/index-Dox3xuXz.js	text/javascript	296346
+200	ref	/assets/index-h9hvG1Vc.css	text/css	241429
+SUMMARY pages=6 refs_checked=2 failures=2
+FAIL	404	page	/does-not-exist	text/html	0
+FAIL	404	page	/react-portfolio/	text/html	0
+# static_app files: 5

@@ -1,0 +1,13 @@
+# policy files at HEAD ceb60ff0b3786a4be66841978906648d21808830 (2026-10-23)
+$ git ls-files | grep -iE "contrib|agents.md|claude.md|cursorrules|copilot-instructions|pull_request_template|PULL_REQUEST|code_of_conduct|cla|security.md|anybuild|wasmer"
+(end of list)
+$ git ls-files .github
+(end of list)
+$ git grep -niE "\bAI\b|LLM|chatgpt|copilot|contributor license|\bCLA\b|issue first|open an issue (first|before)|no (pull requests|PRs)" -- README* CONTRIBUTING* .github docs/CONTRIBUTING*
+(end of matches)
+$ git log -5 --format="%cI %h %s"
+2026-08-03T13:00:32+02:00 ceb60ff Refactor portfolio layout and remove obsolete sections
+2024-09-24T13:01:31+02:00 470d81e Merge pull request #66 from ryanbalieiro/social-icons-refactoring
+2024-09-21T20:11:45-03:00 ccad258 Did some tweaking on the social icons component to replace the hardcoded conditionals with a loop, making it easier to add new social networks. Also, added support for Instagram, Snapchat and TikTok.
+2024-09-18T11:01:33+02:00 460317b Merge pull request #65 from ubaimutl/dependabot/npm_and_yarn/braces-3.0.3
+2024-09-18T09:00:33+00:00 5d599ad Bump braces from 3.0.2 to 3.0.3

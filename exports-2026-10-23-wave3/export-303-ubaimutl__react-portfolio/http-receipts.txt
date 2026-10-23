@@ -1,0 +1,28 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 5
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 895
+/about -> 200 text/html 895
+/portfolio -> 200 text/html 895
+/contact -> 200 text/html 895
+/index.html -> 200 text/html 895
+/manifest.json -> 200 application/json 492
+/robots.txt -> 200 text/plain 67
+/about/ -> 404 text/html; charset=utf-8 106
+/does-not-exist -> 404 text/html; charset=utf-8 106
+/react-portfolio/ -> 404 text/html; charset=utf-8 106
+/react-portfolio/about -> 404 text/html; charset=utf-8 106
+/assets/nope.js -> 404 text/html; charset=utf-8 106
+/package.json -> 404 text/html; charset=utf-8 106
+/Anybuild -> 404 text/html; charset=utf-8 106
+## trailing-slash / .html variants of pages
+/about -> 200 text/html 895 redirect=
+/about/index.html -> 404 text/html; charset=utf-8 106 redirect=
+/react-portfolio -> 404 text/html; charset=utf-8 106 redirect=
+/react-portfolio/index.html -> 404 text/html; charset=utf-8 106 redirect=
+## assets referenced from all 1 built HTML files and url() in 1 built CSS files (2 unique same-origin refs)
+/assets/index-Dox3xuXz.js -> 200 text/javascript 296346
+/assets/index-h9hvG1Vc.css -> 200 text/css 241429
+## summary
+# status count:      10 200
+# status count:      10 404

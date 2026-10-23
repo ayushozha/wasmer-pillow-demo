@@ -1,0 +1,15 @@
+# Playwright (chromium 1194) against native SWS 2.38.0 serving the replay static_app with the generated sws.toml, 2026-10-23T02:41:02Z
+[direct load] / -> HTTP 200 title="" h1="I l|"
+[direct load] /about -> HTTP 200 title="" h1="About me"
+[direct load] /portfolio -> HTTP 200 title="" h1="Portfolio"
+[direct load] /contact -> HTTP 200 title="" h1="Contact Me"
+[nav click] Portfolio -> path=/portfolio h1="Portfolio"
+[nav click] About -> path=/about h1="About me"
+[nav click] Contact -> path=/contact h1="Contact Me"
+[reload] /contact -> HTTP 200 h1="Contact Me"
+[contact submit, placeholder EmailJS IDs, external network blocked] alert="Faild to send!,undefined"
+[direct load] /does-not-exist -> HTTP 404
+blocked external origins: {"https://fonts.googleapis.com":12,"https://images.unsplash.com":2,"https://picsum.photos":12,"https://api.emailjs.com":1}
+same-origin >=400 responses: ["404 /does-not-exist"]
+page errors: []
+exit=0

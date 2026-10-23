@@ -1,0 +1,14 @@
+# external hosts referenced in built HTML (host, tag-kind: n pages)
+buttons.github.io	script	17 pages
+cdn.jsdelivr.net	script	17 pages
+flowbite.com	other	9 pages
+flowbite.s3.amazonaws.com	other	2 pages
+fonts.googleapis.com	other	17 pages
+fonts.gstatic.com	other	17 pages
+github.com	other	9 pages
+linkedin.com	other	1 pages
+tailwindcss.com	other	1 pages
+twitter.com	other	1 pages
+www.facebook.com	other	1 pages
+www.figma.com	other	1 pages
+# <script src=...> to external hosts: buttons.github.io, cdn.jsdelivr.net

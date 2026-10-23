@@ -1,0 +1,28 @@
+# Control: the plan WITHOUT the committed Anybuild (auto-detect) builds with 'npm run build' -> vite.config.js base /react-portfolio/
+$ npm run build -- --outDir=<replay>/base-dist
+
+> react-portfolio@0.1.0 build
+> vite build --outDir=<replay>/base-dist
+
+vite v8.2.0 building client environment for production...
+transforming...✓ 380 modules transformed.
+
+(!) outDir <replay>/base-dist is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../base-dist/index.html                   0.92 kB │ gzip:  0.45 kB
+../base-dist/assets/index-h9hvG1Vc.css  241.42 kB │ gzip: 33.76 kB
+../base-dist/assets/index-Bx0V3d4_.js   296.37 kB │ gzip: 95.66 kB
+
+✓ built in 855ms
+exit=0
+$ grep -o "(src|href)=\"/[^\"]*\"" base-dist/index.html
+src="/react-portfolio/assets/index-Bx0V3d4_.js"
+href="/react-portfolio/assets/index-h9hvG1Vc.css"
+# control served at the domain root with SWS 2.38.0 (port 3982)
+/ -> 200 text/html 927
+/react-portfolio/assets/index-Bx0V3d4_.js -> 404 text/html; charset=utf-8 106
+/assets/index-Bx0V3d4_.js -> 200 text/javascript 296378
+# => index.html loads, but its script/style URLs point under /react-portfolio/ and 404 at the root: blank page.

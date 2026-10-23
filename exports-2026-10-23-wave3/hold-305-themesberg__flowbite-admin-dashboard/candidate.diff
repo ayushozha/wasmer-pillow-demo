@@ -1,0 +1,65 @@
+diff --git a/Anybuild b/Anybuild
+new file mode 100644
+index 0000000..d9ff28d
+--- /dev/null
++++ b/Anybuild
+@@ -0,0 +1,23 @@
++# Build the site the way `npm run build` does (webpack bundle, then Hugo into public/),
++# but with --baseURL=/ so links and assets resolve on the deployed host instead of the
++# baseURL in config.yml. Hugo is not an npm dependency, so it is added to the build.
++load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
++
++config = nodestatic_config(
++    schema = 1,
++    sws_version = "2.38.0",
++    static_dir = "public",
++    node_package_manager = "npm",
++    node_build_command = "npm run build:webpack && hugo --destination=./public --baseURL=/",
++    node_version = "24",
++    npm_version = "11",
++)
++
++build = nodestatic_build(config)
++
++nodestatic_serve(
++    config,
++    build,
++    name = "flowbite-admin-dashboard",
++    build_pre = [use(dep("hugo", "0.153.2"))],
++)
+diff --git a/README.md b/README.md
+index df5a3a9..8a6f9c9 100644
+--- a/README.md
++++ b/README.md
+@@ -111,6 +111,10 @@ npm run build
+ 
+ You can instantly upload your project to Vercel by selecting the default HUGO configuration, but depending on your own tech stack whether it's React.js, Vue, Nuxt.js, Next.js or a back-end framework you can also just copy the layouts from this project inside your own tech stack.
+ 
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=themesberg%2Fflowbite-admin-dashboard)
++
++You can also deploy it on Wasmer: the included `Anybuild` file runs `npm install`, the webpack build and Hugo with `--baseURL=/` (so links and assets point to your Wasmer URL rather than the `baseURL` in `config.yml`), then serves the generated `public/` folder as static files. The button opens Wasmer's import page for this public repository, where you review the detected settings (and correct them if needed) before clicking Deploy; nothing is deployed until you do. It does not create a copy of the repository in your GitHub account. To customize the dashboard, fork the repository and import your fork instead.
++
+ Here's a list of compatible technologies and guides for Flowbite and Tailwind CSS:
+ 
+ ### JavaScript Frameworks
+diff --git a/layouts/partials/scripts.html b/layouts/partials/scripts.html
+index f5d4def..eea1e81 100644
+--- a/layouts/partials/scripts.html
++++ b/layouts/partials/scripts.html
+@@ -1,3 +1,3 @@
+ <script async defer src="https://buttons.github.io/buttons.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script>
+-<script src="{{ .Site.BaseURL }}/app.bundle.js"></script>
++<script src="{{ "app.bundle.js" | relURL }}"></script>
+diff --git a/layouts/partials/stylesheet.html b/layouts/partials/stylesheet.html
+index 5423112..59d437f 100644
+--- a/layouts/partials/stylesheet.html
++++ b/layouts/partials/stylesheet.html
+@@ -1,4 +1,4 @@
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+-<link rel="stylesheet" href="{{ .Site.BaseURL }}/app.css">
+\ No newline at end of file
++<link rel="stylesheet" href="{{ "app.css" | relURL }}">
+\ No newline at end of file

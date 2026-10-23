@@ -1,0 +1,55 @@
+# replay of v305auto  source=$S/val2-src/fb305  upstream HEAD=229df7ff25808ab2bbda65f03f2397a05f7b4288
+# local diff vs HEAD: 
+  Detected Hugo provider
+    Hugo version: 0.153.2
+    Output directory: public
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/v305auto/plan.json
+# provider=hugo install='' build='hugo --gc --minify' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='' pm=@ inputs='' all_files=False
+$ hugo version
+hugo v0.153.2+extended linux/amd64 BuildDate=unknown
+exit=0
+
+$ hugo --gc --minify
+WARN  DEPRECATED: Kind "taxonomyterm" used in disableKinds is deprecated, use "taxonomy" instead.
+Start building sites … 
+hugo v0.153.2+extended linux/amd64 BuildDate=unknown
+
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  19 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 291 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 250 ms
+exit=0
+
+$ cp -R public/. '$S/replay/v305auto/static_app/'
+cp: cannot stat 'public/.': No such file or directory
+exit=1
+
+COPY FAILED
+$ static-web-server --root=$S/replay/v305auto/static_app --log-level=info --port=3986 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/	text/html	0
+--	title	/	(none)	
+SUMMARY pages=2 refs_checked=0 failures=2
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/	text/html	0
+# static_app files: 0

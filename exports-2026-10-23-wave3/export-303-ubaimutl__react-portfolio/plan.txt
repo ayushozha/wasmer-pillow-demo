@@ -1,0 +1,6 @@
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+Plan saved to $S/replay/v303/plan.json

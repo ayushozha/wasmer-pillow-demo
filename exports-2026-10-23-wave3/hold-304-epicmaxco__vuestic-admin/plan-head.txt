@@ -1,0 +1,45 @@
+# anybuild plan --temp-anybuild --wasmer on a clean export of develop HEAD ba93fc3f1c8531102bce7492314eb77653b32691
+Error: plan failed for <flat>: <flat>/_redirects:1: redirect status 200 is not supported by static-web-server: <flat>/_redirects:1: redirect status 200 is not supported by static-web-server
+exit=1
+
+# same with --env ANYBUILD_STATIC_CONVERT_REDIRECTS=false
+Error: plan failed for <flat>: <flat>/_redirects:1: redirect status 200 is not supported by static-web-server: <flat>/_redirects:1: redirect status 200 is not supported by static-web-server
+exit=1
+
+$ git show HEAD:_redirects
+/*  /index.html  200
+
+# probe: committed Anybuild with static_convert_redirects = False (file below), --anybuild-path
+load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
+
+config = nodestatic_config(
+    schema = 1,
+    static_convert_redirects = False,
+    sws_version = "2.38.0",
+    static_dir = "dist",
+    node_package_manager = "yarn",
+    node_framework = "vite",
+    node_server = "node",
+    node_version = "24",
+)
+
+build = nodestatic_build(config)
+
+nodestatic_serve(config, build, name = "vuestic-admin")
+Error: plan failed for <flat>: The Anybuild file must construct its provider config. Run `anybuild generate` to update it: Traceback (most recent call last):
+  * Anybuild:3, in <module>
+      config = nodestatic_config(
+  * //anybuild/tools:node_static.bzl:25, in nodestatic_config
+      return config(provider = "node-static", schema = schema, **kwargs)
+error: loading node-static config
+  --> //anybuild/tools:node_static.bzl:25:12
+   |
+exit=1
+# same probe with _redirects removed (full output)
+exit=0
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: dist
+Plan saved to $S/replay/p304b/x.json

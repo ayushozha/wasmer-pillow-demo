@@ -1,0 +1,6 @@
+  Detected Hugo provider
+    Hugo version: 0.153.2
+    Output directory: public
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/v305auto/plan.json

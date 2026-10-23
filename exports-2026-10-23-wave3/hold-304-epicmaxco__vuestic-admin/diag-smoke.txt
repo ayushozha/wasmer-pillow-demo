@@ -1,0 +1,18 @@
+200	page	/	text/html	936
+--	title	/	Vuestic Admin	
+404	page	/dashboard	text/html	0
+--	title	/dashboard	(none)	
+404	page	/auth/login	text/html	0
+--	title	/auth/login	(none)	
+404	page	/users	text/html	0
+--	title	/users	(none)	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+200	ref	/favicon.ico	image/x-icon	15406
+200	ref	/assets/index-BHSJyp5p.js	text/javascript	627613
+200	ref	/assets/index-DQBQ0Uvm.css	text/css	205321
+SUMMARY pages=5 refs_checked=3 failures=4
+FAIL	404	page	/dashboard	text/html	0
+FAIL	404	page	/auth/login	text/html	0
+FAIL	404	page	/users	text/html	0
+FAIL	404	page	/does-not-exist	text/html	0

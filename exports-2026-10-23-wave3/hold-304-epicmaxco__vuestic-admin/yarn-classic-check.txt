@@ -1,0 +1,9 @@
+# diagnostic only: if the floating 'yarn' dep resolved to Yarn classic
+$ yarn --version
+1.22.22
+$ yarn install   (Yarn 1.22.22, all files staged incl. .yarnrc.yml)
+error This project's package.json defines "packageManager": "yarn@4.9.2". However the current global version of Yarn is 1.22.22.
+
+Presence of the "packageManager" field indicates that the project is meant to be used with Corepack, a tool included by default with all official Node.js distributions starting from 16.9 and 14.19.
+Corepack must currently be enabled by running corepack enable in your terminal. For more information, check out https://yarnpkg.com/corepack.
+exit=1

@@ -1,0 +1,12 @@
+
+[[advanced.rewrites]]
+source = "/about"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/portfolio"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/contact"
+destination = "/index.html"

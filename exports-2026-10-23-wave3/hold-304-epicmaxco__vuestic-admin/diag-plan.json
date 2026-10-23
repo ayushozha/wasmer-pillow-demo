@@ -1,0 +1,26 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "yarn install",
+            "build": "yarn run build",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "dist",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "yarn",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "yarn run build",
+        "node_remove_native_binaries": true,
+        "node_install_requires_all_files": true,
+        "node_install_inputs": [
+            "package.json",
+            "e2e/package.json"
+        ],
+        "node_package_name": "vuestic-admin"
+    },
+    "services": []
+}
