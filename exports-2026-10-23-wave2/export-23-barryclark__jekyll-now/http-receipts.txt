@@ -1,0 +1,32 @@
+# http receipts 2026-10-23T02:15:32Z replay=$S/replay/val2-jekyllnow/static_app server=static-web-server 2.38.0 (same args as replay.sh)
+# locale env in this shell: '' (empty = none set)
+# format: path -> http_code content_type size_download
+/ -> 200 text/html 2377
+/about/ -> 200 text/html 2477
+/Hello-World/ -> 200 text/html 2991
+/404.html -> 200 text/html 2514
+/style.css -> 200 text/css 62927
+/feed.xml -> 404 text/html; charset=utf-8 2513
+/sitemap.xml -> 404 text/html; charset=utf-8 2513
+/no-such-page -> 404 text/html; charset=utf-8 2513
+/Hello-World/no-such -> 404 text/html; charset=utf-8 2513
+# same-origin assets enumerated from built HTML (href/src, excluding http(s)://, //, mailto:, #)
+/ -> 200 text/html 2377
+/Hello-World/ -> 200 text/html 2991
+/about -> 308  0
+   (redirect_url=/about/ -> 200 text/html 2477)
+/feed.xml -> 404 text/html; charset=utf-8 2513
+/images/404.jpg -> 200 image/jpeg 54799
+/images/config.png -> 200 image/png 38771
+/style.css -> 200 text/css 62927
+# missing-path body check: curl -s http://127.0.0.1:3951/no-such-page | head -c 300
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 - Page not found – Your Name – Web Developer from Somewhere</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='v
+# summary: 2xx=11 404=5 other=1

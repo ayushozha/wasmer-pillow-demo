@@ -1,0 +1,22 @@
+200	page	/	text/html	2377
+--	title	/	Your Name – Web Developer from Somewhere	
+200	page	/about/	text/html	2477
+--	title	/about/	About – Your Name – Web Developer from Somewhere	
+200	page	/Hello-World/	text/html	2991
+--	title	/Hello-World/	You're up and running! – Your Name – Web Developer from Somewhere	
+200	page	/404.html	text/html	2514
+--	title	/404.html	404 - Page not found – Your Name – Web Developer from Somewhere	
+404	page	/feed.xml	text/html	0
+--	title	/feed.xml	(none)	
+404	page	/sitemap.xml	text/html	0
+--	title	/sitemap.xml	(none)	
+200	page	/style.css	text/css	62927
+404	page	/no-such-page	text/html	0
+--	title	/no-such-page	(none)	
+200	ref	/about	text/html	2477
+200	ref	/images/config.png	image/png	38771
+200	ref	/images/404.jpg	image/jpeg	54799
+SUMMARY pages=8 refs_checked=3 failures=3
+FAIL	404	page	/feed.xml	text/html	0
+FAIL	404	page	/sitemap.xml	text/html	0
+FAIL	404	page	/no-such-page	text/html	0

@@ -1,0 +1,26 @@
+200	page	/	text/html	8738
+--	title	/	Your Name | Your Affiliation	
+404	page	/404.html	text/html	0
+--	title	/404.html	(none)	
+404	page	/no-such-page	text/html	0
+--	title	/no-such-page	(none)	
+200	page	/assets/files/curriculum_vitae.pdf	application/pdf	12409
+200	page	/assets/css/style.css	text/css	8657
+404	page	/feed.xml	text/html	0
+--	title	/feed.xml	(none)	
+404	page	/sitemap.xml	text/html	0
+--	title	/sitemap.xml	(none)	
+200	ref	/assets/img/favicon-dark.png	image/png	2373
+200	ref	/assets/img/favicon.png	image/png	3201
+200	ref	/assets/js/favicon-switcher.js	text/javascript	1358
+200	ref	/assets/css/font.css	text/css	342
+200	ref	/assets/css/publications.css	text/css	4370
+200	ref	/assets/img/avatar.png	image/png	2797
+200	ref	/assets/img/teaser_example_2.png	image/png	68761
+200	ref	/assets/img/teaser_example.png	image/png	229697
+200	ref	/assets/js/scale.fix.js	text/javascript	907
+SUMMARY pages=7 refs_checked=9 failures=4
+FAIL	404	page	/404.html	text/html	0
+FAIL	404	page	/no-such-page	text/html	0
+FAIL	404	page	/feed.xml	text/html	0
+FAIL	404	page	/sitemap.xml	text/html	0

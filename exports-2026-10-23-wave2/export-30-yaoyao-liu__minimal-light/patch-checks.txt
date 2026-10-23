@@ -1,0 +1,11 @@
+# 2026-10-23T02:16:11Z clone HEAD=dd114c3fef2d97adc1c6b6d46901e0d96ab83a7c branch=main clone-date=2026-10-23
+# prior pin: dd114c3fef2d97adc1c6b6d46901e0d96ab83a7c (unchanged => patch re-applied as-is)
+$ git diff --check
+exit=0
+$ git apply --check upstream.patch   # on a clean HEAD worktree
+exit=0
+$ sha256sum upstream.patch
+af6663e45fed5d9bb5980cf6e2dfabc8304fa49846a4a8e2e10240ba38bedf8f  upstream.patch
+$ grep -nP "[ \t]+$" upstream.patch (trailing whitespace)
+0
+(count of added lines with trailing ws)

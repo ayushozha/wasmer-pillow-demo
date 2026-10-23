@@ -1,0 +1,25 @@
+# http receipts 2026-10-23T02:15:32Z replay=$S/replay/val2-minlight/static_app server=static-web-server 2.38.0 (same args as replay.sh)
+# locale env in this shell: '' (empty = none set)
+# format: path -> http_code content_type size_download
+/ -> 200 text/html 8738
+/assets/css/style.css -> 200 text/css 8657
+/assets/files/curriculum_vitae.pdf -> 200 application/pdf 12409
+/404.html -> 404 text/html; charset=utf-8 106
+/feed.xml -> 404 text/html; charset=utf-8 106
+/sitemap.xml -> 404 text/html; charset=utf-8 106
+/no-such-page -> 404 text/html; charset=utf-8 106
+# same-origin assets enumerated from built HTML (href/src, excluding http(s)://, //, mailto:, #)
+/assets/css/font.css -> 200 text/css 342
+/assets/css/publications.css -> 200 text/css 4370
+/assets/css/style.css -> 200 text/css 8657
+/assets/files/curriculum_vitae.pdf -> 200 application/pdf 12409
+/assets/img/avatar.png -> 200 image/png 2797
+/assets/img/favicon-dark.png -> 200 image/png 2373
+/assets/img/favicon.png -> 200 image/png 3201
+/assets/img/teaser_example.png -> 200 image/png 229697
+/assets/img/teaser_example_2.png -> 200 image/png 68761
+/assets/js/favicon-switcher.js -> 200 text/javascript 1358
+/assets/js/scale.fix.js -> 200 text/javascript 907
+# missing-path body check: curl -s http://127.0.0.1:3952/no-such-page | head -c 300
+<html><head><title>404 Not Found</title></head><body><center><h1>404 Not Found</h1></center></body></html>
+# summary: 2xx=14 404=4 other=0

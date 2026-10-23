@@ -1,0 +1,19 @@
+# policy files at HEAD dd114c3 (yaoyao-liu/minimal-light)
+$ git ls-files | grep -iE "contribut|agents|claude|cursor|copilot|pull_request|cla|workflow|anybuild|^\.github"
+(no matches: no CONTRIBUTING, AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions, PR template, CLA or workflows)
+
+# only contribution wording found (README_zh_Hant.md line 1, verbatim):
+### 這份說明文檔僅將文字從簡體中文轉化為繁體中文，並沒有針對繁體中文地區的名詞和使用習慣進行優化。如果有錯誤或者表述不清楚的內容，可以參照[英文版本](https://github.com/yaoyao-liu/minimal-light/blob/main/README.md)。歡迎通過 [pull requests](https://github.com/yaoyao-liu/minimal-light/pulls) 更正該文檔。
+# (invites pull requests correcting the Traditional Chinese README). No rule against AI/agent PRs; no lint/test command required.
+
+# maintainer activity (git log of default branch; direct commits by the maintainer):
+dd114c3 2026-10-18T02:11:31-05:00 Yaoyao Liu Fix grammar and clarity in README.md
+668837a 2026-10-18T02:09:21-05:00 Yaoyao Liu Fix grammar and enhance clarity in README.md
+6ace0e9 2026-10-18T02:08:48-05:00 Yaoyao Liu Remove license badge from README
+1ea07f3 2026-07-21T12:59:12-05:00 Yaoyao Liu Fix homepage link in README
+91f3b49 2026-04-08T15:58:23-05:00 Yaoyao Liu Update README.md
+# merge commits on default branch (full commit history in the blob:none clone):
+7dfeb5f 2020-12-22T02:29:30+01:00 Merge branch 'master' of github.com:yaoyao-liu/minimal-light
+542d681 2020-04-11T20:55:29+02:00 Merge branch 'master' of github.com:yaoyao-liu/minimal-academic
+97f09af 2020-04-08T23:36:29+02:00 Merge branch 'master' of github.com:yaoyao-liu/minimal-academic
+# 'Merge pull request' commits: 0 (squash/rebase merges would not show here)

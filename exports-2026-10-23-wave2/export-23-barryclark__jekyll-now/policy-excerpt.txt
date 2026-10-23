@@ -1,0 +1,20 @@
+# policy files at HEAD 12cb8a2 (barryclark/jekyll-now)
+$ git ls-files | grep -iE "contribut|agents|claude|cursor|copilot|pull_request|cla|workflow|anybuild|^\.github"
+(no matches: no CONTRIBUTING, AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions, PR template, CLA or workflows)
+
+# README.md 'Contributing' section (verbatim, HEAD):
+## Contributing
+
+Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
+
+You can start by [opening an issue](https://github.com/barryclark/jekyll-now/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+
+I want to keep Jekyll Now as minimal as possible. Every line of code should be one that's useful to 90% of the people using it. Please bear that in mind when submitting feature requests. If it's not something that most people will use, it probably won't get merged. :guardsman:
+
+# No rule against AI/agent PRs found; no lint/test command required.
+
+# maintainer activity (git log of default branch):
+12cb8a2e97 2018-04-11T23:31:03-04:00 Merge pull request #993 from italohdc/master
+824a230910 2017-09-03T12:57:53-03:00 Permalink on 404.md
+7afdb99f0d 2017-08-27T15:36:53-04:00 Merge pull request #983 from isseiler/patch-1
+# last commit on master: 2018-04-11T23:31:03-04:00 ('Merge pull request' commits since 2019-01-01: 0)
