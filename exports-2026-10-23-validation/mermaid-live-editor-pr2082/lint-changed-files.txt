@@ -1,0 +1,35 @@
+# cwd = replay work dir (flat copy of HEAD 7e34d9be + node_modules/build output)
+# file identity: 260b74842b1d650c883f2eb86a52ff18c13e37a7 8be261e62776b44bf40dbc59221745b389adaf09  vs work: 260b74842b1d650c883f2eb86a52ff18c13e37a7 8be261e62776b44bf40dbc59221745b389adaf09 
+$ pnpm exec prettier --check README.md
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+$ pnpm exec prettier --check Anybuild
+Checking formatting...
+[error] No parser could be inferred for file "/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/val-mermaid/work/Anybuild".
+Error occurred when checking code style in the above file.
+exit=2
+$ pnpm exec eslint README.md
+
+/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/val-mermaid/work/README.md
+  0:0  warning  File ignored because no matching configuration was supplied
+
+✖ 1 problem (0 errors, 1 warning)
+
+exit=0
+$ pnpm exec eslint Anybuild
+
+/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/val-mermaid/work/Anybuild
+  0:0  warning  File ignored because no matching configuration was supplied
+
+✖ 1 problem (0 errors, 1 warning)
+
+exit=0
+$ pnpm exec prettier --check --ignore-unknown Anybuild README.md
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+$ pnpm exec prettier --check . 2>&1 | tail -5; exit ${PIPESTATUS[0]}
+Checking formatting...
+All matched files use Prettier code style!
+exit=0

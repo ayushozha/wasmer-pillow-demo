@@ -1,0 +1,151 @@
+# replay of val-astrowind  source=$S/val-src/astrowind  upstream HEAD=deb589391de4e2366a5cc4a6c0ebd52f545f06e8
+# local diff vs HEAD: 
+  Detected static Node.js provider
+    Framework: Astro
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val-astrowind/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+
+added 599 packages, and audited 600 packages in 18s
+
+16 vulnerabilities (5 moderate, 11 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.1 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> @arthelokyo/astrowind@1.0.0-beta.66 build
+> astro build
+
+[2m01:55:39[22m [34m[astrowind][39m Astrowind `./src/config.yaml` has been loaded.
+[2m01:55:41[22m [34m[content][39m Syncing content
+[2m01:55:42[22m [34m[content][39m Synced content
+[2m01:55:42[22m [34m[types][39m Generated [2m3.05s[22m
+[2m01:55:42[22m [34m[build][39m output: [34m"static"[39m
+[2m01:55:42[22m [34m[build][39m mode: [34m"static"[39m
+[2m01:55:42[22m [34m[build][39m directory: [34m$S/replay/val-astrowind/work/dist/[39m
+[2m01:55:42[22m [34m[build][39m Collecting build info...
+[2m01:55:42[22m [34m[build][39m [32m✓ Completed in 3.16s.[39m
+[2m01:55:42[22m [34m[build][39m Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+[33m[1m01:55:46[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[2m01:55:48[22m [34m[astro-icon][39m Loaded icons from src/assets/icons, flat-color-icons, tabler
+[2m01:55:48[22m [34m[assets][39m Copying fonts (0 files)...
+[2m01:55:49[22m [34m[vite][39m [32m✓ built in 6.33s[39m
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+[33m[1m01:55:52[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[2m01:55:52[22m [34m[vite][39m [32m✓ built in 3.12s[39m
+[2m01:55:52[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m01:55:52[22m   [34m├─[39m [2m/404.html[22m [2m(+65ms)[22m 
+[2m01:55:52[22m   [34m├─[39m [2m/about/index.html[22m [2m(+39ms)[22m 
+[2m01:55:53[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+10ms)[22m 
+[2m01:55:53[22m   [34m├─[39m [2m/homes/mobile-app/index.html[22m[31m[1m01:55:53[22m [ERROR][39m FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+    at inferRemoteSize (file://$S/replay/val-astrowind/work/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async getImage (file://$S/replay/val-astrowind/work/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async getImage (file://$S/replay/val-astrowind/work/dist/.prerender/chunks/Layout_GbFNe-co.mjs:220:35)
+    at async file://$S/replay/val-astrowind/work/dist/.prerender/chunks/Layout_GbFNe-co.mjs:29:16
+[31m[1m01:55:53[22m [ERROR] [build][39m Caught error rendering /homes/mobile-app: FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+[31m[FailedToFetchRemoteImageDimensions][39m Failed to get the dimensions for [4mhttps://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png[24m.
+  [1mHint:[22m
+[33m    Verify your remote image URL is accurate, and that you are not using `inferSize` with a file located in your `public/` folder.[39m
+  [1mError reference:[22m
+    [36m[4mhttps://docs.astro.build/en/reference/errors/failed-to-fetch-remote-image-dimensions/[24m[39m
+  [1mStack trace:[22m
+[2m    at inferRemoteSize (file://$S/replay/val-astrowind/work/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at async getImage (file://$S/replay/val-astrowind/work/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async file://$S/replay/val-astrowind/work/dist/.prerender/chunks/Layout_GbFNe-co.mjs:29:16[22m
+exit=1
+
+BUILD FAILED
+$ static-web-server --root=$S/replay/val-astrowind/static_app --log-level=info --port=3901 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/get-started-website-with-astro-tailwind-css	text/html	0
+--	title	/get-started-website-with-astro-tailwind-css	(none)	
+404	page	/blog	text/html	0
+--	title	/blog	(none)	
+404	page	/rss.xml	text/html	0
+--	title	/rss.xml	(none)	
+404	page	/sitemap-index.xml	text/html	0
+--	title	/sitemap-index.xml	(none)	
+200	page	/404	text/html	7899
+--	title	/404	Error 404 — AstroWind	
+200	page	/404.html	text/html	7899
+--	title	/404.html	Error 404 — AstroWind	
+404	page	/definitely-missing-a7q3zk	text/html	0
+--	title	/definitely-missing-a7q3zk	(none)	
+200	ref	/_astro/favicon.CGiRCjPI.ico	image/x-icon	15086
+200	ref	/_astro/favicon.vp_fBu0c.svg	image/svg+xml	749
+200	ref	/_astro/apple-touch-icon.DHIlG7dp.png	image/png	5498
+200	ref	/_astro/ClientRouter.astro_astro_type_script_index_0_lang.8JqLyJGz.js	text/javascript	13885
+200	ref	/_astro/Layout.Qhl5tzJT.css	text/css	125429
+200	ref	/_astro/page.DUP3bs27.js	text/javascript	47
+SUMMARY pages=8 refs_checked=6 failures=6
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/get-started-website-with-astro-tailwind-css	text/html	0
+FAIL	404	page	/blog	text/html	0
+FAIL	404	page	/rss.xml	text/html	0
+FAIL	404	page	/sitemap-index.xml	text/html	0
+FAIL	404	page	/definitely-missing-a7q3zk	text/html	0
+# static_app files: 109

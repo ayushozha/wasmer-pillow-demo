@@ -1,0 +1,199 @@
+# replay of val-coreui-react  source=<scratch>/val-src/coreui__coreui-free-react-admin-template  upstream HEAD=2609f5995035973e00c16ec723165a5fff87cceb
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: build
+
+  Generated Anybuild at <tmp>
+Plan saved to <scratch>/replay/val-coreui-react/plan.json
+# provider=node-static install='npm install' build='npm run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='build' pm=npm@11 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+# staged before install: package-lock.json package.json 
+$ npm install
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 304 packages, and audited 305 packages in 21s
+
+2 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   core-js@3.50.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build
+
+> @coreui/coreui-free-react-admin-template@5.7.0 build
+> vite build
+
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.mjs:24:40). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 2882 modules transformed.
+rendering chunks...
+computing gzip size...
+build/index.html                                               1.25 kB │ gzip:   0.68 kB
+build/assets/6-DAej8nlJ.jpg                                   11.91 kB
+build/assets/5-C7PguISa.jpg                                   12.66 kB
+build/assets/2-DU4eQes8.jpg                                   12.87 kB
+build/assets/3-D73ZQ4h9.jpg                                   13.52 kB
+build/assets/4-TDOHctEN.jpg                                   13.72 kB
+build/assets/1-Bxx5tbqp.jpg                                   13.88 kB
+build/assets/8-CQnrj2m9.jpg                                   15.14 kB
+build/assets/icons-C5EGodH8.webp                              58.49 kB
+build/assets/components-rl0RgVTV.webp                         61.51 kB
+build/assets/angular-DbhKAn4Z.jpg                            169.23 kB
+build/assets/vue-Ces23Jk5.jpg                                170.59 kB
+build/assets/react-DmxSGVXA.jpg                              199.53 kB
+build/assets/DefaultLayout-CnrJMVq9.css                        2.93 kB │ gzip:   0.86 kB
+build/assets/index-BMn7H6x-.css                              308.86 kB │ gzip:  41.76 kB
+build/assets/react-sr37jO35.js                                 0.07 kB │ gzip:   0.09 kB
+build/assets/4-9RCE49bS.js                                     0.11 kB │ gzip:   0.10 kB
+build/assets/getTransitionDurationFromElement-CB9dqBQ-.js      0.25 kB │ gzip:   0.17 kB
+build/assets/CCardGroup-DY6GkvZc.js                            0.37 kB │ gzip:   0.27 kB
+build/assets/CCardFooter-D_VwvZq1.js                           0.37 kB │ gzip:   0.27 kB
+build/assets/CCardHeader-DGo-yy7l.js                           0.41 kB │ gzip:   0.29 kB
+build/assets/CForm-BOYuIDLn.js                                 0.43 kB │ gzip:   0.30 kB
+build/assets/CButtonGroup-C-dBXsLH.js                          0.51 kB │ gzip:   0.33 kB
+build/assets/getRTLPlacement-BsMLBduV.js                       0.52 kB │ gzip:   0.33 kB
+build/assets/cil-magnifying-glass-BtvmRqAy.js                  0.53 kB │ gzip:   0.32 kB
+build/assets/cib-twitter-D9JwvpeB.js                           0.57 kB │ gzip:   0.32 kB
+build/assets/CInputGroupText-IP9t8xdP.js                       0.78 kB │ gzip:   0.38 kB
+build/assets/cib-linkedin-Cw8VDBYb.js                          0.80 kB │ gzip:   0.44 kB
+build/assets/CCardBody-BtXuLN7k.js                             0.81 kB │ gzip:   0.38 kB
+build/assets/PasswordChanged-qBmFDyes.js                       0.92 kB │ gzip:   0.46 kB
+build/assets/google-CxWwIRpW.js                                0.98 kB │ gzip:   0.49 kB
+build/assets/CFormTextarea-OoSVd4Ys.js                         1.03 kB │ gzip:   0.49 kB
+build/assets/cil-user-female-WxP6e-US.js                       1.10 kB │ gzip:   0.53 kB
+build/assets/CheckEmail-BD4N4Bno.js                            1.10 kB │ gzip:   0.54 kB
+build/assets/Page404-B0izLijo.js                               1.12 kB │ gzip:   0.56 kB
+build/assets/CCardTitle-CT2NyCfv.js                            1.13 kB │ gzip:   0.41 kB
+build/assets/Page500-B19ahEdf.js                               1.14 kB │ gzip:   0.57 kB
+build/assets/ResetPassword-cr2rdVSr.js                         1.15 kB │ gzip:   0.53 kB
+build/assets/CAlert-C6tgQrGa.js                                1.23 kB │ gzip:   0.67 kB
+build/assets/CFormSelect-6ZIO8Dfn.js                           1.32 kB │ gzip:   0.61 kB
+build/assets/ChangePassword-BaVVoJGn.js                        1.36 kB │ gzip:   0.53 kB
+build/assets/eye-LDv_-qr4.js                                   1.43 kB │ gzip:   0.71 kB
+build/assets/CContainer-B9bP1Veo.js                            1.68 kB │ gzip:   0.80 kB
+build/assets/CProgress-UzkXwSG_.js                             1.76 kB │ gzip:   0.73 kB
+build/assets/cil-people-Ciz8w4Z1.js                            1.79 kB │ gzip:   0.67 kB
+build/assets/Breadcrumb-CX7du557.js                            1.81 kB │ gzip:   0.67 kB
+build/assets/Popovers-C0ezEjlZ.js                              2.09 kB │ gzip:   0.72 kB
+build/assets/CFormCheck-D4PYcJOD.js                            2.16 kB │ gzip:   0.87 kB
+build/assets/CRow-Q4qau5Q6.js                                  2.17 kB │ gzip:   0.72 kB
+build/assets/cil-user-follow-9IqiLtMJ.js                       2.45 kB │ gzip:   0.79 kB
+build/assets/useChipSet-DvcisLJA.js                            2.56 kB │ gzip:   1.19 kB
+build/assets/Tooltips-BGqN_5DQ.js                              2.69 kB │ gzip:   0.97 kB
+build/assets/CChip-CsF78pwa.js                                 2.96 kB │ gzip:   1.39 kB
+build/assets/Login-Dau39d9l.js                                 2.97 kB │ gzip:   1.06 kB
+build/assets/Register-CHaTomGc.js                              3.13 kB │ gzip:   1.14 kB
+build/assets/CTooltip-CUWVcCHx.js                              3.37 kB │ gzip:   1.38 kB
+build/assets/Charts-CdclIFT2.js                                3.41 kB │ gzip:   0.96 kB
+build/assets/CPopover-CaBAI5U2.js                              3.47 kB │ gzip:   1.39 kB
+build/assets/Collapse-DdYrGX5B.js                              3.58 kB │ gzip:   1.03 kB
+build/assets/Select-BqrwmZRi.js                                3.64 kB │ gzip:   0.77 kB
+build/assets/Range-I7jgzk2X.js                                 3.64 kB │ gzip:   1.08 kB
+build/assets/Badge-BRu1snCg.js                                 4.11 kB │ gzip:   1.03 kB
+build/assets/Spinners-C9_XGyON.js                              4.20 kB │ gzip:   1.06 kB
+build/assets/CCollapse-BDVbYHbJ.js                             4.43 kB │ gzip:   1.64 kB
+build/assets/CFormInput-BxdVda4e.js                            4.53 kB │ gzip:   1.27 kB
+build/assets/index.esm-BUhKhjmu.js                             4.67 kB │ gzip:   1.96 kB
+build/assets/CTable-D44PdsYZ.js                                5.63 kB │ gzip:   1.47 kB
+build/assets/Alerts-BMgO7vog.js                                5.69 kB │ gzip:   1.52 kB
+build/assets/Chip-BIndJZkQ.js                                  5.77 kB │ gzip:   1.40 kB
+build/assets/FloatingLabels-CcDVPul0.js                        5.96 kB │ gzip:   1.44 kB
+build/assets/Progress-CGqZgOtd.js                              6.05 kB │ gzip:   1.19 kB
+build/assets/ChipSet-lATp9If7.js                               6.11 kB │ gzip:   1.83 kB
+build/assets/Placeholders-2VnJx0rL.js                          6.39 kB │ gzip:   1.91 kB
+build/assets/FormControl-Bv-jFmrc.js                           6.93 kB │ gzip:   1.49 kB
+build/assets/Pagination-BVm-GFyG.js                            7.37 kB │ gzip:   1.89 kB
+build/assets/SearchButton-BWoKg-cD.js                          7.40 kB │ gzip:   2.34 kB
+build/assets/WidgetsDropdown-Bq2gtf_w.js                       7.50 kB │ gzip:   1.99 kB
+build/assets/Tabs-XQ-tZVp2.js                                  9.82 kB │ gzip:   2.07 kB
+build/assets/ChipInput-CC6loDWj.js                             9.84 kB │ gzip:   3.30 kB
+build/assets/Accordion-BkX2rARu.js                            10.14 kB │ gzip:   1.71 kB
+build/assets/ChecksRadios-iIjhllPR.js                         10.70 kB │ gzip:   2.15 kB
+build/assets/NavsTabs-CmfOMMGS.js                             10.79 kB │ gzip:   1.87 kB
+build/assets/Dropdowns-jSxiweSM.js                            10.97 kB │ gzip:   1.69 kB
+build/assets/ListGroup-C6rECly5.js                            11.20 kB │ gzip:   2.07 kB
+build/assets/Toasts-BOb_phlK.js                               11.34 kB │ gzip:   2.93 kB
+build/assets/Buttons-DZUNidKr.js                              11.61 kB │ gzip:   2.32 kB
+build/assets/ButtonGroup-BePT6eN9.js                          12.92 kB │ gzip:   2.10 kB
+build/assets/Layout-wJ20Hodj.js                               13.27 kB │ gzip:   2.62 kB
+build/assets/cib-youtube-s78o4mon.js                          13.32 kB │ gzip:   5.27 kB
+build/assets/InputGroup-EElEZiFI.js                           14.85 kB │ gzip:   2.18 kB
+build/assets/Validation-wL_Ua2BS.js                           15.07 kB │ gzip:   2.59 kB
+build/assets/Carousel-DnLeQSIm.js                             15.27 kB │ gzip:   3.87 kB
+build/assets/Dashboard-DhGD9j_p.js                            15.79 kB │ gzip:   5.41 kB
+build/assets/Widgets-BRn_fafA.js                              18.06 kB │ gzip:   2.92 kB
+build/assets/Modals-CXoyEu-R.js                               23.04 kB │ gzip:   2.91 kB
+build/assets/logo-C64SU0Xi.js                                 27.11 kB │ gzip:  10.53 kB
+build/assets/Tables-DN1pC92n.js                               27.77 kB │ gzip:   2.22 kB
+build/assets/Cards-DY9yCr5i.js                                28.63 kB │ gzip:   3.94 kB
+build/assets/DefaultLayout-CkRepYdu.js                       105.57 kB │ gzip:  30.73 kB
+build/assets/cif-us-BdMRDhCT.js                              151.56 kB │ gzip:  29.87 kB
+build/assets/index.esm-DB53Sore.js                           232.30 kB │ gzip:  80.90 kB
+build/assets/CoreUIIcons-HxMURGo6.js                         291.47 kB │ gzip:  84.29 kB
+build/assets/index-CDF6GZqn.js                               530.15 kB │ gzip: 174.03 kB
+build/assets/Brands-JzjlUO2_.js                              995.96 kB │ gzip: 406.80 kB
+build/assets/Flags-0iq4_E1R.js                             3,168.83 kB │ gzip: 969.05 kB
+
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 8.48s[39m
+exit=0
+
+$ static-web-server --root=<scratch>/replay/val-coreui-react/static_app --log-level=info --port=3911 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	1255
+--	title	/	CoreUI Free React.js Admin Template	
+200	page	/#/dashboard	text/html	1255
+--	title	/#/dashboard	CoreUI Free React.js Admin Template	
+200	page	/#/login	text/html	1255
+--	title	/#/login	CoreUI Free React.js Admin Template	
+200	page	/#/register	text/html	1255
+--	title	/#/register	CoreUI Free React.js Admin Template	
+200	page	/#/404	text/html	1255
+--	title	/#/404	CoreUI Free React.js Admin Template	
+404	page	/dashboard	text/html	0
+--	title	/dashboard	(none)	
+404	page	/login	text/html	0
+--	title	/login	(none)	
+404	page	/no-such-path	text/html	0
+--	title	/no-such-path	(none)	
+200	ref	/manifest.json	application/json	299
+200	ref	/favicon.ico	image/x-icon	1150
+200	ref	/assets/index-CDF6GZqn.js	text/javascript	530154
+200	ref	/assets/index-BMn7H6x-.css	text/css	308861
+SUMMARY pages=8 refs_checked=4 failures=3
+FAIL	404	page	/dashboard	text/html	0
+FAIL	404	page	/login	text/html	0
+FAIL	404	page	/no-such-path	text/html	0
+# static_app files: 107

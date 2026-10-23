@@ -1,0 +1,126 @@
+## server: Version:      2.38.0
+## pages
+200 text/html 1904 http://127.0.0.1:3902/
+200 text/html 4885 http://127.0.0.1:3902/edit
+200 text/html 4518 http://127.0.0.1:3902/view
+200 text/html 1904 http://127.0.0.1:3902/embed
+200 text/html 1904 http://127.0.0.1:3902/edit/
+200 text/html 1904 http://127.0.0.1:3902/view/
+200 text/html 1904 http://127.0.0.1:3902/embed/
+200 text/html 4885 http://127.0.0.1:3902/edit.html
+200 text/html 4518 http://127.0.0.1:3902/view.html
+200 text/html 4225 http://127.0.0.1:3902/embed.html
+200 text/html 4284 http://127.0.0.1:3902/index.html
+200 text/html 1904 http://127.0.0.1:3902/404.html
+## missing paths (must be 404)
+200 text/html 1904 http://127.0.0.1:3902/definitely-missing-259707048
+404 text/html; charset=utf-8 1903 http://127.0.0.1:3902/_app/immutable/chunks/definitely-missing.js
+404 text/html; charset=utf-8 1903 http://127.0.0.1:3902/definitely-missing.css
+## body identity of served pages (sha256 of body vs files on disk)
+disk index.html ee0d7ba78235c833
+disk 404.html e21423642030510f
+disk edit.html 80092f4c359f973e
+disk view.html 7ace2dd514cf3354
+disk embed.html 2cce47225388300d
+served / e21423642030510f
+served /edit 80092f4c359f973e
+served /view 7ace2dd514cf3354
+served /embed e21423642030510f
+served /edit/ e21423642030510f
+served /definitely-missing-259707048 e21423642030510f
+## assets referenced by served HTML of / /edit /view /embed (href/src/import())
+# 53 unique refs
+200 text/css 45252 http://127.0.0.1:3902/_app/immutable/assets/0.DBCesUhI.css
+200 text/css 14368 http://127.0.0.1:3902/_app/immutable/assets/2.Cjn3HSOQ.css
+200 text/css 2389 http://127.0.0.1:3902/_app/immutable/assets/4.BmjKRsT_.css
+200 text/css 77662 http://127.0.0.1:3902/_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 text/css 242 http://127.0.0.1:3902/_app/immutable/assets/View.XCPtWYBK.css
+200 text/css 145983 http://127.0.0.1:3902/_app/immutable/assets/editor.BuC0XPbM.css
+200 text/javascript 2792 http://127.0.0.1:3902/_app/immutable/chunks/3wb6cqg42.js
+200 text/javascript 46374 http://127.0.0.1:3902/_app/immutable/chunks/B0rX6SVR2.js
+200 text/javascript 4658 http://127.0.0.1:3902/_app/immutable/chunks/BDs-ZApX2.js
+200 text/javascript 11298 http://127.0.0.1:3902/_app/immutable/chunks/BPUrPjek.js
+200 text/javascript 876 http://127.0.0.1:3902/_app/immutable/chunks/BRJ1fhT_2.js
+200 text/javascript 2314 http://127.0.0.1:3902/_app/immutable/chunks/BWPyau1x.js
+200 text/javascript 115449 http://127.0.0.1:3902/_app/immutable/chunks/B_1BlN2i2.js
+200 text/javascript 107 http://127.0.0.1:3902/_app/immutable/chunks/BifhSqXX2.js
+200 text/javascript 919 http://127.0.0.1:3902/_app/immutable/chunks/Bokn4ipt2.js
+200 text/javascript 51847 http://127.0.0.1:3902/_app/immutable/chunks/Bu7IKW0P2.js
+200 text/javascript 3626930 http://127.0.0.1:3902/_app/immutable/chunks/C-CLZV1r2.js
+200 text/javascript 85 http://127.0.0.1:3902/_app/immutable/chunks/CI1ENdm4.js
+200 text/javascript 1377 http://127.0.0.1:3902/_app/immutable/chunks/CL9ZlnHI2.js
+200 text/javascript 239377 http://127.0.0.1:3902/_app/immutable/chunks/CO0xo6tz.js
+200 text/javascript 27103 http://127.0.0.1:3902/_app/immutable/chunks/CSKSodPl2.js
+200 text/javascript 30855 http://127.0.0.1:3902/_app/immutable/chunks/CjIIRWRU2.js
+200 text/javascript 3108 http://127.0.0.1:3902/_app/immutable/chunks/Ck3zr9PN.js
+200 text/javascript 1923 http://127.0.0.1:3902/_app/immutable/chunks/DAO4cTYb2.js
+200 text/javascript 1959 http://127.0.0.1:3902/_app/immutable/chunks/DEjkURiy2.js
+200 text/javascript 27610 http://127.0.0.1:3902/_app/immutable/chunks/DFsJnbFV.js
+200 text/javascript 620 http://127.0.0.1:3902/_app/immutable/chunks/DJPf-qFn2.js
+200 text/javascript 134371 http://127.0.0.1:3902/_app/immutable/chunks/DKUnCU7f.js
+200 text/javascript 2156 http://127.0.0.1:3902/_app/immutable/chunks/DNEpR40I.js
+200 text/javascript 63534 http://127.0.0.1:3902/_app/immutable/chunks/DPsjFTCs.js
+200 text/javascript 39 http://127.0.0.1:3902/_app/immutable/chunks/DTI5f4_b.js
+200 text/javascript 5598 http://127.0.0.1:3902/_app/immutable/chunks/De9uGZY3.js
+200 text/javascript 5801 http://127.0.0.1:3902/_app/immutable/chunks/Dq6ULnIM2.js
+200 text/javascript 155 http://127.0.0.1:3902/_app/immutable/chunks/DsF7k-Jl.js
+200 text/javascript 1211 http://127.0.0.1:3902/_app/immutable/chunks/HclGiUj8.js
+200 text/javascript 145457 http://127.0.0.1:3902/_app/immutable/chunks/JloBEC982.js
+200 text/javascript 55089 http://127.0.0.1:3902/_app/immutable/chunks/WfiUepJ1.js
+200 text/javascript 14762 http://127.0.0.1:3902/_app/immutable/chunks/_A7_fnyq2.js
+200 text/javascript 1084 http://127.0.0.1:3902/_app/immutable/chunks/aKtaBQYM.js
+200 text/javascript 45701 http://127.0.0.1:3902/_app/immutable/chunks/nC082SSK.js
+200 text/javascript 49290 http://127.0.0.1:3902/_app/immutable/chunks/oB1pnNxh.js
+200 text/javascript 287 http://127.0.0.1:3902/_app/immutable/chunks/r6JrPz0H2.js
+200 text/javascript 37762 http://127.0.0.1:3902/_app/immutable/chunks/wfUqJqTc2.js
+200 text/javascript 65 http://127.0.0.1:3902/_app/immutable/chunks/xihTtKlq.js
+200 text/javascript 5452 http://127.0.0.1:3902/_app/immutable/entry/app.CABfZdWZ.js
+200 text/javascript 82 http://127.0.0.1:3902/_app/immutable/entry/start.BceSC3RC.js
+200 text/javascript 311 http://127.0.0.1:3902/_app/immutable/nodes/0.B00RScJc.js
+200 text/javascript 24577 http://127.0.0.1:3902/_app/immutable/nodes/2.Bmym8kID.js
+200 text/javascript 1010568 http://127.0.0.1:3902/_app/immutable/nodes/4.CK8UoRSd.js
+200 text/javascript 394 http://127.0.0.1:3902/_app/immutable/nodes/5.ErNg7xRm.js
+200 image/png 12392 http://127.0.0.1:3902/favicon.png
+200 image/svg+xml 1068 http://127.0.0.1:3902/favicon.svg
+200 application/json 359 http://127.0.0.1:3902/manifest.json
+## fonts referenced by served CSS (url())
+# 9 unique font/css-url refs
+200 font/ttf 121972 http://127.0.0.1:3902/_app/immutable/assets/codicon.ngg6Pgfi.ttf
+200 font/woff2 110088 http://127.0.0.1:3902/_app/immutable/assets/fa-brands-400.BP5tdqmh.woff2
+200 font/woff2 18924 http://127.0.0.1:3902/_app/immutable/assets/fa-regular-400.nyy7hhHF.woff2
+200 font/woff2 114740 http://127.0.0.1:3902/_app/immutable/assets/fa-solid-900.DRAAbZTg.woff2
+200 font/woff2 62456 http://127.0.0.1:3902/_app/immutable/assets/recursive-latin-crsv-normal.CjD_r53C.woff2
+200 font/woff2 58216 http://127.0.0.1:3902/_app/immutable/assets/recursive-latin-ext-crsv-normal.DaNfgQdd.woff2
+200 font/woff2 14448 http://127.0.0.1:3902/_app/immutable/assets/recursive-vietnamese-crsv-normal.BWWGUVOc.woff2
+200 image/svg+xml 879 http://127.0.0.1:3902/icons/use-chat-dark.svg
+200 image/svg+xml 879 http://127.0.0.1:3902/icons/use-chat.svg
+## all JS-referenced CSS/font/worker assets present on disk under _app/immutable/{assets,workers} + root files
+200 text/css 45252 http://127.0.0.1:3902/_app/immutable/assets/0.DBCesUhI.css
+200 text/css 14368 http://127.0.0.1:3902/_app/immutable/assets/2.Cjn3HSOQ.css
+200 text/css 2389 http://127.0.0.1:3902/_app/immutable/assets/4.BmjKRsT_.css
+200 text/css 238 http://127.0.0.1:3902/_app/immutable/assets/6.HIdZaORI.css
+200 text/css 77662 http://127.0.0.1:3902/_app/immutable/assets/FontAwesomeCSS.CgMYSIuj.css
+200 text/css 242 http://127.0.0.1:3902/_app/immutable/assets/View.XCPtWYBK.css
+200 font/ttf 121972 http://127.0.0.1:3902/_app/immutable/assets/codicon.ngg6Pgfi.ttf
+200 text/css 145983 http://127.0.0.1:3902/_app/immutable/assets/editor.BuC0XPbM.css
+200 font/woff2 110088 http://127.0.0.1:3902/_app/immutable/assets/fa-brands-400.BP5tdqmh.woff2
+200 font/woff2 18924 http://127.0.0.1:3902/_app/immutable/assets/fa-regular-400.nyy7hhHF.woff2
+200 font/woff2 114740 http://127.0.0.1:3902/_app/immutable/assets/fa-solid-900.DRAAbZTg.woff2
+200 font/woff2 62456 http://127.0.0.1:3902/_app/immutable/assets/recursive-latin-crsv-normal.CjD_r53C.woff2
+200 font/woff2 58216 http://127.0.0.1:3902/_app/immutable/assets/recursive-latin-ext-crsv-normal.DaNfgQdd.woff2
+200 font/woff2 14448 http://127.0.0.1:3902/_app/immutable/assets/recursive-vietnamese-crsv-normal.BWWGUVOc.woff2
+200 text/javascript 1054697 http://127.0.0.1:3902/_app/immutable/workers/css.worker-yKcq13f2.js
+200 text/javascript 280014 http://127.0.0.1:3902/_app/immutable/workers/editor.worker-tytyn86m.js
+200 text/javascript 719633 http://127.0.0.1:3902/_app/immutable/workers/html.worker-DSJ9zmd7.js
+200 text/javascript 409273 http://127.0.0.1:3902/_app/immutable/workers/json.worker-Oa9UrkKE.js
+200 text/javascript 6895078 http://127.0.0.1:3902/_app/immutable/workers/ts.worker-BtjBFNHX.js
+200 application/json 359 http://127.0.0.1:3902/manifest.json
+200 text/javascript 107 http://127.0.0.1:3902/service-worker.js
+200 text/javascript 4606 http://127.0.0.1:3902/embed.js
+200 image/x-icon 4286 http://127.0.0.1:3902/favicon.ico
+200 image/svg+xml 1068 http://127.0.0.1:3902/favicon.svg
+200 image/png 12392 http://127.0.0.1:3902/favicon.png
+200 text/plain 110 http://127.0.0.1:3902/robots.txt
+200 text/xml 404 http://127.0.0.1:3902/sitemap.xml
+200 text/plain 5449 http://127.0.0.1:3902/llms.txt
+200 application/json 27 http://127.0.0.1:3902/_app/version.json

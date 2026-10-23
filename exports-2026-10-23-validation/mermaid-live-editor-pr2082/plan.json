@@ -1,0 +1,27 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "pnpm install --frozen-lockfile",
+            "build": "pnpm run build",
+            "start": "static-web-server --root='/opt/static_app' --config-file='/opt/static_config/sws.toml' --log-level=info --port=8080"
+        },
+        "static_dir": "docs",
+        "static_redirects_config": "\n[[advanced.rewrites]]\nsource = \"/_app/**\"\ndestination = \"$0\"\n\n[[advanced.rewrites]]\nsource = \"/edit\"\ndestination = \"/edit.html\"\n\n[[advanced.rewrites]]\nsource = \"/view\"\ndestination = \"/view.html\"\n\n[[advanced.rewrites]]\nsource = \"/**/*.*\"\ndestination = \"$0\"\n\n[[advanced.rewrites]]\nsource = \"/**\"\ndestination = \"/404.html\"\n\n",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "pnpm",
+        "node_framework": "sveltekit",
+        "node_server": "node",
+        "node_build_command": "pnpm run build",
+        "pnpm_version": "10.34.7",
+        "node_remove_native_binaries": true,
+        "node_install_requires_all_files": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "mermaid-live-editor"
+    },
+    "services": []
+}

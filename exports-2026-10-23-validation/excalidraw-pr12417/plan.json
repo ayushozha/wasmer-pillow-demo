@@ -1,0 +1,36 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "yarn --frozen-lockfile",
+            "build": "yarn build:app:docker",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "excalidraw-app/build",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "yarn",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "yarn build:app:docker",
+        "yarn_version": "1.22.22",
+        "node_remove_native_binaries": true,
+        "node_install_requires_all_files": true,
+        "node_install_inputs": [
+            "package.json",
+            "examples/with-nextjs/package.json",
+            "examples/with-script-in-browser/package.json",
+            "excalidraw-app/package.json",
+            "packages/common/package.json",
+            "packages/element/package.json",
+            "packages/excalidraw/package.json",
+            "packages/fractional-indexing/package.json",
+            "packages/laser-pointer/package.json",
+            "packages/math/package.json",
+            "packages/utils/package.json"
+        ],
+        "node_package_name": "excalidraw-monorepo"
+    },
+    "services": []
+}

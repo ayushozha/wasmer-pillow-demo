@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Node.js
+    Package manager: npm
+    Output directory: dist
+
+  Generated Anybuild at <tmp>
+Plan saved to <scratch>/val/unp-coreui__coreui-free-react-admin-template.plan.json

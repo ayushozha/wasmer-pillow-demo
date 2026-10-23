@@ -1,0 +1,13 @@
+$ git ls-remote https://github.com/arthelokyo/astrowind.git refs/heads/main
+14e1a691f80548dcc36370847b1a02c0d0b12821	refs/heads/main
+$ git ls-remote https://github.com/onwidget/astrowind.git refs/heads/main
+14e1a691f80548dcc36370847b1a02c0d0b12821	refs/heads/main
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}' 'https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white'
+curl: (56) CONNECT tunnel failed, response 403
+000 
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}' 'https://wasmer.io/apps/create?github=arthelokyo%2Fastrowind'
+curl: (56) CONNECT tunnel failed, response 403
+000 
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type}' 'https://docs.wasmer.io/edge/'
+curl: (56) CONNECT tunnel failed, response 403
+000 

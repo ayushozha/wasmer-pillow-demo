@@ -1,0 +1,6 @@
+  Using static Node.js provider declared in Anybuild
+    Framework: Vite
+    Server: Node.js
+    Package manager: yarn
+    Output directory: excalidraw-app/build
+Plan saved to /tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/replay/val-excalidraw/plan.json

@@ -1,0 +1,7 @@
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/definitely-missing-q7x3k9	text/html	0
+--	title	/definitely-missing-q7x3k9	(none)	
+SUMMARY pages=2 refs_checked=0 failures=2
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/definitely-missing-q7x3k9	text/html	0

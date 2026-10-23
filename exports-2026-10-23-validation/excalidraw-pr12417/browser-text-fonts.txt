@@ -1,0 +1,15 @@
+elements: [{"type":"text","text":"Hello Wasmer","fontFamily":5}]
+font requests (12):
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTQ3j6zbXWjgeg.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Assistant/Assistant-SemiBold.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/ComicShanns/ComicShanns-Regular-279a7b317d12eb88de06167bd672b4b4.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Assistant/Assistant-Regular.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Assistant/Assistant-Bold.woff2
+  BLOCKED https://excalidraw.nyc3.cdn.digitaloceanspaces.com/oss/fonts/Assistant/Assistant-Medium.woff2
+  200 http://127.0.0.1:3903/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2
+  404 http://127.0.0.1:3903/assets/Assistant-Regular.woff2
+  404 http://127.0.0.1:3903/assets/Assistant-SemiBold.woff2
+  404 http://127.0.0.1:3903/assets/Assistant-Bold.woff2
+  404 http://127.0.0.1:3903/assets/Assistant-Medium.woff2
+exit=0

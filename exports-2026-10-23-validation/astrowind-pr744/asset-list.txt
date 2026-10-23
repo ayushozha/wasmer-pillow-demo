@@ -1,0 +1,9 @@
+/_astro/ClientRouter.astro_astro_type_script_index_0_lang.8JqLyJGz.js
+/_astro/Layout.Qhl5tzJT.css
+/_astro/apple-touch-icon.DHIlG7dp.png
+/_astro/favicon.CGiRCjPI.ico
+/_astro/favicon.vp_fBu0c.svg
+/_astro/page.DUP3bs27.js
+/get-started-website-with-astro-tailwind-css
+/markdown-elements-demo-post
+/sitemap-index.xml

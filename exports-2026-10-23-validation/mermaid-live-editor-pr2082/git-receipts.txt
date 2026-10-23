@@ -1,0 +1,50 @@
+$ git rev-parse HEAD
+7e34d9be5a614babac246434773411d341018abb
+exit=0
+$ git ls-remote origin refs/pull/2082/head refs/heads/develop
+eb4141dd51247259e95ecd890c1bf3dabf314913	refs/heads/develop
+7e34d9be5a614babac246434773411d341018abb	refs/pull/2082/head
+exit=0
+$ git rev-parse origin/develop
+eb4141dd51247259e95ecd890c1bf3dabf314913
+exit=0
+$ git merge-base HEAD origin/develop
+eb4141dd51247259e95ecd890c1bf3dabf314913
+exit=0
+$ git log --format='%H %an <%ae> %ad %s' -1 HEAD
+7e34d9be5a614babac246434773411d341018abb Ayush Ojha <ayushojha@wasmer.io> Thu Oct 22 01:02:47 2026 -0700 build: add Wasmer deployment option
+exit=0
+$ git diff --stat eb4141dd51247259e95ecd890c1bf3dabf314913..HEAD
+ Anybuild  | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ README.md |  6 ++++++
+ 2 files changed, 53 insertions(+)
+exit=0
+$ git diff --name-status eb4141dd51247259e95ecd890c1bf3dabf314913..HEAD
+A	Anybuild
+M	README.md
+exit=0
+$ git ls-tree HEAD -- Anybuild README.md package.json pnpm-lock.yaml .husky .npmrc .node-version
+040000 tree 96f3185fb179c34279a1bb908f5ec03bc356041e	.husky
+100644 blob b832e4001dbc9fb44e7055debe656e04b254f47c	.node-version
+100644 blob fbf7f9a7e1efa972eb61de3888b539fbc660d0fa	.npmrc
+100644 blob 8be261e62776b44bf40dbc59221745b389adaf09	Anybuild
+100644 blob 260b74842b1d650c883f2eb86a52ff18c13e37a7	README.md
+100644 blob e0eba3e2d54c1bf880bc8063d5f6120d8c7e63a7	package.json
+100644 blob 45e5cb743e4292fb6e639937a8b7452d94f8eec3	pnpm-lock.yaml
+exit=0
+$ git ls-tree eb4141dd51247259e95ecd890c1bf3dabf314913 -- README.md package.json pnpm-lock.yaml .husky
+040000 tree 96f3185fb179c34279a1bb908f5ec03bc356041e	.husky
+100644 blob ca07db73fb442770d28cb2574a8a373eafbab8ca	README.md
+100644 blob e0eba3e2d54c1bf880bc8063d5f6120d8c7e63a7	package.json
+100644 blob 45e5cb743e4292fb6e639937a8b7452d94f8eec3	pnpm-lock.yaml
+exit=0
+$ git ls-tree -r HEAD -- .husky
+100644 blob 31354ec1389994b5f6708c7d915fdcc6bb76ba6e	.husky/.gitignore
+100755 blob 1df96725b97e193ce582011dd3d41f2b235204eb	.husky/pre-commit
+exit=0
+$ git diff --stat eb4141dd51247259e95ecd890c1bf3dabf314913..HEAD -- .husky pnpm-lock.yaml package.json .github
+exit=0
+$ ls -a | grep -i 'lefthook\|pre-commit-config\|simple-git'
+exit=1
+$ git status --porcelain
+exit=0

@@ -1,0 +1,12 @@
+# upstream service origins baked into the built JS (grep -ohE over static_app/assets/*.js, counts = files containing)
+oss-collab.excalidraw.com: 1 files
+json.excalidraw.com: 1 files
+firebaseio.com: 1 files
+excalidraw-room-persistence: 1 files
+libraries.excalidraw.com: 1 files
+oss-ai.excalidraw.com: 1 files
+plus.excalidraw.com: 1 files
+app.excalidraw.com: 2 files
+excalidraw.nyc3.cdn.digitaloceanspaces.com: 1 files
+sentry.io: 1 files
+simpleanalyticscdn.com: 1 files

@@ -1,0 +1,14 @@
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/
+200 text/html 5282
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/html/
+200 text/html 69866
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/html/index.html
+200 text/html 69866
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/this-path-does-not-exist
+404 text/html; charset=utf-8 106
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/html/nope.html
+404 text/html; charset=utf-8 106
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/assets/vendor/fonts/iconify-icons.css
+200 text/css 1283601
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' http://127.0.0.1:3912/Staticfile
+200 application/octet-stream 8

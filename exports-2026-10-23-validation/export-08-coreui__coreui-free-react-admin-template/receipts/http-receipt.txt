@@ -1,0 +1,20 @@
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/'
+200 text/html 1255
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/#/dashboard'
+200 text/html 1255
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/#/login'
+200 text/html 1255
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/index.html'
+200 text/html 1255
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/dashboard'
+404 text/html; charset=utf-8 106
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/login'
+404 text/html; charset=utf-8 106
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/no-such-path'
+404 text/html; charset=utf-8 106
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/manifest.json'
+200 application/json 299
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/favicon.ico'
+200 image/x-icon 1150
+$ curl -sS -o /dev/null -w '%{http_code} %{content_type} %{size_download}' 'http://127.0.0.1:3911/Staticfile'
+404 text/html; charset=utf-8 106

@@ -1,0 +1,75 @@
+200	page	/	text/html	5282
+--	title	/	Sneat - Free Bootstrap 5 HTML Admin Template	
+200	page	/html/	text/html	69866
+--	title	/html/	Demo: Dashboard - Analytics | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/index.html	text/html	69866
+--	title	/html/index.html	Demo: Dashboard - Analytics | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/auth-login-basic.html	text/html	10428
+--	title	/html/auth-login-basic.html	Demo: Login Basic - Pages | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/auth-register-basic.html	text/html	10488
+--	title	/html/auth-register-basic.html	Demo: Register Basic - Pages | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/cards-basic.html	text/html	69702
+--	title	/html/cards-basic.html	Demo: Cards basic - UI elements | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/form-layouts-vertical.html	text/html	46390
+--	title	/html/form-layouts-vertical.html	Demo: Vertical Layouts - Forms | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/tables-basic.html	text/html	229522
+--	title	/html/tables-basic.html	Demo: Tables - Basic Tables | Sneat - Bootstrap Dashboard FREE	
+200	page	/html/pages-misc-error.html	text/html	3476
+--	title	/html/pages-misc-error.html	Demo: Error - Pages | Sneat - Bootstrap Dashboard FREE	
+200	page	/documentation.html	text/html	531
+--	title	/documentation.html	Sneat - Free Bootstrap 5 HTML Admin Template	
+200	page	/assets/vendor/css/core.css	text/css	800032
+200	page	/assets/js/main.js	text/javascript	4142
+404	page	/this-path-does-not-exist	text/html	0
+--	title	/this-path-does-not-exist	(none)	
+404	page	/html/nope.html	text/html	0
+--	title	/html/nope.html	(none)	
+200	ref	/assets/img/favicon/favicon.ico	image/x-icon	1393
+200	ref	/assets/css/demo.css	text/css	2867
+200	ref	/assets/vendor/fonts/iconify-icons.css	text/css	1283601
+200	ref	/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css	text/css	4185
+200	ref	/assets/vendor/libs/apex-charts/apex-charts.css	text/css	17676
+200	ref	/assets/vendor/js/helpers.js	text/javascript	32408
+200	ref	/assets/js/config.js	text/javascript	1756
+200	ref	/html/layouts-without-menu.html	text/html	10496
+200	ref	/html/layouts-without-navbar.html	text/html	34297
+200	ref	/html/layouts-fluid.html	text/html	38991
+200	ref	/html/layouts-container.html	text/html	39067
+200	ref	/html/layouts-blank.html	text/html	2766
+200	ref	/html/pages-account-settings-account.html	text/html	51993
+200	ref	/html/pages-account-settings-notifications.html	text/html	46317
+200	ref	/html/pages-account-settings-connections.html	text/html	51277
+200	ref	/html/auth-forgot-password-basic.html	text/html	9171
+200	ref	/html/pages-misc-under-maintenance.html	text/html	3462
+200	ref	/html/ui-accordion.html	text/html	46468
+200	ref	/html/ui-alerts.html	text/html	42189
+200	ref	/html/ui-badges.html	text/html	47470
+200	ref	/html/ui-buttons.html	text/html	60669
+200	ref	/html/ui-carousel.html	text/html	44817
+200	ref	/html/ui-collapse.html	text/html	47193
+200	ref	/html/ui-dropdowns.html	text/html	91411
+200	ref	/html/ui-footer.html	text/html	42597
+200	ref	/html/ui-list-groups.html	text/html	63781
+200	ref	/html/ui-modals.html	text/html	92615
+200	ref	/html/ui-navbar.html	text/html	45587
+200	ref	/html/ui-offcanvas.html	text/html	62177
+200	ref	/html/ui-pagination-breadcrumbs.html	text/html	55628
+200	ref	/html/ui-progress.html	text/html	56389
+200	ref	/html/ui-spinners.html	text/html	45044
+200	ref	/html/ui-tabs-pills.html	text/html	57043
+200	ref	/html/ui-toasts.html	text/html	55598
+200	ref	/html/ui-tooltips-popovers.html	text/html	46116
+200	ref	/html/ui-typography.html	text/html	56920
+200	ref	/html/extended-ui-perfect-scrollbar.html	text/html	45487
+200	ref	/html/extended-ui-text-divider.html	text/html	43593
+200	ref	/html/icons-boxicons.html	text/html	47162
+200	ref	/html/forms-basic-inputs.html	text/html	68754
+200	ref	/html/forms-input-groups.html	text/html	65997
+200	ref	/html/form-layouts-horizontal.html	text/html	48420
+200	ref	/assets/img/avatars/1.png	image/png	14015
+200	ref	/assets/img/illustrations/man-with-laptop.png	image/png	21060
+200	ref	/assets/img/icons/unicons/chart-success.png	image/png	611
+200	ref	/assets/img/icons/unicons/wallet-info.png	image/png	696
+SUMMARY pages=14 refs_checked=46 failures=2
+FAIL	404	page	/this-path-does-not-exist	text/html	0
+FAIL	404	page	/html/nope.html	text/html	0

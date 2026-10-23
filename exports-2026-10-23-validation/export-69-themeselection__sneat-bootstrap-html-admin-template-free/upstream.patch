@@ -1,0 +1,24 @@
+diff --git a/README.md b/README.md
+index 5f91d00..c9a171b 100644
+--- a/README.md
++++ b/README.md
+@@ -70,6 +70,12 @@ ## Available Tasks 🧑‍💻
+ 
+ > **Tip:** Use the `npm run` command to list all predefined npm tasks from the `package.json` file.
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=themeselection%2Fsneat-bootstrap-html-admin-template-free)
++
++Wasmer serves the committed demo files as a static site (the root `Staticfile` sets `root: .`, so no Node/Gulp build runs); the login and register pages are static demo screens without a real sign-in. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the template and redeploy on every push, fork this repository and import your fork on Wasmer.
++
+ ## What's Included 📦
+ 
+ - Dashboard
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..fdbb02c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: .

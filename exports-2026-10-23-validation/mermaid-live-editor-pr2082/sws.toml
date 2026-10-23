@@ -1,0 +1,21 @@
+
+[[advanced.rewrites]]
+source = "/_app/**"
+destination = "$0"
+
+[[advanced.rewrites]]
+source = "/edit"
+destination = "/edit.html"
+
+[[advanced.rewrites]]
+source = "/view"
+destination = "/view.html"
+
+[[advanced.rewrites]]
+source = "/**/*.*"
+destination = "$0"
+
+[[advanced.rewrites]]
+source = "/**"
+destination = "/404.html"
+

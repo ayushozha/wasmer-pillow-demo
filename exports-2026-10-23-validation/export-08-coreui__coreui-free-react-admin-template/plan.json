@@ -1,0 +1,25 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "build",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "npm",
+        "node_framework": "vite",
+        "node_server": "node",
+        "node_build_command": "npm run build",
+        "npm_version": "11",
+        "node_remove_native_binaries": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "@coreui/coreui-free-react-admin-template"
+    },
+    "services": []
+}

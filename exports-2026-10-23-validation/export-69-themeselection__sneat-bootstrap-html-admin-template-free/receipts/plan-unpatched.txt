@@ -1,0 +1,11 @@
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: yarn
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+Plan saved to <scratch>/val/unp-themeselection__sneat-bootstrap-html-admin-template-free.plan.json

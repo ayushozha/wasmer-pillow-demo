@@ -1,0 +1,24 @@
+200	page	/	text/html	1255
+--	title	/	CoreUI Free React.js Admin Template	
+200	page	/#/dashboard	text/html	1255
+--	title	/#/dashboard	CoreUI Free React.js Admin Template	
+200	page	/#/login	text/html	1255
+--	title	/#/login	CoreUI Free React.js Admin Template	
+200	page	/#/register	text/html	1255
+--	title	/#/register	CoreUI Free React.js Admin Template	
+200	page	/#/404	text/html	1255
+--	title	/#/404	CoreUI Free React.js Admin Template	
+404	page	/dashboard	text/html	0
+--	title	/dashboard	(none)	
+404	page	/login	text/html	0
+--	title	/login	(none)	
+404	page	/no-such-path	text/html	0
+--	title	/no-such-path	(none)	
+200	ref	/manifest.json	application/json	299
+200	ref	/favicon.ico	image/x-icon	1150
+200	ref	/assets/index-CDF6GZqn.js	text/javascript	530154
+200	ref	/assets/index-BMn7H6x-.css	text/css	308861
+SUMMARY pages=8 refs_checked=4 failures=3
+FAIL	404	page	/dashboard	text/html	0
+FAIL	404	page	/login	text/html	0
+FAIL	404	page	/no-such-path	text/html	0

@@ -1,0 +1,5 @@
+# 2026-10-23T01:53:17Z reachability (curl -sS -o /dev/null -w code)
+https://registry.wasmer.io/graphql 000
+https://wasmer.io/ 000
+https://cdn.wasmer.io/ 000
+https://github.com/wasmerio/wasmer/releases/download/v7.5.0/wasmer-linux-amd64.tar.gz 200

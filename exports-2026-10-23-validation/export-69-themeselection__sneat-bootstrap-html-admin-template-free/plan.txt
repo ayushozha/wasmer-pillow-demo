@@ -1,0 +1,6 @@
+  Detected static site provider
+    Output directory: .
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to <scratch>/replay/val-sneat/plan.json

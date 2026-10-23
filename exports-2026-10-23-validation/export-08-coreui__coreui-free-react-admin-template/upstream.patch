@@ -1,0 +1,24 @@
+diff --git a/README.md b/README.md
+index 6f5e90c..92efc2b 100644
+--- a/README.md
++++ b/README.md
+@@ -141,6 +141,12 @@ or
+ $ yarn build
+ ```
+ 
++#### Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=coreui%2Fcoreui-free-react-admin-template)
++
++Wasmer detects the Vite app, runs `npm install` and `npm run build`, and serves the generated `build` folder as static files (the root `Staticfile` tells it to serve `build`). The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the site and redeploy on every push, fork this repository and import your own repository on Wasmer.
++
+ ## What's included
+ 
+ Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+diff --git a/Staticfile b/Staticfile
+new file mode 100644
+index 0000000..9b2144c
+--- /dev/null
++++ b/Staticfile
+@@ -0,0 +1 @@
++root: build

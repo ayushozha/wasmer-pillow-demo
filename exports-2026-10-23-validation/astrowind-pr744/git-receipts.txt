@@ -1,0 +1,59 @@
+$ git rev-parse HEAD
+deb589391de4e2366a5cc4a6c0ebd52f545f06e8
+$ git log -1 --format='%H %P | %an <%ae> | %ad | %s' pr744merge (GitHub test-merge ref)
+5d5422e29e6a560ef121f82f6b1b0d659e00753c 14e1a691f80548dcc36370847b1a02c0d0b12821 deb589391de4e2366a5cc4a6c0ebd52f545f06e8 | Merge deb589391de4e2366a5cc4a6c0ebd52f545f06e8 into 14e1a691f80548dcc36370847b1a02c0d0b12821
+$ git merge-base HEAD origin/main
+14e1a691f80548dcc36370847b1a02c0d0b12821
+$ git log --format='%H %an %ad %s' $(git merge-base HEAD origin/main)..HEAD
+deb589391de4e2366a5cc4a6c0ebd52f545f06e8 Ayush Ojha Thu Oct 22 00:58:05 2026 -0700 docs: add Deploy to Wasmer option
+$ git diff --stat merge-base..HEAD
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+$ git diff --name-status merge-base..HEAD
+M	README.md
+$ git log -1 --format=%B HEAD
+docs: add Deploy to Wasmer option
+
+$ git diff 14e1a69..HEAD
+diff --git a/README.md b/README.md
+index d0ef70c..d73b189 100644
+--- a/README.md
++++ b/README.md
+@@ -273,6 +273,12 @@ Clone this repository on your own GitHub account and deploy to Vercel:
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farthelokyo%2Fastrowind)
+ 
++#### Deploy to Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=arthelokyo%2Fastrowind)
++
++[Wasmer Edge](https://docs.wasmer.io/edge/) is a cloud platform for hosting websites and applications. Build AstroWind with `npm run build` and serve the generated `dist` directory. The button opens the public template's import page; review the build settings before deploying. To publish your own content and redeploy changes, fork this repository and import your fork instead.
++
+ #### Deploy to Cloudflare
+ 
+ Clone this repository on your own GitHub account and deploy it to Cloudflare Workers (static assets, no adapter needed; the `wrangler.jsonc` in the repo points Cloudflare at `dist/`):
+$ git ls-tree HEAD -- README.md package.json package-lock.json pnpm-lock.yaml yarn.lock AGENTS.md CONTRIBUTING.md .husky .github
+040000 tree 75b489e488e19d02400b87e0559f5c0589a6a8c1	.github
+100644 blob 4bfd82a9b4717f5581c51d24a9ccbb3008a509bd	AGENTS.md
+100644 blob d73b1891d35252c549f453b25954713da2e565ea	README.md
+100644 blob 56aaebeb10995585ae948e398a26b8e5f591293f	package-lock.json
+100644 blob c8dbf155eef65e58ba23792b4cecb62ea7abd1c4	package.json
+$ git ls-tree 14e1a69 -- (same)
+040000 tree 75b489e488e19d02400b87e0559f5c0589a6a8c1	.github
+100644 blob 4bfd82a9b4717f5581c51d24a9ccbb3008a509bd	AGENTS.md
+100644 blob d0ef70ca4bf235636be1b2d865d947e28c304e24	README.md
+100644 blob 56aaebeb10995585ae948e398a26b8e5f591293f	package-lock.json
+100644 blob c8dbf155eef65e58ba23792b4cecb62ea7abd1c4	package.json
+$ ls -d .husky .lefthook* lefthook.yml .pre-commit-config.yaml .simple-git-hooks* .githooks
+ls: cannot access '.husky': No such file or directory
+ls: cannot access '.lefthook*': No such file or directory
+ls: cannot access 'lefthook.yml': No such file or directory
+ls: cannot access '.pre-commit-config.yaml': No such file or directory
+ls: cannot access '.simple-git-hooks*': No such file or directory
+ls: cannot access '.githooks': No such file or directory
+$ grep -nE 'husky|lefthook|simple-git-hooks|lint-staged|"prepare"' package.json
+exit=1
+$ git config core.hooksPath
+exit=1
+$ git diff --stat 14e1a691..HEAD -- package-lock.json package.json .github .husky
+(empty = unchanged)

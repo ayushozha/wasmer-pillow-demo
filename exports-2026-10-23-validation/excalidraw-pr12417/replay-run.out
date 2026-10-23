@@ -1,0 +1,8 @@
+# [variant of scripts/replay.sh: plan uses the COMMITTED Anybuild file (no --temp-anybuild)]
+# replay of val-excalidraw  source=/tmp/claude-0/-home-user-wasmer-pillow-demo/9b68abed-67cb-5023-b672-44f9751def64/scratchpad/val-src/excalidraw  upstream HEAD=2a0620cb104a5a53d0ebf9e6b4edd730ac8837dc
+# local diff vs HEAD: 
+# provider=node-static install='yarn --frozen-lockfile' build='yarn build:app:docker' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='excalidraw-app/build' pm=yarn@1.22.22 inputs='package.json examples/with-nextjs/package.json examples/with-script-in-browser/package.json excalidraw-app/package.json packages/common/package.json packages/element/package.json packages/excalidraw/package.json packages/fractional-indexing/package.json packages/laser-pointer/package.json packages/math/package.json packages/utils/package.json' all_files=True
+# static_app files: 506
+200	ref	/manifest.webmanifest	application/manifest+json	1355
+SUMMARY pages=2 refs_checked=8 failures=1
+FAIL	404	page	/definitely-missing-q7x3k9	text/html	0

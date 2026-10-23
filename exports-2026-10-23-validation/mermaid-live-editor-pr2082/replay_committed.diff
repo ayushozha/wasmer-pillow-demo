@@ -1,0 +1,4 @@
+32c32
+< "$ANYBUILD" plan --temp-anybuild --wasmer "$FLAT" -o "$R/plan.json" > "$R/plan.txt" 2>&1
+---
+> "$ANYBUILD" plan --anybuild-path "$FLAT/Anybuild" --wasmer "$FLAT" -o "$R/plan.json" > "$R/plan.txt" 2>&1

@@ -1,0 +1,22 @@
+{
+    "provider": "node",
+    "config": {
+        "name": "unp-themeselection__sneat-bootstrap-html-admin-template-free",
+        "commands": {
+            "install": "yarn install",
+            "build": "yarn run build"
+        },
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "yarn",
+        "node_server": "node",
+        "node_build_command": "yarn run build",
+        "node_remove_native_binaries": true,
+        "node_install_requires_all_files": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "sneat-bootstrap-html-admin-template-free"
+    },
+    "services": []
+}

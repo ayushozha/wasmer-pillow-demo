@@ -1,0 +1,82 @@
+$ git rev-parse HEAD
+2a0620cb104a5a53d0ebf9e6b4edd730ac8837dc
+$ git merge-base origin/master HEAD
+1d4dc2c0e6e476911d0760e9c3cf3694f2d43384
+$ git log --oneline 1d4dc2c0..HEAD
+2a0620cb build: add Wasmer deployment option
+$ git diff --stat 1d4dc2c0..HEAD
+ Anybuild  | 17 +++++++++++++++++
+ README.md |  8 ++++++++
+ 2 files changed, 25 insertions(+)
+$ git diff --name-status 1d4dc2c0..HEAD
+A	Anybuild
+M	README.md
+$ git ls-tree HEAD -- Anybuild README.md yarn.lock package.json .lintstagedrc.js .husky
+040000 tree cc4e59e11d6c42a6ef6f66281f12c7a439ec02ca	.husky
+100644 blob 612d4c39aca5110ea9d366f9f617afe95803596f	.lintstagedrc.js
+100644 blob 4ed8b63a54c7cb9369c48a5146c2f33ae2886e46	Anybuild
+100644 blob dcb1989f5253321eeaae528b27fed803a15c7d37	README.md
+100644 blob c91ee030c3800a91359082661a89d20a4da051f5	package.json
+100644 blob e2eb9e911b805274a3e3e83a372a82a1e7f621bf	yarn.lock
+$ git ls-tree 1d4dc2c0 -- README.md yarn.lock package.json .lintstagedrc.js .husky
+040000 tree cc4e59e11d6c42a6ef6f66281f12c7a439ec02ca	.husky
+100644 blob 612d4c39aca5110ea9d366f9f617afe95803596f	.lintstagedrc.js
+100644 blob 48b9d1de9fbb1c74406407e89e2471a01b1f28de	README.md
+100644 blob c91ee030c3800a91359082661a89d20a4da051f5	package.json
+100644 blob e2eb9e911b805274a3e3e83a372a82a1e7f621bf	yarn.lock
+$ git ls-tree -r HEAD -- .husky
+100755 blob ab2a5ac5fff964486659731336952fcf362021b5	.husky/pre-commit
+$ cat .husky/pre-commit
+#!/bin/sh
+# yarn lint-staged
+$ ls lefthook* .simple-git-hooks* .pre-commit-config.yaml
+ls: cannot access 'lefthook*': No such file or directory
+ls: cannot access '.simple-git-hooks*': No such file or directory
+ls: cannot access '.pre-commit-config.yaml': No such file or directory
+$ git diff 1d4dc2c0..HEAD -- .husky .lintstagedrc.js yarn.lock package.json | wc -l
+0
+$ git status --porcelain | wc -l
+0
+$ git diff 1d4dc2c0..HEAD
+diff --git a/Anybuild b/Anybuild
+new file mode 100644
+index 00000000..4ed8b63a
+--- /dev/null
++++ b/Anybuild
+@@ -0,0 +1,17 @@
++load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config")
++load("//anybuild/tools:staticfile.bzl", "staticfile_serve")
++
++config = nodestatic_config(
++    schema = 1,
++    commands = {"install": "yarn --frozen-lockfile"},
++    node_package_manager = "yarn",
++    yarn_version = "1.22.22",
++    node_version = "24",
++    node_build_command = "yarn build:app:docker",
++    node_install_requires_all_files = True,
++    static_dir = "excalidraw-app/build",
++)
++
++build = nodestatic_build(config)
++
++staticfile_serve(config, build, name = "excalidraw", provider = "node-static")
+diff --git a/README.md b/README.md
+index 48b9d1de..dcb1989f 100644
+--- a/README.md
++++ b/README.md
+@@ -94,6 +94,14 @@ yarn add react react-dom @excalidraw/excalidraw
+ 
+ Check out our [documentation](https://docs.excalidraw.com/docs/@excalidraw/excalidraw/installation) for more details!
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=excalidraw%2Fexcalidraw)
++
++[Wasmer Edge](https://docs.wasmer.io/edge/) is a cloud hosting platform powered by WebAssembly. The included [Anybuild file](./Anybuild) configures a static deployment: `yarn --frozen-lockfile` installs dependencies, `yarn build:app:docker` builds the editor, and `excalidraw-app/build` contains the output. Run these commands from the repository root.
++
++The button opens the import page for this public repository; review the build settings before deploying. To customise the app and deploy your changes, fork this repository and import your own fork. This hosts the web editor; collaboration, cloud storage, and AI features still depend on separately configured services.
++
+ ## Contributing
+ 
+ - Missing something or found a bug? [Report here](https://github.com/excalidraw/excalidraw/issues).

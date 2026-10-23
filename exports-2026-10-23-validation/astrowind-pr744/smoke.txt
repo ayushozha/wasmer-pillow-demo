@@ -1,0 +1,29 @@
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/get-started-website-with-astro-tailwind-css	text/html	0
+--	title	/get-started-website-with-astro-tailwind-css	(none)	
+404	page	/blog	text/html	0
+--	title	/blog	(none)	
+404	page	/rss.xml	text/html	0
+--	title	/rss.xml	(none)	
+404	page	/sitemap-index.xml	text/html	0
+--	title	/sitemap-index.xml	(none)	
+200	page	/404	text/html	7899
+--	title	/404	Error 404 — AstroWind	
+200	page	/404.html	text/html	7899
+--	title	/404.html	Error 404 — AstroWind	
+404	page	/definitely-missing-a7q3zk	text/html	0
+--	title	/definitely-missing-a7q3zk	(none)	
+200	ref	/_astro/favicon.CGiRCjPI.ico	image/x-icon	15086
+200	ref	/_astro/favicon.vp_fBu0c.svg	image/svg+xml	749
+200	ref	/_astro/apple-touch-icon.DHIlG7dp.png	image/png	5498
+200	ref	/_astro/ClientRouter.astro_astro_type_script_index_0_lang.8JqLyJGz.js	text/javascript	13885
+200	ref	/_astro/Layout.Qhl5tzJT.css	text/css	125429
+200	ref	/_astro/page.DUP3bs27.js	text/javascript	47
+SUMMARY pages=8 refs_checked=6 failures=6
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/get-started-website-with-astro-tailwind-css	text/html	0
+FAIL	404	page	/blog	text/html	0
+FAIL	404	page	/rss.xml	text/html	0
+FAIL	404	page	/sitemap-index.xml	text/html	0
+FAIL	404	page	/definitely-missing-a7q3zk	text/html	0

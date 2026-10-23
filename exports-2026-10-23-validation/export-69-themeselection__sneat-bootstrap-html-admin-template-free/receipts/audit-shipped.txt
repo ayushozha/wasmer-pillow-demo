@@ -1,0 +1,10 @@
+# shipped (vendored, built from yarn.lock-resolved versions) browser libs in assets/vendor; StaticFile provider runs no install, so npm audit of the work dir does not apply
+$ python3 -I adv.py @popperjs/core@2.11.8 apexcharts@4.2.0 bootstrap@5.3.3 highlight.js@11.10.0 jquery@3.7.1 masonry-layout@4.2.2 perfect-scrollbar@1.5.6
+@popperjs/core@2.11.8: 0 advisories
+apexcharts@4.2.0: 0 advisories
+bootstrap@5.3.3: 0 advisories
+highlight.js@11.10.0: 0 advisories
+jquery@3.7.1: 0 advisories
+masonry-layout@4.2.2: 0 advisories
+perfect-scrollbar@1.5.6: 0 advisories
+exit=0

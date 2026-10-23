@@ -1,0 +1,105 @@
+[
+ {
+  "view": "home",
+  "url": "http://127.0.0.1:3901/",
+  "viewport": "1280x800",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": null,
+  "screenshot": "shot-sws-home.png",
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ },
+ {
+  "view": "blog-index",
+  "url": "http://127.0.0.1:3901/blog",
+  "viewport": "1280x800",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": null,
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ },
+ {
+  "view": "blog-post",
+  "url": "http://127.0.0.1:3901/get-started-website-with-astro-tailwind-css",
+  "viewport": "1280x800",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": null,
+  "screenshot": "shot-sws-blog-post.png",
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ },
+ {
+  "view": "dark-toggle",
+  "url": "http://127.0.0.1:3901/",
+  "viewport": "1280x800",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "toggleFound": 0,
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": null,
+  "screenshot": "shot-sws-dark-toggle.png",
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ },
+ {
+  "view": "dark-pcs",
+  "url": "http://127.0.0.1:3901/",
+  "viewport": "1280x800",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "htmlHasDarkClass": true,
+  "bodyBg": "rgb(8, 9, 10)",
+  "h1": null,
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ },
+ {
+  "view": "mobile-menu",
+  "url": "http://127.0.0.1:3901/",
+  "viewport": "390x844",
+  "status": 404,
+  "title": "Error 404 — AstroWind",
+  "menuButtonFound": 0,
+  "horizontalOverflow": false,
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": null,
+  "screenshot": "shot-sws-mobile-menu.png",
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ }
+]

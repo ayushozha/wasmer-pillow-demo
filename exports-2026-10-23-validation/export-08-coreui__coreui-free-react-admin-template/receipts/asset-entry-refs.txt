@@ -1,0 +1,27 @@
+# chunk/asset names referenced from the entry bundle(s) of the same build, checked for existence + HTTP
+referenced=25
+200	text/javascript	/assets/CCardBody-BtXuLN7k.js
+200	text/javascript	/assets/CContainer-B9bP1Veo.js
+200	text/javascript	/assets/CForm-BOYuIDLn.js
+200	text/javascript	/assets/CFormCheck-D4PYcJOD.js
+200	text/javascript	/assets/CFormInput-BxdVda4e.js
+200	text/javascript	/assets/CInputGroupText-IP9t8xdP.js
+200	text/javascript	/assets/CRow-Q4qau5Q6.js
+200	text/javascript	/assets/CTooltip-CUWVcCHx.js
+200	text/javascript	/assets/ChangePassword-BaVVoJGn.js
+200	text/javascript	/assets/CheckEmail-BD4N4Bno.js
+200	text/javascript	/assets/DefaultLayout-CkRepYdu.js
+200	text/css	/assets/DefaultLayout-CnrJMVq9.css
+200	text/javascript	/assets/Login-Dau39d9l.js
+200	text/javascript	/assets/Page404-B0izLijo.js
+200	text/javascript	/assets/Page500-B19ahEdf.js
+200	text/javascript	/assets/PasswordChanged-qBmFDyes.js
+200	text/javascript	/assets/Register-CHaTomGc.js
+200	text/javascript	/assets/ResetPassword-cr2rdVSr.js
+200	text/javascript	/assets/cil-magnifying-glass-BtvmRqAy.js
+200	text/javascript	/assets/eye-LDv_-qr4.js
+200	text/javascript	/assets/getRTLPlacement-BsMLBduV.js
+200	text/javascript	/assets/getTransitionDurationFromElement-CB9dqBQ-.js
+200	text/javascript	/assets/google-CxWwIRpW.js
+200	text/javascript	/assets/index.esm-BUhKhjmu.js
+200	text/javascript	/assets/logo-C64SU0Xi.js

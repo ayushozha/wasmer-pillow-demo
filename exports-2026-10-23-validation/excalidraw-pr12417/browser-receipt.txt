@@ -1,0 +1,25 @@
+goto / status 200
+title Excalidraw Whiteboard
+canvases 2
+localStorage excalidraw before: []
+localStorage excalidraw elements: 1 [{"type":"rectangle","w":200,"h":150,"isDeleted":false}]
+service worker registrations: ["http://127.0.0.1:3903/sw.js"]
+local responses by status: {"200":8,"404":4}
+local failed (>=400): ["404 http://127.0.0.1:3903/assets/Assistant-SemiBold.woff2","404 http://127.0.0.1:3903/assets/Assistant-Medium.woff2","404 http://127.0.0.1:3903/assets/Assistant-Regular.woff2","404 http://127.0.0.1:3903/assets/Assistant-Bold.woff2"]
+blocked external origins: {"https://excalidraw.nyc3.cdn.digitaloceanspaces.com":7,"https://scripts.simpleanalyticscdn.com":1}
+console errors (12):
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: net::ERR_FAILED
+  Failed to load resource: the server responded with a status of 404 (Not Found)
+  Failed to load resource: the server responded with a status of 404 (Not Found)
+  Failed to load resource: the server responded with a status of 404 (Not Found)
+  Failed to load resource: the server responded with a status of 404 (Not Found)
+page errors (0):
+RESULT rectangle_created=true
+exit=0

@@ -1,0 +1,138 @@
+$ node -v
+v24.22.1
+exit=0
+
+$ npm -v
+10.9.4
+exit=0
+
+$ git rev-parse HEAD
+deb589391de4e2366a5cc4a6c0ebd52f545f06e8
+exit=0
+
+$ npm ci
+
+added 605 packages, and audited 606 packages in 10s
+
+240 packages are looking for funding
+  run `npm fund` for details
+
+16 vulnerabilities (5 moderate, 11 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+exit=0
+
+$ npm run check
+
+> @arthelokyo/astrowind@1.0.0-beta.66 check
+> npm run check:astro && npm run check:eslint && npm run check:prettier
+
+
+> @arthelokyo/astrowind@1.0.0-beta.66 check:astro
+> astro check
+
+[2m01:56:37[22m [34m[astrowind][39m Astrowind `./src/config.yaml` has been loaded.
+[2m01:56:38[22m [34m[content][39m Syncing content
+[2m01:56:39[22m [34m[content][39m Synced content
+[2m01:56:39[22m [34m[types][39m Generated [2m1.97s[22m
+[2m01:56:39[22m [34m[check][39m Getting diagnostics for Astro files in $S/val-src/astrowind...
+Result (108 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> @arthelokyo/astrowind@1.0.0-beta.66 check:eslint
+> eslint .
+
+
+> @arthelokyo/astrowind@1.0.0-beta.66 check:prettier
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+
+$ npm run build
+
+> @arthelokyo/astrowind@1.0.0-beta.66 build
+> astro build
+
+[2m01:57:02[22m [34m[astrowind][39m Astrowind `./src/config.yaml` has been loaded.
+[2m01:57:04[22m [34m[content][39m Syncing content
+[2m01:57:04[22m [34m[content][39m Synced content
+[2m01:57:04[22m [34m[types][39m Generated [2m1.23s[22m
+[2m01:57:04[22m [34m[build][39m output: [34m"static"[39m
+[2m01:57:04[22m [34m[build][39m mode: [34m"static"[39m
+[2m01:57:04[22m [34m[build][39m directory: [34m$S/val-src/astrowind/dist/[39m
+[2m01:57:04[22m [34m[build][39m Collecting build info...
+[2m01:57:04[22m [34m[build][39m [32m✓ Completed in 1.33s.[39m
+[2m01:57:04[22m [34m[build][39m Building static entrypoints...
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+[33m[1m01:57:07[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[2m01:57:09[22m [34m[astro-icon][39m Loaded icons from src/assets/icons, flat-color-icons, tabler
+[2m01:57:10[22m [34m[assets][39m Copying fonts (0 files)...
+[2m01:57:10[22m [34m[vite][39m [32m✓ built in 6.51s[39m
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://api.fontsource.org/v1/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `fontsource-dba42f750b2d790d`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND api.fontsource.org
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:123:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'api.fontsource.org'
+  }
+}
+[33m[1m01:57:13[22m [WARN] [assets][39m No data found for font family [1mInter[22m. Review your configuration
+[2m01:57:13[22m [34m[vite][39m [32m✓ built in 3.12s[39m
+[2m01:57:13[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m01:57:14[22m   [34m├─[39m [2m/404.html[22m [2m(+22ms)[22m 
+[2m01:57:14[22m   [34m├─[39m [2m/about/index.html[22m [2m(+101ms)[22m 
+[2m01:57:14[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+16ms)[22m 
+[2m01:57:14[22m   [34m├─[39m [2m/homes/mobile-app/index.html[22m[31m[1m01:57:14[22m [ERROR][39m FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+    at inferRemoteSize (file://$S/val-src/astrowind/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async getImage (file://$S/val-src/astrowind/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async getImage (file://$S/val-src/astrowind/dist/.prerender/chunks/Layout_CUXHf5Ij.mjs:220:35)
+    at async file://$S/val-src/astrowind/dist/.prerender/chunks/Layout_CUXHf5Ij.mjs:29:16
+[31m[1m01:57:14[22m [ERROR] [build][39m Caught error rendering /homes/mobile-app: FailedToFetchRemoteImageDimensions: Failed to get the dimensions for https://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png.
+[31m[FailedToFetchRemoteImageDimensions][39m Failed to get the dimensions for [4mhttps://cdn.pixabay.com/photo/2017/02/03/01/56/smartphone-2034330_1280.png[24m.
+  [1mHint:[22m
+[33m    Verify your remote image URL is accurate, and that you are not using `inferSize` with a file located in your `public/` folder.[39m
+  [1mError reference:[22m
+    [36m[4mhttps://docs.astro.build/en/reference/errors/failed-to-fetch-remote-image-dimensions/[24m[39m
+  [1mLocation:[22m
+    [4m$S/val-src/astrowind/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9[24m
+  [1mStack trace:[22m
+[2m    at inferRemoteSize (file://$S/val-src/astrowind/dist/.prerender/chunks/service_B6P0etgT.mjs:1031:9)
+    at async getImage (file://$S/val-src/astrowind/dist/.prerender/chunks/assets_DDdXnQJV.mjs:117:19)
+    at async file://$S/val-src/astrowind/dist/.prerender/chunks/Layout_CUXHf5Ij.mjs:29:16[22m
+exit=1
+
+$ git status --porcelain
+exit=0
+

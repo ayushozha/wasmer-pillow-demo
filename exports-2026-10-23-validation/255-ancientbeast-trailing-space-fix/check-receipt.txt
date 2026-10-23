@@ -1,0 +1,18 @@
+$ git rev-parse HEAD
+d37961462eb91f97e81710ede456346148cd2522
+$ sha256sum upstream.patch ancientbeast-trailing-space-fix.patch
+0b62060b14aa6efdd8ed4c9b5ae02f89b4eeb37d3b542994c0c0fc72ffe008bb  upstream.patch
+b85df2b9a8694d87a22cca0853104b282ff61ecbab9d6eb351927e0d6cd16c2d  ancientbeast-trailing-space-fix.patch
+$ git apply upstream.patch && git add -A && git diff --cached --check
+upstream.patch:9: trailing whitespace.
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=FreezingMoon%2FAncientBeast)  
+warning: 1 line adds whitespace errors.
+README.md:34: trailing whitespace.
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=FreezingMoon%2FAncientBeast)  
+exit=2
+$ git apply --check ancientbeast-trailing-space-fix.patch && git apply ancientbeast-trailing-space-fix.patch && git add -A && git diff --cached --check
+exit=0
+$ git diff --cached --stat
+ README.md  | 3 +++
+ Staticfile | 1 +
+ 2 files changed, 4 insertions(+)

@@ -1,0 +1,134 @@
+[
+ {
+  "view": "home",
+  "url": "http://127.0.0.1:4321/",
+  "viewport": "1280x800",
+  "status": 200,
+  "title": "AstroWind — Free template for creating websites with Astro + Tailwind CSS",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": "Free template for creating websites with Astro v7 + Tailwind CSS",
+  "screenshot": "shot-dev-home.png",
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [
+   "/node_modules/.vite/deps/astro_n_aria-query.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/astro_n_axobject-query.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/highlight-CpHMw7-c.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/astro_n_html-escaper.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/toolbar-C8Jb8PvT.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/ui-library-a07AMWdn.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/window-DH1eA2cl.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/icons-DcM8cGs_.js net::ERR_ABORTED",
+   "/node_modules/.vite/deps/astro_runtime_client_dev-toolbar_entrypoint__js.js net::ERR_ABORTED",
+   "/_image net::ERR_ABORTED"
+  ],
+  "blockedOrigins": [
+   "https://img.shields.io"
+  ]
+ },
+ {
+  "view": "blog-index",
+  "url": "http://127.0.0.1:4321/blog",
+  "viewport": "1280x800",
+  "status": 200,
+  "title": "Blog — AstroWind",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": "The Blog",
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": [
+   "https://images.unsplash.com",
+   "https://img.shields.io"
+  ]
+ },
+ {
+  "view": "blog-post",
+  "url": "http://127.0.0.1:4321/get-started-website-with-astro-tailwind-css",
+  "viewport": "1280x800",
+  "status": 200,
+  "title": "Get started with AstroWind to create a website using Astro and Tailwind CSS — AstroWind",
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": "Get started with AstroWind to create a website using Astro and Tailwind CSS",
+  "screenshot": "shot-dev-blog-post.png",
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_FAILED",
+   "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": [
+   "https://images.unsplash.com",
+   "https://img.shields.io"
+  ]
+ },
+ {
+  "view": "dark-toggle",
+  "url": "http://127.0.0.1:4321/",
+  "viewport": "1280x800",
+  "status": 200,
+  "title": "AstroWind — Free template for creating websites with Astro + Tailwind CSS",
+  "toggleFound": 1,
+  "htmlHasDarkClass": true,
+  "bodyBg": "rgb(8, 9, 10)",
+  "h1": "Free template for creating websites with Astro v7 + Tailwind CSS",
+  "screenshot": "shot-dev-dark-toggle.png",
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": [
+   "https://img.shields.io"
+  ]
+ },
+ {
+  "view": "dark-pcs",
+  "url": "http://127.0.0.1:4321/",
+  "viewport": "1280x800",
+  "status": 200,
+  "title": "AstroWind — Free template for creating websites with Astro + Tailwind CSS",
+  "htmlHasDarkClass": true,
+  "bodyBg": "rgb(8, 9, 10)",
+  "h1": "Free template for creating websites with Astro v7 + Tailwind CSS",
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": [
+   "https://img.shields.io"
+  ]
+ },
+ {
+  "view": "mobile-menu",
+  "url": "http://127.0.0.1:4321/",
+  "viewport": "390x844",
+  "status": 200,
+  "title": "AstroWind — Free template for creating websites with Astro + Tailwind CSS",
+  "menuButtonFound": 1,
+  "menuAriaExpanded": "true",
+  "horizontalOverflow": false,
+  "htmlHasDarkClass": false,
+  "bodyBg": "rgb(255, 255, 255)",
+  "h1": "Free template for creating websites with Astro v7 + Tailwind CSS",
+  "screenshot": "shot-dev-mobile-menu.png",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "blockedOrigins": []
+ }
+]

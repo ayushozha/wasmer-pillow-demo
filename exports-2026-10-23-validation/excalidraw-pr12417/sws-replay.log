@@ -1,0 +1,46 @@
+2026-10-23T01:57:46.411803Z  INFO static_web_server::server: static-web-server 2.38.0
+2026-10-23T01:57:46.411893Z  INFO static_web_server::server: log level: info
+2026-10-23T01:57:46.411931Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:3903
+2026-10-23T01:57:46.411932Z  INFO static_web_server::server: runtime worker threads: 4
+2026-10-23T01:57:46.411934Z  INFO static_web_server::server: runtime max blocking threads: 512
+2026-10-23T01:57:46.411992Z  INFO static_web_server::server: redirect trailing slash: enabled=true
+2026-10-23T01:57:46.411996Z  INFO static_web_server::server: ignore hidden files: enabled=false
+2026-10-23T01:57:46.411998Z  INFO static_web_server::server: disable symlinks: enabled=false
+2026-10-23T01:57:46.412000Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
+2026-10-23T01:57:46.412004Z  INFO static_web_server::server: index files: index.html
+2026-10-23T01:57:46.412007Z  INFO static_web_server::directory_listing: directory listing: enabled=false
+2026-10-23T01:57:46.412009Z  INFO static_web_server::directory_listing: directory listing order code: 6
+2026-10-23T01:57:46.412010Z  INFO static_web_server::directory_listing: directory listing format: Html
+2026-10-23T01:57:46.412012Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
+2026-10-23T01:57:46.412014Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+2026-10-23T01:57:46.412016Z  INFO static_web_server::health: health endpoint: enabled=false
+2026-10-23T01:57:46.412017Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
+2026-10-23T01:57:46.412024Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
+2026-10-23T01:57:46.412025Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
+2026-10-23T01:57:46.412027Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
+2026-10-23T01:57:46.412032Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
+2026-10-23T01:57:46.412034Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
+2026-10-23T01:57:46.412035Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
+2026-10-23T01:57:46.412039Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
+2026-10-23T01:57:46.412041Z  INFO static_web_server::compression_static: compression static: enabled=false
+2026-10-23T01:57:46.412042Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+2026-10-23T01:57:46.412047Z  INFO static_web_server::control_headers: cache control headers: enabled=true
+2026-10-23T01:57:46.412048Z  INFO static_web_server::security_headers: security headers: enabled=false
+2026-10-23T01:57:46.412127Z  INFO Server::start_server{addr_str="127.0.0.1:3903" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.81µs
+2026-10-23T01:57:46.412142Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:3903
+2026-10-23T01:57:46.412144Z  INFO static_web_server::server: press ctrl+c to shut down the server
+2026-10-23T01:57:46.426129Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T01:57:46.502039Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T01:57:46.503386Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely-missing-q7x3k9
+2026-10-23T01:57:46.503456Z  WARN static_web_server::error_page: method=GET uri=/definitely-missing-q7x3k9 status=404 error="Not Found"
+2026-10-23T01:57:46.504426Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/apple-touch-icon.png
+2026-10-23T01:57:46.504987Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon-32x32.png
+2026-10-23T01:57:46.505391Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/favicon-16x16.png
+2026-10-23T01:57:46.506059Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-Bf9uMo-Z.js
+2026-10-23T01:57:46.510252Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/bundler-helpers-DA6W-a70.js
+2026-10-23T01:57:46.511128Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/assets/index-D0I-IbtP.css
+2026-10-23T01:57:46.511823Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/sitemap.xml
+2026-10-23T01:57:46.512273Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/manifest.webmanifest
+2026-10-23T01:57:46.523052Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
+2026-10-23T01:57:46.523108Z  INFO static_web_server::signals: delegating server's graceful shutdown
+2026-10-23T01:57:46.523132Z  WARN static_web_server::server: termination signal caught, shutting down the server execution

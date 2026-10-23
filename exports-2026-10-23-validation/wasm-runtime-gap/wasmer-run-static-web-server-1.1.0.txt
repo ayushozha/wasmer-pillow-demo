@@ -1,0 +1,6 @@
+error: Unable to find "wasmer/static-web-server@=1.1.0" in the registry
+│   1: failed to query package 'wasmer/static-web-server@=1.1.0': error sending request for url (https://registry.wasmer.io/graphql)
+│   2: error sending request for url (https://registry.wasmer.io/graphql)
+│   3: client error (Connect)
+╰─▶ 4: tunnel error: unsuccessful
+exit=1

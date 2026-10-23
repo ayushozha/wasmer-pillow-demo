@@ -1,0 +1,31 @@
+404	page	/	text/html	0
+--	title	/	(none)	
+404	page	/edit	text/html	0
+--	title	/edit	(none)	
+404	page	/view	text/html	0
+--	title	/view	(none)	
+404	page	/embed	text/html	0
+--	title	/embed	(none)	
+404	page	/edit/	text/html	0
+--	title	/edit/	(none)	
+404	page	/view/	text/html	0
+--	title	/view/	(none)	
+404	page	/edit.html	text/html	0
+--	title	/edit.html	(none)	
+404	page	/view.html	text/html	0
+--	title	/view.html	(none)	
+404	page	/embed.html	text/html	0
+--	title	/embed.html	(none)	
+404	page	/definitely-missing-k7q2x	text/html	0
+--	title	/definitely-missing-k7q2x	(none)	
+SUMMARY pages=10 refs_checked=0 failures=10
+FAIL	404	page	/	text/html	0
+FAIL	404	page	/edit	text/html	0
+FAIL	404	page	/view	text/html	0
+FAIL	404	page	/embed	text/html	0
+FAIL	404	page	/edit/	text/html	0
+FAIL	404	page	/view/	text/html	0
+FAIL	404	page	/edit.html	text/html	0
+FAIL	404	page	/view.html	text/html	0
+FAIL	404	page	/embed.html	text/html	0
+FAIL	404	page	/definitely-missing-k7q2x	text/html	0
