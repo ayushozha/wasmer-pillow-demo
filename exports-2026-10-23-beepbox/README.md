@@ -18,6 +18,12 @@ Files in `johnnesky_beepbox/`:
 - https://github.com/johnnesky/beepbox/pull/143 (a mod PR, closed unmerged): "You'll need to make your own repo. This repo isn't for mods."
 - https://github.com/johnnesky/beepbox/pull/154 (a README-only PR, closed unmerged): "Denied. It looks like this was intended for a fork, not the actual BeepBox repository."
 
+**Focused advisory evidence (public advisories only):**
+- `logs/johnnesky_beepbox.focused-audit.md` has one row per critical or high entry on the exact lock: the GitHub advisory URLs, dependency paths from `package-lock.json`, which command runs the package, whether `npm run build` runs it, and the untrusted-input conditions for the entries that do run in the build.
+- `logs/johnnesky_beepbox.npm-audit-exact-lock.critical-high.json` is the raw `npm audit --package-lock-only --json` output, filtered to its critical and high entries.
+- `logs/johnnesky_beepbox.bundle-sources.json` gives the production bundles' sourcemap sources and sha256s, and confirms the built bundles contain no `currentScript` or `import.meta`.
+- The two criticals (proxy-addr@2.0.7 via five-server, and shell-quote@1.8.1 via concurrently) are run only by `scripts/live_editor*.sh`. They are not run by `npm run build` and are not in the bundles.
+
 Notes:
 - Acceptance risk is high: there have been few outside merges ever.
 - Local sandbox paths are replaced with placeholders. Wasmer's WebAssembly static-web-server was not run here.

@@ -1,0 +1,98 @@
+{
+ "command": "npm ci && npm run build on johnnesky/beepbox 39893e3 (exact lock), Node 24.22.1 / npm 11.19.1, 2026-10-23; sources listed from the production *.min.js.map files",
+ "bundles": {
+  "website/beepbox_editor.min.js": {
+   "sha256": "9d3f9088318bda59155dc2070e01c452bfab5c808756112e196730bc1138f601",
+   "sources": [
+    "../synth/SynthConfig.ts",
+    "../editor/EditorConfig.ts",
+    "../node_modules/imperative-html/src/elements-base.ts",
+    "../node_modules/imperative-html/src/elements-strict.ts",
+    "../editor/ColorConfig.ts",
+    "../editor/style.ts",
+    "../editor/Layout.ts",
+    "../synth/FFT.ts",
+    "../synth/Deque.ts",
+    "../synth/filtering.ts",
+    "../synth/synth.ts",
+    "../editor/EasyPointers.ts",
+    "../editor/SongRecovery.ts",
+    "../editor/Change.ts",
+    "../editor/changes.ts",
+    "../editor/SongPerformance.ts",
+    "../editor/Midi.ts",
+    "../editor/MidiInput.ts",
+    "../editor/Selection.ts",
+    "../editor/Preferences.ts",
+    "../editor/ChangeNotifier.ts",
+    "../editor/SongDocument.ts",
+    "../editor/TipPrompt.ts",
+    "../editor/PatternEditor.ts",
+    "../editor/EnvelopeEditor.ts",
+    "../editor/FadeInOutEditor.ts",
+    "../editor/FilterEditor.ts",
+    "../editor/ChannelRow.ts",
+    "../editor/MuteEditor.ts",
+    "../editor/TrackEditor.ts",
+    "../editor/LayoutPrompt.ts",
+    "../editor/LoopEditor.ts",
+    "../editor/SpectrumEditor.ts",
+    "../editor/HarmonicsEditor.ts",
+    "../editor/BarScrollBar.ts",
+    "../editor/OctaveScrollBar.ts",
+    "../editor/KeyboardLayout.ts",
+    "../editor/Piano.ts",
+    "../editor/BeatsPerBarPrompt.ts",
+    "../editor/MoveNotesSidewaysPrompt.ts",
+    "../editor/SongDurationPrompt.ts",
+    "../editor/SustainPrompt.ts",
+    "../editor/ChannelSettingsPrompt.ts",
+    "../editor/SongRenderer.ts",
+    "../editor/ArrayBufferWriter.ts",
+    "../editor/ExportPrompt.ts",
+    "../editor/ArrayBufferReader.ts",
+    "../editor/ImportPrompt.ts",
+    "../editor/SongRecoveryPrompt.ts",
+    "../editor/RecordingSetupPrompt.ts",
+    "../editor/SongEditor.ts"
+   ],
+   "npm_packages": [
+    "imperative-html"
+   ],
+   "count_currentScript": 0,
+   "count_import.meta": 0
+  },
+  "website/beepbox_synth.min.js": {
+   "sha256": "579a472be1bbcaef32c415f1151f5b8b9b189876b33d780b522d8ae1a15ad666",
+   "sources": [
+    "../synth/SynthConfig.ts",
+    "../synth/FFT.ts",
+    "../synth/Deque.ts",
+    "../synth/filtering.ts",
+    "../synth/synth.ts"
+   ],
+   "npm_packages": [],
+   "count_currentScript": 0,
+   "count_import.meta": 0
+  },
+  "website/player/beepbox_player.min.js": {
+   "sha256": "a5e86022a1baaf205554c7f04174e11b59269b74cfa4f2ef74e3c0c20e27b2a8",
+   "sources": [
+    "../../synth/SynthConfig.ts",
+    "../../node_modules/imperative-html/src/elements-base.ts",
+    "../../node_modules/imperative-html/src/elements-strict.ts",
+    "../../editor/ColorConfig.ts",
+    "../../synth/FFT.ts",
+    "../../synth/Deque.ts",
+    "../../synth/filtering.ts",
+    "../../synth/synth.ts",
+    "../../player/index.ts"
+   ],
+   "npm_packages": [
+    "imperative-html"
+   ],
+   "count_currentScript": 0,
+   "count_import.meta": 0
+  }
+ }
+}
