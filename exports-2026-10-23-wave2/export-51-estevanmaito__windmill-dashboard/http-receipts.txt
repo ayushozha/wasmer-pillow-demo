@@ -1,0 +1,56 @@
+# 2026-10-23T02:14:50Z static-web-server 2.38.0 serving $S/replay/val2-windmill/static_app (Anybuild staticfile copy of public/) on 127.0.0.1:3961
+# pages and refs enumerated by enum_refs.py from the same static_app; format: <path> -> http_code content_type size_download
+## HTML pages (all 12 .html files in served dir) + root
+/ -> 200 text/html 69918
+/buttons.html -> 200 text/html 46484
+/cards.html -> 200 text/html 45959
+/charts.html -> 200 text/html 43448
+/forms.html -> 200 text/html 51530
+/index.html -> 200 text/html 69918
+/modals.html -> 200 text/html 44258
+/pages/404.html -> 200 text/html 39011
+/pages/blank.html -> 200 text/html 38336
+/pages/create-account.html -> 200 text/html 7473
+/pages/forgot-password.html -> 200 text/html 2754
+/pages/login.html -> 200 text/html 6608
+/tables.html -> 200 text/html 104767
+## local href/src targets referenced by those pages (resolved like a browser; 25 unique)
+/assets/css/tailwind.output.css -> 200 text/css 28597
+/assets/img/create-account-office-dark.jpeg -> 200 image/jpeg 68019
+/assets/img/create-account-office.jpeg -> 200 image/jpeg 74885
+/assets/img/forgot-password-office-dark.jpeg -> 200 image/jpeg 58822
+/assets/img/forgot-password-office.jpeg -> 200 image/jpeg 91979
+/assets/img/login-office-dark.jpeg -> 200 image/jpeg 14198
+/assets/img/login-office.jpeg -> 200 image/jpeg 37749
+/assets/js/charts-bars.js -> 200 text/javascript 795
+/assets/js/charts-lines.js -> 200 text/javascript 1695
+/assets/js/charts-pie.js -> 200 text/javascript 884
+/assets/js/focus-trap.js -> 200 text/javascript 1507
+/assets/js/init-alpine.js -> 200 text/javascript 1577
+/buttons.html -> 200 text/html 46484
+/cards.html -> 200 text/html 45959
+/charts.html -> 200 text/html 43448
+/forms.html -> 200 text/html 51530
+/index.html -> 200 text/html 69918
+/modals.html -> 200 text/html 44258
+/pages/404.html -> 200 text/html 39011
+/pages/blank.html -> 200 text/html 38336
+/pages/create-account.html -> 200 text/html 7473
+/pages/forgot-password.html -> 200 text/html 2754
+/pages/login.html -> 200 text/html 6608
+/pages/pages/blank.html -> 404 text/html; charset=utf-8 106
+/tables.html -> 200 text/html 104767
+## other files in served dir not referenced by any page
+/assets/css/tailwind.css -> 200 text/css 59
+/assets/img/dashboard.png -> 200 image/png 62560
+/assets/img/github.svg -> 200 image/svg+xml 775
+/assets/img/twitter.svg -> 200 image/svg+xml 704
+## missing paths
+/does-not-exist -> 404 text/html; charset=utf-8 106
+/pages/nope.html -> 404 text/html; charset=utf-8 106
+/assets/js/nope.js -> 404 text/html; charset=utf-8 106
+## repo files outside public/ (must not be served)
+/package.json -> 404 text/html; charset=utf-8 106
+/Staticfile -> 404 text/html; charset=utf-8 106
+/README.md -> 404 text/html; charset=utf-8 106
+/tailwind.config.js -> 404 text/html; charset=utf-8 106

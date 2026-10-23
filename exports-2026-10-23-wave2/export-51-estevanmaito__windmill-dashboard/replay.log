@@ -1,0 +1,61 @@
+# replay of val2-windmill  source=$S/val2-src/windmill  upstream HEAD=e05267588134ca2f4129087cc65a59c38a9c36b5
+# local diff vs HEAD:  M README.md; A Staticfile;
+  Detected static site provider
+    Output directory: public
+    SWS version: 2.38.0
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val2-windmill/plan.json
+# provider=staticfile install='' build='' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='public' pm=@ inputs='' all_files=False
+$ cp -R '$S/replay/val2-windmill/flat/public/.' '$S/replay/val2-windmill/static_app/'
+exit=0
+
+$ static-web-server --root=$S/replay/val2-windmill/static_app --log-level=info --port=3961 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	69918
+--	title	/	Windmill Dashboard	
+200	page	/	text/html	69918
+--	title	/	Windmill Dashboard	
+200	page	/buttons.html	text/html	46484
+--	title	/buttons.html	Buttons - Windmill Dashboard	
+200	page	/cards.html	text/html	45959
+--	title	/cards.html	Cards - Windmill Dashboard	
+200	page	/charts.html	text/html	43448
+--	title	/charts.html	Charts - Windmill Dashboard	
+200	page	/forms.html	text/html	51530
+--	title	/forms.html	Windmill Dashboard - Forms	
+200	page	/index.html	text/html	69918
+--	title	/index.html	Windmill Dashboard	
+200	page	/modals.html	text/html	44258
+--	title	/modals.html	Modals - Windmill Dashboard	
+200	page	/pages/404.html	text/html	39011
+--	title	/pages/404.html	404 - Windmill Dashboard	
+200	page	/pages/blank.html	text/html	38336
+--	title	/pages/blank.html	Blank - Windmill Dashboard	
+200	page	/pages/create-account.html	text/html	7473
+--	title	/pages/create-account.html	Create account - Windmill Dashboard	
+200	page	/pages/forgot-password.html	text/html	2754
+--	title	/pages/forgot-password.html	Forgot password - Windmill Dashboard	
+200	page	/pages/login.html	text/html	6608
+--	title	/pages/login.html	Login - Windmill Dashboard	
+200	page	/tables.html	text/html	104767
+--	title	/tables.html	Tables - Windmill Dashboard	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+404	page	/pages/nope.html	text/html	0
+--	title	/pages/nope.html	(none)	
+200	ref	/assets/css/tailwind.output.css	text/css	28597
+200	ref	/assets/js/init-alpine.js	text/javascript	1577
+200	ref	/assets/js/charts-lines.js	text/javascript	1695
+200	ref	/assets/js/charts-pie.js	text/javascript	884
+SUMMARY pages=16 refs_checked=4 failures=2
+FAIL	404	page	/does-not-exist	text/html	0
+FAIL	404	page	/pages/nope.html	text/html	0
+# static_app files: 28

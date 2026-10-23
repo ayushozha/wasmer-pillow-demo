@@ -1,0 +1,45 @@
+## external script/style URLs in served pages (grep -oh, unique, with page count)
+      2 href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+     12 href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      7 href="https://github.com/estevanmaito/windmill-dashboard"
+      1 href="https://www.chartjs.org/"
+     12 src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      2 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      6 src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+      3 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&facepad=3&fit=facearea&s=707b9c33066bf8808c934c8ab394dff6"
+      9 src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
+      3 src="https://images.unsplash.com/photo-1502720705749-871143f0e671?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=b8377ca9f985d80264279f277f3a67f5"
+      3 src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+      3 src="https://images.unsplash.com/photo-1546456073-6712f79251bb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+      3 src="https://images.unsplash.com/photo-1551006917-3b4c078c47c9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+      3 src="https://images.unsplash.com/photo-1551069613-1904dbdcda11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+      3 src="https://images.unsplash.com/photo-1566411520896-01e7ca4726af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+## integrity= attributes: 0
+## Alpine floating tag resolution (jsDelivr gh, HEAD request)
+curl: (56) CONNECT tunnel failed, response 403
+HTTP/1.1 403 Forbidden
+Content-Type: text/plain; charset=utf-8
+## advisories: python3 -I $S/scripts/adv.py chart.js@2.9.3 alpinejs@2.8.2
+chart.js@2.9.3: 1 advisories
+   high      GHSA-h68q-55jf-x68w    vuln=<2.9.4 | Prototype pollution in chart.js
+alpinejs@2.8.2: 0 advisories
+## jsDelivr not reachable from this proxy (403 above); highest alpinejs 2.x on npm registry (proxy for what @v2.x.x resolves to):
+max 2.x = 2.8.2  (count 29 )
+## chart.js input-path review: every new Chart(...) call and its config source
+./charts-bars.js:4:const barConfig = {
+./charts-bars.js:25:  options: {
+./charts-bars.js:34:window.myBar = new Chart(barsCtx, barConfig)
+./charts-pie.js:4:const pieConfig = {
+./charts-pie.js:20:  options: {
+./charts-pie.js:35:window.myPie = new Chart(pieCtx, pieConfig)
+./charts-lines.js:4:const lineConfig = {
+./charts-lines.js:33:  options: {
+./charts-lines.js:71:window.myLine = new Chart(lineCtx, lineConfig)
+## any URL/storage/fetch/form input in chart scripts?
+none (grep exit 1)
+## init-alpine.js storage use
+4:    if (window.localStorage.getItem('dark')) {
+5:      return JSON.parse(window.localStorage.getItem('dark'))
+16:    window.localStorage.setItem('dark', value)
+## x-html in pages
+x-html occurrences: 0

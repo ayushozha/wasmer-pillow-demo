@@ -1,0 +1,39 @@
+200	page	/	text/html	69918
+--	title	/	Windmill Dashboard	
+200	page	/	text/html	69918
+--	title	/	Windmill Dashboard	
+200	page	/buttons.html	text/html	46484
+--	title	/buttons.html	Buttons - Windmill Dashboard	
+200	page	/cards.html	text/html	45959
+--	title	/cards.html	Cards - Windmill Dashboard	
+200	page	/charts.html	text/html	43448
+--	title	/charts.html	Charts - Windmill Dashboard	
+200	page	/forms.html	text/html	51530
+--	title	/forms.html	Windmill Dashboard - Forms	
+200	page	/index.html	text/html	69918
+--	title	/index.html	Windmill Dashboard	
+200	page	/modals.html	text/html	44258
+--	title	/modals.html	Modals - Windmill Dashboard	
+200	page	/pages/404.html	text/html	39011
+--	title	/pages/404.html	404 - Windmill Dashboard	
+200	page	/pages/blank.html	text/html	38336
+--	title	/pages/blank.html	Blank - Windmill Dashboard	
+200	page	/pages/create-account.html	text/html	7473
+--	title	/pages/create-account.html	Create account - Windmill Dashboard	
+200	page	/pages/forgot-password.html	text/html	2754
+--	title	/pages/forgot-password.html	Forgot password - Windmill Dashboard	
+200	page	/pages/login.html	text/html	6608
+--	title	/pages/login.html	Login - Windmill Dashboard	
+200	page	/tables.html	text/html	104767
+--	title	/tables.html	Tables - Windmill Dashboard	
+404	page	/does-not-exist	text/html	0
+--	title	/does-not-exist	(none)	
+404	page	/pages/nope.html	text/html	0
+--	title	/pages/nope.html	(none)	
+200	ref	/assets/css/tailwind.output.css	text/css	28597
+200	ref	/assets/js/init-alpine.js	text/javascript	1577
+200	ref	/assets/js/charts-lines.js	text/javascript	1695
+200	ref	/assets/js/charts-pie.js	text/javascript	884
+SUMMARY pages=16 refs_checked=4 failures=2
+FAIL	404	page	/does-not-exist	text/html	0
+FAIL	404	page	/pages/nope.html	text/html	0

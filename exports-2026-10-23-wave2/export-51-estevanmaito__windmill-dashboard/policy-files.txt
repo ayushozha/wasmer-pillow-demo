@@ -1,0 +1,31 @@
+# Policy files at HEAD e05267588134ca2f4129087cc65a59c38a9c36b5 (2026-10-23)
+## git ls-files matching contrib|agents|claude|cursor|copilot|pull_request|cla|code_of|.github:
+(none)
+## all tracked files at HEAD:
+.gitignore
+.prettierrc
+CHANGELOG.md
+LICENSE
+README.md
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+(+ 28 files under public/)
+## README.md Usage section (verbatim, HEAD):
+## 🚀 Usage
+
+Clone or download this repo and everything you need is inside the `public` folder.
+
+## package.json scripts (HEAD):
+  "scripts": {
+    "tailwind": "tailwindcss build public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
+    "build": "env NODE_ENV=production postcss public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
+    "cz": "git-cz",
+    "release": "release-it"
+  },
+## No lint/test script exists; nothing is required by policy. The 'build' script (CSS regeneration) was run in css-sync.log.
+## Fresh clone: git clone --filter=blob:none https://github.com/estevanmaito/windmill-dashboard at 2026-10-23T02:12:30Z
+HEAD e05267588134ca2f4129087cc65a59c38a9c36b5 branch master
+HEAD commit date / subject: 2020-08-05T16:29:24-03:00 Merge pull request #3 from VottusCode/patch-1
+Prior pin: e05267588134ca2f4129087cc65a59c38a9c36b5 -> unchanged

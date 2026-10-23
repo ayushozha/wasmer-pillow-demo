@@ -1,0 +1,11 @@
+{
+    "provider": "staticfile",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "start": "static-web-server --root=/opt/static_app --log-level=info --port=8080"
+        },
+        "static_dir": "public"
+    },
+    "services": []
+}

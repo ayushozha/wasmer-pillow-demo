@@ -1,0 +1,43 @@
+# CSS sync check 2026-10-23T02:13:30Z: git archive HEAD -> fresh dir; npm ci --ignore-scripts; npm run build; compare to committed
+$ node -v
+v24.22.1
+$ npm -v
+10.9.4
+$ npm ci --ignore-scripts --no-audit --no-fund
+npm warn deprecated glob@7.1.4: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+
+added 904 packages in 16s
+exit=0
+$ npm run build
+
+> windmill-dashboard@1.0.2 build
+> env NODE_ENV=production postcss public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+exit=0
+## compare
+25d861ce1236b8cb7978e91baf3a16471df81183b8171ef7f22838c02bc6a6e6  committed.css
+25d861ce1236b8cb7978e91baf3a16471df81183b8171ef7f22838c02bc6a6e6  public/assets/css/tailwind.output.css
+28597 committed.css
+28597 public/assets/css/tailwind.output.css
+57194 total
+RESULT: byte-identical
+## pages referencing tailwind.output.css (grep -l)
+./buttons.html
+./cards.html
+./charts.html
+./forms.html
+./index.html
+./modals.html
+./pages/404.html
+./pages/blank.html
+./pages/create-account.html
+./pages/forgot-password.html
+./pages/login.html
+./tables.html
+count=12 of 12 pages
+## git log of committed output css (last change)
+16d3ff0 2020-06-19T15:53:24-03:00 fix container overflow and sidebar shrink
