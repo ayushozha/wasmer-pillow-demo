@@ -14,7 +14,11 @@ Files in `johnnesky_beepbox/`:
 - `receipt.json`: public facts;
 - `logs/`: plans, the Docker render, the normal build, replay and lockfile check, native static-web-server 2.32.2 and 2.38.0 smokes, and headless Chromium smokes.
 
+**Status: PREPARED_GATED.** Root is independently inspecting the scope of two maintainer statements before any publication. They are recorded verbatim in `receipt.json` (`maintainer_statements`), not as approval:
+- https://github.com/johnnesky/beepbox/pull/143 (a mod PR, closed unmerged): "You'll need to make your own repo. This repo isn't for mods."
+- https://github.com/johnnesky/beepbox/pull/154 (a README-only PR, closed unmerged): "Denied. It looks like this was intended for a fork, not the actual BeepBox repository."
+
 Notes:
-- Acceptance risk is high: there have been few outside merges ever. It is recorded as a caveat, not a policy restriction.
+- Acceptance risk is high: there have been few outside merges ever.
 - Local sandbox paths are replaced with placeholders. Wasmer's WebAssembly static-web-server was not run here.
 - `MANIFEST.json` and `SHA256SUMS` cover every file in this folder.

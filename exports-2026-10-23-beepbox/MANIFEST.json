@@ -1,7 +1,8 @@
 [
   {
     "repo": "johnnesky/beepbox",
-    "status": "READY",
+    "status": "PREPARED_GATED",
+    "gate": "Root independent inspection of maintainer statements on https://github.com/johnnesky/beepbox/pull/143 and https://github.com/johnnesky/beepbox/pull/154 (exact scope) before any publication.",
     "base_sha": "355e510099d230d066d95074c16d748d59fe054c",
     "base_branch": "main",
     "patched_staging_sha": "39893e30b959d7ff9b8574644d05b45dda41bb41",
