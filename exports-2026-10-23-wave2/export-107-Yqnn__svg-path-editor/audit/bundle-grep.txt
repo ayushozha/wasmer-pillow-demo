@@ -1,0 +1,44 @@
+# Bundle grep evidence: dist/svg-path-editor from 'npm run build' (exit 0); counts = files containing pattern / total matches in *.js
+axios	matches=0	files=
+node-forge	matches=0	files=
+forge.pki	matches=0	files=
+lodash	matches=0	files=
+_.template	matches=0	files=
+nanoid	matches=0	files=
+urlAlphabet	matches=0	files=
+immutable	matches=0	files=
+socket.io	matches=0	files=
+engine.io	matches=0	files=
+brace-expansion	matches=0	files=
+minimatch	matches=0	files=
+picomatch	matches=0	files=
+js-yaml	matches=0	files=
+piscina	matches=0	files=
+proxy-addr	matches=0	files=
+shell-quote	matches=0	files=
+websocket-driver	matches=0	files=
+flatted	matches=0	files=
+serialize-javascript	matches=0	files=
+browserslist	matches=0	files=
+postcss	matches=0	files=
+rollup	matches=0	files=
+webpack-dev	matches=0	files=
+sigstore	matches=0	files=
+defu	matches=0	files=
+tar	matches=521	files=main.c2644f28e3f13a72.js ngsw-worker.js polyfills.8b39c005062fd761.js 
+node:	matches=0	files=
+require("fs")	matches=0	files=
+process.env	matches=0	files=
+X-XSRF-TOKEN	matches=1	files=main.c2644f28e3f13a72.js 
+XSRF-TOKEN	matches=2	files=main.c2644f28e3f13a72.js 
+HttpTransferCache	matches=0	files=
+ngh	matches=11	files=main.c2644f28e3f13a72.js 
+Unable to convert	matches=0	files=
+is not a number	matches=0	files=
+Too many decimal points	matches=0	files=
+i18n	matches=0	files=
+localize	matches=2	files=main.c2644f28e3f13a72.js 
+JIT compiler	matches=0	files=
+routerLink	matches=0	files=
+RouterOutlet	matches=0	files=
+NG0	matches=1	files=main.c2644f28e3f13a72.js 

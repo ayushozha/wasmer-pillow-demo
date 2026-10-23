@@ -44,3 +44,12 @@ Verdict: READY, with one disclosed limitation the maintainer must accept or decl
 | fonts.gstatic.com / googletagmanager blocked, editor still worked, icons as text | playwright.txt, shot-editor.png |
 | Fonts CSS inlined at build time | analytics-check.txt |
 | Service worker not exercised | pw.js (`serviceWorkers: 'block'`) |
+
+## Update 2: focused dependency-advisory review (`audit/advisories.md`, root request)
+- Exact lockfile, `npm ci --ignore-scripts`: 109 findings (5 critical, 73 high, 26 moderate, 5 low). With `--omit=dev`: 5 high, 0 critical.
+- The production bundle contains only @angular/{animations,cdk,common,core,forms,material,platform-browser,service-worker}, rxjs, tslib and zone.js. Evidence: source maps (`bundle-sourcemap-packages.txt`) and a string grep of `dist` (`bundle-grep.txt`).
+- None of the 5 criticals (piscina, proxy-addr, shell-quote, tar, websocket-driver) ships; all are dev tooling.
+- Shipped highs: @angular/common (6), @angular/core (5) and @angular/service-worker (1). Reachability from another party's input is NO for each, with reasoning per row in `advisories.md`.
+- One unsanitized SVG URL binding takes only the user's own uploaded image. It is disclosed in `PR_BODY.md` Limitations.
+- Verdict: no applicable unresolved critical, so no HOLD under root's rule. Publish only if root accepts the disclosed shipped Angular 17.3.12 highs. No dependency changes were made.
+- The PR-body button now has `width="328" height="48"`.

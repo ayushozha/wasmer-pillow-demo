@@ -1,0 +1,27 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+- Generating browser application bundles (phase: setup)...
+    Components styles sourcemaps are not generated when styles optimization is enabled.
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.7209c54204a31b91.js      | main          | 834.96 kB |               168.01 kB
+styles.ce4ad22fd0e44b43.css   | styles        |  45.14 kB |                 5.15 kB
+polyfills.400e10849976e3e1.js | polyfills     |  34.05 kB |                11.11 kB
+runtime.084f8efc82cefb11.js   | runtime       | 961 bytes |               564 bytes
+
+                              | Initial total | 915.09 kB |               184.82 kB
+
+Build at: 2026-10-23T02:35:36.055Z - Hash: 3ba8090efeae7748 - Time: 33593ms
+
+Warning: <repo>/src/app/app.component.scss exceeded maximum budget. Budget 2.00 kB was not met by 911 bytes with a total of 2.89 kB.
+
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 415.09 kB with a total of 915.09 kB.
+
+

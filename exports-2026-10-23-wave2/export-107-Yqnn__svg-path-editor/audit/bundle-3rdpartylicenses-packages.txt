@@ -1,0 +1,11 @@
+@angular/animations
+@angular/cdk
+@angular/common
+@angular/core
+@angular/forms
+@angular/material
+@angular/platform-browser
+@angular/service-worker
+rxjs
+svg-path-editor-lib
+zone.js

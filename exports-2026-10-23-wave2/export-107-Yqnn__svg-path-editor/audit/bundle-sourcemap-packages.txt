@@ -1,0 +1,13 @@
+main @angular/animations 2
+main @angular/cdk 15
+main @angular/common 2
+main @angular/core 2
+main @angular/forms 1
+main @angular/material 13
+main @angular/platform-browser 2
+main @angular/service-worker 1
+main APP:. 42
+main rxjs 110
+main tslib 1
+polyfills zone.js 1
+runtime APP:webpack 4
