@@ -1,0 +1,13 @@
+# 2026-10-23T02:06:59Z /draw mapping proof without vercel.json: dir contains only index.html and draw.html; SWS flags = Anybuild planned flags (--root --log-level=info --port) + --host=127.0.0.1; no --page-fallback
+## Version:      2.38.0
+GET /draw -> 200 body=DRAWPAGE
+GET /draw/ -> 200 body=DRAWPAGE
+GET /draw.html -> 200 body=DRAWPAGE
+GET /nothere -> 404 body=<html><head><title>4
+GET /index -> 200 body=INDEX
+## Version:      2.32.2
+GET /draw -> 200 body=DRAWPAGE
+GET /draw/ -> 200 body=DRAWPAGE
+GET /draw.html -> 200 body=DRAWPAGE
+GET /nothere -> 404 body=<html><head><title>4
+GET /index -> 200 body=INDEX

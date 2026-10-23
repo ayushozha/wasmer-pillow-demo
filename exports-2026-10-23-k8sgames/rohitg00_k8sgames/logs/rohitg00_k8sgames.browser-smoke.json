@@ -1,0 +1,75 @@
+{
+ "key": "rohitg00_k8sgames",
+ "tool": "playwright 1.56.1 chromium headless_shell-1194, native SWS 2.38.0",
+ "pages": {
+  "/": {
+   "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+   ],
+   "page_errors": [],
+   "local_http_errors": [],
+   "local_failed": [],
+   "local_ok": 33,
+   "external": {
+    "fonts.googleapis.com": {
+     "aborted (external, not needed for local-asset check)": 1
+    },
+    "cdn.tailwindcss.com": {
+     "stubbed with window.tailwind={} (sandbox-denied CDN; no Tailwind styling in this smoke)": 1
+    },
+    "unpkg.com": {
+     "fulfilled from npm three@0.152.0": 2
+    },
+    "api.github.com": {
+     "aborted (external, not needed for local-asset check)": 1
+    }
+   },
+   "status": 200,
+   "title": "K8s Games - Kubernetes Cluster Management Simulation",
+   "dom": {
+    "canvases": 1,
+    "largest_canvas": "1280x800",
+    "webgl": true,
+    "webgl_renderer": "WebKit WebGL",
+    "oes_texture_float": true,
+    "body_text_len": 521
+   },
+   "screenshot": "<tmp>",
+   "ok": true
+  },
+  "/draw": {
+   "console_errors": [
+    "Failed to load resource: net::ERR_FAILED"
+   ],
+   "page_errors": [],
+   "local_http_errors": [],
+   "local_failed": [],
+   "local_ok": 10,
+   "external": {
+    "fonts.googleapis.com": {
+     "aborted (external, not needed for local-asset check)": 1
+    },
+    "cdn.tailwindcss.com": {
+     "stubbed with window.tailwind={} (sandbox-denied CDN; no Tailwind styling in this smoke)": 1
+    },
+    "unpkg.com": {
+     "fulfilled from npm three@0.152.0": 2
+    }
+   },
+   "status": 200,
+   "title": "K8s Draw — 3D Kubernetes Architecture Diagram",
+   "dom": {
+    "canvases": 1,
+    "largest_canvas": "1280x800",
+    "webgl": true,
+    "webgl_renderer": "WebKit WebGL",
+    "oes_texture_float": true,
+    "body_text_len": 701
+   },
+   "screenshot": "<tmp>",
+   "ok": true
+  }
+ },
+ "ok": true
+}

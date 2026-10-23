@@ -1,0 +1,51 @@
+{
+  "dir": "<replay>/opt/temp/.",
+  "base": "/",
+  "html_files": 3,
+  "local_refs_checked": 2,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 100112,
+      "title": "K8s Games - Kubernetes Cluster Management Simulation"
+    },
+    "/index.html": {
+      "status": 200,
+      "bytes": 100112,
+      "title": "K8s Games - Kubernetes Cluster Management Simulation"
+    },
+    "/draw.html": {
+      "status": 200,
+      "bytes": 49863,
+      "title": "K8s Draw \u2014 3D Kubernetes Architecture Diagram"
+    },
+    "/style.css": {
+      "status": 200,
+      "bytes": 32983,
+      "title": null
+    },
+    "/js/engine/GameEngine.js": {
+      "status": 200,
+      "bytes": 28928,
+      "title": null
+    },
+    "/js/data/CampaignLevels.js": {
+      "status": 200,
+      "bytes": 38411,
+      "title": null
+    },
+    "/og-image.png": {
+      "status": 200,
+      "bytes": 250706,
+      "title": null
+    },
+    "/robots.txt": {
+      "status": 200,
+      "bytes": 1969,
+      "title": null
+    }
+  },
+  "ok": true
+}

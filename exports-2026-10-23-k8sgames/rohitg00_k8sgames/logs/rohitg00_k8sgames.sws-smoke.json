@@ -1,0 +1,103 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/.",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 100126
+      }
+    ],
+    "/index.html": [
+      {
+        "path": "/index.html",
+        "status": 200,
+        "location": null,
+        "bytes": 100126
+      }
+    ],
+    "/draw.html": [
+      {
+        "path": "/draw.html",
+        "status": 200,
+        "location": null,
+        "bytes": 49869
+      }
+    ],
+    "/draw": [
+      {
+        "path": "/draw",
+        "status": 200,
+        "location": null,
+        "bytes": 49869
+      }
+    ],
+    "/draw/": [
+      {
+        "path": "/draw/",
+        "status": 200,
+        "location": null,
+        "bytes": 49869
+      }
+    ],
+    "/style.css": [
+      {
+        "path": "/style.css",
+        "status": 200,
+        "location": null,
+        "bytes": 32983
+      }
+    ],
+    "/js/engine/GameEngine.js": [
+      {
+        "path": "/js/engine/GameEngine.js",
+        "status": 200,
+        "location": null,
+        "bytes": 28928
+      }
+    ],
+    "/js/data/CampaignLevels.js": [
+      {
+        "path": "/js/data/CampaignLevels.js",
+        "status": 200,
+        "location": null,
+        "bytes": 38459
+      }
+    ],
+    "/js/ui/CommandBar.js": [
+      {
+        "path": "/js/ui/CommandBar.js",
+        "status": 200,
+        "location": null,
+        "bytes": 60265
+      }
+    ],
+    "/og-image.png": [
+      {
+        "path": "/og-image.png",
+        "status": 200,
+        "location": null,
+        "bytes": 265037
+      }
+    ],
+    "/robots.txt": [
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "location": null,
+        "bytes": 1969
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}
