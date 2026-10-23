@@ -1,0 +1,149 @@
+{
+  "tool": "static-web-server Version:      2.38.0 with Anybuild planned flags (0.33.x) + --host=127.0.0.1",
+  "root": "<replay>/opt/temp/website",
+  "routes": {
+    "/": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "bytes": 12033
+      }
+    ],
+    "/player/": [
+      {
+        "path": "/player/",
+        "status": 200,
+        "location": null,
+        "bytes": 2172
+      }
+    ],
+    "/player": [
+      {
+        "path": "/player",
+        "status": 308,
+        "location": "/player/",
+        "bytes": 0
+      },
+      {
+        "path": "/player/",
+        "status": 200,
+        "location": null,
+        "bytes": 2172
+      }
+    ],
+    "/beepbox_editor.min.js": [
+      {
+        "path": "/beepbox_editor.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 662702
+      }
+    ],
+    "/beepbox_editor.min.js.map": [
+      {
+        "path": "/beepbox_editor.min.js.map",
+        "status": 200,
+        "location": null,
+        "bytes": 2213205
+      }
+    ],
+    "/player/beepbox_player.min.js": [
+      {
+        "path": "/player/beepbox_player.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 221636
+      }
+    ],
+    "/beepbox_synth.min.js": [
+      {
+        "path": "/beepbox_synth.min.js",
+        "status": 200,
+        "location": null,
+        "bytes": 194963
+      }
+    ],
+    "/synth_example.html": [
+      {
+        "path": "/synth_example.html",
+        "status": 200,
+        "location": null,
+        "bytes": 1012
+      }
+    ],
+    "/2_3/": [
+      {
+        "path": "/2_3/",
+        "status": 200,
+        "location": null,
+        "bytes": 8996
+      }
+    ],
+    "/3_0/": [
+      {
+        "path": "/3_0/",
+        "status": 200,
+        "location": null,
+        "bytes": 12518
+      }
+    ],
+    "/3_0/player/": [
+      {
+        "path": "/3_0/player/",
+        "status": 200,
+        "location": null,
+        "bytes": 2172
+      }
+    ],
+    "/beepbox_offline.html": [
+      {
+        "path": "/beepbox_offline.html",
+        "status": 200,
+        "location": null,
+        "bytes": 671265
+      }
+    ],
+    "/manifest.webmanifest": [
+      {
+        "path": "/manifest.webmanifest",
+        "status": 200,
+        "location": null,
+        "bytes": 523
+      }
+    ],
+    "/service_worker.js": [
+      {
+        "path": "/service_worker.js",
+        "status": 200,
+        "location": null,
+        "bytes": 1377
+      }
+    ],
+    "/favicon.ico": [
+      {
+        "path": "/favicon.ico",
+        "status": 200,
+        "location": null,
+        "bytes": 318
+      }
+    ],
+    "/icon_maskable_192.png": [
+      {
+        "path": "/icon_maskable_192.png",
+        "status": 200,
+        "location": null,
+        "bytes": 5627
+      }
+    ]
+  },
+  "missing_probe": [
+    {
+      "path": "/__wasmer_campaign_missing__/",
+      "status": 404,
+      "location": null,
+      "bytes": 106
+    }
+  ],
+  "ok": true
+}

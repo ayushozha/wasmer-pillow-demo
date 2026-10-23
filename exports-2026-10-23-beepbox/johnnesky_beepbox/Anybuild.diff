@@ -1,0 +1,17 @@
+--- Anybuild.generated
++++ Anybuild
+@@ -6,7 +6,7 @@
+ config = nodestatic_config(
+     schema = 1,
+     sws_version = "2.38.0",
+-    static_dir = "dist",
++    static_dir = "website",
+     node_package_manager = "npm",
+     node_server = "node",
+     node_version = "24",
+@@ -15,4 +15,4 @@
+ 
+ build = nodestatic_build(config)
+ 
+-nodestatic_serve(config, build, name = "wt-beep-base")
++nodestatic_serve(config, build, name = "beepbox")

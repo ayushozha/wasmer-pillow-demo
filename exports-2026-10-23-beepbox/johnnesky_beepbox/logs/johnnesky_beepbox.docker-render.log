@@ -1,0 +1,54 @@
+# 2026-10-23T02:27:56Z johnnesky/beepbox @ 39893e30b959d7ff9b8574644d05b45dda41bb41 (patched) anybuild 0.33.1
+$ anybuild build . --builder docker --docker-client <stub exiting 1>
+EXIT 1 (expected: stub docker client exits 1 at "docker build"; Dockerfile was rendered first). Full Dockerfile:
+25:RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "node@24"
+26:RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "npm@11"
+28:COPY package-lock.json package-lock.json
+32:  npm install
+33:COPY \
+36:  --exclude=package-lock.json \
+38:RUN npm run build
+39:RUN cp -R website/. /opt/static_app/
+42:COPY --from=build /opt/static_app /opt/static_app
+     1	# syntax=docker/dockerfile:1.7-labs
+     2	FROM debian:trixie-slim AS build
+     3	
+     4	RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+     5	    --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
+     6	    rm -f /etc/apt/apt.conf.d/docker-clean \
+     7	    && apt-get update \
+     8	    && apt-get -y --no-install-recommends install \
+     9	        build-essential gcc make autoconf libtool bison \
+    10	        dpkg-dev pkg-config re2c locate \
+    11	        libmariadb-dev libmariadb-dev-compat libpq-dev libsqlite3-dev \
+    12	        libvips-dev default-libmysqlclient-dev libmagickwand-dev \
+    13	        libicu-dev libxml2-dev libxslt-dev libyaml-dev \
+    14	        sudo curl ca-certificates unzip git
+    15	
+    16	SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+    17	ENV MISE_DATA_DIR="/mise"
+    18	ENV MISE_CONFIG_DIR="/mise"
+    19	ENV MISE_CACHE_DIR="/mise/cache"
+    20	ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
+    21	ENV PATH="/mise/shims:$PATH"
+    22	
+    23	RUN curl https://mise.run | sh
+    24	RUN mkdir -p /opt/static_app
+    25	RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "node@24"
+    26	RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "npm@11"
+    27	WORKDIR /opt/temp
+    28	COPY package-lock.json package-lock.json
+    29	ENV CI=true NPM_CONFIG_FUND=false
+    30	RUN \
+    31	  --mount=type=bind,source=package.json,target=package.json \
+    32	  npm install
+    33	COPY \
+    34	  --exclude=node_modules \
+    35	  --exclude=.git \
+    36	  --exclude=package-lock.json \
+    37	  . .
+    38	RUN npm run build
+    39	RUN cp -R website/. /opt/static_app/
+    40	
+    41	FROM scratch
+    42	COPY --from=build /opt/static_app /opt/static_app

@@ -1,0 +1,7 @@
+# 2026-10-23T02:29:26Z johnnesky/beepbox flat-replay lockfile check (opt/temp of logs/johnnesky_beepbox.flat-replay.log)
+$ cmp opt/temp/package-lock.json <clone>/package-lock.json
+LOCK_UNCHANGED (lockfileVersion 2 kept by npm 11.19.1 install)
+$ npm ls --all
+EXIT 0
+$ compare every package-lock.json "packages" entry version with installed node_modules/*/package.json
+checked 237, mismatch/missing 0

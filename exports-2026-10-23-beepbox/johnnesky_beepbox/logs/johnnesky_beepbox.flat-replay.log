@@ -1,0 +1,65 @@
+# 2026-10-23T02:28:17Z flat replay of anybuild 0.33.1 planned steps for johnnesky_beepbox @ 39893e30b959d7ff9b8574644d05b45dda41bb41 (v24.22.1; 11.19.1; 9.15.9; 1.4.2)
+$ (cd <replay> && <clone>/target/release/anybuild plan <replay>/src --out <replay>/plan.json)
+  Using static Node.js provider declared in Anybuild
+    Server: Node.js
+    Package manager: npm
+    Output directory: website
+Plan saved to <replay>/plan.json
+EXIT 0
+# env per node.bzl for npm: CI=true, NPM_CONFIG_FUND=false
+# pinned per plan: node_version=24 (default) pnpm_version=None -> pnpm on PATH 9.15.9; npm_version=11 bun_version=None yarn_version=None -> yarn on PATH 1.22.22 (/opt/node22/bin/yarn)
+# plan: provider=node-static install='npm install' build='npm run build' static_dir='website'
+# node_install_requires_all_files=False
+$ (cd <replay>/opt/temp && npm install)
+npm warn deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+
+added 237 packages, and audited 238 packages in 15s
+
+26 vulnerabilities (4 low, 7 moderate, 13 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.23.0 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+EXIT 0
+$ (cd <replay>/src && tar --exclude=./node_modules --exclude=./.git --exclude=./package-lock.json --exclude=./pnpm-lock.yaml --exclude=./yarn.lock --exclude=./bun.lock --exclude=./bun.lockb -cf - . | tar -xf - -C <replay>/opt/temp)
+EXIT 0
+$ (cd <replay>/opt/temp && npm run build)
+
+> build
+> npm run clean && npm run build-synth && npm run build-player && npm run build-editor
+
+
+> clean
+> bash ./scripts/clean.sh
+
+
+> build-synth
+> bash ./scripts/compile_synth.sh
+
+[36m
+[1mbuild/synth/index.js[22m → [1mbundle/beepbox_synth.js[22m...[39m
+[32mcreated [1mbundle/beepbox_synth.js[22m in [1m722ms[22m[39m
+
+> build-player
+> bash ./scripts/compile_player.sh
+
+[36m
+[1mbuild/player/index.js[22m → [1mbundle/player/beepbox_player.js[22m...[39m
+[32mcreated [1mbundle/player/beepbox_player.js[22m in [1m1s[22m[39m
+
+> build-editor
+> bash ./scripts/compile_editor.sh
+
+[36m
+[1mbuild/editor/index.js[22m → [1mbundle/beepbox_editor.js[22m...[39m
+[32mcreated [1mbundle/beepbox_editor.js[22m in [1m1.9s[22m[39m
+EXIT 0
+# result {"install": "npm install", "build": "npm run build", "static_dir": "website", "exit": 0, "smoke_ok": true, "missing": 0, "routes": {"/": 200, "/player/": 200, "/beepbox_editor.min.js": 200, "/player/beepbox_player.min.js": 200, "/synth_example.html": 200, "/2_3/": 200, "/3_0/": 200, "/beepbox_offline.html": 200, "/manifest.webmanifest": 200, "/service_worker.js": 200}}

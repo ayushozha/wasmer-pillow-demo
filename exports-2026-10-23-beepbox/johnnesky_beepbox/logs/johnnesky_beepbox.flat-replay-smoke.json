@@ -1,0 +1,61 @@
+{
+  "dir": "<replay>/opt/temp/website",
+  "base": "/",
+  "html_files": 11,
+  "local_refs_checked": 3,
+  "missing_local_refs": [],
+  "missing_count": 0,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 12029,
+      "title": "BeepBox"
+    },
+    "/player/": {
+      "status": 200,
+      "bytes": 2172,
+      "title": "BeepBox Song Player"
+    },
+    "/beepbox_editor.min.js": {
+      "status": 200,
+      "bytes": 661080,
+      "title": null
+    },
+    "/player/beepbox_player.min.js": {
+      "status": 200,
+      "bytes": 221437,
+      "title": null
+    },
+    "/synth_example.html": {
+      "status": 200,
+      "bytes": 1012,
+      "title": "BeepBox Synth Example"
+    },
+    "/2_3/": {
+      "status": 200,
+      "bytes": 8996,
+      "title": "BeepBox 2.3"
+    },
+    "/3_0/": {
+      "status": 200,
+      "bytes": 12514,
+      "title": "BeepBox"
+    },
+    "/beepbox_offline.html": {
+      "status": 200,
+      "bytes": 669643,
+      "title": "BeepBox"
+    },
+    "/manifest.webmanifest": {
+      "status": 200,
+      "bytes": 523,
+      "title": null
+    },
+    "/service_worker.js": {
+      "status": 200,
+      "bytes": 1377,
+      "title": null
+    }
+  },
+  "ok": true
+}
