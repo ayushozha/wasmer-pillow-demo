@@ -1,0 +1,20 @@
+# coreui/coreui-free-react-admin-template @ 2609f5995035973e00c16ec723165a5fff87cceb + upstream.patch (sha256 676a48e6919d45635bd560be1bd18857da1e39caa7282d0c14daa4c7ca8c761c)
+$ git status --porcelain
+ M README.md
+?? Staticfile
+$ node -v; npm -v
+v24.22.1
+11.21.1
+$ npm ci
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   core-js@3.50.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+$ npm run lint
+
+> @coreui/coreui-free-react-admin-template@5.7.0 lint
+> eslint
+
+exit=0

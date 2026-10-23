@@ -1,6 +1,6 @@
 b85df2b9a8694d87a22cca0853104b282ff61ecbab9d6eb351927e0d6cd16c2d  ./255-ancientbeast-trailing-space-fix/ancientbeast-trailing-space-fix.patch
 4fa7c273a148bec8d9ce58415e105d429d9631a5b28207689ac2af467df1e33a  ./255-ancientbeast-trailing-space-fix/check-receipt.txt
-e655cff25ab7ea4d8309375addd5ed9341a966d4d3fe147223fd1b5b80f13416  ./README.md
+13b2404c67be2208123f414da9acb78de5ef4d771b831253b2ed92277cb6aa62  ./README.md
 9d6f35538c4e002231ceadb92a16a994e989e8193a2e0fe9887621308c212983  ./astrowind-pr744/RECEIPTS.md
 af23d386886790f85ebfd6cb0c32a9be81380e69fb3701efbd1d70b51dec3652  ./astrowind-pr744/agents-checks.log
 b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3  ./astrowind-pr744/api-refusal-pr-files.json
@@ -24,6 +24,9 @@ aabb030928be9738fafb6d0c21123b51cccd5654b72dd3a221e339dc73bb17b6  ./astrowind-pr
 8623ce0809b139bfe739abbc10c87fbdb6dcf3ec1de5e59cf9591b162769b578  ./astrowind-pr744/views-dev.json
 29d71f6e3a7d0a126c7ecddf0206094835a47660e0f1ccfe2b837ce206eee0be  ./astrowind-pr744/views-sws-partial-build.json
 a8fbf23363821be9a58df99fb3c7e8f981f6029221737994d444aa986ce6c67b  ./astrowind-pr744/views.js
+fc06181ed45d540a370190f881809477327f935e10f66fe1d3c1a04f519627bf  ./coreui-react-cursorrules/RECEIPTS.md
+502f1f779c25599d068fa03257dadff2d923b2f577ff0a186505e03a6f22e06c  ./coreui-react-cursorrules/cursorrules-excerpt.txt
+986293d629efb9c7012a38072d06cc5bb38c96936053e2e070ace47273796d14  ./coreui-react-cursorrules/lint-receipt.txt
 72dfcb82f3e4ca20bfc501b2edb4473e835b6bdc1d63c8e25f16504c470258f7  ./excalidraw-pr12417/RECEIPTS.md
 81d8406ea914ae242b9ea01a5172a4b92a722a24f479748bbb1557537c269404  ./excalidraw-pr12417/browser-check.js
 5d667a3dc58dc1166b09d9c01057b8509fe977b01d7cf64f7190b63d14d7d64f  ./excalidraw-pr12417/browser-receipt.txt
@@ -49,7 +52,7 @@ c302b52109015585c7780d52fa295e8fc87bf1cbe8adb84cf5b3dda80fbe35f3  ./excalidraw-p
 e1c213065bad102714c6f377bae4183d8825c1c7e8b706db4d52b7b632ac3919  ./excalidraw-pr12417/static_app-filelist.txt
 cba8d4f7caa4c8a82390b0b0d5979237917d3a7e118b55c8f83205ef2e82fcda  ./excalidraw-pr12417/sws-http.log
 7e6e84e96f6bd1ba7b63c70f807193ce67197e1eb3642a53c732736b81ff8be4  ./excalidraw-pr12417/sws-replay.log
-c013e762f9053723769c3a69266d9e2448050b19b8b745c7f98195c0691c3cab  ./export-08-coreui__coreui-free-react-admin-template/PR_BODY.md
+dd6dc9f44a5c1c5277123d58ca7249b931a64bc3fdb25a305e6dcc33366a9eff  ./export-08-coreui__coreui-free-react-admin-template/PR_BODY.md
 2c6083bead404df4dcb4ca04ef2cd918b2caf6943d0e6e911f17a0e35ce510a3  ./export-08-coreui__coreui-free-react-admin-template/PR_TITLE.txt
 4afd76805125cd0eb12f51314913c68bc2837ace26b8c94cfee07d26059685b7  ./export-08-coreui__coreui-free-react-admin-template/RECEIPTS.md
 f00d63548103586ec6596536ae6ccd6273f41ce5949e1dedd5a0cb6dff95aa55  ./export-08-coreui__coreui-free-react-admin-template/duplicate-search/README.txt
@@ -72,7 +75,7 @@ e8f4dd245419b9b5439baeb1b80cd09b8b7f4e95d846218ce477826883162ed7  ./export-08-co
 e43b4c68a24c8e3d412d6641648d4cd2c739f649a9d0c421df3120698bb85c6f  ./export-08-coreui__coreui-free-react-admin-template/receipts/smoke.txt
 edbb21b73e92fe2d27a4ae882ed35efab8deea74bfd10924f5498734fa31aa8b  ./export-08-coreui__coreui-free-react-admin-template/replay.log
 676a48e6919d45635bd560be1bd18857da1e39caa7282d0c14daa4c7ca8c761c  ./export-08-coreui__coreui-free-react-admin-template/upstream.patch
-a59305ad5b6310e7a779f384d57e32d51c50ea78062b6318138affe09a3a5f85  ./export-69-themeselection__sneat-bootstrap-html-admin-template-free/PR_BODY.md
+aa2f3c6257ec09e2245aea7f16345ff585c142fbfdea44966e55ae2b5750b423  ./export-69-themeselection__sneat-bootstrap-html-admin-template-free/PR_BODY.md
 4548863fead073736508d65c15052f8e424869dbcc35aba24750b66d3b3b7888  ./export-69-themeselection__sneat-bootstrap-html-admin-template-free/PR_TITLE.txt
 1125d716d018245db35cfa1510b2dfb709aff4885bbbbb28a42b99e543623948  ./export-69-themeselection__sneat-bootstrap-html-admin-template-free/RECEIPTS.md
 f00d63548103586ec6596536ae6ccd6273f41ce5949e1dedd5a0cb6dff95aa55  ./export-69-themeselection__sneat-bootstrap-html-admin-template-free/duplicate-search/README.txt

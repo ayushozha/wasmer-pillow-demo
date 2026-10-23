@@ -1,10 +1,11 @@
 <a href="https://wasmer.io/apps/create?github=coreui%2Fcoreui-free-react-admin-template"><img src="https://img.shields.io/badge/Deploy%20to-Wasmer-171717?style=for-the-badge&amp;logo=wasmer&amp;logoColor=white&amp;labelColor=171717" alt="Deploy to Wasmer" height="48"></a>
 
+Disclosure: I work at Wasmer. I prepared this change with help from Claude, an AI assistant, and reviewed and tested it before opening this PR.
+
 ## Summary
 
 Adds a short "Deploy on Wasmer" subsection after the README's Build instructions, plus a one-line root `Staticfile` (`root: build`). No application code changes.
 
-Disclosure: the same campaign already opened coreui/coreui-free-vue-admin-template#337, which adds Wasmer deployment instructions to the Vue sibling of this template. This PR is the React counterpart; the two are independent and either can be accepted or closed on its own.
 
 ## Why this repo
 
@@ -14,6 +15,8 @@ What is specific to the React template (and why the Vue PR does not cover it):
 
 - Build output directory: this repo's `vite.config.mjs` sets `build.outDir: 'build'`. Wasmer's builder (Anybuild) does not read Vite's `outDir` and assumes Vite's default `dist`, so without a hint the deployment would look for a folder that does not exist. The one-line `Staticfile` (`root: build`) only names the output folder; Wasmer still detects the Vite app and runs `npm install` and `npm run build`.
 - Routing: the app uses React Router's `HashRouter` (`src/App.jsx`) and `base: './'`, so every in-app URL (`/#/dashboard`, `/#/login`, `/#/register`) loads `index.html` from `/`. That means it works on a plain static file server with no rewrite or SPA-fallback configuration, and reloading or sharing a deep link keeps working.
+
+The button opens Wasmer's import page for this public repository, where you review the detected build settings and click Deploy; it does not create a copy of the repository in your GitHub account. To customize the site and redeploy on changes, fork the repository and import your fork instead.
 
 ## Testing
 
@@ -32,4 +35,3 @@ Local replay of what Wasmer's builder (Anybuild v0.33.0) generates for `2609f599
 
 - No deployment was made. The badge image and the Wasmer import page could not be checked from the test environment.
 - The extra root file exists only for Wasmer's output-directory detection and does not affect local development.
-- The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account. To customize and redeploy on every push, fork the repository and import your fork.

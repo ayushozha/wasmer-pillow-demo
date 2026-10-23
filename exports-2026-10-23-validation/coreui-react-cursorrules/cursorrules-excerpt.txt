@@ -1,0 +1,19 @@
+$ git show HEAD:.cursorrules | sed -n '186,194p;252,260p'   (HEAD 2609f5995035973e00c16ec723165a5fff87cceb, blob 0d40a51a266e82d6bd7a59e1bde28a17718ddbec)
+## Code Quality
+
+**Linting**:
+- ESLint configuration in `eslint.config.mjs`
+- Prettier integration for code formatting
+- React-specific rules with eslint-plugin-react
+- React Hooks rules with eslint-plugin-react-hooks
+- Run `npm run lint` before committing
+
+**What AI Should NOT Do**:
+- Use class components (use functional components instead)
+- Import components from libraries other than CoreUI/React
+- Suggest Tailwind CSS or other CSS frameworks
+- Ignore ESLint/Prettier rules
+- Create files outside the src/ directory structure
+- Modify build configuration without clear reason
+- Use deprecated React patterns (componentWillMount, etc.)
+
