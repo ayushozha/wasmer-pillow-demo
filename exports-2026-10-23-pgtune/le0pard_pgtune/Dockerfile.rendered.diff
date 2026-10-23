@@ -1,0 +1,11 @@
+--- Dockerfile (3289c49, yarn floating)
++++ Dockerfile (e2df476, yarn pinned)
+@@ -23,7 +23,7 @@
+ RUN curl https://mise.run | sh
+ RUN mkdir -p /opt/static_app
+ RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "node@24"
+-RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "yarn"
++RUN --mount=type=cache,target=/mise/cache,sharing=locked mise use --global "yarn@4.18.1"
+ WORKDIR /opt/temp
+ COPY \
+   --exclude=node_modules \

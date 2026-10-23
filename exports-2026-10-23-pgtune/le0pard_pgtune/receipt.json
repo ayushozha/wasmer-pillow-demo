@@ -26,20 +26,7 @@
   "format_check": "not applicable: repo formatter (oxfmt) is scoped to src, e2e and config files, not README.md",
   "hook_check": "no git hooks installed (no .husky, .git/hooks has only samples); normal git commit ran, nothing bypassed",
   "detection_verified": "plan BASE vs PATCHED verified locally; live import page preset pending Codex browser check (README/PR tell users to select node-static if a different preset is shown)",
-  "anybuild_replay": {
-    "base": {
-      "result": "FAIL",
-      "detail": "install EXIT 0 (PnP, no .yarnrc.yml), build EXIT 1: Usage Error: Couldn't find the node_modules state file",
-      "log": "<campaign>"
-    },
-    "patched": {
-      "result": "PASS",
-      "detail": "full source copied before install; yarn install EXIT 0 (Yarn 4.18.1), yarn run build EXIT 0; yarn.lock byte-identical after install (cmp); smoke 7/7 routes 200, 0 missing",
-      "log": "<campaign>",
-      "smoke": "<campaign>"
-    },
-    "pinned_env": "node v24.22.1 (Anybuild default 24); yarn: Anybuild leaves yarn_version floating (mise; source comment says Berry); replay put @yarnpkg/cli-dist latest (4.18.1, == packageManager) first on PATH; with .yarnrc.yml present yarnPath dispatches to committed 4.18.1 anyway. No yarn-specific env in node.bzl."
-  },
+  "anybuild_replay": "PASS (anybuild 0.33.1, 2026-10-23, coordinator) @ e2df476: yarn 4.18.1 pinned per plan (official cli-dist launcher, no wrapper), node.bzl all-files staging; yarn install EXIT 0 (Yarn 4.18.1), yarn run build EXIT 0, yarn.lock unchanged; static_dir dist. Base replay FAIL (PnP install). logs/le0pard_pgtune.flat-replay.log",
   "sws_smoke": {
     "result": "PASS",
     "tool": "native static-web-server 2.38.0 (not Wasmer's wasm SWS 2.32.2)",
@@ -93,14 +80,16 @@
     "query": "https://github.com/le0pard/pgtune/pulls?q=is%3Apr+wasmer (WebFetch, all states)",
     "result": "the search showed 0 results ('No pull requests matched your search'; Open 0, Closed 0) at ~2026-10-23T01:57Z"
   },
-  "coordinator_review": "2026-10-23: ls-remote HEAD = 0208aa2 (base current); patch == format-patch of 3289c49; Anybuild diff vs generator = node_install_requires_all_files=True (+comment) and app name only; field verified supported in shipit v0.33.1 (node.rs:613, node.bzl:107/144: all-files copy before install); .yarnrc.yml has nodeLinker node-modules + yarnPath; coordinator re-replay of 3289c49 passed (install+build exit 0); /about served about.html on native SWS 2.32.2 and 2.38.0 (logs/le0pard_pgtune.sws-about-check.txt). Root's independent screen: Wasmer search 0, no explicit AI/CLA/issue-first/provider ban. Live import preset not checked (README/body say select node-static).",
-  "patch_commit": "3289c492310ead5857137d0e5139b17ebf2e016f (branch deploy-to-wasmer in <tmp> author Claude <noreply@anthropic.com>)",
+  "coordinator_review": "2026-10-23: ls-remote HEAD = 0208aa2 (base current); patch == format-patch of e2df476 (was 3289c49); Anybuild diff vs generator = node_install_requires_all_files=True (+comment) and app name only; field verified supported in shipit v0.33.1 (node.rs:613, node.bzl:107/144: all-files copy before install); .yarnrc.yml has nodeLinker node-modules + yarnPath; coordinator re-replay of 3289c49 passed (install+build exit 0); /about served about.html on native SWS 2.32.2 and 2.38.0 (logs/le0pard_pgtune.sws-about-check.txt). Root's independent screen: Wasmer search 0, no explicit AI/CLA/issue-first/provider ban. Live import preset not checked (README/body say select node-static).",
+  "exact_runner_correction": "Root review 2026-10-23: 0.33.x resolve_manager_version returns early for yarn and default_manager_version(Yarn)=None, so 3289c49 rendered `mise use --global \"yarn\"` (floating; current plugin also lists Yarn 6+). Coordinator verified in 0.33.1 source and by rendering the Docker build with a stub client (research/le0pard_pgtune-anybuild/Dockerfile.rendered.*). Fix: yarn_version = \"4.18.1\" -> `mise use --global \"yarn@4.18.1\"`. The earlier replay masked this with a repo-relative wrapper; the corrected replay pins yarn per plan using @yarnpkg/cli-dist@4.18.1 from npm (yarn.js sha256 a28ad591... == committed .yarn/releases/yarn-4.18.1.cjs) with its own bin/yarn launcher; repo.yarnpkg.com and mise.run unreachable from sandbox, mise not run.",
+  "sws_about_recheck": "Coordinator re-check on e2df476 replay output: native SWS 2.32.2 and 2.38.0: / /about /about/ /about.html /sw.js 200, /nope 404 (logs/le0pard_pgtune.sws-about-check.txt).",
+  "patch_commit": "e2df476de7c2ef947ce9829e53e6ae1dfc1f347b (branch deploy-to-wasmer-v2; supersedes 3289c49, which left yarn floating)",
   "config": {
     "file": "Anybuild (root)",
     "generated": "<campaign>",
-    "committed": "<campaign>",
+    "committed": "research/le0pard_pgtune-anybuild/Anybuild.committed (from e2df476)",
     "diff": "<campaign>",
-    "edits": "added node_install_requires_all_files = True (+2 comment lines); serve name pgtune_base -> pgtune. All other lines are generator output.",
+    "edits": "added yarn_version = \"4.18.1\" (+1 comment line), node_install_requires_all_files = True (+2 comment lines); serve name pgtune_base -> pgtune. All other lines are generator output.",
     "why_needed": "Base replay FAILS: node.bzl stages only package.json + yarn.lock before 'yarn install', so .yarnrc.yml (nodeLinker: node-modules, yarnPath) is absent; Yarn Berry installs with PnP, then after source copy 'yarn run build' errors 'Couldn't find the node_modules state file'. Field is supported (node.rs env_bool node_install_requires_all_files; node.bzl node_install_steps copies full source before install)."
   },
   "browser_smoke": {

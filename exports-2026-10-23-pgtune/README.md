@@ -4,9 +4,15 @@ This folder holds publication inputs only. Nothing here has been submitted upstr
 
 | Repo | Base | Changes | Builder result (Anybuild 0.33.1) |
 |---|---|---|---|
-| le0pard/pgtune | `master` @ `0208aa2` | README "Deploy" section with badge; root `Anybuild` | base: node-static/vite/yarn/`dist`, but install sees only `package.json`, so Yarn 4 uses Plug'n'Play and the build fails. Patched: "declared in Anybuild", the same, with `node_install_requires_all_files = True`, so the build passes. |
+| le0pard/pgtune | `master` @ `0208aa2` | README "Deploy" section with badge; root `Anybuild` | base: node-static/vite/yarn/`dist`, but install sees only `package.json`, so Yarn 4 uses Plug'n'Play and the build fails. Patched (`e2df476`): "declared in Anybuild", the same, with `yarn_version = "4.18.1"` and `node_install_requires_all_files = True`, so the build passes. |
 
-`Anybuild` is the output of `anybuild generate . --provider node-static` (0.33.1) with two edits: `node_install_requires_all_files = True` with a comment, and the app name. See `Anybuild.generated-0.33.1` and `Anybuild.diff`. The field is a supported Anybuild 0.33.1 field (`crates/anybuild/src/providers/node.rs`, `resources/starlib/tools/node.bzl`).
+`Anybuild` is the output of `anybuild generate . --provider node-static` (0.33.1) with three edits: `yarn_version = "4.18.1"`, `node_install_requires_all_files = True`, and the app name, each with comments where shown. See `Anybuild.generated-0.33.1` and `Anybuild.diff`. Both fields are supported Anybuild 0.33.1 fields (`crates/anybuild/src/providers/node.rs`, `resources/starlib/tools/node.bzl`).
+
+**Correction (second commit on this branch):**
+- The first version (`3289c49`) left Yarn unpinned. Anybuild 0.33.x deliberately leaves Yarn's version floating, so its Docker build rendered `mise use --global "yarn"`, and the earlier replay masked this with a repo-relative wrapper.
+- `e2df476` pins `yarn_version = "4.18.1"`. The rendered Docker build now runs `mise use --global "yarn@4.18.1"`; see `Dockerfile.rendered.diff`, rendered with a stub docker client.
+- The replay now installs the plan's Yarn release. It uses `@yarnpkg/cli-dist@4.18.1` from npm with its own launcher; its `yarn.js` is byte-identical to the committed `.yarn/releases/yarn-4.18.1.cjs`. repo.yarnpkg.com and mise were not reachable from the sandbox.
+- The browser smoke ran on the `3289c49` build. That commit differs from `e2df476` only in the README and `Anybuild` lines, with the same Yarn release, and the app source is unchanged.
 
 Files in `le0pard_pgtune/`:
 - the patch;

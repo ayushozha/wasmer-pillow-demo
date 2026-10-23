@@ -1,0 +1,14 @@
+{
+ "patched": {
+  "anybuild": "0.33.1",
+  "commit": "e2df476de7c2ef947ce9829e53e6ae1dfc1f347b",
+  "provider": "node-static",
+  "static_dir": "dist",
+  "pm": "yarn",
+  "yarn_version": "4.18.1",
+  "node_install_requires_all_files": true,
+  "install": "yarn install",
+  "build": "yarn run build",
+  "start": "static-web-server --root=<worktree>/.anybuild/local/build/opt/static_app --log-level=info --port=8080"
+ }
+}

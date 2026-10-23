@@ -4,12 +4,12 @@
     "status": "READY",
     "base_sha": "0208aa249d49f896e6167dad503a9594bcb0f771",
     "base_branch": "master",
-    "patched_staging_sha": "3289c492310ead5857137d0e5139b17ebf2e016f",
+    "patched_staging_sha": "e2df476de7c2ef947ce9829e53e6ae1dfc1f347b",
     "import_url": "https://wasmer.io/apps/create?github=le0pard%2Fpgtune",
     "patch": "le0pard_pgtune/le0pard_pgtune.patch",
-    "patch_sha256": "ec7a77f90c8b376b09d63e284c6008f8fec8086a6f5ac4a8f35fef7195ec54ee",
+    "patch_sha256": "2f49bd039334aa18d5b6db870cc4e9fcbc4f9444a20b3f2ca16a8e8cb02a205d",
     "pr_body": "le0pard_pgtune/pr-body.md",
-    "pr_body_sha256": "d1e9cc526ab2358edefb83c52db6e7cc84da9ce7acd981a8b1aba219361e709f",
+    "pr_body_sha256": "7ef6ebe6faba10c5bce4d0c22b0a9b3519c5c33855846f9d6ea5b37f63db0903",
     "files_changed": [
       "Anybuild",
       "README.md"

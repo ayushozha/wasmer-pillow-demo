@@ -1,5 +1,5 @@
 {
-  "tool": "static-web-server Version:      2.38.0 with anybuild 0.33.0 planned flags + --host=127.0.0.1",
+  "tool": "static-web-server Version:      2.32.2 with Anybuild planned flags (0.33.x) + --host=127.0.0.1",
   "root": "<replay>/opt/temp/dist",
   "routes": {
     "/": [
@@ -42,30 +42,6 @@
         "bytes": 484
       }
     ],
-    "/assets/main-Er0aaGsj.js": [
-      {
-        "path": "/assets/main-Er0aaGsj.js",
-        "status": 200,
-        "location": null,
-        "bytes": 110359
-      }
-    ],
-    "/assets/style-Cnkw2jkA.css": [
-      {
-        "path": "/assets/style-Cnkw2jkA.css",
-        "status": 200,
-        "location": null,
-        "bytes": 15771
-      }
-    ],
-    "/assets/pgtune-CO5GAuwJ.svg": [
-      {
-        "path": "/assets/pgtune-CO5GAuwJ.svg",
-        "status": 200,
-        "location": null,
-        "bytes": 4353
-      }
-    ],
     "/llms.txt": [
       {
         "path": "/llms.txt",
@@ -82,9 +58,33 @@
         "bytes": 23
       }
     ],
-    "/?dbVersion=18&osType=linux&dbType=web&cpuNum=8&totalMemory=16&totalMemoryUnit=GB&connectionNum=&hdType=ssd&dbSize=mid_ram": [
+    "/assets/main-Er0aaGsj.js": [
       {
-        "path": "/?dbVersion=18&osType=linux&dbType=web&cpuNum=8&totalMemory=16&totalMemoryUnit=GB&connectionNum=&hdType=ssd&dbSize=mid_ram",
+        "path": "/assets/main-Er0aaGsj.js",
+        "status": 200,
+        "location": null,
+        "bytes": 110359
+      }
+    ],
+    "/assets/pgtune-CO5GAuwJ.svg": [
+      {
+        "path": "/assets/pgtune-CO5GAuwJ.svg",
+        "status": 200,
+        "location": null,
+        "bytes": 4353
+      }
+    ],
+    "/assets/style-Cnkw2jkA.css": [
+      {
+        "path": "/assets/style-Cnkw2jkA.css",
+        "status": 200,
+        "location": null,
+        "bytes": 15771
+      }
+    ],
+    "/?dbVersion=18&osType=linux&dbType=web&cpuNum=8&totalMemory=16&totalMemoryUnit=GB&hdType=ssd": [
+      {
+        "path": "/?dbVersion=18&osType=linux&dbType=web&cpuNum=8&totalMemory=16&totalMemoryUnit=GB&hdType=ssd",
         "status": 200,
         "location": null,
         "bytes": 15680
