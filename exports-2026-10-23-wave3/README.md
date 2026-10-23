@@ -1,0 +1,8 @@
+# Wave 3 (2026-10-23): root-supplied targets
+
+The format is the same as wave 2. All HTTP results were served with a local native static-web-server 2.38.0 (the version Anybuild's plan pins; Wasmer's hosted runtime uses its own WASI static-web-server package, which was not tested here). Each folder's `RECEIPTS.md` is the entry point.
+
+| Folder | HEAD | Status | upstream.patch sha256 |
+|---|---|---|---|
+| `export-301-Fechin__reference/` | `6fe843f01a81a2f87279eb629a806f318e6a4d72` | READY. `public/` is gitignored, so this is not a Staticfile case: Anybuild builds Hexo with pnpm. The patch adds a README subsection and a root `_redirects` with 4 literal 301s from `nginx.conf` (`/golang`, `/golang.html`, `/css`, `/css.html`). It was compared with nginx 1.24 running the repo's `nginx.conf` on 71 URLs: 51 match, and the 20 differences are disclosed, including the generic `.html` redirect, which would need a catch-all and was not added. All 650 built files return 200. GPL-3.0 source-offer obligations are noted. | `91b4de57e8796211de5dc48a14515e2ba7ddfae1af9ae087421ab107ffa8703e` |
+| `hold-302-sadanandpai__frontend-mini-challenges/` | `48b7dae8bae41e4c69b904c7793bb8a4f892f337` | HELD (policy). The PR template says "Please make sure issue number is mention in Pull Request else PR will not be merged." A tested draft in `draft/` has an `ISSUE_NUMBER_REQUIRED` placeholder: a committed `Anybuild` serving under `/frontend-mini-challenges/` with only `/` redirected. Its install and build exit 0, all 308 files return 200, and the apps use hash routing. | `42e1b58fb5e25c010fe6907173d5c9ce967ce16ad4b8dd9f2a97f54f47b29e57` (draft) |

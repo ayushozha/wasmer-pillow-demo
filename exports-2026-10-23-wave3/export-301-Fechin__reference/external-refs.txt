@@ -1,0 +1,13 @@
+# external references in the built output (replay val3-ref static_app)
+$ grep -l 'cdn.jsdelivr.net/npm/(livecodes|katex)' *.html | wc -l
+23
+$ grep -c 'rel="canonical" href="https://cheatsheets.zip' over HTML files (files with a match)
+226
+$ grep -l 'rel="prerender" href="https://cheatsheets.zip"' (files)
+226
+$ grep -l 'api.github.com/repos/Fechin/reference' js/main.js
+js/main.js
+$ grep -rlE 'googletagmanager|gtag\(|google-analytics|plausible|umami|clarity.ms|cloudflareinsights' --include=*.html . | wc -l
+0
+$ git show HEAD:_config.yml | grep -n '^url:'
+16:url: https://cheatsheets.zip

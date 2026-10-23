@@ -1,0 +1,47 @@
+2216aefb14737f48abff0d292f73c05f408c92dbbd38f26f89aeab8a980ad386  package-lock.json
+$ npm audit --omit=dev --package-lock-only (npm 11.21.1)
+# npm audit report
+
+@angular/router  22.0.0 - 22.2.0
+Severity: high
+Angular Server-Side Rendering (SSR): Denial of Service via Numeric URL Matrix Parameters - https://github.com/advisories/GHSA-ff3f-86qr-9cv3
+@angular/router: Denial of Service via Unmatched Empty-Path Outlet Route Matching in Server-Side Rendering (SSR) - https://github.com/advisories/GHSA-62vg-58rm-qff7
+@angular/router: Denial of Service via RouterLink Query Parameter Retention in Server-Side Rendering (SSR) - https://github.com/advisories/GHSA-57xq-rjx2-v5xh
+fix available via `npm audit fix`
+node_modules/@angular/router
+
+axios  1.0.0 - 1.19.0
+Severity: high
+Axios: Prototype pollution gadget in fetch adapter can alter outbound requests - https://github.com/advisories/GHSA-vh66-26gq-q6x8
+Axios: Prototype-Pollution Gadget in the Default Instance Allows Inherited Object.prototype.method to Override HTTP Method - https://github.com/advisories/GHSA-9fr6-4gfg-395g
+Axios: ReDoS in fromDataURI data: URL parser freezes the Node event loop (DoS) - https://github.com/advisories/GHSA-c29m-xwm3-cm6r
+Axios: ReDoS (O(N²)) in shouldBypassProxy host normalization, reachable via untrusted redirect Location - https://github.com/advisories/GHSA-mghh-pgcx-3jjj
+Axios: Prototype Pollution Gadget in axios toFormData Options - https://github.com/advisories/GHSA-x97p-jq2g-jp4f
+Axios: HTTP/2 adapter bypasses configured DNS lookup and proxy controls - https://github.com/advisories/GHSA-3pq3-5fj3-cg6v
+Axios: Denial of Service via Unhandled 'error' Event in HTTP/2 ClientHttp2Session Initialization - https://github.com/advisories/GHSA-542g-h47m-68v8
+Axios: Header Injection via Inherited headers After Minimal Interceptor - https://github.com/advisories/GHSA-j8rh-479h-cp32
+Axios: Fetch Adapter Header Injection via Inherited FormData getHeaders - https://github.com/advisories/GHSA-4hqw-qxg8-jxx2
+Axios: Node HTTP adapter prototype-pollution gadget allows request socket hijack via inherited createConnection - https://github.com/advisories/GHSA-m8m8-qj5v-23w3
+Axios: CIDR-form NO_PROXY entries are ignored, causing proxy exclusion bypass for internal IP ranges - https://github.com/advisories/GHSA-44g4-m2mj-wpvx
+Axios: maxRedirects: 0 is not enforced by the fetch adapter, allowing redirect-based SSRF - https://github.com/advisories/GHSA-r4gj-5m52-g5wh
+fix available via `npm audit fix`
+node_modules/axios
+
+follow-redirects  1.16.0
+Severity: high
+follow-redirects array-form headers bypass cross-origin credential stripping - https://github.com/advisories/GHSA-q3jh-wrc6-jgq8
+follow-redirects sensitiveHeaders regex escaping can expose credential headers - https://github.com/advisories/GHSA-8r9p-f939-6h3c
+fix available via `npm audit fix`
+node_modules/follow-redirects
+
+source-map-js  1.0.0 - 1.2.1
+Severity: high
+source-map-js allows event-loop denial of service through indexed source-map section offsets - https://github.com/advisories/GHSA-68fv-2mgg-jv7q
+fix available via `npm audit fix`
+node_modules/source-map-js
+
+4 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+exit=1

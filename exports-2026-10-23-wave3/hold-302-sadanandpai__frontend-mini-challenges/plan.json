@@ -1,0 +1,36 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "npm install",
+            "build": "npm run build && npm run copy-to-dist && rm -rf wasmer-site && mkdir wasmer-site && cp -R dist wasmer-site/frontend-mini-challenges",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080"
+        },
+        "static_dir": "wasmer-site",
+        "static_redirects_config": "[[advanced.redirects]]\nsource = \"/\"\ndestination = \"/frontend-mini-challenges/\"\nkind = 302\n",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "npm",
+        "node_server": "node",
+        "node_build_command": "npm run build && npm run copy-to-dist && rm -rf wasmer-site && mkdir wasmer-site && cp -R dist wasmer-site/frontend-mini-challenges",
+        "npm_version": "11",
+        "node_remove_native_binaries": true,
+        "node_install_requires_all_files": true,
+        "node_install_inputs": [
+            "package.json",
+            "apps/angular/package.json",
+            "apps/css/package.json",
+            "apps/host/package.json",
+            "apps/javascript/package.json",
+            "apps/react/package.json",
+            "apps/vue/package.json",
+            "shared/assets/package.json",
+            "shared/components/package.json",
+            "shared/data/package.json",
+            "shared/styles/package.json"
+        ],
+        "node_package_name": "@fmc/main"
+    },
+    "services": []
+}

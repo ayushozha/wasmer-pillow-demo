@@ -1,0 +1,28 @@
+# which audited packages are in the browser build (static_app, 308 files) — marker strings
+follow-redirects: 
+maxBodyLength: /frontend-mini-challenges/assets/index-CJunRotF.js /frontend-mini-challenges/react/assets/index-CY-K26l2.js 
+source-map-js: 
+SourceMapConsumer: 
+AxiosError: /frontend-mini-challenges/assets/index-CJunRotF.js /frontend-mini-challenges/react/assets/index-CY-K26l2.js 
+provideRouter\|ɵɵdefineInjectable: 
+isURLSameOrigin: 
+
+axios call sites at HEAD (grep -rn over apps/*/src, shared):
+apps/react/src/challenges/infinite-scroll/useSearch.js:3:import axios from 'axios';
+apps/react/src/challenges/infinite-scroll/useSearch.js:16:    axios({
+apps/react/src/challenges/infinite-scroll/useSearch.js:18:      url: 'https://jsonplaceholder.typicode.com/photos',
+apps/react/src/challenges/infinite-scroll/useSearch.js:20:      cancelToken: new axios.CancelToken((c) => (cancel = c)),
+apps/react/src/challenges/infinite-scroll/useSearch.js:28:        if (axios.isCancel(e)) return;
+apps/react/src/challenges/emoji-picker/Emoji.jsx:3:import axios from 'axios';
+apps/react/src/challenges/emoji-picker/Emoji.jsx:22:    axios.get(`https://emoji-api.com/emojis?access_key=${access_key}`).then((res) => {
+apps/react/src/challenges/emoji-picker/Emoji.jsx:29:    axios.get(`https://emoji-api.com/categories?access_key=${access_key}`).then((res) => {
+apps/react/src/challenges/emoji-picker/Emoji.jsx:55:      axios.get(`https://emoji-api.com/categories/${e.target.value}?access_key=${access_key}`).then((res) => {
+apps/host/src/components/modules/home/contribution/contribution.tsx:5:import axios from 'axios';
+apps/host/src/components/modules/home/contribution/contribution.tsx:16:        const response = await axios.get<Contributor[]>(`${REPO_CONTRIBUTORS_API}?per_page=100`);
+=> request URLs are fixed third-party endpoints (api.github.com contributors, jsonplaceholder.typicode.com, emoji-api.com; emoji category comes from the API's own category list); no viewer-controlled request config or URL host.
+@angular/router 22.1.4 is in the Angular bundle (app.config.ts provideRouter(withHashLocation)); its 3 advisories are SSR-only and there is no SSR build.
+follow-redirects / source-map-js: no marker strings in any of the 308 built files (above); they are Node-side (axios http adapter; @vue/compiler-*, postcss).
+$ grep -n goatcounter static_app/frontend-mini-challenges/index.html
+62:      data-goatcounter="https://sadanandpai.goatcounter.com/count"
+64:      src="//gc.zgo.at/count.js"
+69:    <link rel="preconnect" href="https://gc.zgo.at" />

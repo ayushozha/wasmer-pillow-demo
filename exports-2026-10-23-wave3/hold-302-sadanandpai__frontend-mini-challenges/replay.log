@@ -1,0 +1,236 @@
+# replay of val3-fmc  source=$S/val3-src/fmc-patched  upstream HEAD=48b7dae8bae41e4c69b904c7793bb8a4f892f337
+# local diff vs HEAD: ?? Anybuild;
+  Using static Node.js provider declared in Anybuild
+    Server: Node.js
+    Package manager: npm
+    Output directory: wasmer-site
+Plan saved to $S/replay/val3-fmc/plan.json
+# provider=node-static install='npm install' build='npm run build && npm run copy-to-dist && rm -rf wasmer-site && mkdir wasmer-site && cp -R dist wasmer-site/frontend-mini-challenges' start='static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080' static_dir='wasmer-site' pm=npm@11 inputs='package.json apps/angular/package.json apps/css/package.json apps/host/package.json apps/javascript/package.json apps/react/package.json apps/vue/package.json shared/assets/package.json shared/components/package.json shared/data/package.json shared/styles/package.json' all_files=True
+$ node -v
+v24.22.1
+exit=0
+
+$ npm --version
+11.21.1
+exit=0
+
+$ npm install
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> @fmc/main@1.0.0 prepare
+> husky
+
+.git can't be found
+added 1188 packages, and audited 1199 packages in 22s
+
+36 vulnerabilities (7 moderate, 24 high, 5 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 11 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   @swc/core@1.16.1 (postinstall: node postinstall.js)
+npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+npm warn install-scripts   lmdb@3.5.6 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   msgpackr-extract@3.0.4 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   nx@23.1.2 (postinstall: node -e "try{require('./dist/bin/post-install')}catch(e){}")
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+
+$ npm run build && npm run copy-to-dist && rm -rf wasmer-site && mkdir wasmer-site && cp -R dist wasmer-site/frontend-mini-challenges
+
+> @fmc/main@1.0.0 build
+> nx run-many -t build
+
+
+[7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mbuild[22m for 6 projects:[39m
+
+[2m-[22m @fmc/javascript
+[2m-[22m @fmc/angular
+[2m-[22m @fmc/react
+[2m-[22m @fmc/host
+[2m-[22m @fmc/css
+[2m-[22m @fmc/vue
+
+[2m[36m[39m[22m
+
+[2m> [22m[2mnx run[22m @fmc/javascript:build
+
+
+> @fmc/javascript@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/angular:build
+
+
+> @fmc/angular@0.0.0 build
+> ng build --c=production --base-href=/frontend-mini-challenges/angular/
+
+[33m❯[39m Building...
+[32m✔[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                 [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mmain-WWHWGWAP.js[39m   [2m | [22m[2mmain[22m                  [2m | [22m[36m263.87 kB[39m[2m | [22m               [36m68.71 kB[39m
+[32mstyles-5O3GBB7P.css[39m[2m | [22m[2mstyles[22m                [2m | [22m [36m58.96 kB[39m[2m | [22m                [36m1.61 kB[39m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m         [2m | [22m[1m322.82 kB[22m[2m | [22m               [1m70.32 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                 [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-CaxtBGU1.js[39m  [2m | [22m[2m-[22m                     [2m | [22m [36m38.38 kB[39m[2m | [22m                [36m8.58 kB[39m
+[32mchunk-DHK90gUq.js[39m  [2m | [22m[2mtic-tac-toe-component[22m [2m | [22m  [36m4.18 kB[39m[2m | [22m                [36m1.47 kB[39m
+[32mchunk-DRvqv2L2.js[39m  [2m | [22m[2mtodo-app-component[22m    [2m | [22m  [36m4.17 kB[39m[2m | [22m                [36m1.40 kB[39m
+[32mchunk-06Az23JS.js[39m  [2m | [22m[2mword-count-component[22m  [2m | [22m  [36m3.55 kB[39m[2m | [22m                [36m1.13 kB[39m
+[32mchunk-B61m6FHd.js[39m  [2m | [22m[2mstack-component[22m       [2m | [22m  [36m3.32 kB[39m[2m | [22m                [36m1.15 kB[39m
+[32mchunk-XJ_8uh0Y.js[39m  [2m | [22m[2mguess-number-component[22m[2m | [22m  [36m2.89 kB[39m[2m | [22m                [36m1.02 kB[39m
+[32mchunk-CNsiu6dW.js[39m  [2m | [22m[2mcounter-component[22m     [2m | [22m  [36m1.80 kB[39m[2m | [22m              [36m775 bytes[39m
+
+Application bundle generation complete. [28.058 seconds] - 2026-10-23T02:45:55.312Z
+
+Output location: $S/replay/val3-fmc/work/apps/angular/dist/angular
+
+
+[2m> [22m[2mnx run[22m @fmc/react:build
+
+
+> @fmc/react@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/css:build
+
+
+> @fmc/css@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/host:build
+
+
+> @fmc/host@1.0.0 build
+> tsc && vite build
+
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1839 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                       [39m[1m[2m  3.72 kB[22m[1m[22m[2m │ gzip:   1.08 kB[22m
+[2mdist/[22m[2massets/[22m[32mgithub-KMwwOUMo.svg       [39m[1m[2m  6.22 kB[22m[1m[22m[2m │ gzip:   2.75 kB[22m
+[2mdist/[22m[2massets/[22m[32mlogo-DVcL5nwG.svg         [39m[1m[2m 24.94 kB[22m[1m[22m[2m │ gzip:   9.60 kB[22m
+[2mdist/[22m[2massets/[22m[32mlogo_dark-DNN6Vgx0.png    [39m[1m[2m575.64 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[35mleaderboard-BLhboh-A.css  [39m[1m[2m  2.85 kB[22m[1m[22m[2m │ gzip:   0.99 kB[22m
+[2mdist/[22m[2massets/[22m[35mchallenges-B7sUOD5i.css   [39m[1m[2m  8.84 kB[22m[1m[22m[2m │ gzip:   2.24 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-CUWXoHVb.css        [39m[1m[2m 16.21 kB[22m[1m[22m[2m │ gzip:   3.79 kB[22m
+[2mdist/[22m[2massets/[22m[36mleaderboard-BjDPtO1i.js   [39m[1m[2m  4.39 kB[22m[1m[22m[2m │ gzip:   1.57 kB[22m
+[2mdist/[22m[2massets/[22m[36mcontributors-Dw6Pw5rq.js  [39m[1m[2m  6.57 kB[22m[1m[22m[2m │ gzip:   1.76 kB[22m
+[2mdist/[22m[2massets/[22m[36mchallenges-uJFVznJu.js    [39m[1m[2m 96.03 kB[22m[1m[22m[2m │ gzip:  34.09 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-CJunRotF.js         [39m[1m[2m386.94 kB[22m[1m[22m[2m │ gzip: 126.09 kB[22m
+[32m✓ built in 12.10s[39m
+
+[2m> [22m[2mnx run[22m @fmc/vue:build
+
+
+> @fmc/vue@1.0.0 build
+> vue-tsc && vite build
+
+
+[2m[32m[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for 6 projects[39m
+
+
+  Run duration:      47.6s
+  Cache:             0/6 hit (0%)
+  Critical path:     32.8s (1 task)
+  Recoverable time:  14.7s (31% of the run)
+
+  Recommendations:
+    - Increase parallelism to recover up to 13.8s → https://nx.dev/docs/concepts/ci-concepts/parallelization-distribution?utm_source=nx-cli&utm_medium=cli&utm_campaign=performance-report&utm_content=parallelization.
+    - Drastically reduce your run duration by sharing a cache across your team and CI → https://nx.dev/ci/features/remote-cache?utm_source=nx-cli&utm_medium=cli&utm_campaign=performance-report&utm_content=remote-cache.
+
+> @fmc/main@1.0.0 copy-to-dist
+> rm -rf dist && cp -r apps/host/dist dist && cp -r apps/css/dist dist/css && cp -r apps/javascript/dist dist/javascript && cp -r apps/react/dist dist/react && cp -r apps/vue/dist dist/vue && cp -r apps/angular/dist/angular/browser dist/angular
+
+exit=0
+
+$ static-web-server --root=$S/replay/val3-fmc/static_app --log-level=info --port=3994 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	3716
+--	title	/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/	text/html	3716
+--	title	/frontend-mini-challenges/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/index.html	text/html	3716
+--	title	/frontend-mini-challenges/index.html	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/css/src/challenges/accordion/index.html	text/html	3195
+--	title	/frontend-mini-challenges/css/src/challenges/accordion/index.html	(none)	
+200	page	/frontend-mini-challenges/css/src/challenges/blobmaker/index.html	text/html	1444
+--	title	/frontend-mini-challenges/css/src/challenges/blobmaker/index.html	(none)	
+200	page	/frontend-mini-challenges/css/src/challenges/dialog/index.html	text/html	2304
+--	title	/frontend-mini-challenges/css/src/challenges/dialog/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/25-5-clock/index.html	text/html	2697
+--	title	/frontend-mini-challenges/javascript/src/challenges/25-5-clock/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/analog-clock/index.html	text/html	1087
+--	title	/frontend-mini-challenges/javascript/src/challenges/analog-clock/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/atm-simulator/index.html	text/html	1153
+--	title	/frontend-mini-challenges/javascript/src/challenges/atm-simulator/index.html	(none)	
+200	page	/frontend-mini-challenges/react/	text/html	835
+--	title	/frontend-mini-challenges/react/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/vue/	text/html	835
+--	title	/frontend-mini-challenges/vue/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/angular/	text/html	59568
+--	title	/frontend-mini-challenges/angular/	Frontend Mini Challenges	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+404	page	/frontend-mini-challenges/nope	text/html	0
+--	title	/frontend-mini-challenges/nope	(none)	
+200	ref	/frontend-mini-challenges/assets/index-CJunRotF.js	text/javascript	386936
+200	ref	/frontend-mini-challenges/assets/index-CUWXoHVb.css	text/css	16207
+200	ref	/frontend-mini-challenges/css/assets/index-CyrjGMtK.js	text/javascript	775
+200	ref	/frontend-mini-challenges/css/assets/navbar-CHlXubRb.js	text/javascript	38311
+200	ref	/frontend-mini-challenges/css/assets/header-9l32OLbl.js	text/javascript	1428
+200	ref	/frontend-mini-challenges/css/assets/navbar-BZ9K6Sts.css	text/css	3358
+200	ref	/frontend-mini-challenges/css/assets/header-DAZPOirm.css	text/css	7582
+200	ref	/frontend-mini-challenges/css/assets/index-Bk3VOvK-.css	text/css	815
+200	ref	/frontend-mini-challenges/css/assets/index-CZ85FfM_.js	text/javascript	750
+200	ref	/frontend-mini-challenges/css/assets/index-BwUv2w8X.css	text/css	1093
+200	ref	/frontend-mini-challenges/css/assets/index-DS95RmRJ.js	text/javascript	1101
+200	ref	/frontend-mini-challenges/css/assets/index-Lsvd92Oc.css	text/css	766
+200	ref	/frontend-mini-challenges/javascript/assets/index-DZR3zqXg.js	text/javascript	2394
+200	ref	/frontend-mini-challenges/javascript/assets/navbar-CHsGL5bP.js	text/javascript	38339
+200	ref	/frontend-mini-challenges/javascript/assets/header-KjZXt53J.js	text/javascript	1428
+200	ref	/frontend-mini-challenges/javascript/assets/navbar-BZ9K6Sts.css	text/css	3358
+200	ref	/frontend-mini-challenges/javascript/assets/header-DAZPOirm.css	text/css	7582
+200	ref	/frontend-mini-challenges/javascript/assets/index-DjuKfpGW.css	text/css	1229
+200	ref	/frontend-mini-challenges/javascript/assets/index-Coy8JCIM.js	text/javascript	1113
+200	ref	/frontend-mini-challenges/javascript/assets/index-Cy9yv-2G.css	text/css	1365
+200	ref	/frontend-mini-challenges/javascript/assets/index-DoDOurCp.js	text/javascript	1277
+200	ref	/frontend-mini-challenges/javascript/assets/index-lmG5qqDC.css	text/css	195
+200	ref	/frontend-mini-challenges/react/assets/index-CY-K26l2.js	text/javascript	737712
+200	ref	/frontend-mini-challenges/react/assets/index-BoHb3lKa.css	text/css	79619
+200	ref	/frontend-mini-challenges/vue/assets/index-CVsvEuZb.js	text/javascript	156737
+200	ref	/frontend-mini-challenges/vue/assets/index-BK_OcH8U.css	text/css	18657
+200	ref	/frontend-mini-challenges/angular/styles-5O3GBB7P.css	text/css	58960
+200	ref	/frontend-mini-challenges/angular/main-WWHWGWAP.js	text/javascript	263865
+SUMMARY pages=14 refs_checked=28 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	page	/frontend-mini-challenges/nope	text/html	0
+# static_app files: 308

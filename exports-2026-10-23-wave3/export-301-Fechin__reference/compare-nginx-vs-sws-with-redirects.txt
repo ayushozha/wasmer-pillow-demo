@@ -1,0 +1,81 @@
+# 2026-10-23T02:43:15Z oracle: nginx version: nginx/1.24.0 (Ubuntu) with upstream nginx.conf; candidate: Version:      2.38.0 config=sws.toml
+URL                          | nginx (upstream nginx.conf)                          | static-web-server                                    | same-status+loc
+# index
+/                            | 200 text/html 611973 loc=                            | 200 text/html 611973 loc=                            | same
+/index                       | 200 text/html 611973 loc=                            | 200 text/html 611973 loc=                            | same
+/index.html                  | 200 text/html 611973 loc=                            | 200 text/html 611973 loc=                            | same
+/index.html/                 | 404 text/html 4039 loc=                              | 200 text/html 611973 loc=                            | DIFF
+# sample of 12 sheets: extensionless, trailing slash, .html, .html/
+/go                          | 200 text/html 166885 loc=                            | 200 text/html 166885 loc=                            | same
+/go/                         | 404 text/html 4039 loc=                              | 200 text/html 166885 loc=                            | DIFF
+/go.html                     | 200 text/html 166885 loc=                            | 200 text/html 166885 loc=                            | same
+/css3                        | 200 text/html 176845 loc=                            | 200 text/html 176845 loc=                            | same
+/css3/                       | 404 text/html 4039 loc=                              | 200 text/html 176845 loc=                            | DIFF
+/css3.html                   | 200 text/html 176845 loc=                            | 200 text/html 176845 loc=                            | same
+/bash                        | 200 text/html 140959 loc=                            | 200 text/html 140959 loc=                            | same
+/bash/                       | 404 text/html 4039 loc=                              | 200 text/html 140959 loc=                            | DIFF
+/bash.html                   | 200 text/html 140959 loc=                            | 200 text/html 140959 loc=                            | same
+/python                      | 200 text/html 223799 loc=                            | 200 text/html 223799 loc=                            | same
+/python/                     | 404 text/html 4039 loc=                              | 200 text/html 223799 loc=                            | DIFF
+/python.html                 | 200 text/html 223799 loc=                            | 200 text/html 223799 loc=                            | same
+/javascript                  | 200 text/html 214235 loc=                            | 200 text/html 214235 loc=                            | same
+/javascript/                 | 404 text/html 4039 loc=                              | 200 text/html 214235 loc=                            | DIFF
+/javascript.html             | 200 text/html 214235 loc=                            | 200 text/html 214235 loc=                            | same
+/docker                      | 200 text/html 98314 loc=                             | 200 text/html 98314 loc=                             | same
+/docker/                     | 404 text/html 4039 loc=                              | 200 text/html 98314 loc=                             | DIFF
+/docker.html                 | 200 text/html 98314 loc=                             | 200 text/html 98314 loc=                             | same
+/git                         | 200 text/html 106694 loc=                            | 200 text/html 106694 loc=                            | same
+/git/                        | 404 text/html 4039 loc=                              | 200 text/html 106694 loc=                            | DIFF
+/git.html                    | 200 text/html 106694 loc=                            | 200 text/html 106694 loc=                            | same
+/vim                         | 200 text/html 138199 loc=                            | 200 text/html 138199 loc=                            | same
+/vim/                        | 404 text/html 4039 loc=                              | 200 text/html 138199 loc=                            | DIFF
+/vim.html                    | 200 text/html 138199 loc=                            | 200 text/html 138199 loc=                            | same
+/regex                       | 200 text/html 150051 loc=                            | 200 text/html 150051 loc=                            | same
+/regex/                      | 404 text/html 4039 loc=                              | 200 text/html 150051 loc=                            | DIFF
+/regex.html                  | 200 text/html 150051 loc=                            | 200 text/html 150051 loc=                            | same
+/mysql                       | 200 text/html 173202 loc=                            | 200 text/html 173202 loc=                            | same
+/mysql/                      | 404 text/html 4039 loc=                              | 200 text/html 173202 loc=                            | DIFF
+/mysql.html                  | 200 text/html 173202 loc=                            | 200 text/html 173202 loc=                            | same
+/html                        | 200 text/html 177030 loc=                            | 200 text/html 177030 loc=                            | same
+/html/                       | 404 text/html 4039 loc=                              | 200 text/html 177030 loc=                            | DIFF
+/html.html                   | 200 text/html 177030 loc=                            | 200 text/html 177030 loc=                            | same
+/chmod                       | 200 text/html 106725 loc=                            | 200 text/html 106725 loc=                            | same
+/chmod/                      | 404 text/html 4039 loc=                              | 200 text/html 106725 loc=                            | DIFF
+/chmod.html                  | 200 text/html 106725 loc=                            | 200 text/html 106725 loc=                            | same
+# renamed sheets (nginx rewrite ... permanent)
+/golang                      | 301 text/html 178 loc=http://HOST/go                 | 301  0 loc=/go                                       | same
+/golang/                     | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/golang.html                 | 301 text/html 178 loc=http://HOST/golang             | 301  0 loc=/golang                                   | same
+/css                         | 301 text/html 178 loc=http://HOST/css3               | 301  0 loc=/css3                                     | same
+/css/                        | 403 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | DIFF
+/css.html                    | 301 text/html 178 loc=http://HOST/css                | 301  0 loc=/css                                      | same
+# directory pages
+/about                       | 301 text/html 178 loc=http://HOST/about/             | 308  0 loc=/about/                                   | DIFF
+/about/                      | 200 text/html 78650 loc=                             | 200 text/html 78650 loc=                             | same
+/about.html                  | 301 text/html 178 loc=http://HOST/about              | 404 text/html; charset=utf-8 106 loc=                | DIFF
+/about/index.html            | 200 text/html 78650 loc=                             | 200 text/html 78650 loc=                             | same
+/notes                       | 301 text/html 178 loc=http://HOST/notes/             | 308  0 loc=/notes/                                   | DIFF
+/support/                    | 200 text/html 78707 loc=                             | 200 text/html 78707 loc=                             | same
+# other build files
+/search.json                 | 200 application/json 883794 loc=                     | 200 application/json 883794 loc=                     | same
+/sitemap.xml                 | 200 text/xml 41695 loc=                              | 200 text/xml 41695 loc=                              | same
+/robots.txt                  | 200 text/plain 69 loc=                               | 200 text/plain 69 loc=                               | same
+/manifest.json               | 200 application/json 1884 loc=                       | 200 application/json 1884 loc=                       | same
+/sw.js                       | 200 application/javascript 7534 loc=                 | 200 text/javascript 7534 loc=                        | same
+/assets/page/oops.htm        | 200 text/html 4039 loc=                              | 200 text/html 4039 loc=                              | same
+/atom.xml                    | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+# negatives
+/nope                        | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/nope/                       | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/nope.html                   | 301 text/html 178 loc=http://HOST/nope               | 404 text/html; charset=utf-8 106 loc=                | DIFF
+/assets/nope.js              | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/js/nope.js                  | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/golang/../x                 | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/go/../x                     | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/css.html.bak                | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/go.html.bak                 | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+/../../etc/passwd            | 400 text/html 166 loc=                               | 404 text/html; charset=utf-8 106 loc=                | DIFF
+/%2e%2e/%2e%2e/etc/passwd    | 400 text/html 166 loc=                               | 404 text/html; charset=utf-8 106 loc=                | DIFF
+/GO                          | 404 text/html 4039 loc=                              | 404 text/html; charset=utf-8 106 loc=                | same
+# same=51 diff=20
+2026/10/23 02:43:16 [notice] 21096#21096: signal process started

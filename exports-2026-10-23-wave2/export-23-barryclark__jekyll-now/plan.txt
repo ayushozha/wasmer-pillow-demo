@@ -1,7 +1,5 @@
-  Detected Jekyll provider
+  Using Jekyll provider declared in Anybuild
     Jekyll version: 4.3.0
     Ruby version: 3.4.7
     Output directory: _site
-
-  Generated Anybuild at <tmp>
-Plan saved to $S/replay/val2-jekyllnow/plan.json
+Plan saved to $S/replay/val2-jn-fix/plan.json

@@ -1,0 +1,17 @@
+diff --git a/README.md b/README.md
+index 45c202063a..43e090ca8e 100644
+--- a/README.md
++++ b/README.md
+@@ -56,6 +56,12 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
+ 4. View your website at http://127.0.0.1:4000/
+ 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=barryclark%2Fjekyll-now)
++
++Wasmer detects this as a Jekyll site: it runs `bundle init && bundle add jekyll -v 4.3.0` (there is no `Gemfile`), then `jekyll build`, and serves the `_site` folder. The button opens Wasmer's import page for this public repository, where you review the configuration and click Deploy; it does not create a copy of the repository in your GitHub account; to deploy your own blog, fork Jekyll Now, edit `_config.yml` and your posts, then import your fork on Wasmer. Because only Jekyll is installed, the `jekyll-sitemap` and `jekyll-feed` plugins listed in `_config.yml` are not run there.
++
+ ## Moar!
+ 
+ I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:

@@ -1,0 +1,18 @@
+# control: assembled dist served at the site root (static_dir=dist, no nesting), to show why the Anybuild nests it
+# 2026-10-23T02:46:58Z Version: 2.38.0 on 127.0.0.1:3996 config=none
+## pages / probes
+/                                                                                          200 text/html 3716 
+/react/                                                                                    200 text/html 835 
+/javascript/src/challenges/25-5-clock/index.html                                           200 text/html 2697 
+## assets referenced by each page (src/href, same-origin)
+/frontend-mini-challenges/assets/index-CJunRotF.js                                         404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/assets/index-CUWXoHVb.css                                        404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/header-DAZPOirm.css                            404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/header-KjZXt53J.js                             404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/index-DZR3zqXg.js                              404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/index-DjuKfpGW.css                             404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/navbar-BZ9K6Sts.css                            404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/javascript/assets/navbar-CHsGL5bP.js                             404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/react/assets/index-BoHb3lKa.css                                  404 text/html; charset=utf-8 106 
+/frontend-mini-challenges/react/assets/index-CY-K26l2.js                                   404 text/html; charset=utf-8 106 
+## referenced assets: 10

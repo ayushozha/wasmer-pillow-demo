@@ -1,0 +1,5 @@
+  Using static Node.js provider declared in Anybuild
+    Server: Node.js
+    Package manager: npm
+    Output directory: wasmer-site
+Plan saved to $S/replay/val3-fmc/plan.json

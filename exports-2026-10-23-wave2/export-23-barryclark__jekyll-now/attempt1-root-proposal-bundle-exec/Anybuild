@@ -1,0 +1,16 @@
+# Build the Jekyll site with the plugins _config.yml lists (jekyll-feed, jekyll-sitemap)
+# and serve the generated _site folder on Wasmer.
+load("//anybuild/tools:jekyll.bzl", "jekyll_build", "jekyll_config")
+load("//anybuild/tools:staticfile.bzl", "staticfile_serve")
+
+config = jekyll_config(
+    schema = 1,
+    sws_version = "2.38.0",
+    ruby_version = "3.4.7",
+    jekyll_version = "4.3.0",
+    commands = {"build": "bundle add jekyll-feed jekyll-sitemap --group jekyll_plugins && bundle exec jekyll build"},
+)
+
+build = jekyll_build(config)
+
+staticfile_serve(config, build, name = "jekyll-now")

@@ -1,0 +1,58 @@
+# lint-staged runs 'prettier --write' on *.md (.lintstagedrc.js); checked here with the repo's prettier and config, from the replay install
+$ npx prettier --version
+3.5.3
+$ npx prettier --check README.md   (patched)
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+$ npx prettier --check README.base.md   (unmodified HEAD copy)
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+# commit-msg hook runs commitlint (.husky/commit-msg, .commitlintrc.js); PR title checked here
+$ printf '%s\n' "$(cat PR_TITLE.txt)" | npx commitlint
+exit=0
+$ pnpm run lint:check   (in the replay work dir = patched tree)
+  381:10  warning  'copyToClipboard' is defined but never used   no-unused-vars
+  411:12  warning  'err' is defined but never used               no-unused-vars
+
+✖ 9 problems (0 errors, 9 warnings)
+
+exit=0
+$ pnpm run format:check   (full output; the same 27 files fail on unmodified HEAD, see below)
+> CheatSheets.zip@1.0.0 format:check $S/replay/val3-ref/work
+> prettier --check .
+Checking formatting...
+[warn] source/_posts/antigravity-cli.md
+[warn] source/_posts/chatgpt.md
+[warn] source/_posts/color-picker.md
+[warn] source/_posts/cron.md
+[warn] source/_posts/git.md
+[warn] source/_posts/javascript.md
+[warn] source/_posts/matplotlib.md
+[warn] source/_posts/minecraft-bedrock.md
+[warn] source/_posts/minecraft-java.md
+[warn] source/_posts/networkports.md
+[warn] source/_posts/nginx.md
+[warn] source/_posts/nmap.md
+[warn] source/_posts/numpy.md
+[warn] source/_posts/pandas.md
+[warn] source/_posts/php.md
+[warn] source/_posts/rust.md
+[warn] source/_posts/svelte.md
+[warn] source/_posts/symfony.md
+[warn] source/_posts/telnet.md
+[warn] source/_posts/tensorflow.md
+[warn] source/_posts/typescript.md
+[warn] source/_posts/vhdl.md
+[warn] source/_posts/vue.md
+[warn] source/_posts/zed.md
+[warn] source/widget/color-palette-tailwind.html
+[warn] source/widget/cron.html
+[warn] source/widget/gradient-maker.html
+[warn] Code style issues found in 27 files. Run Prettier with --write to fix.
+ ELIFECYCLE  Command failed with exit code 1.
+exit=1
+$ pnpm run format:check   (unmodified HEAD tree, replay val3-ref-base)
+27
+exit=1  (count above = files flagged)

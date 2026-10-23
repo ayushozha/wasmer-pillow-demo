@@ -1,0 +1,151 @@
+$ node -v
+v24.22.1
+$ npm --version
+11.21.1
+$ npm install
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> @fmc/main@1.0.0 prepare
+> husky
+
+.git can't be found
+added 1188 packages, and audited 1199 packages in 40s
+
+36 vulnerabilities (7 moderate, 24 high, 5 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 11 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   @swc/core@1.16.1 (postinstall: node postinstall.js)
+npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+npm warn install-scripts   lmdb@3.5.6 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   msgpackr-extract@3.0.4 (install: node-gyp-build-optional-packages)
+npm warn install-scripts   nx@23.1.2 (postinstall: node -e "try{require('./dist/bin/post-install')}catch(e){}")
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+exit=0
+$ npm run build
+
+> @fmc/main@1.0.0 build
+> nx run-many -t build
+
+
+[7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mbuild[22m for 6 projects:[39m
+
+[2m-[22m @fmc/javascript
+[2m-[22m @fmc/angular
+[2m-[22m @fmc/react
+[2m-[22m @fmc/host
+[2m-[22m @fmc/css
+[2m-[22m @fmc/vue
+
+[2m[36m[39m[22m
+
+[2m> [22m[2mnx run[22m @fmc/javascript:build
+
+
+> @fmc/javascript@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/angular:build
+
+
+> @fmc/angular@0.0.0 build
+> ng build --c=production --base-href=/frontend-mini-challenges/angular/
+
+[33m❯[39m Building...
+[32m✔[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                 [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mmain-WWHWGWAP.js[39m   [2m | [22m[2mmain[22m                  [2m | [22m[36m263.87 kB[39m[2m | [22m               [36m68.71 kB[39m
+[32mstyles-5O3GBB7P.css[39m[2m | [22m[2mstyles[22m                [2m | [22m [36m58.96 kB[39m[2m | [22m                [36m1.61 kB[39m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m         [2m | [22m[1m322.82 kB[22m[2m | [22m               [1m70.32 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                 [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-CaxtBGU1.js[39m  [2m | [22m[2m-[22m                     [2m | [22m [36m38.38 kB[39m[2m | [22m                [36m8.58 kB[39m
+[32mchunk-DHK90gUq.js[39m  [2m | [22m[2mtic-tac-toe-component[22m [2m | [22m  [36m4.18 kB[39m[2m | [22m                [36m1.47 kB[39m
+[32mchunk-DRvqv2L2.js[39m  [2m | [22m[2mtodo-app-component[22m    [2m | [22m  [36m4.17 kB[39m[2m | [22m                [36m1.40 kB[39m
+[32mchunk-06Az23JS.js[39m  [2m | [22m[2mword-count-component[22m  [2m | [22m  [36m3.55 kB[39m[2m | [22m                [36m1.13 kB[39m
+[32mchunk-B61m6FHd.js[39m  [2m | [22m[2mstack-component[22m       [2m | [22m  [36m3.32 kB[39m[2m | [22m                [36m1.15 kB[39m
+[32mchunk-XJ_8uh0Y.js[39m  [2m | [22m[2mguess-number-component[22m[2m | [22m  [36m2.89 kB[39m[2m | [22m                [36m1.02 kB[39m
+[32mchunk-CNsiu6dW.js[39m  [2m | [22m[2mcounter-component[22m     [2m | [22m  [36m1.80 kB[39m[2m | [22m              [36m775 bytes[39m
+
+Application bundle generation complete. [12.646 seconds] - 2026-10-23T02:43:13.872Z
+
+Output location: $S/replay/val3-fmc-build/work/apps/angular/dist/angular
+
+
+[2m> [22m[2mnx run[22m @fmc/react:build
+
+
+> @fmc/react@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/css:build
+
+
+> @fmc/css@1.0.0 build
+> tsc && vite build
+
+
+[2m> [22m[2mnx run[22m @fmc/host:build
+
+
+> @fmc/host@1.0.0 build
+> tsc && vite build
+
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1839 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                       [39m[1m[2m  3.72 kB[22m[1m[22m[2m │ gzip:   1.08 kB[22m
+[2mdist/[22m[2massets/[22m[32mgithub-KMwwOUMo.svg       [39m[1m[2m  6.22 kB[22m[1m[22m[2m │ gzip:   2.75 kB[22m
+[2mdist/[22m[2massets/[22m[32mlogo-DVcL5nwG.svg         [39m[1m[2m 24.94 kB[22m[1m[22m[2m │ gzip:   9.60 kB[22m
+[2mdist/[22m[2massets/[22m[32mlogo_dark-DNN6Vgx0.png    [39m[1m[2m575.64 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[35mleaderboard-BLhboh-A.css  [39m[1m[2m  2.85 kB[22m[1m[22m[2m │ gzip:   0.99 kB[22m
+[2mdist/[22m[2massets/[22m[35mchallenges-B7sUOD5i.css   [39m[1m[2m  8.84 kB[22m[1m[22m[2m │ gzip:   2.24 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-CUWXoHVb.css        [39m[1m[2m 16.21 kB[22m[1m[22m[2m │ gzip:   3.79 kB[22m
+[2mdist/[22m[2massets/[22m[36mleaderboard-BjDPtO1i.js   [39m[1m[2m  4.39 kB[22m[1m[22m[2m │ gzip:   1.57 kB[22m
+[2mdist/[22m[2massets/[22m[36mcontributors-Dw6Pw5rq.js  [39m[1m[2m  6.57 kB[22m[1m[22m[2m │ gzip:   1.76 kB[22m
+[2mdist/[22m[2massets/[22m[36mchallenges-uJFVznJu.js    [39m[1m[2m 96.03 kB[22m[1m[22m[2m │ gzip:  34.09 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-CJunRotF.js         [39m[1m[2m386.94 kB[22m[1m[22m[2m │ gzip: 126.09 kB[22m
+[32m✓ built in 6.06s[39m
+
+[2m> [22m[2mnx run[22m @fmc/vue:build
+
+
+> @fmc/vue@1.0.0 build
+> vue-tsc && vite build
+
+
+[2m[32m[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for 6 projects[39m
+
+
+  Run duration:      22.6s
+  Cache:             0/6 hit (0%)
+  Critical path:     16.0s (1 task)
+  Recoverable time:  6.6s (29% of the run)
+exit=0
+$ npm run copy-to-dist
+
+> @fmc/main@1.0.0 copy-to-dist
+> rm -rf dist && cp -r apps/host/dist dist && cp -r apps/css/dist dist/css && cp -r apps/javascript/dist dist/javascript && cp -r apps/react/dist dist/react && cp -r apps/vue/dist dist/vue && cp -r apps/angular/dist/angular/browser dist/angular
+
+exit=0

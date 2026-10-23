@@ -1,0 +1,59 @@
+200	page	/	text/html	3716
+--	title	/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/	text/html	3716
+--	title	/frontend-mini-challenges/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/index.html	text/html	3716
+--	title	/frontend-mini-challenges/index.html	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/css/src/challenges/accordion/index.html	text/html	3195
+--	title	/frontend-mini-challenges/css/src/challenges/accordion/index.html	(none)	
+200	page	/frontend-mini-challenges/css/src/challenges/blobmaker/index.html	text/html	1444
+--	title	/frontend-mini-challenges/css/src/challenges/blobmaker/index.html	(none)	
+200	page	/frontend-mini-challenges/css/src/challenges/dialog/index.html	text/html	2304
+--	title	/frontend-mini-challenges/css/src/challenges/dialog/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/25-5-clock/index.html	text/html	2697
+--	title	/frontend-mini-challenges/javascript/src/challenges/25-5-clock/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/analog-clock/index.html	text/html	1087
+--	title	/frontend-mini-challenges/javascript/src/challenges/analog-clock/index.html	(none)	
+200	page	/frontend-mini-challenges/javascript/src/challenges/atm-simulator/index.html	text/html	1153
+--	title	/frontend-mini-challenges/javascript/src/challenges/atm-simulator/index.html	(none)	
+200	page	/frontend-mini-challenges/react/	text/html	835
+--	title	/frontend-mini-challenges/react/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/vue/	text/html	835
+--	title	/frontend-mini-challenges/vue/	Frontend Mini Challenges	
+200	page	/frontend-mini-challenges/angular/	text/html	59568
+--	title	/frontend-mini-challenges/angular/	Frontend Mini Challenges	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+404	page	/frontend-mini-challenges/nope	text/html	0
+--	title	/frontend-mini-challenges/nope	(none)	
+200	ref	/frontend-mini-challenges/assets/index-CJunRotF.js	text/javascript	386936
+200	ref	/frontend-mini-challenges/assets/index-CUWXoHVb.css	text/css	16207
+200	ref	/frontend-mini-challenges/css/assets/index-CyrjGMtK.js	text/javascript	775
+200	ref	/frontend-mini-challenges/css/assets/navbar-CHlXubRb.js	text/javascript	38311
+200	ref	/frontend-mini-challenges/css/assets/header-9l32OLbl.js	text/javascript	1428
+200	ref	/frontend-mini-challenges/css/assets/navbar-BZ9K6Sts.css	text/css	3358
+200	ref	/frontend-mini-challenges/css/assets/header-DAZPOirm.css	text/css	7582
+200	ref	/frontend-mini-challenges/css/assets/index-Bk3VOvK-.css	text/css	815
+200	ref	/frontend-mini-challenges/css/assets/index-CZ85FfM_.js	text/javascript	750
+200	ref	/frontend-mini-challenges/css/assets/index-BwUv2w8X.css	text/css	1093
+200	ref	/frontend-mini-challenges/css/assets/index-DS95RmRJ.js	text/javascript	1101
+200	ref	/frontend-mini-challenges/css/assets/index-Lsvd92Oc.css	text/css	766
+200	ref	/frontend-mini-challenges/javascript/assets/index-DZR3zqXg.js	text/javascript	2394
+200	ref	/frontend-mini-challenges/javascript/assets/navbar-CHsGL5bP.js	text/javascript	38339
+200	ref	/frontend-mini-challenges/javascript/assets/header-KjZXt53J.js	text/javascript	1428
+200	ref	/frontend-mini-challenges/javascript/assets/navbar-BZ9K6Sts.css	text/css	3358
+200	ref	/frontend-mini-challenges/javascript/assets/header-DAZPOirm.css	text/css	7582
+200	ref	/frontend-mini-challenges/javascript/assets/index-DjuKfpGW.css	text/css	1229
+200	ref	/frontend-mini-challenges/javascript/assets/index-Coy8JCIM.js	text/javascript	1113
+200	ref	/frontend-mini-challenges/javascript/assets/index-Cy9yv-2G.css	text/css	1365
+200	ref	/frontend-mini-challenges/javascript/assets/index-DoDOurCp.js	text/javascript	1277
+200	ref	/frontend-mini-challenges/javascript/assets/index-lmG5qqDC.css	text/css	195
+200	ref	/frontend-mini-challenges/react/assets/index-CY-K26l2.js	text/javascript	737712
+200	ref	/frontend-mini-challenges/react/assets/index-BoHb3lKa.css	text/css	79619
+200	ref	/frontend-mini-challenges/vue/assets/index-CVsvEuZb.js	text/javascript	156737
+200	ref	/frontend-mini-challenges/vue/assets/index-BK_OcH8U.css	text/css	18657
+200	ref	/frontend-mini-challenges/angular/styles-5O3GBB7P.css	text/css	58960
+200	ref	/frontend-mini-challenges/angular/main-WWHWGWAP.js	text/javascript	263865
+SUMMARY pages=14 refs_checked=28 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	page	/frontend-mini-challenges/nope	text/html	0

@@ -1,0 +1,4 @@
+[[advanced.redirects]]
+source = "/"
+destination = "/frontend-mini-challenges/"
+kind = 302

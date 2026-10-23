@@ -1,0 +1,11 @@
+# 2026-10-23T02:47:30Z HEAD 6fe843f01a81a2f87279eb629a806f318e6a4d72
+$ git apply --check upstream.patch   (clean HEAD worktree)
+exit=0
+$ git add -N _redirects && git diff --check HEAD
+exit=0
+added lines with trailing whitespace: 0
+$ git diff --stat HEAD
+ README.md  | 10 ++++++++++
+ _redirects |  5 +++++
+ 2 files changed, 15 insertions(+)
+sha256 91b4de57e8796211de5dc48a14515e2ba7ddfae1af9ae087421ab107ffa8703e  upstream.patch

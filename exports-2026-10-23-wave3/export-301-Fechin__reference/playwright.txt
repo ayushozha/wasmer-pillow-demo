@@ -1,0 +1,66 @@
+$ node pw.js http://127.0.0.1:3992   (Playwright 1.56.1, Chromium build 1194; static-web-server 2.38.0 with the plan's sws.toml)
+GET / -> 200 title= "CheatSheets.zip - Ultimate Cheat for Developers" cheatsheet cards linking to .html: 229
+search opened, empty query: results= 216
+search "python": results= 12 top= ["/python.html Python","/pytorch.html PyTorch","/django.html Django","/fastapi.html FastAPI","/flask.html Flask"] url= /?q=python
+open first result /python.html -> 200 "Python Cheat Sheet & Quick Reference"
+GET /golang: chain= ["/golang -> 301"] final /go 200 "Go Cheat Sheet & Quick Reference" h2 sections: 18 code blocks: 87
+GET /css: final /css3 200 "CSS 3 Cheat Sheet & Quick Reference"
+GET /css.html: final /css3 200 "CSS 3 Cheat Sheet & Quick Reference"
+responses >= 400 from 127.0.0.1: []
+blocked origins: [["https://cheatsheets.zip",5],["https://api.github.com",5],["https://cdn.jsdelivr.net",4]]
+console errors/warnings + page errors (44):
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Error: <path> attribute d: Expected number, "M3 4a1 1 0 11-1h12a1 1 0 11 1v2…".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.warning: Service Worker registration blocked by Playwright
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Failed to fetch GitHub stars: TypeError: Failed to fetch
+    at fetchGitHubStars (http://127.0.0.1:3992/js/main.js?_v=1792723370655:1:4509)
+    at http://127.0.0.1:3992/js/main.js?_v=
+  console.error: Error: <path> attribute d: Expected number, "M3 4a1 1 0 11-1h12a1 1 0 11 1v2…".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Service Worker registration blocked by Playwright
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Failed to fetch GitHub stars: TypeError: Failed to fetch
+    at fetchGitHubStars (http://127.0.0.1:3992/js/main.js?_v=1792723370655:1:4509)
+    at http://127.0.0.1:3992/js/main.js?_v=
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Error: <path> attribute d: Expected number, "M3 4a1 1 0 11-1h12a1 1 0 11 1v2…".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.warning: Service Worker registration blocked by Playwright
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Failed to fetch GitHub stars: TypeError: Failed to fetch
+    at fetchGitHubStars (http://127.0.0.1:3992/js/main.js?_v=1792723370655:1:4509)
+    at http://127.0.0.1:3992/js/main.js?_v=
+  console.error: Error: <path> attribute d: Expected number, "M3 4a1 1 0 11-1h12a1 1 0 11 1v2…".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Service Worker registration blocked by Playwright
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Failed to fetch GitHub stars: TypeError: Failed to fetch
+    at fetchGitHubStars (http://127.0.0.1:3992/js/main.js?_v=1792723370655:1:4509)
+    at http://127.0.0.1:3992/js/main.js?_v=
+  console.error: Error: <path> attribute d: Expected number, "M3 4a1 1 0 11-1h12a1 1 0 11 1v2…".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Error: <path> attribute d: Expected arc flag ('0' or '1'), "M10 6H6a2 2 0 0-2 2v10a2 2 0 2 …".
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Service Worker registration blocked by Playwright
+  console.error: Failed to load resource: net::ERR_FAILED
+  console.warning: Failed to fetch GitHub stars: TypeError: Failed to fetch
+    at fetchGitHubStars (http://127.0.0.1:3992/js/main.js?_v=1792723370655:1:4509)
+    at http://127.0.0.1:3992/js/main.js?_v=
+exit=0

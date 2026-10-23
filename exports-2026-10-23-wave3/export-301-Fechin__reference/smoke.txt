@@ -1,0 +1,72 @@
+200	page	/	text/html	611973
+--	title	/	CheatSheets.zip - Ultimate Cheat for Developers	
+200	page	/go	text/html	166885
+--	title	/go	Go Cheat Sheet & Quick Reference	
+200	page	/golang	text/html	166885
+--	title	/golang	Go Cheat Sheet & Quick Reference	
+200	page	/css	text/html	176845
+--	title	/css	CSS 3 Cheat Sheet & Quick Reference	
+200	page	/css3	text/html	176845
+--	title	/css3	CSS 3 Cheat Sheet & Quick Reference	
+200	page	/go.html	text/html	166885
+--	title	/go.html	Go Cheat Sheet & Quick Reference	
+200	page	/about/	text/html	78650
+--	title	/about/	About - CheatSheets.zip	
+200	page	/search.json	application/json	883794
+200	page	/sitemap.xml	text/xml	41695
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/images/favicon.png?v=1	image/png	653
+200	ref	/manifest.json	application/json	1884
+200	ref	/assets/logo/icon-192x192.png	image/png	5169
+200	ref	/assets/logo/icon-152x152.png	image/png	3670
+404	ref	/atom.xml	text/html	0
+200	ref	/css/style.css?_v=1792723370655	text/css	164978
+200	ref	/support/	text/html	78707
+200	ref	/chatgpt.html	text/html	114285
+200	ref	/bash.html	text/html	140959
+200	ref	/python.html	text/html	223799
+200	ref	/javascript.html	text/html	214235
+200	ref	/vim.html	text/html	138199
+200	ref	/regex.html	text/html	150051
+200	ref	/awk.html	text/html	111182
+200	ref	/codex-cli.html	text/html	111532
+200	ref	/gemma4.html	text/html	112207
+200	ref	/openclaw.html	text/html	118183
+200	ref	/claude-code.html	text/html	135558
+200	ref	/cursor-cli.html	text/html	109413
+200	ref	/gemini-cli.html	text/html	128364
+200	ref	/grok-cli.html	text/html	108081
+200	ref	/opencode.html	text/html	116623
+200	ref	/antigravity-cli.html	text/html	111142
+200	ref	/powershell.html	text/html	108740
+200	ref	/markdown.html	text/html	104883
+200	ref	/sass.html	text/html	118692
+200	ref	/npm.html	text/html	107190
+200	ref	/jquery.html	text/html	189854
+200	ref	/css3.html	text/html	176845
+200	ref	/yaml.html	text/html	117854
+200	ref	/toml.html	text/html	97516
+200	ref	/docker.html	text/html	98314
+200	ref	/php.html	text/html	182590
+200	ref	/java.html	text/html	134107
+200	ref	/cpp.html	text/html	161916
+200	ref	/graphql.html	text/html	92063
+200	ref	/html.html	text/html	177030
+200	ref	/json.html	text/html	106972
+200	ref	/dart.html	text/html	124937
+200	ref	/laravel.html	text/html	187757
+200	ref	/cs.html	text/html	93981
+200	ref	/rust.html	text/html	136707
+200	ref	/c.html	text/html	180916
+200	ref	/ini.html	text/html	91166
+200	ref	/latex.html	text/html	251402
+200	ref	/matlab.html	text/html	271750
+200	ref	/es6.html	text/html	146156
+200	ref	/kubernetes.html	text/html	94774
+200	ref	/express.html	text/html	120003
+200	ref	/kotlin.html	text/html	129232
+200	ref	/swift.html	text/html	212741
+SUMMARY pages=10 refs_checked=51 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	ref	/atom.xml	text/html	0

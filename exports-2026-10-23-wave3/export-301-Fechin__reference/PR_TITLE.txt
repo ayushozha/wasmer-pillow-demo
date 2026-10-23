@@ -1,0 +1,1 @@
+docs: add Deploy to Wasmer button and _redirects for renamed sheets

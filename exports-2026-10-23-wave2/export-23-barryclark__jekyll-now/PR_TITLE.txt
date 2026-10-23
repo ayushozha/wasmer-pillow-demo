@@ -1,1 +1,1 @@
-Add Deploy to Wasmer section to README
+Add Deploy to Wasmer section and Anybuild config

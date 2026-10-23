@@ -1,0 +1,32 @@
+diff --git a/README.md b/README.md
+index afcee94..ae066fe 100644
+--- a/README.md
++++ b/README.md
+@@ -19,6 +19,16 @@ You can view the most up-to-date cheat sheets live at [https://cheatsheets.zip](
+ 
+ [![Quick reference](https://cheatsheets.zip/assets/image/preview.png?9nd3)](https://cheatsheets.zip)
+ 
++### Deploy your own copy
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=Fechin%2Freference)
++
++Wasmer detects the Hexo site, runs `pnpm install` and `pnpm run build`, and serves the generated `public` folder as
++static files; the `_redirects` file keeps the `/golang` and `/css` redirects from `nginx.conf`. The button opens
++Wasmer's import page for this public repository, where you review the detected build settings (and correct them if
++needed) before clicking Deploy; nothing is deployed until you do, and no copy of the repository is created in your
++GitHub account. To customize the cheat sheets, fork the repository and import your fork instead.
++
+ ## 📚 Cheat Sheets List
+ 
+ Reference provides cheat sheets for the following:
+diff --git a/_redirects b/_redirects
+new file mode 100644
+index 0000000..2b83923
+--- /dev/null
++++ b/_redirects
+@@ -0,0 +1,5 @@
++# Renamed cheat sheets, mirroring the rewrites in nginx.conf for static hosts that read _redirects
++/golang /go 301
++/golang.html /golang 301
++/css /css3 301
++/css.html /css 301

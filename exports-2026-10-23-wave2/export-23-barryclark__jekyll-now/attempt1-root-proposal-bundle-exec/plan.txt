@@ -1,0 +1,5 @@
+  Using Jekyll provider declared in Anybuild
+    Jekyll version: 4.3.0
+    Ruby version: 3.4.7
+    Output directory: _site
+Plan saved to $S/replay/val2-jn-fix/plan.json

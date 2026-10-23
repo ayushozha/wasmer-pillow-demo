@@ -1,0 +1,8 @@
+  Detected static Node.js provider
+    Framework: Hexo
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: public
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val3-ref/plan.json

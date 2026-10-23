@@ -1,0 +1,26 @@
+{
+    "provider": "node-static",
+    "config": {
+        "name": "flat",
+        "commands": {
+            "install": "pnpm install",
+            "build": "pnpm run build",
+            "start": "static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080"
+        },
+        "static_dir": "public",
+        "static_redirects_config": "[[advanced.redirects]]\nsource = \"/golang\"\ndestination = \"/go\"\nkind = 301\n\n[[advanced.redirects]]\nsource = \"/golang.html\"\ndestination = \"/golang\"\nkind = 301\n\n[[advanced.redirects]]\nsource = \"/css\"\ndestination = \"/css3\"\nkind = 301\n\n[[advanced.redirects]]\nsource = \"/css.html\"\ndestination = \"/css\"\nkind = 301\n",
+        "edgejs_enable": true,
+        "edgejs_precompile": true,
+        "node_package_manager": "pnpm",
+        "node_framework": "hexo",
+        "node_server": "node",
+        "node_build_command": "pnpm run build",
+        "pnpm_version": "10",
+        "node_remove_native_binaries": true,
+        "node_install_inputs": [
+            "package.json"
+        ],
+        "node_package_name": "CheatSheets.zip"
+    },
+    "services": []
+}

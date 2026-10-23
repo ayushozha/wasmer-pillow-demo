@@ -1,0 +1,19 @@
+[[advanced.redirects]]
+source = "/golang"
+destination = "/go"
+kind = 301
+
+[[advanced.redirects]]
+source = "/golang.html"
+destination = "/golang"
+kind = 301
+
+[[advanced.redirects]]
+source = "/css"
+destination = "/css3"
+kind = 301
+
+[[advanced.redirects]]
+source = "/css.html"
+destination = "/css"
+kind = 301

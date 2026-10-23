@@ -1,0 +1,26 @@
+# all-state duplicate check for sadanandpai/frontend-mini-challenges, 2026-10-23T02:39:01Z
+# HEAD 48b7dae8bae41e4c69b904c7793bb8a4f892f337
+$ git fetch origin '+refs/pull/*/head:refs/remotes/pr/*'
+PR refs (open+closed+merged): 368
+highest PR number: 540
+
+$ git log --remotes=pr -i --grep=wasmer --format='%H %an <%ae> %s'
+(end; lines=0)
+
+$ git log --remotes=pr -i --author=wasmer --author=ayush --format='%H %an <%ae> %s'
+6e9d4186b1191e1d153c77b713163210d0d6b263 Ayush Varshney <97428742+Avtech04@users.noreply.github.com> [JS] File Uploader (#265)
+f07e45dfaa448049f32f4ee9d5b9d4d80cb2fd14 Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+4dec34fdfce17204e87311a85430f357ddbaf785 Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+766d43fdb3fada2dd3f076b8ad0705e51ff1b45e Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+7a1959b988645fb723014561332e0368c55efd82 Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+761973d93fb4a8b2b34ec2008da4ecf552cc0a88 Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+5b4a39bd6022f87a6c5eb48ecaff7054e25c754a Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+fffbc8f149ac7e73c2b1f0fa9bd0d634598906be Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+fcfe83133ddd476056483f3a9f455c7d42225731 Ayush varshney <ayushvarshney42003@gmail.com> File Uploader in JS
+a78ed8ee56bac31e484f95476f30dab1f06aa497 Ayush Rakesh <ayushrakesh35711artlover@gmail.com> Spelling corrected
+7b20efdec81712d9d39f3e323b2fc7f1da60bb8d Ayush Dutt Sharma <ayush.sharma@softpixel.io> added Infinite scrolling challenge and Axios as a dependency
+c25c6310aad7d1da95d23ec54a7aabaef5b5d54a ayush <ayush.chauhan0008@gmail.com> mousemove event listener to view live value change
+(end; lines=12)
+
+# per-ref: git show <ref>:README.md | grep -il wasmer  (README blobs only)
+refs scanned=368 readme_hits=0 refs_without_README.md=0

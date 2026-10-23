@@ -1,0 +1,54 @@
+diff --git a/Anybuild b/Anybuild
+new file mode 100644
+index 00000000..d1f4c44f
+--- /dev/null
++++ b/Anybuild
+@@ -0,0 +1,23 @@
++# Build and serve configuration for Wasmer (https://anybuild.run).
++# The apps are built with the `/frontend-mini-challenges/` base path used on
++# GitHub Pages, so the assembled `dist` folder is served under that path and
++# `/` redirects to it.
++
++load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config", "nodestatic_serve")
++
++config = nodestatic_config(
++    schema = 1,
++    sws_version = "2.38.0",
++    static_dir = "wasmer-site",
++    node_package_manager = "npm",
++    node_server = "node",
++    node_version = "24",
++    npm_version = "11",
++    node_install_requires_all_files = True,
++    node_build_command = "npm run build && npm run copy-to-dist && rm -rf wasmer-site && mkdir wasmer-site && cp -R dist wasmer-site/frontend-mini-challenges",
++    static_redirects_config = "[[advanced.redirects]]\nsource = \"/\"\ndestination = \"/frontend-mini-challenges/\"\nkind = 302\n",
++)
++
++build = nodestatic_build(config)
++
++nodestatic_serve(config, build, name = "frontend-mini-challenges")
+diff --git a/README.md b/README.md
+index 52746c0d..7acd8f60 100644
+--- a/README.md
++++ b/README.md
+@@ -59,6 +59,20 @@ Run this command from project root:
+ 
+ <br/>
+ 
++## Deploy on Wasmer
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=sadanandpai%2Ffrontend-mini-challenges)
++
++Wasmer reads the `Anybuild` file in the project root, runs `npm install`, `npm run build` and
++`npm run copy-to-dist`, and serves the assembled site as static files under
++`/frontend-mini-challenges/` (`/` redirects there). The button opens Wasmer's import page for this
++public repository, where you review the detected build settings, correct them if needed, and then
++click Deploy; nothing is deployed until you do. It does not create a copy of the repository in your
++GitHub account. To customize the challenges and redeploy on changes, fork the repository and import
++your fork instead.
++
++<br/>
++
+ ## Contributing Guide
+ 
+ If you want to contribute, improve, or suggest changes to this repo, then check out the

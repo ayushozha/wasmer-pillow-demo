@@ -1,0 +1,14 @@
+$ git rev-parse HEAD
+12cb8a2e97c3b63c4bc92d2a1ab050b35bf946b7
+$ sha256sum upstream.patch
+4ec2a5c887b03dd7f8b5b32accc302fea330243d7fc79c0a767ece9bc367d32a  upstream.patch
+$ git apply --check upstream.patch
+exit=0
+$ git diff --cached --check
+exit=0
+$ git diff --cached --stat
+ Anybuild  | 17 +++++++++++++++++
+ README.md |  6 ++++++
+ 2 files changed, 23 insertions(+)
+$ cmp Anybuild README.md against the replayed tree
+same

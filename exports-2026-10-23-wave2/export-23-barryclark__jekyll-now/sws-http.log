@@ -1,0 +1,77 @@
+2026-10-23T02:53:49.882854Z  INFO static_web_server::server: static-web-server 2.38.0
+2026-10-23T02:53:49.882916Z  INFO static_web_server::server: log level: info
+2026-10-23T02:53:49.882954Z  INFO static_web_server::server: server bound to tcp socket 127.0.0.1:3956
+2026-10-23T02:53:49.882956Z  INFO static_web_server::server: runtime worker threads: 4
+2026-10-23T02:53:49.882958Z  INFO static_web_server::server: runtime max blocking threads: 512
+2026-10-23T02:53:49.882981Z  INFO static_web_server::server: redirect trailing slash: enabled=true
+2026-10-23T02:53:49.882982Z  INFO static_web_server::server: ignore hidden files: enabled=false
+2026-10-23T02:53:49.882983Z  INFO static_web_server::server: disable symlinks: enabled=false
+2026-10-23T02:53:49.882984Z  INFO static_web_server::server: grace period before graceful shutdown: 0s
+2026-10-23T02:53:49.882987Z  INFO static_web_server::server: index files: index.html
+2026-10-23T02:53:49.882989Z  INFO static_web_server::directory_listing: directory listing: enabled=false
+2026-10-23T02:53:49.882991Z  INFO static_web_server::directory_listing: directory listing order code: 6
+2026-10-23T02:53:49.882992Z  INFO static_web_server::directory_listing: directory listing format: Html
+2026-10-23T02:53:49.882994Z  INFO static_web_server::directory_listing_download: directory listing download: enabled=false
+2026-10-23T02:53:49.882996Z  INFO static_web_server::fallback_page: fallback page: enabled=false, value=""
+2026-10-23T02:53:49.882998Z  INFO static_web_server::health: health endpoint: enabled=false
+2026-10-23T02:53:49.882999Z  INFO static_web_server::log_addr: log requests with remote IP addresses: enabled=false
+2026-10-23T02:53:49.883001Z  INFO static_web_server::log_addr: log X-Real-IP header: enabled=false
+2026-10-23T02:53:49.883003Z  INFO static_web_server::log_addr: log X-Forwarded-For header: enabled=false
+2026-10-23T02:53:49.883004Z  INFO static_web_server::log_addr: trusted IPs for X-Forwarded-For: all
+2026-10-23T02:53:49.883007Z  INFO static_web_server::basic_auth: basic authentication: enabled=false
+2026-10-23T02:53:49.883009Z  INFO static_web_server::maintenance_mode: maintenance mode: enabled=false
+2026-10-23T02:53:49.883010Z  INFO static_web_server::maintenance_mode: maintenance mode status: 503
+2026-10-23T02:53:49.883012Z  INFO static_web_server::maintenance_mode: maintenance mode file: ""
+2026-10-23T02:53:49.883013Z  INFO static_web_server::compression_static: compression static: enabled=false
+2026-10-23T02:53:49.883022Z  INFO static_web_server::compression: auto compression: enabled=true, formats=deflate,gzip,brotli,zstd, compression level=Default
+2026-10-23T02:53:49.883024Z  INFO static_web_server::control_headers: cache control headers: enabled=true
+2026-10-23T02:53:49.883025Z  INFO static_web_server::security_headers: security headers: enabled=false
+2026-10-23T02:53:49.883114Z  INFO Server::start_server{addr_str="127.0.0.1:3956" threads=4}: static_web_server::server: close time.busy=0.00ns time.idle=1.42µs
+2026-10-23T02:53:49.883128Z  INFO static_web_server::server: http1 server is listening on http://127.0.0.1:3956
+2026-10-23T02:53:49.883129Z  INFO static_web_server::server: press ctrl+c to shut down the server
+2026-10-23T02:53:50.889509Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:53:50.897661Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index.html
+2026-10-23T02:53:50.905149Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/about/
+2026-10-23T02:53:50.912696Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/about
+2026-10-23T02:53:50.920043Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Hello-World/
+2026-10-23T02:53:50.930683Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/feed.xml
+2026-10-23T02:53:50.939342Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/sitemap.xml
+2026-10-23T02:53:50.948054Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/robots.txt
+2026-10-23T02:53:50.955795Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/style.css
+2026-10-23T02:53:50.964171Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/jekyll-logo.png
+2026-10-23T02:53:50.972009Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/404.html
+2026-10-23T02:53:50.979946Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/definitely-missing-x9
+2026-10-23T02:53:50.980016Z  WARN static_web_server::error_page: method=GET uri=/definitely-missing-x9 status=404 error="Not Found"
+2026-10-23T02:53:50.987914Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/missing.css
+2026-10-23T02:53:50.987977Z  WARN static_web_server::error_page: method=GET uri=/missing.css status=404 error="Not Found"
+2026-10-23T02:53:50.995505Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/2014/missing/
+2026-10-23T02:53:50.995573Z  WARN static_web_server::error_page: method=GET uri=/2014/missing/ status=404 error="Not Found"
+2026-10-23T02:53:51.006281Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/feed
+2026-10-23T02:53:51.006351Z  WARN static_web_server::error_page: method=GET uri=/feed status=404 error="Not Found"
+2026-10-23T02:53:51.015088Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/sitemap
+2026-10-23T02:53:51.015168Z  WARN static_web_server::error_page: method=GET uri=/sitemap status=404 error="Not Found"
+2026-10-23T02:53:51.026085Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/404.html
+2026-10-23T02:53:51.034769Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Anybuild
+2026-10-23T02:53:51.045484Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Hello-World/index.html
+2026-10-23T02:53:51.053471Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/about/index.html
+2026-10-23T02:53:51.061247Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/feed.xml
+2026-10-23T02:53:51.069275Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/404.jpg
+2026-10-23T02:53:51.077172Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/config.png
+2026-10-23T02:53:51.085362Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/first-post.png
+2026-10-23T02:53:51.093320Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/jekyll-logo.png
+2026-10-23T02:53:51.101060Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/jekyll-now-theme-screenshot.jpg
+2026-10-23T02:53:51.108505Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/images/step1.gif
+2026-10-23T02:53:51.116722Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/index.html
+2026-10-23T02:53:51.124483Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/robots.txt
+2026-10-23T02:53:51.131847Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/sitemap.xml
+2026-10-23T02:53:51.139541Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/style.css
+2026-10-23T02:53:51.147610Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/style.css.map
+2026-10-23T02:53:51.155440Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/
+2026-10-23T02:53:51.163130Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/about/
+2026-10-23T02:53:51.170658Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/Hello-World/
+2026-10-23T02:53:51.178315Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/404.html
+2026-10-23T02:53:51.188388Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/feed.xml
+2026-10-23T02:53:51.196456Z  INFO static_web_server::log_addr: incoming request: method=GET uri=/sitemap.xml
+2026-10-23T02:53:51.197595Z  INFO static_web_server::signals: SIGTERM, SIGINT or SIGQUIT signal caught
+2026-10-23T02:53:51.197654Z  INFO static_web_server::signals: delegating server's graceful shutdown
+2026-10-23T02:53:51.197713Z  WARN static_web_server::server: termination signal caught, shutting down the server execution

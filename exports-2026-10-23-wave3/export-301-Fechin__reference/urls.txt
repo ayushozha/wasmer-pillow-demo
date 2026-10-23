@@ -1,0 +1,77 @@
+# index
+/
+/index
+/index.html
+/index.html/
+# sample of 12 sheets: extensionless, trailing slash, .html, .html/
+/go
+/go/
+/go.html
+/css3
+/css3/
+/css3.html
+/bash
+/bash/
+/bash.html
+/python
+/python/
+/python.html
+/javascript
+/javascript/
+/javascript.html
+/docker
+/docker/
+/docker.html
+/git
+/git/
+/git.html
+/vim
+/vim/
+/vim.html
+/regex
+/regex/
+/regex.html
+/mysql
+/mysql/
+/mysql.html
+/html
+/html/
+/html.html
+/chmod
+/chmod/
+/chmod.html
+# renamed sheets (nginx rewrite ... permanent)
+/golang
+/golang/
+/golang.html
+/css
+/css/
+/css.html
+# directory pages
+/about
+/about/
+/about.html
+/about/index.html
+/notes
+/support/
+# other build files
+/search.json
+/sitemap.xml
+/robots.txt
+/manifest.json
+/sw.js
+/assets/page/oops.htm
+/atom.xml
+# negatives
+/nope
+/nope/
+/nope.html
+/assets/nope.js
+/js/nope.js
+/golang/../x
+/go/../x
+/css.html.bak
+/go.html.bak
+/../../etc/passwd
+/%2e%2e/%2e%2e/etc/passwd
+/GO

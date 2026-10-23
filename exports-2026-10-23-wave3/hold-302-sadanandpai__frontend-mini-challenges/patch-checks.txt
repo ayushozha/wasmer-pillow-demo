@@ -1,0 +1,11 @@
+# patch checks 2026-10-23T02:50:25Z, HEAD 48b7dae8bae41e4c69b904c7793bb8a4f892f337
+$ git apply --check upstream.patch  (clean HEAD worktree)
+exit=0
+$ git diff --check HEAD  (patched worktree)
+exit=0
+added lines with trailing whitespace (grep -cP '^\+.*[ \t]$'): 0
+files:  2 files changed, 37 insertions(+)
+sha256 42e1b58fb5e25c010fe6907173d5c9ce967ce16ad4b8dd9f2a97f54f47b29e57
+$ cmp package-lock.json after replay npm install vs HEAD
+identical (lockfile untouched)
+Note: README.md is not a build input; the replay ran with the Anybuild file applied (replay.log 'local diff' line) before the README section was added.

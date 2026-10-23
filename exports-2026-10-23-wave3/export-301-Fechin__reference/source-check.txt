@@ -1,0 +1,12 @@
+# source check 2026-10-23T02:48:01Z
+$ git ls-remote origin HEAD refs/heads/main
+6fe843f01a81a2f87279eb629a806f318e6a4d72	HEAD
+6fe843f01a81a2f87279eb629a806f318e6a4d72	refs/heads/main
+root-supplied pin: main@6fe843f01a81a2f87279eb629a806f318e6a4d72 -> identical
+$ git log -1 --format='%H %cI %s' HEAD
+6fe843f01a81a2f87279eb629a806f318e6a4d72 2026-10-14T19:19:08+08:00 Merge pull request #800 from AllCodeBreaker/fix/non-standard-conio-header
+$ git ls-files public | wc -l
+0
+$ grep -n '^public/' .gitignore
+74:public/
+=> public/ is NOT committed (gitignored); the site must be built (pnpm install && pnpm run build), so a no-build Staticfile deploy of public/ is not possible.

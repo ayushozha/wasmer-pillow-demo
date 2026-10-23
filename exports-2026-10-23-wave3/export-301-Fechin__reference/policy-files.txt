@@ -1,0 +1,125 @@
+# policy files at 6fe843f01a81a2f87279eb629a806f318e6a4d72 (2026-10-23)
+$ git ls-tree -r --name-only HEAD | grep -iE '(^|/)(contributing|agents\.md|claude\.md|\.cursorrules|copilot-instructions|pull_request_template|code_of_conduct|cla)' 
+(end)
+$ git ls-tree -r --name-only HEAD .github .husky
+.github/FUNDING.yml
+.github/ISSUE_TEMPLATE/cheatsheet-request.md
+.husky/commit-msg
+.husky/pre-commit
+$ git ls-tree -r --name-only HEAD | grep -iE 'vercel|netlify|_redirects|_headers|anybuild|wasmer|Dockerfile|nginx'
+Dockerfile
+nginx.conf
+source/_posts/nginx.md
+source/assets/icon/nginx.svg
+$ git grep -niE 'no (ai|llm)|ai[- ]generated|chatgpt-generated|copilot' HEAD -- README.md .github
+(end)
+
+## README.md (HEAD) excerpts
+
+We encourage you to share your own cheat sheets with the community and make Reference even better. If you notice a cheat
+sheet that could be improved, feel free to submit a [pull request](#-contributing).
+...
+## 🤝 Contributing
+
+We would like to extend our gratitude to you for considering a contribution to Reference. Your support is what makes
+this project a truly resource. Please note that the primary domain for accessing the most up-to-date content is
+[cheatsheets.zip](https://cheatsheets.zip). Feel free to
+[submit issues](https://github.com/Fechin/reference/issues/new?assignee=Fechin) and enhancement requests.
+
+For consistency, we encourage you to refer to the [https://cheatsheets.zip/quickref](https://cheatsheets.zip/quickref)
+when creating or editing cheat sheets. To get started with development, follow these steps:
+
+1. Clone GitHub repo `git clone https://github.com/Fechin/reference.git`
+2. Install `npm` package manager (Read
+   [installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
+3. Run `npm install` in the root folder to install dependencies.
+4. Run `npm run dev` to start a dev server. This serves the project and live reloads when any files are changed, then
+   visit http://127.0.0.1:4000 preview.
+5. Submit a pull request and wait for it to be reviewed and merged.
+
+
+## .husky/pre-commit
+npx lint-staged
+## .husky/commit-msg
+npx commitlint --edit $1
+## .lintstagedrc.js
+module.exports = {
+  // JavaScript files
+  '*.{js,mjs}': ['eslint --fix', 'prettier --write'],
+
+  // CSS files
+  '*.css': ['stylelint --fix', 'prettier --write'],
+
+  // All other files that Prettier supports
+  '*.{md,json,yml,yaml}': ['prettier --write']
+};
+## .commitlintrc.js (type-enum / subject rules)
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'type-enum': [
+      2,
+      'always',
+      [
+        'feat', // new feature
+        'fix', // bug fix
+        'docs', // documentation update
+        'style', // code formatting, no logic changes
+        'refactor', // code refactoring
+        'perf', // performance optimization
+        'test', // add tests
+        'chore', // build process or auxiliary tool changes
+        'ci', // CI/CD related changes
+        'build', // build system or external dependency changes
+        'revert' // revert commit
+      ]
+    ],
+    'subject-full-stop': [2, 'never', '.'],
+    'type-case': [2, 'always', 'lower-case'],
+    'type-empty': [2, 'never']
+  }
+};
+## nginx.conf server block
+        listen 80;
+        listen [::]:80;
+
+        server_name localhost;
+        root /usr/share/nginx/html;
+        index index.html;
+
+        # error_page
+        error_page 404 403 500 502 503 504 /assets/page/oops.htm;
+
+        # Rename cheatsheet
+        rewrite ^/golang$ /go permanent;
+        rewrite ^/css$ /css3 permanent;
+
+        location / {
+            try_files $uri $uri/ @html;
+        }
+
+        location @html {
+            # remove .html extension
+            rewrite ^(.*)\.html$ $1 permanent;
+            try_files $uri.html $uri/ =404;
+        }
+## Dockerfile build stage
+# Stage 1: build the application
+FROM node:19 AS build-app
+WORKDIR /app
+COPY . .
+RUN npm install -g pnpm
+RUN pnpm install
+RUN pnpm run build
+## LICENSE first line
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+## activity: merges since 2026-07-01 at HEAD
+2026-10-14 Merge pull request #800 from AllCodeBreaker/fix/non-standard-conio-header
+2026-10-03 Merge pull request #776 from abdslam01/main
+2026-10-03 Merge pull request #779 from SANAULLAH-AI/patch-1
+2026-10-03 Merge pull request #780 from SANAULLAH-AI/patch-2
+2026-10-03 Merge pull request #781 from SANAULLAH-AI/patch-3
+2026-10-03 Merge pull request #782 from vigneshsindhe/patch-1
+2026-10-03 Merge pull request #785 from harsh6125/docs/add-git-switch
+2026-10-03 Merge pull request #793 from Zen1th53/main

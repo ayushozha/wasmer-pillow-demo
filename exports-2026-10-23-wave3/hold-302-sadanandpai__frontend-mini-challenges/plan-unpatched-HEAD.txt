@@ -1,0 +1,11 @@
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+  Detected Node.js provider
+    Server: Node.js
+    Package manager: npm
+    Node version: 24
+
+  Generated Anybuild at <tmp>
+Warning: no start or main script found in package.json
+Warning: no entry file found for Node project (tried: server.js, app.js, index.js, src/server.js, src/index.js)
+Plan saved to $S/val3-plan/fmc/plan.json

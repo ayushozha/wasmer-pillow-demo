@@ -1,0 +1,30 @@
+# hook/CI commands in the replay work copy (HEAD + Anybuild; README not a lint/test input), 2026-10-23T02:50:04Z
+$ npx prettier README.md(patched) | diff  -- lines inside the new section
+prettier diff lines total: 9; in new Wasmer section: 15 lines checked, 0 diff lines (remaining diffs are pre-existing header lines 6-18)
+$ npm run lint
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mlint[22m for 2 projects[39m
+
+
+  Run duration:      3.4s
+  Cache:             0/2 hit (0%)
+  Critical path:     3.3s (1 task)
+  Recoverable time:  <1ms
+exit=0
+$ npm run unit:test
+[32mpolyfills.js[39m             [2m | [22m[2mpolyfills[22m             [2m | [22m[36m154 bytes[39m[2m | [22m
+[32mstyles.css[39m               [2m | [22m[2mstyles[22m                [2m | [22m[36m142 bytes[39m[2m | [22m
+[1m [22m                        [2m | [22m[1mInitial total[22m         [2m | [22m  [1m8.68 kB[22m
+Application bundle generation complete. [3.496 seconds] - 2026-10-23T02:50:15.503Z
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.11 [39m[90m$S/replay/val3-fmc/work/apps/angular[39m
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 02:50:15
+[2m   Duration [22m 1.39s[2m (transform 117ms, setup 360ms, import 120ms, tests 57ms, environment 675ms)[22m
+[2m[32m[39m[22m
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1munit:test[22m for 3 projects[39m
+  Run duration:      7.0s
+  Cache:             0/3 hit (0%)
+  Critical path:     7.0s (1 task)
+  Recoverable time:  <1ms
+exit=0

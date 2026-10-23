@@ -1,0 +1,888 @@
+# replay of val3-ref  source=$S/val3-src/reference  upstream HEAD=6fe843f01a81a2f87279eb629a806f318e6a4d72
+# local diff vs HEAD:  M README.md; A _redirects;
+  Detected static Node.js provider
+    Framework: Hexo
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: public
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/val3-ref/plan.json
+# provider=node-static install='pnpm install' build='pnpm run build' start='static-web-server --root=/opt/static_app --log-level=info --config-file=/opt/static_config/sws.toml --port=8080' static_dir='public' pm=pnpm@10 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ pnpm --version
+10.34.7
+exit=0
+
+# staged before install: package.json pnpm-lock.yaml 
+$ pnpm install
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1259
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1259, reused 1087, downloaded 0, added 0
+Progress: resolved 1259, reused 1259, downloaded 0, added 806
+Progress: resolved 1259, reused 1259, downloaded 0, added 1259, done
+
+dependencies:
++ gulp 5.0.1
++ gulp-cli 3.1.0
++ gulp-ext-replace 0.3.0
++ gulp-htmlclean 2.7.22
++ gulp-htmlmin 5.0.1
++ gulp-minify-css 1.2.4
++ gulp-postcss 10.0.0
++ gulp-uglify-es 3.0.0
++ gulp-version-number 0.2.4
++ hexo 7.3.0
++ hexo-browsersync 0.3.0
++ hexo-excerpt 1.3.1
++ hexo-filter-nofollow 2.0.2
++ hexo-fs 5.0.0
++ hexo-generator-index 4.0.0
++ hexo-generator-sitemap 3.0.1
++ hexo-log 4.1.0
++ hexo-pagination 4.0.0
++ hexo-related-popular-posts 5.0.1
++ hexo-renderer-ejs 2.0.0
++ hexo-renderer-markdown-it 5.0.0
++ hexo-renderer-stylus 3.0.1
++ hexo-server 3.0.0
++ hexo-util 3.3.0
++ highlight.js 11.11.1
++ markdown-it-abbr 2.0.0
++ markdown-it-anchor 9.2.0
++ markdown-it-attrs 4.3.1
++ markdown-it-checkbox 1.1.0
++ markdown-it-emoji 3.0.0
++ markdown-it-footnote 4.0.0
++ markdown-it-highlight-lines 1.0.2
++ markdown-it-highlightjs 4.2.0
++ markdown-it-ins 4.0.0
++ markdown-it-shortcode-tag 1.1.0
++ markdown-it-sub 2.0.0
++ markdown-it-sup 2.0.0
++ markdown-it-task-lists 2.1.1
+
+devDependencies:
++ @commitlint/cli 19.8.1
++ @commitlint/config-conventional 19.8.1
++ autoprefixer 10.4.21
++ commitizen 4.3.1
++ cssnano 7.0.7
++ cz-conventional-changelog 3.3.0
++ eslint 9.29.0
++ eslint-config-prettier 10.1.5
++ gulp-clean-css 4.3.0
++ gulp-filesize 0.0.6
++ gulp-javascript-obfuscator 1.1.6
++ gulp-replace 1.1.4
++ gulp-rev 11.0.0
++ gulp-terser 2.1.0
++ husky 9.1.7
++ lint-staged 16.1.2
++ npm-run-all2 8.0.4
++ postcss 8.5.6
++ postcss-cli 11.0.1
++ postcss-import 16.1.1
++ prettier 3.5.3
++ prettier-plugin-tailwindcss 0.6.12
++ stylelint 16.20.0
++ stylelint-config-standard 38.0.0
++ tailwindcss 3.4.17
++ tailwindcss-animate 1.0.7
+
+
+> CheatSheets.zip@1.0.0 prepare $S/replay/val3-ref/work
+> husky
+
+.git can't be found╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: hexo-util@3.3.0, javascript-obfuscator@4.1.1.       │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 3.8s using pnpm v10.34.7
+exit=0
+
+$ pnpm run build
+
+> CheatSheets.zip@1.0.0 build $S/replay/val3-ref/work
+> run-s build:*
+
+
+> CheatSheets.zip@1.0.0 build:clean $S/replay/val3-ref/work
+> npx hexo clean
+
+[32mINFO [39m Validating config
+
+> CheatSheets.zip@1.0.0 build:rm-db.json $S/replay/val3-ref/work
+> rm db.json || exit 0
+
+rm: cannot remove 'db.json': No such file or directory
+
+> CheatSheets.zip@1.0.0 build:css $S/replay/val3-ref/work
+> npx postcss themes/coo/source/css/style.tailwindcss -o themes/coo/source/css/style.css
+
+Browserslist: browsers data (caniuse-lite) is 17 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+> CheatSheets.zip@1.0.0 build:generate $S/replay/val3-ref/work
+> npx hexo generate
+
+[32mINFO [39m Validating config
+[32mINFO [39m Start processing
+[32mINFO [39m Files loaded in [36m8.37 s[39m
+[32mINFO [39m Generated: [35mga_analytics_tops.json[39m
+[32mINFO [39m Generated: [35mmanifest.json[39m
+[32mINFO [39m Generated: [35msitemap.xml[39m
+[32mINFO [39m Generated: [35mprivacy/index.html[39m
+[32mINFO [39m Generated: [35mabout/index.html[39m
+[32mINFO [39m Generated: [35mnotes/index.html[39m
+[32mINFO [39m Generated: [35msponsor/index.html[39m
+[32mINFO [39m Generated: [35mlist.md[39m
+[32mINFO [39m Generated: [35msupport/index.html[39m
+[32mINFO [39m Generated: [35mwidget/chmod.html[39m
+[32mINFO [39m Generated: [35msw.js[39m
+[32mINFO [39m Generated: [35mwidget/cron.html[39m
+[32mINFO [39m Generated: [35mwidget/gradient-maker.html[39m
+[32mINFO [39m Generated: [35msearch.json[39m
+[32mINFO [39m Generated: [35msocket-io.html[39m
+[32mINFO [39m Generated: [35mmatplotlib.html[39m
+[32mINFO [39m Generated: [35mwidget/color-palette-tailwind.html[39m
+[32mINFO [39m Generated: [35mwindows-shortcuts.html[39m
+[32mINFO [39m Generated: [35mpandas.html[39m
+[32mINFO [39m Generated: [35mn8n.html[39m
+[32mINFO [39m Generated: [35msbti.html[39m
+[32mINFO [39m Generated: [35mopencode.html[39m
+[32mINFO [39m Generated: [35mantigravity-cli.html[39m
+[32mINFO [39m Generated: [35mcursor-cli.html[39m
+[32mINFO [39m Generated: [35mgemini-cli.html[39m
+[32mINFO [39m Generated: [35mcodex-cli.html[39m
+[32mINFO [39m Generated: [35mgemma4.html[39m
+[32mINFO [39m Generated: [35mgrok-cli.html[39m
+[32mINFO [39m Generated: [35mcolorscreen.html[39m
+[32mINFO [39m Generated: [35mgospinwheel.html[39m
+[32mINFO [39m Generated: [35mnim.html[39m
+[32mINFO [39m Generated: [35mvhdl.html[39m
+[32mINFO [39m Generated: [35mnginx.html[39m
+[32mINFO [39m Generated: [35mnumpy.html[39m
+[32mINFO [39m Generated: [35mnix.html[39m
+[32mINFO [39m Generated: [35mtelnet.html[39m
+[32mINFO [39m Generated: [35mcolor-picker.html[39m
+[32mINFO [39m Generated: [35mlua.html[39m
+[32mINFO [39m Generated: [35msvelte.html[39m
+[32mINFO [39m Generated: [35mnetworkports.html[39m
+[32mINFO [39m Generated: [35mnmap.html[39m
+[32mINFO [39m Generated: [35mvue.html[39m
+[32mINFO [39m Generated: [35msymfony.html[39m
+[32mINFO [39m Generated: [35mhtmx.html[39m
+[32mINFO [39m Generated: [35mflask.html[39m
+[32mINFO [39m Generated: [35mnotion.html[39m
+[32mINFO [39m Generated: [35msystemd.html[39m
+[32mINFO [39m Generated: [35munreal-engine.html[39m
+[32mINFO [39m Generated: [35mzed.html[39m
+[32mINFO [39m Generated: [35mocaml.html[39m
+[32mINFO [39m Generated: [35mtensorflow.html[39m
+[32mINFO [39m Generated: [35munity-shader-graph.html[39m
+[32mINFO [39m Generated: [35mgnome-desktop.html[39m
+[32mINFO [39m Generated: [35mclaude-code.html[39m
+[32mINFO [39m Generated: [35marduino-programming.html[39m
+[32mINFO [39m Generated: [35mcanvas.html[39m
+[32mINFO [39m Generated: [35mgnupg.html[39m
+[32mINFO [39m Generated: [35mdjango.html[39m
+[32mINFO [39m Generated: [35mwindows-cmd.html[39m
+[32mINFO [39m Generated: [35malpine-linux.html[39m
+[32mINFO [39m Generated: [35mterraform.html[39m
+[32mINFO [39m Generated: [35mruby.html[39m
+[32mINFO [39m Generated: [35mopenclaw.html[39m
+[32mINFO [39m Generated: [35mhook.html[39m
+[32mINFO [39m Generated: [35mconventional-commits.html[39m
+[32mINFO [39m Generated: [35mminecraft-bedrock.html[39m
+[32mINFO [39m Generated: [35mfastapi.html[39m
+[32mINFO [39m Generated: [35mgithub-cli.html[39m
+[32mINFO [39m Generated: [35mgithub-actions.html[39m
+[32mINFO [39m Generated: [35mhomebrew.html[39m
+[32mINFO [39m Generated: [35mreact.html[39m
+[32mINFO [39m Generated: [35mminecraft-java.html[39m
+[32mINFO [39m Generated: [35mtaskset.html[39m
+[32mINFO [39m Generated: [35mperl.html[39m
+[32mINFO [39m Generated: [35mejs.html[39m
+[32mINFO [39m Generated: [35malan-ai.html[39m
+[32mINFO [39m Generated: [35mpytorch.html[39m
+[32mINFO [39m Generated: [35mselenium.html[39m
+[32mINFO [39m Generated: [35mkotlin.html[39m
+[32mINFO [39m Generated: [35mexpress.html[39m
+[32mINFO [39m Generated: [35mswift.html[39m
+[32mINFO [39m Generated: [35mai.html[39m
+[32mINFO [39m Generated: [35mgoogle-search.html[39m
+[32mINFO [39m Generated: [35mmongodb.html[39m
+[32mINFO [39m Generated: [35msdkman.html[39m
+[32mINFO [39m Generated: [35mpandoc.html[39m
+[32mINFO [39m Generated: [35mc.html[39m
+[32mINFO [39m Generated: [35mmatlab.html[39m
+[32mINFO [39m Generated: [35mini.html[39m
+[32mINFO [39m Generated: [35mcurl.html[39m
+[32mINFO [39m Generated: [35mpm2.html[39m
+[32mINFO [39m Generated: [35madobe-photoshop.html[39m
+[32mINFO [39m Generated: [35mtypescript.html[39m
+[32mINFO [39m Generated: [35mmicrosoft-teams.html[39m
+[32mINFO [39m Generated: [35mfigma.html[39m
+[32mINFO [39m Generated: [35mkubernetes.html[39m
+[32mINFO [39m Generated: [35mbear-notes.html[39m
+[32mINFO [39m Generated: [35mfeedly.html[39m
+[32mINFO [39m Generated: [35mreddit.html[39m
+[32mINFO [39m Generated: [35mfilezilla.html[39m
+[32mINFO [39m Generated: [35mslack.html[39m
+[32mINFO [39m Generated: [35mchatgpt.html[39m
+[32mINFO [39m Generated: [35msoundcloud.html[39m
+[32mINFO [39m Generated: [35mtwitter.html[39m
+[32mINFO [39m Generated: [35mshopify.html[39m
+[32mINFO [39m Generated: [35mtable-plus.html[39m
+[32mINFO [39m Generated: [35madobe-xd.html[39m
+[32mINFO [39m Generated: [35mfirefox.html[39m
+[32mINFO [39m Generated: [35mandroid-studio.html[39m
+[32mINFO [39m Generated: [35mphpstorm.html[39m
+[32mINFO [39m Generated: [35mpostman.html[39m
+[32mINFO [39m Generated: [35mwebflow.html[39m
+[32mINFO [39m Generated: [35m1password.html[39m
+[32mINFO [39m Generated: [35mascii-code.html[39m
+[32mINFO [39m Generated: [35madobe-lightroom.html[39m
+[32mINFO [39m Generated: [35mpocket.html[39m
+[32mINFO [39m Generated: [35mtrello.html[39m
+[32mINFO [39m Generated: [35maudacity.html[39m
+[32mINFO [39m Generated: [35mframer-x.html[39m
+[32mINFO [39m Generated: [35mzoom.html[39m
+[32mINFO [39m Generated: [35mgoogle-drive.html[39m
+[32mINFO [39m Generated: [35mblender.html[39m
+[32mINFO [39m Generated: [35mgithub.html[39m
+[32mINFO [39m Generated: [35mobsidian.html[39m
+[32mINFO [39m Generated: [35mtelegram.html[39m
+[32mINFO [39m Generated: [35myoutube.html[39m
+[32mINFO [39m Generated: [35mbitbucket.html[39m
+[32mINFO [39m Generated: [35mfortnite.html[39m
+[32mINFO [39m Generated: [35mgmail.html[39m
+[32mINFO [39m Generated: [35mairtable.html[39m
+[32mINFO [39m Generated: [35msketch.html[39m
+[32mINFO [39m Generated: [35mspotify.html[39m
+[32mINFO [39m Generated: [35mes6.html[39m
+[32mINFO [39m Generated: [35mkanbanmail.html[39m
+[32mINFO [39m Generated: [35mapex-legends.html[39m
+[32mINFO [39m Generated: [35moutlook.html[39m
+[32mINFO [39m Generated: [35mskype.html[39m
+[32mINFO [39m Generated: [35mprinciple.html[39m
+[32mINFO [39m Generated: [35mputty.html[39m
+[32mINFO [39m Generated: [35masana.html[39m
+[32mINFO [39m Generated: [35mcode-editor-ios.html[39m
+[32mINFO [39m Generated: [35marduino.html[39m
+[32mINFO [39m Generated: [35mwordpress.html[39m
+[32mINFO [39m Generated: [35maffinity-designer.html[39m
+[32mINFO [39m Generated: [35mgimp.html[39m
+[32mINFO [39m Generated: [35mticktick.html[39m
+[32mINFO [39m Generated: [35mgoogle-chrome.html[39m
+[32mINFO [39m Generated: [35mchrome-devtools.html[39m
+[32mINFO [39m Generated: [35mmissive.html[39m
+[32mINFO [39m Generated: [35mbrave.html[39m
+[32mINFO [39m Generated: [35mtodoist.html[39m
+[32mINFO [39m Generated: [35msequel-pro.html[39m
+[32mINFO [39m Generated: [35msublime-text.html[39m
+[32mINFO [39m Generated: [35mtransmit.html[39m
+[32mINFO [39m Generated: [35morigami.html[39m
+[32mINFO [39m Generated: [35maffinity-photo.html[39m
+[32mINFO [39m Generated: [35mproto-io.html[39m
+[32mINFO [39m Generated: [35msuperhuman.html[39m
+[32mINFO [39m Generated: [35mvivaldi.html[39m
+[32mINFO [39m Generated: [35mvlc.html[39m
+[32mINFO [39m Generated: [35mquip.html[39m
+[32mINFO [39m Generated: [35mfinder.html[39m
+[32mINFO [39m Generated: [35mroam.html[39m
+[32mINFO [39m Generated: [35munity-3d.html[39m
+[32mINFO [39m Generated: [35msketchup.html[39m
+[32mINFO [39m Generated: [35maspect-ratio.html[39m
+[32mINFO [39m Generated: [35mreact-test-library.html[39m
+[32mINFO [39m Generated: [35mapple-music.html[39m
+[32mINFO [39m Generated: [35mjest.html[39m
+[32mINFO [39m Generated: [35miso-639-1.html[39m
+[32mINFO [39m Generated: [35mguitar-pro.html[39m
+[32mINFO [39m Generated: [35mjira.html[39m
+[32mINFO [39m Generated: [35mcs.html[39m
+[32mINFO [39m Generated: [35mvscode.html[39m
+[32mINFO [39m Generated: [35mlaravel.html[39m
+[32mINFO [39m Generated: [35mdart.html[39m
+[32mINFO [39m Generated: [35mneo4j.html[39m
+[32mINFO [39m Generated: [35mhtml.html[39m
+[32mINFO [39m Generated: [35mgraphql.html[39m
+[32mINFO [39m Generated: [35mrust.html[39m
+[32mINFO [39m Generated: [35mmonday.html[39m
+[32mINFO [39m Generated: [35mtmux.html[39m
+[32mINFO [39m Generated: [35mjava.html[39m
+[32mINFO [39m Generated: [35mlsof.html[39m
+[32mINFO [39m Generated: [35mssh.html[39m
+[32mINFO [39m Generated: [35mnetstat.html[39m
+[32mINFO [39m Generated: [35mphp.html[39m
+[32mINFO [39m Generated: [35mhtml-char.html[39m
+[32mINFO [39m Generated: [35mscreen.html[39m
+[32mINFO [39m Generated: [35mawk.html[39m
+[32mINFO [39m Generated: [35mtoml.html[39m
+[32mINFO [39m Generated: [35mdocker.html[39m
+[32mINFO [39m Generated: [35mjson.html[39m
+[32mINFO [39m Generated: [35myaml.html[39m
+[32mINFO [39m Generated: [35mfind.html[39m
+[32mINFO [39m Generated: [35msed.html[39m
+[32mINFO [39m Generated: [35mresolutions.html[39m
+[32mINFO [39m Generated: [35mhttp-status-code.html[39m
+[32mINFO [39m Generated: [35mredis.html[39m
+[32mINFO [39m Generated: [35mjquery.html[39m
+[32mINFO [39m Generated: [35mpostgres.html[39m
+[32mINFO [39m Generated: [35mcpp.html[39m
+[32mINFO [39m Generated: [35mpython.html[39m
+[32mINFO [39m Generated: [35mmitmproxy.html[39m
+[32mINFO [39m Generated: [35mgitlab.html[39m
+[32mINFO [39m Generated: [35msass.html[39m
+[32mINFO [39m Generated: [35mxpath.html[39m
+[32mINFO [39m Generated: [35mgo.html[39m
+[32mINFO [39m Generated: [35midea.html[39m
+[32mINFO [39m Generated: [35mwebstorm.html[39m
+[32mINFO [39m Generated: [35mcron.html[39m
+[32mINFO [39m Generated: [35mchmod.html[39m
+[32mINFO [39m Generated: [35memacs.html[39m
+[32mINFO [39m Generated: [35mmysql.html[39m
+[32mINFO [39m Generated: [35memmet.html[39m
+[32mINFO [39m Generated: [35mcss3.html[39m
+[32mINFO [39m Generated: [35mmarkdown.html[39m
+[32mINFO [39m Generated: [35mgit.html[39m
+[32mINFO [39m Generated: [35mgrep.html[39m
+[32mINFO [39m Generated: [35mnc.html[39m
+[32mINFO [39m Generated: [35mpowershell.html[39m
+[32mINFO [39m Generated: [35mopenssl.html[39m
+[32mINFO [39m Generated: [35mvim.html[39m
+[32mINFO [39m Generated: [35mnpm.html[39m
+[32mINFO [39m Generated: [35mjavascript.html[39m
+[32mINFO [39m Generated: [35memoji.html[39m
+[32mINFO [39m Generated: [35mlatex.html[39m
+[32mINFO [39m Generated: [35mmime.html[39m
+[32mINFO [39m Generated: [35mimages/favicon.png[39m
+[32mINFO [39m Generated: [35mcss/style.tailwindcss[39m
+[32mINFO [39m Generated: [35mbash.html[39m
+[32mINFO [39m Generated: [35mregex.html[39m
+[32mINFO [39m Generated: [35mrobots.txt[39m
+[32mINFO [39m Generated: [35mquickref.html[39m
+[32mINFO [39m Generated: [35mindex.html[39m
+[32mINFO [39m Generated: [35massets/screenshots/desktop-1280x720.png[39m
+[32mINFO [39m Generated: [35massets/logo/logo.png[39m
+[32mINFO [39m Generated: [35mcss/components/code.css[39m
+[32mINFO [39m Generated: [35massets/icon/1password.svg[39m
+[32mINFO [39m Generated: [35massets/page/oops.htm[39m
+[32mINFO [39m Generated: [35mjs/main.js[39m
+[32mINFO [39m Generated: [35massets/image/preview.png[39m
+[32mINFO [39m Generated: [35mcss/highlightjs/arduino-light.min.css[39m
+[32mINFO [39m Generated: [35mcss/components/layout_paragraph.css[39m
+[32mINFO [39m Generated: [35mcss/components/common.css[39m
+[32mINFO [39m Generated: [35mcss/components/layer.css[39m
+[32mINFO [39m Generated: [35mcss/components/layout_list.css[39m
+[32mINFO [39m Generated: [35mcss/components/layout_note.css[39m
+[32mINFO [39m Generated: [35mcss/components/layout_table.css[39m
+[32mINFO [39m Generated: [35mcss/components/pagination.css[39m
+[32mINFO [39m Generated: [35mjs/fuse_7.1.0.js[39m
+[32mINFO [39m Generated: [35mcss/components/search.css[39m
+[32mINFO [39m Generated: [35mcss/components/social-buttons.css[39m
+[32mINFO [39m Generated: [35mcss/highlightjs/humanoid-light.min.css[39m
+[32mINFO [39m Generated: [35mcss/highlightjs/stackoverflow-light.min.css[39m
+[32mINFO [39m Generated: [35mcss/components/navbar.css[39m
+[32mINFO [39m Generated: [35mcss/highlightjs/monokai.min.css[39m
+[32mINFO [39m Generated: [35mcss/components/custom_tag.css[39m
+[32mINFO [39m Generated: [35mcss/style.css[39m
+[32mINFO [39m Generated: [35massets/icon/add.svg[39m
+[32mINFO [39m Generated: [35massets/icon/adobe-xd.svg[39m
+[32mINFO [39m Generated: [35massets/icon/affinity-designer.svg[39m
+[32mINFO [39m Generated: [35mcss/components/toc.css[39m
+[32mINFO [39m Generated: [35massets/icon/agy.svg[39m
+[32mINFO [39m Generated: [35massets/image/pandoc-preview.png[39m
+[32mINFO [39m Generated: [35massets/icon/affinity-photo.svg[39m
+[32mINFO [39m Generated: [35massets/icon/alan-ai.svg[39m
+[32mINFO [39m Generated: [35massets/icon/alpine-linux.svg[39m
+[32mINFO [39m Generated: [35massets/icon/android-studio.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ansible.svg[39m
+[32mINFO [39m Generated: [35massets/icon/antigravity-cli.svg[39m
+[32mINFO [39m Generated: [35massets/icon/apple-music.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ai.svg[39m
+[32mINFO [39m Generated: [35massets/icon/adobe-photoshop.svg[39m
+[32mINFO [39m Generated: [35massets/icon/arduino-programming.svg[39m
+[32mINFO [39m Generated: [35massets/icon/arrow.svg[39m
+[32mINFO [39m Generated: [35massets/icon/airtable.svg[39m
+[32mINFO [39m Generated: [35massets/icon/asana.svg[39m
+[32mINFO [39m Generated: [35massets/icon/arduino.svg[39m
+[32mINFO [39m Generated: [35massets/icon/atom.svg[39m
+[32mINFO [39m Generated: [35massets/icon/bash.svg[39m
+[32mINFO [39m Generated: [35massets/icon/audacity.svg[39m
+[32mINFO [39m Generated: [35massets/icon/bitbucket.svg[39m
+[32mINFO [39m Generated: [35massets/icon/blender.svg[39m
+[32mINFO [39m Generated: [35massets/icon/brave.svg[39m
+[32mINFO [39m Generated: [35massets/icon/c.svg[39m
+[32mINFO [39m Generated: [35massets/icon/canvas.svg[39m
+[32mINFO [39m Generated: [35massets/icon/chatgpt.svg[39m
+[32mINFO [39m Generated: [35massets/icon/adobe-lightroom.svg[39m
+[32mINFO [39m Generated: [35massets/icon/chrome.svg[39m
+[32mINFO [39m Generated: [35massets/icon/claude-code.svg[39m
+[32mINFO [39m Generated: [35massets/icon/close.svg[39m
+[32mINFO [39m Generated: [35massets/icon/codex-cli.svg[39m
+[32mINFO [39m Generated: [35massets/icon/coffee.svg[39m
+[32mINFO [39m Generated: [35massets/icon/copy.svg[39m
+[32mINFO [39m Generated: [35massets/icon/cpp.svg[39m
+[32mINFO [39m Generated: [35massets/icon/cron.svg[39m
+[32mINFO [39m Generated: [35massets/icon/arrow-up.svg[39m
+[32mINFO [39m Generated: [35massets/icon/cs.svg[39m
+[32mINFO [39m Generated: [35massets/icon/chevron-down.svg[39m
+[32mINFO [39m Generated: [35massets/icon/css.svg[39m
+[32mINFO [39m Generated: [35massets/icon/dark.svg[39m
+[32mINFO [39m Generated: [35massets/icon/css3.svg[39m
+[32mINFO [39m Generated: [35massets/icon/colorscreen.svg[39m
+[32mINFO [39m Generated: [35massets/icon/django.svg[39m
+[32mINFO [39m Generated: [35massets/icon/dart.svg[39m
+[32mINFO [39m Generated: [35massets/icon/docker.svg[39m
+[32mINFO [39m Generated: [35massets/icon/curl.svg[39m
+[32mINFO [39m Generated: [35massets/icon/edit.svg[39m
+[32mINFO [39m Generated: [35massets/icon/cursor-cli.svg[39m
+[32mINFO [39m Generated: [35massets/icon/emmet.svg[39m
+[32mINFO [39m Generated: [35massets/icon/emoji.svg[39m
+[32mINFO [39m Generated: [35massets/icon/es6.svg[39m
+[32mINFO [39m Generated: [35massets/icon/emacs.svg[39m
+[32mINFO [39m Generated: [35massets/icon/excel.svg[39m
+[32mINFO [39m Generated: [35massets/icon/dorefer.png[39m
+[32mINFO [39m Generated: [35massets/icon/express.svg[39m
+[32mINFO [39m Generated: [35massets/icon/enter.svg[39m
+[32mINFO [39m Generated: [35massets/icon/figma.svg[39m
+[32mINFO [39m Generated: [35massets/icon/finder.svg[39m
+[32mINFO [39m Generated: [35massets/icon/filezilla.svg[39m
+[32mINFO [39m Generated: [35massets/icon/feedly.svg[39m
+[32mINFO [39m Generated: [35massets/icon/firefox.svg[39m
+[32mINFO [39m Generated: [35massets/icon/fionaai.png[39m
+[32mINFO [39m Generated: [35massets/icon/framer-x.svg[39m
+[32mINFO [39m Generated: [35massets/icon/facebook.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gimp.svg[39m
+[32mINFO [39m Generated: [35massets/icon/github-actions.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ejs.svg[39m
+[32mINFO [39m Generated: [35massets/icon/github-cli.svg[39m
+[32mINFO [39m Generated: [35massets/icon/git.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gnome-desktop.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gnupg.svg[39m
+[32mINFO [39m Generated: [35massets/icon/google-chrome.svg[39m
+[32mINFO [39m Generated: [35massets/icon/github.svg[39m
+[32mINFO [39m Generated: [35massets/icon/google-drive.svg[39m
+[32mINFO [39m Generated: [35massets/icon/google-search.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gmail.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gospinwheel.svg[39m
+[32mINFO [39m Generated: [35massets/icon/grep.svg[39m
+[32mINFO [39m Generated: [35massets/icon/haml.svg[39m
+[32mINFO [39m Generated: [35massets/icon/grok-cli.svg[39m
+[32mINFO [39m Generated: [35massets/icon/homebrew.svg[39m
+[32mINFO [39m Generated: [35massets/icon/hook.svg[39m
+[32mINFO [39m Generated: [35massets/icon/html.svg[39m
+[32mINFO [39m Generated: [35massets/icon/heart.svg[39m
+[32mINFO [39m Generated: [35massets/icon/go.svg[39m
+[32mINFO [39m Generated: [35massets/icon/idea.svg[39m
+[32mINFO [39m Generated: [35massets/icon/graphql.svg[39m
+[32mINFO [39m Generated: [35massets/icon/jade.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ini.svg[39m
+[32mINFO [39m Generated: [35massets/icon/javascript.svg[39m
+[32mINFO [39m Generated: [35massets/icon/jira.svg[39m
+[32mINFO [39m Generated: [35massets/icon/html5.svg[39m
+[32mINFO [39m Generated: [35massets/icon/java.svg[39m
+[32mINFO [39m Generated: [35massets/icon/image.svg[39m
+[32mINFO [39m Generated: [35massets/icon/kotlin.svg[39m
+[32mINFO [39m Generated: [35massets/icon/kubernetes.svg[39m
+[32mINFO [39m Generated: [35massets/icon/latex.svg[39m
+[32mINFO [39m Generated: [35massets/icon/laravel.svg[39m
+[32mINFO [39m Generated: [35massets/icon/light.svg[39m
+[32mINFO [39m Generated: [35massets/icon/jquery.svg[39m
+[32mINFO [39m Generated: [35massets/icon/line.svg[39m
+[32mINFO [39m Generated: [35massets/icon/jsonpath.svg[39m
+[32mINFO [39m Generated: [35massets/icon/logo.svg[39m
+[32mINFO [39m Generated: [35massets/icon/json.svg[39m
+[32mINFO [39m Generated: [35massets/icon/matlab.svg[39m
+[32mINFO [39m Generated: [35massets/icon/microsoft-teams.svg[39m
+[32mINFO [39m Generated: [35massets/icon/missive.svg[39m
+[32mINFO [39m Generated: [35massets/icon/mitmproxy.svg[39m
+[32mINFO [39m Generated: [35massets/icon/mongodb.svg[39m
+[32mINFO [39m Generated: [35massets/icon/markdown.svg[39m
+[32mINFO [39m Generated: [35massets/icon/monday.svg[39m
+[32mINFO [39m Generated: [35massets/icon/link.svg[39m
+[32mINFO [39m Generated: [35massets/icon/neo4j.svg[39m
+[32mINFO [39m Generated: [35massets/icon/nginx.svg[39m
+[32mINFO [39m Generated: [35massets/icon/netstat.svg[39m
+[32mINFO [39m Generated: [35massets/icon/nim.svg[39m
+[32mINFO [39m Generated: [35massets/icon/npm.svg[39m
+[32mINFO [39m Generated: [35massets/icon/mysql.svg[39m
+[32mINFO [39m Generated: [35massets/icon/numpy.svg[39m
+[32mINFO [39m Generated: [35massets/icon/obsidian.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ocaml.svg[39m
+[32mINFO [39m Generated: [35massets/icon/openclaw.svg[39m
+[32mINFO [39m Generated: [35massets/icon/opencode.svg[39m
+[32mINFO [39m Generated: [35massets/icon/outlook.svg[39m
+[32mINFO [39m Generated: [35massets/icon/linkedin.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pandas.svg[39m
+[32mINFO [39m Generated: [35massets/icon/paypal.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pdf.svg[39m
+[32mINFO [39m Generated: [35massets/icon/permission.svg[39m
+[32mINFO [39m Generated: [35massets/icon/perl.svg[39m
+[32mINFO [39m Generated: [35massets/icon/php.svg[39m
+[32mINFO [39m Generated: [35massets/icon/nmap.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pinterest.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pm2.svg[39m
+[32mINFO [39m Generated: [35massets/icon/placeholder.svg[39m
+[32mINFO [39m Generated: [35massets/icon/netcat.svg[39m
+[32mINFO [39m Generated: [35massets/icon/postman.svg[39m
+[32mINFO [39m Generated: [35massets/icon/phpstorm.svg[39m
+[32mINFO [39m Generated: [35massets/icon/principle.svg[39m
+[32mINFO [39m Generated: [35massets/icon/powershell.svg[39m
+[32mINFO [39m Generated: [35massets/icon/postgres.svg[39m
+[32mINFO [39m Generated: [35massets/icon/print.svg[39m
+[32mINFO [39m Generated: [35massets/icon/proto-io.svg[39m
+[32mINFO [39m Generated: [35massets/icon/python.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pytorch.svg[39m
+[32mINFO [39m Generated: [35massets/icon/quip.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pycharm.svg[39m
+[32mINFO [39m Generated: [35massets/icon/reddit.svg[39m
+[32mINFO [39m Generated: [35massets/icon/regex.svg[39m
+[32mINFO [39m Generated: [35massets/icon/openssl.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ruby.svg[39m
+[32mINFO [39m Generated: [35massets/icon/resolution.svg[39m
+[32mINFO [39m Generated: [35massets/icon/react.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sass.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sbti.svg[39m
+[32mINFO [39m Generated: [35massets/icon/search.svg[39m
+[32mINFO [39m Generated: [35massets/icon/rust.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sed.svg[39m
+[32mINFO [39m Generated: [35massets/icon/pocket.svg[39m
+[32mINFO [39m Generated: [35massets/icon/share.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sketchup.svg[39m
+[32mINFO [39m Generated: [35massets/icon/redis.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sketch.svg[39m
+[32mINFO [39m Generated: [35massets/icon/skype.svg[39m
+[32mINFO [39m Generated: [35massets/icon/slack.svg[39m
+[32mINFO [39m Generated: [35massets/icon/sublime-text.svg[39m
+[32mINFO [39m Generated: [35massets/icon/spotify.svg[39m
+[32mINFO [39m Generated: [35massets/icon/selenium.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gitlab.svg[39m
+[32mINFO [39m Generated: [35massets/icon/star.svg[39m
+[32mINFO [39m Generated: [35massets/icon/style.svg[39m
+[32mINFO [39m Generated: [35massets/icon/symfony.svg[39m
+[32mINFO [39m Generated: [35massets/icon/swift.svg[39m
+[32mINFO [39m Generated: [35massets/icon/tableconvert.png[39m
+[32mINFO [39m Generated: [35massets/icon/svelte.svg[39m
+[32mINFO [39m Generated: [35massets/icon/tmux.svg[39m
+[32mINFO [39m Generated: [35massets/icon/terraform.svg[39m
+[32mINFO [39m Generated: [35massets/icon/todoist.svg[39m
+[32mINFO [39m Generated: [35massets/icon/telegram.svg[39m
+[32mINFO [39m Generated: [35massets/icon/toml.svg[39m
+[32mINFO [39m Generated: [35massets/icon/shopify.svg[39m
+[32mINFO [39m Generated: [35massets/icon/twitter.svg[39m
+[32mINFO [39m Generated: [35massets/icon/trello.svg[39m
+[32mINFO [39m Generated: [35massets/icon/typescript.svg[39m
+[32mINFO [39m Generated: [35massets/icon/unreal-engine.svg[39m
+[32mINFO [39m Generated: [35massets/icon/soundcloud.svg[39m
+[32mINFO [39m Generated: [35massets/icon/unity-3d.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vim.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vlc.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vscode1.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vscode.svg[39m
+[32mINFO [39m Generated: [35massets/icon/unity-shader-graph.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vivaldi.svg[39m
+[32mINFO [39m Generated: [35massets/icon/webflow.svg[39m
+[32mINFO [39m Generated: [35massets/icon/webstorm.svg[39m
+[32mINFO [39m Generated: [35massets/icon/xml.svg[39m
+[32mINFO [39m Generated: [35massets/icon/wordpress.svg[39m
+[32mINFO [39m Generated: [35massets/icon/xpath.svg[39m
+[32mINFO [39m Generated: [35massets/icon/ticktick.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vue.svg[39m
+[32mINFO [39m Generated: [35massets/icon/youtube.svg[39m
+[32mINFO [39m Generated: [35massets/logo/icon-144x144.png[39m
+[32mINFO [39m Generated: [35massets/logo/icon-152x152.png[39m
+[32mINFO [39m Generated: [35massets/icon/yaml.svg[39m
+[32mINFO [39m Generated: [35massets/logo/icon-128x128.png[39m
+[32mINFO [39m Generated: [35massets/icon/x.svg[39m
+[32mINFO [39m Generated: [35massets/icon/zed.svg[39m
+[32mINFO [39m Generated: [35massets/icon/zoom.svg[39m
+[32mINFO [39m Generated: [35massets/logo/icon-192x192.png[39m
+[32mINFO [39m Generated: [35massets/logo/icon-384x384.png[39m
+[32mINFO [39m Generated: [35massets/logo/logo.svg[39m
+[32mINFO [39m Generated: [35massets/icon/vhdl.svg[39m
+[32mINFO [39m Generated: [35massets/logo/icon-72x72.png[39m
+[32mINFO [39m Generated: [35massets/logo/icon-512x512.png[39m
+[32mINFO [39m Generated: [35massets/screenshots/mobile-390x844.png[39m
+[32mINFO [39m Generated: [35massets/logo/icon-96x96.png[39m
+[32mINFO [39m Generated: [35massets/icon/breadcrumb-arrow.svg[39m
+[32mINFO [39m Generated: [35massets/icon/gemini-cli.svg[39m
+[32mINFO [39m Generated: [35massets/image/adobe-photoshop-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/affinity-designer-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/affinity-photo-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ai-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/adobe-lightroom-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/1password-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/apple-music-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/arduino-programming-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/asana-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/airtable-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/alan-ai-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/aspect-ratio-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/audacity-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ascii-code-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/bitbucket-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/android-studio-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/brave-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/c-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/bear-notes-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/awk-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/bash-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/chatgpt-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/chmod-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/chrome-devtools-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/canvas-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/apex-legends-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/cpp-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/cron-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/cs-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/css3-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/arduino-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/dart-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/conventional-commits-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ejs-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/docker-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/adobe-xd-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/emmet-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/curl-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/express-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/feedly-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/filezilla-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/fortnite-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/es6-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/firefox-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/emoji-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/framer-x-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/gimp-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/django-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/find-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/git-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/github-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/gitlab-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/gnome-desktop-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/gmail-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/github-cli-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/emacs-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/grep-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/google-search-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/graphql-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/guitar-pro-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/go-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/hook-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/html-char-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/idea-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/html-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/github-actions-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/google-chrome-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/java-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/iso-639-1-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/http-status-code-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/jira-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/jquery-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/json-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ini-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/kanbanmail-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/homebrew-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/javascript-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/markdown-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/kotlin-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/latex-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/microsoft-teams-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/laravel-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/missive-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/mime-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/mongodb-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/monday-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/mysql-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/matlab-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/netstat-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/nim-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/openssl-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/numpy-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/origami-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/outlook-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/pandas-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/kubernetes-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/php-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/nc-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/pocket-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/phpstorm-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/pm2-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/postgres-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/principle-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/lsof-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/pytorch-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/mitmproxy-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/quickref-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/putty-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/python-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/quip-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/redis-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/regex-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/react-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/perl-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/screen-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/resolutions-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/powershell-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/rust-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sass-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sed-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/roam-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/selenium-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sequel-pro-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/shopify-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sketchup-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sketch-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sdkman-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/spotify-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/soundcloud-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/proto-io-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ssh-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/sublime-text-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ruby-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/superhuman-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/swift-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/taskset-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/table-plus-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/telegram-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/tmux-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/toml-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/transmit-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/todoist-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/slack-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/skype-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/ticktick-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/unity-3d-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/vim-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/vivaldi-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/vlc-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/vscode-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/xpath-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/terraform-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/zoom-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/twitter-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/typescript-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/trello-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/yaml-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/webflow-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/figma-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/blender-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/code-editor-ios-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/google-drive-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/finder-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/youtube-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/reddit-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/webstorm-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/wordpress-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/obsidian-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/postman-preview.png[39m
+[32mINFO [39m Generated: [35massets/image/neo4j-preview.png[39m
+[32mINFO [39m 650 files generated in [36m9.74 s[39m
+
+> CheatSheets.zip@1.0.0 build:gulp $S/replay/val3-ref/work
+> npx gulp --max-old-space-size=4096
+
+[02:42:50] Node flags detected: --max-old-space-size=4096
+[02:42:50] Respawned to PID: 20137
+[02:42:50] Using gulpfile $S/replay/val3-ref/work/gulpfile.js
+[02:42:50] Starting 'default'...
+[02:42:50] Starting 'js'...
+[02:42:50] Starting 'html'...
+[02:42:51] Finished 'js' after 428 ms
+[02:42:57] Finished 'html' after 7.07 s
+[02:42:57] Finished 'default' after 7.07 s
+exit=0
+
+$ static-web-server --root=$S/replay/val3-ref/static_app --log-level=info --port=3991 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	611973
+--	title	/	CheatSheets.zip - Ultimate Cheat for Developers	
+200	page	/go	text/html	166885
+--	title	/go	Go Cheat Sheet & Quick Reference	
+200	page	/golang	text/html	166885
+--	title	/golang	Go Cheat Sheet & Quick Reference	
+200	page	/css	text/html	176845
+--	title	/css	CSS 3 Cheat Sheet & Quick Reference	
+200	page	/css3	text/html	176845
+--	title	/css3	CSS 3 Cheat Sheet & Quick Reference	
+200	page	/go.html	text/html	166885
+--	title	/go.html	Go Cheat Sheet & Quick Reference	
+200	page	/about/	text/html	78650
+--	title	/about/	About - CheatSheets.zip	
+200	page	/search.json	application/json	883794
+200	page	/sitemap.xml	text/xml	41695
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/images/favicon.png?v=1	image/png	653
+200	ref	/manifest.json	application/json	1884
+200	ref	/assets/logo/icon-192x192.png	image/png	5169
+200	ref	/assets/logo/icon-152x152.png	image/png	3670
+404	ref	/atom.xml	text/html	0
+200	ref	/css/style.css?_v=1792723370655	text/css	164978
+200	ref	/support/	text/html	78707
+200	ref	/chatgpt.html	text/html	114285
+200	ref	/bash.html	text/html	140959
+200	ref	/python.html	text/html	223799
+200	ref	/javascript.html	text/html	214235
+200	ref	/vim.html	text/html	138199
+200	ref	/regex.html	text/html	150051
+200	ref	/awk.html	text/html	111182
+200	ref	/codex-cli.html	text/html	111532
+200	ref	/gemma4.html	text/html	112207
+200	ref	/openclaw.html	text/html	118183
+200	ref	/claude-code.html	text/html	135558
+200	ref	/cursor-cli.html	text/html	109413
+200	ref	/gemini-cli.html	text/html	128364
+200	ref	/grok-cli.html	text/html	108081
+200	ref	/opencode.html	text/html	116623
+200	ref	/antigravity-cli.html	text/html	111142
+200	ref	/powershell.html	text/html	108740
+200	ref	/markdown.html	text/html	104883
+200	ref	/sass.html	text/html	118692
+200	ref	/npm.html	text/html	107190
+200	ref	/jquery.html	text/html	189854
+200	ref	/css3.html	text/html	176845
+200	ref	/yaml.html	text/html	117854
+200	ref	/toml.html	text/html	97516
+200	ref	/docker.html	text/html	98314
+200	ref	/php.html	text/html	182590
+200	ref	/java.html	text/html	134107
+200	ref	/cpp.html	text/html	161916
+200	ref	/graphql.html	text/html	92063
+200	ref	/html.html	text/html	177030
+200	ref	/json.html	text/html	106972
+200	ref	/dart.html	text/html	124937
+200	ref	/laravel.html	text/html	187757
+200	ref	/cs.html	text/html	93981
+200	ref	/rust.html	text/html	136707
+200	ref	/c.html	text/html	180916
+200	ref	/ini.html	text/html	91166
+200	ref	/latex.html	text/html	251402
+200	ref	/matlab.html	text/html	271750
+200	ref	/es6.html	text/html	146156
+200	ref	/kubernetes.html	text/html	94774
+200	ref	/express.html	text/html	120003
+200	ref	/kotlin.html	text/html	129232
+200	ref	/swift.html	text/html	212741
+SUMMARY pages=10 refs_checked=51 failures=2
+FAIL	404	page	/nope	text/html	0
+FAIL	404	ref	/atom.xml	text/html	0
+# static_app files: 650

@@ -1,0 +1,83 @@
+$ node pw.js http://127.0.0.1:3995   (Playwright 1.56.1, Chromium build 1194; static-web-server 2.38.0 with the generated sws.toml)
+== portal (root redirect): /
+  load   -> 200 {"path":"/frontend-mini-challenges/","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard Prepare for UI coding Interviews ","links":9}
+  reload -> 200 {"path":"/frontend-mini-challenges/","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard Prepare for UI coding Interviews ","links":9}
+  same-origin >=400: none
+  blocked origins: http://gc.zgo.at (2), https://fonts.googleapis.com (2), https://api.github.com (2), https://github.com (2)
+  console/page errors (10): console.error: Error fetching contributors: AxiosError: Network Error
+    at z.onerror (http://127.0.0.1:3995/frontend-mini-challenges/assets/index-CJunRotF.js:7:17718) | console.error: Error fetching contributors: AxiosError: Network Error
+    at z.onerror (http://127.0.0.1:3995/frontend-mini-challenges/assets/index-CJunRotF.js:7:17718)
+== portal JS list: /frontend-mini-challenges/#/javascript
+  load   -> 200 {"path":"/frontend-mini-challenges/#/javascript","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard Select Developers Select Difficul","links":36}
+  reload -> 200 {"path":"/frontend-mini-challenges/#/javascript","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard Select Developers Select Difficul","links":36}
+  same-origin >=400: none
+  blocked origins: http://gc.zgo.at (2), https://fonts.googleapis.com (2), https://github.com (2), https://avatars.githubusercontent.com (66)
+  console/page errors (72): only blocked-request errors or none
+== portal leaderboard: /frontend-mini-challenges/#/leaderboard
+  load   -> 200 {"path":"/frontend-mini-challenges/#/leaderboard","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard # Contributor Total ↓ 1 Sadanand ","links":65}
+  reload -> 200 {"path":"/frontend-mini-challenges/#/leaderboard","title":"Frontend Mini Challenges","children":1,"text":"Frontend Mini Challenges Leaderboard # Contributor Total ↓ 1 Sadanand ","links":65}
+  same-origin >=400: none
+  blocked origins: http://gc.zgo.at (2), https://fonts.googleapis.com (2), https://github.com (2), https://avatars.githubusercontent.com (60)
+  console/page errors (66): only blocked-request errors or none
+== CSS accordion: /frontend-mini-challenges/css/src/challenges/accordion/
+  load   -> 200 {"path":"/frontend-mini-challenges/css/src/challenges/accordion/","title":"Accordion","children":3,"text":"< Accordion ? Is multiple open accordion allowed? Step 1 Lorem ipsum d","links":5}
+  reload -> 200 {"path":"/frontend-mini-challenges/css/src/challenges/accordion/","title":"Accordion","children":3,"text":"< Accordion ? Is multiple open accordion allowed? Step 1 Lorem ipsum d","links":5}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== JS 25-5-clock: /frontend-mini-challenges/javascript/src/challenges/25-5-clock/
+  load   -> 200 {"path":"/frontend-mini-challenges/javascript/src/challenges/25-5-clock/","title":"25-5 Clock","children":4,"text":"< 25-5 Clock ? Break length 05 Session Length 25 Session 25:00","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/javascript/src/challenges/25-5-clock/","title":"25-5 Clock","children":4,"text":"< 25-5 Clock ? Break length 05 Session Length 25 Session 25:00","links":4}
+  same-origin >=400: none
+  blocked origins: https://cdnjs.cloudflare.com (2), https://raw.githubusercontent.com (2), https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (8): only blocked-request errors or none
+== CSS dialog (index.html form, not linked by the portal): /frontend-mini-challenges/css/src/challenges/dialog/index.html
+  load   -> 200 {"path":"/frontend-mini-challenges/css/src/challenges/dialog/index.html","title":"","children":1,"text":"Close dialog on outside click Close dialog on escape Show close icon S","links":0}
+  reload -> 200 {"path":"/frontend-mini-challenges/css/src/challenges/dialog/index.html","title":"","children":1,"text":"Close dialog on outside click Close dialog on escape Show close icon S","links":0}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2)
+  console/page errors (4): pageerror: Cannot read properties of undefined (reading 'title') | pageerror: Cannot read properties of undefined (reading 'title')
+== JS atm-simulator: /frontend-mini-challenges/javascript/src/challenges/atm-simulator/
+  load   -> 200 {"path":"/frontend-mini-challenges/javascript/src/challenges/atm-simulator/","title":"ATM Simulator","children":3,"text":"< ATM Simulator ? Enter PIN: Submit Check Balance Deposit Withdraw Log","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/javascript/src/challenges/atm-simulator/","title":"ATM Simulator","children":3,"text":"< ATM Simulator ? Enter PIN: Submit Check Balance Deposit Withdraw Log","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== React counter: /frontend-mini-challenges/react/#/counter
+  load   -> 200 {"path":"/frontend-mini-challenges/react/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter ? 0 -+ Increment/Decrement by Reset","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/react/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter ? 0 -+ Increment/Decrement by Reset","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== React anagram-checker: /frontend-mini-challenges/react/#/anagram-checker
+  load   -> 200 {"path":"/frontend-mini-challenges/react/#/anagram-checker","title":"Frontend Mini Challenges","children":2,"text":"< Anagram Checker ? First word or phrase: Second word or phrase: Check","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/react/#/anagram-checker","title":"Frontend Mini Challenges","children":2,"text":"< Anagram Checker ? First word or phrase: Second word or phrase: Check","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== Vue counter: /frontend-mini-challenges/vue/#/counter
+  load   -> 200 {"path":"/frontend-mini-challenges/vue/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter ? 0 -+ Increment/Decrement by Reset","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/vue/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter ? 0 -+ Increment/Decrement by Reset","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== Vue accordion: /frontend-mini-challenges/vue/#/accordion
+  load   -> 200 {"path":"/frontend-mini-challenges/vue/#/accordion","title":"Frontend Mini Challenges","children":2,"text":"< Accordion ? Allow multiple open accordion Lorem Ipsum 1 Lorem Ipsum ","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/vue/#/accordion","title":"Frontend Mini Challenges","children":2,"text":"< Accordion ? Allow multiple open accordion Lorem Ipsum 1 Lorem Ipsum ","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.googleapis.com (2), https://github.com (2)
+  console/page errors (4): only blocked-request errors or none
+== Angular counter: /frontend-mini-challenges/angular/#/counter
+  load   -> 200 {"path":"/frontend-mini-challenges/angular/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter 0 - + Increment / Decrement by Reset","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/angular/#/counter","title":"Frontend Mini Challenges","children":2,"text":"< Counter 0 - + Increment / Decrement by Reset","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.gstatic.com (4), https://github.com (6)
+  console/page errors (10): only blocked-request errors or none
+== Angular todo-list: /frontend-mini-challenges/angular/#/todo-list
+  load   -> 200 {"path":"/frontend-mini-challenges/angular/#/todo-list","title":"Frontend Mini Challenges","children":2,"text":"< Todo list SubmitCancel","links":4}
+  reload -> 200 {"path":"/frontend-mini-challenges/angular/#/todo-list","title":"Frontend Mini Challenges","children":2,"text":"< Todo list SubmitCancel","links":4}
+  same-origin >=400: none
+  blocked origins: https://fonts.gstatic.com (4), https://github.com (6)
+  console/page errors (10): only blocked-request errors or none
+ALL blocked origins: http://gc.zgo.at (6), https://fonts.googleapis.com (22), https://api.github.com (2), https://github.com (32), https://avatars.githubusercontent.com (126), https://cdnjs.cloudflare.com (2), https://raw.githubusercontent.com (2), https://fonts.gstatic.com (8)
+exit=0
