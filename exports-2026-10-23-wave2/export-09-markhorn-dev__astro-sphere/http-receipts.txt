@@ -1,0 +1,79 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 45
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 36487
+/blog/ -> 200 text/html 44840
+/blog/01-astro-sphere-file-structure/ -> 200 text/html 25847
+/projects/ -> 200 text/html 33510
+/projects/project-1/ -> 200 text/html 20125
+/rss.xml -> 200 text/xml 3865
+/search/ -> 200 text/html 47926
+/sitemap-index.xml -> 200 text/xml 199
+/sitemap-0.xml -> 200 text/xml 1689
+/robots.txt -> 200 text/plain 87
+/work/ -> 200 text/html 17847
+/legal/privacy/ -> 200 text/html 18091
+/no-such-page-xyz/ -> 404 text/html; charset=utf-8 106
+/missing.html -> 404 text/html; charset=utf-8 106
+## trailing-slash / .html variants of pages
+/blog -> 308  0 redirect=http://127.0.0.1:3941/blog/
+/blog/index.html -> 200 text/html 44840 redirect=
+/blog/01-astro-sphere-file-structure -> 308  0 redirect=http://127.0.0.1:3941/blog/01-astro-sphere-file-structure/
+/blog/01-astro-sphere-file-structure/index.html -> 200 text/html 25847 redirect=
+/projects -> 308  0 redirect=http://127.0.0.1:3941/projects/
+/projects/index.html -> 200 text/html 33510 redirect=
+/projects/project-1 -> 308  0 redirect=http://127.0.0.1:3941/projects/project-1/
+/projects/project-1/index.html -> 200 text/html 20125 redirect=
+/search -> 308  0 redirect=http://127.0.0.1:3941/search/
+/search/index.html -> 200 text/html 47926 redirect=
+/work -> 308  0 redirect=http://127.0.0.1:3941/work/
+/work/index.html -> 200 text/html 17847 redirect=
+/legal/privacy -> 308  0 redirect=http://127.0.0.1:3941/legal/privacy/
+/legal/privacy/index.html -> 200 text/html 18091 redirect=
+/no-such-page-xyz -> 404 text/html; charset=utf-8 106 redirect=
+/no-such-page-xyz/index.html -> 404 text/html; charset=utf-8 106 redirect=
+## assets referenced from all 17 built HTML files and url() in 1 built CSS files (40 unique same-origin refs)
+/ -> 200 text/html 36487
+/_astro/Counter.D_I0Sjxz.js -> 200 text/javascript 611
+/_astro/Search.B25GqVtB.js -> 200 text/javascript 1219
+/_astro/SearchCollection.By_wYPBH.js -> 200 text/javascript 4157
+/_astro/_slug_.BKFrN2Q9.css -> 200 text/css 53712
+/_astro/client.YvfsKV_b.js -> 200 text/javascript 5594
+/_astro/hoisted.BGfjo5mV.js -> 200 text/javascript 134
+/_astro/hoisted.fOzBosgT.js -> 200 text/javascript 409
+/_astro/spongebob.dGmXfKPV_1bUarc.webp -> 200 image/webp 11564
+/blog -> 308  0 | followed(-L): 200 text/html 44840 hops=1
+/blog/01-astro-sphere-file-structure -> 308  0 | followed(-L): 200 text/html 25847 hops=1
+/blog/02-astro-sphere-getting-started -> 308  0 | followed(-L): 200 text/html 27050 hops=1
+/blog/03-astro-sphere-add-new-post-or-projects -> 308  0 | followed(-L): 200 text/html 26099 hops=1
+/blog/04-astro-sphere-writing-markdown -> 308  0 | followed(-L): 200 text/html 33259 hops=1
+/blog/05-astro-sphere-writing-mdx -> 308  0 | followed(-L): 200 text/html 25210 hops=1
+/blog/06-astro-sphere-social-links -> 308  0 | followed(-L): 200 text/html 24654 hops=1
+/brand.svg -> 200 image/svg+xml 1338
+/favicon.svg -> 200 image/svg+xml 749
+/fonts/atkinson-bold.woff -> 200 application/font-woff 23780
+/fonts/atkinson-regular.woff -> 200 application/font-woff 22792
+/js/animate.js -> 200 text/javascript 331
+/js/bg.js -> 200 text/javascript 2435
+/js/copy.js -> 200 text/javascript 1418
+/js/scroll.js -> 200 text/javascript 242
+/js/theme.js -> 200 text/javascript 1744
+/legal/privacy -> 308  0 | followed(-L): 200 text/html 18091 hops=1
+/legal/terms -> 308  0 | followed(-L): 200 text/html 17807 hops=1
+/open-graph.jpg -> 200 image/jpeg 69429
+/projects -> 308  0 | followed(-L): 200 text/html 33510 hops=1
+/projects/project-1 -> 308  0 | followed(-L): 200 text/html 20125 hops=1
+/projects/project-2 -> 308  0 | followed(-L): 200 text/html 19727 hops=1
+/projects/project-3 -> 308  0 | followed(-L): 200 text/html 19080 hops=1
+/projects/project-4 -> 308  0 | followed(-L): 200 text/html 20433 hops=1
+/rss.xml -> 200 text/xml 3865
+/search -> 308  0 | followed(-L): 200 text/html 47926 hops=1
+/sitemap-index.xml -> 200 text/xml 199
+/social.svg -> 200 image/svg+xml 2601
+/stack.svg -> 200 image/svg+xml 4595
+/ui.svg -> 200 image/svg+xml 7392
+/work -> 308  0 | followed(-L): 200 text/html 17847 hops=1
+## summary
+# status count:      43 200
+# status count:      23 308
+# status count:       4 404

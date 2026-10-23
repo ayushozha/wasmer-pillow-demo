@@ -1,0 +1,58 @@
+200	page	/	text/html	29658
+--	title	/	Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses	
+200	page	/blog/	text/html	18472
+--	title	/blog/	Blog | Astro Odyssey Theme	
+200	page	/blog/posts/odyssey-theme-officially-released/	text/html	16634
+--	title	/blog/posts/odyssey-theme-officially-released/	Odyssey Theme Has Officially Been Released!	
+200	page	/blog/tags/	text/html	15
+--	title	/blog/tags/	(none)	
+200	page	/theme/style-guide/	text/html	21046
+--	title	/theme/style-guide/	Astro Odyssey Theme Style Guide	
+200	page	/theme/theme-setup/	text/html	32634
+--	title	/theme/theme-setup/	Theme Setup	
+200	page	/company/about/	text/html	18021
+--	title	/company/about/	About | Astro Odyssey Theme	
+200	page	/company/contact/	text/html	17562
+--	title	/company/contact/	Contact | Astro Odyssey Theme	
+200	page	/landing-pages/landing-1/	text/html	21466
+--	title	/landing-pages/landing-1/	Landing Page #1 | Astro Odyssey Theme	
+404	page	/sitemap-index.xml	text/html	0
+--	title	/sitemap-index.xml	(none)	
+200	page	/sitemap.xml	text/xml	1458
+404	page	/rss.xml	text/html	0
+--	title	/rss.xml	(none)	
+404	page	/no-such-page-xyz/	text/html	0
+--	title	/no-such-page-xyz/	(none)	
+200	ref	/favicon.png	image/png	4905
+200	ref	/_astro/consider-hybrid-work.C6l1_u0W.css	text/css	5987
+200	ref	/_astro/contact.BK1Xm0la.css	text/css	13011
+200	ref	/blog	text/html	18472
+200	ref	/company/about	text/html	18021
+200	ref	/company/contact	text/html	17562
+200	ref	/theme/get-started	text/html	16916
+200	ref	/theme/style-guide	text/html	21046
+200	ref	/assets/images/home/classic-hero.jpg	image/jpeg	21668
+200	ref	/landing-pages/landing-1	text/html	21466
+200	ref	/assets/images/home/screenshots/landing-1.png	image/png	191142
+200	ref	/landing-pages/landing-2	text/html	8104
+200	ref	/assets/images/home/screenshots/landing-2.png	image/png	70335
+200	ref	/assets/images/home/screenshots/about.png	image/png	112371
+200	ref	/assets/images/home/screenshots/contact.png	image/png	36583
+200	ref	/assets/images/home/screenshots/blog.png	image/png	213575
+200	ref	/blog/posts/remote-work-mental-health	text/html	20984
+200	ref	/assets/images/home/screenshots/blog-post.png	image/png	271204
+200	ref	/company/legal	text/html	17142
+200	ref	/assets/images/home/screenshots/legal.png	image/png	73675
+200	ref	/assets/images/home/screenshots/get-started.png	image/png	55820
+200	ref	/assets/images/home/screenshots/style-guide.png	image/png	54088
+200	ref	/theme/theme-setup	text/html	32634
+200	ref	/theme/customizing-odyssey	text/html	27290
+200	ref	/blog/posts/odyssey-theme-officially-released	text/html	16634
+200	ref	/assets/images/blog/odyssey-theme-officially-released/featured.jpg	image/jpeg	1210325
+200	ref	/assets/images/blog/remote-work-mental-health/featured.jpg	image/jpeg	71674
+200	ref	/blog/posts/consider-hybrid-work	text/html	20458
+200	ref	/assets/images/blog/consider-hybrid-work/featured.jpg	image/jpeg	65719
+SUMMARY pages=13 refs_checked=29 failures=3
+FAIL	404	page	/sitemap-index.xml	text/html	0
+FAIL	404	page	/rss.xml	text/html	0
+FAIL	404	page	/no-such-page-xyz/	text/html	0

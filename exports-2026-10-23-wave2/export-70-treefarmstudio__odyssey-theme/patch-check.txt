@@ -1,0 +1,9 @@
+# patch checks 2026-10-23T02:19:02Z
+$ git -C <clone> diff --check
+exit=0
+$ git apply --check upstream.patch   # on clean HEAD d191e5715a2519e25be4629b933189c421b30a1a
+exit=0
+$ sha256sum upstream.patch
+fb7b517ce8c54229707a980d0fbef4625397e1e8fab3b5c5ed12c81d7a9a16c1  upstream.patch
+$ grep -c trailing-whitespace lines in added lines
+0

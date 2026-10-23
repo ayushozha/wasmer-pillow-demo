@@ -1,0 +1,13 @@
+diff --git a/README.md b/README.md
+index 05747cb..f43f6a8 100644
+--- a/README.md
++++ b/README.md
+@@ -60,6 +60,8 @@ Feel free to deploy and host your site on your favorite static hosting service s
+ 
+ Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
+ 
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=treefarmstudio%2Fodyssey-theme)
++
+ ## Sponsor
+ 
+ If you find this theme useful, please consider donating to support the continued development of it with the link below

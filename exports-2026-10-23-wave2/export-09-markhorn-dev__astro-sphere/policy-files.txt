@@ -1,0 +1,21 @@
+# policy files at HEAD f7e3a40f20e1267d7fbbb7b6dd868df1845e1d82 (2026-10-23)
+$ git ls-files | grep -iE "contrib|agents.md|claude.md|cursorrules|copilot-instructions|pull_request_template|PULL_REQUEST|code_of_conduct|cla|security.md|anybuild|wasmer"
+(end of list)
+$ git ls-files .github
+.github/workflows/stale.yaml
+(end of list)
+$ git grep -niE "\bAI\b|LLM|chatgpt|copilot|contributor license|\bCLA\b|issue first|open an issue (first|before)|no (pull requests|PRs)" -- README* CONTRIBUTING* .github docs/CONTRIBUTING*
+(end of matches)
+--- .github/workflows/stale.yaml (on:/jobs names)
+1:name: Close inactive issues
+2:on:
+3:  workflow_dispatch:
+4:  schedule:
+8:  close-issues:
+14:      - uses: actions/stale@v5
+$ git log -5 --format="%cI %h %s"
+2025-06-16T13:04:02+01:00 f7e3a40 Merge pull request #29 from HesitantlyHuman/feature/search-improvements
+2025-06-16T12:53:07+01:00 89eff91 Merge pull request #15 from Rachad-Alabi-ADEKAMBI/issue#13
+2025-05-18T06:35:04-06:00 97483cb Update SearchCollection.tsx
+2025-05-18T03:46:25-06:00 78094b7 Fix search bar overflow issue
+2025-05-18T03:41:07-06:00 1e8bf91 Remove unnecessary logging

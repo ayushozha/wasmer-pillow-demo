@@ -1,0 +1,30 @@
+# policy files at HEAD d191e5715a2519e25be4629b933189c421b30a1a (2026-10-23)
+$ git ls-files | grep -iE "contrib|agents.md|claude.md|cursorrules|copilot-instructions|pull_request_template|PULL_REQUEST|code_of_conduct|cla|security.md|anybuild|wasmer"
+public/assets/images/home/classic-hero.jpg
+(end of list)
+$ git ls-files .github
+.github/FUNDING.yml
+.github/workflows/deploy.yml
+(end of list)
+$ git grep -niE "\bAI\b|LLM|chatgpt|copilot|contributor license|\bCLA\b|issue first|open an issue (first|before)|no (pull requests|PRs)" -- README* CONTRIBUTING* .github docs/CONTRIBUTING*
+(end of matches)
+--- .github/workflows/deploy.yml (on:/jobs names)
+1:name: Deploy
+2:on:
+3:  push:
+5:  pull_request:
+9:  deploy:
+19:        uses: actions/checkout@v4
+22:        uses: denoland/setup-deno@v1
+27:        uses: actions/setup-node@v4
+38:        uses: denoland/deployctl@v1
+$ git log -5 --format="%cI %h %s"
+2024-09-24T22:08:52-06:00 d191e57 Merge pull request #49 from treefarmstudio/next
+2024-09-24T22:08:43-06:00 f4674d5 Merge branch 'main' into next
+2024-09-24T15:22:58-06:00 1e8a98e file server
+2024-09-24T21:19:11+00:00 978fad6 [Deno Deploy] Add .github/workflows/deploy.yml
+2024-09-24T15:18:37-06:00 ba7008d  dropped firebase and updated astro
+$ git show HEAD:README.md | sed -n "/^## Support/,+2p"
+## Support
+
+Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner, keeping in mind this template is offered for free as is on GitHub.

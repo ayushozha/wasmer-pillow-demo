@@ -1,0 +1,13 @@
+diff --git a/README.md b/README.md
+index 3404f1c..c081960 100644
+--- a/README.md
++++ b/README.md
+@@ -8,6 +8,8 @@ It is primarily Astro, Tailwind and Typescript, with a very small amount of Soli
+ 
+ [![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+ 
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=markhorn-dev%2Fastro-sphere)
++
+ ## 📋 Features
+ 
+ - ✅ 100/100 Lighthouse performance

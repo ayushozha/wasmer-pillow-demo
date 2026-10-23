@@ -1,0 +1,10 @@
+# external hosts referenced in built HTML (host, tag-kind: n pages)
+astro.build	other	16 pages
+github.com	other	16 pages
+gixthub.com	other	1 pages
+odyssey-theme.sapling.supply	other	17 pages
+twitter.com	other	16 pages
+www.npmjs.com	other	1 pages
+www.youtube.com	other	2 pages
+youtube.com	other	16 pages
+# <script src=...> to external hosts: none

@@ -1,0 +1,15 @@
+diff --git a/README.md b/README.md
+index e41d398..2f66eac 100644
+--- a/README.md
++++ b/README.md
+@@ -35,6 +35,10 @@
+ | `npm run format`       | Format code with [Prettier](https://prettier.io/) |
+ | `npm run clean`        | Remove `node_modules` and build output            |
+ 
++## Deploy
++
++[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=mhyfritz%2Fastro-landing-page)
++
+ ## Credits
+ 
+ - astronaut image

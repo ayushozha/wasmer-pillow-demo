@@ -1,0 +1,13 @@
+# external hosts referenced in built HTML (host, tag-kind: n pages)
+astro-sphere-demo.vercel.app	other	17 pages
+astro.build	other	1 pages
+docs.astro.build	other	1 pages
+github.com	other	17 pages
+tailwindcss.com	other	1 pages
+twitter.com	other	17 pages
+www.javascript.com	other	1 pages
+www.linkedin.com	other	17 pages
+www.solidjs.com	other	1 pages
+www.typescriptlang.org	other	1 pages
+www.youtube.com	other	1 pages
+# <script src=...> to external hosts: none

@@ -1,0 +1,1 @@
+Add Deploy to Wasmer button to README

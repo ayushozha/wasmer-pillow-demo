@@ -1,0 +1,52 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 37
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 49845
+/index.html -> 200 text/html 49845
+/robots.txt -> 404 text/html; charset=utf-8 106
+/sitemap-index.xml -> 404 text/html; charset=utf-8 106
+/nope -> 404 text/html; charset=utf-8 106
+/missing/ -> 404 text/html; charset=utf-8 106
+/missing.html -> 404 text/html; charset=utf-8 106
+## trailing-slash / .html variants of pages
+/missing -> 404 text/html; charset=utf-8 106 redirect=
+/missing/index.html -> 404 text/html; charset=utf-8 106 redirect=
+## assets referenced from all 1 built HTML files and url() in 1 built CSS files (35 unique same-origin refs)
+/_astro/astro-docs.a_4kJ1rC_1eFAhr.webp -> 200 image/webp 10846
+/_astro/astro-docs.a_4kJ1rC_E6zg4.webp -> 200 image/webp 31656
+/_astro/astro-docs.a_4kJ1rC_bwVkt.webp -> 200 image/webp 26130
+/_astro/astronaut.B8IC2jL3_Z1pTs8N.webp -> 200 image/webp 41646
+/_astro/astronaut.B8IC2jL3_ZmKNbP.webp -> 200 image/webp 19222
+/_astro/astronaut.B8IC2jL3_jwrcE.webp -> 200 image/webp 60812
+/_astro/corset.DbVxo4hD_22cSJo.webp -> 200 image/webp 17136
+/_astro/corset.DbVxo4hD_Z1YPA7z.webp -> 200 image/webp 7440
+/_astro/corset.DbVxo4hD_Z2roKWI.webp -> 200 image/webp 19844
+/_astro/designcember.1mE4g9n5_Z1jn00c.webp -> 200 image/webp 34926
+/_astro/designcember.1mE4g9n5_Z1q5CQt.webp -> 200 image/webp 81394
+/_astro/designcember.1mE4g9n5_Zgel3e.webp -> 200 image/webp 16436
+/_astro/divriots.Cs49TeIJ_1XkXHD.webp -> 200 image/webp 9212
+/_astro/divriots.Cs49TeIJ_1ckU5K.webp -> 200 image/webp 3792
+/_astro/divriots.Cs49TeIJ_9cg8M.webp -> 200 image/webp 7758
+/_astro/firebase-blog.BLHZ5Phx_Z15OlpN.webp -> 200 image/webp 9544
+/_astro/firebase-blog.BLHZ5Phx_Z28X0mL.webp -> 200 image/webp 21292
+/_astro/firebase-blog.BLHZ5Phx_ZS3bsG.webp -> 200 image/webp 50478
+/_astro/hoisted.C25IBTej.js -> 200 text/javascript 9204
+/_astro/index.BQNMJerT.css -> 200 text/css 18796
+/_astro/inter-cyrillic-ext-wght-normal.B2xhLi22.woff2 -> 200 font/woff2 25888
+/_astro/inter-cyrillic-wght-normal.CMZtQduZ.woff2 -> 200 font/woff2 18740
+/_astro/inter-greek-ext-wght-normal.CGAr0uHJ.woff2 -> 200 font/woff2 11200
+/_astro/inter-greek-wght-normal.CaVNZxsx.woff2 -> 200 font/woff2 19072
+/_astro/inter-latin-ext-wght-normal.CFHvXkgd.woff2 -> 200 font/woff2 74328
+/_astro/inter-latin-wght-normal.C2S99t-D.woff2 -> 200 font/woff2 48444
+/_astro/inter-vietnamese-wght-normal.CBcvBZtf.woff2 -> 200 font/woff2 10252
+/_astro/moon.CJT1Acwy_2gYoMQ.webp -> 200 image/webp 90450
+/_astro/moon.CJT1Acwy_2m3pJI.webp -> 200 image/webp 178362
+/_astro/moon.CJT1Acwy_Z1K4547.webp -> 200 image/webp 33674
+/_astro/moon.CJT1Acwy_Z1rIhcJ.webp -> 200 image/webp 317924
+/_astro/polinations.BDY4GR4E_1vPXF0.webp -> 200 image/webp 11446
+/_astro/polinations.BDY4GR4E_Z1Y1orT.webp -> 200 image/webp 74334
+/_astro/polinations.BDY4GR4E_sHjI2.webp -> 200 image/webp 24926
+/favicon.svg -> 200 image/svg+xml 1613
+## summary
+# status count:      37 200
+# status count:       7 404

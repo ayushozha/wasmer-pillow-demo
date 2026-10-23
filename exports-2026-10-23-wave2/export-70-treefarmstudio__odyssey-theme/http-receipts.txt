@@ -1,0 +1,113 @@
+# Version:      2.38.0; root=<replay>/static_app; static_app files: 76
+# format: <path> -> curl -w '%{http_code} %{content_type} %{size_download}'
+## pages
+/ -> 200 text/html 29658
+/blog/ -> 200 text/html 18472
+/blog/posts/odyssey-theme-officially-released/ -> 200 text/html 16634
+/blog/tags/remote-work/ -> 200 text/html 16155
+/blog/tags/ -> 200 text/html 15
+/theme/style-guide/ -> 200 text/html 21046
+/theme/theme-setup/ -> 200 text/html 32634
+/theme/get-started/ -> 200 text/html 16916
+/company/about/ -> 200 text/html 18021
+/company/contact/ -> 200 text/html 17562
+/landing-pages/landing-1/ -> 200 text/html 21466
+/sitemap.xml -> 200 text/xml 1458
+/404.html -> 200 text/html 15712
+/sitemap-index.xml -> 404 text/html; charset=utf-8 15711
+/rss.xml -> 404 text/html; charset=utf-8 15711
+/no-such-page-xyz/ -> 404 text/html; charset=utf-8 15711
+/missing.html -> 404 text/html; charset=utf-8 15711
+## trailing-slash / .html variants of pages
+/blog -> 308  0 redirect=http://127.0.0.1:3943/blog/
+/blog/index.html -> 200 text/html 18472 redirect=
+/blog/posts/odyssey-theme-officially-released -> 308  0 redirect=http://127.0.0.1:3943/blog/posts/odyssey-theme-officially-released/
+/blog/posts/odyssey-theme-officially-released/index.html -> 200 text/html 16634 redirect=
+/blog/tags/remote-work -> 308  0 redirect=http://127.0.0.1:3943/blog/tags/remote-work/
+/blog/tags/remote-work/index.html -> 200 text/html 16155 redirect=
+/blog/tags -> 308  0 redirect=http://127.0.0.1:3943/blog/tags/
+/blog/tags/index.html -> 200 text/html 15 redirect=
+/theme/style-guide -> 308  0 redirect=http://127.0.0.1:3943/theme/style-guide/
+/theme/style-guide/index.html -> 200 text/html 21046 redirect=
+/theme/theme-setup -> 308  0 redirect=http://127.0.0.1:3943/theme/theme-setup/
+/theme/theme-setup/index.html -> 200 text/html 32634 redirect=
+/theme/get-started -> 308  0 redirect=http://127.0.0.1:3943/theme/get-started/
+/theme/get-started/index.html -> 200 text/html 16916 redirect=
+/company/about -> 308  0 redirect=http://127.0.0.1:3943/company/about/
+/company/about/index.html -> 200 text/html 18021 redirect=
+/company/contact -> 308  0 redirect=http://127.0.0.1:3943/company/contact/
+/company/contact/index.html -> 200 text/html 17562 redirect=
+/landing-pages/landing-1 -> 308  0 redirect=http://127.0.0.1:3943/landing-pages/landing-1/
+/landing-pages/landing-1/index.html -> 200 text/html 21466 redirect=
+/no-such-page-xyz -> 404 text/html; charset=utf-8 15711 redirect=
+/no-such-page-xyz/index.html -> 404 text/html; charset=utf-8 15711 redirect=
+## assets referenced from all 18 built HTML files and url() in 2 built CSS files (60 unique same-origin refs)
+/ -> 200 text/html 29658
+/_astro/astro_scripts/before-hydration.js.Cdv5htNp.js -> 200 text/javascript 6128
+/_astro/client.DEGHhFmz.js -> 200 text/javascript 621
+/_astro/consider-hybrid-work.C6l1_u0W.css -> 200 text/css 5987
+/_astro/contact.BK1Xm0la.css -> 200 text/css 13011
+/_astro/theme-switcher.CXXJDOSD.js -> 200 text/javascript 16547
+/assets/fonts/lato-v23-latin-300.woff -> 200 application/font-woff 30016
+/assets/fonts/lato-v23-latin-300.woff2 -> 200 font/woff2 23236
+/assets/fonts/lato-v23-latin-700.woff -> 200 application/font-woff 28044
+/assets/fonts/lato-v23-latin-700.woff2 -> 200 font/woff2 23040
+/assets/fonts/lato-v23-latin-700italic.woff -> 200 application/font-woff 29920
+/assets/fonts/lato-v23-latin-700italic.woff2 -> 200 font/woff2 24448
+/assets/fonts/lato-v23-latin-regular.woff -> 200 application/font-woff 28648
+/assets/fonts/lato-v23-latin-regular.woff2 -> 200 font/woff2 23580
+/assets/fonts/roboto-serif-v8-latin-600.woff -> 200 application/font-woff 34448
+/assets/fonts/roboto-serif-v8-latin-600.woff2 -> 200 font/woff2 27180
+/assets/fonts/roboto-serif-v8-latin-700.woff -> 200 application/font-woff 34420
+/assets/fonts/roboto-serif-v8-latin-700.woff2 -> 200 font/woff2 27104
+/assets/images/blog/consider-hybrid-work/featured.jpg -> 200 image/jpeg 65719
+/assets/images/blog/odyssey-theme-officially-released/featured.jpg -> 200 image/jpeg 1210325
+/assets/images/blog/remote-work-mental-health/featured.jpg -> 200 image/jpeg 71674
+/assets/images/home/classic-hero.jpg -> 200 image/jpeg 21668
+/assets/images/home/screenshots/about.png -> 200 image/png 112371
+/assets/images/home/screenshots/about.webp -> 200 image/webp 30842
+/assets/images/home/screenshots/blog-post.png -> 200 image/png 271204
+/assets/images/home/screenshots/blog-post.webp -> 200 image/webp 43650
+/assets/images/home/screenshots/blog.png -> 200 image/png 213575
+/assets/images/home/screenshots/blog.webp -> 200 image/webp 36596
+/assets/images/home/screenshots/contact.png -> 200 image/png 36583
+/assets/images/home/screenshots/contact.webp -> 200 image/webp 17778
+/assets/images/home/screenshots/get-started.png -> 200 image/png 55820
+/assets/images/home/screenshots/get-started.webp -> 200 image/webp 16296
+/assets/images/home/screenshots/landing-1.png -> 200 image/png 191142
+/assets/images/home/screenshots/landing-1.webp -> 200 image/webp 25686
+/assets/images/home/screenshots/landing-2.png -> 200 image/png 70335
+/assets/images/home/screenshots/landing-2.webp -> 200 image/webp 12666
+/assets/images/home/screenshots/legal.png -> 200 image/png 73675
+/assets/images/home/screenshots/legal.webp -> 200 image/webp 46088
+/assets/images/home/screenshots/style-guide.png -> 200 image/png 54088
+/assets/images/home/screenshots/style-guide.webp -> 200 image/webp 16970
+/assets/images/landing-1/landing-hero-1.jpg -> 200 image/jpeg 90624
+/assets/images/landing-1/landing-sticky.jpg -> 200 image/jpeg 69290
+/blog -> 308  0 | followed(-L): 200 text/html 18472 hops=1
+/blog/ -> 200 text/html 18472
+/blog/posts/consider-hybrid-work -> 308  0 | followed(-L): 200 text/html 20458 hops=1
+/blog/posts/odyssey-theme-officially-released -> 308  0 | followed(-L): 200 text/html 16634 hops=1
+/blog/posts/remote-work-mental-health -> 308  0 | followed(-L): 200 text/html 20984 hops=1
+/blog/posts/remote-work-mental-health/ -> 200 text/html 20984
+/blog/tags/odyssey-theme -> 308  0 | followed(-L): 200 text/html 16027 hops=1
+/blog/tags/remote-work -> 308  0 | followed(-L): 200 text/html 16155 hops=1
+/company/about -> 308  0 | followed(-L): 200 text/html 18021 hops=1
+/company/contact -> 308  0 | followed(-L): 200 text/html 17562 hops=1
+/company/legal -> 308  0 | followed(-L): 200 text/html 17142 hops=1
+/favicon.png -> 200 image/png 4905
+/landing-pages/landing-1 -> 308  0 | followed(-L): 200 text/html 21466 hops=1
+/landing-pages/landing-2 -> 308  0 | followed(-L): 200 text/html 8104 hops=1
+/theme/customizing-odyssey -> 308  0 | followed(-L): 200 text/html 27290 hops=1
+/theme/get-started -> 308  0 | followed(-L): 200 text/html 16916 hops=1
+/theme/style-guide -> 308  0 | followed(-L): 200 text/html 21046 hops=1
+/theme/theme-setup -> 308  0 | followed(-L): 200 text/html 32634 hops=1
+## summary
+# status count:      68 200
+# status count:      25 308
+# status count:       6 404
+## form targets (built forms: POST /contact-thank-you x2, POST /newsletter-thank-you x1; no such files in static_app)
+POST /contact-thank-you -> 405 text/html; charset=utf-8 124
+GET /contact-thank-you -> 404 text/html; charset=utf-8 15711
+POST /newsletter-thank-you -> 405 text/html; charset=utf-8 124
+GET /newsletter-thank-you -> 404 text/html; charset=utf-8 15711

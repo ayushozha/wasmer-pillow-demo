@@ -1,0 +1,25 @@
+# external hosts referenced in built HTML (host, tag-kind: n pages)
+astro-moon-landing.netlify.app	other	1 pages
+astro.build	other	1 pages
+astro.new	other	1 pages
+corset.dev	other	1 pages
+designcember.com	other	1 pages
+divriots.com	other	1 pages
+docs.astro.build	other	1 pages
+docs.gitlab.com	other	1 pages
+firebase.blog	other	1 pages
+github.com	other	1 pages
+lit.dev	other	1 pages
+pages.cloudflare.com	other	1 pages
+pages.github.com	other	1 pages
+polinations.com	other	1 pages
+preactjs.com	other	1 pages
+reactjs.org	other	1 pages
+render.com	other	1 pages
+svelte.dev	other	1 pages
+twitter.com	other	1 pages
+vercel.com	other	1 pages
+vuejs.org	other	1 pages
+www.netlify.com	other	1 pages
+www.solidjs.com	other	1 pages
+# <script src=...> to external hosts: none
