@@ -1,0 +1,37 @@
+$ git rev-parse HEAD
+7e34d9be5a614babac246434773411d341018abb
+$ git ls-remote https://github.com/mermaid-js/mermaid-live-editor.git refs/pull/2082/head
+7e34d9be5a614babac246434773411d341018abb	refs/pull/2082/head
+$ git ls-tree HEAD -- Anybuild README.md pnpm-lock.yaml package.json .husky
+040000 tree 96f3185fb179c34279a1bb908f5ec03bc356041e	.husky
+100644 blob 8be261e62776b44bf40dbc59221745b389adaf09	Anybuild
+100644 blob 260b74842b1d650c883f2eb86a52ff18c13e37a7	README.md
+100644 blob e0eba3e2d54c1bf880bc8063d5f6120d8c7e63a7	package.json
+100644 blob 45e5cb743e4292fb6e639937a8b7452d94f8eec3	pnpm-lock.yaml
+$ git status --porcelain (clean head)
+$ sha256sum mermaid-pr2082-anybuild-correction.patch
+9badc5e53fc5995f96e8bc23eda1f7b5610ec34f3b9893d310c79fc6b2cddffc  mermaid-pr2082-anybuild-correction.patch
+$ git apply --check mermaid-pr2082-anybuild-correction.patch
+exit=0
+$ git diff --stat
+ Anybuild | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+$ git add -A && git diff --cached --check
+exit=0
+$ git diff --cached --name-only
+Anybuild
+$ git hash-object Anybuild  (corrected blob)
+28b94e456dd867ffb7d0a215a12c347e69fbfded
+
+$ prettier --check --ignore-unknown Anybuild   (prettier from the replay install of this lockfile: 3.9.10)
+Checking formatting...
+[error] Cannot find package 'prettier-plugin-svelte' imported from $S/val-src/mm-applycheck/noop.js
+exit=1
+# the run above resolved plugins from the bare clone (no node_modules) and is void; re-run inside the replay work dir (corrected Anybuild + installed deps):
+$ cmp Anybuild <corrected clone>/Anybuild
+same
+$ prettier --check --ignore-unknown Anybuild
+Checking formatting...
+All matched files use Prettier code style!
+exit=0
+# lint-staged (the .husky pre-commit hook) globs '*.{ts,svelte,js,css,md,json}' from package.json, which does not match the extensionless 'Anybuild', so the hook runs no task on this change.

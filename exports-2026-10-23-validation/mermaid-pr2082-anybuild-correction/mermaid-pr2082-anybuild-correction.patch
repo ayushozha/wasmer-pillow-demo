@@ -1,0 +1,40 @@
+diff --git a/Anybuild b/Anybuild
+index 8be261e6..28b94e45 100644
+--- a/Anybuild
++++ b/Anybuild
+@@ -4,24 +4,28 @@ load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config"
+ config = nodestatic_config(
+     schema = 1,
+     static_redirects_config = """
+-[[advanced.rewrites]]
+-source = "/_app/**"
+-destination = "$0"
+-
+ [[advanced.rewrites]]
+ source = "/edit"
+ destination = "/edit.html"
+ 
++[[advanced.rewrites]]
++source = "/edit/"
++destination = "/404.html"
++
+ [[advanced.rewrites]]
+ source = "/view"
+ destination = "/view.html"
+ 
+ [[advanced.rewrites]]
+-source = "/**/*.*"
+-destination = "$0"
++source = "/view/"
++destination = "/404.html"
++
++[[advanced.rewrites]]
++source = "/embed"
++destination = "/embed.html"
+ 
+ [[advanced.rewrites]]
+-source = "/**"
++source = "/embed/"
+ destination = "/404.html"
+ 
+ """,

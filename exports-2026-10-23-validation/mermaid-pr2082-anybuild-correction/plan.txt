@@ -1,0 +1,6 @@
+  Using static Node.js provider declared in Anybuild
+    Framework: SvelteKit
+    Server: Node.js
+    Package manager: pnpm
+    Output directory: docs
+Plan saved to $S/replay/val-mermaid-fix/plan.json
