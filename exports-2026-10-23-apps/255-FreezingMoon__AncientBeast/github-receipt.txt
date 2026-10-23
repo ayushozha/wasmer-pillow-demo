@@ -1,0 +1,6 @@
+# GitHub API receipts (mcp__github__search_repositories / search_pull_requests), 2026-10-22
+repo:FreezingMoon/AncientBeast -> stars 1883, forks 715, pushed_at 2026-10-16, archived false, default_branch master, license AGPL-3.0
+"repo:FreezingMoon/AncientBeast wasmer" -> total_count 0
+"repo:FreezingMoon/AncientBeast deploy in:title" -> 2: #1479 "A possible fix for heroku deploys" (COLLABORATOR, closed 2018-11-06), #1310 "repair heroku deployment" (MEMBER, closed 2017-12-10) -- maintainer-side hosting fixes, no third-party provider-button PRs
+"repo:FreezingMoon/AncientBeast is:merged merged:>2025-10-01" -> total_count 43; newest: #3221 (NONE, 2026-09-24), #3219 (NONE, 2026-09-17), #3216 (CONTRIBUTOR), #3213 (CONTRIBUTOR), #3176 "[codex] Show cancel icon for unusable abilities" (CONTRIBUTOR, 2026-05-28)
+campaign-author check: "wasmer author:ayushozha" / "wasmer author:ayushfromwasmer" contain no FreezingMoon repo

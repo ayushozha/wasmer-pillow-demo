@@ -1,0 +1,234 @@
+# replay of D-ab  source=$S/rup/FreezingMoon__AncientBeast  upstream HEAD=d37961462eb91f97e81710ede456346148cd2522
+# local diff vs HEAD:  M README.md;?? Staticfile;
+  Detected static Node.js provider
+    Framework: Vite
+    Server: Hono
+    Package manager: bun
+    Output directory: deploy
+
+  Generated Anybuild at <tmp>
+Plan saved to $S/replay/D-ab/plan.json
+# provider=node-static install='bun install --no-save' build='bun run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='deploy' pm=bun@1.4.2 inputs='package.json' all_files=False
+$ node -v
+v24.22.1
+exit=0
+
+$ bun --version
+1.4.2
+exit=0
+
+# staged before install: bun.lock package.json 
+$ bun install --no-save
+bun install v1.4.2 (744846f84)
+
++ @babel/core@7.29.7
++ @babel/plugin-transform-runtime@7.29.7
++ @babel/preset-env@7.29.7
++ @babel/preset-typescript@7.29.7
++ @types/jest@29.5.14
++ @types/jquery@3.5.34
++ @types/jquery.transit@0.9.33
++ @types/js-cookie@3.0.6
++ @types/node@26.6.3
++ @types/underscore@1.13.0
++ @typescript-eslint/eslint-plugin@5.62.0
++ @typescript-eslint/parser@5.62.0
++ babel-jest@29.7.0
++ babel-loader@9.2.1
++ babel-plugin-transform-runtime@6.23.0
++ babel-polyfill@6.26.0
++ canvas@3.2.3
++ cross-env@7.0.3
++ dotenv@16.6.1
++ dotenv-defaults@5.0.2
++ esbuild@0.21.5
++ eslint@8.57.1
++ eslint-config-prettier@8.10.2
++ eslint-plugin-prettier@4.2.5
++ husky@8.0.3
++ jest@29.7.0
++ jest-environment-jsdom@30.5.2
++ jsdom@26.1.0
++ less@4.9.1
++ lint-staged@13.3.0
++ playwright-core@1.63.0
++ prettier@2.8.8
++ svgo@3.3.5
++ typescript@5.9.3
++ underscore@1.13.8
++ vite@8.3.1
++ vite-plugin-ejs@1.8.0
++ vite-plugin-static-copy@3.4.0
++ @babel/runtime@7.29.7
++ @devvit/web@0.13.7
++ @hono/node-server@2.0.8
++ compression@1.8.1
++ devvit@0.13.7
++ hono@4.12.28
++ jquery@3.7.1
++ jquery.transit@0.9.12
++ js-cookie@3.0.7
++ node-emoji@1.11.0
++ peerjs@1.5.5
++ phaser@4.2.1
++ semver@7.8.1
+
+982 packages installed [3.25s]
+exit=0
+
+$ bun run build
+$ echo '📦 Production build using Vite' && vite build
+📦 Production build using Vite
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 555 modules transformed.
+rendering chunks...
+[vite-plugin-static-copy] Copied 1 items.
+computing gzip size...
+deploy/assets/DhJbKzLt.gif                     4.20 kB
+deploy/assets/BBpEVe6-.png                     4.32 kB
+deploy/assets/DgeG23Md.svg                     4.77 kB │ gzip:   2.29 kB
+deploy/assets/BbYwjP5y.png                     5.05 kB
+deploy/assets/ao-zgMej.jpg                     5.41 kB
+deploy/assets/CV7xE1V1.png                     5.49 kB
+deploy/assets/CfUT_gqS.svg                     5.67 kB │ gzip:   1.44 kB
+deploy/assets/C6gzCO9N.svg                     6.37 kB │ gzip:   3.13 kB
+deploy/assets/CIZohvke.gif                     6.80 kB
+deploy/assets/CE0aWf2O.jpg                     6.82 kB
+deploy/assets/MOJT5hlp.png                     8.01 kB
+deploy/assets/0guUA4kh.png                     8.04 kB
+deploy/assets/5WLNyPfS.gif                     8.07 kB
+deploy/assets/CTMg8AYe.png                     8.19 kB
+deploy/assets/DrpSFXK9.png                     8.24 kB
+deploy/assets/D72lZVy1.png                     8.52 kB
+deploy/assets/A8i95qf-.gif                     8.87 kB
+deploy/assets/Dju4IIqc.png                     9.30 kB
+deploy/assets/BqBmc8_v.png                     9.93 kB
+deploy/assets/2mTiLRI6.png                    10.18 kB
+deploy/assets/BUtOFZbX.jpg                    11.62 kB
+deploy/assets/C1hSZIxu.jpg                    12.87 kB
+deploy/assets/CC4yRSEa.jpg                    12.93 kB
+deploy/assets/D_2YB74S.jpg                    12.93 kB
+deploy/assets/CMvzSuba.png                    16.46 kB
+deploy/assets/CCuEMMwQ.woff2                  17.08 kB
+deploy/assets/DxvZPSMe.woff2                  17.18 kB
+deploy/assets/Bws37ODd.jpg                    19.75 kB
+deploy/assets/fN_U--R-.jpg                    19.93 kB
+deploy/assets/jNA7Xhcs.jpg                    20.12 kB
+deploy/assets/DqAB2Xhx.jpg                    20.28 kB
+deploy/assets/CdCYvWXR.woff                   21.38 kB
+deploy/assets/D4VW6m7o.woff                   21.44 kB
+deploy/assets/3sv8Th5S.svg                    22.97 kB │ gzip:   6.31 kB
+deploy/assets/CGeScxDU.png                    25.00 kB
+deploy/assets/BpcHgBt3.png                    26.00 kB
+deploy/assets/q-WKNdxA.png                    32.68 kB
+deploy/assets/CMptiVsR.png                    33.64 kB
+deploy/index.html                             37.22 kB │ gzip:   6.99 kB
+deploy/assets/Dqh2Awlu.ogg                    50.90 kB
+deploy/assets/D0lL8qcX.jpg                   222.79 kB
+deploy/assets/B6tSBNHd.jpg                   229.44 kB
+deploy/assets/BFypnvzj.gif                   267.05 kB
+deploy/assets/rcg7Y8Zl.css                   337.63 kB │ gzip: 112.45 kB
+deploy/position.4kPJfPWn.chunk.js              0.13 kB │ gzip:   0.12 kB │ map:      1.65 kB
+deploy/camera.DMbhmlDa.chunk.js                0.32 kB │ gzip:   0.25 kB │ map:      3.61 kB
+deploy/effect.CZ1czu5Y.chunk.js                1.05 kB │ gzip:   0.52 kB │ map:      5.11 kB
+deploy/rolldown-runtime.C_JJxWoe.chunk.js      1.32 kB │ gzip:   0.71 kB
+deploy/GameScene.i1MXwE3_.chunk.js             1.82 kB │ gzip:   0.75 kB │ map:     14.68 kB
+deploy/runtime.C2_XjCFg.chunk.js               2.11 kB │ gzip:   1.09 kB │ map:      6.09 kB
+deploy/Chimera.Bi8XcYY9.chunk.js               3.66 kB │ gzip:   1.34 kB │ map:     16.53 kB
+deploy/Cyber-Wolf.CQkhB7B8.chunk.js            3.75 kB │ gzip:   1.26 kB │ map:     17.44 kB
+deploy/Golden-Wyrm.h2qDZrGj.chunk.js           4.15 kB │ gzip:   1.51 kB │ map:     19.40 kB
+deploy/Headless.cO_mDhrh.chunk.js              4.16 kB │ gzip:   1.48 kB │ map:     20.10 kB
+deploy/Infernal.DGyrUaPO.chunk.js              4.28 kB │ gzip:   1.71 kB │ map:     19.04 kB
+deploy/Bounty-Hunter.B2FACEtL.chunk.js         4.38 kB │ gzip:   1.45 kB │ map:     18.99 kB
+deploy/Dark-Priest.Ca65wUST.chunk.js           4.82 kB │ gzip:   1.97 kB │ map:     22.50 kB
+deploy/Uncle-Fungus.DXHWhK9i.chunk.js          4.92 kB │ gzip:   1.91 kB │ map:     21.05 kB
+deploy/Swine-Thug.BvnMN8lb.chunk.js            4.96 kB │ gzip:   1.83 kB │ map:     22.56 kB
+deploy/Miss-Creeper.CL1tJUrF.chunk.js          5.09 kB │ gzip:   1.85 kB │ map:     25.12 kB
+deploy/Abolished.DzjosmJy.chunk.js             5.41 kB │ gzip:   2.06 kB │ map:     24.66 kB
+deploy/Snow-Bunny.Dcn-nZwC.chunk.js            5.52 kB │ gzip:   1.87 kB │ map:     28.90 kB
+deploy/Impaler.CFfiwe2Z.chunk.js               5.59 kB │ gzip:   2.16 kB │ map:     26.76 kB
+deploy/Scavenger.BozJocP1.chunk.js             5.73 kB │ gzip:   1.96 kB │ map:     23.58 kB
+deploy/Gumble.3xuGczHr.chunk.js                5.99 kB │ gzip:   2.28 kB │ map:     27.40 kB
+deploy/Nutcase.D2g0wJvI.chunk.js               6.33 kB │ gzip:   2.24 kB │ map:     30.27 kB
+deploy/Vehemoth.awvnYSwp.chunk.js              6.47 kB │ gzip:   2.52 kB │ map:     33.70 kB
+deploy/Knightmare.TdR3tf2d.chunk.js            6.85 kB │ gzip:   2.51 kB │ map:     30.13 kB
+deploy/Stomper.DtMIbAfG.chunk.js               8.82 kB │ gzip:   3.25 kB │ map:     48.89 kB
+deploy/Phaser4Engine.CaqFj8-b.chunk.js        10.13 kB │ gzip:   3.46 kB │ map:     67.37 kB
+deploy/effect.DUTT7n5F.chunk.js               11.66 kB │ gzip:   4.34 kB │ map:     70.71 kB
+deploy/Horn-Head.C8LcxhQB.chunk.js            14.50 kB │ gzip:   4.86 kB │ map:     74.93 kB
+deploy/Cycloper.Dj0YLp5_.chunk.js             27.51 kB │ gzip:   8.65 kB │ map:    135.45 kB
+deploy/clock.DlkWijtN.chunk.js                54.81 kB │ gzip:   7.36 kB │ map:     97.63 kB
+deploy/bundler.CoSW_DJa.chunk.js              87.94 kB │ gzip:  23.35 kB │ map:    332.19 kB
+deploy/app.Bxf30c_S.bundle.js                882.06 kB │ gzip: 252.50 kB │ map:  3,567.33 kB
+deploy/phaser.DVoFgjWv.chunk.js            1,373.64 kB │ gzip: 356.96 kB │ map: 11,377.26 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 16.79s
+[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 15.1s of this 16.7s build (90%).
+1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - plugin vite:terser renderChunk (33 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+exit=0
+
+$ static-web-server --root=$S/replay/D-ab/static_app --log-level=info --port=4102 --host=127.0.0.1
+Version:      2.38.0
+Built:        
+Git commit:   
+Build target: x86_64-unknown-linux-gnu
+Rust version: rustc 1.97.0 (2d8144b78 2026-07-07)
+License:      MIT OR Apache-2.0
+Homepage:     https://static-web-server.net
+Author:       Jose Quintana <https://joseluisq.net>
+200	page	/	text/html	37221
+--	title	/	Ancient Beast v0.6-α	
+404	page	/nope	text/html	0
+--	title	/nope	(none)	
+200	ref	/assets/favicon.png	image/png	143680
+200	ref	/manifest.json	application/json	495
+200	ref	/assets/rcg7Y8Zl.css	text/css	337632
+200	ref	/assets/interface/AncientBeast.png	image/png	33648
+200	ref	/assets/interface/AB.gif	image/gif	18990
+0	ref	/assets/music/epic/Castle Black by Agret Brisignr.ogg	URL can't contain control characters. '/assets/music/epic/Castle Black by Agret Brisignr.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/City of Sand by Agret Brisignr.ogg	URL can't contain control characters. '/assets/music/epic/City of Sand by Agret Brisignr.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Distant Realms by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Distant Realms by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Escaping the Abyss by Jens Kiilstofte.ogg	URL can't contain control characters. '/assets/music/epic/Escaping the Abyss by Jens Kiilstofte.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Incoming Siege by Jens Kiilstofte.ogg	URL can't contain control characters. '/assets/music/epic/Incoming Siege by Jens Kiilstofte.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/It All Ends Here by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/It All Ends Here by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Road to Victory by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Road to Victory by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Summoning the Beast by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Summoning the Beast by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Tale of the Ruins by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Tale of the Ruins by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/The Awakening by Tad Miller.ogg	URL can't contain control characters. '/assets/music/epic/The Awakening by Tad Miller.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Touch of Fate by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Touch of Fate by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Vengeance by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Vengeance by Moonthief.ogg' (found at least ' ')	0
+0	ref	/assets/music/epic/Wind Run by Tad Miller.ogg	URL can't contain control characters. '/assets/music/epic/Wind Run by Tad Miller.ogg' (found at least ' ')	0
+0	ref	/assets/music/rock/Beast but not least by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Beast but not least by XTaKeRuX.ogg' (found at least ' ')	0
+0	ref	/assets/music/rock/Free will possession by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Free will possession by XTaKeRuX.ogg' (found at least ' ')	0
+0	ref	/assets/music/rock/Incub by byrum.ogg	URL can't contain control characters. '/assets/music/rock/Incub by byrum.ogg' (found at least ' ')	0
+0	ref	/assets/music/rock/Self-Decieved by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Self-Decieved by XTaKeRuX.ogg' (found at least ' ')	0
+200	ref	/app.Bxf30c_S.bundle.js	text/javascript	882061
+SUMMARY pages=2 refs_checked=23 failures=18
+FAIL	404	page	/nope	text/html	0
+FAIL	0	ref	/assets/music/epic/Castle Black by Agret Brisignr.ogg	URL can't contain control characters. '/assets/music/epic/Castle Black by Agret Brisignr.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/City of Sand by Agret Brisignr.ogg	URL can't contain control characters. '/assets/music/epic/City of Sand by Agret Brisignr.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Distant Realms by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Distant Realms by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Escaping the Abyss by Jens Kiilstofte.ogg	URL can't contain control characters. '/assets/music/epic/Escaping the Abyss by Jens Kiilstofte.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Incoming Siege by Jens Kiilstofte.ogg	URL can't contain control characters. '/assets/music/epic/Incoming Siege by Jens Kiilstofte.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/It All Ends Here by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/It All Ends Here by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Road to Victory by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Road to Victory by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Summoning the Beast by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Summoning the Beast by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Tale of the Ruins by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Tale of the Ruins by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/The Awakening by Tad Miller.ogg	URL can't contain control characters. '/assets/music/epic/The Awakening by Tad Miller.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Touch of Fate by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Touch of Fate by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Vengeance by Moonthief.ogg	URL can't contain control characters. '/assets/music/epic/Vengeance by Moonthief.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/epic/Wind Run by Tad Miller.ogg	URL can't contain control characters. '/assets/music/epic/Wind Run by Tad Miller.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/rock/Beast but not least by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Beast but not least by XTaKeRuX.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/rock/Free will possession by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Free will possession by XTaKeRuX.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/rock/Incub by byrum.ogg	URL can't contain control characters. '/assets/music/rock/Incub by byrum.ogg' (found at least ' ')	0
+FAIL	0	ref	/assets/music/rock/Self-Decieved by XTaKeRuX.ogg	URL can't contain control characters. '/assets/music/rock/Self-Decieved by XTaKeRuX.ogg' (found at least ' ')	0
+# static_app files: 727

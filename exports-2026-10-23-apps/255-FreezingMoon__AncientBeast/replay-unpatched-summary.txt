@@ -1,0 +1,6 @@
+11:# provider=node-static install='bun install --no-save' build='bun run build' start='static-web-server --root=/opt/static_app --log-level=info --port=8080' static_dir='dist' pm=bun@1.4.2 inputs='package.json' all_files=False
+14:exit=0
+18:exit=0
+77:exit=0
+180:exit=0
+182:STATIC_DIR 'dist' MISSING
