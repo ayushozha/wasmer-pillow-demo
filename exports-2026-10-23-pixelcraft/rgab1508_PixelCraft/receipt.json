@@ -18,7 +18,7 @@
     "result": "N/A (no build step)",
     "detail": "Upstream has no build. The root files are served as committed (GitHub Pages / Firebase per README)."
   },
-  "format_check": "not applicable: no formatter config at the repo root (PR #61 ran Prettier once, but no config is committed)",
+  "format_check": "not applicable: no formatter config at the repo root (PR https://github.com/rgab1508/PixelCraft/pull/61 ran Prettier once, but no config is committed)",
   "hook_check": "no git hooks installed (.git/hooks has only samples; no .husky or pre-commit config); normal git commit ran, nothing bypassed",
   "detection_verified": "plan BASE vs PATCHED verified locally (staticfile at root, correct because the app files are committed at root). No config added. Live import page preset pending Codex browser check.",
   "anybuild_replay": "PASS (anybuild 0.33.1, 2026-10-23) on BASE 45a5d48 and PATCHED 3fead1a: provider staticfile, install none, build none, static_dir '.', 13 routes 200, 0 missing root-relative refs. No package-manager pins apply (no node steps). logs/rgab1508_PixelCraft.flat-replay.log (patched), logs/rgab1508_PixelCraft.base.flat-replay.log (base)",
@@ -52,10 +52,10 @@
   "caveats": "Toolbar icons load from an external Font Awesome kit script (a third-party kit tied to the author's account; whether it serves other domains is unverified). og:url and og:image in index.html point to rgab1508.github.io. The new/ React source folder is published as static files (harmless, not loaded). sw.js caches every GET response (upstream behavior). No secrets or analytics found in served files (grep for firebase/apiKey/gtag/analytics: none in the root app).",
   "policy": {
     "files": "The tree at 45a5d48 has no CONTRIBUTING*, AGENTS.md, AI policy, CLA, PR template or .github/ directory. The GitHub top-level listing (https://github.com/rgab1508/PixelCraft) showed none either.",
-    "readme": "No contribution or hosting stance. README credits outside PRs #41 and #44.",
+    "readme": "No contribution or hosting stance. README credits outside PRs https://github.com/rgab1508/PixelCraft/pull/41 and https://github.com/rgab1508/PixelCraft/pull/44.",
     "deploy_provider_stance": "README lists two existing hosts (GitHub Pages and Firebase pixelcraft.web.app). No provider buttons. Commits 7b7e2b6..45a5d48 (2025-03-15/17) created and deleted a CNAME several times.",
-    "hosting_prs": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed 'Open 0 (0)', 'Closed 1 (1)': #59 'fix: use relative paths in manifest.json' by kt3k, merged 2022-04-03 (not a provider PR).",
-    "outside_merges": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+is%3Amerged showed 'Closed 40 (40)' (page 1 of 2 read). The newest merged PR is #63 by ArunBohra12 (2023-02-27). Other outside merges: #61, #59, #58, #56, #44, #42, #41."
+    "hosting_prs": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+deploy+OR+hosting+OR+vercel+OR+netlify+OR+pages+OR+docker showed 'Open 0 (0)', 'Closed 1 (1)': https://github.com/rgab1508/PixelCraft/pull/59 'fix: use relative paths in manifest.json' by kt3k, merged 2022-04-03 (not a provider PR).",
+    "outside_merges": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+is%3Amerged showed 'Closed 40 (40)' (page 1 of 2 read). The newest merged PR is https://github.com/rgab1508/PixelCraft/pull/63 by ArunBohra12 (2023-02-27). Other outside merges: https://github.com/rgab1508/PixelCraft/pull/61, https://github.com/rgab1508/PixelCraft/pull/59, https://github.com/rgab1508/PixelCraft/pull/58, https://github.com/rgab1508/PixelCraft/pull/56, https://github.com/rgab1508/PixelCraft/pull/44, https://github.com/rgab1508/PixelCraft/pull/42, https://github.com/rgab1508/PixelCraft/pull/41."
   },
   "acceptance_risk": "No merged PR shown since 2023-02-27. The owner's last commits were CNAME add/delete on 2025-03-15/17. The repo page shows 'Pull requests 3 (3)' open. Inactivity is recorded as acceptance risk, not a hold.",
   "wasmer_pr_search": "The search https://github.com/rgab1508/PixelCraft/pulls?q=is%3Apr+wasmer showed 'Open 0 (0)', 'Closed 0 (0)', 'No pull requests matched your search' (worker WebFetch 2026-10-23T02:30Z, right before preparing; the coordinator's earlier check also showed 0)",
